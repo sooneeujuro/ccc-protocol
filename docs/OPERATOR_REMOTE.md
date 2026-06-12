@@ -16,6 +16,21 @@ The operator writes commands as comments. Agents poll the issue or mirror comman
 coop/operator/commands.md
 ```
 
+Prefer one console issue per active project or run:
+
+```text
+CCC Operator Console: <project>
+```
+
+If multiple projects share one issue, every comment must include `Project:` and `Target:` fields. Agents should ignore commands for other projects unless the operator explicitly marks them as cross-project.
+
+Agent status comments should be sparse and meaningful:
+
+- Comment when work starts, completes, blocks, or changes heartbeat interval.
+- Do not comment for routine quiet wakeups.
+- Prefix reports with project and agent, for example `PYGMT_JYP / Codex`.
+- Link related project consoles instead of mixing long status threads when two projects are running at once.
+
 Recommended command format:
 
 ```text
@@ -46,4 +61,3 @@ Every remote command gets one of:
 - declined with reason
 
 Do not leave remote commands silently pending.
-

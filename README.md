@@ -29,7 +29,7 @@ coop/RUN_STATE.md
 coop/inbox_<agent>/
 ```
 
-Use a heartbeat interval such as 5, 10, or 15 minutes. Short intervals are good for hot operations; longer intervals are better for quiet monitoring.
+Use a heartbeat interval such as 5, 10, or 15 minutes. Short intervals are good for hot operations; longer intervals are better for quiet monitoring. For unattended watch mode, use adaptive quiet backoff: 10 minutes, then 30 minutes, then 90 minutes after 3 consecutive no-op checks at each level.
 
 ## Repo Layout
 
@@ -66,4 +66,3 @@ templates/
 ## Suggested Naming
 
 Use `ccc-protocol` for the protocol repo. If you like the bit, call it "CCCP" in chat, but keep the public-facing name boring enough for work.
-

@@ -47,7 +47,10 @@ At each heartbeat:
 3. Check the agent's inbox.
 4. Check operator commands.
 5. Continue the active task or report idle status.
-6. Re-arm the heartbeat if the platform requires manual re-arming.
+6. Apply adaptive quiet backoff when repeated wakeups find no work.
+7. Re-arm the heartbeat if the platform requires manual re-arming.
+
+Recommended quiet backoff is 10 minutes, then 30 minutes, then 90 minutes. Advance after 3 consecutive quiet wakeups at the current interval. Reset to 10 minutes when new work appears unless the operator asks otherwise.
 
 If the agent cannot guarantee recurring wakeups, say so plainly.
 
@@ -76,4 +79,3 @@ If `coop/STOP.md` exists:
 2. Write a final summary to `coop/inbox_<other_agent>/FINAL_SUMMARY.md`.
 3. Append one line to `coop/chat.md`.
 4. Do not continue polling unless the operator explicitly resumes.
-
