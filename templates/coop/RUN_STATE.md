@@ -12,7 +12,11 @@ Describe the current objective here.
 ## Heartbeats
 
 - Codex interval:
+- Codex quiet backoff:
+- Codex quiet streak:
 - Claude interval:
+- Claude quiet backoff:
+- Claude quiet streak:
 - Last Codex heartbeat:
 - Last Claude heartbeat:
 
@@ -46,4 +50,3 @@ If no task is pending, do this:
 - Check inboxes.
 - Validate recent outputs.
 - Report only if something changed or needs operator attention.
-
