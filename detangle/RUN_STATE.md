@@ -20,11 +20,14 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - [확정] **정본 결정표** → `DECISION_TABLE.md`. Codex VERDICT=ok로 회사감사 확인 + 5번째 클론(codes/) 발견.
 - [작성] 🧨 **P0 LANDMINE 가드** → `P0_LANDMINE_GUARD.md` (gitignore 패치 + 적용지침). **실제 ma 커밋은 운영자 GO 게이트**.
 - [완료] **Phase 1·2 아카이브** → `G:\corpus_build_history` (~6MiB, non-git). code 114 + outputs 116. 시크릿 누수 0(012 오탐 1건 수동복원). renewal_snapshot은 번들에 이미 있어 중복제외.
+- [완료] **기능 보존 검증** → `FUNCTIONALITY_GUARDRAILS.md`. 작품 4개 다 작동(git-tracked 런타임 의존 0). A/B/D/E=git-only 무해, C(freeze)만 commit-freeze로 제한.
+- [작성] **축 A corpus 가드** → `scripts/precommit_corpus_guard.sh` + `GUARD_DEPLOY.md`(repo별 gitignore). **Codex 검증 발행**(`inbox_codex/002`, 오차단 교차검증). 적용은 GO 게이트.
+- [발행] **노트북 continuation** → `LAPTOP_CONTINUATION.md` (셋업=pull+G: / 실행 몫 P0·senpai push·A4A5).
 
 ## 다음 (운영자 GO 게이트)
 1. P0 가드 적용(ma .gitignore main PR + 홈PC senpai 적용 + out* NAS 처분).
 2. 홈 senpai-design 6커밋 push→ma main PR / geochem code-only 브랜치 선별 / 홈 A4·A5 백업.
-3. 축 A: 코퍼스 NAS 정본 + 전 repo pre-commit 가드.
+3. 축 A: Codex 검증 통과 후 repo별 가드 적용 + 코퍼스 NAS 정본(NAS up 후).
 4. Cursor·codes 잉여 제거 + worktree prune.
 5. [GO] 코퍼스 history rewrite → GCA freeze.
 6. 그 다음: 원래 숙제 B1 Sonnet 재추출.
