@@ -14,5 +14,14 @@ manuscript-atelier **PR#15** (`docs/corpus-verification-policy`, base main). 노
 4. **데이터모델 안전**: additive(원본 미덮음)·인접파일·CAS·dedup·server-stamp·false-positive 가드가 v0.1로 충분한가? 빠진 위험?
 5. **모순/갭**: PR이 자기 §7(흩어진 조각)을 제대로 통합했나? 남은 모순?
 
+## 대상 2 — PR#16 (정규화, PR#15의 전제)
+manuscript-atelier **PR#16** (`docs/corpus-normalization-vp-norm-1`, base main). `gh pr diff 16` / 파일 `docs/design/corpus_normalization_VP-NORM-1.md`.
+
+## 검증 항목 — PR#16
+6. **정규화 규칙 건전성**: variable_id 규칙(유니코드 위/아래첨자→ASCII, 캐럿/LaTeX 제거, 동위원소 정규식, δ-표기, vocabulary lookup)이 73% raw_label_only를 실제로 잡을 구조인가? 빠진 변형(놓칠 위첨자 패턴) 있나? 비파괴("못잡으면 raw_label_only 유지") 보장되나?
+7. **instrument category**: enum에 `tims` 추가 + 비정규 매핑(la-icp-ms→laser_ablation 등) 목록이 맞나? `noble_gas_ms` 1,490 중 TIMS 오분류 가설 타당? **drift-contract**(schema 변경 시 extract script+validator 임베드 동기) 경고 충분?
+8. **스코프 경계**: PR#16(정규화)이 cited/measured 판정(=PR#15 VP-CVM)을 침범 안 하고 *전제*로만 두는가? 두 PR 경계 깨끗?
+9. **실행안전(§5)**: 백업→정규화→검증→리포트 + 가역(롤백)이 sidecar 데이터 op로 충분한가? in-place id 갱신 vs 별도 필드(§7-4) 권고?
+
 ## 제약
-read-only. PR 머지/코드변경 금지. 보고는 `inbox_claude/004_PR15_VERIFY_VERDICT.md`. 이슈는 구체적 파일:줄/섹션으로.
+read-only. **PR 머지/코드변경/실행 금지(검토만).** 보고: PR#15→`inbox_claude/004_PR15_VERIFY_VERDICT.md`, PR#16→같은 파일에 §PR16 또는 `005_PR16_VERIFY_VERDICT.md`. 이슈는 구체적 파일:줄/섹션.
