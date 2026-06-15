@@ -120,8 +120,8 @@ MINERAL_INDICES = {
     "albite_content": ["Ab"], "Cr_number": ["Cr#", "Cr-number", "Cr number"],
 }
 PHYS_ALIASES = {
-    "temperature_C": ["Temperature", "temperature", "Temp", "Temp.", "Temperature (T)"],
-    "pressure_MPa": ["Pressure", "pressure", "P (MPa)"],
+    "temperature": ["Temperature", "temperature", "Temp", "Temp.", "Temperature (T)"],
+    "pressure": ["Pressure", "pressure", "P (MPa)", "P (GPa)", "P (kbar)"],
     "pH": ["pH"], "Eh": ["Eh"],
     "fO2": ["fO2", "oxygen fugacity", "f(O2)", "log fO2", "logfO2",
             "fO2 (oxygen fugacity)", "oxygen fugacity (fO2)", "oxygen fugacity fO2"],
@@ -226,7 +226,7 @@ _AGE_RE = re.compile(r"\bage\b", re.IGNORECASE)
 _TIME_MARKER = re.compile(r"\s*\(\s*t\s*\)\s*$", re.IGNORECASE)
 # REE labels that are NOT an abundance/sum (block from REE_sum) — Codex 008
 _REE_BLOCK = re.compile(
-    r"\b(partition|coefficients?|distributions?|kd|patterns?|normali[sz]ed|"
+    r"\b(partition|coefficients?|distributions?|kd|patterns?|profiles?|normali[sz]ed|"
     r"anomal(y|ies)|ratios?|fractionation|spider|d_[a-z])", re.IGNORECASE)
 
 
@@ -349,7 +349,9 @@ def _try_co2(raw_label, unit):
 _UNIT_PAREN = re.compile(
     r"\s*[\(\[]\s*(wt\.?\s*%|ppm|ppb|ppt|wt|µg/g|ug/g|μg/g|mg/kg|mg/g|g/g|"
     r"mol\.?\s*%|at\.?\s*%|atom\s*%|%|‰|permil|per\s*mil|µmol/kg|umol/kg|"
-    r"nmol/kg|mmol/kg|mg/l|µg/l|ug/l|ng/g|cps|psu)\s*[\)\]]\s*$",
+    r"nmol/kg|mmol/kg|mg/l|µg/l|ug/l|ng/g|cps|psu|"
+    r"gpa|mpa|kbar|kbars|kb|bar|deg\s*c|°c|degc|km/s|km|"
+    r"mw/m\^?2|g/cm\^?3|kg/m\^?3)\s*[\)\]]\s*$",
     re.IGNORECASE,
 )
 # trailing descriptive words (incl. 'ratio'). NOTE: phase/context parens are NOT stripped.
@@ -466,6 +468,9 @@ def _try_gloss(folded):
     # never strip phase/unit/context parens
     if (il in _PHASE_UNIT_WORDS or _has_conc_unit(inner, None)
             or _UNIT_PAREN.search(f"({inner})") or "permil" in il or "%" in inner):
+        return None
+    # normalized-ratio restatement (LaN/YbN, chondrite-normalized) -> leave raw, don't drop the _N (Codex 009)
+    if re.search(r"[a-z]+n\s*/\s*[a-z]+n|normali[sz]ed|chondrite|primitive\s*mantle", il):
         return None
     # (1) high-precision: full element name <-> its symbol
     if ol in ELEMENT_NAMES and inner == ELEMENT_NAMES[ol]:

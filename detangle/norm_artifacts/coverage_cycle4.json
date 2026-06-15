@@ -2,13 +2,13 @@
   "cycle": "4",
   "sidecars": 3948,
   "total_entries": 40736,
-  "coverage_pct": 71.17,
+  "coverage_pct": 71.16,
   "by_layer": {
     "L0c": 192,
-    "L1c": 4025,
+    "L1c": 4027,
     "L0": 5191,
-    "L1": 14429,
-    "gloss": 1523,
+    "L1": 14430,
+    "gloss": 1518,
     "co2": 422,
     "isorat": 745,
     "age": 280,
@@ -19,10 +19,10 @@
     "ree": 211,
     "ci": 54
   },
-  "newly_resolved": 20609,
+  "newly_resolved": 20607,
   "already_canonical": 10831,
-  "unmatched_total": 9296,
-  "unmatched_unique": 7384,
+  "unmatched_total": 9298,
+  "unmatched_unique": 7386,
   "top_unmatched": [
     [
       " ",
@@ -499,10 +499,6 @@
       221
     ],
     [
-      "temperature_C",
-      221
-    ],
-    [
       "Y_conc",
       220
     ],
@@ -521,6 +517,10 @@
     [
       "REE_sum",
       212
+    ],
+    [
+      "temperature",
+      209
     ],
     [
       "FeO_wt_pct",
@@ -551,16 +551,16 @@
       169
     ],
     [
-      "La_Yb",
-      166
-    ],
-    [
       "forsterite_content",
       166
     ],
     [
       "He_conc",
       166
+    ],
+    [
+      "La_Yb",
+      165
     ],
     [
       "CO2_3He",
