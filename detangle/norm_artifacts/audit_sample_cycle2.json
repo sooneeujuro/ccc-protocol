@@ -1,0 +1,485 @@
+{
+  "count_total_new_match_labels": 901,
+  "sample": [
+    {
+      "raw_label": "(Ce/Yb)N",
+      "assigned_id": "Ce_Yb_N"
+    },
+    {
+      "raw_label": "(Sm/Nd)N",
+      "assigned_id": "Sm_Nd_N"
+    },
+    {
+      "raw_label": "132Xe",
+      "assigned_id": "Xe132_conc"
+    },
+    {
+      "raw_label": "186Os/188Os",
+      "assigned_id": "Os186_Os188"
+    },
+    {
+      "raw_label": "20Ne",
+      "assigned_id": "Ne20_conc"
+    },
+    {
+      "raw_label": "20Ne/4He",
+      "assigned_id": "Ne20_He4"
+    },
+    {
+      "raw_label": "232Th/204Pb",
+      "assigned_id": "Th232_Pb204"
+    },
+    {
+      "raw_label": "3He abundance",
+      "assigned_id": "He3_conc"
+    },
+    {
+      "raw_label": "40Ar concentration",
+      "assigned_id": "Ar40_conc"
+    },
+    {
+      "raw_label": "40Ar/36Ar ratio",
+      "assigned_id": "Ar40_Ar36"
+    },
+    {
+      "raw_label": "4He/20Ne",
+      "assigned_id": "He4_Ne20"
+    },
+    {
+      "raw_label": "84Kr abundances",
+      "assigned_id": "Kr84_conc"
+    },
+    {
+      "raw_label": "Ag concentration",
+      "assigned_id": "Ag_conc"
+    },
+    {
+      "raw_label": "Al concentration",
+      "assigned_id": "Al_conc"
+    },
+    {
+      "raw_label": "Al2O3 content",
+      "assigned_id": "Al2O3_wt_pct"
+    },
+    {
+      "raw_label": "Al₂O₃ content (wt%)",
+      "assigned_id": "Al2O3_wt_pct"
+    },
+    {
+      "raw_label": "Ar concentration",
+      "assigned_id": "Ar_conc"
+    },
+    {
+      "raw_label": "As content (wt%)",
+      "assigned_id": "As_conc"
+    },
+    {
+      "raw_label": "Ba (ppm)",
+      "assigned_id": "Ba_conc"
+    },
+    {
+      "raw_label": "Ba/Th",
+      "assigned_id": "Ba_Th"
+    },
+    {
+      "raw_label": "Bi (ppm)",
+      "assigned_id": "Bi_conc"
+    },
+    {
+      "raw_label": "Br- concentration",
+      "assigned_id": "Br_conc"
+    },
+    {
+      "raw_label": "CH4",
+      "assigned_id": "CH4_conc"
+    },
+    {
+      "raw_label": "CH₄ concentration",
+      "assigned_id": "CH4_conc"
+    },
+    {
+      "raw_label": "CO abundance",
+      "assigned_id": "CO_conc"
+    },
+    {
+      "raw_label": "CO2 concentration",
+      "assigned_id": "CO2_wt"
+    },
+    {
+      "raw_label": "CO2/3He ratio",
+      "assigned_id": "CO2_3He"
+    },
+    {
+      "raw_label": "CO₂ concentration (mmol/kg)",
+      "assigned_id": "CO2_wt"
+    },
+    {
+      "raw_label": "CO₂/3He ratio",
+      "assigned_id": "CO2_3He"
+    },
+    {
+      "raw_label": "Ca (wt%)",
+      "assigned_id": "Ca_conc"
+    },
+    {
+      "raw_label": "CaO (wt %)",
+      "assigned_id": "CaO_wt_pct"
+    },
+    {
+      "raw_label": "Cd",
+      "assigned_id": "Cd_conc"
+    },
+    {
+      "raw_label": "Ce content (ppm)",
+      "assigned_id": "Ce_conc"
+    },
+    {
+      "raw_label": "Cl (mg/l)",
+      "assigned_id": "Cl_conc"
+    },
+    {
+      "raw_label": "Cl concentrations",
+      "assigned_id": "Cl_conc"
+    },
+    {
+      "raw_label": "Cl− concentration",
+      "assigned_id": "Cl_conc"
+    },
+    {
+      "raw_label": "Cr",
+      "assigned_id": "Cr_conc"
+    },
+    {
+      "raw_label": "Cr#",
+      "assigned_id": "Cr_number"
+    },
+    {
+      "raw_label": "Cr₂O₃",
+      "assigned_id": "Cr2O3_wt_pct"
+    },
+    {
+      "raw_label": "Cs content",
+      "assigned_id": "Cs_conc"
+    },
+    {
+      "raw_label": "Cu content (wt%)",
+      "assigned_id": "Cu_conc"
+    },
+    {
+      "raw_label": "Dy/Yb",
+      "assigned_id": "Dy_Yb"
+    },
+    {
+      "raw_label": "Er concentration",
+      "assigned_id": "Er_conc"
+    },
+    {
+      "raw_label": "Eu/Eu*",
+      "assigned_id": "Eu_anomaly"
+    },
+    {
+      "raw_label": "F-",
+      "assigned_id": "fraction_remaining"
+    },
+    {
+      "raw_label": "Fe (wt.%)",
+      "assigned_id": "Fe_conc"
+    },
+    {
+      "raw_label": "Fe2O3 (wt.%)",
+      "assigned_id": "Fe2O3_wt_pct"
+    },
+    {
+      "raw_label": "Fe2O3t",
+      "assigned_id": "Fe_total_oxide_wt_pct"
+    },
+    {
+      "raw_label": "FeO content",
+      "assigned_id": "FeO_wt_pct"
+    },
+    {
+      "raw_label": "FeOT",
+      "assigned_id": "Fe_total_oxide_wt_pct"
+    },
+    {
+      "raw_label": "Fe₂O₃ content",
+      "assigned_id": "Fe2O3_wt_pct"
+    },
+    {
+      "raw_label": "Fo content (mol.%)",
+      "assigned_id": "forsterite_content"
+    },
+    {
+      "raw_label": "Ga content (ppm)",
+      "assigned_id": "Ga_conc"
+    },
+    {
+      "raw_label": "H2",
+      "assigned_id": "H2_conc"
+    },
+    {
+      "raw_label": "H2O (wt%)",
+      "assigned_id": "H2O_total"
+    },
+    {
+      "raw_label": "H2O-",
+      "assigned_id": "H2O_minus"
+    },
+    {
+      "raw_label": "He (ppm) abundance",
+      "assigned_id": "He_conc"
+    },
+    {
+      "raw_label": "He content",
+      "assigned_id": "He_conc"
+    },
+    {
+      "raw_label": "Ho (ppm)",
+      "assigned_id": "Ho_conc"
+    },
+    {
+      "raw_label": "H₂ contents",
+      "assigned_id": "H2_conc"
+    },
+    {
+      "raw_label": "H₂O content",
+      "assigned_id": "H2O_total"
+    },
+    {
+      "raw_label": "I",
+      "assigned_id": "I_conc"
+    },
+    {
+      "raw_label": "K abundance",
+      "assigned_id": "K_conc"
+    },
+    {
+      "raw_label": "K2O (wt %)",
+      "assigned_id": "K2O_wt_pct"
+    },
+    {
+      "raw_label": "Kr abundance",
+      "assigned_id": "Kr_conc"
+    },
+    {
+      "raw_label": "K₂O (wt.%)",
+      "assigned_id": "K2O_wt_pct"
+    },
+    {
+      "raw_label": "La",
+      "assigned_id": "La_conc"
+    },
+    {
+      "raw_label": "La/Nb",
+      "assigned_id": "La_Nb"
+    },
+    {
+      "raw_label": "Li (mg/kg)",
+      "assigned_id": "Li_conc"
+    },
+    {
+      "raw_label": "Lu (ppm)",
+      "assigned_id": "Lu_conc"
+    },
+    {
+      "raw_label": "Mg (ppm)",
+      "assigned_id": "Mg_conc"
+    },
+    {
+      "raw_label": "Mg-number",
+      "assigned_id": "Mg_number"
+    },
+    {
+      "raw_label": "MgO concentration",
+      "assigned_id": "MgO_wt_pct"
+    },
+    {
+      "raw_label": "Mn (ppm)",
+      "assigned_id": "Mn_conc"
+    },
+    {
+      "raw_label": "MnO",
+      "assigned_id": "MnO_wt_pct"
+    },
+    {
+      "raw_label": "Mo (ppm)",
+      "assigned_id": "Mo_conc"
+    },
+    {
+      "raw_label": "N2 concentrations",
+      "assigned_id": "N2_conc"
+    },
+    {
+      "raw_label": "Na (mg/kg)",
+      "assigned_id": "Na_conc"
+    },
+    {
+      "raw_label": "Na2O (wt %)",
+      "assigned_id": "Na2O_wt_pct"
+    },
+    {
+      "raw_label": "Na₂O (wt. %)",
+      "assigned_id": "Na2O_wt_pct"
+    },
+    {
+      "raw_label": "Nb abundance",
+      "assigned_id": "Nb_conc"
+    },
+    {
+      "raw_label": "Nb/U",
+      "assigned_id": "Nb_U"
+    },
+    {
+      "raw_label": "Ne",
+      "assigned_id": "Ne_conc"
+    },
+    {
+      "raw_label": "Ni (wt.%)",
+      "assigned_id": "Ni_conc"
+    },
+    {
+      "raw_label": "NiO (wt%)",
+      "assigned_id": "NiO_wt_pct"
+    },
+    {
+      "raw_label": "N₂ content",
+      "assigned_id": "N2_conc"
+    },
+    {
+      "raw_label": "O₂",
+      "assigned_id": "O2_conc"
+    },
+    {
+      "raw_label": "P content",
+      "assigned_id": "P_conc"
+    },
+    {
+      "raw_label": "Pb",
+      "assigned_id": "Pb_conc"
+    },
+    {
+      "raw_label": "Pr (ppm)",
+      "assigned_id": "Pr_conc"
+    },
+    {
+      "raw_label": "P₂O₅ content",
+      "assigned_id": "P2O5_wt_pct"
+    },
+    {
+      "raw_label": "Rb",
+      "assigned_id": "Rb_conc"
+    },
+    {
+      "raw_label": "Rb/Sr",
+      "assigned_id": "Rb_Sr"
+    },
+    {
+      "raw_label": "S (ppm)",
+      "assigned_id": "S_conc"
+    },
+    {
+      "raw_label": "SO3 content",
+      "assigned_id": "SO3_wt_pct"
+    },
+    {
+      "raw_label": "Sc (ppm)",
+      "assigned_id": "Sc_conc"
+    },
+    {
+      "raw_label": "Si",
+      "assigned_id": "Si_conc"
+    },
+    {
+      "raw_label": "SiO2 (mg/kg)",
+      "assigned_id": "SiO2_wt_pct"
+    },
+    {
+      "raw_label": "SiO2 content (wt.%)",
+      "assigned_id": "SiO2_wt_pct"
+    },
+    {
+      "raw_label": "SiO₂ content",
+      "assigned_id": "SiO2_wt_pct"
+    },
+    {
+      "raw_label": "Sm/Yb",
+      "assigned_id": "Sm_Yb"
+    },
+    {
+      "raw_label": "Sr concentration",
+      "assigned_id": "Sr_conc"
+    },
+    {
+      "raw_label": "T (°C)",
+      "assigned_id": "temperature_C"
+    },
+    {
+      "raw_label": "Tb",
+      "assigned_id": "Tb_conc"
+    },
+    {
+      "raw_label": "Te (wt.%)",
+      "assigned_id": "Te_conc"
+    },
+    {
+      "raw_label": "Th concentration (ppm)",
+      "assigned_id": "Th_conc"
+    },
+    {
+      "raw_label": "Ti (ppm)",
+      "assigned_id": "Ti_conc"
+    },
+    {
+      "raw_label": "TiO2 (wt %)",
+      "assigned_id": "TiO2_wt_pct"
+    },
+    {
+      "raw_label": "TiO₂",
+      "assigned_id": "TiO2_wt_pct"
+    },
+    {
+      "raw_label": "Tm (ppm)",
+      "assigned_id": "Tm_conc"
+    },
+    {
+      "raw_label": "U content",
+      "assigned_id": "U_conc"
+    },
+    {
+      "raw_label": "W",
+      "assigned_id": "W_conc"
+    },
+    {
+      "raw_label": "Xe concentrations",
+      "assigned_id": "Xe_conc"
+    },
+    {
+      "raw_label": "Y/Nb",
+      "assigned_id": "Y_Nb"
+    },
+    {
+      "raw_label": "Zn (mg/l)",
+      "assigned_id": "Zn_conc"
+    },
+    {
+      "raw_label": "Zr",
+      "assigned_id": "Zr_conc"
+    },
+    {
+      "raw_label": "Zr/Hf",
+      "assigned_id": "Zr_Hf"
+    },
+    {
+      "raw_label": "epsilon Nd",
+      "assigned_id": "epsilon_Nd"
+    },
+    {
+      "raw_label": "pH",
+      "assigned_id": "pH"
+    },
+    {
+      "raw_label": "x",
+      "assigned_id": "He_Ne_air_correction_factor"
+    }
+  ]
+}
