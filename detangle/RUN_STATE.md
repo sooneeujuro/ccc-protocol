@@ -12,11 +12,11 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - **코퍼스(article md/sidecar/index/wiki note)는 git 원격 push 절대 금지(저작권).**
 - 위험단계(force-push·history rewrite·freeze·예산)는 운영자 GO 게이트. 그 전엔 비파괴(읽기+문서)만.
 
-## STATUS: B단계 착수 (작업본 미push 감사)
-- [진행] 홈PC 핸드오프 패킷 작성 완료 → `HOME_PC_AUDIT_TASK.md` + `scripts/audit_home_clone.ps1`. **push 대기(운영자 확인 후)**.
-- [대기] 회사PC 로컬 감사(Cursor 클론·worktree 14개·GCA) — 다음.
-- [대기] Codex 독립 감사 태스크 발행(inbox_codex) — 다음.
-- [대기] 정본 결정표(회사+홈 감사 대조).
+## STATUS: B단계 진행 (작업본 미push 감사)
+- [완료] 홈PC 핸드오프 패킷 작성 + **origin push 완료**(d31ba02) → `HOME_PC_AUDIT_TASK.md` + `scripts/audit_home_clone.ps1`. 홈PC 실행 대기.
+- [완료] 회사PC 로컬 감사 → `reports/COMPANY_AUDIT_RESULT.md`. 결과: code-only 15브랜치 + 코퍼스 1브랜치(sidecar-v2-wikinote-v3 44/194, push금지) + Cursor 잉여(미push 0).
+- [발행] Codex 독립검증 태스크 → `inbox_codex/001_INDEPENDENT_AUDIT.md`. 보고 대기(`inbox_claude/001_CODEX_VERDICT.md`).
+- [대기] 홈PC 감사 결과 → 정본 결정표(회사+홈+Codex 대조).
 
 ## 알려진 미push (감사로 확정 필요)
 - ma `6f36b77` (A3/A6/B8) — 홈PC.
