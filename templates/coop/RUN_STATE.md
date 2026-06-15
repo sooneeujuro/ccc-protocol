@@ -1,9 +1,15 @@
 # RUN_STATE
 
-Status: active
-Project:
-Started:
-Operator:
+<!-- Machine-readable header: automated heartbeats/audits parse these exact keys
+     (key: value at line start). Keep them current. Prose can follow below. -->
+status: active
+phase:
+task:
+project:
+operator:
+started:
+last_claude_heartbeat:
+last_codex_heartbeat:
 
 ## Current Objective
 

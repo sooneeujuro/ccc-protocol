@@ -21,13 +21,22 @@ From a target project repo:
 powershell -ExecutionPolicy Bypass -File C:\Users\USER\Documents\ccc-protocol\scripts\install-ccc.ps1 -ProjectRoot .
 ```
 
-Then tell each agent to read:
+Then **bootstrap each agent with the paste-blocks in [`docs/BOOTSTRAP.md`](docs/BOOTSTRAP.md)**
+— do not just say "read the protocol". Telling an agent the protocol exists is
+the #1 reason co-ops fail (the agent reads it once, then improvises its own
+board). The bootstrap block forces adoption with a read-list + the 6 rules that
+actually break + a confirm action. Each agent should read:
 
 ```text
 coop/PROTOCOL.md
 coop/RUN_STATE.md
 coop/inbox_<agent>/
+coop/chat.md (tail)
 ```
+
+If a run "isn't working", check [`docs/ANTIPATTERNS.md`](docs/ANTIPATTERNS.md) first —
+it lists the observed failure modes (parallel-board drift, prose-instead-of-inbox,
+brittle keyword-STOP, payload in coop/, ...) with fixes.
 
 Use a heartbeat interval such as 5, 10, or 15 minutes. Short intervals are good for hot operations; longer intervals are better for quiet monitoring. For unattended watch mode, use adaptive quiet backoff: 10 minutes, then 30 minutes, then 90 minutes after 3 consecutive no-op checks at each level.
 
