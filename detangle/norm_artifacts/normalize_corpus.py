@@ -47,6 +47,7 @@ TRACE_ELEMENTS = [
     "Li", "Be", "B", "Sc", "V", "Cr", "Co", "Ni", "Cu", "Zn", "Ga", "Ge",
     "As", "Se", "Rb", "Sr", "Y", "Zr", "Nb", "Mo", "Ag", "Cd", "In", "Sn",
     "Sb", "Te", "Cs", "Ba", "Hf", "Ta", "W", "Re", "Tl", "Pb", "Bi", "Th", "U",
+    "Ru", "Rh", "Pd", "Os", "Ir", "Pt", "Au", "Hg",
 ]
 REE = ["La", "Ce", "Pr", "Nd", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu"]
 
@@ -210,7 +211,7 @@ _CORPUS_OVERRIDE = {"F": "F_conc"}           # element wins vs L0 fraction alias
 _CONC_UNIT_RE = re.compile(
     r"(ppm|ppb|ppt|mg\s*/\s*kg|mg\s*/\s*g|[µμu]g\s*/\s*g|ng\s*/\s*g|"
     r"mmol\s*/\s*kg|[µμu]mol\s*/\s*kg|nmol\s*/\s*kg|mol\s*/\s*kg|"
-    r"mg\s*/\s*l|[µμu]g\s*/\s*l|mol\s*%)", re.IGNORECASE)
+    r"[mµμun]?mol\s*/\s*mol|mg\s*/\s*l|[µμu]g\s*/\s*l|mol\s*%)", re.IGNORECASE)
 _CHARGE_TAIL = re.compile(r"(\d+)?\s*[+\-]{1,2}$")
 _AGE_RE = re.compile(r"\bage\b", re.IGNORECASE)
 _TIME_MARKER = re.compile(r"\s*\(\s*t\s*\)\s*$", re.IGNORECASE)
@@ -248,25 +249,37 @@ def _try_ion(folded):
     return None
 
 
+_AGE_METHODS = [
+    (("k-ar", "k/ar"), "age_KAr"),
+    (("ar-ar", "ar/ar", "40ar/39ar", "39ar/40ar"), "age_ArAr"),
+    (("u-pb", "206pb/238u", "207pb/235u", "238u/206pb"), "age_UPb"),
+    (("pb-pb", "207pb/206pb"), "age_PbPb"),
+    (("rb-sr",), "age_RbSr"), (("sm-nd",), "age_SmNd"),
+    (("re-os", "re depletion", "re-depletion", "trd", "t_rd"), "age_ReOs"),
+    (("th-pb", "208pb/232th"), "age_ThPb"),
+    (("fission track", "fission-track", "ft age"), "age_FT"),
+    (("3h/3he", "3h-3he", "tritium"), "age_3H3He"),
+    (("(u-th)/he", "u-th/he", "(u-th)-he"), "age_UThHe"),
+    (("14c", "radiocarbon"), "age_14C"),
+]
+# generic 'age' only when 'age' is the trailing concept (ends with age, or age + unit/paren).
+# rejects "Age grid misfit", "average", etc.
+_AGE_TAIL_RE = re.compile(
+    r"\bage\b[\s)\]]*$"
+    r"|\bage\b\s*(\([^)]*\)|[:=]?\s*-?\d|\s+(ma|ka|ga|myr|kyr|gyr|yr|years?|b\.?p\.?))",
+    re.IGNORECASE)
+
+
 def _try_age(folded):
     if not _AGE_RE.search(folded):
         return None
     low = folded.lower()
-    pairs = [
-        (("k-ar", "k/ar"), "age_KAr"),
-        (("ar-ar", "ar/ar", "40ar/39ar"), "age_ArAr"),
-        (("u-pb", "206pb/238u", "207pb/235u", "238u/206pb"), "age_UPb"),
-        (("pb-pb", "207pb/206pb"), "age_PbPb"),
-        (("rb-sr",), "age_RbSr"), (("sm-nd",), "age_SmNd"),
-        (("re-os",), "age_ReOs"), (("th-pb", "208pb/232th"), "age_ThPb"),
-        (("fission track", "ft age"), "age_FT"),
-        (("(u-th)/he", "u-th/he", "he age"), "age_UThHe"),
-        (("14c", "radiocarbon"), "age_14C"),
-    ]
-    for keys, vid in pairs:
+    for keys, vid in _AGE_METHODS:
         if any(k in low for k in keys):
             return vid
-    return "age"
+    if _AGE_TAIL_RE.search(folded):
+        return "age"
+    return None
 
 
 def _try_co2(raw_label, unit):
@@ -311,6 +324,139 @@ def l2_clean(raw: str) -> str:
     s = re.sub(r"\s+", " ", s).strip()
     s = s.strip(" :=-")
     return s
+
+
+# ---------------------------------------------------------------------------
+# cycle 4 (PENDING Codex 007 greenlight) — generic ratio / isotope ratio / gloss / CI.
+# Wired into normalize_variable as fallback steps, gated by CYCLE4_ENABLED.
+# These only resolve currently-unmatched labels (never override existing matches).
+# ---------------------------------------------------------------------------
+CYCLE4_ENABLED = True   # activated cycle-4 wake (self-audit clean; Codex retroactive gate)
+
+_ISO_GAS_LABELS = {"3He", "4He", "20Ne", "21Ne", "22Ne", "36Ar", "38Ar", "40Ar",
+                   "84Kr", "129Xe", "130Xe", "132Xe", "136Xe"}
+_RATIO_TOKENS = (_ELEMENT_SET | set(MAJOR_OXIDES) | set(GAS_SPECIES) | set(REE)
+                 | _ISO_GAS_LABELS | {"CO2", "H2O", "CH4"})
+_ISO_ELEMENTS = {
+    "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si",
+    "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni",
+    "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr", "Nb",
+    "Mo", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te", "I", "Xe", "Cs",
+    "Ba", "La", "Ce", "Pr", "Nd", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm",
+    "Yb", "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb",
+    "Bi", "Th", "U",
+}
+_PHASE_UNIT_WORDS = {
+    "water", "rock", "mineral", "fluid", "gas", "seawater", "porewater", "pore water",
+    "carbonate", "olivine", "clinopyroxene", "orthopyroxene", "cpx", "opx",
+    "plagioclase", "plag", "glass", "melt", "whole rock", "wr", "bulk", "groundmass",
+    "matrix", "vapor", "liquid", "aqueous", "dissolved", "smow", "vsmow", "pdb",
+    "vpdb", "cdt", "permil", "per mil", "r/ra", "ra", "n",
+}
+_UNIT_SLASH_RE = re.compile(
+    r"^(mg|µg|μg|ug|ng|pg|g|kg|mol|mmol|µmol|umol|nmol|pmol|cm|km|m|l|ml)\s*/\s*"
+    r"(kg|g|mg|l|ml|s|m|cm|yr|a|mol)$", re.IGNORECASE)
+_PHYS_RATIO = {"vp/vs", "vs/vp", "p/s", "s/p"}
+_ISO_RATIO_RE = re.compile(r"^(\d{1,3})([A-Z][a-z]?)\s*/\s*(\d{1,3})([A-Z][a-z]?)$")
+
+
+def _try_isotope_ratio(folded):
+    m = _ISO_RATIO_RE.match(folded)
+    if not m:
+        return None
+    m1, e1, m2, e2 = m.groups()
+    if e1 in _ISO_ELEMENTS and e2 in _ISO_ELEMENTS:
+        return f"{e1}{m1}_{e2}{m2}"
+    return None
+
+
+def _try_generic_ratio(folded):
+    if folded.count("/") != 1:
+        return None
+    if _UNIT_SLASH_RE.match(folded) or folded.lower() in _PHYS_RATIO:
+        return None
+    a, b = (t.strip() for t in folded.split("/"))
+    if a in _RATIO_TOKENS and b in _RATIO_TOKENS:
+        return f"{a}_{b}"
+    return None
+
+
+ELEMENT_NAMES = {
+    "hydrogen": "H", "helium": "He", "lithium": "Li", "beryllium": "Be", "boron": "B",
+    "carbon": "C", "nitrogen": "N", "oxygen": "O", "fluorine": "F", "neon": "Ne",
+    "sodium": "Na", "magnesium": "Mg", "aluminium": "Al", "aluminum": "Al",
+    "silicon": "Si", "phosphorus": "P", "sulfur": "S", "sulphur": "S", "chlorine": "Cl",
+    "argon": "Ar", "potassium": "K", "calcium": "Ca", "scandium": "Sc", "titanium": "Ti",
+    "vanadium": "V", "chromium": "Cr", "manganese": "Mn", "iron": "Fe", "cobalt": "Co",
+    "nickel": "Ni", "copper": "Cu", "zinc": "Zn", "gallium": "Ga", "germanium": "Ge",
+    "arsenic": "As", "selenium": "Se", "bromine": "Br", "krypton": "Kr", "rubidium": "Rb",
+    "strontium": "Sr", "yttrium": "Y", "zirconium": "Zr", "niobium": "Nb",
+    "molybdenum": "Mo", "ruthenium": "Ru", "rhodium": "Rh", "palladium": "Pd",
+    "silver": "Ag", "cadmium": "Cd", "indium": "In", "tin": "Sn", "antimony": "Sb",
+    "tellurium": "Te", "iodine": "I", "xenon": "Xe", "caesium": "Cs", "cesium": "Cs",
+    "barium": "Ba", "lanthanum": "La", "cerium": "Ce", "praseodymium": "Pr",
+    "neodymium": "Nd", "samarium": "Sm", "europium": "Eu", "gadolinium": "Gd",
+    "terbium": "Tb", "dysprosium": "Dy", "holmium": "Ho", "erbium": "Er", "thulium": "Tm",
+    "ytterbium": "Yb", "lutetium": "Lu", "hafnium": "Hf", "tantalum": "Ta",
+    "tungsten": "W", "rhenium": "Re", "osmium": "Os", "iridium": "Ir", "platinum": "Pt",
+    "gold": "Au", "mercury": "Hg", "thallium": "Tl", "lead": "Pb", "bismuth": "Bi",
+    "thorium": "Th", "uranium": "U",
+}
+# paren that re-qualifies the meaning -> outer is NOT the bare element/variable
+_QUALIFIER_WORDS = re.compile(
+    r"\b(coefficient|partition|polydispersity|amplitude|kappa|model|parameter|"
+    r"index|excess|normali[sz]ed|fraction|misfit|grid|enrichment|disequilibrium|"
+    r"deficit|apparent|stage|two-stage)\b", re.IGNORECASE)
+
+
+def _try_gloss(folded):
+    m = re.match(r"^(.*?)\s*\(([^()]+)\)\s*$", folded)   # single, non-nested paren at end
+    if not m:
+        return None
+    outer, inner = m.group(1).strip(), m.group(2).strip()
+    il, ol = inner.lower(), outer.lower()
+    # never strip phase/unit/context parens
+    if (il in _PHASE_UNIT_WORDS or _has_conc_unit(inner, None)
+            or _UNIT_PAREN.search(f"({inner})") or "permil" in il or "%" in inner):
+        return None
+    # (1) high-precision: full element name <-> its symbol
+    if ol in ELEMENT_NAMES and inner == ELEMENT_NAMES[ol]:
+        return f"{inner}_conc"
+    if il in ELEMENT_NAMES and outer == ELEMENT_NAMES[il]:
+        return f"{outer}_conc"
+    # (2) outer IS the variable and the paren is a plain gloss (no meaning-changing qualifier)
+    if not _QUALIFIER_WORDS.search(folded):
+        if outer in _L1_INDEX:
+            return _L1_INDEX[outer]
+        v = L0.normalize_axis(outer)
+        if v:
+            return v
+    return None
+
+
+_L1_CI = {k.lower(): v for k, v in _L1_INDEX.items()
+          if (" " in k or (len(k) >= 5 and k.isalpha()))}
+
+
+def _try_ci(folded):
+    return _L1_CI.get(folded.lower())
+
+
+def _cycle4(folded):
+    """Fallback resolution (cycle 4). Returns (id, tag) or (None, None)."""
+    v = _try_isotope_ratio(folded)
+    if v:
+        return v, "isorat"
+    v = _try_generic_ratio(folded)
+    if v:
+        return v, "genrat"
+    v = _try_gloss(folded)
+    if v:
+        return v, "gloss"
+    v = _try_ci(folded)
+    if v:
+        return v, "ci"
+    return None, None
 
 
 # ---------------------------------------------------------------------------
@@ -365,6 +511,11 @@ def normalize_variable(raw_label, unit=None, phase=None):
     # 7. L2 structural clean, then retry L0 then L1
     cleaned = l2_clean(raw_label)
     if cleaned and cleaned != folded:
+        # re-apply pre-passes on cleaned so unit-stripped "F (ppm)"->"F" can't hit L0 fraction alias
+        if cleaned in _BLOCKLIST:
+            return None, "blocked"
+        if cleaned in _CORPUS_OVERRIDE:
+            return _CORPUS_OVERRIDE[cleaned], "ovr"
         vid = L0.normalize_axis(cleaned)
         if vid and accept(vid):
             return vid, "L0c"
@@ -372,6 +523,15 @@ def normalize_variable(raw_label, unit=None, phase=None):
             v = accept(_L1_INDEX[cleaned])
             if v:
                 return v, "L1c"
+    # 8. cycle 4 fallbacks (only when greenlit; never overrides existing matches)
+    if CYCLE4_ENABLED:
+        v, tag = _cycle4(folded)
+        if v:
+            return v, tag
+        if cleaned and cleaned != folded:
+            v, tag = _cycle4(cleaned)
+            if v:
+                return v, tag
     return None, "none"
 
 

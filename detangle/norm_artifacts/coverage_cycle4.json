@@ -1,0 +1,589 @@
+{
+  "cycle": "4",
+  "sidecars": 3948,
+  "total_entries": 40736,
+  "coverage_pct": 71.19,
+  "by_layer": {
+    "L0c": 192,
+    "L1c": 4008,
+    "L0": 5191,
+    "L1": 14424,
+    "gloss": 1531,
+    "co2": 422,
+    "isorat": 745,
+    "age": 280,
+    "ovr": 69,
+    "ion": 578,
+    "genrat": 1246,
+    "ree": 258,
+    "ci": 54
+  },
+  "newly_resolved": 20626,
+  "already_canonical": 10831,
+  "unmatched_total": 9279,
+  "unmatched_unique": 7376,
+  "top_unmatched": [
+    [
+      " ",
+      25
+    ],
+    [
+      "SiO2",
+      23
+    ],
+    [
+      "Na2O + K2O",
+      19
+    ],
+    [
+      "CO₂ flux",
+      16
+    ],
+    [
+      "N concentration",
+      16
+    ],
+    [
+      "CO2 flux",
+      16
+    ],
+    [
+      "\"",
+      16
+    ],
+    [
+      "δ34S",
+      15
+    ],
+    [
+      "Vp/Vs ratio",
+      15
+    ],
+    [
+      "Forsterite (Fo)",
+      15
+    ],
+    [
+      "P-wave velocity (Vp)",
+      14
+    ],
+    [
+      "Mg# (Mg/(Mg+Fe))",
+      14
+    ],
+    [
+      "epsilon_Nd",
+      14
+    ],
+    [
+      "Bouguer gravity anomaly",
+      13
+    ],
+    [
+      "3H (tritium)",
+      11
+    ],
+    [
+      "water temperature",
+      11
+    ],
+    [
+      "electrical conductivity (EC)",
+      11
+    ],
+    [
+      "d-excess",
+      11
+    ],
+    [
+      "DIC (dissolved inorganic carbon)",
+      11
+    ],
+    [
+      "Total dissolved solids (TDS)",
+      10
+    ],
+    [
+      "Density",
+      10
+    ],
+    [
+      "epsilon_Nd(t)",
+      10
+    ],
+    [
+      "S-wave velocity (Vs)",
+      10
+    ],
+    [
+      "Heat flow",
+      10
+    ],
+    [
+      "K-Ar ages",
+      9
+    ],
+    [
+      "trace elements",
+      9
+    ],
+    [
+      "DIC concentration",
+      9
+    ],
+    [
+      "D/H ratio",
+      9
+    ],
+    [
+      "heat flow",
+      9
+    ],
+    [
+      "SiO2 concentration",
+      9
+    ],
+    [
+      "epsilon_Hf(t)",
+      9
+    ],
+    [
+      "potential temperature",
+      9
+    ],
+    [
+      "epsilon_Nd (εNd)",
+      9
+    ],
+    [
+      "tritium (3H)",
+      9
+    ],
+    [
+      "SO₂ flux",
+      8
+    ],
+    [
+      "Rayleigh wave phase velocity",
+      8
+    ],
+    [
+      "Sr/Sr*",
+      8
+    ],
+    [
+      "40Ar/39Ar ages",
+      8
+    ],
+    [
+      "P-wave velocity",
+      8
+    ],
+    [
+      "La/Yb (chondrite-normalized)",
+      8
+    ],
+    [
+      "magnetic anomaly",
+      8
+    ],
+    [
+      "SiO₂",
+      8
+    ],
+    [
+      "Fe3+/ΣFe",
+      8
+    ],
+    [
+      "Total Dissolved Solids (TDS)",
+      8
+    ],
+    [
+      "porosity",
+      8
+    ],
+    [
+      "δ17O",
+      8
+    ],
+    [
+      "temperature anomaly",
+      8
+    ],
+    [
+      "Ti/Ti*",
+      7
+    ],
+    [
+      "δ13C",
+      7
+    ],
+    [
+      "SiO2 wt%",
+      7
+    ],
+    [
+      "vesicularity",
+      7
+    ],
+    [
+      "Porosity",
+      7
+    ],
+    [
+      "SO2 flux",
+      7
+    ],
+    [
+      "Cr# (Cr/(Cr+Al))",
+      7
+    ],
+    [
+      "Na8",
+      7
+    ],
+    [
+      "Electrical conductivity (EC)",
+      7
+    ],
+    [
+      "S-wave velocity",
+      7
+    ],
+    [
+      "SO2 concentration",
+      7
+    ],
+    [
+      "MgO wt%",
+      7
+    ],
+    [
+      "Na2O+K2O",
+      7
+    ],
+    [
+      "epsilon_Hf",
+      7
+    ],
+    [
+      "Ni in olivine",
+      7
+    ],
+    [
+      "\n",
+      7
+    ],
+    [
+      "electrical conductivity",
+      7
+    ],
+    [
+      "LREE/HREE",
+      7
+    ],
+    [
+      "Spinel Cr#",
+      6
+    ],
+    [
+      "CO2 density",
+      6
+    ],
+    [
+      "^4He concentration",
+      6
+    ],
+    [
+      "dissolved inorganic carbon (DIC)",
+      6
+    ],
+    [
+      "Water content (H2O)",
+      6
+    ],
+    [
+      "Crystal size distribution (CSD)",
+      6
+    ],
+    [
+      "Free-air gravity anomaly",
+      6
+    ],
+    [
+      "water content",
+      6
+    ],
+    [
+      "Total Organic Carbon (TOC)",
+      6
+    ],
+    [
+      "Δ₄₈",
+      6
+    ],
+    [
+      "CaO in olivine",
+      6
+    ],
+    [
+      "melt fraction",
+      6
+    ],
+    [
+      "Mg# (clinopyroxene)",
+      6
+    ],
+    [
+      "Fe8",
+      6
+    ],
+    [
+      "4He flux",
+      6
+    ]
+  ],
+  "top_ids": [
+    [
+      "He3_He4_RRa",
+      863
+    ],
+    [
+      "Sr87_Sr86",
+      799
+    ],
+    [
+      "SiO2_wt_pct",
+      686
+    ],
+    [
+      "MgO_wt_pct",
+      666
+    ],
+    [
+      "Nd143_Nd144",
+      656
+    ],
+    [
+      "d18O_rock",
+      650
+    ],
+    [
+      "Al2O3_wt_pct",
+      510
+    ],
+    [
+      "CaO_wt_pct",
+      488
+    ],
+    [
+      "Pb206_Pb204",
+      479
+    ],
+    [
+      "Pb207_Pb204",
+      446
+    ],
+    [
+      "Pb208_Pb204",
+      444
+    ],
+    [
+      "TiO2_wt_pct",
+      438
+    ],
+    [
+      "K2O_wt_pct",
+      434
+    ],
+    [
+      "Na2O_wt_pct",
+      419
+    ],
+    [
+      "He4_Ne20",
+      409
+    ],
+    [
+      "Sr_conc",
+      403
+    ],
+    [
+      "Ar40_Ar36",
+      396
+    ],
+    [
+      "Ba_conc",
+      327
+    ],
+    [
+      "Ni_conc",
+      315
+    ],
+    [
+      "Zr_conc",
+      310
+    ],
+    [
+      "Ne20_Ne22",
+      294
+    ],
+    [
+      "La_conc",
+      290
+    ],
+    [
+      "Nb_conc",
+      288
+    ],
+    [
+      "CO2_conc",
+      285
+    ],
+    [
+      "Rb_conc",
+      276
+    ],
+    [
+      "Mg_number",
+      267
+    ],
+    [
+      "Cr_conc",
+      264
+    ],
+    [
+      "Th_conc",
+      264
+    ],
+    [
+      "REE_sum",
+      259
+    ],
+    [
+      "Ce_conc",
+      258
+    ],
+    [
+      "He4_conc",
+      255
+    ],
+    [
+      "Nd_conc",
+      252
+    ],
+    [
+      "Cl_conc",
+      251
+    ],
+    [
+      "P2O5_wt_pct",
+      242
+    ],
+    [
+      "CH4_conc",
+      238
+    ],
+    [
+      "Yb_conc",
+      236
+    ],
+    [
+      "U_conc",
+      232
+    ],
+    [
+      "Ne21_Ne22",
+      227
+    ],
+    [
+      "H2O_total",
+      221
+    ],
+    [
+      "temperature_C",
+      221
+    ],
+    [
+      "Y_conc",
+      220
+    ],
+    [
+      "Sm_conc",
+      218
+    ],
+    [
+      "MnO_wt_pct",
+      217
+    ],
+    [
+      "Ca_conc",
+      213
+    ],
+    [
+      "FeO_wt_pct",
+      202
+    ],
+    [
+      "Mg_conc",
+      186
+    ],
+    [
+      "pH",
+      184
+    ],
+    [
+      "epsilon_Nd",
+      176
+    ],
+    [
+      "Pb_conc",
+      174
+    ],
+    [
+      "Hf_conc",
+      172
+    ],
+    [
+      "K_conc",
+      169
+    ],
+    [
+      "La_Yb",
+      166
+    ],
+    [
+      "forsterite_content",
+      166
+    ],
+    [
+      "He_conc",
+      166
+    ],
+    [
+      "CO2_3He",
+      165
+    ],
+    [
+      "N2_conc",
+      163
+    ],
+    [
+      "Eu_conc",
+      162
+    ],
+    [
+      "Ta_conc",
+      158
+    ],
+    [
+      "V_conc",
+      157
+    ],
+    [
+      "Na_conc",
+      155
+    ]
+  ]
+}
