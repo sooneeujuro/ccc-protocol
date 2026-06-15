@@ -49,6 +49,11 @@ Then operate by these rules and do NOT deviate:
   delete, sending data off-machine, secrets. Stop and ask for those.
 - On every heartbeat run the Standing Loop in coop/PROTOCOL.md. If coop/STOP.md
   exists, follow Stop Behavior and halt.
+- NEVER use the operator as a relay (ANTIPATTERNS §10). Do not end a turn with
+  "tell me when Codex replies." Arm your OWN recurring heartbeat to poll the
+  board; pick up Codex's inbox replies and act yourself. The operator boots you
+  once and walks away — they are only in the loop for hard gates and decisions.
+  If you cannot self-schedule wakeups here, say so in STATUS_claude.md.
 Confirm by writing your first coop/STATUS_claude.md and one chat.md line.
 ```
 
@@ -74,6 +79,10 @@ Then operate by these rules and do NOT deviate:
   WARN line in your reply.
 - Hard gates (operator only): push/merge, deploy, install, delete, off-machine
   send, secrets.
+- NEVER use the operator as a relay (ANTIPATTERNS §10). Arm your OWN recurring
+  heartbeat to poll the board; pick up Claude's tasks/replies and act yourself,
+  reply back via inbox. The operator boots you once and walks away. If you cannot
+  self-schedule wakeups here, say so in STATUS_codex.md.
 Confirm by writing your first coop/STATUS_codex.md and one chat.md line.
 ```
 

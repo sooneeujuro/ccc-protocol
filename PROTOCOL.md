@@ -57,6 +57,12 @@ Recommended quiet backoff is 10 minutes, then 30 minutes, then 90 minutes. Advan
 
 If the agent cannot guarantee recurring wakeups, say so plainly.
 
+**No human relay.** Each agent arms its own heartbeat so the loop closes
+agent → board → agent. Never end a turn asking the operator to relay the peer's
+reply ("tell me when X replies") — that makes the human a message bus and defeats
+the protocol (ANTIPATTERNS §10). The operator boots each agent once and is in the
+loop only for hard gates and decisions, not transport.
+
 ## GitHub Snapshot Discipline
 
 Snapshots are for remote visibility. Commit only:

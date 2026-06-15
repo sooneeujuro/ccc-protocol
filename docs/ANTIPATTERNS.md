@@ -70,3 +70,18 @@ exists, so it silently goes idle.
 `chat.md`/inbox, acting on outdated assumptions.
 **Fix:** the Standing Loop reads STOP → chat tail → inbox → operator commands
 *before* doing work. Always.
+
+## 10. Operator-as-relay (defeats the whole point)
+**Symptom:** an agent ends its turn with "run the other agent and tell me when
+its reply lands," or otherwise waits for the human to ferry messages between the
+two agents. The operator becomes a manual message bus — exactly what CCCP exists
+to remove. The loop never actually closes on its own.
+**Fix:** the message path is **agent → board → agent**, never
+**agent → operator → agent**. Each agent arms its OWN recurring heartbeat (cron /
+scheduled wakeup / loop) that polls the board, picks up the peer's inbox replies,
+acts, and replies back — with no human in the path. The operator only kicks off
+the run (boots each agent once) and walks away; they are not the transport.
+If an agent cannot self-schedule wakeups on its platform, it says so plainly in
+`STATUS_<agent>.md` (see §7) instead of silently delegating the polling to the
+human. The operator stays in the loop ONLY for hard gates (merge/deploy/install/
+delete/secrets) and genuine decisions — not for relaying.
