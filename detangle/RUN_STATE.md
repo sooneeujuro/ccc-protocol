@@ -29,10 +29,10 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 
 ## 다음 (운영자 GO 게이트) — 운영자 "다" GO (2026-06-15 21:3x)
 1. ✅ P0 ma main 가드 머지됨. 남은 P0: out* 215MB 실물 처분(NAS 이동/삭제 — 운영자 확인).
-2. **[발행] 홈 작업 처분 3결정 모두 GO** → `HOME_TASK2_PRESERVE_AND_DIFF.md`(노트북) + `inbox_codex/003`(Codex):
-   - ① 홈 고유 *문서* → ma main clean cherry-pick(`docs/home-detangle-records` PR). 코드/코퍼스 제외.
-   - ② A3/A6/B8 코드 = **폐기 확정**(main 보유 + F: 번들). 작업 0.
-   - ③ A4/A5 = 홈PC가 impl-diff 추출 → Codex가 살릴 delta 판정(`inbox_codex/003`).
+2. **[✅홈PC TASK2 완료]** (`inbox_claude/004_HOME_TASK2_DONE.md`):
+   - ① 홈 고유 *문서* → **PR #14** `docs/home-detangle-records`(289 files, docs only, 코드·코퍼스 0). 머지 클릭=운영자.
+   - ② A3/A6/B8 코드 = **폐기 확정** ✅ (main 보유 + F: 번들).
+   - ③ A4/A5 impl-diff 추출 완료 → `scratch/A4A5_home_vs_origin.diff` + 분석. **결론: origin 대체로 동급~우월, 홈에 잠재회귀(statistics null→0 강제 / piperToMeqPercent 중복화). 살릴 delta = verify 스크립트 3개뿐.** → Codex `inbox_codex/003` 교차검증 대기.
 3. ✅ **축 A 가드 Codex VERDICT=ok**(13/13 잡고 오차단 0, advisory 2건 반영). → repo별 가드 적용은 GO 게이트. 코퍼스 NAS 정본(NAS up 후).
 4. Cursor·codes 잉여 제거 + worktree prune.
 5. [GO] 코퍼스 history rewrite → GCA freeze.
@@ -47,3 +47,4 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - 2026-06-15 19:4x — 브랜치 생성 + 홈PC 핸드오프 작성(Claude/회사PC).
 - 2026-06-15 20:27 — 홈PC(`soone`) Claude 감사 완료. read-only 스크립트 3 repo 실행 → `reports/HOME_AUDIT_RESULT.md` + `inbox_claude/002_HOME_AUDIT_DONE.md`. 최고 발견=ma untracked 코퍼스 노출(§LANDMINE).
 - 2026-06-15 21:2x — 홈PC Claude, 운영자 "다 하셈" GO 실행. ✅P0 ma main 머지(PR#13). 🛑senpai/A4A5 push 시도→둘 다 diverged+중복 발견(`reports/HOME_PUSH_ATTEMPT_FINDINGS.md`), 번들 백업(F:). audit 방법 결함(분기 미탐) 보고. **노트북 SSD=F:**(문서 G:는 회사기준).
+- 2026-06-15 21:5x — 홈PC Claude TASK2 완료. ①문서보존 PR#14(289 docs) ②A3/A6/B8 폐기확정 ③A4/A5 impl-diff(`scratch/A4A5_home_vs_origin.diff`)→origin 우월/홈 잠재회귀, salvage=verify 3개. geochem 커밋 0(diff만). `inbox_claude/004`.
