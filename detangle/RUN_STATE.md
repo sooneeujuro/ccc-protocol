@@ -28,7 +28,7 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - [⚠️결함] **audit 방법**: `--not --remotes=origin`은 분기 미탐지 → 결정표 정정 필요. `audit_home_clone.ps1`에 ahead/behind(`--left-right`) + FF판정 추가 권고.
 
 ## 다음 (운영자 GO 게이트) — 운영자 "다" GO (2026-06-15 21:3x)
-1. ✅ P0 ma main 가드 머지됨. 남은 P0: out* 215MB 실물 처분(NAS 이동/삭제 — 운영자 확인).
+1. ✅ P0 **완전 해소**: ma main 가드 머지(PR#13) + **out* 215MB 격리 완료**(홈PC, `F:\corpus_quarantine\fig_refill_out_20260613`, MOVE 무손실 5,619 files, `inbox_claude/005`). NAS up 시 ledger 대조 후 격리본 삭제/이동(별개·나중).
 2. **[✅홈PC TASK2 완료]** (`inbox_claude/004_HOME_TASK2_DONE.md`):
    - ① 홈 고유 *문서* → **PR #14** `docs/home-detangle-records`(289 files, docs only, 코드·코퍼스 0). 머지 클릭=운영자.
    - ② A3/A6/B8 코드 = **폐기 확정** ✅ (main 보유 + F: 번들).
@@ -49,4 +49,5 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - 2026-06-15 21:2x — 홈PC Claude, 운영자 "다 하셈" GO 실행. ✅P0 ma main 머지(PR#13). 🛑senpai/A4A5 push 시도→둘 다 diverged+중복 발견(`reports/HOME_PUSH_ATTEMPT_FINDINGS.md`), 번들 백업(F:). audit 방법 결함(분기 미탐) 보고. **노트북 SSD=F:**(문서 G:는 회사기준).
 - 2026-06-15 21:5x — 홈PC Claude TASK2 완료. ①문서보존 PR#14(289 docs) ②A3/A6/B8 폐기확정 ③A4/A5 impl-diff(`scratch/A4A5_home_vs_origin.diff`)→origin 우월/홈 잠재회귀, salvage=verify 3개. geochem 커밋 0(diff만). `inbox_claude/004`.
 - 2026-06-15 22:3x — Codex 003 VERDICT=issues_found: 홈 A4/A5 wholesale 폐기, **단 반례=origin에 미수정 raw injection sink ~13곳** → 보안 salvage 있음.
+- 2026-06-15 22:5x — 홈PC Claude TASK3 완료: out* 215MB **격리**(MOVE, 삭제아님) → `F:\corpus_quarantine\fig_refill_out_20260613`. 무손실(5,619 files, DST=SRC), git status 깨끗, 범위밖 untracked·FINAL_REPORT 무접촉, 커밋 0. P0 실물까지 해소. `inbox_claude/005`.
 - 2026-06-15 22:51 — 회사PC Claude, 운영자 GO("A"). **A5 sink-hardening 패치 구현 완료** → geochem 브랜치 `claude/harden-export-sinks`(`64c393ae`, 2파일: python-export·ternary-piper-export). pyQuote/pyStr/safeColor/pyDocSafe로 raw sink 무력화. origin presetOverride·spec.name escape·piperToMeqPercent 보존. **tsc clean + 주입테스트 통과**(code sink 전부 escape). p1=main에 이미 merge라 main PR 깨끗. **미push — deploy 게이트(운영자: push+PR#→Vercel redeploy).** salvage 잔여=verify 스크립트 3개(홈 F: 번들서 추출 후 포팅). +발견: geochem 워킹트리 untracked 코퍼스(wiki/papers/Fischer…·새 폴더) → 축A 가드 대상.
