@@ -4,6 +4,9 @@ This is the reusable root protocol for Codex-Claude file-based co-op.
 
 Copy or install `templates/coop/` into each target project. The target project's `coop/PROTOCOL.md` is the operational source of truth for that run.
 
+**Before a run:** bootstrap each agent with the paste-blocks in [`docs/BOOTSTRAP.md`](docs/BOOTSTRAP.md)
+(adoption is the #1 failure point — see [`docs/ANTIPATTERNS.md`](docs/ANTIPATTERNS.md)).
+
 ## Required Channels
 
 - `coop/chat.md`: append-only informal channel.
@@ -54,6 +57,12 @@ Recommended quiet backoff is 10 minutes, then 30 minutes, then 90 minutes. Advan
 
 If the agent cannot guarantee recurring wakeups, say so plainly.
 
+**No human relay.** Each agent arms its own heartbeat so the loop closes
+agent → board → agent. Never end a turn asking the operator to relay the peer's
+reply ("tell me when X replies") — that makes the human a message bus and defeats
+the protocol (ANTIPATTERNS §10). The operator boots each agent once and is in the
+loop only for hard gates and decisions, not transport.
+
 ## GitHub Snapshot Discipline
 
 Snapshots are for remote visibility. Commit only:
@@ -71,6 +80,13 @@ Do not commit:
 - huge generated artifacts
 - local environment dumps
 
+## RUN_STATE machine-readable header
+
+`coop/RUN_STATE.md` must begin with parseable `key: value` lines (at line start):
+`status`, `phase`, `task`, `last_claude_heartbeat`, `last_codex_heartbeat`.
+Automated heartbeats/audits read those exact keys; prose follows below. A run
+whose watcher reports `status: unknown` has lost this header.
+
 ## Stop Behavior
 
 If `coop/STOP.md` exists:
@@ -79,3 +95,10 @@ If `coop/STOP.md` exists:
 2. Write a final summary to `coop/inbox_<other_agent>/FINAL_SUMMARY.md`.
 3. Append one line to `coop/chat.md`.
 4. Do not continue polling unless the operator explicitly resumes.
+
+A STOP must name a **specific, checkable violation** and state how it clears —
+never a raw keyword match (see ANTIPATTERNS.md §4). The operator may always clear
+a STOP; an agent may clear a STOP it raised once the named condition is resolved,
+leaving a note. Do not regenerate a STOP each heartbeat for a condition that is
+acknowledged in `RUN_STATE.md` or true by design — downgrade it to a `WARN` line
+in the reply instead.
