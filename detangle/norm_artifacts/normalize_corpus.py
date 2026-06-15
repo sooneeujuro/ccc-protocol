@@ -73,6 +73,12 @@ EXTRA_ISOTOPE_ALIASES = {
     "d37Cl": ["d37Cl", "δ37Cl"], "d15N_bare": ["d15N", "δ15N"],
     "d34S": ["d34S", "δ34S"], "d33S": ["d33S", "δ33S"], "d36S": ["d36S", "δ36S"],
     "d17O": ["d17O", "δ17O"], "d2H": ["d2H", "δ2H"],
+    # bare species-specific deltas (no permil unit) -> L0 species ids (Codex 012 tail recovery)
+    "d13C_CO2": ["d13C-CO2", "d13C of CO2", "d13CO2", "d13C (CO2)", "d13C-CO₂"],
+    "d13C_CH4": ["d13C-CH4", "d13C of CH4", "d13C (CH4)"],
+    "dD_CH4": ["dD-CH4", "dD of CH4", "D-CH4"],
+    "d13C_carbonate": ["d13C-carbonate", "d13C of carbonate", "d13Ccarb"],
+    "d13C_DIC": ["d13C-DIC", "d13C of DIC", "d13CDIC"],
     "epsilon_Nd": ["eNd", "εNd", "epsilon Nd", "epsilon-Nd", "ENd", "epsilon_Nd",
                    "epsilon_Nd (εNd)", "epsilon Nd (εNd)"],
     "epsilon_Hf": ["eHf", "εHf", "epsilon Hf", "epsilon-Hf", "EHf", "epsilon_Hf"],
@@ -112,6 +118,10 @@ REE_SUMS = {
 ANOMALIES = {
     "Eu_anomaly": ["Eu/Eu*", "Eu/Eu", "Eu*", "(Eu/Eu*)"],
     "Ce_anomaly": ["Ce/Ce*", "Ce/Ce", "Ce*", "(Ce/Ce*)"],
+    "Sr_anomaly": ["Sr/Sr*", "Sr*"], "Ti_anomaly": ["Ti/Ti*", "Ti*"],
+    "Nb_anomaly": ["Nb/Nb*", "Nb*"], "Hf_anomaly": ["Hf/Hf*", "Hf*"],
+    "Zr_anomaly": ["Zr/Zr*", "Zr*"], "W_anomaly": ["W/W*", "W*"],
+    "Pb_anomaly": ["Pb/Pb*"], "Y_anomaly": ["Y/Y*"],
 }
 MINERAL_INDICES = {
     "forsterite_content": ["Fo", "Fo#", "forsterite", "Fo content",
@@ -124,7 +134,10 @@ MINERAL_INDICES = {
     "albite_content": ["Ab"], "Cr_number": ["Cr#", "Cr-number", "Cr number"],
 }
 PHYS_ALIASES = {
-    "temperature": ["Temperature", "temperature", "Temp", "Temp.", "Temperature (T)"],
+    "temperature": ["Temperature", "temperature", "Temp", "Temp.", "Temperature (T)",
+                    "water temperature", "soil temperature", "sea temperature",
+                    "bottom water temperature", "spring temperature", "fluid temperature",
+                    "air temperature", "surface temperature"],
     "pressure": ["Pressure", "pressure", "P (MPa)", "P (GPa)", "P (kbar)"],
     "pH": ["pH"], "Eh": ["Eh"],
     "fO2": ["fO2", "oxygen fugacity", "f(O2)", "log fO2", "logfO2",
@@ -147,6 +160,19 @@ PHYS_ALIASES = {
     "viscosity": ["viscosity"], "DIC": ["DIC", "dissolved inorganic carbon",
                                         "DIC (dissolved inorganic carbon)"],
     "d_excess": ["d-excess", "deuterium excess"],
+    # cycle 6 — water/field & physical clusters (Codex 012)
+    "electrical_conductivity": ["electrical conductivity", "EC", "specific conductance"],
+    "dissolved_oxygen": ["dissolved oxygen", "DO"],
+    "DOC": ["DOC", "dissolved organic carbon"],
+    "ORP": ["ORP", "oxidation-reduction potential", "redox potential"],
+    "thermal_conductivity": ["thermal conductivity"],
+    "magnetic_susceptibility": ["magnetic susceptibility", "susceptibility"],
+    "heat_production": ["heat production", "radiogenic heat production"],
+    "cooling_rate": ["cooling rate"], "water_content": ["water content"],
+    "melt_fraction": ["melt fraction", "degree of melting", "partial melting degree"],
+    "alkali_sum": ["Na2O + K2O", "Na2O+K2O", "K2O + Na2O", "K2O+Na2O", "total alkalis"],
+    "LREE_HREE": ["LREE/HREE", "LREE/HREE ratio"],
+    "Rn_activity": ["222Rn", "Rn", "radon", "222Rn activity"],
     "Delta47": ["Δ47", "D47", "Delta47"], "Delta17O": ["Δ17O", "D17O", "Delta17O"],
     "crustal_thickness_km": ["crustal thickness", "Moho depth", "crust thickness"],
     "salinity": ["salinity", "S (psu)", "salinity (psu)"],
@@ -234,6 +260,9 @@ _L1_INDEX = _build_l1_index()
 _ELEMENT_SET = set(CATIONS) | set(TRACE_ELEMENTS) | set(REE) | {"Br", "I", "H", "C", "N", "O"}
 _POLYATOMIC = POLYATOMIC_CONC
 _BLOCKLIST = {"x", "X", "f"}                 # too-generic placeholders (Codex #1)
+_JUNK_VALUES = {"not measured", "not determined", "not analyzed", "not analysed",
+                "n.d.", "nd", "n/a", "na", "n.a.", "below detection limit", "bdl",
+                "b.d.l.", "not detected", "no data", "-", "--", "---", "tbd"}
 _CORPUS_OVERRIDE = {"F": "F_conc"}           # element wins vs L0 fraction alias (Codex #2)
 # elements whose oxidation state is geochemically distinct (preserve charge for these; Codex 007)
 _REDOX_MULTIVALENT = {"Fe", "Mn", "Cr", "Ce", "Eu", "U", "Cu", "V", "Ti",
@@ -403,6 +432,30 @@ def _try_dissolved_oxide(folded):
     return None
 
 
+# cycle 6 — partial pressure & bracket-concentration (Codex 012)
+_PP_SPECIES = {"co2": "CO2", "h2o": "H2O", "o2": "O2", "h2": "H2", "n2": "N2",
+               "ch4": "CH4", "so2": "SO2", "h2s": "H2S", "he": "He", "ar": "Ar"}
+_PP_RE = re.compile(r"^p\s*\(\s*([A-Za-z0-9]+)\s*\)$", re.IGNORECASE)
+
+
+def _try_partial_pressure(folded):
+    m = _PP_RE.match(folded)
+    if not m:
+        return None
+    sp = _PP_SPECIES.get(m.group(1).lower())
+    return f"p{sp}" if sp else None
+
+
+def _try_bracket(folded):
+    m = re.match(r"^\[\s*([A-Za-z0-9+\-]+)\s*\]$", folded)
+    if not m:
+        return None
+    inner = m.group(1).strip()
+    if inner in _ELEMENT_SET or inner in _ISO_GAS_LABELS or inner in GAS_SPECIES:
+        return f"{inner}_conc"
+    return None
+
+
 # ---------------------------------------------------------------------------
 # L2 — structural pre-clean (deterministic, presentation-only)
 # ---------------------------------------------------------------------------
@@ -421,7 +474,7 @@ _TRAILING_WORDS = re.compile(
 
 
 def l2_clean(raw: str) -> str:
-    s = L0.ascii_fold(raw).strip()
+    s = _fold_charges(L0.ascii_fold(raw).strip()).replace("^", "")   # strip caret (^87Sr/^86Sr)
     s = _TIME_MARKER.sub("", s)                 # strip (t) epsilon time-marker
     prev = None
     for _ in range(2):
@@ -529,8 +582,14 @@ def _try_gloss(folded):
     if (il in _PHASE_UNIT_WORDS or _has_conc_unit(inner, None)
             or _UNIT_PAREN.search(f"({inner})") or "permil" in il or "%" in inner):
         return None
-    # normalized-ratio restatement (LaN/YbN, chondrite-normalized) -> leave raw, don't drop the _N (Codex 009)
-    if re.search(r"[a-z]+n\s*/\s*[a-z]+n|normali[sz]ed|chondrite|primitive\s*mantle", il):
+    # normalized-ratio restatement -> produce {A}_{B}_N instead of plain ratio (Codex 009/012)
+    if re.search(r"[a-z]+n\s*/\s*[a-z]+n|normali[sz]ed|chondrite|primitive\s*mantle"
+                 r"|n-morb|e-morb|pm-normal", il):
+        rid = _try_generic_ratio(outer)
+        if not rid and "/" in outer:
+            rid = _L1_INDEX.get(L0.ascii_fold(outer).strip())
+        if rid and not rid.endswith("_N"):
+            return rid + "_N"
         return None
     # (1) high-precision: full element name <-> its symbol
     if ol in ELEMENT_NAMES and inner == ELEMENT_NAMES[ol]:
@@ -582,11 +641,13 @@ def normalize_variable(raw_label, unit=None, phase=None):
     """Return (canonical_id_or_None, layer_tag)."""
     if not raw_label or not raw_label.strip():
         return None, "none"
-    folded = _fold_charges(L0.ascii_fold(raw_label).strip())
+    folded = _fold_charges(L0.ascii_fold(raw_label).strip()).replace("^", "")
 
-    # 0. block too-generic placeholders
+    # 0. block too-generic placeholders / non-value junk
     if folded in _BLOCKLIST:
         return None, "blocked"
+    if folded.lower() in _JUNK_VALUES:
+        return None, "junk"
     # 1. ions BEFORE L0 (so F-/Cl-/Ca2+ are concentrations, not L0 derived aliases).
     #    also try after stripping a trailing 'concentration'/'content' word.
     ion = _try_ion(folded) or _try_ion(_fold_charges(_TRAILING_WORDS.sub("", folded).strip()))
@@ -599,6 +660,13 @@ def normalize_variable(raw_label, unit=None, phase=None):
     val = _try_valence(folded)
     if val:
         return val, "val"
+    # 2c. partial pressure P(CO2)->pCO2 (not phosphorus) ; bracket [He]->He_conc — cycle 6
+    pp = _try_partial_pressure(folded)
+    if pp:
+        return pp, "pp"
+    brk = _try_bracket(folded)
+    if brk:
+        return brk, "brk"
     # 3. geochronology age preemption (before any ratio/isotope rule)
     age = _try_age(folded)
     if age:
