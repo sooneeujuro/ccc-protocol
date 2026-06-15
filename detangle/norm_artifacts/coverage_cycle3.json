@@ -1,0 +1,585 @@
+{
+  "cycle": "3",
+  "sidecars": 3948,
+  "total_entries": 40736,
+  "coverage_pct": 62.14,
+  "by_layer": {
+    "L0c": 214,
+    "L1c": 3947,
+    "L0": 5191,
+    "L1": 14366,
+    "co2": 422,
+    "age": 290,
+    "ovr": 47,
+    "ion": 578,
+    "ree": 258
+  },
+  "newly_resolved": 17649,
+  "already_canonical": 10831,
+  "unmatched_total": 12256,
+  "unmatched_unique": 8867,
+  "top_unmatched": [
+    [
+      " ",
+      25
+    ],
+    [
+      "SiO2",
+      23
+    ],
+    [
+      "N2/Ar",
+      19
+    ],
+    [
+      "Na2O + K2O",
+      19
+    ],
+    [
+      "U/Pb",
+      17
+    ],
+    [
+      "CO₂ flux",
+      16
+    ],
+    [
+      "Rb/Nb",
+      16
+    ],
+    [
+      "N₂/Ar",
+      16
+    ],
+    [
+      "N concentration",
+      16
+    ],
+    [
+      "Nb/Th",
+      16
+    ],
+    [
+      "CO2 flux",
+      16
+    ],
+    [
+      "\"",
+      16
+    ],
+    [
+      "N2/Ar ratio",
+      15
+    ],
+    [
+      "δ34S",
+      15
+    ],
+    [
+      "Vp/Vs ratio",
+      15
+    ],
+    [
+      "Forsterite (Fo)",
+      15
+    ],
+    [
+      "Oxygen fugacity (fO2)",
+      14
+    ],
+    [
+      "N2/3He",
+      14
+    ],
+    [
+      "P-wave velocity (Vp)",
+      14
+    ],
+    [
+      "Mg# (Mg/(Mg+Fe))",
+      14
+    ],
+    [
+      "epsilon_Nd",
+      14
+    ],
+    [
+      "N2/36Ar",
+      14
+    ],
+    [
+      "Mn (manganese)",
+      13
+    ],
+    [
+      "136Xe/132Xe",
+      13
+    ],
+    [
+      "H2O/Ce",
+      13
+    ],
+    [
+      "Pressure (P)",
+      13
+    ],
+    [
+      "Bouguer gravity anomaly",
+      13
+    ],
+    [
+      "epsilon Nd (εNd)",
+      13
+    ],
+    [
+      "N2/He",
+      12
+    ],
+    [
+      "Ba/Rb",
+      12
+    ],
+    [
+      "CH4/3He",
+      12
+    ],
+    [
+      "He/Ne",
+      12
+    ],
+    [
+      "Salinity",
+      12
+    ],
+    [
+      "Os",
+      12
+    ],
+    [
+      "Fe (iron)",
+      12
+    ],
+    [
+      "230Th/232Th",
+      12
+    ],
+    [
+      "Mg# (magnesium number)",
+      12
+    ],
+    [
+      "3H (tritium)",
+      11
+    ],
+    [
+      "Th/Ce",
+      11
+    ],
+    [
+      "Eh (redox potential)",
+      11
+    ],
+    [
+      "water temperature",
+      11
+    ],
+    [
+      "86Kr/84Kr",
+      11
+    ],
+    [
+      "electrical conductivity (EC)",
+      11
+    ],
+    [
+      "d-excess",
+      11
+    ],
+    [
+      "134Xe/132Xe",
+      11
+    ],
+    [
+      "DIC (dissolved inorganic carbon)",
+      11
+    ],
+    [
+      "84Kr/36Ar",
+      11
+    ],
+    [
+      "Ca/Al",
+      11
+    ],
+    [
+      "3He/36Ar",
+      10
+    ],
+    [
+      "Sr (strontium)",
+      10
+    ],
+    [
+      "Total dissolved solids (TDS)",
+      10
+    ],
+    [
+      "Crustal thickness",
+      10
+    ],
+    [
+      "Ca (calcium)",
+      10
+    ],
+    [
+      "Mg (magnesium)",
+      10
+    ],
+    [
+      "Density",
+      10
+    ],
+    [
+      "epsilon_Nd(t)",
+      10
+    ],
+    [
+      "S-wave velocity (Vs)",
+      10
+    ],
+    [
+      "Heat flow",
+      10
+    ],
+    [
+      "Os concentration",
+      9
+    ],
+    [
+      "He/Ar",
+      9
+    ],
+    [
+      "Sr/Nd",
+      9
+    ],
+    [
+      "K-Ar ages",
+      9
+    ],
+    [
+      "3He/22Ne",
+      9
+    ],
+    [
+      "trace elements",
+      9
+    ],
+    [
+      "130Xe/132Xe",
+      9
+    ],
+    [
+      "131Xe/132Xe",
+      9
+    ],
+    [
+      "DIC concentration",
+      9
+    ],
+    [
+      "EC (electrical conductivity)",
+      9
+    ],
+    [
+      "D/H ratio",
+      9
+    ],
+    [
+      "heat flow",
+      9
+    ],
+    [
+      "SiO2 concentration",
+      9
+    ],
+    [
+      "Na (sodium)",
+      9
+    ],
+    [
+      "epsilon_Hf(t)",
+      9
+    ],
+    [
+      "Fo (forsterite content in olivine)",
+      9
+    ],
+    [
+      "potential temperature",
+      9
+    ],
+    [
+      "epsilon_Nd (εNd)",
+      9
+    ],
+    [
+      "TDS (total dissolved solids)",
+      9
+    ],
+    [
+      "206Pb/238U",
+      9
+    ],
+    [
+      "K/Rb",
+      9
+    ],
+    [
+      "Zn/Fe",
+      9
+    ]
+  ],
+  "top_ids": [
+    [
+      "Sr87_Sr86",
+      794
+    ],
+    [
+      "He3_He4_RRa",
+      746
+    ],
+    [
+      "SiO2_wt_pct",
+      669
+    ],
+    [
+      "MgO_wt_pct",
+      662
+    ],
+    [
+      "Nd143_Nd144",
+      652
+    ],
+    [
+      "d18O_rock",
+      611
+    ],
+    [
+      "Al2O3_wt_pct",
+      506
+    ],
+    [
+      "CaO_wt_pct",
+      487
+    ],
+    [
+      "Pb206_Pb204",
+      478
+    ],
+    [
+      "Pb207_Pb204",
+      445
+    ],
+    [
+      "Pb208_Pb204",
+      443
+    ],
+    [
+      "TiO2_wt_pct",
+      435
+    ],
+    [
+      "K2O_wt_pct",
+      434
+    ],
+    [
+      "Na2O_wt_pct",
+      418
+    ],
+    [
+      "He4_Ne20",
+      406
+    ],
+    [
+      "Ar40_Ar36",
+      396
+    ],
+    [
+      "Sr_conc",
+      385
+    ],
+    [
+      "Ba_conc",
+      311
+    ],
+    [
+      "Ni_conc",
+      300
+    ],
+    [
+      "Zr_conc",
+      299
+    ],
+    [
+      "Ne20_Ne22",
+      294
+    ],
+    [
+      "Nb_conc",
+      281
+    ],
+    [
+      "La_conc",
+      280
+    ],
+    [
+      "CO2_conc",
+      269
+    ],
+    [
+      "Rb_conc",
+      264
+    ],
+    [
+      "REE_sum",
+      259
+    ],
+    [
+      "Th_conc",
+      255
+    ],
+    [
+      "Cr_conc",
+      250
+    ],
+    [
+      "Ce_conc",
+      249
+    ],
+    [
+      "He4_conc",
+      247
+    ],
+    [
+      "Nd_conc",
+      247
+    ],
+    [
+      "P2O5_wt_pct",
+      241
+    ],
+    [
+      "Yb_conc",
+      228
+    ],
+    [
+      "Ne21_Ne22",
+      227
+    ],
+    [
+      "Cl_conc",
+      222
+    ],
+    [
+      "U_conc",
+      220
+    ],
+    [
+      "MnO_wt_pct",
+      217
+    ],
+    [
+      "Mg_number",
+      215
+    ],
+    [
+      "Y_conc",
+      213
+    ],
+    [
+      "Sm_conc",
+      211
+    ],
+    [
+      "CH4_conc",
+      207
+    ],
+    [
+      "H2O_total",
+      203
+    ],
+    [
+      "FeO_wt_pct",
+      193
+    ],
+    [
+      "temperature_C",
+      192
+    ],
+    [
+      "Ca_conc",
+      188
+    ],
+    [
+      "pH",
+      176
+    ],
+    [
+      "CO2_3He",
+      165
+    ],
+    [
+      "Hf_conc",
+      164
+    ],
+    [
+      "Pb_conc",
+      163
+    ],
+    [
+      "La_Yb",
+      163
+    ],
+    [
+      "Mg_conc",
+      160
+    ],
+    [
+      "Eu_conc",
+      156
+    ],
+    [
+      "Ta_conc",
+      153
+    ],
+    [
+      "epsilon_Nd",
+      151
+    ],
+    [
+      "N2_conc",
+      150
+    ],
+    [
+      "He_conc",
+      150
+    ],
+    [
+      "K_conc",
+      149
+    ],
+    [
+      "V_conc",
+      144
+    ],
+    [
+      "Hf176_Hf177",
+      144
+    ],
+    [
+      "Lu_conc",
+      144
+    ]
+  ]
+}
