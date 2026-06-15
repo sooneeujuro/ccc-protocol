@@ -16,7 +16,8 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - [완료] 홈PC 핸드오프 패킷 작성 + **origin push 완료**(d31ba02) → `HOME_PC_AUDIT_TASK.md` + `scripts/audit_home_clone.ps1`. 홈PC 실행 대기.
 - [완료] 회사PC 로컬 감사 → `reports/COMPANY_AUDIT_RESULT.md`. 결과: code-only 15브랜치 + 코퍼스 1브랜치(sidecar-v2-wikinote-v3 44/194, push금지) + Cursor 잉여(미push 0).
 - [발행] Codex 독립검증 태스크 → `inbox_codex/001_INDEPENDENT_AUDIT.md`. 보고 대기(`inbox_claude/001_CODEX_VERDICT.md`).
-- [대기] 홈PC 감사 결과 → 정본 결정표(회사+홈+Codex 대조).
+- [완료] **홈PC 감사** → `reports/HOME_AUDIT_RESULT.md` (VERDICT=issues_found). 홈 미push: geochem p1-science-accuracy 2커밋(code-only) + ma senpai-design 6커밋(code/docs) + web 27브랜치 전부 sync. ⚠️ ma 워킹트리 untracked 저작권 코퍼스 ≈215MB 노출(§LANDMINE) — gitignore 미커버.
+- [대기] 정본 결정표(회사+홈+Codex 대조) — 홈/회사 둘 다 감사 완료, Codex 검증만 남음.
 
 ## 알려진 미push (감사로 확정 필요)
 - ma `6f36b77` (A3/A6/B8) — 홈PC.
@@ -25,3 +26,4 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 
 ## 로그
 - 2026-06-15 19:4x — 브랜치 생성 + 홈PC 핸드오프 작성(Claude/회사PC).
+- 2026-06-15 20:27 — 홈PC(`soone`) Claude 감사 완료. read-only 스크립트 3 repo 실행 → `reports/HOME_AUDIT_RESULT.md` + `inbox_claude/002_HOME_AUDIT_DONE.md`. 최고 발견=ma untracked 코퍼스 노출(§LANDMINE).
