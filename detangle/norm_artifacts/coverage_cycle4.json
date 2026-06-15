@@ -2,13 +2,13 @@
   "cycle": "4",
   "sidecars": 3948,
   "total_entries": 40736,
-  "coverage_pct": 71.19,
+  "coverage_pct": 71.24,
   "by_layer": {
     "L0c": 192,
-    "L1c": 4008,
+    "L1c": 4025,
     "L0": 5191,
-    "L1": 14424,
-    "gloss": 1531,
+    "L1": 14429,
+    "gloss": 1532,
     "co2": 422,
     "isorat": 745,
     "age": 280,
@@ -18,10 +18,10 @@
     "ree": 258,
     "ci": 54
   },
-  "newly_resolved": 20626,
+  "newly_resolved": 20638,
   "already_canonical": 10831,
-  "unmatched_total": 9279,
-  "unmatched_unique": 7376,
+  "unmatched_total": 9267,
+  "unmatched_unique": 7373,
   "top_unmatched": [
     [
       " ",
@@ -129,10 +129,6 @@
     ],
     [
       "DIC concentration",
-      9
-    ],
-    [
-      "D/H ratio",
       9
     ],
     [
@@ -342,6 +338,10 @@
     [
       "4He flux",
       6
+    ],
+    [
+      "HCl concentration",
+      6
     ]
   ],
   "top_ids": [
@@ -458,11 +458,11 @@
       264
     ],
     [
-      "REE_sum",
-      259
+      "Ce_conc",
+      258
     ],
     [
-      "Ce_conc",
+      "REE_sum",
       258
     ],
     [

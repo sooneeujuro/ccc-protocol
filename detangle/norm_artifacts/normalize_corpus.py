@@ -33,9 +33,12 @@ MAJOR_OXIDES = [
     "SiO2", "TiO2", "Al2O3", "Fe2O3", "FeO", "MnO", "MgO", "CaO",
     "Na2O", "K2O", "P2O5", "Cr2O3", "NiO", "SO3", "BaO", "SrO", "CoO",
 ]
+# explicit total-iron OXIDE notation -> oxide wt%
 FE_TOTAL_ALIASES = ["FeOt", "FeO*", "FeOT", "FeO(t)", "Fe2O3t", "Fe2O3*", "Fe2O3T",
-                    "FeOtot", "Fe2O3tot", "total Fe", "total iron", "FeO_total", "Fe2O3_total",
-                    "TFe2O3", "TFeO", "Fe2O3(T)"]
+                    "FeOtot", "Fe2O3tot", "TFe2O3", "TFeO", "Fe2O3(T)"]
+# ambiguous "total Fe" (could be elemental) -> unit-agnostic total-Fe concentration (Codex 007)
+FE_TOTAL_CONC_ALIASES = ["total Fe", "total iron", "FeO_total", "Fe2O3_total",
+                         "Fe total", "Fetot", "Fe(total)", "FeT", "ΣFe", "Fe (total)"]
 VOLATILES_OXIDE = {  # special wt% volatiles (CO2 handled separately by _try_co2)
     "LOI": ["LOI", "L.O.I.", "loss on ignition"],
     "H2O_plus": ["H2O+", "H2O(+)"],
@@ -94,6 +97,7 @@ EXTRA_ISOTOPE_RATIOS = {
     "Th232_Pb204": ["232Th/204Pb"], "He4_Ar40rad": ["4He/40Ar*", "4He/40Ar"],
     "Xe129_Xe130": ["129Xe/130Xe"], "Xe136_Xe130": ["136Xe/130Xe"],
     "Xe129_Xe132": ["129Xe/132Xe"], "N15_N14": ["15N/14N"],
+    "D_H": ["D/H"], "H2_H1": ["2H/1H"],   # hydrogen isotope ratios (Codex 007)
 }
 REE_SUMS = {
     "REE_sum": ["REE", "ΣREE", "total REE", "sum REE", "REE total", "TREE"],
@@ -149,6 +153,8 @@ def _build_l1_index() -> dict:
         add(ox, f"{ox}_wt_pct")
     for a in FE_TOTAL_ALIASES:
         add(a, "Fe_total_oxide_wt_pct")
+    for a in FE_TOTAL_CONC_ALIASES:
+        add(a, "Fe_total_conc")
     for vid, aliases in VOLATILES_OXIDE.items():
         for a in aliases:
             add(a, vid)
@@ -207,6 +213,9 @@ _ELEMENT_SET = set(CATIONS) | set(TRACE_ELEMENTS) | set(REE) | {"Br", "I", "H", 
 _POLYATOMIC = POLYATOMIC_CONC
 _BLOCKLIST = {"x", "X", "f"}                 # too-generic placeholders (Codex #1)
 _CORPUS_OVERRIDE = {"F": "F_conc"}           # element wins vs L0 fraction alias (Codex #2)
+# elements whose oxidation state is geochemically distinct (preserve charge for these; Codex 007)
+_REDOX_MULTIVALENT = {"Fe", "Mn", "Cr", "Ce", "Eu", "U", "Cu", "V", "Ti",
+                      "Co", "As", "Sb", "Sn", "Tl", "S", "N"}
 
 _CONC_UNIT_RE = re.compile(
     r"(ppm|ppb|ppt|mg\s*/\s*kg|mg\s*/\s*g|[µμu]g\s*/\s*g|ng\s*/\s*g|"
@@ -237,10 +246,17 @@ def _fold_charges(s):
 def _try_ion(folded):
     if not re.search(r"[+\-]{1,2}$", folded):
         return None
-    # two interpretations: strip trailing sign only, or charge-magnitude digit + sign
-    # (HCO3- -> HCO3 ; SO42- -> SO4 ; Ca2+ -> Ca ; Cl- -> Cl)
-    c1 = re.sub(r"\s*[+\-]{1,2}$", "", folded).strip()        # sign only: HCO3- -> HCO3
-    c3 = re.sub(r"\s*\d\s*[+\-]{1,2}$", "", folded).strip()   # one charge digit: SO42- -> SO4
+    # monatomic ion with explicit oxidation state: preserve state for redox-multivalent
+    # (Fe3+ -> Fe3_conc ; Fe2+ -> Fe2_conc ; Ca2+ -> Ca_conc)
+    mm = re.match(r"^([A-Z][a-z]?)(\d?)\s*[+\-]{1,2}$", folded)
+    if mm and mm.group(1) in _ELEMENT_SET:
+        el, mag = mm.group(1), mm.group(2)
+        if mag and el in _REDOX_MULTIVALENT:
+            return f"{el}{mag}_conc"
+        return f"{el}_conc"
+    # polyatomic / general: two interpretations (HCO3- -> HCO3 ; SO42- -> SO4)
+    c1 = re.sub(r"\s*[+\-]{1,2}$", "", folded).strip()
+    c3 = re.sub(r"\s*\d\s*[+\-]{1,2}$", "", folded).strip()
     for sp in (c1, c3):
         if sp in _ELEMENT_SET:
             return f"{sp}_conc"
@@ -487,7 +503,11 @@ def normalize_variable(raw_label, unit=None, phase=None):
     co2 = _try_co2(raw_label, unit)
     if co2:
         return co2, "co2"
-    # 4b. REE-group sum by leading REE / rare-earth alias (Codex-approved, not paren-deletion)
+    # 4b. REE+Y group (includes yttrium) -> separate id, before plain REE (Codex 007)
+    if re.search(r"\bREE[\s\-+]*Y\b|rare\s*earth.*(and|plus|\+|,)\s*yttrium"
+                 r"|yttrium.*rare\s*earth", folded, re.IGNORECASE):
+        return "REE_Y_sum", "ree"
+    # 4c. REE-group sum by leading REE / rare-earth alias (Codex-approved, not paren-deletion)
     if re.match(r"^\s*(Σ?REE|TREE|rare\s*earth\s*element)s?\b", folded, re.IGNORECASE):
         return "REE_sum", "ree"
 
