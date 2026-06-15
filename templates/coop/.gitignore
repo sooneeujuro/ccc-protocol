@@ -1,0 +1,15 @@
+# CCCP coop: track coordination state, NEVER payload (anti-pattern #6).
+# Tracked by default: *.md, inboxes, reports, STATUS, RUN_STATE, small ledgers.
+# Blocked: binaries / large artifacts / corpora anywhere under coop/.
+*.pdf
+*.npy
+*.pkl
+*.parquet
+*.zip
+*.tar
+*.gz
+*.7z
+*.bin
+# scratch is transient by default; force-add a small ledger if you must keep it.
+scratch/*
+!scratch/.gitkeep

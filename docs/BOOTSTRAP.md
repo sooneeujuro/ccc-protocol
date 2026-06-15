@@ -6,12 +6,30 @@ scatters prose replies, or runs a brittle keyword loop. Telling an agent the
 protocol exists is not enough. Paste the matching block below to **each** agent
 at the start of a co-op run. It is deliberately blunt and short so it sticks.
 
+## Where coop/ lives (set this first)
+
+`coop/` does **not** have to live inside the target work repo. Keeping it out of
+the work repo avoids mixing coordination chatter into the project's history, and
+parking it in a central location (e.g. the protocol repo at
+`ccc-protocol/runs/<project>/coop/`) doubles as a reviewable co-op log you can
+mine to improve the protocol. Two layouts, operator's choice:
+
+- **In-repo:** `<target-repo>/coop/` — simplest; coordination lives with the work.
+- **Central (recommended when the work repo must stay clean):**
+  `ccc-protocol/runs/<project>/coop/` — work repo stays clean, logs accrue in one
+  place. Both agents must be able to read/write that absolute path.
+
+Whichever you pick, tell each agent its **coop root absolute path** in the
+bootstrap block. All `coop/...` paths below are relative to that root.
+
 ---
 
 ## Paste to CLAUDE (Claude Code)
 
 ```text
-You are the CLAUDE agent in a CCCP co-op. Read, in order:
+You are the CLAUDE agent in a CCCP co-op.
+Your coop/ root for this run is: <ABSOLUTE_COOP_PATH>   # all coop/ paths below are relative to this
+Read, in order:
   coop/PROTOCOL.md, coop/RUN_STATE.md, coop/inbox_claude/, coop/chat.md (tail)
 Then operate by these rules and do NOT deviate:
 - Do NOT create a parallel board/dir. The ONLY co-op surface is coop/. If a task
@@ -37,7 +55,9 @@ Confirm by writing your first coop/STATUS_claude.md and one chat.md line.
 ## Paste to CODEX
 
 ```text
-You are the CODEX agent in a CCCP co-op. Read, in order:
+You are the CODEX agent in a CCCP co-op.
+Your coop/ root for this run is: <ABSOLUTE_COOP_PATH>   # all coop/ paths below are relative to this
+Read, in order:
   coop/PROTOCOL.md, coop/RUN_STATE.md, coop/inbox_codex/, coop/chat.md (tail)
 Then operate by these rules and do NOT deviate:
 - Do NOT invent a parallel board/loop. The ONLY co-op surface is coop/.
