@@ -27,10 +27,13 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - [🛑보고] **홈PC push 시도 → 두 브랜치 다 diverged+중복** → `reports/HOME_PUSH_ATTEMPT_FINDINGS.md` (VERDICT=issues_found). senpai 7↔12(A6/B8 main이 이미 보유) / geochem A4/A5 2↔6(origin이 등가 escape+no-zero-fill 보유). **DECISION_TABLE "push 안전/중복아님" 전제 깨짐.** force/diverged-push 안 함. 유실방지 코드번들 백업 → `F:\corpus_build_history\detangle_home_backups_20260615\`(geochem 22KB + ma 136KB, 코퍼스 history 미포함, verify OK).
 - [⚠️결함] **audit 방법**: `--not --remotes=origin`은 분기 미탐지 → 결정표 정정 필요. `audit_home_clone.ps1`에 ahead/behind(`--left-right`) + FF판정 추가 권고.
 
-## 다음 (운영자 GO 게이트)
+## 다음 (운영자 GO 게이트) — 운영자 "다" GO (2026-06-15 21:3x)
 1. ✅ P0 ma main 가드 머지됨. 남은 P0: out* 215MB 실물 처분(NAS 이동/삭제 — 운영자 확인).
-2. (정정) senpai/A4A5 wholesale push **취소**(중복/superseded). 대신 ▸ma 홈고유 문서(master_backlog 등) main cherry-pick 보존? ▸홈 A3/A6/B8·A4/A5 코드 폐기확정 or impl-diff 리뷰(살릴 delta?). 둘 다 번들 백업됨.
-3. 축 A: Codex 검증 통과 후 repo별 가드 적용 + 코퍼스 NAS 정본(NAS up 후).
+2. **[발행] 홈 작업 처분 3결정 모두 GO** → `HOME_TASK2_PRESERVE_AND_DIFF.md`(노트북) + `inbox_codex/003`(Codex):
+   - ① 홈 고유 *문서* → ma main clean cherry-pick(`docs/home-detangle-records` PR). 코드/코퍼스 제외.
+   - ② A3/A6/B8 코드 = **폐기 확정**(main 보유 + F: 번들). 작업 0.
+   - ③ A4/A5 = 홈PC가 impl-diff 추출 → Codex가 살릴 delta 판정(`inbox_codex/003`).
+3. ✅ **축 A 가드 Codex VERDICT=ok**(13/13 잡고 오차단 0, advisory 2건 반영). → repo별 가드 적용은 GO 게이트. 코퍼스 NAS 정본(NAS up 후).
 4. Cursor·codes 잉여 제거 + worktree prune.
 5. [GO] 코퍼스 history rewrite → GCA freeze.
 6. 그 다음: 원래 숙제 B1 Sonnet 재추출.
