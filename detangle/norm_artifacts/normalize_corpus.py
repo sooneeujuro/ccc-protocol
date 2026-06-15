@@ -71,8 +71,12 @@ EXTRA_ISOTOPE_ALIASES = {
     "d56Fe": ["d56Fe", "δ56Fe"], "d30Si": ["d30Si", "δ30Si"],
     "d98Mo": ["d98Mo", "δ98Mo"], "d66Zn": ["d66Zn", "δ66Zn"],
     "d37Cl": ["d37Cl", "δ37Cl"], "d15N_bare": ["d15N", "δ15N"],
-    "epsilon_Nd": ["eNd", "εNd", "epsilon Nd", "epsilon-Nd", "ENd"],
-    "epsilon_Hf": ["eHf", "εHf", "epsilon Hf", "epsilon-Hf", "EHf"],
+    "d34S": ["d34S", "δ34S"], "d33S": ["d33S", "δ33S"], "d36S": ["d36S", "δ36S"],
+    "d17O": ["d17O", "δ17O"], "d2H": ["d2H", "δ2H"],
+    "epsilon_Nd": ["eNd", "εNd", "epsilon Nd", "epsilon-Nd", "ENd", "epsilon_Nd",
+                   "epsilon_Nd (εNd)", "epsilon Nd (εNd)"],
+    "epsilon_Hf": ["eHf", "εHf", "epsilon Hf", "epsilon-Hf", "EHf", "epsilon_Hf"],
+    "tritium": ["3H", "tritium", "3H (tritium)", "tritium (3H)"],
 }
 
 CATIONS = ["Si", "Ti", "Al", "Fe", "Mn", "Mg", "Ca", "Na", "K", "P",
@@ -100,7 +104,7 @@ EXTRA_ISOTOPE_RATIOS = {
     "D_H": ["D/H"], "H2_H1": ["2H/1H"],   # hydrogen isotope ratios (Codex 007)
 }
 REE_SUMS = {
-    "REE_sum": ["REE", "ΣREE", "total REE", "sum REE", "REE total", "TREE"],
+    "REE_sum": ["REE", "ΣREE", "total REE", "sum REE", "REE total"],
     "LREE_sum": ["LREE", "ΣLREE", "light REE"],
     "HREE_sum": ["HREE", "ΣHREE", "heavy REE"],
     "MREE_sum": ["MREE", "middle REE"],
@@ -125,6 +129,24 @@ PHYS_ALIASES = {
     "pH": ["pH"], "Eh": ["Eh"],
     "fO2": ["fO2", "oxygen fugacity", "f(O2)", "log fO2", "logfO2",
             "fO2 (oxygen fugacity)", "oxygen fugacity (fO2)", "oxygen fugacity fO2"],
+    # cycle 5 — physical / geophysical (unit-agnostic ids; units stay in sidecar)
+    "density": ["density", "bulk density", "rho", "grain density", "dry density"],
+    "heat_flow": ["heat flow", "heat-flow", "surface heat flow", "heat flow density"],
+    "heat_flux": ["heat flux"],
+    "potential_temperature": ["potential temperature", "Tp", "mantle potential temperature"],
+    "Vp": ["Vp", "P-wave velocity", "P wave velocity", "compressional velocity",
+           "P-wave velocity (Vp)", "Rayleigh wave phase velocity"],
+    "Vs": ["Vs", "S-wave velocity", "S wave velocity", "shear velocity",
+           "shear-wave velocity", "S-wave velocity (Vs)"],
+    "Vp_Vs_ratio": ["Vp/Vs", "Vp/Vs ratio", "vp/vs"],
+    "gravity_anomaly": ["gravity anomaly", "Bouguer gravity anomaly", "Bouguer anomaly",
+                        "free-air anomaly", "free air anomaly"],
+    "magnetic_anomaly": ["magnetic anomaly", "magnetic anomalies"],
+    "porosity": ["porosity"], "permeability": ["permeability"],
+    "vesicularity": ["vesicularity", "vesicle content"],
+    "viscosity": ["viscosity"], "DIC": ["DIC", "dissolved inorganic carbon",
+                                        "DIC (dissolved inorganic carbon)"],
+    "d_excess": ["d-excess", "deuterium excess"],
     "Delta47": ["Δ47", "D47", "Delta47"], "Delta17O": ["Δ17O", "D17O", "Delta17O"],
     "crustal_thickness_km": ["crustal thickness", "Moho depth", "crust thickness"],
     "salinity": ["salinity", "S (psu)", "salinity (psu)"],
@@ -222,12 +244,12 @@ _CONC_UNIT_RE = re.compile(
     r"mmol\s*/\s*kg|[µμu]mol\s*/\s*kg|nmol\s*/\s*kg|mol\s*/\s*kg|"
     r"[mµμun]?mol\s*/\s*mol|mg\s*/\s*l|[µμu]g\s*/\s*l|mol\s*%)", re.IGNORECASE)
 _CHARGE_TAIL = re.compile(r"(\d+)?\s*[+\-]{1,2}$")
-_AGE_RE = re.compile(r"\bage\b", re.IGNORECASE)
+_AGE_RE = re.compile(r"\bages?\b", re.IGNORECASE)   # singular + plural (Codex 011)
 _TIME_MARKER = re.compile(r"\s*\(\s*t\s*\)\s*$", re.IGNORECASE)
 # REE labels that are NOT an abundance/sum (block from REE_sum) — Codex 008
 _REE_BLOCK = re.compile(
     r"\b(partition|coefficients?|distributions?|kd|patterns?|profiles?|normali[sz]ed|"
-    r"anomal(y|ies)|ratios?|fractionation|spider|d_[a-z])", re.IGNORECASE)
+    r"anomal(y|ies)|ratios?|fractionation|spider|temperature|thermomet|d_[a-z])", re.IGNORECASE)
 
 
 def _has_conc_unit(raw_label, unit):
@@ -277,16 +299,18 @@ _AGE_METHODS = [
     (("rb-sr",), "age_RbSr"), (("sm-nd",), "age_SmNd"),
     (("re-os", "re depletion", "re-depletion", "trd", "t_rd"), "age_ReOs"),
     (("th-pb", "208pb/232th"), "age_ThPb"),
-    (("fission track", "fission-track", "ft age"), "age_FT"),
+    (("apatite fission", "aft", "fission track", "fission-track", "ft age"), "age_FT"),
+    (("osl", "irsl", "luminescence", "pir-irsl"), "age_OSL"),
+    (("exposure", "cosmogenic", "10be exposure", "26al/10be", "surface exposure"), "age_exposure"),
     (("3h/3he", "3h-3he", "tritium"), "age_3H3He"),
-    (("(u-th)/he", "u-th/he", "(u-th)-he"), "age_UThHe"),
+    (("(u-th)/he", "u-th/he", "(u-th)-he", "u,th-4he", "u-th-he"), "age_UThHe"),
     (("14c", "radiocarbon"), "age_14C"),
 ]
 # generic 'age' only when 'age' is the trailing concept (ends with age, or age + unit/paren).
 # rejects "Age grid misfit", "average", etc.
 _AGE_TAIL_RE = re.compile(
-    r"\bage\b[\s)\]]*$"
-    r"|\bage\b\s*(\([^)]*\)|[:=]?\s*-?\d|\s+(ma|ka|ga|myr|kyr|gyr|yr|years?|b\.?p\.?))",
+    r"\bages?\b[\s)\]]*$"
+    r"|\bages?\b\s*(\([^)]*\)|[:=]?\s*-?\d|\s+(ma|ka|ga|myr|kyr|gyr|yr|years?|b\.?p\.?))",
     re.IGNORECASE)
 
 
@@ -296,6 +320,13 @@ _VALENCE_RE = re.compile(r"^([A-Z][a-z]?)\s*\(\s*(VII|VI|IV|V|I{1,3})\s*\)")
 
 def _try_valence(folded):
     """Fe(III)/Mn(IV)/ferric/ferrous -> oxidation-state-preserving conc (Codex 008)."""
+    low = folded.lower()
+    # total-iron OXIDE phrases ("total iron as ferrous oxide", FeOT) are not valence ions (Codex 010/011)
+    if "oxide" in low or "total iron" in low or re.search(r"feo[t*]|fe2o3", low.replace(" ", "")):
+        return None
+    # ratio context (Fe(III)/ΣFe ratio) is a redox ratio, not a valence concentration (self-audit c5)
+    if "/" in folded or "ratio" in low:
+        return None
     m = _VALENCE_RE.match(folded)
     if m and m.group(1) in _REDOX_MULTIVALENT:
         n = _ROMAN.get(m.group(2).lower())
@@ -312,7 +343,7 @@ def _try_valence(folded):
 def _try_age(folded):
     if not _AGE_RE.search(folded):
         return None
-    low = folded.lower()
+    low = re.sub(r"[${}\\^]", "", folded).lower()   # strip LaTeX so $^{14}C$ -> 14c (Codex 011)
     for keys, vid in _AGE_METHODS:
         if any(k in low for k in keys):
             return vid
@@ -341,6 +372,35 @@ def _try_co2(raw_label, unit):
             or _PHASE_CTX_RE.search(low)):
         return "CO2_conc"
     return "CO2_wt"
+
+
+# cycle 5 — flux & dissolved-oxide (Codex 011 greenlight)
+_FLUX_SPECIES = {"CO2", "SO2", "HCl", "HF", "H2S", "CH4", "He", "CO", "H2O",
+                 "N2", "Hg", "SO3", "H2", "O2"} | {"3He", "4He"}
+_DISSOLVED_RE = re.compile(r"\b(dissolved|aqueous|in\s+solution|porewater|seawater)\b",
+                           re.IGNORECASE)
+
+
+def _try_flux(folded):
+    m = re.match(r"^(.+?)\s+flux(es)?\b", folded, re.IGNORECASE)
+    if not m:
+        return None
+    sp = m.group(1).strip()
+    if sp in _FLUX_SPECIES or sp in GAS_SPECIES:
+        return f"{sp}_flux"
+    if sp.lower() == "heat":
+        return "heat_flux"
+    return None
+
+
+def _try_dissolved_oxide(folded):
+    """dissolved/aqueous SiO2 etc. -> {ox}_conc, never wt_pct (Codex 011)."""
+    if not _DISSOLVED_RE.search(folded):
+        return None
+    for ox in MAJOR_OXIDES:
+        if re.search(rf"(?<![A-Za-z]){re.escape(ox)}(?![A-Za-z0-9])", folded):
+            return f"{ox}_conc"
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -484,6 +544,9 @@ def _try_gloss(folded):
         v = L0.normalize_axis(outer)
         if v:
             return v
+        ci = _L1_CI.get(outer.lower())   # case-insensitive descriptive (Forsterite, TDS, conductivity)
+        if ci:
+            return ci
     return None
 
 
@@ -540,24 +603,32 @@ def normalize_variable(raw_label, unit=None, phase=None):
     age = _try_age(folded)
     if age:
         return age, "age"
+    # 3b. flux (never route flux to concentration/wt%) — cycle 5
+    flux = _try_flux(folded)
+    if flux:
+        return flux, "flux"
     # 4. CO2 unit/context split
     co2 = _try_co2(raw_label, unit)
     if co2:
         return co2, "co2"
-    # 4b. REE group — but NOT coefficient/pattern/anomaly/ratio labels (Codex 008)
+    # 4a. dissolved/aqueous oxide -> {ox}_conc (not wt_pct) — cycle 5
+    dox = _try_dissolved_oxide(folded)
+    if dox:
+        return dox, "dox"
+    # 4b. REE group — but NOT coefficient/pattern/anomaly/ratio/temperature labels (Codex 008/010)
     if not _REE_BLOCK.search(folded):
-        if re.search(r"\bREE[\s\-+]*Y\b|rare\s*earth.*(and|plus|\+|,)\s*yttrium"
-                     r"|yttrium.*rare\s*earth", folded, re.IGNORECASE):
-            return "REE_Y_sum", "ree"
-        if re.match(r"^\s*(Σ?REE|TREE|rare\s*earth\s*element)s?\b", folded, re.IGNORECASE):
+        if re.match(r"^\s*(Σ?REE|rare\s*earth\s*element)s?\b", folded, re.IGNORECASE):
+            # explicit yttrium in the list/name -> REE_Y_sum (Codex 011)
+            if re.search(r"\bY\b|yttrium|REE[\s\-+]*Y\b", folded, re.IGNORECASE):
+                return "REE_Y_sum", "ree"
             return "REE_sum", "ree"
 
     conc = _has_conc_unit(raw_label, unit)
 
     def accept(vid):
-        # oxide wt_pct guardrail: reject when explicit concentration unit present
+        # oxide wt_pct + explicit concentration unit -> route to {ox}_conc (Codex 011)
         if _is_wt_pct_id(vid) and conc:
-            return None
+            return vid[:-7] + "_conc"   # strip "_wt_pct"
         return vid
 
     # 5. L0 isotope vocab

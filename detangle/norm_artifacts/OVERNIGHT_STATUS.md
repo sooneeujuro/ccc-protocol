@@ -2,7 +2,10 @@
 last update: cycle 4.1 wake (~03:35, 2026-06-16).
 
 ## normalizer (PRIMARY)
-trajectory: **12.9 → 47.3 → 56.1 → 62.1 → 71.2%**  (target 90% @ precision≥98%)
+trajectory: **12.9 → 47.3 → 56.1 → 62.1 → 71.2 → 72.6 → 73.3%**  (target 90% @ precision≥98%)
+cycle 5(73.3%) = 물리/지구물리량·flux·bare δ·용존산화물·age세분 + 010/011 가드(FeOT/REE-Y/TREE). Codex 4.1/4.2 PASS(98.3%).
+**⚠️ 트래젝토리 평탄화 — 90% 천장 재평가**: 남은 8,828 미매칭 중 7,228 unique(싱글톤). 클린 cleanup으로 ~80% 가능,
+90%는 싱글톤 꼬리(특이/모호/junk) force-match 필요 → precision 위험. 012로 Codex와 천장 합의 중(운영자 "90% 무리 금지" 발동 임박).
 cycle 4 = generic ratio(genrat 1246)/isotope ratio(isorat 745)/gloss(1532)/CI(54), **precision-clean**.
 **Codex 007 통합 완료** — 두 모델 수렴: 7개 hard false 중 Claude self-audit 4개(F(ppm)/age과탐/3H3He/mmol-mol) +
 Codex 3개(Fe3+→Fe3_conc·REE-Y→REE_Y_sum·total Fe→Fe_total_conc, speciation/조성 nuance). + gloss ~25% false→보수화.

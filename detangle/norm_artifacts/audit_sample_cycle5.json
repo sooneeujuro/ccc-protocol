@@ -1,0 +1,485 @@
+{
+  "count_total_new_match_labels": 3168,
+  "sample": [
+    {
+      "raw_label": "$^{14}C$ age",
+      "assigned_id": "age_14C"
+    },
+    {
+      "raw_label": "126Xe/132Xe",
+      "assigned_id": "Xe126_Xe132"
+    },
+    {
+      "raw_label": "132Xe/22Ne",
+      "assigned_id": "Xe132_Ne22"
+    },
+    {
+      "raw_label": "176Lu/177Hf",
+      "assigned_id": "Lu176_Hf177"
+    },
+    {
+      "raw_label": "207Pb/235U",
+      "assigned_id": "Pb207_U235"
+    },
+    {
+      "raw_label": "22Ne abundance",
+      "assigned_id": "Ne22_conc"
+    },
+    {
+      "raw_label": "25Mg/24Mg ratio",
+      "assigned_id": "Mg25_Mg24"
+    },
+    {
+      "raw_label": "3H (tritium) concentration",
+      "assigned_id": "tritium"
+    },
+    {
+      "raw_label": "3He/4He ratio",
+      "assigned_id": "He3_He4_RRa"
+    },
+    {
+      "raw_label": "40Ar/39Ar ages",
+      "assigned_id": "age_ArAr"
+    },
+    {
+      "raw_label": "4He/20Ne ratio",
+      "assigned_id": "He4_Ne20"
+    },
+    {
+      "raw_label": "84Kr concentration",
+      "assigned_id": "Kr84_conc"
+    },
+    {
+      "raw_label": "Al",
+      "assigned_id": "Al_conc"
+    },
+    {
+      "raw_label": "Al2O3/TiO2 (wt%)",
+      "assigned_id": "Al2O3_TiO2"
+    },
+    {
+      "raw_label": "An (anorthite)",
+      "assigned_id": "anorthite_content"
+    },
+    {
+      "raw_label": "Ar content",
+      "assigned_id": "Ar_conc"
+    },
+    {
+      "raw_label": "Au content",
+      "assigned_id": "Au_conc"
+    },
+    {
+      "raw_label": "Ba content",
+      "assigned_id": "Ba_conc"
+    },
+    {
+      "raw_label": "BaO",
+      "assigned_id": "BaO_wt_pct"
+    },
+    {
+      "raw_label": "Br/Cl ratio",
+      "assigned_id": "Br_Cl"
+    },
+    {
+      "raw_label": "C3H8 (propane) concentration",
+      "assigned_id": "C3H8_conc"
+    },
+    {
+      "raw_label": "CH4/H2O",
+      "assigned_id": "CH4_H2O"
+    },
+    {
+      "raw_label": "CO (carbon monoxide)",
+      "assigned_id": "CO_conc"
+    },
+    {
+      "raw_label": "CO2 concentrations",
+      "assigned_id": "CO2_conc"
+    },
+    {
+      "raw_label": "CO2/Rb ratio",
+      "assigned_id": "CO2_Rb"
+    },
+    {
+      "raw_label": "CO₂ contents",
+      "assigned_id": "CO2_conc"
+    },
+    {
+      "raw_label": "Ca (calcium)",
+      "assigned_id": "Ca_conc"
+    },
+    {
+      "raw_label": "Ca2+ concentration",
+      "assigned_id": "Ca_conc"
+    },
+    {
+      "raw_label": "Ca²+",
+      "assigned_id": "Ca_conc"
+    },
+    {
+      "raw_label": "Ce/Sm",
+      "assigned_id": "Ce_Sm"
+    },
+    {
+      "raw_label": "Cl (wt.%)",
+      "assigned_id": "Cl_conc"
+    },
+    {
+      "raw_label": "Cl⁻",
+      "assigned_id": "Cl_conc"
+    },
+    {
+      "raw_label": "Cr",
+      "assigned_id": "Cr_conc"
+    },
+    {
+      "raw_label": "Cr2O3 (wt%)",
+      "assigned_id": "Cr2O3_wt_pct"
+    },
+    {
+      "raw_label": "Cu (copper concentration)",
+      "assigned_id": "Cu_conc"
+    },
+    {
+      "raw_label": "DIC (dissolved inorganic carbon concentration)",
+      "assigned_id": "DIC"
+    },
+    {
+      "raw_label": "ESR age",
+      "assigned_id": "age"
+    },
+    {
+      "raw_label": "Eu/Eu* (Eu anomaly)",
+      "assigned_id": "Eu_anomaly"
+    },
+    {
+      "raw_label": "F- content",
+      "assigned_id": "F_conc"
+    },
+    {
+      "raw_label": "Fe(II)",
+      "assigned_id": "Fe2_conc"
+    },
+    {
+      "raw_label": "Fe2O3*",
+      "assigned_id": "Fe_total_oxide_wt_pct"
+    },
+    {
+      "raw_label": "FeO* (total Fe as FeO)",
+      "assigned_id": "Fe_total_oxide_wt_pct"
+    },
+    {
+      "raw_label": "Fe²⁺",
+      "assigned_id": "Fe2_conc"
+    },
+    {
+      "raw_label": "Fo (olivine forsterite content)",
+      "assigned_id": "forsterite_content"
+    },
+    {
+      "raw_label": "Gadolinium (Gd)",
+      "assigned_id": "Gd_conc"
+    },
+    {
+      "raw_label": "H2 concentration (soil gas)",
+      "assigned_id": "H2_conc"
+    },
+    {
+      "raw_label": "H2O content (wt.%)",
+      "assigned_id": "H2O_total"
+    },
+    {
+      "raw_label": "H2S concentration (mM)",
+      "assigned_id": "H2S_conc"
+    },
+    {
+      "raw_label": "HCO₃⁻ concentration",
+      "assigned_id": "HCO3_conc"
+    },
+    {
+      "raw_label": "He concentration (total terrigenic helium)",
+      "assigned_id": "He_conc"
+    },
+    {
+      "raw_label": "Hf",
+      "assigned_id": "Hf_conc"
+    },
+    {
+      "raw_label": "Holmium (Ho)",
+      "assigned_id": "Ho_conc"
+    },
+    {
+      "raw_label": "H₂O concentrations",
+      "assigned_id": "H2O_total"
+    },
+    {
+      "raw_label": "I (iodine)",
+      "assigned_id": "I_conc"
+    },
+    {
+      "raw_label": "K (ppm)",
+      "assigned_id": "K_conc"
+    },
+    {
+      "raw_label": "K/Nb",
+      "assigned_id": "K_Nb"
+    },
+    {
+      "raw_label": "K2O/P2O5",
+      "assigned_id": "K2O_P2O5"
+    },
+    {
+      "raw_label": "LOI (Loss on Ignition)",
+      "assigned_id": "LOI"
+    },
+    {
+      "raw_label": "La/Sm_N",
+      "assigned_id": "La_Sm_N"
+    },
+    {
+      "raw_label": "Li concentrations",
+      "assigned_id": "Li_conc"
+    },
+    {
+      "raw_label": "Lutetium (Lu)",
+      "assigned_id": "Lu_conc"
+    },
+    {
+      "raw_label": "Mg concentration (mM)",
+      "assigned_id": "Mg_conc"
+    },
+    {
+      "raw_label": "Mg# (whole-rock)",
+      "assigned_id": "Mg_number"
+    },
+    {
+      "raw_label": "MgO/Al2O3 ratio",
+      "assigned_id": "MgO_Al2O3"
+    },
+    {
+      "raw_label": "Mn/Fe",
+      "assigned_id": "Mn_Fe"
+    },
+    {
+      "raw_label": "Model ages TMA and TRD from Re-Os sulfide dating",
+      "assigned_id": "age_ReOs"
+    },
+    {
+      "raw_label": "N2 content",
+      "assigned_id": "N2_conc"
+    },
+    {
+      "raw_label": "NH₃",
+      "assigned_id": "NH3_conc"
+    },
+    {
+      "raw_label": "Na (mg/kg)",
+      "assigned_id": "Na_conc"
+    },
+    {
+      "raw_label": "Na2O content (wt%)",
+      "assigned_id": "Na2O_wt_pct"
+    },
+    {
+      "raw_label": "Nb/B",
+      "assigned_id": "Nb_B"
+    },
+    {
+      "raw_label": "Nd concentration",
+      "assigned_id": "Nd_conc"
+    },
+    {
+      "raw_label": "Ni (nickel)",
+      "assigned_id": "Ni_conc"
+    },
+    {
+      "raw_label": "N₂",
+      "assigned_id": "N2_conc"
+    },
+    {
+      "raw_label": "O2 concentration",
+      "assigned_id": "O2_conc"
+    },
+    {
+      "raw_label": "Oxygen fugacity",
+      "assigned_id": "fO2"
+    },
+    {
+      "raw_label": "P(CO₂)",
+      "assigned_id": "P_conc"
+    },
+    {
+      "raw_label": "Pb (lead) concentrations",
+      "assigned_id": "Pb_conc"
+    },
+    {
+      "raw_label": "Pd concentration",
+      "assigned_id": "Pd_conc"
+    },
+    {
+      "raw_label": "Pressure (P)",
+      "assigned_id": "pressure"
+    },
+    {
+      "raw_label": "REE (La, Ce, Nd, Sm, Eu, Tb, Ho, Yb, Lu)",
+      "assigned_id": "REE_sum"
+    },
+    {
+      "raw_label": "REE abundances in orthopyroxene and clinopyroxene",
+      "assigned_id": "REE_sum"
+    },
+    {
+      "raw_label": "Radiometric age (K-Ar)",
+      "assigned_id": "age_KAr"
+    },
+    {
+      "raw_label": "Rb content (rubidium)",
+      "assigned_id": "Rb_conc"
+    },
+    {
+      "raw_label": "Re (rhenium)",
+      "assigned_id": "Re_conc"
+    },
+    {
+      "raw_label": "S",
+      "assigned_id": "S_conc"
+    },
+    {
+      "raw_label": "SO2 flux in plume",
+      "assigned_id": "SO2_flux"
+    },
+    {
+      "raw_label": "SO₂ flux",
+      "assigned_id": "SO2_flux"
+    },
+    {
+      "raw_label": "Sc/Y",
+      "assigned_id": "Sc_Y"
+    },
+    {
+      "raw_label": "SiO2",
+      "assigned_id": "SiO2_wt_pct"
+    },
+    {
+      "raw_label": "SiO₂ content",
+      "assigned_id": "SiO2_wt_pct"
+    },
+    {
+      "raw_label": "Sn concentration",
+      "assigned_id": "Sn_conc"
+    },
+    {
+      "raw_label": "Sr/Y ratios",
+      "assigned_id": "Sr_Y"
+    },
+    {
+      "raw_label": "TMA age",
+      "assigned_id": "age"
+    },
+    {
+      "raw_label": "Tb (Terbium)",
+      "assigned_id": "Tb_conc"
+    },
+    {
+      "raw_label": "Temperature (geothermometry: amphibole, amphibole-plagioclase, two-pyroxenes, Fe-Ti oxides, Ca-in-olivine)",
+      "assigned_id": "temperature"
+    },
+    {
+      "raw_label": "Th/Rb",
+      "assigned_id": "Th_Rb"
+    },
+    {
+      "raw_label": "Ti concentration",
+      "assigned_id": "Ti_conc"
+    },
+    {
+      "raw_label": "TiO₂",
+      "assigned_id": "TiO2_wt_pct"
+    },
+    {
+      "raw_label": "Tritium (T)",
+      "assigned_id": "tritium"
+    },
+    {
+      "raw_label": "U-Pb concordia age",
+      "assigned_id": "age_UPb"
+    },
+    {
+      "raw_label": "V",
+      "assigned_id": "V_conc"
+    },
+    {
+      "raw_label": "W concentration",
+      "assigned_id": "W_conc"
+    },
+    {
+      "raw_label": "Y/Nb",
+      "assigned_id": "Y_Nb"
+    },
+    {
+      "raw_label": "Zn (in sphalerite-bearing quartz vein)",
+      "assigned_id": "Zn_conc"
+    },
+    {
+      "raw_label": "Zr content",
+      "assigned_id": "Zr_conc"
+    },
+    {
+      "raw_label": "alkalinity (alkt)",
+      "assigned_id": "alkalinity"
+    },
+    {
+      "raw_label": "dissolved inorganic carbon (DIC)",
+      "assigned_id": "DIC"
+    },
+    {
+      "raw_label": "fO2 (oxygen fugacity relative to FMQ buffer)",
+      "assigned_id": "fO2"
+    },
+    {
+      "raw_label": "logfO2 (ΔQFM)",
+      "assigned_id": "fO2"
+    },
+    {
+      "raw_label": "pCO₂ (partial pressure of CO₂)",
+      "assigned_id": "pCO2"
+    },
+    {
+      "raw_label": "radiocarbon age",
+      "assigned_id": "age_14C"
+    },
+    {
+      "raw_label": "temperature (discharge, silica geothermometer, Na-K-Ca geothermometer)",
+      "assigned_id": "temperature"
+    },
+    {
+      "raw_label": "zircon U-Pb ages",
+      "assigned_id": "age_UPb"
+    },
+    {
+      "raw_label": "²⁰Ne/³⁶Ar",
+      "assigned_id": "Ne20_Ar36"
+    },
+    {
+      "raw_label": "³⁶Ar",
+      "assigned_id": "Ar36_conc"
+    },
+    {
+      "raw_label": "¹³²Xe/³⁶Ar ratio",
+      "assigned_id": "Xe132_Ar36"
+    },
+    {
+      "raw_label": "¹⁸⁷Os/¹⁸⁸Os",
+      "assigned_id": "Os187_Os188"
+    },
+    {
+      "raw_label": "Δ₄₇ (I-CDES)",
+      "assigned_id": "Delta47"
+    },
+    {
+      "raw_label": "δ34S(H2S)",
+      "assigned_id": "d34S"
+    }
+  ]
+}
