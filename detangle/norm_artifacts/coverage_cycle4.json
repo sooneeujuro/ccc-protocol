@@ -2,26 +2,27 @@
   "cycle": "4",
   "sidecars": 3948,
   "total_entries": 40736,
-  "coverage_pct": 71.24,
+  "coverage_pct": 71.17,
   "by_layer": {
     "L0c": 192,
     "L1c": 4025,
     "L0": 5191,
     "L1": 14429,
-    "gloss": 1532,
+    "gloss": 1523,
     "co2": 422,
     "isorat": 745,
     "age": 280,
     "ovr": 69,
     "ion": 578,
     "genrat": 1246,
-    "ree": 258,
+    "val": 25,
+    "ree": 211,
     "ci": 54
   },
-  "newly_resolved": 20638,
+  "newly_resolved": 20609,
   "already_canonical": 10831,
-  "unmatched_total": 9267,
-  "unmatched_unique": 7373,
+  "unmatched_total": 9296,
+  "unmatched_unique": 7384,
   "top_unmatched": [
     [
       " ",
@@ -97,6 +98,10 @@
     ],
     [
       "DIC (dissolved inorganic carbon)",
+      11
+    ],
+    [
+      "REE patterns",
       11
     ],
     [
@@ -338,10 +343,6 @@
     [
       "4He flux",
       6
-    ],
-    [
-      "HCl concentration",
-      6
     ]
   ],
   "top_ids": [
@@ -439,7 +440,7 @@
     ],
     [
       "CO2_conc",
-      285
+      287
     ],
     [
       "Rb_conc",
@@ -450,19 +451,15 @@
       267
     ],
     [
-      "Cr_conc",
-      264
-    ],
-    [
       "Th_conc",
       264
     ],
     [
-      "Ce_conc",
-      258
+      "Cr_conc",
+      262
     ],
     [
-      "REE_sum",
+      "Ce_conc",
       258
     ],
     [
@@ -491,7 +488,7 @@
     ],
     [
       "U_conc",
-      232
+      231
     ],
     [
       "Ne21_Ne22",
@@ -520,6 +517,10 @@
     [
       "Ca_conc",
       213
+    ],
+    [
+      "REE_sum",
+      212
     ],
     [
       "FeO_wt_pct",

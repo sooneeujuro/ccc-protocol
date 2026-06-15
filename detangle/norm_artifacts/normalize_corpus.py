@@ -224,6 +224,10 @@ _CONC_UNIT_RE = re.compile(
 _CHARGE_TAIL = re.compile(r"(\d+)?\s*[+\-]{1,2}$")
 _AGE_RE = re.compile(r"\bage\b", re.IGNORECASE)
 _TIME_MARKER = re.compile(r"\s*\(\s*t\s*\)\s*$", re.IGNORECASE)
+# REE labels that are NOT an abundance/sum (block from REE_sum) — Codex 008
+_REE_BLOCK = re.compile(
+    r"\b(partition|coefficients?|distributions?|kd|patterns?|normali[sz]ed|"
+    r"anomal(y|ies)|ratios?|fractionation|spider|d_[a-z])", re.IGNORECASE)
 
 
 def _has_conc_unit(raw_label, unit):
@@ -286,6 +290,25 @@ _AGE_TAIL_RE = re.compile(
     re.IGNORECASE)
 
 
+_ROMAN = {"i": 1, "ii": 2, "iii": 3, "iv": 4, "v": 5, "vi": 6, "vii": 7}
+_VALENCE_RE = re.compile(r"^([A-Z][a-z]?)\s*\(\s*(VII|VI|IV|V|I{1,3})\s*\)")
+
+
+def _try_valence(folded):
+    """Fe(III)/Mn(IV)/ferric/ferrous -> oxidation-state-preserving conc (Codex 008)."""
+    m = _VALENCE_RE.match(folded)
+    if m and m.group(1) in _REDOX_MULTIVALENT:
+        n = _ROMAN.get(m.group(2).lower())
+        if n:
+            return f"{m.group(1)}{n}_conc"
+    low = folded.lower()
+    if "ferric" in low:
+        return "Fe3_conc"
+    if "ferrous" in low:
+        return "Fe2_conc"
+    return None
+
+
 def _try_age(folded):
     if not _AGE_RE.search(folded):
         return None
@@ -298,17 +321,26 @@ def _try_age(folded):
     return None
 
 
+_PHASE_CTX_RE = re.compile(
+    r"\b(dissolved|aqueous|gas|gaseous|fluid|soil\s*gas|vapou?r|porewater|"
+    r"pore\s*water|seawater|melt|fluid\s*inclusion)\b", re.IGNORECASE)
+
+
 def _try_co2(raw_label, unit):
     f = L0.ascii_fold(raw_label).strip()
+    low = f.lower()
     base = re.sub(r"\b(concentrations?|contents?|conc\.?)\b", "", f, flags=re.IGNORECASE)
-    base = re.sub(r"\s*[\(\[].*?[\)\]]\s*", "", base).strip()
+    base = re.sub(r"\s*[\(\[].*?[\)\]]\s*", " ", base).strip()
+    base = re.sub(r"\s+", " ", base).strip()
     if base.lower() == "pco2":
         return "pCO2"
     if base != "CO2":
         return None
-    if _has_conc_unit(raw_label, unit) or re.search(r"\bconcentration", f, re.IGNORECASE):
+    # phase/concentration context -> CO2_conc ; only bare CO2 / wt% -> CO2_wt (Codex 008)
+    if (_has_conc_unit(raw_label, unit) or "concentration" in low
+            or _PHASE_CTX_RE.search(low)):
         return "CO2_conc"
-    return "CO2_wt"   # bare CO2 / wt% context -> whole-rock volatile
+    return "CO2_wt"
 
 
 # ---------------------------------------------------------------------------
@@ -495,6 +527,10 @@ def normalize_variable(raw_label, unit=None, phase=None):
     # 2. corpus override (element wins for colliding bare symbols)
     if folded in _CORPUS_OVERRIDE:
         return _CORPUS_OVERRIDE[folded], "ovr"
+    # 2b. valence/speciation (Fe(III), ferric…) before bulk-element routing
+    val = _try_valence(folded)
+    if val:
+        return val, "val"
     # 3. geochronology age preemption (before any ratio/isotope rule)
     age = _try_age(folded)
     if age:
@@ -503,13 +539,13 @@ def normalize_variable(raw_label, unit=None, phase=None):
     co2 = _try_co2(raw_label, unit)
     if co2:
         return co2, "co2"
-    # 4b. REE+Y group (includes yttrium) -> separate id, before plain REE (Codex 007)
-    if re.search(r"\bREE[\s\-+]*Y\b|rare\s*earth.*(and|plus|\+|,)\s*yttrium"
-                 r"|yttrium.*rare\s*earth", folded, re.IGNORECASE):
-        return "REE_Y_sum", "ree"
-    # 4c. REE-group sum by leading REE / rare-earth alias (Codex-approved, not paren-deletion)
-    if re.match(r"^\s*(Σ?REE|TREE|rare\s*earth\s*element)s?\b", folded, re.IGNORECASE):
-        return "REE_sum", "ree"
+    # 4b. REE group — but NOT coefficient/pattern/anomaly/ratio labels (Codex 008)
+    if not _REE_BLOCK.search(folded):
+        if re.search(r"\bREE[\s\-+]*Y\b|rare\s*earth.*(and|plus|\+|,)\s*yttrium"
+                     r"|yttrium.*rare\s*earth", folded, re.IGNORECASE):
+            return "REE_Y_sum", "ree"
+        if re.match(r"^\s*(Σ?REE|TREE|rare\s*earth\s*element)s?\b", folded, re.IGNORECASE):
+            return "REE_sum", "ree"
 
     conc = _has_conc_unit(raw_label, unit)
 
