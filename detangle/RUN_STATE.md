@@ -17,8 +17,8 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 - [완료] 회사PC 로컬 감사 → `reports/COMPANY_AUDIT_RESULT.md`. 결과: code-only 15브랜치 + 코퍼스 1브랜치(sidecar-v2-wikinote-v3 44/194, push금지) + Cursor 잉여(미push 0).
 - [발행] Codex 독립검증 태스크 → `inbox_codex/001_INDEPENDENT_AUDIT.md`. 보고 대기(`inbox_claude/001_CODEX_VERDICT.md`).
 - [완료] **홈PC 감사** → `reports/HOME_AUDIT_RESULT.md` (VERDICT=issues_found). 홈 미push: geochem p1-science-accuracy 2커밋(code-only) + ma senpai-design 6커밋(code/docs) + web 27브랜치 전부 sync. ⚠️ ma 워킹트리 untracked 저작권 코퍼스 ≈215MB 노출(§LANDMINE) — gitignore 미커버.
-- [초안] **정본 결정표** → `DECISION_TABLE.md` (회사+홈 종합). 🧨 P0=ma LANDMINE 215MB 가드. Codex 검증 도착 시 확정.
-- [다음] Claude Phase 1·2(역대 빌드코드·산출물 아카이브, 비파괴) 착수 예정.
+- [확정] **정본 결정표** → `DECISION_TABLE.md`. Codex VERDICT=ok로 회사감사 확인 + 5번째 클론(codes/) 발견. 🧨 P0=ma LANDMINE 215MB 가드.
+- [착수] Claude Phase 1·2(역대 빌드코드·산출물 아카이브) → `G:\corpus_build_history`(Claude·Codex 합의). 비파괴.
 
 ## 알려진 미push (감사로 확정 필요)
 - ma `6f36b77` (A3/A6/B8) — 홈PC.

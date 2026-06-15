@@ -18,8 +18,11 @@
 | 회사 .git (메인+worktree공유) | code-only 15개(phase/pr/babbage 등) | 1~11커밋 | 코드 | 가치판단: 살릴 건 push 백업 후 freeze, 폐기할 건 prune (운영자 선별) |
 | 회사 .git | **sidecar-v2-wikinote-v3** | 44/**코퍼스194** | 코퍼스 | **push 금지** → 축A(코퍼스 git-out)로만 처리 |
 | 홈 geochem-analyzer-git | claude/p1-science-accuracy | **2** (b05dfb62 A4/A5 + 4dd92ecb sink sanitize) | 코드 | code-only·**회사 16브랜치와 중복 아님** → 백업 push or web로 포팅 결정 |
-| 회사 Cursor 클론 | — | 0 | — | **잉여 → 제거 안전** |
+| 회사 Cursor 클론(`Cursor/geochemistry-analyzer`) | — | 0 | — | **잉여 → 제거 안전** |
+| 회사 `codes/geochemistry-analyzer` (Codex 발견) | — | 0 | — | **잉여 → 제거 안전** |
 | 회사 worktree 14개(.claude/) | 다수 동일 commit | — | — | **prune 대상**(에이전트 찌꺼기, tangle 아님) |
+
+> geochem-analyzer 작업본 총 ~5벌: Documents/geochemistry-analyzer(+worktree) · Cursor 내부 · codes/ · 홈PC. 정본 1벌 외 전부 잉여(미push 0) → 안전 제거/prune.
 
 → A4/A5(b05dfb62/4dd92ecb)는 **과학·보안 정오 fix라 가치 있음** — geochem 앱을 계속 쓰냐 vs web 클린룸으로 포팅하냐는 운영자 아키텍처 결정. 일단 유실 방지 백업.
 
@@ -41,4 +44,7 @@
 6. [GO] 코퍼스 history rewrite(이미 push된 wiki notes) → GCA freeze.
 
 ## 상태
-- B단계 감사: 회사✅ 홈✅ Codex⏳. Codex 검증 도착하면 이 표 확정 + P0부터 운영자 승인받아 실행.
+- B단계 감사: 회사✅ 홈✅ **Codex✅(VERDICT=ok, 회사 감사 완전 재현·확인)** → **표 확정.**
+- Codex 추가발견: 5번째 클론 `codes/geochemistry-analyzer`(미push 0). worktree 안전성(corpus-v2=worktree, push위험O/유실위험X) 재확인.
+- 아카이브 위치 합의: `detangle/`=코퍼스-free 협업 원장 유지, **`G:\corpus_build_history`=빌드코드/산출물 보존**(Claude·Codex 일치).
+- 다음: P0(LANDMINE 가드)부터 운영자 GO 받아 실행. Claude는 Phase 1·2 아카이브(G:) 병행.
