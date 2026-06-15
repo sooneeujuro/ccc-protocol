@@ -1,5 +1,7 @@
-# OVERNIGHT STATUS — VP-NORM-1 co-op (Claude ↔ Codex)
-last update: cycle 4.1 wake (~03:35, 2026-06-16).
+# OVERNIGHT STATUS — VP-NORM-1 co-op (Claude ↔ Codex) — ✅ DONE
+last update: FINAL (~03:58, 2026-06-16). 루프 정상종료. 상세=FINAL_SUMMARY.md.
+최종: coverage **75.4%**(12.9→75.4, 5.8배), precision 99.2%, regression 20/20 PASS, B 미접촉·push 0·$0.
+운영자 인계: ① 75.4% ceiling 수락? ② B(sidecar 적용) go? ③ PR#15/16 머지?
 
 ## normalizer (PRIMARY)
 trajectory: **12.9 → 47.3 → 56.1 → 62.1 → 71.2 → 72.6 → 73.3 → 74.3 → 74.8%**  (HONEST CEILING)

@@ -33,12 +33,13 @@ MAJOR_OXIDES = [
     "SiO2", "TiO2", "Al2O3", "Fe2O3", "FeO", "MnO", "MgO", "CaO",
     "Na2O", "K2O", "P2O5", "Cr2O3", "NiO", "SO3", "BaO", "SrO", "CoO",
 ]
-# explicit total-iron OXIDE notation -> oxide wt%
+# explicit total-iron OXIDE notation -> oxide wt% (FeO_total/Fe2O3_total are oxide-form, Codex 013)
 FE_TOTAL_ALIASES = ["FeOt", "FeO*", "FeOT", "FeO(t)", "Fe2O3t", "Fe2O3*", "Fe2O3T",
-                    "FeOtot", "Fe2O3tot", "TFe2O3", "TFeO", "Fe2O3(T)"]
+                    "FeOtot", "Fe2O3tot", "TFe2O3", "TFeO", "Fe2O3(T)",
+                    "FeO_total", "Fe2O3_total"]
 # ambiguous "total Fe" (could be elemental) -> unit-agnostic total-Fe concentration (Codex 007)
-FE_TOTAL_CONC_ALIASES = ["total Fe", "total iron", "FeO_total", "Fe2O3_total",
-                         "Fe total", "Fetot", "Fe(total)", "FeT", "ΣFe", "Fe (total)"]
+FE_TOTAL_CONC_ALIASES = ["total Fe", "total iron", "Fe total", "Fetot",
+                         "Fe(total)", "FeT", "ΣFe", "Fe (total)"]
 VOLATILES_OXIDE = {  # special wt% volatiles (CO2 handled separately by _try_co2)
     "LOI": ["LOI", "L.O.I.", "loss on ignition"],
     "H2O_plus": ["H2O+", "H2O(+)"],
@@ -260,9 +261,11 @@ _L1_INDEX = _build_l1_index()
 _ELEMENT_SET = set(CATIONS) | set(TRACE_ELEMENTS) | set(REE) | {"Br", "I", "H", "C", "N", "O"}
 _POLYATOMIC = POLYATOMIC_CONC
 _BLOCKLIST = {"x", "X", "f"}                 # too-generic placeholders (Codex #1)
+# NOTE: bare "nd"/"na" deliberately EXCLUDED — they collide with elements Nd/Na (Codex 013B).
+# Only dotted/slashed sentinels are unambiguous.
 _JUNK_VALUES = {"not measured", "not determined", "not analyzed", "not analysed",
-                "n.d.", "nd", "n/a", "na", "n.a.", "below detection limit", "bdl",
-                "b.d.l.", "not detected", "no data", "-", "--", "---", "tbd"}
+                "n.d.", "n/a", "n.a.", "below detection limit", "bdl",
+                "b.d.l.", "not detected", "no data", "---", "tbd"}
 _CORPUS_OVERRIDE = {"F": "F_conc"}           # element wins vs L0 fraction alias (Codex #2)
 # elements whose oxidation state is geochemically distinct (preserve charge for these; Codex 007)
 _REDOX_MULTIVALENT = {"Fe", "Mn", "Cr", "Ce", "Eu", "U", "Cu", "V", "Ti",

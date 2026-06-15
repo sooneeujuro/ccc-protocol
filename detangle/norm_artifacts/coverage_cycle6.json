@@ -2,12 +2,12 @@
   "cycle": "6",
   "sidecars": 3948,
   "total_entries": 40736,
-  "coverage_pct": 74.78,
+  "coverage_pct": 75.41,
   "by_layer": {
     "L0c": 201,
     "L1c": 4144,
     "L0": 5191,
-    "L1": 15023,
+    "L1": 15279,
     "ci": 142,
     "gloss": 1883,
     "co2": 422,
@@ -23,19 +23,11 @@
     "dox": 7,
     "pp": 1
   },
-  "newly_resolved": 21589,
+  "newly_resolved": 21816,
   "already_canonical": 10831,
-  "unmatched_total": 8316,
-  "unmatched_unique": 6921,
+  "unmatched_total": 8089,
+  "unmatched_unique": 6919,
   "top_unmatched": [
-    [
-      "Nd",
-      181
-    ],
-    [
-      "Na",
-      46
-    ],
     [
       " ",
       25
@@ -347,6 +339,14 @@
     [
       "TiO2 wt%",
       4
+    ],
+    [
+      "K2O wt%",
+      4
+    ],
+    [
+      "4He/21Ne*",
+      4
     ]
   ],
   "top_ids": [
@@ -475,6 +475,10 @@
       253
     ],
     [
+      "Nd_conc",
+      252
+    ],
+    [
       "temperature",
       247
     ],
@@ -585,10 +589,6 @@
     [
       "V_conc",
       157
-    ],
-    [
-      "H2_conc",
-      150
     ]
   ]
 }
