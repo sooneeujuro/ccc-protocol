@@ -21,3 +21,4 @@
 
 ## 진행 로그 (append-only)
 - 23:2x — 밤샘런 시작. OVERNIGHT_RUN 작성, 콘솔 공지. Step1(탐지기) 착수.
+- 2026-06-16 — **노트북(`soone`) Claude STAND DOWN** (운영자 "일 겹친다" 지적). 노트북 세션 인벤토리 = `reports/LAPTOP_STANDDOWN_AND_INVENTORY.md`. 회사PC 자율런이 단일 owner. ⚠️노트북이 만든 **ma PR#15**(corpus verification policy + senpai.md 패치)는 원래 큐 밖 — senpai.md/RIL 충돌 확인 후 fold-in/hold(노트북 무접촉). PR#14는 Step5 그대로. 노트북 로컬 F: 자산(번들·격리 215MB)은 SSD에만, 위치 기록됨.
