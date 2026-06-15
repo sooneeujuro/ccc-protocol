@@ -4,6 +4,13 @@
   origin에 안 올라간 커밋 / 미커밋 / 코퍼스 건드림 여부를 markdown 리포트로 출력.
 .NOTES
   비파괴. git fetch(읽기) 외엔 working tree/원격 변경 없음. push/commit/delete 일절 안 함.
+.LIMITATION (2026-06-15 홈PC 발견 — 재사용 전 수정 권장)
+  `rev-list --count <b> --not --remotes=origin` 은 "origin ref에 없는 커밋"만 셈 →
+  origin tip이 등가작업으로 전진(분기)한 경우 **diverged-duplicate를 "미push"로 오판**.
+  "push 안전 여부"를 정확히 보려면 브랜치별로 추가:
+    git rev-list --left-right --count <local>...<origin-counterpart>   # ahead/behind
+    git merge-base --is-ancestor <local> origin/<b> && echo FF가능      # superseded 판정
+  (현 스크립트는 미push '후보'만 출력 — diverged 여부는 별도 확인 필요.)
 #>
 param(
   [string[]]$RepoPaths = @(

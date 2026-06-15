@@ -19,6 +19,7 @@ docs/handoffs/**/out/
 docs/handoffs/**/out_raw/
 docs/handoffs/**/*.jpg
 docs/handoffs/**/*.jpeg
+docs/handoffs/**/*.png
 **/index/*.bak.*
 **/index/*.report.json
 ```

@@ -14,7 +14,7 @@ staged=$(git diff --cached --name-only --diff-filter=AM)
 #  · figure 파생:       docs/handoffs/**/out|out_raw/, docs/handoffs/**/*.jpg|jpeg
 #  · 대용량 인덱스:     */index/*.{npy,pkl,jsonl}, 전역 *.npy|*.pkl
 #  · 백업 잔여물:       *.bak.<timestamp>, *.report.json
-pattern='(^|/)wiki/papers/.*\.md$|(^|/)wiki/data/|(^|/)articles/.*\.md$|/corpus/.*\.(md|jsonl)$|(^|/)sidecars?/.*\.json$|docs/handoffs/.*/(out|out_raw)/|docs/handoffs/.*\.(jpg|jpeg)$|/index/.*\.(npy|pkl|jsonl)$|\.(npy|pkl)$|\.bak\.[0-9]|\.report\.json$'
+pattern='(^|/)wiki/papers/.*\.md$|(^|/)wiki/data/|(^|/)articles/.*\.md$|(^|/)corpus/.*\.(md|jsonl)$|(^|/)sidecars?/.*\.json$|docs/handoffs/.*/(out|out_raw)/|docs/handoffs/.*\.(jpg|jpeg|png)$|/index/.*\.(npy|pkl|jsonl)$|\.(npy|pkl)$|\.bak\.[0-9]|\.report\.json$'
 
 hits=$(printf '%s\n' "$staged" | grep -E "$pattern")
 if [ -n "$hits" ]; then

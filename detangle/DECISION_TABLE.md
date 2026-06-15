@@ -4,6 +4,14 @@
 
 > 원칙: 코퍼스 브랜치 push 금지. code-only 미push는 백업 위해 push 가능(운영자 게이트). 위험작업 GO 게이트.
 
+## ⚠️ 정정 (2026-06-15 21:2x, 홈PC 실행으로 발견 — `reports/HOME_PUSH_ATTEMPT_FINDINGS.md`)
+**내 audit 방법 결함 인정**: `git rev-list --count <b> --not --remotes=origin`은 "origin ref에 없는 커밋"만 셈 → **origin tip이 등가작업으로 전진(분기)한 걸 못 잡음.** 그래서 아래 표의 홈 미push 행 "code-only·중복 아님 → push" 전제가 **틀림**:
+- **홈 ma senpai 6커밋(A3/A6/B8) = main이 이미 보유한 것의 중복** (회사 `92c0f01` worker·`db82739` caps·`4047b89` docs로 재구현됨). → **wholesale push 취소.** 단 **홈 고유 *문서***(master_backlog_20260614·autonomous_run_20260614·fig_refill FINAL_REPORT 등, 코퍼스 아님·무충돌)는 main에 **clean cherry-pick 보존 가치 있음**.
+- **홈 geochem A4/A5 2커밋 = origin이 등가 보유**(`77ccb450` escape·`c37fc34b` no-zero-fill). → **push 취소.** 단 A4 correlation-NaN→null *특정* 케이스 + verify 스크립트 3개에 살릴 delta 있는지 **impl-diff 리뷰**(Codex 적합, geochem 최소터치).
+- 둘 다 **유실방지 코드번들 백업 완료**: `F:\corpus_build_history\detangle_home_backups_20260615\` (코퍼스 history 미포함, verify OK). 원격 무변경(force/branch 안 함).
+- ✅ **P0 = ma main 머지 완료**(PR#13 `82a3925`, 운영자 GO). main .gitignore 가드 반영 → 전 브랜치 자동보호. (out* 215MB 실물 처분만 운영자 확인 대기.)
+- **회사 geochem 16브랜치도 동일 결함 가능** → 적용 전 ahead/behind 재확인 필요(아래 A표는 미정정).
+
 ## 🧨 P0 — ma 워킹트리 저작권 코퍼스 215MB 노출 (LANDMINE, 홈PC)
 - 위치: 홈PC `manuscript-atelier/docs/handoffs/fig_refill_20260613/out/` + `out_raw/` = **.jpg 4,171 + .md 1,444 ≈ 215MB**, `.gitignore` 미커버.
 - 위험: 홈PC에서 `git add -A && push` 한 번이면 **public `manuscript-atelier.git`로 저작권 figure/MD 유출**.
