@@ -32,7 +32,7 @@ geochemistry-analyzer 모노레포에서 코퍼스/CIR 콘텐츠가 git에 섞�
 2. **[✅홈PC TASK2 완료]** (`inbox_claude/004_HOME_TASK2_DONE.md`):
    - ① 홈 고유 *문서* → **PR #14** `docs/home-detangle-records`(289 files, docs only, 코드·코퍼스 0). 머지 클릭=운영자.
    - ② A3/A6/B8 코드 = **폐기 확정** ✅ (main 보유 + F: 번들).
-   - ③ A4/A5 impl-diff 추출 완료 → `scratch/A4A5_home_vs_origin.diff` + 분석. **결론: origin 대체로 동급~우월, 홈에 잠재회귀(statistics null→0 강제 / piperToMeqPercent 중복화). 살릴 delta = verify 스크립트 3개뿐.** → Codex `inbox_codex/003` 교차검증 대기.
+   - ③ A4/A5: **Codex VERDICT=issues_found**(`inbox_claude/003_A4A5_DELTA_VERDICT.md`) — 홈 결론 부분확증 + **반례**. A4 null→0 회귀 확인·piper 중복화 확인 → **홈 wholesale 폐기**(origin이 A4·piper구조·presetOverride·spec.name escape 우월). **단 홈 "salvage=verify뿐"은 너무 좁음**: ⚠️**origin 자체에 미수정 raw injection sink ~13곳**(python-export·ternary-piper-export, 사용자문자열 raw 보간) → 홈 A5 sink-hardening이 *진짜 보안 delta*. **salvage = (a) 최소 sink-hardening 패치(pyStr/safeColor 등 raw sink만) + (b) verify 스크립트 3개**(번들서 내용리뷰 후). geochem 커밋 0(diff/리뷰만).
 3. ✅ **축 A 가드 Codex VERDICT=ok**(13/13 잡고 오차단 0, advisory 2건 반영). → repo별 가드 적용은 GO 게이트. 코퍼스 NAS 정본(NAS up 후).
 4. Cursor·codes 잉여 제거 + worktree prune.
 5. [GO] 코퍼스 history rewrite → GCA freeze.
