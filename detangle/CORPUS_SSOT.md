@@ -12,6 +12,7 @@
 ## ⚠️ 드리프트 — 고쳐야 함
 - **MCP(`corpus_mcp.py`) 등록 args = `G:\corpus_md_export_20260602`** (옛 3,954편, **dedup 전**). → 현재 **검색/MCP가 옛 corpus를 봄.**
   - 조치: MCP 등록 경로를 **`G:\corpus_md_export_20260612`** 로 교체(재등록). (운영자/Codex 트랙)
+  - ✅ **2026-06-16 회사PC `.mcp.json` 재등록 완료**(Claude 67522dcd): geochem-corpus args 6/02→**6/12**, JSON 검증 OK, MCP/세션 재시작 시 적용. ⚠️ 타 머신(홈/노트북)은 각자 `.mcp.json` 동일 수정 필요 — corpus-binding MVP가 코드로 강제 예정.
 - 다른 세션이 본 "corpus-version binding MVP" = 이 드리프트를 코드로 못박는 작업.
 
 ## 🗑️ stale / 미러 (정본 아님 — 폴더명 ≠ 내부 버전 주의!)
