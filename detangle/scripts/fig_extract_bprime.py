@@ -113,71 +113,111 @@ def main():
             cl.append((int(cm.group(1)), cm.group(0).strip()[:160]))
         if cl: caps_by_page[p] = cl
 
-    # 4) save staging (hash the SAVED file), build manifest rows
-    count_ok = (len(kept) == len(missing_refs))
-    rows = []
-    for i, c in enumerate(kept):
+    # 4) NUMBER-ALIGNED mapping: corpus alt "Figure N" <-> extracted caption number
+    JUNK_RE = re.compile(r"(?i)elsevier|cover image|journal cover|\blogo\b|graphical abstract|table of contents")
+    def fignum(s):
+        m = re.search(r"(?i)\bfig(?:ure)?\.?\s*(\d+)", s or "")
+        return int(m.group(1)) if m else None
+    crefs = []
+    for alt, name, line in missing_refs:
+        num = fignum(alt)
+        crefs.append({"alt": alt, "name": name, "line": line, "num": num,
+                      "junk": (num is None and bool(JUNK_RE.search(alt or "")))})
+    for c in kept:
+        if "cap_no" not in c:
+            pc = caps_by_page.get(c["page"], []); c["cap_no"] = pc[0][0] if pc else None
+            c["cap_text"] = pc[0][1] if pc else ""
         img = Image.open(io.BytesIO(c["bytes"])).convert("RGB")
-        src_sha = sha(c["bytes"])
-        tmp = io.BytesIO(); img.save(tmp, "JPEG", quality=92); out_bytes = tmp.getvalue()
-        out_sha = sha(out_bytes)
-        fig_no = i + 1
-        newname = f"{A.pid}__refill20260616_fig{fig_no:02d}__{out_sha[:12]}.jpg"
-        (outdir / newname).write_bytes(out_bytes)
-        old_alt, old_ref, old_line = (missing_refs[i] if i < len(missing_refs) else ("", "", ""))
-        if "cap_text" in c:  # region mode: caption is the anchor for this render
-            pdf_cap_text = c["cap_text"]; pdf_cap_no = c["cap_no"]
-        else:
-            pcaps = caps_by_page.get(c["page"], [])
-            pdf_cap_text = pcaps[0][1] if pcaps else ""
-            pdf_cap_no = pcaps[0][0] if pcaps else ""
-        cj = jacc(old_alt, pdf_cap_text) if (old_alt and pdf_cap_text) else 0.0
-        fig_no_agree = (pdf_cap_no == fig_no) if pdf_cap_no != "" else ""
-        multi = len([x for x in kept if x["page"] == c["page"]]) > 1
-        conf = "high" if (count_ok and cj >= 0.1) else ("medium" if count_ok else "low")
-        status = "auto-ok" if (count_ok and conf != "low") else "MANUAL"
+        tmp = io.BytesIO(); img.save(tmp, "JPEG", quality=92)
+        c["out_bytes"] = tmp.getvalue(); c["src_sha"] = sha(c["bytes"]); c["out_sha"] = sha(c["out_bytes"])
+
+    used = set()
+    def take(num):
+        if num is None: return None
+        for j, c in enumerate(kept):
+            if j not in used and c.get("cap_no") == num:
+                used.add(j); return j
+        return None
+    rows = []
+    def emit(cr, j, method):
+        c = kept[j] if j is not None else None
+        nm = cr["num"] if cr["num"] is not None else 0
+        newname = ""
+        if c is not None:
+            newname = f"{A.pid}__refill20260616_fig{nm:02d}__{c['out_sha'][:12]}.jpg"
+            (outdir / newname).write_bytes(c["out_bytes"])
+        cj = jacc(cr["alt"], c["cap_text"]) if c else 0.0
         rows.append({
-            "fig_no": fig_no, "page": c["page"], "xref": c["xref"], "idx_on_page": c["idx"],
-            "raw_candidate_count": raw_n, "filtered_candidate_count": len(kept),
-            "missing_ref_count": len(missing_refs), "count_match": count_ok,
-            "multi_img_on_caption_page": multi, "filter": "caption_page",
-            "src_pdf_sha256": pdf_sha, "source_image_sha256": src_sha, "output_file_sha256": out_sha,
-            "w": c["w"], "h": c["h"], "article_md": A.md, "article_line": old_line,
-            "old_ref": old_ref, "old_alt": old_alt[:200],
-            "pdf_caption_fig_no": pdf_cap_no, "pdf_caption_text": pdf_cap_text,
-            "caption_jaccard": cj, "fig_no_agree": fig_no_agree, "new_name": newname,
-            "confidence": conf, "status": status,
+            "ref_fig_no": cr["num"] if cr["num"] is not None else "", "match_method": method,
+            "matched": bool(c), "new_name": newname,
+            "ext_cap_no": (c.get("cap_no") if c else ""), "page": (c["page"] if c else ""),
+            "w": (c["w"] if c else ""), "h": (c["h"] if c else ""),
+            "src_pdf_sha256": pdf_sha, "source_image_sha256": (c["src_sha"] if c else ""),
+            "output_file_sha256": (c["out_sha"] if c else ""),
+            "article_md": A.md, "article_line": cr["line"], "old_ref": cr["name"],
+            "old_alt": cr["alt"][:200], "ext_caption_text": (c["cap_text"] if c else ""),
+            "caption_jaccard": cj, "mode": A.mode,
+            "status": ("JUNK_remove" if method == "junk" else ("matched" if c else "NO_MATCH")),
         })
+    # pass 1: by figure number; pass 2: order-fill remaining non-junk refs
+    leftover = []
+    for cr in crefs:
+        if cr["junk"]:
+            emit(cr, None, "junk"); continue
+        j = take(cr["num"])
+        if j is not None: emit(cr, j, "by_number")
+        else: leftover.append(cr)
+    rem = [j for j in range(len(kept)) if j not in used]
+    ri = 0
+    for cr in leftover:
+        if ri < len(rem):
+            emit(cr, rem[ri], "by_order"); ri += 1
+        else:
+            emit(cr, None, "none")
+    extra_unused = len(rem) - ri  # extracted images not mapped to any ref
+
+    n_real = sum(1 for cr in crefs if not cr["junk"])
+    n_matched = sum(1 for r in rows if r["matched"])
+    n_bynum = sum(1 for r in rows if r["match_method"] == "by_number")
+    n_junk = sum(1 for cr in crefs if cr["junk"])
+    paper_ok = (n_matched == n_real and extra_unused == 0)
     if rows:
         with open(outdir / "manifest.csv", "w", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
 
-    # 5) staged md diff (live md untouched) — replace only matched image refs in order
+    # 5) staged md diff (live untouched): replace matched refs; junk refs flagged (left as-is)
     patched = lines[:]
-    if count_ok:
-        for r in rows:
-            ln = r["article_line"]
-            if isinstance(ln, int) and 1 <= ln <= len(patched):
-                patched[ln - 1] = patched[ln - 1].replace(r["old_ref"], r["new_name"])
+    for r in rows:
+        if r["matched"] and isinstance(r["article_line"], int) and 1 <= r["article_line"] <= len(patched):
+            patched[r["article_line"] - 1] = patched[r["article_line"] - 1].replace(r["old_ref"], r["new_name"])
     diff = "\n".join(difflib.unified_diff(lines, patched, fromfile="live/" + A.md, tofile="staged/" + A.md, lineterm=""))
-    (outdir / "staged_md.diff.txt").write_text(diff or "(no diff — count mismatch, manual)\n", encoding="utf-8")
-    if count_ok:
-        (outdir / "staged.md").write_text("\n".join(patched), encoding="utf-8")
+    (outdir / "staged_md.diff.txt").write_text(diff or "(no changes)\n", encoding="utf-8")
+    (outdir / "staged.md").write_text("\n".join(patched), encoding="utf-8")
 
-    # 6) contact sheet
+    # 6) contact sheet (ref-centric: image or placeholder)
     if rows:
         k = len(rows); cols = min(3, k); rn = (k + cols - 1) // cols
         fig, axes = plt.subplots(rn, cols, figsize=(cols * 4.2, rn * 4.7))
         axes = (axes.ravel() if hasattr(axes, "ravel") else [axes])
         for j, r in enumerate(rows):
-            ax = axes[j]; ax.imshow(Image.open(outdir / r["new_name"])); ax.axis("off")
-            cap = (r["old_alt"][:80] + "…") if len(r["old_alt"]) > 80 else r["old_alt"]
-            ax.set_title(f"fig{r['fig_no']:02d} p.{r['page']} {r['w']}x{r['h']} J={r['caption_jaccard']}\n[md] {cap or '(no alt)'}", fontsize=7)
+            ax = axes[j]; ax.axis("off")
+            if r["matched"]:
+                ax.imshow(Image.open(outdir / r["new_name"]))
+            else:
+                ax.text(0.5, 0.5, ("JUNK\n(remove)" if r["status"] == "JUNK_remove" else "NO MATCH"),
+                        ha="center", va="center", fontsize=11, color="red")
+            cap = (r["old_alt"][:78] + "…") if len(r["old_alt"]) > 78 else r["old_alt"]
+            ax.set_title(f"ref Fig{r['ref_fig_no']} <= ext Fig{r['ext_cap_no']} [{r['match_method']}] J={r['caption_jaccard']}\n[md] {cap or '(no alt)'}", fontsize=6.5)
         for j in range(k, len(axes)): axes[j].axis("off")
         lab = A.label or A.pid
-        fig.suptitle(f"{lab}  extracted={len(kept)} vs missing={len(missing_refs)}  count={'OK' if count_ok else 'MISMATCH→MANUAL'}", fontsize=10)
+        fig.suptitle(f"{lab}  real_refs={n_real} matched={n_matched}(byNum {n_bynum}) junk={n_junk} extra_unused={extra_unused}  {'OK' if paper_ok else 'REVIEW'}", fontsize=10)
         fig.tight_layout(rect=[0, 0, 1, 0.96]); fig.savefig(outdir / "contact_sheet.png", dpi=110); plt.close(fig)
-    print(f"DONE: extracted={len(kept)} missing={len(missing_refs)} count={'OK' if count_ok else 'MANUAL'} -> {outdir} (live untouched)")
+    (outdir / "_summary.json").write_text(json.dumps({
+        "pid": A.pid, "mode": A.mode, "real_refs": n_real, "matched": n_matched,
+        "by_number": n_bynum, "junk": n_junk, "extra_unused": extra_unused,
+        "paper_ok": paper_ok, "missing": len(missing_refs),
+    }), encoding="utf-8")
+    print(f"DONE: real_refs={n_real} matched={n_matched}(byNum={n_bynum}) junk={n_junk} extra_unused={extra_unused} -> {'OK' if paper_ok else 'REVIEW'}  {outdir} (live untouched)", flush=True)
 
 if __name__ == "__main__":
     main()

@@ -8,6 +8,10 @@ Live articles/ NEVER touched. No cost (local fitz). Promote is a separate gated 
 import json, re, os, csv, sys, subprocess
 from pathlib import Path
 from collections import defaultdict
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
 
 BUNDLE = Path(r"G:\corpus_md_export_20260612")
 REBUILD = Path(r"G:\fig_rebuild_v20260616")
@@ -47,21 +51,20 @@ def match_pdf(paper):
     return cands[0][1] if cands and cands[0][0] >= 4 else None
 
 def run_mode(pid, md, pdf, mode):
+    sj = REBUILD / pid / "_summary.json"
+    if sj.exists(): sj.unlink()
     try:
         subprocess.run([sys.executable, SCRIPT, "--pid", pid, "--md", md, "--pdf", pdf,
                         "--mode", mode, "--label", paper_label(md)],
-                       capture_output=True, timeout=180)
-    except Exception as e:
+                       capture_output=True, timeout=240)
+    except Exception:
         return None
-    mf = REBUILD / pid / "manifest.csv"
-    if not mf.exists():
+    if not sj.exists():
         return None
-    rows = list(csv.DictReader(open(mf, encoding="utf-8")))
-    if not rows:
-        return {"extracted": 0, "missing": 0, "count_ok": False}
-    return {"extracted": int(rows[0]["filtered_candidate_count"]),
-            "missing": int(rows[0]["missing_ref_count"]),
-            "count_ok": rows[0]["count_match"] == "True"}
+    s = json.loads(sj.read_text(encoding="utf-8"))
+    s["count_ok"] = bool(s.get("paper_ok"))
+    s["extracted"] = s.get("matched", 0)
+    return s
 
 def paper_label(md):
     return re.sub(r"\.md$", "", md)[:28]
