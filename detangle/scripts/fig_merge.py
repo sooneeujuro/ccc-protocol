@@ -90,8 +90,11 @@ def main():
             shutil.copy2(new_md, ARTICLES / new_md.name)
         md_to_refs[new_md.name] = md_refs(new_md.read_text(encoding="utf-8", errors="replace"))
         md_replaced += 1
-        # 이미지 복사 (additive)
+        # 이미지 복사 (additive). _로 시작하는 진단물(_check.png 등)은 제외 — corpus
+        # figure 이름은 항상 12hex slug로 시작하므로 _ prefix는 전부 비-figure.
         for img in folder.rglob("*"):
+            if img.name.startswith("_"):
+                continue
             if img.suffix.lower() in IMG_EXT and img.name not in articles_have:
                 if APPLY:
                     shutil.copy2(img, ARTICLES / img.name)
