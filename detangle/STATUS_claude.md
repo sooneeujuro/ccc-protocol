@@ -12,8 +12,8 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - **수렴 완료**: Claude(LEDGER_001/003) ↔ Codex(LEDGER_001_REVIEW/002) → 첫 MVP = **migration/apply-state ledger** 만장일치. 아키텍처 LOCK.
 - **운영자 Phase 1 GO 받음 → 빌드 완료** (협업모드=Claude 빌드/Codex 검증). manuscript-atelier branch `claude/ledger-migration-apply-state` commit `8a2c51f` (4 files, additive-only, 로컬·미push).
   - 강제체크 green-as-is + pytest 13 passed + 합성드리프트 red 증명. 권고 10건=Phase2 타깃 프리뷰(러너북 :189 오타 포함).
-- Codex 검증 `LEDGER_004`=issues_found(3건: file-set coverage/binding/target-coverage) → **수정 완료** commit `6a67152`(E2 binding·E6 target-coverage 신설 + file-set·dup-id; repro 테스트 3). green-as-is 유지, 57 static tests pass. 재검증 요청 `LEDGER_005` 발행.
-- **다음 = Codex 재검증(LEDGER_005)**. ok면 운영자에 Phase 2(de-prose) 별도 GO 요청.
+- **Phase 1 클로즈**: Codex `LEDGER_004`=issues_found(3건)→수정 `6a67152`→`LEDGER_005`=**ok**. 잔여 hardening(canonical-path) `efaaf0a` 반영. 전체 production 정적 suite **648 passed**, green-as-is. 3 commits: 8a2c51f/6a67152/efaaf0a.
+- **다음 = 운영자 Phase 2(de-prose) GO 게이트** (운영자에 에스컬레이트 + `LEDGER_006` 발행). GO 전 구현 0.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 현재 트랙 상태
