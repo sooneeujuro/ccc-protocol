@@ -85,13 +85,34 @@ def main():
                 m = re.match(r"\s*fig(?:ure)?\.?\s*(\d+)", txt, re.I)
                 if m: caps.append((float(blk["bbox"][1]), float(blk["bbox"][3]), int(m.group(1)), txt[:160]))
             caps.sort()
+            # graphic rects (raster images + vector drawings) on this page
+            grects = []
+            for im in page.get_images(full=True):
+                try:
+                    for rr in page.get_image_rects(im[0]):
+                        grects.append(fitz.Rect(rr))
+                except Exception:
+                    pass
+            for dr in page.get_drawings():
+                rr = dr.get("rect")
+                if rr and rr.width > 18 and rr.height > 18:
+                    grects.append(fitz.Rect(rr))
             prev_bottom = 0.0
             for i, (ytop, ybot, fno, txt) in enumerate(caps):
                 top, bottom = prev_bottom, ytop
                 prev_bottom = ybot
-                if bottom - top < 60:  # too thin: figure likely on prev page / caption-only
+                if bottom - top < 50:  # too thin: figure likely on prev page / caption-only
                     continue
-                clip = fitz.Rect(0, max(0, top - 4), pw, bottom + 2)
+                # tight figure bbox = union of graphic rects in the band above the caption
+                band = [r for r in grects if r.y0 >= top - 3 and r.y1 <= bottom + 3 and r.height > 18 and r.width > 18]
+                if band:
+                    x0 = min(r.x0 for r in band); y0 = min(r.y0 for r in band)
+                    x1 = max(r.x1 for r in band); y1 = max(r.y1 for r in band)
+                    clip = fitz.Rect(max(0, x0 - 5), max(0, y0 - 5), min(pw, x1 + 5), min(bottom, y1 + 5))
+                else:
+                    clip = fitz.Rect(0, max(0, top - 4), pw, bottom + 2)  # fallback: full band
+                if clip.height < 40 or clip.width < 40:
+                    continue
                 pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=clip)
                 kept.append({"page": pno + 1, "xref": -1, "idx": i + 1, "bytes": pix.tobytes("jpg"),
                              "w": pix.width, "h": pix.height, "small": False, "cap_no": fno, "cap_text": txt})
