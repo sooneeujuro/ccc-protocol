@@ -38,3 +38,9 @@
 
 ## 다음 액션
 Codex에 `LEDGER_021`로 분업 제안. 운영자 GO 시 각자 현재 origin/main 위에서 파트 착수.
+
+## ⏳ 마지막 follow-up — D3 마저 (운영자 2026-06-17 "다 끝나면 D3 꼭!!")
+- **D3** = corpus-binding 체커의 `scan_draft_default_drift`(draft_evidence_adapter가 인덱스를 repo-local 하드코딩 = bound corpus 미연결 advisory). **구현은 완료**(`c7a7bcd`), 파일 부재 시 graceful no-op.
+- **남은 일**: (1) `draft_evidence_adapter.py`를 `CORPUS_BINDING.json` bound corpus에서 인덱스 읽도록 **단일출처화**(67b1→single-source 패턴). (2) D3 advisory→enforced + generated.md D3 라인 + D3 테스트 재활성.
+- **트리거/의존성**: `draft_evidence_adapter.py`가 **origin/main에 없음**(draft-spine J2, 미머지) → corpus PR(#5·6)에선 D3 **deferred**. **J2가 main 랜딩되면 D3 마저.**
+- 순서: #1(done) + #5·6(corpus) → 운영자 머지 → (J2 후) **D3**. 메모리: `project_d3_draft_default_followup`.
