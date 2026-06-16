@@ -11,6 +11,7 @@ The goal is simple:
 - append-only chat
 - periodic GitHub snapshots
 - clear stop/final-summary behavior
+- no unilateral heartbeat stop while operator-level work remains
 - remote operator commands when the operator is away from the machine
 
 ## Quick Start
@@ -30,6 +31,8 @@ coop/inbox_<agent>/
 ```
 
 Use a heartbeat interval such as 5, 10, or 15 minutes. Short intervals are good for hot operations; longer intervals are better for quiet monitoring. For unattended watch mode, use adaptive quiet backoff: 10 minutes, then 30 minutes, then 90 minutes after 3 consecutive no-op checks at each level.
+
+Do not treat a task `FINAL_SUMMARY` as a run stop signal. Pause/stop polling or peer pings only through `STOP.md`, an explicit operator command, or a peer-ACKed pause proposal with another watchdog still active.
 
 ## Repo Layout
 

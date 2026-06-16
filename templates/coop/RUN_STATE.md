@@ -11,6 +11,9 @@ Describe the current objective here.
 
 ## Heartbeats
 
+- Run lifecycle: active | quiet-watch | pause-proposed | paused | stopped
+- Watchdog owner:
+- Stop authority: STOP.md or explicit operator command
 - Codex interval:
 - Codex quiet backoff:
 - Codex quiet streak:
@@ -19,6 +22,8 @@ Describe the current objective here.
 - Claude quiet streak:
 - Last Codex heartbeat:
 - Last Claude heartbeat:
+- Pending peer pings:
+- Pause/stop proposals:
 
 ## Write Scope
 

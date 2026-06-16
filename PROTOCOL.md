@@ -54,6 +54,41 @@ Recommended quiet backoff is 10 minutes, then 30 minutes, then 90 minutes. Advan
 
 If the agent cannot guarantee recurring wakeups, say so plainly.
 
+## Run Lifecycle
+
+Separate subtask completion from run completion.
+
+- `active`: work is pending or the operator asked for close monitoring.
+- `quiet-watch`: no immediate task is pending, but operator-level decisions or downstream work remain.
+- `pause-proposed`: one agent thinks polling/pings can slow or pause and has asked the peer to confirm.
+- `paused`: the operator explicitly paused the run, or both agents agreed to pause a non-critical peer-ping while at least one watchdog remains active.
+- `stopped`: `coop/STOP.md` exists or the operator explicitly ordered a stop.
+
+A `FINAL_SUMMARY.md`, `VERDICT: ok`, or subtask completion report closes only that subtask. It does not stop the run while any operator-level item remains, such as data-write approval, PR merge approval, figure/refill follow-up, deployment, or next-phase planning.
+
+## No Unilateral Stop
+
+Agents must not delete, disable, or silently stop an active heartbeat only because their current subtask is done.
+
+To stop or pause polling:
+
+1. Write a short pause/stop proposal to the peer inbox, naming the reason, remaining pending decisions, and the intended new state.
+2. The peer replies with `VERDICT: ok|issues_found|blocked`.
+3. If operator-level decisions remain, at least one agent keeps a watchdog heartbeat unless the operator explicitly says to stop.
+4. Full stop still requires `coop/STOP.md` or an explicit operator command.
+
+An agent may stop only its own heartbeat without peer ACK when the operator directly tells that agent to stop, or when the platform cannot continue. In that case it must leave a `blocked` or handoff note first when possible.
+
+## Peer Ping Rules
+
+Use pings only for an outstanding expected peer action.
+
+- A ping is due after 3 quiet wakeups with no peer progress on that outstanding item.
+- A ping names the item, last observed peer file/time, and the needed action.
+- After a ping, wait another 3 quiet wakeups before pinging again.
+- Stop pinging that item only when it is answered, withdrawn, superseded, blocked with owner action, or both agents agree it no longer needs peer action.
+- If an item remains unanswered after repeated pings, escalate to the operator instead of creating noisy duplicate pings.
+
 ## GitHub Snapshot Discipline
 
 Snapshots are for remote visibility. Commit only:

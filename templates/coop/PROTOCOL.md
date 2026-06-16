@@ -12,6 +12,8 @@ This folder is the co-op workspace for Codex and Claude Code.
 - Do not rely on chat as the official record.
 - Write only under `coop/` unless the operator grants broader scope.
 - Do not commit, push, spend API money, or modify production data unless authorized.
+- A subtask `FINAL_SUMMARY` or `VERDICT: ok` does not stop the run by itself.
+- Do not stop/delete an active heartbeat unless `STOP.md` exists, the operator explicitly says to stop, or a peer-ACKed pause proposal says this agent may stand down while another watchdog remains active.
 
 ## Inboxes
 
@@ -32,3 +34,11 @@ If a task file has no matching reply, it is pending.
 6. If idle, run the standing audit defined in `RUN_STATE.md`.
 7. Update status and heartbeat timestamp.
 
+## Pause / Stop / Ping
+
+- Full stop requires `STOP.md` or an explicit operator stop command.
+- To pause polling or stop peer pings, write an official proposal to the peer inbox and wait for `VERDICT: ok|issues_found|blocked`.
+- If operator-level decisions remain, at least one agent keeps a watchdog heartbeat.
+- Ping a peer only for an outstanding expected action.
+- Send a peer ping after 3 quiet wakeups without peer progress; wait another 3 quiet wakeups before repeating.
+- Stop pinging that item when it is answered, withdrawn, superseded, blocked with owner action, or both agents agree no peer action is needed.

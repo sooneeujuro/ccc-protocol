@@ -37,6 +37,20 @@ Suggested status line:
 Quiet backoff: interval=30m, quiet_streak=0/3, next quiet level=90m.
 ```
 
+## Stop, Pause, and Ping
+
+Heartbeat lifecycle is stricter than task lifecycle:
+
+- A task can finish while the run stays active.
+- A `FINAL_SUMMARY.md` is not a heartbeat stop signal by itself.
+- A heartbeat may move to quiet backoff, but should not be deleted or disabled while operator-level decisions remain.
+- If one agent wants to pause polling or stop peer pings, it proposes that state in an official inbox note and waits for peer ACK.
+- Full stop requires `STOP.md` or an explicit operator stop command.
+- If both agents agree there is no current peer action, pings for that item stop; the run can remain in quiet-watch.
+- If one side is unresponsive after repeated due pings, escalate to the operator rather than spamming the same ping forever.
+
+Use a watchdog-baton rule during operator-away runs: at least one agent remains on a heartbeat until the operator stops or pauses the run.
+
 ## Heartbeat Prompt Template
 
 ```text
@@ -50,6 +64,7 @@ Every turn:
 5. If there is new work, handle it within the current write constraints.
 6. If there is no new work, perform the agreed standing audit only when needed.
 7. Maintain adaptive quiet backoff: after 3 consecutive quiet wakeups at 10m, move to 30m; after 3 consecutive quiet wakeups at 30m, move to 90m; reset to 10m when new work appears.
+8. Do not stop or delete this heartbeat only because a subtask completed. Use STOP.md, an explicit operator stop, or a peer-ACKed pause proposal.
 
 Constraints:
 - Write only under coop/ unless explicitly authorized.
