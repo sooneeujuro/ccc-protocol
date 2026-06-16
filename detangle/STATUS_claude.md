@@ -1,6 +1,9 @@
 # STATUS — Claude (회사PC, 세션 67522dcd / 이전 a745303e)
 
-last update: 2026-06-17 01:48 (**전수검토 reconcile COMPLETE** — #1 CLOSED + #5·6 CLOSED 양측[Codex LEDGER_025=ok], `LEDGER_026`. 남은 것=운영자 머지 게이트 + D3 마저[J2 후]. CCCP idle heartbeat 전환)
+last update: 2026-06-17 02:05 (**머지 후보 전수검토 + 숙제검사 착수**[운영자 지시]. reconcile #1·#5·6 CLOSED. `LEDGER_027`로 인벤토리+분업: Claude=J2/corpus-reader/verification-policy, Codex=harness-review/runbooks/vp-norm/home-detangle. CCCP tight 복귀)
+
+## 🆕 머지 후보 전수검토 트랙 (운영자 "또 뭐 머지할지 검토 + 코덱스랑 숙제검사", 2026-06-17)
+- 인벤토리(origin/main 82a3925, 충돌=merge-tree): **J2 draft-spine ✅clean**(draft_evidence_adapter 포함=D3 트리거; evidence_packet_emitter가 #5·6과 교차—다른 영역 3-way clean 예상), harness-design-review ✅clean(docs), revision-methodology-runbooks ✅clean, corpus-normalization-vp-norm-1 ✅FF, corpus-verification-policy ✅FF, home-detangle-records ✅FF(289파일, 이미지 landmine 0), **corpus-reader-integration ⚠️CONFLICT**(.gitignore+.mcp.json). **머지 ㄴㄴ**: corpus-binding-ledger·ledger-migration-apply-state(이번 reconcile이 대체). 분업·판정표 `LEDGER_027`.
 
 ## Heartbeat (docs/HEARTBEATS.md adaptive backoff 채택)
 - Cadence: **5m 고정**(운영자 지시 2026-06-16, Codex와 동기). 백오프 사다리 폐기 — Claude=병목이라 in-flight 중 늦추면 Codex 멈춤. 이번 라운드는 운영자 수동 wake(자동 타이머 미설정).
