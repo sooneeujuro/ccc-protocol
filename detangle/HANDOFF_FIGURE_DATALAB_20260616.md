@@ -1,4 +1,8 @@
-# HANDOFF — figure Datalab 재추출 진행중 (2026-06-16 ~16:3x)
+# HANDOFF — figure Datalab 재추출 ✅ 완료 (2026-06-16 ~17:00)
+
+> **✅ COMPLETED.** 머지 끝남: `fig_merge.py --apply` → 641 이미지 + 10 MD 교체, 게이트 PASS, 604→1, allowlist 2028→1(백업). cruft 필터 미적용(운영자 결정, RG 원본 특성). Codex 검증 = `inbox_codex/033`. **재색인만 미결**(10편 MD 텍스트 교체 → retrieval_units/bm25/dense stale, 운영자: Codex 검증 후). 비파괴 백업: `_fig_merge_backup_20260616`, allowlist `.bak_20260616_pre_prune`. 아래는 작업 당시 기록(히스토리).
+
+---
 
 새 세션용. 이전 세션(a745303e)이 Bash 호출 형식 반복오류로 교체. 상태 그대로 이어가면 됨.
 
