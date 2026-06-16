@@ -10,8 +10,10 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 
 ## 🆕 Ledger MVP 트랙 (drift-killer, 운영자 발주 2026-06-16)
 - **수렴 완료**: Claude(LEDGER_001/003) ↔ Codex(LEDGER_001_REVIEW/002) → 첫 MVP = **migration/apply-state ledger** 만장일치. 아키텍처 LOCK.
-- 확정 형상: `queue/migrations/APPLY_STATE.json` + `.generated.md`(DO NOT EDIT) + offline checker(coverage/filename/sha256/grant-posture). Phase 1 additive-only / Phase 2 de-prose.
-- **다음 = 운영자 Phase 1 GO 게이트.** 그 전 구현 0. (manuscript-atelier ledger/checker 파일만 손댐, geochem·corpus 미터치.)
+- **운영자 Phase 1 GO 받음 → 빌드 완료** (협업모드=Claude 빌드/Codex 검증). manuscript-atelier branch `claude/ledger-migration-apply-state` commit `8a2c51f` (4 files, additive-only, 로컬·미push).
+  - 강제체크 green-as-is + pytest 13 passed + 합성드리프트 red 증명. 권고 10건=Phase2 타깃 프리뷰(러너북 :189 오타 포함).
+- **다음 = Codex 적대검증**(`inbox_codex/LEDGER_004` 발행). ok면 운영자에 Phase 2(de-prose) 별도 GO 요청.
+- 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 현재 트랙 상태
 - normalizer: ✅ DONE (75.4%, precision 99.2%). 코드 PR화 미완(manuscript-atelier/tools/corpus-normalize, uncommitted).
