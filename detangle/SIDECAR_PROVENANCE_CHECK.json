@@ -1,0 +1,123 @@
+{
+ "total_660": 660,
+ "dup_via_sidecar": 14,
+ "genuinely_new": 646,
+ "dup_sample": [
+  {
+   "pdf": "Chapter-1---Produced-Water_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Produced Water",
+   "md_file": "Chapter-1---Produced-Water_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-10---Zinc-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Zinc in the Ocean",
+   "md_file": "Chapter-10---Zinc-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-12---Phenols-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Phenols in the Ocean",
+   "md_file": "Chapter-12---Phenols-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-13---Di-2-ethylhexyl-phthalate-in-_2002_Bioaccumulation-in-Marine-Or.pdf",
+   "title": "Di(2-ethylhexyl)phthalate in the Ocean",
+   "md_file": "Chapter-13---Di-2-ethylhexyl-phthalate-in-_2002_Bioaccumulation-in-Marine-Or.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-14---Monocyclic-Aromatic-Hydrocarbon_2002_Bioaccumulation-in-Marine-.pdf",
+   "title": "Monocyclic Aromatic Hydrocarbons in the Ocean",
+   "md_file": "Chapter-14---Monocyclic-Aromatic-Hydrocarbon_2002_Bioaccumulation-in-Marine-.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-2---Bioaccumulation-Mechanism_2002_Bioaccumulation-in-Marine-Organis.pdf",
+   "title": "<UNKNOWN>",
+   "md_file": "Chapter-2---Bioaccumulation-Mechanism_2002_Bioaccumulation-in-Marine-Organis.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-3---Arsenic-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Arsenic in the Ocean",
+   "md_file": "Chapter-3---Arsenic-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-4---Barium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Barium in the Ocean",
+   "md_file": "Chapter-4---Barium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-5---Cadmium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Cadmium in the Ocean",
+   "md_file": "Chapter-5---Cadmium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-7---Chromium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Chromium in the Ocean",
+   "md_file": "Chapter-7---Chromium-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-8---Copper-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Copper in the Ocean",
+   "md_file": "Chapter-8---Copper-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Chapter-9---Lead-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Lead in the Ocean",
+   "md_file": "Chapter-9---Lead-in-the-Ocean_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Index_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "<UNKNOWN>",
+   "md_file": "Index_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  },
+  {
+   "pdf": "Preface_2002_Bioaccumulation-in-Marine-Organisms.pdf",
+   "title": "Bioaccumulation in Marine Organisms: Effect of Contaminants from Oil Well Produced Water",
+   "md_file": "Preface_2002_Bioaccumulation-in-Marine-Organisms.md",
+   "doi": ""
+  }
+ ],
+ "new_sample": [
+  "(1)9.Carbon in the Convecting Mantle.pdf",
+  "(요약보고서) Summary Report on Pohang Earthquake_March 20.2019.pdf",
+  "- British Geological Survey - Rock Classification Scheme Vol 1 - Igneous Rocks (1999).pdf",
+  "003fa19b-565f-6753-1ce4-a7051b9d44c3.pdf",
+  "00fbbdc1-6e17-1b65-5962-be89329269ef.pdf",
+  "1-s2.0-S000925411400521X-main.pdf",
+  "1-s2.0-S0012821X07002130-main.pdf",
+  "1-s2.0-S0012821X10004978-main (1).pdf",
+  "1-s2.0-S0012821X10004978-main.pdf",
+  "1-s2.0-S0012821X2500336X-main.pdf",
+  "1-s2.0-S0024493712004124-main.pdf",
+  "1-s2.0-S0024493721001596-main.pdf",
+  "1-s2.0-S0024493723002438-main.pdf",
+  "1-s2.0-S0024493723003213-main.pdf",
+  "1-s2.0-S0024493723003900-main.pdf",
+  "1-s2.0-S0040195116303936-main.pdf",
+  "1-s2.0-S0883292719300046-main (1).pdf",
+  "1-s2.0-S0883292719300046-main.pdf",
+  "118f5113-3f41-0c7f-252b-50eda79810f3.pdf",
+  "135700e3-18c6-6e0f-01fd-9b8a77a79c3f.pdf",
+  "2013_Book_TheNobleGasesAsGeochemicalTrac.pdf",
+  "2cae9dd2-2a4d-f6a5-3357-313223d6ac03.pdf",
+  "30c02d6c-6999-9ed3-5bdd-bd3833d570bf.pdf",
+  "3767d6e2-b605-4f83-1b62-abacec79708f.pdf",
+  "4017351e-2ffe-4e89-3863-513547b7652b.pdf",
+  "44ce2f81-0c73-f13d-0e64-516072ab8b92.pdf",
+  "4d0ad4ef-fb09-587b-4f19-dce6a3ea5a92.pdf",
+  "4dbb3d10-ffbc-9f71-395b-567978230f1f.pdf",
+  "56210e81-0c69-1c8d-684d-68d42af82abb.pdf",
+  "57ff2c85-f7bd-e0d9-47f7-d8480c667e4f.pdf"
+ ]
+}
