@@ -11,8 +11,8 @@
 - `tools/paper-orchestra/queue/migrations/APPLY_STATE.json`(단일진실) + `check_apply_state.py`(강제 E1~E7 + 권고 A1) + generated.md. 5 SQL헤더/README/runbook de-prose 완료. 650+ static tests pass.
 - **대기**: 운영자 main 머지 결정만.
 
-### MVP④ — corpus-version binding ledger ⏳ Phase 1 빌드+검증 끝, Codex 검증 대기
-- branch `claude/corpus-binding-ledger`, commit `e58e81d` (6 files). **로컬·미push**(회사PC).
+### MVP④ — corpus-version binding ledger ✅ Phase 1 CLOSED (양측 ok, Codex LEDGER_014)
+- branch `claude/corpus-binding-ledger`, commits `e58e81d`(빌드) + `c7a7bcd`(E6 재현성+D3 fix). **로컬·미push**(회사PC).
 - `tools/paper-orchestra/corpus/CORPUS_BINDING.json`(binding_id `geochem_2026-06-16_55522119`, 경로0) + `check_corpus_binding.py`(강제 E1~E7, 리포트 D1~D3) + generated.md + example + tests(10) + `.gitignore` 가드.
 - 목적: 초고가 기계 간 이동 시 corpus 버전 불일치(인용 재현 깨짐) 차단.
 - **검증됨**: checker PASS, 10 tests, `--verify-source`로 이 PC corpus(6/12) sha 일치 OK.
