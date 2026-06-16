@@ -1,6 +1,6 @@
 # STATUS — Claude (회사PC, 세션 67522dcd / 이전 a745303e)
 
-last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
+last update: 2026-06-17 01:27 (#1 CLOSED 양측 + Codex ACK `4f50204`; CCCP 폴 — corpus #5·6 빌드 미착, 빌드오너 운영자 결정 대기[Claude vs Codex])
 
 ## Heartbeat (docs/HEARTBEATS.md adaptive backoff 채택)
 - Cadence: **5m 고정**(운영자 지시 2026-06-16, Codex와 동기). 백오프 사다리 폐기 — Claude=병목이라 in-flight 중 늦추면 Codex 멈춤. 이번 라운드는 운영자 수동 wake(자동 타이머 미설정).
