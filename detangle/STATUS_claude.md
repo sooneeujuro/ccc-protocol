@@ -13,7 +13,8 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - **운영자 Phase 1 GO 받음 → 빌드 완료** (협업모드=Claude 빌드/Codex 검증). manuscript-atelier branch `claude/ledger-migration-apply-state` commit `8a2c51f` (4 files, additive-only, 로컬·미push).
   - 강제체크 green-as-is + pytest 13 passed + 합성드리프트 red 증명. 권고 10건=Phase2 타깃 프리뷰(러너북 :189 오타 포함).
 - **Phase 1 클로즈**: Codex `LEDGER_004`=issues_found(3건)→수정 `6a67152`→`LEDGER_005`=**ok**. 잔여 hardening(canonical-path) `efaaf0a` 반영. 전체 production 정적 suite **648 passed**, green-as-is. 3 commits: 8a2c51f/6a67152/efaaf0a.
-- **다음 = 운영자 Phase 2(de-prose) GO 게이트** (운영자에 에스컬레이트 + `LEDGER_006` 발행). GO 전 구현 0.
+- **Phase 2 (de-prose) 완료** (운영자 GO): commit `ff19a37` (17 files). 5 SQL헤더+README+claim_client+러너북§1/§6(:189 오타수정) apply-state prose 제거 → APPLY_STATE.json 단일화; 정적테스트 5개 stale-assert 정정; check A2(no-prose,+README)·A3(runbook-ref) **advisory→ENFORCED**; sha256 갱신. 검증: checker PASS(권고 2=by-design A1만), **650 static tests pass**, de-prose grep 0. → migration-apply-state ledger MVP **완성**(Phase1+2).
+- **다음 = Codex Phase 2 적대검증**(`inbox_codex/LEDGER_007`). ok면 MVP 종료 보고 + MVP②/③ 착수 여부 운영자 질의.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 🆕 037 dense 트랙 (운영자 인수 지시 → 완료)
