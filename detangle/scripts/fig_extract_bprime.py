@@ -141,23 +141,31 @@ def main():
     rows = []
     def emit(cr, j, method):
         c = kept[j] if j is not None else None
-        nm = cr["num"] if cr["num"] is not None else 0
-        newname = ""
-        if c is not None:
-            newname = f"{A.pid}__refill20260616_fig{nm:02d}__{c['out_sha'][:12]}.jpg"
-            (outdir / newname).write_bytes(c["out_bytes"])
         cj = jacc(cr["alt"], c["cap_text"]) if c else 0.0
+        capn = (c.get("cap_no") if c else None)
+        if method == "junk":
+            status, newname = "JUNK_remove", ""
+        elif c is None:
+            status, newname = "NO_MATCH", ""
+        elif method == "by_number":
+            status = "matched"
+            newname = f"{A.pid}__refill20260616_fig{cr['num']:02d}__{c['out_sha'][:12]}.jpg"
+        else:  # by_order: NOT auto-safe (Codex 030) -> review, distinct name
+            status = "REVIEW_order"
+            cn = capn if isinstance(capn, int) else 0
+            newname = f"{A.pid}__refill20260616_review_cap{cn:02d}__{c['out_sha'][:12]}.jpg"
+        if newname and c is not None:
+            (outdir / newname).write_bytes(c["out_bytes"])
         rows.append({
             "ref_fig_no": cr["num"] if cr["num"] is not None else "", "match_method": method,
             "matched": bool(c), "new_name": newname,
-            "ext_cap_no": (c.get("cap_no") if c else ""), "page": (c["page"] if c else ""),
+            "ext_cap_no": (capn if capn is not None else ""), "page": (c["page"] if c else ""),
             "w": (c["w"] if c else ""), "h": (c["h"] if c else ""),
             "src_pdf_sha256": pdf_sha, "source_image_sha256": (c["src_sha"] if c else ""),
             "output_file_sha256": (c["out_sha"] if c else ""),
             "article_md": A.md, "article_line": cr["line"], "old_ref": cr["name"],
             "old_alt": cr["alt"][:200], "ext_caption_text": (c["cap_text"] if c else ""),
-            "caption_jaccard": cj, "mode": A.mode,
-            "status": ("JUNK_remove" if method == "junk" else ("matched" if c else "NO_MATCH")),
+            "caption_jaccard": cj, "mode": A.mode, "status": status,
         })
     # pass 1: by figure number; pass 2: order-fill remaining non-junk refs
     leftover = []
@@ -177,10 +185,12 @@ def main():
     extra_unused = len(rem) - ri  # extracted images not mapped to any ref
 
     n_real = sum(1 for cr in crefs if not cr["junk"])
-    n_matched = sum(1 for r in rows if r["matched"])
-    n_bynum = sum(1 for r in rows if r["match_method"] == "by_number")
+    n_matched = sum(1 for r in rows if r["status"] == "matched")  # by_number only
+    n_bynum = n_matched
+    n_order = sum(1 for r in rows if r["status"] == "REVIEW_order")
     n_junk = sum(1 for cr in crefs if cr["junk"])
-    paper_ok = (n_matched == n_real and extra_unused == 0)
+    # auto-ok ONLY if every real ref matched by figure number, nothing left over (Codex 030)
+    paper_ok = (n_bynum == n_real and extra_unused == 0 and n_order == 0)
     if rows:
         with open(outdir / "manifest.csv", "w", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
@@ -188,7 +198,7 @@ def main():
     # 5) staged md diff (live untouched): replace matched refs; junk refs flagged (left as-is)
     patched = lines[:]
     for r in rows:
-        if r["matched"] and isinstance(r["article_line"], int) and 1 <= r["article_line"] <= len(patched):
+        if r["status"] == "matched" and isinstance(r["article_line"], int) and 1 <= r["article_line"] <= len(patched):
             patched[r["article_line"] - 1] = patched[r["article_line"] - 1].replace(r["old_ref"], r["new_name"])
     diff = "\n".join(difflib.unified_diff(lines, patched, fromfile="live/" + A.md, tofile="staged/" + A.md, lineterm=""))
     (outdir / "staged_md.diff.txt").write_text(diff or "(no changes)\n", encoding="utf-8")
