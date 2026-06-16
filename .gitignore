@@ -7,3 +7,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# 분석용 콘택트시트 — 논문 figure 썸네일 포함 → push 금지 (하드게이트: corpus 그림 0)
+detangle/_contact_sheets/
+

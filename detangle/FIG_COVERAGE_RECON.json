@@ -1,0 +1,1300 @@
+{
+ "corpus_total_missing_refs": 604,
+ "bare_missing_count": 1,
+ "bare_missing_sample": [
+  "2d59d5e2b795e07431153b9e2bd77faf_img.jpg"
+ ],
+ "target_slugs_derived": 51,
+ "target_slugs_refix": 10,
+ "grand": {
+  "missing": 603,
+  "by_derived": 582,
+  "by_refix": 142,
+  "uncovered": 9
+ },
+ "rows": [
+  {
+   "slug": "005dbe86bd08",
+   "is_refix": true,
+   "missing": 16,
+   "derived_imgs": 18,
+   "refix_imgs": 18,
+   "cov_derived": 15,
+   "cov_refix": 15,
+   "cov_any": 15,
+   "uncovered": [
+    "005dbe86bd08__0b8b087a7baa471015d3ffeaa43d9a6c_img.jpg"
+   ],
+   "mds": [
+    "Sawai_et_al._(2025)_Re-examination_of_coastal_submergence_events_during_the_last_4000_years_in_the_Ukishima-ga-hara_lowland,_central_Japan-_an_aid_for.md"
+   ]
+  },
+  {
+   "slug": "014dd581d68c",
+   "is_refix": false,
+   "missing": 14,
+   "derived_imgs": 14,
+   "refix_imgs": 0,
+   "cov_derived": 14,
+   "cov_refix": 0,
+   "cov_any": 14,
+   "uncovered": [],
+   "mds": [
+    "Guo_et_al.,_2016,_Thermochemical_structure_of_the_North_China_Craton_from_multi_observable_probabilistic_inversion_Extent_and_causes_of_cratonic_litho.md"
+   ]
+  },
+  {
+   "slug": "01a6809a40bf",
+   "is_refix": false,
+   "missing": 15,
+   "derived_imgs": 15,
+   "refix_imgs": 0,
+   "cov_derived": 15,
+   "cov_refix": 0,
+   "cov_any": 15,
+   "uncovered": [],
+   "mds": [
+    "LeMasurier_et_al.,_2016,_Reconciling_the_shadow_of_a_subduction_signature_with_rift_geochemistry_and_tectonic_environment_in_Eastern_Marie_Byrd_Land,_.md"
+   ]
+  },
+  {
+   "slug": "029f6413c0c5",
+   "is_refix": true,
+   "missing": 9,
+   "derived_imgs": 11,
+   "refix_imgs": 11,
+   "cov_derived": 8,
+   "cov_refix": 9,
+   "cov_any": 9,
+   "uncovered": [],
+   "mds": [
+    "Tian_et_al.,_2016,_Origin_of_low_╬┤26Mg_basalts_with_EM-I_component;_Evidence_for_interaction_between_enriched_lithosphere_and_carbonated_asthenospher.md"
+   ]
+  },
+  {
+   "slug": "071f2b9d523d",
+   "is_refix": false,
+   "missing": 16,
+   "derived_imgs": 28,
+   "refix_imgs": 0,
+   "cov_derived": 16,
+   "cov_refix": 0,
+   "cov_any": 16,
+   "uncovered": [],
+   "mds": [
+    "Yang_et_al.,_2012,_Silica_enrichment_of_Group_II_xenoliths_by_evolved_alkali_basalt_from_Jeju_Island,_South_Korea;_Implication_for_modification_of_int.md"
+   ]
+  },
+  {
+   "slug": "0d3c7f66b416",
+   "is_refix": false,
+   "missing": 8,
+   "derived_imgs": 13,
+   "refix_imgs": 0,
+   "cov_derived": 8,
+   "cov_refix": 0,
+   "cov_any": 8,
+   "uncovered": [],
+   "mds": [
+    "Furi_et_al.,_2010,_Apparent_decoupling_of_the_He_and_Ne_isotope_systematics_of_the_Icelandic_mantle;_The_role_of_He_depletion,_melt_mixing,_degassing_.md"
+   ]
+  },
+  {
+   "slug": "2397f8e53833",
+   "is_refix": false,
+   "missing": 13,
+   "derived_imgs": 13,
+   "refix_imgs": 0,
+   "cov_derived": 13,
+   "cov_refix": 0,
+   "cov_any": 13,
+   "uncovered": [],
+   "mds": [
+    "Lenat,_2009,_La_réunion;_An_example_of_channeled_hot_spot_plume.md"
+   ]
+  },
+  {
+   "slug": "2a6fa59f9765",
+   "is_refix": false,
+   "missing": 17,
+   "derived_imgs": 17,
+   "refix_imgs": 0,
+   "cov_derived": 17,
+   "cov_refix": 0,
+   "cov_any": 17,
+   "uncovered": [],
+   "mds": [
+    "Pang_et_al.,_2015,_Pyroxenite-derived_Early_Cretaceous_lavas_in_the_Liaodong_Peninsula;_Implication_for_metasomatism_and_thinning_of_the_lithospheric_.md"
+   ]
+  },
+  {
+   "slug": "2d59d5e2b795e07431153b9e2bd77faf_img.jpg",
+   "is_refix": false,
+   "missing": 0,
+   "derived_imgs": 18,
+   "refix_imgs": 0,
+   "cov_derived": 0,
+   "cov_refix": 0,
+   "cov_any": 0,
+   "uncovered": [],
+   "mds": []
+  },
+  {
+   "slug": "31c7e75c503c",
+   "is_refix": false,
+   "missing": 5,
+   "derived_imgs": 6,
+   "refix_imgs": 0,
+   "cov_derived": 5,
+   "cov_refix": 0,
+   "cov_any": 5,
+   "uncovered": [],
+   "mds": [
+    "Bebout_et_al._(2007)_Isotope-ratio-monitoring_gas_chromatography_methods_for_high-precision_isotopic_analysis_of_nanomole_quantities_of_silicate_nitro.md"
+   ]
+  },
+  {
+   "slug": "34790ecc8808",
+   "is_refix": false,
+   "missing": 9,
+   "derived_imgs": 10,
+   "refix_imgs": 0,
+   "cov_derived": 9,
+   "cov_refix": 0,
+   "cov_any": 9,
+   "uncovered": [],
+   "mds": [
+    "Xu_et_al.,_2022,_Three-stage_modification_of_lithospheric_mantle;_Evidence_from_petrology,_in-situ_trace_elements,_and_Sr_isotopes_of_mantle_xenoliths.md"
+   ]
+  },
+  {
+   "slug": "359cf721d5fa",
+   "is_refix": false,
+   "missing": 28,
+   "derived_imgs": 31,
+   "refix_imgs": 0,
+   "cov_derived": 28,
+   "cov_refix": 0,
+   "cov_any": 28,
+   "uncovered": [],
+   "mds": [
+    "Seton,_2012,_Global_continental_and_ocean_basin_reconstructions_since_200_Ma.md"
+   ]
+  },
+  {
+   "slug": "3afb0a7d9705",
+   "is_refix": false,
+   "missing": 5,
+   "derived_imgs": 5,
+   "refix_imgs": 0,
+   "cov_derived": 5,
+   "cov_refix": 0,
+   "cov_any": 5,
+   "uncovered": [],
+   "mds": [
+    "Schwarz_et_al.,_2005,_Subduction_of_solar_type_noble_gases_from_extraterrestrial_dust;_constraints_from_high_pressure_low_temperature_metamorphic_deep.md"
+   ]
+  },
+  {
+   "slug": "3e7dab39a25a",
+   "is_refix": true,
+   "missing": 19,
+   "derived_imgs": 32,
+   "refix_imgs": 34,
+   "cov_derived": 17,
+   "cov_refix": 18,
+   "cov_any": 18,
+   "uncovered": [
+    "3e7dab39a25a__39a2a7c32eb02bb191b0cf30062c9d1b_img.jpg"
+   ],
+   "mds": [
+    "Yi_et_al.,_2021,_Alkalic_to_tholeiitic_magmatism_near_a_mid_ocean_ridge_petrogenesis_of_the_KR1_Seamount_Trail_adjacent_to_the_Australian_Antarctic_Ri.md"
+   ]
+  },
+  {
+   "slug": "42846efb5369",
+   "is_refix": false,
+   "missing": 2,
+   "derived_imgs": 2,
+   "refix_imgs": 0,
+   "cov_derived": 2,
+   "cov_refix": 0,
+   "cov_any": 2,
+   "uncovered": [],
+   "mds": [
+    "Hart,_1984,_A_large-scale_isotope_anomaly_in_the_Southern_Hemisphere_mantle.md"
+   ]
+  },
+  {
+   "slug": "49aa4245b6a1",
+   "is_refix": true,
+   "missing": 8,
+   "derived_imgs": 11,
+   "refix_imgs": 11,
+   "cov_derived": 7,
+   "cov_refix": 7,
+   "cov_any": 7,
+   "uncovered": [
+    "49aa4245b6a1__0538daaa5583c23e17db3a12f2281a55_img.jpg"
+   ],
+   "mds": [
+    "Forster_et_al._(2019),_Chemical_Geology,_Partitioning_of_nitrogen_during_melting_and_recycling_in_subduction_zones_and_the_evolution_of_atmospheric_ni.md"
+   ]
+  },
+  {
+   "slug": "4a33304a5246",
+   "is_refix": true,
+   "missing": 13,
+   "derived_imgs": 13,
+   "refix_imgs": 13,
+   "cov_derived": 12,
+   "cov_refix": 12,
+   "cov_any": 12,
+   "uncovered": [
+    "4a33304a5246__954ff3c220707f98bcb2c4b197bd7d9f_img.jpg"
+   ],
+   "mds": [
+    "Goldtz_et_al._(2024)_Operational_Earthquake_Forecasting_in_Japan-_A_Study_of_Municipal_Government_Planning_for_an_Earthquake_Advisory_or_Warning_in_th.md"
+   ]
+  },
+  {
+   "slug": "54a8fa91bbc2",
+   "is_refix": false,
+   "missing": 18,
+   "derived_imgs": 18,
+   "refix_imgs": 0,
+   "cov_derived": 18,
+   "cov_refix": 0,
+   "cov_any": 18,
+   "uncovered": [],
+   "mds": [
+    "Nishi_et_al._(2017)_OGR,_Formation_age_of_the_dual_structure_and_environmental_change_recorded_in_hydrogenetic_ferromanganese_crusts_from_Northwest_an.md"
+   ]
+  },
+  {
+   "slug": "5bb62d5bcdda",
+   "is_refix": false,
+   "missing": 7,
+   "derived_imgs": 7,
+   "refix_imgs": 0,
+   "cov_derived": 7,
+   "cov_refix": 0,
+   "cov_any": 7,
+   "uncovered": [],
+   "mds": [
+    "Lee_et_al.,_2015,_Age,_geochemistry_and_Sr-Nd-Pb_isotopic_compositions_of_alkali_volcanic_rocks_from_Mt._Melbourne_and_the_western_Ross_Sea,_Antarctic.md"
+   ]
+  },
+  {
+   "slug": "6af710406a35",
+   "is_refix": false,
+   "missing": 15,
+   "derived_imgs": 28,
+   "refix_imgs": 0,
+   "cov_derived": 15,
+   "cov_refix": 0,
+   "cov_any": 15,
+   "uncovered": [],
+   "mds": [
+    "Zhang_et_al._(2020)_Geo._Rev._Investigation_of_an_oceanic_plateau_formation_and_rifting_initiation_model_implied_by_the_Caroline_Ridge_on_the_Caroline.md"
+   ]
+  },
+  {
+   "slug": "6c3a91bb631f",
+   "is_refix": false,
+   "missing": 5,
+   "derived_imgs": 10,
+   "refix_imgs": 0,
+   "cov_derived": 5,
+   "cov_refix": 0,
+   "cov_any": 5,
+   "uncovered": [],
+   "mds": [
+    "Kiyosugi_et_al._(2010)_Relationships_between_volcano_distribution,_crustal_structure,_and_P-wave_tomography-_an_example_from_the_Abu_Monogenetic_Volca.md"
+   ]
+  },
+  {
+   "slug": "6dd2543ccd48",
+   "is_refix": false,
+   "missing": 11,
+   "derived_imgs": 11,
+   "refix_imgs": 0,
+   "cov_derived": 11,
+   "cov_refix": 0,
+   "cov_any": 11,
+   "uncovered": [],
+   "mds": [
+    "Li_Kan_et_al._(2025)_-_EPSL-_Mantle_wedge_serpentinites_as_a_potential_nitrogen_reservoir_regulating_subduction-zone_nitrogen_recycling_and_mantle_het.md"
+   ]
+  },
+  {
+   "slug": "6e80d332e8b7",
+   "is_refix": false,
+   "missing": 7,
+   "derived_imgs": 9,
+   "refix_imgs": 0,
+   "cov_derived": 7,
+   "cov_refix": 0,
+   "cov_any": 7,
+   "uncovered": [],
+   "mds": [
+    "Guan_et_al._(2018)_-_Minerals_-_Helium_and_Argon_Isotopes_in_the_Fe-Mn_Polymetallic_Crusts_and_Nodules_from_the_South_China_Sea-_Constraints_on_Their_.md"
+   ]
+  },
+  {
+   "slug": "7b3180e7140f",
+   "is_refix": false,
+   "missing": 8,
+   "derived_imgs": 8,
+   "refix_imgs": 0,
+   "cov_derived": 8,
+   "cov_refix": 0,
+   "cov_any": 8,
+   "uncovered": [],
+   "mds": [
+    "Brenna_et_al._2012b,_Spatio-temporal_evolution_of_a_dispersed_magmatic_system_and_its_implications_for_volcano_growth,_Jeju_Island_Volcanic_Field,_Kor.md"
+   ]
+  },
+  {
+   "slug": "7ca899455590",
+   "is_refix": true,
+   "missing": 28,
+   "derived_imgs": 30,
+   "refix_imgs": 33,
+   "cov_derived": 18,
+   "cov_refix": 28,
+   "cov_any": 28,
+   "uncovered": [],
+   "mds": [
+    "Xu_et_al.,_2024,_U_Pb_geochronology_and_geochemistry_of_dikes_in_the_Changbaishan_Tianchi_volcanic_field__NE_China__and_their_relations_with_the_coeva.md"
+   ]
+  },
+  {
+   "slug": "7f31390ac51e",
+   "is_refix": true,
+   "missing": 13,
+   "derived_imgs": 13,
+   "refix_imgs": 13,
+   "cov_derived": 12,
+   "cov_refix": 12,
+   "cov_any": 12,
+   "uncovered": [
+    "7f31390ac51e__d9d706121d1c4ba9ad2c793746382361_img.jpg"
+   ],
+   "mds": [
+    "Sorbadere_et_al.,_2012,_Constraints_on_the_origin_of_nepheline_normative_primitive_magma_in_island_arcs_inferred_from_olivine_hosted_melt_inclusion_co.md"
+   ]
+  },
+  {
+   "slug": "95c68cbf6c60",
+   "is_refix": false,
+   "missing": 13,
+   "derived_imgs": 14,
+   "refix_imgs": 0,
+   "cov_derived": 13,
+   "cov_refix": 0,
+   "cov_any": 13,
+   "uncovered": [],
+   "mds": [
+    "Halldorsson_et_al.,_2022,_Evidence_from_gas_rich_ultramafic_xenoiths_for_superplume_derived_recycled_volatiles_in_the_East_African_sub_continental_man.md"
+   ]
+  },
+  {
+   "slug": "9a55fb20f909",
+   "is_refix": false,
+   "missing": 8,
+   "derived_imgs": 8,
+   "refix_imgs": 0,
+   "cov_derived": 8,
+   "cov_refix": 0,
+   "cov_any": 8,
+   "uncovered": [],
+   "mds": [
+    "Roden_et_al.,_1988,_Isotopic_and_trace_element_composition_of_the_upper_mantle_beneath_a_young_continental_rift_Results_from_Kilbourne_Hole,_New_Mexic.md"
+   ]
+  },
+  {
+   "slug": "9e666629b859",
+   "is_refix": false,
+   "missing": 11,
+   "derived_imgs": 11,
+   "refix_imgs": 0,
+   "cov_derived": 11,
+   "cov_refix": 0,
+   "cov_any": 11,
+   "uncovered": [],
+   "mds": [
+    "Jackson_et_al._(2017)_Chem._Geo._Geochemistry_of_lavas_from_the_Caroline_hotspot,_Micronesia-_Evidence_for_primitive_and_recycled_components_in_the_ma.md"
+   ]
+  },
+  {
+   "slug": "a209733b99aa",
+   "is_refix": false,
+   "missing": 16,
+   "derived_imgs": 17,
+   "refix_imgs": 0,
+   "cov_derived": 16,
+   "cov_refix": 0,
+   "cov_any": 16,
+   "uncovered": [],
+   "mds": [
+    "Zheng_et_al.,_2005,_Trace_elemental_and_PGE_geochemical_constraints_of_Mesozoic_and_Cenozoic_peridotitic_xenoliths_on_lithospheric_evolution_of_the_No.md"
+   ]
+  },
+  {
+   "slug": "a418032b2ea6",
+   "is_refix": false,
+   "missing": 10,
+   "derived_imgs": 10,
+   "refix_imgs": 0,
+   "cov_derived": 10,
+   "cov_refix": 0,
+   "cov_any": 10,
+   "uncovered": [],
+   "mds": [
+    "Woo_et_al._2014,_Silica-_and_LREE-enriched_spinel_peridotite_xenoliths_from_the_Quaternary_intraplate_alkali_basalt,_Jeju_Island,_South_Korea_Old_suba.md"
+   ]
+  },
+  {
+   "slug": "a8f0fd609ebc",
+   "is_refix": false,
+   "missing": 9,
+   "derived_imgs": 10,
+   "refix_imgs": 0,
+   "cov_derived": 9,
+   "cov_refix": 0,
+   "cov_any": 9,
+   "uncovered": [],
+   "mds": [
+    "Liu_et_al.,_2012,_Mesozoic_accretion_of_juvenile_sub-continental_lithospheric_mantle_beneath_South_China_and_its_implications;_Geochemical_and_ReΓÇôOs.md"
+   ]
+  },
+  {
+   "slug": "aa6db12632a0",
+   "is_refix": false,
+   "missing": 18,
+   "derived_imgs": 19,
+   "refix_imgs": 0,
+   "cov_derived": 18,
+   "cov_refix": 0,
+   "cov_any": 18,
+   "uncovered": [],
+   "mds": [
+    "Naverrete_et_al._(2020)_The_fate_of_the_Farallon_slab_beneath_Patagonia_and_its_links_to_Cenozoic_intraplate_magmatism,_marine_transgressions_and_topo.md"
+   ]
+  },
+  {
+   "slug": "b0ae0c79896a",
+   "is_refix": false,
+   "missing": 8,
+   "derived_imgs": 8,
+   "refix_imgs": 0,
+   "cov_derived": 8,
+   "cov_refix": 0,
+   "cov_any": 8,
+   "uncovered": [],
+   "mds": [
+    "Yoo_et_al._2007,_Imaging_the_Three-Dimensional_Crust_of_the_Korean_Peninsula_by_Joint_Inversion_of_Surface-Wave_Dispersion_and_Teleseismic_Receiver_Fu.md"
+   ]
+  },
+  {
+   "slug": "b75cf41556bd",
+   "is_refix": false,
+   "missing": 13,
+   "derived_imgs": 14,
+   "refix_imgs": 0,
+   "cov_derived": 13,
+   "cov_refix": 0,
+   "cov_any": 13,
+   "uncovered": [],
+   "mds": [
+    "Usui_and_Okamoto_(2009)_Geophysical_and_Geological_Exploration_of_Cobalt-rich_Ferromanganese_Crusts__An_Attempt_of_Small-Scale_Mapping_on_a_Micronesia.md"
+   ]
+  },
+  {
+   "slug": "bc21a8a7c2f8",
+   "is_refix": false,
+   "missing": 7,
+   "derived_imgs": 7,
+   "refix_imgs": 0,
+   "cov_derived": 7,
+   "cov_refix": 0,
+   "cov_any": 7,
+   "uncovered": [],
+   "mds": [
+    "Landais_etal_2007_Reconsidering_the_change_in_global_biosphere_productivity_between_the_Last_Glacial_Maximum_and_present_day_from_the_triple_oxygen_is.md"
+   ]
+  },
+  {
+   "slug": "c4061cd46e69",
+   "is_refix": false,
+   "missing": 13,
+   "derived_imgs": 13,
+   "refix_imgs": 0,
+   "cov_derived": 13,
+   "cov_refix": 0,
+   "cov_any": 13,
+   "uncovered": [],
+   "mds": [
+    "Wang_et_al._(2020),_J._Ocean._Lim._Geochemical_characteristics_and_geological_implication_of_ferromanganese_crust_from_CM6_Seamount_of_the_Caroline_Ri.md"
+   ]
+  },
+  {
+   "slug": "cff5d48632ee",
+   "is_refix": false,
+   "missing": 12,
+   "derived_imgs": 13,
+   "refix_imgs": 0,
+   "cov_derived": 12,
+   "cov_refix": 0,
+   "cov_any": 12,
+   "uncovered": [],
+   "mds": [
+    "Panter_et_al._(2000),_Geochemistry_of_Late_Cenozoic_basalts_from_the_Crary_Mountains;_characterization_of_mantle_sources_in_Marie_Byrd_Land,_Antarctic.md"
+   ]
+  },
+  {
+   "slug": "d00ecbae77e8",
+   "is_refix": false,
+   "missing": 10,
+   "derived_imgs": 11,
+   "refix_imgs": 0,
+   "cov_derived": 10,
+   "cov_refix": 0,
+   "cov_any": 10,
+   "uncovered": [],
+   "mds": [
+    "Li_and_Wang,_2018,_Formation_time_of_the_big_mantle_wedge_beneath_eastern_China_and_a_new_lithospheric_thinning_mechanism_of_North_China_craton-Geodyn.md"
+   ]
+  },
+  {
+   "slug": "d0d849cec9de",
+   "is_refix": false,
+   "missing": 4,
+   "derived_imgs": 5,
+   "refix_imgs": 0,
+   "cov_derived": 4,
+   "cov_refix": 0,
+   "cov_any": 4,
+   "uncovered": [],
+   "mds": [
+    "Lee_and_Walker,_2006,_ReΓÇôOs_isotope_systematics_of_mantle_xenoliths_from_South_Korea;_Evidence_for_complex_growth_and_loss_of_lithospheric_mantle_be.md"
+   ]
+  },
+  {
+   "slug": "d54aa1e7cae1",
+   "is_refix": true,
+   "missing": 8,
+   "derived_imgs": 16,
+   "refix_imgs": 16,
+   "cov_derived": 6,
+   "cov_refix": 6,
+   "cov_any": 6,
+   "uncovered": [
+    "d54aa1e7cae1__b91e305493a4852dca57a801f54085c8_img.jpg",
+    "d54aa1e7cae1__f756d8e1fde6bc6ebdf4a5d7f1b2a57a_img.jpg"
+   ],
+   "mds": [
+    "Halldorsson_et_al.,_2016,_Recycling_of_crustal_material_by_the_Iceland_mantle_plume;_New_evidence_from_nitrogen_elemental_and_isotope_systematics_of_s.md"
+   ]
+  },
+  {
+   "slug": "dc82dcd60010",
+   "is_refix": false,
+   "missing": 19,
+   "derived_imgs": 21,
+   "refix_imgs": 0,
+   "cov_derived": 19,
+   "cov_refix": 0,
+   "cov_any": 19,
+   "uncovered": [],
+   "mds": [
+    "Riefstahl_et_al._2020,_Cretaceous_intracontinental_rifting_at_the_southern_Chatham_Rise_margin_and_initialisation_of_seafloor_spreading_between_Zealan.md"
+   ]
+  },
+  {
+   "slug": "de8cefb237d7",
+   "is_refix": false,
+   "missing": 12,
+   "derived_imgs": 12,
+   "refix_imgs": 0,
+   "cov_derived": 12,
+   "cov_refix": 0,
+   "cov_any": 12,
+   "uncovered": [],
+   "mds": [
+    "Yu_et_al.,_2021,_Magnesium_isotope_constraints_on_contributions_of_recycled_oceanic_crust_and_lithospheric_mantle_to_generation_of_intraplate_basalts_.md"
+   ]
+  },
+  {
+   "slug": "ee438d07a677",
+   "is_refix": false,
+   "missing": 13,
+   "derived_imgs": 13,
+   "refix_imgs": 0,
+   "cov_derived": 13,
+   "cov_refix": 0,
+   "cov_any": 13,
+   "uncovered": [],
+   "mds": [
+    "Ono_et_al._(2023)_-J._Hydrology_-__Vertical_distribution_of_groundwater_age_in_and_around_the_freshwaterΓÇôsaltwater_transition_zone_determined_using_.md"
+   ]
+  },
+  {
+   "slug": "f2936ef7492e",
+   "is_refix": true,
+   "missing": 11,
+   "derived_imgs": 13,
+   "refix_imgs": 13,
+   "cov_derived": 10,
+   "cov_refix": 10,
+   "cov_any": 10,
+   "uncovered": [
+    "f2936ef7492e__0f985b39edc1d52ba3600c438bc8f0a5_img.jpg"
+   ],
+   "mds": [
+    "Cawood,_2005,_Terra_Australis_Orogen;_Rodinia_breakup_and_development_of_the_Pacific_and_Iapetus_margins_of_Gondwana_during_the_Neoproterozoic_and_Pal.md"
+   ]
+  },
+  {
+   "slug": "f37432a888ac",
+   "is_refix": false,
+   "missing": 11,
+   "derived_imgs": 12,
+   "refix_imgs": 0,
+   "cov_derived": 11,
+   "cov_refix": 0,
+   "cov_any": 11,
+   "uncovered": [],
+   "mds": [
+    "Sleep,_1996,_Lateral_flow_of_hot_plume_material_ponded_at_sublithospheric_depths.md"
+   ]
+  },
+  {
+   "slug": "f4b8502ee4d2",
+   "is_refix": false,
+   "missing": 6,
+   "derived_imgs": 6,
+   "refix_imgs": 0,
+   "cov_derived": 6,
+   "cov_refix": 0,
+   "cov_any": 6,
+   "uncovered": [],
+   "mds": [
+    "Furi_et_al.,_2022,_In_situ_quantification_of_the_nitrogen_content_of_olivine-hosted_melt_inclusions_from_Klyuchevskoy_volcano_(Kamchatka)_Implications.md"
+   ]
+  },
+  {
+   "slug": "f50de881b65e",
+   "is_refix": false,
+   "missing": 14,
+   "derived_imgs": 14,
+   "refix_imgs": 0,
+   "cov_derived": 14,
+   "cov_refix": 0,
+   "cov_any": 14,
+   "uncovered": [],
+   "mds": [
+    "Yang_et_al._2012,_Gabbroic_xenoliths_and_megacrysts_in_the_Pleisto-Holocene_alkali_basalts_from_Jeju_Island,_South_Korea_The_implications_for_metasoma.md"
+   ]
+  },
+  {
+   "slug": "f8fded0e7b61",
+   "is_refix": false,
+   "missing": 10,
+   "derived_imgs": 10,
+   "refix_imgs": 0,
+   "cov_derived": 10,
+   "cov_refix": 0,
+   "cov_any": 10,
+   "uncovered": [],
+   "mds": [
+    "Suttle_et_al._(2023)_-_GCA-_Fossil_micrometeorites_from_Monte_dei_Corvi-_Searching_for_dust_from_the_Veritas_asteroid_family_and_the_utility_of_microm.md"
+   ]
+  },
+  {
+   "slug": "f9e895023cfd",
+   "is_refix": false,
+   "missing": 12,
+   "derived_imgs": 12,
+   "refix_imgs": 0,
+   "cov_derived": 12,
+   "cov_refix": 0,
+   "cov_any": 12,
+   "uncovered": [],
+   "mds": [
+    "Xu_Wen-Liang_et_al.,_2013,_Destruction_of_the_North_China_Craton;_Delamination_or_thermal_chemical_erosion_Mineral_chemistry_and_oxygen_isotope_insigh.md"
+   ]
+  },
+  {
+   "slug": "ff724e5a79c6",
+   "is_refix": true,
+   "missing": 26,
+   "derived_imgs": 26,
+   "refix_imgs": 27,
+   "cov_derived": 25,
+   "cov_refix": 25,
+   "cov_any": 25,
+   "uncovered": [
+    "ff724e5a79c6__1d3994bfe548ae7545d57df703e32a02_img.jpg"
+   ],
+   "mds": [
+    "Sakuyama_et_al._2014,_Progressive_Interaction_between_Dry_and_Wet_Mantle_during_High-temperature_Diapiric_Upwelling_Constraints_from_Cenozoic_Kita-Mat.md"
+   ]
+  }
+ ],
+ "refix_consistency": {
+  "005dbe86bd08": {
+   "md_count": 1,
+   "imgs_in_folder": 18,
+   "md_name": "Sawai_et_al._(2025)_Re-examination_of_coastal_submergence_events_during_the_last_4000_years_in_the_Ukishima-ga-hara_lowland,_central_Japan-_an_aid_for.md",
+   "md_refs": 17,
+   "md_refs_resolved": 17,
+   "md_refs_unresolved": []
+  },
+  "029f6413c0c5": {
+   "md_count": 1,
+   "imgs_in_folder": 11,
+   "md_name": "Tian_et_al.,_2016,_Origin_of_low_╬┤26Mg_basalts_with_EM-I_component;_Evidence_for_interaction_between_enriched_lithosphere_and_carbonated_asthenospher.md",
+   "md_refs": 9,
+   "md_refs_resolved": 9,
+   "md_refs_unresolved": []
+  },
+  "3e7dab39a25a": {
+   "md_count": 1,
+   "imgs_in_folder": 34,
+   "md_name": "Yi_et_al.,_2021,_Alkalic_to_tholeiitic_magmatism_near_a_mid_ocean_ridge_petrogenesis_of_the_KR1_Seamount_Trail_adjacent_to_the_Australian_Antarctic_Ri.md",
+   "md_refs": 20,
+   "md_refs_resolved": 20,
+   "md_refs_unresolved": []
+  },
+  "49aa4245b6a1": {
+   "md_count": 1,
+   "imgs_in_folder": 11,
+   "md_name": "Forster_et_al._(2019),_Chemical_Geology,_Partitioning_of_nitrogen_during_melting_and_recycling_in_subduction_zones_and_the_evolution_of_atmospheric_ni.md",
+   "md_refs": 8,
+   "md_refs_resolved": 8,
+   "md_refs_unresolved": []
+  },
+  "4a33304a5246": {
+   "md_count": 1,
+   "imgs_in_folder": 13,
+   "md_name": "Goldtz_et_al._(2024)_Operational_Earthquake_Forecasting_in_Japan-_A_Study_of_Municipal_Government_Planning_for_an_Earthquake_Advisory_or_Warning_in_th.md",
+   "md_refs": 13,
+   "md_refs_resolved": 13,
+   "md_refs_unresolved": []
+  },
+  "7ca899455590": {
+   "md_count": 1,
+   "imgs_in_folder": 33,
+   "md_name": "Xu_et_al.,_2024,_U_Pb_geochronology_and_geochemistry_of_dikes_in_the_Changbaishan_Tianchi_volcanic_field__NE_China__and_their_relations_with_the_coeva.md",
+   "md_refs": 28,
+   "md_refs_resolved": 28,
+   "md_refs_unresolved": []
+  },
+  "7f31390ac51e": {
+   "md_count": 1,
+   "imgs_in_folder": 13,
+   "md_name": "Sorbadere_et_al.,_2012,_Constraints_on_the_origin_of_nepheline_normative_primitive_magma_in_island_arcs_inferred_from_olivine_hosted_melt_inclusion_co.md",
+   "md_refs": 13,
+   "md_refs_resolved": 13,
+   "md_refs_unresolved": []
+  },
+  "d54aa1e7cae1": {
+   "md_count": 1,
+   "imgs_in_folder": 16,
+   "md_name": "Halldorsson_et_al.,_2016,_Recycling_of_crustal_material_by_the_Iceland_mantle_plume;_New_evidence_from_nitrogen_elemental_and_isotope_systematics_of_s.md",
+   "md_refs": 6,
+   "md_refs_resolved": 6,
+   "md_refs_unresolved": []
+  },
+  "f2936ef7492e": {
+   "md_count": 1,
+   "imgs_in_folder": 13,
+   "md_name": "Cawood,_2005,_Terra_Australis_Orogen;_Rodinia_breakup_and_development_of_the_Pacific_and_Iapetus_margins_of_Gondwana_during_the_Neoproterozoic_and_Pal.md",
+   "md_refs": 11,
+   "md_refs_resolved": 11,
+   "md_refs_unresolved": []
+  },
+  "ff724e5a79c6": {
+   "md_count": 1,
+   "imgs_in_folder": 27,
+   "md_name": "Sakuyama_et_al._2014,_Progressive_Interaction_between_Dry_and_Wet_Mantle_during_High-temperature_Diapiric_Upwelling_Constraints_from_Cenozoic_Kita-Mat.md",
+   "md_refs": 26,
+   "md_refs_resolved": 26,
+   "md_refs_unresolved": []
+  }
+ },
+ "cruft": {
+  "005dbe86bd08": [
+   {
+    "name": "005dbe86bd08__5fb340ad68b0c71df0b56698b137e35b_img.jpg",
+    "w": 78,
+    "h": 78,
+    "bytes": 1989
+   },
+   {
+    "name": "005dbe86bd08__e3f8612927870f2e0f9f5989e6dd3064_img.jpg",
+    "w": 28,
+    "h": 35,
+    "bytes": 958
+   },
+   {
+    "name": "005dbe86bd08__53f7bc09bcf96bc9e16350d3e114240e_img.jpg",
+    "w": 56,
+    "h": 61,
+    "bytes": 1618
+   }
+  ],
+  "029f6413c0c5": [
+   {
+    "name": "029f6413c0c5__fd30746c44f82f41d780ec264b0ee2d3_img.jpg",
+    "w": 150,
+    "h": 132,
+    "bytes": 9251
+   },
+   {
+    "name": "029f6413c0c5__0fd42b599ba9405ec57f636d524098ae_img.jpg",
+    "w": 91,
+    "h": 79,
+    "bytes": 2205
+   }
+  ],
+  "3e7dab39a25a": [
+   {
+    "name": "3e7dab39a25a__6ed175c791b5e156d9c98a8dbcc3318c_img.jpg",
+    "w": 52,
+    "h": 55,
+    "bytes": 1199
+   },
+   {
+    "name": "3e7dab39a25a__1d7527f4316cfe2d342b08d1653d1592_img.jpg",
+    "w": 52,
+    "h": 55,
+    "bytes": 1549
+   },
+   {
+    "name": "3e7dab39a25a__fa6c61be003dfbb4ca5587e48a71de94_img.jpg",
+    "w": 52,
+    "h": 48,
+    "bytes": 1234
+   },
+   {
+    "name": "3e7dab39a25a__550c2b8319d5a5f7c34f94769c42a6ab_img.jpg",
+    "w": 52,
+    "h": 48,
+    "bytes": 1138
+   },
+   {
+    "name": "3e7dab39a25a__403aadfa553f530f227ac5d59f5a2e66_img.jpg",
+    "w": 52,
+    "h": 55,
+    "bytes": 1360
+   },
+   {
+    "name": "3e7dab39a25a__b72097706f118df28125d1deb6b88d3e_img.jpg",
+    "w": 52,
+    "h": 55,
+    "bytes": 1356
+   },
+   {
+    "name": "3e7dab39a25a__31cdb383e9cc2643a547f2500ed3cd08_img.jpg",
+    "w": 52,
+    "h": 51,
+    "bytes": 1176
+   },
+   {
+    "name": "3e7dab39a25a__317e0525ef1b2458976c246876f4a948_img.jpg",
+    "w": 169,
+    "h": 32,
+    "bytes": 2107
+   },
+   {
+    "name": "3e7dab39a25a__339a16584d5da0f0a3ca4e9ec17bf6a1_img.jpg",
+    "w": 32,
+    "h": 32,
+    "bytes": 876
+   },
+   {
+    "name": "3e7dab39a25a__e06a1d39938b2f5d7a2c3618fea4f77f_img.jpg",
+    "w": 33,
+    "h": 32,
+    "bytes": 957
+   },
+   {
+    "name": "3e7dab39a25a__2b0f02b4a70afa75816b328a8d32ffe7_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 874
+   },
+   {
+    "name": "3e7dab39a25a__1b44e627ab100e471dc987d1406f826d_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 845
+   },
+   {
+    "name": "3e7dab39a25a__55ba14cfd46917be7dae5263289faf6a_img.jpg",
+    "w": 81,
+    "h": 70,
+    "bytes": 1902
+   },
+   {
+    "name": "3e7dab39a25a__2006b710e0619db90b06b27787252b95_img.jpg",
+    "w": 32,
+    "h": 32,
+    "bytes": 1004
+   },
+   {
+    "name": "3e7dab39a25a__378dc8dd9900600753c87885f9bb7baf_img.jpg",
+    "w": 32,
+    "h": 32,
+    "bytes": 947
+   },
+   {
+    "name": "3e7dab39a25a__620dd20d5228a204660dcaa3aa6ea154_img.jpg",
+    "w": 27,
+    "h": 32,
+    "bytes": 972
+   },
+   {
+    "name": "3e7dab39a25a__38222c3ae003223a67635bfcc6950fbb_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__78fe18e63ba327b1e224bad8a7c4de54_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__e511e373339b5f948f239b19e0c37dd4_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__854df8ad60507803253274673f9062cf_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__253600420ae7bd7d0119563b895cbf8a_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__a28ab03366399b5e0a61445bc57e3724_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__226f5e462c99b71e08dc9abaa5ae260c_img.jpg",
+    "w": 32,
+    "h": 30,
+    "bytes": 1064
+   },
+   {
+    "name": "3e7dab39a25a__2b357e4034ff41a2e0c3ca8c25c00c9d_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   },
+   {
+    "name": "3e7dab39a25a__6a5342571eca4b46338fdfb3c42a8055_img.jpg",
+    "w": 32,
+    "h": 27,
+    "bytes": 1058
+   },
+   {
+    "name": "3e7dab39a25a__11358a9fa9cfdf9faa0e5645ce4336f9_img.jpg",
+    "w": 38,
+    "h": 28,
+    "bytes": 999
+   }
+  ],
+  "49aa4245b6a1": [
+   {
+    "name": "49aa4245b6a1__4f4b52340aaccb1bcf733468dca9ee03_img.jpg",
+    "w": 77,
+    "h": 74,
+    "bytes": 2004
+   }
+  ],
+  "4a33304a5246": [
+   {
+    "name": "4a33304a5246__c8d96c8885d3000a912c2582004aed63_img.jpg",
+    "w": 25,
+    "h": 32,
+    "bytes": 803
+   },
+   {
+    "name": "4a33304a5246__3ad821e3ca7dd4cb7003e9c8d982e254_img.jpg",
+    "w": 25,
+    "h": 32,
+    "bytes": 847
+   },
+   {
+    "name": "4a33304a5246__177bde115c7ebbeffa559d05eea9e94b_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 807
+   },
+   {
+    "name": "4a33304a5246__cab2e95699b614c49dd80341e1932607_img.jpg",
+    "w": 25,
+    "h": 32,
+    "bytes": 876
+   },
+   {
+    "name": "4a33304a5246__b77aed42373877ea86d1cd8a66b06ee3_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 881
+   },
+   {
+    "name": "4a33304a5246__3ebf7890a99b62b15982394ee2f18b35_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 846
+   },
+   {
+    "name": "4a33304a5246__6334f3c9662e5c8ae50d3017e7b125e5_img.jpg",
+    "w": 24,
+    "h": 32,
+    "bytes": 923
+   },
+   {
+    "name": "4a33304a5246__f30a736f42178df7e546616c0b486787_img.jpg",
+    "w": 24,
+    "h": 31,
+    "bytes": 709
+   }
+  ],
+  "7ca899455590": [
+   {
+    "name": "7ca899455590__17413706fd4997a1a4bdf85c6864eee1_img.jpg",
+    "w": 54,
+    "h": 53,
+    "bytes": 1215
+   },
+   {
+    "name": "7ca899455590__f419710cbe076aa30a9c6c031b5cbe84_img.jpg",
+    "w": 30,
+    "h": 29,
+    "bytes": 929
+   },
+   {
+    "name": "7ca899455590__faf942dc3e59ce8eb64b4ac481eca7e0_img.jpg",
+    "w": 54,
+    "h": 53,
+    "bytes": 1486
+   },
+   {
+    "name": "7ca899455590__cf531ed27e91483460120fcc057b3901_img.jpg",
+    "w": 54,
+    "h": 53,
+    "bytes": 1345
+   },
+   {
+    "name": "7ca899455590__34fde9b7c74442c0438f550a41236260_img.jpg",
+    "w": 1,
+    "h": 2,
+    "bytes": 631
+   },
+   {
+    "name": "7ca899455590__d3102649f02e825ddb76dc3de0190154_img.jpg",
+    "w": 54,
+    "h": 50,
+    "bytes": 1145
+   },
+   {
+    "name": "7ca899455590__4b7a79268f6ba26c1471d4232fffa85a_img.jpg",
+    "w": 54,
+    "h": 55,
+    "bytes": 1299
+   },
+   {
+    "name": "7ca899455590__87d978583253c9bde1db2d6dfafe8de0_img.jpg",
+    "w": 29,
+    "h": 28,
+    "bytes": 910
+   },
+   {
+    "name": "7ca899455590__95b425611cbd2b8716a140cf67c81822_img.jpg",
+    "w": 54,
+    "h": 62,
+    "bytes": 1551
+   },
+   {
+    "name": "7ca899455590__98475352b625a273242ad989dd0cabc3_img.jpg",
+    "w": 29,
+    "h": 28,
+    "bytes": 968
+   },
+   {
+    "name": "7ca899455590__61972112770d9c8fb00883057954f885_img.jpg",
+    "w": 169,
+    "h": 29,
+    "bytes": 2108
+   },
+   {
+    "name": "7ca899455590__f1c5da15572e3e09d343161be98f508d_img.jpg",
+    "w": 28,
+    "h": 27,
+    "bytes": 1052
+   },
+   {
+    "name": "7ca899455590__235bfe13ebf007ce2eea9e689707fac7_img.jpg",
+    "w": 28,
+    "h": 32,
+    "bytes": 994
+   },
+   {
+    "name": "7ca899455590__b65ff707ec4d1ab514bcb3ba54feee42_img.jpg",
+    "w": 25,
+    "h": 32,
+    "bytes": 916
+   },
+   {
+    "name": "7ca899455590__55ba14cfd46917be7dae5263289faf6a_img.jpg",
+    "w": 65,
+    "h": 64,
+    "bytes": 1895
+   },
+   {
+    "name": "7ca899455590__253600420ae7bd7d0119563b895cbf8a_img.jpg",
+    "w": 33,
+    "h": 26,
+    "bytes": 1069
+   },
+   {
+    "name": "7ca899455590__bc0074c9be2d587e0b85224d9cb083ec_img.jpg",
+    "w": 32,
+    "h": 26,
+    "bytes": 988
+   },
+   {
+    "name": "7ca899455590__a28ab03366399b5e0a61445bc57e3724_img.jpg",
+    "w": 33,
+    "h": 26,
+    "bytes": 1069
+   },
+   {
+    "name": "7ca899455590__226f5e462c99b71e08dc9abaa5ae260c_img.jpg",
+    "w": 32,
+    "h": 26,
+    "bytes": 988
+   }
+  ],
+  "7f31390ac51e": [
+   {
+    "name": "7f31390ac51e__1d7527f4316cfe2d342b08d1653d1592_img.jpg",
+    "w": 67,
+    "h": 56,
+    "bytes": 1589
+   },
+   {
+    "name": "7f31390ac51e__5a36d88d3904f3f2d386c7cf63fa5053_img.jpg",
+    "w": 61,
+    "h": 56,
+    "bytes": 1650
+   },
+   {
+    "name": "7f31390ac51e__31cdb383e9cc2643a547f2500ed3cd08_img.jpg",
+    "w": 67,
+    "h": 56,
+    "bytes": 1470
+   },
+   {
+    "name": "7f31390ac51e__cb5eaf8e70e3c5f8770cd7649d1ec5dd_img.jpg",
+    "w": 67,
+    "h": 56,
+    "bytes": 1064
+   },
+   {
+    "name": "7f31390ac51e__3561c7d5c1ebddd15bd785d1aa1d5604_img.jpg",
+    "w": 67,
+    "h": 54,
+    "bytes": 1060
+   }
+  ],
+  "d54aa1e7cae1": [
+   {
+    "name": "d54aa1e7cae1__30a26f2d17ca95672702bf50fb4f0242_img.jpg",
+    "w": 87,
+    "h": 95,
+    "bytes": 2727
+   },
+   {
+    "name": "d54aa1e7cae1__4a04896dfb569893fba50729314024f5_img.jpg",
+    "w": 148,
+    "h": 132,
+    "bytes": 9230
+   },
+   {
+    "name": "d54aa1e7cae1__0cad2de4b7b495e86d91a326360846ea_img.jpg",
+    "w": 87,
+    "h": 68,
+    "bytes": 2036
+   }
+  ],
+  "f2936ef7492e": [
+   {
+    "name": "f2936ef7492e__fd30746c44f82f41d780ec264b0ee2d3_img.jpg",
+    "w": 148,
+    "h": 134,
+    "bytes": 9279
+   },
+   {
+    "name": "f2936ef7492e__de34d3f92d3b0b26535a094d65956584_img.jpg",
+    "w": 146,
+    "h": 80,
+    "bytes": 4690
+   }
+  ],
+  "ff724e5a79c6": [
+   {
+    "name": "ff724e5a79c6__1d7527f4316cfe2d342b08d1653d1592_img.jpg",
+    "w": 67,
+    "h": 60,
+    "bytes": 1706
+   },
+   {
+    "name": "ff724e5a79c6__5a36d88d3904f3f2d386c7cf63fa5053_img.jpg",
+    "w": 59,
+    "h": 60,
+    "bytes": 1136
+   },
+   {
+    "name": "ff724e5a79c6__31cdb383e9cc2643a547f2500ed3cd08_img.jpg",
+    "w": 67,
+    "h": 60,
+    "bytes": 1172
+   },
+   {
+    "name": "ff724e5a79c6__a378064ca1325302ee7048e11876e5d2_img.jpg",
+    "w": 59,
+    "h": 60,
+    "bytes": 1627
+   },
+   {
+    "name": "ff724e5a79c6__f6bf48cbef3b420ad4981560b52d814f_img.jpg",
+    "w": 67,
+    "h": 49,
+    "bytes": 1055
+   },
+   {
+    "name": "ff724e5a79c6__3c7a32be35e9c4783ee5f56373a66353_img.jpg",
+    "w": 67,
+    "h": 49,
+    "bytes": 1052
+   }
+  ]
+ }
+}
