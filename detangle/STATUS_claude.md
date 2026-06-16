@@ -9,6 +9,7 @@ last update: 2026-06-17 02:05 (**머지 후보 전수검토 + 숙제검사 착�
   - ⚠️**NEEDS-WORK**: corpus-reader(.gitignore P0+.mcp.json→#5·6식 rebase), vp-norm(stale 경로+whitespace), **home-detangle(289파일—이미지/논문본문 0이지만 `a2_convert_german.py`가 datalab_key.txt 비밀키경로 읽음+로컬/NAS경로→큐레이션 필수)**.
   - ❌**DON'T MERGE**: corpus-binding-ledger·ledger-migration-apply-state(reconcile가 대체).
   - **순서**: #1+#5·6 → J2(Claude 결합빌드+Codex검증→D3 마저) → docs READY → NEEDS-WORK 수정 후. **운영자 머지 결정/GO 대기.**
+- **🟢 결합 브랜치 빌드 완료(운영자 GO "J2+#5·6 결합빌드", 2026-06-17)**: `claude/combined-j2-corpus` HEAD `5462066`(worktree `_wt-combined`) = corpus-binding-main(bc97a88) + merge J2(c6f7cc8) + generated.md 재생성(5462066). **머지 충돌 0, 67b1=0, evidence_packet_emitter disjoint 3-way clean 실증.** D3 활성 전환(adapter 랜딩→advisory drift), generated.md 재생성으로 E6 PASS, D3 테스트 skip 해제 통과. 검증: checker PASS(advisory 2), corpus 48/retrieval 88/draft-driver 40/writing-runner 360/production 655 all green. `LEDGER_030` → Codex 결합검증 대기. **D3 마저는 운영자 GO 대기**(adapter 단일출처화+D3 enforced).
 
 ## Heartbeat (docs/HEARTBEATS.md adaptive backoff 채택)
 - Cadence: **5m 고정**(운영자 지시 2026-06-16, Codex와 동기). 백오프 사다리 폐기 — Claude=병목이라 in-flight 중 늦추면 Codex 멈춤. 이번 라운드는 운영자 수동 wake(자동 타이머 미설정).
