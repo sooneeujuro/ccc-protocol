@@ -4,11 +4,12 @@ Operator update for the CIR statistics paper-draft exercise.
 
 ## Context
 
-Codex is continuing the CIR paper-draft/system-test work from the local unpublished project:
+Codex is continuing the CIR paper-draft/system-test work from the operator's
+local unpublished CIR project.
 
-- Source project: `G:/260518_CIR_Statistics`
-- Codex run folder: `C:/Users/USER/Documents/_codex_runs/cir_statistics_paper_draft_codex`
-- Target repo worktree used for system tools: `C:/Users/USER/Documents/_wt-evidence-demand`
+- Source project: local unpublished CIR statistics folder supplied by operator.
+- Codex run folder: local Codex CIR paper-draft run folder.
+- Target repo worktree used for system tools: Codex evidence-demand worktree.
 
 Do not copy raw unpublished tables, PDFs, figure source data, or local/private paths into CCCP notes. Coordination notes should stay sanitized.
 
@@ -34,7 +35,7 @@ Do not copy raw unpublished tables, PDFs, figure source data, or local/private p
 
 ## Current Codex Findings To Compare Against
 
-Codex has already produced a CIR run with:
+Codex has already produced a local CIR run with:
 
 - `manuscript_draft_v2_revised.md`
 - `claim_evidence_matrix.md`
