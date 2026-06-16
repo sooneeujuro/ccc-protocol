@@ -16,7 +16,8 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - **Phase 2 (de-prose) 완료** (운영자 GO): commit `ff19a37` (17 files). 5 SQL헤더+README+claim_client+러너북§1/§6(:189 오타수정) apply-state prose 제거 → APPLY_STATE.json 단일화; 정적테스트 5개 stale-assert 정정; check A2(no-prose,+README)·A3(runbook-ref) **advisory→ENFORCED**; sha256 갱신. 검증: checker PASS(권고 2=by-design A1만), **650 static tests pass**, de-prose grep 0. → migration-apply-state ledger MVP **완성**(Phase1+2).
 - Codex `LEDGER_007`=issues_found(2건: claim_client 게이트 0002b 누락 + 체커 출력 cp949 크래시) → **수정 완료** commit `bdd8332`(companion-aware 게이트 + ASCII/reconfigure 출력 + cp949 테스트). checker PASS, 651 tests, cp949 red-path OK. 재검증 `LEDGER_008` 발행.
 - Codex `LEDGER_008_..._REREVIEW`=**ok** → **migration/apply-state ledger MVP (Phase 1+2) CLOSED 양측 합의** (`LEDGER_009` 발행). 최종 branch `claude/ledger-migration-apply-state` commits 8a2c51f/6a67152/efaaf0a/ff19a37/bdd8332 (로컬·미push). checker PASS, 651 tests.
-- **운영자 게이트**: (1) MVP main 머지 여부(code-only PR 가능) (2) 다음 MVP②(live-surface)/③(decision) 착수 여부. 지시 전 미착수. 워치독 cadence 10m로 복귀.
+- **운영자 게이트**: (1) MVP main 머지 여부(code-only PR 가능). (2) ②live-surface/③decision는 **북극성 미통과로 보류**(운영자·Claude 합의: 인프라위생, 논문 직결 약함).
+- **🆕 MVP④ corpus-version binding ledger 설계 착수**(운영자 발의, 북극성 통과 — 초고 인용 재현성): `CORPUS_BINDING.json`(버전 핀 sha1/편수/날짜, 메타만) + per-machine 소스config + 체커(연결 corpus CORPUS_VERSION.json 대조). **실재 드리프트 발견**: `.mcp.json`이 옛 6/02(4470, dedup전) 가리킴 vs 정본 6/12(6/16재빌드, 3903, sha 55522119). 설계안 `inbox_codex/LEDGER_010` 발행 → Codex 검증 대기. 빌드는 수렴 후.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 🆕 037 dense 트랙 (운영자 인수 지시 → 완료)
