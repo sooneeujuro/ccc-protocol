@@ -58,3 +58,11 @@ last update: 2026-06-17 02:05 (**머지 후보 전수검토 + 숙제검사 착�
 - B(sidecar 적용): operator "박아" 대기. PR#15/16 머지 대기.
 
 ## 발행 최신: inbox_codex/021 (Codex verdict 대기). 핸드오프: detangle/HANDOFF_NEW_DRIVER_20260616.md (🔴 correction 포함).
+
+## 🆕 CIR 시스템 stress-test 트랙 (운영자 2026-06-17 밤샘, 두 방향 COMPLETE)
+운영자: CIR 미공개 통계논문(`G:/260518_CIR_Statistics`)을 *재료*로 레포 전체 코드 작동 검증 + 과학리뷰 둘 다. Claude=tester#1 독립리뷰, Codex=빌더+전체루프, 교차/수렴.
+- **기능 커버리지**: figure MCP×2✅(He·La/Sm vs 위도, 운영자 인라인표시), corpus binding/discovery/D3 fail-closed/BM25(alignment verified)/evidence-demand/draft-driver 파이프(40 tests)/writing-runner/claim-extractor/backchain/source-support 다 작동. fake-green=0-claim READY·writer evidence 0인용; fake-red=#9(내 CORPUS_SOURCE.local.json smoke파일이 retrieval fail-closed 테스트 깸→정리, 진짜결함=테스트 로컬설정 부재 의존).
+- **과학리뷰(C1 dVs)**: double-dipping(경계=He+dVs GMM유도→그 경계로 대비검정) + **자기인용 확정**(dVs=Barruol2019 MBAR tomography 모델 샘플값, 신규측정X→published 모델 재분석으로 프레이밍) + Moran's I≈0.91→e-29 p값 부적합. C3 La/Sm=경계 band(step아님)+dataset 교락. → Codex가 비평 수용, **draft v3 본문/제목 substantive 강등 확인**(cosmetic 아님), evidence-demand에 boundary_derivation_independence 추가→contradictory=1/fail.
+- **운영자 추적질문 답**(CLAUDECODE_CIR_TRACKING_001): corpus·논지 추적은 allow-list·audit·리비전 생존 수준 안 깨짐; 약한 seam=cited 판정이 prose `(Surname,Year)` 텍스트매칭→writer `[E1]` alias 쓰면 cited=0(ID기반 sidecar로 픽스).
+- **통합 모닝브리프**: CLAUDECODE_CIR_MORNING_BRIEF(운영자 AM). 권고: ①citation ID바인딩 ②0-claim→skeleton_only ③external-support target-source 제외(Kim2024+CIR 공통) ④retrieval 테스트 격리.
+- 게이트 준수: raw 미공개데이터/figure 커밋0·머지0·read-only. scratch=`C:\Users\USER\Documents\_claudecode_runs\cir_statistics_paper_draft\`.
