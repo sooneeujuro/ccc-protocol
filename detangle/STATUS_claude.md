@@ -27,7 +27,8 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - **origin/main이 이미 `MIGRATION_STATUS.md`(migration apply-state ledger, 운영자 채택 6/11) 보유** = 내 MVP1 중복. 원인: 작업 브랜치가 origin/main보다 **39커밋 뒤+분기**, 시작 전 미확인(Codex도 isolation 리뷰라 놓침). 39커밋엔 리뷰 후속 fix 다수 + senpAI 전체 + 0004가 이미 landed.
 - **영향**: MVP1 머지 ㄴㄴ(중복+충돌). MVP④ corpus-binding은 신규(main 없음)→살림.
 - **운영자 지시=두 시스템 장점 통합**: main `MIGRATION_STATUS.md`(정본 유지) + 내 체커 이식(`check_migration_status.py`: coverage/no-prose/companion/runbook-ref enforced) → prose ledger에 기계검증 부착. `LEDGER_020`으로 Codex 공유+제안.
-- **다음**: Codex 통합방향 답 → 현재 origin/main 위에서 체커 이식 + corpus-binding rebase. 교훈 메모리: 작업 전 origin/main 동기화. 비용캡 $500, 자동폴링/Workflow OFF.
+- **운영자 지시=전수검토·합치기**: 이번 세션 작업 ↔ origin/main 전수 비교, 비교해 좋은 거 채용, Claude+Codex 파트 분업. **전체 계획·매트릭스 = `detangle/RECONCILE_AUDIT_20260616.md`**(압축 생존용). 분업: Claude=#1·2·3(migration 클러스터, main 표+내 체커 이식), Codex=#5·6(corpus rebase 검증)+교차. `LEDGER_021` 발행.
+- ⚠️ **Claude 곧 컨텍스트 압축** — 복구앵커: RECONCILE_AUDIT_20260616 + 이 파일 + HANDOFF + 메모리. 철칙: 작업 전 origin/main 대조. 비용캡 $500·크레딧잠금, 서브에이전트 fleet 금지(2-에이전트), 자동폴링 OFF.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 🆕 037 dense 트랙 (운영자 인수 지시 → 완료)
