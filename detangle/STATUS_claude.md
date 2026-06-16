@@ -22,7 +22,8 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - Codex `LEDGER_014` 재검증=**ok** → **corpus-binding Phase 1 CLOSED 양측** (`LEDGER_015`). 최종 commits e58e81d+c7a7bcd(로컬).
 - **corpus-binding Phase 2 빌드 완료**(운영자 "다 바꿔" GO): commit `047a653`. 67b1→55522119 3 anchor(bge_dense_adapter/evidence_packet_emitter/EvidencePacket.spec)+README/docstring, D1 advisory→ENFORCED, generated.md D3-only. 검증: live 67b1 0(handoff만), checker PASS, **787 tests**. D3(draft default)=advisory 유지(운영적 후속). `LEDGER_016` 발행 → Codex 검증 대기.
 - **single-source 리팩터**(운영자 지적: 하드코딩=에러제조기): commit `89e87a8`→`aff15f5`. `CANONICAL_UNITS_SHA1 = _load_bound_units_sha1()`(binding 런타임 읽기), emitter import, spec/README/docstring 이름 참조만(sha 값 0). Codex `LEDGER_017`=issues_found(D1이 bound값 재하드코딩 못잡음 + 55522119 prose 잔존) → `aff15f5`로 수정: **D1=앵커에 40-hex 리터럴 하나라도 있으면 fail**(재하드코딩 적발), prose 제거. checker PASS, 787 tests. 재검증 `LEDGER_018` 발행.
-- **운영자 게이트(대기)**: (1) D3 후속(draft adapter, advisory) (2) MVP1+corpus-binding 머지. Codex 운영자가 멈춤. 운영: 자동폴링/Workflow OFF, 비용캡 $500, 수동 wake.
+- Codex `LEDGER_018` 재검증=**ok** → **corpus-binding MVP④ CLOSED 양측**(`LEDGER_019`). single-source 도장. 최종 5 commits(e58e81d→c7a7bcd→047a653→89e87a8→aff15f5, 로컬). **오늘 두 ledger MVP(migration apply-state + corpus-version binding) 전부 닫힘.**
+- **운영자 게이트(대기)**: (1) D3 후속(draft adapter binding-정렬, advisory) (2) MVP1+corpus-binding 브랜치 main 머지. Codex 운영자가 멈춤. 자동폴링/Workflow OFF, 비용캡 $500, 수동 wake.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
 ## 🆕 037 dense 트랙 (운영자 인수 지시 → 완료)
