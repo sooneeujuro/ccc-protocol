@@ -3,7 +3,7 @@
 last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 
 ## Heartbeat (docs/HEARTBEATS.md adaptive backoff 채택)
-- Quiet backoff: interval=10m, quiet_streak=0/3, next quiet level=30m → 90m(ScheduleWakeup 상한 60m로 캡).
+- Cadence: **5m 고정**(운영자 지시 2026-06-16, Codex와 동기). 백오프 사다리 폐기 — Claude=병목이라 in-flight 중 늦추면 Codex 멈춤. 이번 라운드는 운영자 수동 wake(자동 타이머 미설정).
 - 방금 의미있는 작업 발생(ledger MVP Claude↔Codex 수렴) → quiet_streak 리셋, active 복귀.
 - 정지조건: STOP.md 또는 operator 명시 정지. FINAL_SUMMARY는 정지신호 아님.
 - ping 규약: 3-quiet due-ping, peer 무응답 반복 시 operator 에스컬레이트(스팸 금지).
