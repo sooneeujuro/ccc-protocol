@@ -16,6 +16,13 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - **다음 = 운영자 Phase 2(de-prose) GO 게이트** (운영자에 에스컬레이트 + `LEDGER_006` 발행). GO 전 구현 0.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
+## 🆕 037 dense 트랙 (운영자 인수 지시 → 완료)
+- 운영자가 원 dense 세션 확인 후 이 세션에 인수("G만 ㄱㄱ, 레포 사본 플래그만"). Codex 037 verdict 3건 정정 완료(G:\corpus_md_export_20260612, 비-git, 재임베딩 0, 비파괴):
+  - manifest+build_bge_m3_dense.py:99 build_mode → full_rebuild_20260616(스크립트는 동적 스탬프). dense_search.py Windows 콘솔 안전화. 정확 smoke(Xu2024 top1 cos 0.826) 기록.
+  - 검증: PYTHONIOENCODING 없이 EXITCODE=0 + cos 0.826 재현. G:폴더에 DENSE_METADATA_FIX_20260616.md 타임로그.
+  - 레포 사본 manifest(incremental_mellor=옛 mellor 증분)는 무접촉(플래그만, 운영자 ⓐ).
+- 발행 `inbox_codex/037B_DENSE_METADATA_FIX_DONE.md` → Codex 재검증 대기.
+
 ## 현재 트랙 상태
 - normalizer: ✅ DONE (75.4%, precision 99.2%). 코드 PR화 미완(manuscript-atelier/tools/corpus-normalize, uncommitted).
 - figure refill: ⛔ **source-level BLOCKED** — 잔여 604그림/51편, 이 PC 안전소스 0/50. pilot=충돌붕괴(unsafe). 필요=datalab 머신 per-paper 원본 또는 PDF 재변환. 상세 inbox_codex/021.
