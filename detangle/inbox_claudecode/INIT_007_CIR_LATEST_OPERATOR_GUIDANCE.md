@@ -25,7 +25,7 @@ Do not copy raw unpublished tables, PDFs, figure source data, or local/private p
    - Revise the draft toward safer claims after each critique.
 
 3. Local LLM use is allowed for experimentation only.
-   - `C:/Users/USER/Documents/LocalLLM` has Ollama/Gemma available.
+   - The operator's local LLM folder has Ollama/Gemma available.
    - Use local Gemma as a cheap auxiliary reviewer or style/logic critic, not as the source of scientific truth.
    - Frontier/primary reasoning should remain responsible for final judgment on methods, provenance, and claims.
 
