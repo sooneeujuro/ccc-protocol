@@ -58,3 +58,37 @@
 ## 게이트
 - 각 비용/비가역 단계 = 운영자 GO. corpus/그림 git push 금지(로컬·NAS만). B(sidecar) 게이트 무관(별개).
 - Codex 검토 항목: WS2 dedup·네이밍·매칭 / WS3 추출 A vs B·1편 검증기준·본문 md 수정 허용 여부.
+
+---
+
+## ✅ CODEX 검토 반영 (FINAL, B-prime) — 022 verdict + 023 per-paper
+Codex verdict=issues_found(건설적). 방향 승인, 가드 추가. 아래로 확정.
+
+### WS3 = B-prime (단순 순서매칭 금지)
+논문별 staging 폴더(`G:\fig_rebuild_v20260616\<pid>\`)에 추출 → **live articles/ 직접수정 금지(staged diff 먼저)** → 검증 후 promote.
+- **순서만 믿지 말 것.** PDF엔 로고·graphical abstract·표이미지·수식·컬러바·multi-panel 분할·supp그림 섞임. → 3중 검증:
+  1. **figure 개수** (그 논문 missing ref 수 vs 추출 후보 수),
+  2. **page/caption 텍스트** (PDF의 'Fig./Figure' 캡션 ↔ 본문 alt/caption 대조),
+  3. **contact sheet 시각검증** (옛 캡션/ref 옆에 후보 이미지 나란히, 사람 확인).
+- 셋이 어긋나면 그 논문은 **manual/blocked**로 표시(강제매칭 금지).
+- 본문 md 이미지줄 교체 허용조건: 운영자 GO + 백업/롤백 + staged diff 우선 + 모든 변경줄↔소스PDF/추출이미지 manifest + render GATE PASS + 사람 시각샘플.
+
+### 2-파일럿
+- Phase 1a: 작은 논문(2~5장)로 메커니즘 싸게 검증.
+- Phase 1b: Seton 2012(28장)로 순서/중복/시각QA 스트레스.
+- 각 파일럿 산출물: 추출 manifest · staged md diff · contact sheet · render audit · 최종 채움/잔여 카운트. → **운영자 시각 sign-off 후 50편 배치.**
+
+### WS2 가드 (Codex)
+- dedup 키 = **SHA-256**(md5는 보조). 중복 provenance 보존(같은 PDF 여러 출처면 전부 기록).
+- 충돌방지 목적지명: `papers/<paper_key>__<sha256_12>__Author_Year_TitleShort.pdf` 또는 `papers/<paper_key>/source.pdf`.
+- corpus 매칭 신뢰도 tier: high(DOI exact+연도/제목) / medium(정규화제목+1저자+연도) / low·manual(파일명·약fuzzy).
+- supp는 DOI/제목/출처 근거로 논문 연결, 불확실하면 `supplementary/_unmatched/` + manifest행.
+- 폴더명 `corpus_refs_v20260616` Codex OK.
+
+### WS1 가드
+- 실제 missing = **`md 이미지 refs − articles 존재파일`로 독립 산출**(allowlist 자기참조 금지). report 먼저, 가능하면 fill 후 prune. 최종 allowlist=진짜 잔여만.
+
+### 실행 순서 (Codex)
+1. WS2(복사·통합) → 2. WS1(report/보수 prune) → 3. WS3 Phase0(A 재현성 테스트) → 4. B-prime 소파일럿+Seton → 5. 운영자 시각리뷰+Codex 파일럿 검토 → 6. 50편 배치 → 7. 최종 allowlist 재생성+GATE.
+
+**상태: 계획 FINAL. 운영자 GO 대기. (Codex: "가드 반영+운영자 승인 시 진행 이의 없음".)**
