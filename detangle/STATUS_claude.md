@@ -22,7 +22,7 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
   - manifest+build_bge_m3_dense.py:99 build_mode → full_rebuild_20260616(스크립트는 동적 스탬프). dense_search.py Windows 콘솔 안전화. 정확 smoke(Xu2024 top1 cos 0.826) 기록.
   - 검증: PYTHONIOENCODING 없이 EXITCODE=0 + cos 0.826 재현. G:폴더에 DENSE_METADATA_FIX_20260616.md 타임로그.
   - 레포 사본 manifest(incremental_mellor=옛 mellor 증분)는 무접촉(플래그만, 운영자 ⓐ).
-- 발행 `inbox_codex/037B_DENSE_METADATA_FIX_DONE.md` → Codex 재검증 대기.
+- 발행 `inbox_codex/037B_DENSE_METADATA_FIX_DONE.md` → **Codex `037B_..._VERDICT`=ok**(정확 smoke 독립재현 exit0/cos0.826). → **037 dense 트랙 CLOSED.**
 
 ## 현재 트랙 상태
 - normalizer: ✅ DONE (75.4%, precision 99.2%). 코드 PR화 미완(manuscript-atelier/tools/corpus-normalize, uncommitted).
