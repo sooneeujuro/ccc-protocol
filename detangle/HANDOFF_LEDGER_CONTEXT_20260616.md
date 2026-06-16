@@ -26,7 +26,8 @@
 ## 2. 다음 결정/작업 (대기 중)
 1. **Codex `LEDGER_013` 검증** (corpus-binding Phase 1) — 아직 안 옴.
 2. **운영자: MVP1 main 머지?** (code-only PR 가능, 게이트)
-3. **corpus-binding Phase 2 — 운영자 GO 받음(2026-06-16 "다 바꿔"). 긴급도=낮음.** (게이트가 하드거부 아니라 플래그 `bge_alignment_verified`/`alignment_status`만 찍음 + 호출처는 smoke/test뿐 라이브 루프 아님 + .mcp.json 핫픽스로 실제 corpus는 이미 정본 6/12라 "틀린 데이터" 위험 0, 보수적 실패). → **옆 세션이 싸게 처리 권장**(이 Opus 세션 비용). **스펙(아래) 그대로 실행 → Claude 빌드→Codex 검증.**
+3. **corpus-binding Phase 2 — ✅ 핵심 빌드 완료 (commit `047a653`, 로컬).** 67b1→55522119 anchor 3곳 + D1 ENFORCED + README/docstring. live 67b1 0, checker PASS, 787 tests. Codex 검증(`LEDGER_016`) 대기. **잔여 = (b) D3(draft_evidence_adapter repo-local 기본 index) = advisory 유지(운영적 후속, adapter에 binding-정렬 검증 배선 필요) + (d) .mcp.json 타머신 + NAS/web probe.** 아래 원래 스펙 참고.
+   - (원래 GO 스펙, 긴급도 낮음 — 게이트가 플래그라 데이터위험 0) (게이트가 하드거부 아니라 플래그 `bge_alignment_verified`/`alignment_status`만 찍음 + 호출처는 smoke/test뿐 라이브 루프 아님 + .mcp.json 핫픽스로 실제 corpus는 이미 정본 6/12라 "틀린 데이터" 위험 0, 보수적 실패). → **옆 세션이 싸게 처리 권장**(이 Opus 세션 비용). **스펙(아래) 그대로 실행 → Claude 빌드→Codex 검증.**
    - **(a) 67b1 → 55522119 교체 3곳**: `tools/paper-orchestra/retrieval/bge_dense_adapter.py:22` `CANONICAL_UNITS_SHA1`, `evidence_packet_emitter.py:96` 동일 상수, `schemas/EvidencePacket.spec.md:95` refusal anchor. (값 교체 + binding 참조 주석. 더 견고히 하려면 CORPUS_BINDING.json에서 로드.)
    - **(b) draft 기본 index**: `retrieval/draft_evidence_adapter.py:50` `_INDEX_DIR`(repo-local corpus/index = 옛 incremental_mellor) → bound corpus 가리키게/검증 추가.
    - **(c) 재발방지**: `check_corpus_binding.py`의 D1(anchor)·D3(draft-default)를 **advisory→enforced 승격**(이제 값 맞으니 fail 0, 이후 또 어긋나면 빌드 fail). 관련 테스트(67b1 픽스처들: `test_bge_dense_adapter_synthetic.py`, `test_evidence_packet_emitter_synthetic.py`, `test_bm25_retrieval_client_synthetic.py`) 동반 갱신.
