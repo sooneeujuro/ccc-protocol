@@ -21,7 +21,7 @@ last update: 2026-06-16 19:09 (ledger MVP 수렴 + 하트비트 재무장)
 - Codex `LEDGER_013`=issues_found(E6 재현성: generated.md가 .mcp.json dirty 의존 / D3 미구현) → **수정 완료** commit `c7a7bcd`: render_generated가 .mcp.json 미참조(커밋코드만→clean 재현), D2 런타임전용 강등, D3(draft_evidence_adapter repo-local index 기본) 구현+테스트. checker PASS, known_drifts 4(D1×3+D3), 47 tests. 재검증 `LEDGER_014` 발행.
 - Codex `LEDGER_014` 재검증=**ok** → **corpus-binding Phase 1 CLOSED 양측** (`LEDGER_015`). 최종 commits e58e81d+c7a7bcd(로컬).
 - **corpus-binding Phase 2 빌드 완료**(운영자 "다 바꿔" GO): commit `047a653`. 67b1→55522119 3 anchor(bge_dense_adapter/evidence_packet_emitter/EvidencePacket.spec)+README/docstring, D1 advisory→ENFORCED, generated.md D3-only. 검증: live 67b1 0(handoff만), checker PASS, **787 tests**. D3(draft default)=advisory 유지(운영적 후속). `LEDGER_016` 발행 → Codex 검증 대기.
-- **single-source 리팩터**(운영자 지적: 하드코딩=에러제조기, 게이트는 로직): commit `89e87a8`. `CANONICAL_UNITS_SHA1 = _load_bound_units_sha1()`(binding서 런타임 읽기), emitter는 import, spec은 참조, D1=재-하드코딩 가드. 코드/spec 리터럴 sha 0, checker PASS, 787 tests. `LEDGER_017` 발행(LEDGER_016 대체). → 코퍼스 갱신 시 CORPUS_BINDING.json 한 곳만.
+- **single-source 리팩터**(운영자 지적: 하드코딩=에러제조기): commit `89e87a8`→`aff15f5`. `CANONICAL_UNITS_SHA1 = _load_bound_units_sha1()`(binding 런타임 읽기), emitter import, spec/README/docstring 이름 참조만(sha 값 0). Codex `LEDGER_017`=issues_found(D1이 bound값 재하드코딩 못잡음 + 55522119 prose 잔존) → `aff15f5`로 수정: **D1=앵커에 40-hex 리터럴 하나라도 있으면 fail**(재하드코딩 적발), prose 제거. checker PASS, 787 tests. 재검증 `LEDGER_018` 발행.
 - **운영자 게이트(대기)**: (1) D3 후속(draft adapter, advisory) (2) MVP1+corpus-binding 머지. Codex 운영자가 멈춤. 운영: 자동폴링/Workflow OFF, 비용캡 $500, 수동 wake.
 - 하드게이트: live infra/DB/secret/deploy 0, corpus 미터치, manuscript-atelier push 0(로컬 리뷰).
 
