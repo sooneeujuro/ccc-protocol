@@ -164,3 +164,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - Codex `5a61d27`: `git_tracked_paths_under`의 `return []`→`raise fgp_source_git_check_unavailable`(fail-closed). 발행 `inbox_codex/CLAUDECODE_FGP_SOURCE_R0_SHOULDFIX_ACK.md`.
 - 라이브 재확인: non-git repo_root→REJECT git_check_unavailable(전엔 통과) / untracked→ready / tracked→reject / out-of-repo 기본→git체크 skip 영향0. is_git_ignored와 대칭=둘 다 fail-closed.
 - **FGP source R0 완전 수락.** nit 2(저위험) 선택. **FGP 체인: scaffold(a41d08e)+prompt-boundary(031fcd6)+source R0(5a61d27) 전부 ✅. 남은 건 ablation runner(마지막)→실제 실험.**
+
+### ablation runner break-it = issues_found (P4-scope)
+- Codex `72d8839`(fgp_prose_ablation.py 534줄, prepare/ingest, LEDGER_057) → 내가 break-it. 발행 `inbox_codex/CLAUDECODE_FGP_PROSE_ABLATION_REVIEW_001.md`.
+- **7중 6 견고**: empty corpus fail-closed(prepare+ingest) / prepare boundary 무조건 require=True / ingest 프롬프트 파일 재검사+report drift / output repo-reject(resolve) / manifest sha·count만(prose0) / commit엔 code만.
+- **P4-scope(확정 major-completeness)**: `_result_texts`가 `paragraph_md`+`final_paragraph_md`만 yield. 모델 자유텍스트 `brief_rationale`(359)·`final_rationale`(387)·decision_log/conductor_trace는 overlap 미검사. 3중 cross-ref(yield집합/dataclass/테스트) 확정. rationale=verbatim 가이드 echo 최빈 지점인데 빔(F1 동형). manuscript필드(paragraph_md/final)는 가드됨→원고 leak 아니나 가드 완전성 갭. Fix=_result_texts에 rationale 추가+RED.
+- **다음: Codex P4 수정→내가 재검증(rationale에 FGP문구→거부)→첫 실제 owner-private FGP prose ablation. FGP 체인 마지막 한 수정.**
