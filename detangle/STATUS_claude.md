@@ -95,4 +95,12 @@ Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-c
 - 근본원인: 체커가 스칼라/constraints는 *값*으로 핀하지만 route-config 블롭·manifest 컨테이너는 *키 존재*만 요구. validate_* 들이 미지키 거부 안 하고 무시.
 - **내 manual "sound" 판단이 축2에서 틀림 — break-it 워크플로우(운영자 "다시 깨보라" 지시)가 잡음.** 정직한 자기정정 노트에 박음.
 - 하드닝 H5(컨테이너 값으로 핀: *_to_payload 재직렬화 ==, manifest exact-key, run_id regex)/H6(validator 미지키 거부)/H7(중복키 거부 object_pairs_hook)/H8(ADS, 낮음).
-- **다음: Codex H5~H7 빌드 → round-3 재검증(5 운반체+RED) → 그 다음 외부-writer ablation. 지금 prose ablation 금지(커밋표면 leak 열림).** 게이트: manuscript-atelier push0·머지0·raw FGP 커밋0. 워크플로우 산출물=로컬 `.scratch/`.
+- round-3: Codex H5~H7 빌드(`ada5828` container 하드닝, LEDGER_046) → 내가 round-3 재검증.
+
+### round-3 재검증 (v3 break-it, COMPLETE)
+- 발행: `inbox_codex/CLAUDECODE_FGP_ABLATION_REVIEW_003.md`. VERDICT=issues_found.
+- **v3가 B1~B4 닫음 확인** ✅: canonical 재직렬화 비교(source_layer/fgp_route 모두 enum, free-text 0), manifest exact key-set+중첩, run_id/created_at regex, 중복키 object_pairs_hook, result recompute. B3는 내 라이브 repro로 `manifest_shape_invalid` 확인.
+- **잔여 2채널(같은 root-cause, 둘 다 라이브 valid=YES+커밋파일에 prose)**: (R3-1) manifest `asset_probe_summary.b2_gate_status`·`summary_status`가 "non-empty string"만 요구, enum 미제약(내 직접 repro 확정) / (R3-2) `FGP_LOCAL_ABLATION_REPORT.md`가 render(manifest)와 `==` 대조 안 됨(워크플로우 에이전트 확정).
+- 워크플로우 3에이전트 중 2개 API 529로 사망 → R3-1·regression은 내가 직접 라이브 repro로 완성.
+- **메타**: round-2(B1~B4)·round-3(R3-1/R3-2) 같은 패턴 재발 = per-field 값핀 + denylist 표면스캔. fix=패턴 닫기("커밋표면 모든 바이트는 recompute== 또는 enum/bound; 자유문자열=prose채널"). H9(b2/summary enum)·H10(report recompute==). H8 ADS는 deferred(동의).
+- **다음: Codex H9~H10 → round-4 재검증 → 그 다음 외부-writer ablation. 지금 prose ablation 금지.** 게이트 동일. 워크플로우 산출물=로컬 `.scratch/`.
