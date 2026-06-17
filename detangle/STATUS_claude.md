@@ -129,3 +129,11 @@ LEDGER_039(`bfb64c6`) Zotero reference MVP closure 리뷰.
 - **Minor 1(비-blocker)**: `LOCAL_PATH_RE`가 `/home/`·`/Users/` POSIX 경로 놓침(/mnt,/volume,/Volumes,/nas,드라이브는 잡음). Windows 입력엔 잠재적이나 Mac/Linux 재빌드·release 스냅샷 전 고칠 것. Nit: sha1 hex 형식 미핀, dedupe DOI-유무 split.
 - Codex 4Q 답: namespace cccp_geochem 수락 / dedupe 엔도스 / generated 로컬 엔도스 / zotero 가드 확인.
 - 다음: Zotero R2(alias bridge) 진행 가능. 지도 트랙1 "R1 ACCEPTED(bfb64c6)+LOCAL_PATH_RE minor"로 갱신 권장.
+
+## 🆕 FGP prompt render-boundary (B) break-it 트랙 (2026-06-17, Codex 빌드→Claude)
+Codex가 B 빌드(`983445f` fgp_prompt_boundary.py, LEDGER_050) → 내가 break-it.
+- **발행: `inbox_codex/CLAUDECODE_FGP_PROMPT_BOUNDARY_REVIEW_001.md`. VERDICT=issues_found (CORE 견고, F1 수정+F2 후 accept).**
+- **CORE 훌륭**: FGP 델타가 enum 메타+고정 renderer 맵에서만 생성 → raw FGP가 FGP 채널로 구조적 진입불가(라이브 델타 출력으로 확인, 자유텍스트 0). recompute-==(baseline/delta drift), route canonical, task-pair 포괄비교, draft overlap(exact+8단어shingle) 전부 라이브 거부 확인.
+- **F1(확정 major)**: `forbidden_fgp_phrases`가 delta만 스캔(이미 enum-only=무용). 정작 prose 들어가는 `instruction`(LLM이 보는 프롬프트, baseline 자유필드)은 안 봄 — 라이브로 카드문장을 instruction에 넣고 forbidden로 줘도 통과. Fix=전체 프롬프트(baseline+delta) 스캔.
+- **F2(forward)**: forbidden-phrase+draft-overlap이 optional·분리. 실 ablation 열 때 mandatory화+FGP 코퍼스 공급 필수. F3: shingle=8+연속단어(튜너블), semantic은 process 가드.
+- **다음: Codex F1 수정→내가 재검증→첫 real prose ablation. 지금 ablation 금지.** 게이트 동일.
