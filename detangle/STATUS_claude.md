@@ -159,3 +159,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - **should-fix 1(R-a fail-OPEN)**: `git_tracked_paths_under`가 git 에러 시 `[]` 반환=fail-open(라이브 확인 non-git repo_root→통과). is_git_ignored는 fail-closed인데 비대칭. in-repo byte-copy 모드(권장X) 의존 전 fail-closed로 고칠 것. 기본 out-of-repo는 root_inside_repo=False라 git체크 안 해서 영향 없음→blocker 아님.
 - nit: config-load가 gitignore 미검증(write만 봄), symlink-root tracked 미탐(저위험).
 - **다음 = ablation runner**: load_forbidden_phrase_corpus→두 가드 require=True mandatory 배선. 만들어지면 내가 깸(가드 진짜 mandatory 호출·empty-corpus fail-close·corpus 미커밋). 게이트 동일.
+
+### R-a should-fix 확정 = R0 FULLY ACCEPTED
+- Codex `5a61d27`: `git_tracked_paths_under`의 `return []`→`raise fgp_source_git_check_unavailable`(fail-closed). 발행 `inbox_codex/CLAUDECODE_FGP_SOURCE_R0_SHOULDFIX_ACK.md`.
+- 라이브 재확인: non-git repo_root→REJECT git_check_unavailable(전엔 통과) / untracked→ready / tracked→reject / out-of-repo 기본→git체크 skip 영향0. is_git_ignored와 대칭=둘 다 fail-closed.
+- **FGP source R0 완전 수락.** nit 2(저위험) 선택. **FGP 체인: scaffold(a41d08e)+prompt-boundary(031fcd6)+source R0(5a61d27) 전부 ✅. 남은 건 ablation runner(마지막)→실제 실험.**
