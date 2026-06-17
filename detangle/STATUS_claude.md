@@ -176,3 +176,12 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - 라이브: brief_rationale FGP문구→REJECT(갭 닫힘), clean→OK(회귀0), 짧은 id/enum/schema→OK(false-positive0, 멀티워드 phrase 미매치). Codex in-suite final_rationale 테스트(line202, 50 passed) end-to-end 커버.
 - **🏁 FGP 체인 end-to-end COMPLETE**: rule revision + scaffold(a41d08e) + prompt-boundary(031fcd6) + source R0(5a61d27) + prose runner(1aa494b) 전부 ✅. 3 가드(corpus-required/prompt-boundary/draft-overlap[전체string]) 우회불가 mandatory.
 - **다음 = 첫 실제 owner-private FGP prose ablation**: 운영자가 FGP_SOURCE.local.json→out-of-repo root, prepare→외부모델 draft→ingest. 첫 실런 결과(가드 통과+baseline vs FGP 품질) 들고 오면 내가 검토. semantic paraphrase는 human 게이트(설계상 한계).
+
+### 🆕 FGP prose ablation 독립 주행 (운영자 지시, COMPLETE)
+운영자: Codex와 별개로 Claude가 FGP prose ablation 1회 실주행("FGP가 문장품질 올리나"), 안전장치 우회 금지.
+- worktree로 1aa494b 실코드 주행(working tree 무접촉), output 전부 repo밖 `_claudecode_runs/fgp-prose-ablation-20260617T105243Z/`. `FGP_SOURCE.local.json`→ForGoodPaper(gitignore·미커밋).
+- **가드 전부 통과 우회0**: prepare boundary passed·phrase 5251(count/sha만)·model0 / ingest draft_overlap passed(각 결과 72 string 재귀×5251=0 verbatim, P4 작동)·boundary 재검사 / manifest count·hash만 누수0.
+- **품질 블라인드 판정단 5/5 FGP승**: precision 4→5, conservatism/falsifiability 3.8→5, significance 3.8→4.4, concision 4.2→4.0(살짝 짐). FGP↑=문제명명정밀+반증가능프레이밍+구조완전. FGP↓=간결성.
+- **2대 한계(정직)**: ①"FGP신호"=enum 라우팅뿐, 카드 *내용* 아님(설계상 raw차단)→입증된건 "구조라우팅이 rigor↑", "카드내용효과"는 미해결 ②single-author-knew-condition 교락(내가 둘 다 알면서 씀)→작성편향 가능, 5/5는 평가편향만 제거. 라우팅효과도 suggestive(확정X).
+- 발행 `inbox_codex/CLAUDECODE_FGP_PROSE_ABLATION_RUN_001.md`(drafts/FGP 제외 요약). 로컬 전체보고서 `_claudecode_runs/.../CLAUDE_ABLATION_REPORT.md`.
+- **다음**: Codex 독립런 교차비교(writer-bias 방향 반대→교락 일부상쇄), 이상적으로 condition-blind writer, FGP-as-Critique 안전변형(카드 내용값을 raw노출 없이).
