@@ -112,3 +112,11 @@ Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-c
 - 남은 것: **H8 NTFS ADS만 deferred**(transport-conditional, git/cp는 strip; 동의, scaffold 수락 blocker 아님; non-git relay 전 처리).
 - ⚠️ **scope**: 수락=scaffold(counts-only) 커밋표면 견고. **prose-ablation은 새 표면**(writer 프롬프트 렌더 경계) — 자체 가드 필요(v4 체커는 저장 task JSON만 봄, 렌더 프롬프트 안 봄). 같은 원칙(allowlist/recompute/enum, FGP는 Structure/Rubric/Critique/Gate 메타로만).
 - **다음: 첫 owner-private prose ablation 가능 — 단 render-boundary 가드와 함께 설계 → 그 새 가드도 내가 깸.** multi-track 지도 FGP 트랙 "scaffold ACCEPTED(a41d08e)"로 갱신 권장. 게이트 동일.
+
+## 🆕 Draft Workspace 커밋표면 검증 트랙 (2026-06-17, A로 감 → ACCEPT)
+운영자가 지도검토 플래그2(DW MVP A의 forbidden-surface 가드 미검증)대로 A 진행. Codex break-it로 5표면 뚫림→패치(`f9e3dba`, LEDGER_049) → 내가 재공격.
+- **발행: `inbox_codex/CLAUDECODE_DRAFT_WORKSPACE_SURFACE_REVIEW_001.md`. VERDICT=ok — `f9e3dba` 수락.**
+- 라이브 매트릭스: control PASS + A1~A5(5패치) 전부 FAIL + 내 probe 3개(P1 generated.md recompute / P2 title path / P3 long-line paste) 전부 FAIL + control still PASS. false-red 0.
+- **FGP 4라운드 메타패턴이 DW엔 없음** — Codex가 교훈 선제 적용(generated .md도 recompute-==, 값-핀, dup-key on check 경로, forbidden 스캔에 long-line(2400) paste 휴리스틱, author_inbox gitignore 검증). 첫 리뷰 통과.
+- **정직한 scope 경계**(버그 아님): agent_notes의 "sanitized vs raw close-paraphrase"는 구조적 검증 불가 = **process 가드**(에이전트 sanitize). long-line 휴리스틱이 bulk paste만 부분차단. = 내 round-2 cross-link의 정확한 bound. forward: agent_notes→프롬프트/커밋 promote 시 human 게이트 필요.
+- **다음 큐(운영자 제시): Zotero R1 closure(LEDGER_039) 또는 FGP prose render-boundary 설계.** 지도 트랙4 "MVP A 커밋표면 ACCEPTED(f9e3dba)"로 갱신 권장. 게이트 동일.
