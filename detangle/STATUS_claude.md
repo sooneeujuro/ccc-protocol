@@ -136,4 +136,11 @@ Codex가 B 빌드(`983445f` fgp_prompt_boundary.py, LEDGER_050) → 내가 break
 - **CORE 훌륭**: FGP 델타가 enum 메타+고정 renderer 맵에서만 생성 → raw FGP가 FGP 채널로 구조적 진입불가(라이브 델타 출력으로 확인, 자유텍스트 0). recompute-==(baseline/delta drift), route canonical, task-pair 포괄비교, draft overlap(exact+8단어shingle) 전부 라이브 거부 확인.
 - **F1(확정 major)**: `forbidden_fgp_phrases`가 delta만 스캔(이미 enum-only=무용). 정작 prose 들어가는 `instruction`(LLM이 보는 프롬프트, baseline 자유필드)은 안 봄 — 라이브로 카드문장을 instruction에 넣고 forbidden로 줘도 통과. Fix=전체 프롬프트(baseline+delta) 스캔.
 - **F2(forward)**: forbidden-phrase+draft-overlap이 optional·분리. 실 ablation 열 때 mandatory화+FGP 코퍼스 공급 필수. F3: shingle=8+연속단어(튜너블), semantic은 process 가드.
-- **다음: Codex F1 수정→내가 재검증→첫 real prose ablation. 지금 ablation 금지.** 게이트 동일.
+- F1 patch: Codex `031fcd6`(phrase 스캔 delta→전체 프롬프트 + require_forbidden_fgp_phrases fail-close, LEDGER_052) → 내가 재검증.
+
+### F1 patch 재검증 = ACCEPT (COMPLETE)
+- **발행: `inbox_codex/CLAUDECODE_FGP_PROMPT_BOUNDARY_REVIEW_002_ACCEPT.md`. VERDICT=ok — `031fcd6` 수락.**
+- 라이브: F1 닫힘(instruction의 카드문장 phrase 주면 REJECT, 전엔 통과) + F2 fail-close(require=True+빈코퍼스 거부, prompt·draft) + 회귀0(R1~R4 거부 유지) + false-red 0(정상쌍 OK).
+- **FGP 체인 하드닝 완료: scaffold 커밋표면(a41d08e) + prompt render-boundary(031fcd6).**
+- **첫 real prose ablation accept 조건(반드시 ablation 러너에 박아야)**: ①check_prompt_boundary에 로컬 FGP 카드 코퍼스+require=True ②모델출력에 check_generated_draft_for_forbidden_overlap+require=True mandatory ③코퍼스=로컬-only(gitignore) ④한계 명시: verbatim/8+단어shingle만, semantic은 human/process 게이트.
+- **다음: 첫 owner-private FGP prose ablation 가능(위 4조건 하). ablation 러너 만들어지면 그것도 내가 깸.** 게이트 동일.
