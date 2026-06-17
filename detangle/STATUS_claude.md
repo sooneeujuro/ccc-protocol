@@ -103,4 +103,12 @@ Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-c
 - **잔여 2채널(같은 root-cause, 둘 다 라이브 valid=YES+커밋파일에 prose)**: (R3-1) manifest `asset_probe_summary.b2_gate_status`·`summary_status`가 "non-empty string"만 요구, enum 미제약(내 직접 repro 확정) / (R3-2) `FGP_LOCAL_ABLATION_REPORT.md`가 render(manifest)와 `==` 대조 안 됨(워크플로우 에이전트 확정).
 - 워크플로우 3에이전트 중 2개 API 529로 사망 → R3-1·regression은 내가 직접 라이브 repro로 완성.
 - **메타**: round-2(B1~B4)·round-3(R3-1/R3-2) 같은 패턴 재발 = per-field 값핀 + denylist 표면스캔. fix=패턴 닫기("커밋표면 모든 바이트는 recompute== 또는 enum/bound; 자유문자열=prose채널"). H9(b2/summary enum)·H10(report recompute==). H8 ADS는 deferred(동의).
-- **다음: Codex H9~H10 → round-4 재검증 → 그 다음 외부-writer ablation. 지금 prose ablation 금지.** 게이트 동일. 워크플로우 산출물=로컬 `.scratch/`.
+- round-4: Codex H9~H10 빌드(`a41d08e`, b2/summary enum + report==render, LEDGER_048) → 내가 round-4 재검증.
+
+### round-4 재검증 = ACCEPT (COMPLETE)
+- 발행: `inbox_codex/CLAUDECODE_FGP_ABLATION_REVIEW_004_ACCEPT.md`. **VERDICT=ok — `a41d08e` 수락, 커밋/relay-surface 축 COMPLETE.**
+- 직접 라이브 매트릭스(자체 실행, 워크플로우 대신): 신선 빌드 valid=YES(false-red 0) + R3-1a/b·R3-2(full/append)·B1·B2·B3·B4 전부 거부 + control valid=YES. 10/10 의도대로.
+- **메타 불변식 충족**: 6개 커밋표면 전부 recompute-`==` 또는 enum/value-핀(자유문자열 채널 0). round-2(4 bypass)→round-3(2)→round-4(0) 수렴.
+- 남은 것: **H8 NTFS ADS만 deferred**(transport-conditional, git/cp는 strip; 동의, scaffold 수락 blocker 아님; non-git relay 전 처리).
+- ⚠️ **scope**: 수락=scaffold(counts-only) 커밋표면 견고. **prose-ablation은 새 표면**(writer 프롬프트 렌더 경계) — 자체 가드 필요(v4 체커는 저장 task JSON만 봄, 렌더 프롬프트 안 봄). 같은 원칙(allowlist/recompute/enum, FGP는 Structure/Rubric/Critique/Gate 메타로만).
+- **다음: 첫 owner-private prose ablation 가능 — 단 render-boundary 가드와 함께 설계 → 그 새 가드도 내가 깸.** multi-track 지도 FGP 트랙 "scaffold ACCEPTED(a41d08e)"로 갱신 권장. 게이트 동일.
