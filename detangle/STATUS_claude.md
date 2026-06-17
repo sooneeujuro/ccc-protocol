@@ -119,4 +119,13 @@ Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-c
 - 라이브 매트릭스: control PASS + A1~A5(5패치) 전부 FAIL + 내 probe 3개(P1 generated.md recompute / P2 title path / P3 long-line paste) 전부 FAIL + control still PASS. false-red 0.
 - **FGP 4라운드 메타패턴이 DW엔 없음** — Codex가 교훈 선제 적용(generated .md도 recompute-==, 값-핀, dup-key on check 경로, forbidden 스캔에 long-line(2400) paste 휴리스틱, author_inbox gitignore 검증). 첫 리뷰 통과.
 - **정직한 scope 경계**(버그 아님): agent_notes의 "sanitized vs raw close-paraphrase"는 구조적 검증 불가 = **process 가드**(에이전트 sanitize). long-line 휴리스틱이 bulk paste만 부분차단. = 내 round-2 cross-link의 정확한 bound. forward: agent_notes→프롬프트/커밋 promote 시 human 게이트 필요.
-- **다음 큐(운영자 제시): Zotero R1 closure(LEDGER_039) 또는 FGP prose render-boundary 설계.** 지도 트랙4 "MVP A 커밋표면 ACCEPTED(f9e3dba)"로 갱신 권장. 게이트 동일.
+- 라우팅 확정: **Claude=A(Zotero R1 closure), Codex=B(FGP prose render-boundary 빌드→내가 break-it).** B seed(렌더 경계: instruction==const 금지·diff가 신호·출력 shingle-overlap) 운영자가 Codex로 릴레이.
+
+## 🆕 Zotero/reference R1 closure 트랙 (2026-06-17, A=Claude) = CLOSED
+LEDGER_039(`bfb64c6`) Zotero reference MVP closure 리뷰.
+- **발행: `inbox_codex/CLAUDECODE_ZOTERO_R1_CLOSURE_001.md`. VERDICT=ok — R1 CLOSED(accept).**
+- 건전: source_id identity 정확(**내 Q2 honored — content-hash가 identity에 안 들어감, 라이브 확인**), checker 포괄적(재귀 walk: dup source_id/dup DOI/citekey 유일/zotero null/path denylist/raw-text 길이), dedupe provenance 보존(paper_ids+content hashes, 3339→3220), generated 로컬-only(gitignored=커밋표면 아님).
+- 라이브 red-path: NAS path/Windows path/zotero key/dup source_id/>5000 raw-text 전부 거부, valid 통과.
+- **Minor 1(비-blocker)**: `LOCAL_PATH_RE`가 `/home/`·`/Users/` POSIX 경로 놓침(/mnt,/volume,/Volumes,/nas,드라이브는 잡음). Windows 입력엔 잠재적이나 Mac/Linux 재빌드·release 스냅샷 전 고칠 것. Nit: sha1 hex 형식 미핀, dedupe DOI-유무 split.
+- Codex 4Q 답: namespace cccp_geochem 수락 / dedupe 엔도스 / generated 로컬 엔도스 / zotero 가드 확인.
+- 다음: Zotero R2(alias bridge) 진행 가능. 지도 트랙1 "R1 ACCEPTED(bfb64c6)+LOCAL_PATH_RE minor"로 갱신 권장.
