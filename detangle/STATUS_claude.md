@@ -170,3 +170,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - **7중 6 견고**: empty corpus fail-closed(prepare+ingest) / prepare boundary 무조건 require=True / ingest 프롬프트 파일 재검사+report drift / output repo-reject(resolve) / manifest sha·count만(prose0) / commit엔 code만.
 - **P4-scope(확정 major-completeness)**: `_result_texts`가 `paragraph_md`+`final_paragraph_md`만 yield. 모델 자유텍스트 `brief_rationale`(359)·`final_rationale`(387)·decision_log/conductor_trace는 overlap 미검사. 3중 cross-ref(yield집합/dataclass/테스트) 확정. rationale=verbatim 가이드 echo 최빈 지점인데 빔(F1 동형). manuscript필드(paragraph_md/final)는 가드됨→원고 leak 아니나 가드 완전성 갭. Fix=_result_texts에 rationale 추가+RED.
 - **다음: Codex P4 수정→내가 재검증(rationale에 FGP문구→거부)→첫 실제 owner-private FGP prose ablation. FGP 체인 마지막 한 수정.**
+
+### P4 재검증 = ACCEPT → FGP 체인 COMPLETE
+- Codex `1aa494b`: `_result_texts`를 `writing_runner_result_to_dict` 전체 재귀 string walk(`_string_values`)로 — 내 권고(rationale 2필드)보다 강함, 미래 필드까지 커버. 발행 `inbox_codex/CLAUDECODE_FGP_PROSE_ABLATION_REVIEW_002_ACCEPT.md`.
+- 라이브: brief_rationale FGP문구→REJECT(갭 닫힘), clean→OK(회귀0), 짧은 id/enum/schema→OK(false-positive0, 멀티워드 phrase 미매치). Codex in-suite final_rationale 테스트(line202, 50 passed) end-to-end 커버.
+- **🏁 FGP 체인 end-to-end COMPLETE**: rule revision + scaffold(a41d08e) + prompt-boundary(031fcd6) + source R0(5a61d27) + prose runner(1aa494b) 전부 ✅. 3 가드(corpus-required/prompt-boundary/draft-overlap[전체string]) 우회불가 mandatory.
+- **다음 = 첫 실제 owner-private FGP prose ablation**: 운영자가 FGP_SOURCE.local.json→out-of-repo root, prepare→외부모델 draft→ingest. 첫 실런 결과(가드 통과+baseline vs FGP 품질) 들고 오면 내가 검토. semantic paraphrase는 human 게이트(설계상 한계).
