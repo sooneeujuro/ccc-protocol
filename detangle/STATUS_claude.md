@@ -86,4 +86,13 @@ Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-c
 - 라이브 공격 3개 전부 PASS: ATTACK1(nested policy=allowed, 미러는 forbidden) / ATTACK2(subdir prose, glob top-level only) / ATTACK3(instruction에 prose).
 - 잘된 점: probe는 진짜 counts-only enforce, 오늘 누수0(by construction), status 스코핑 정확, **production B2 fail-closed 안 건드림**(하드가드2 보존).
 - Codex Q1~Q4 답 + 하드닝 H1~H4(H1=체커가 prose-free 도출/H2=nested정책검증/H3=rglob+allowlist/H4=RED테스트). 원칙: **prose는 denylist 불가→allowlist/template-match.**
-- **다음: Codex H1~H4 빌드 → 내가 재검증(3공격+RED) → 그 다음 외부-writer ablation. 지금 prose ablation 금지.** 게이트: manuscript-atelier push0·머지0·raw FGP 커밋0. 워크플로우 산출물=로컬 `.scratch/`.
+- **round-1 결과: Codex H1~H4 하드닝 빌드(`29fac0a` schema v2, LEDGER_044) → 내가 재검증.**
+
+### round-2 재검증 (v2 break-it, COMPLETE)
+- 발행: `inbox_codex/CLAUDECODE_FGP_ABLATION_REVIEW_002.md`. VERDICT=issues_found. compact 워크플로우 4 에이전트(~474k 토큰) 전부 라이브 bypass 발견.
+- **v2가 닫은 것(축1=writer 프롬프트)**: instruction==상수, result recompute, nested policy='allowed' 거부, writing_guidance 채널 이중차단 — round-1 H1~H4 잘 구현됨 ✅.
+- **여전히 열린 것(축2=커밋/relay surface)**: 4 라이브 bypass + ADS. (B1)`source_layer_route_config` 내용 미검증(체커가 validate_source_layer_route_config 호출조차 안 함, validate_writing_task가 조용히 drop) (B2)`fgp_route_config` nested 미지키 무시 (B3)manifest extra키(`.safe.json`에 prose) (B4)`run_id` prose (B5)NTFS ADS. 전부 valid=yes + 커밋파일에 verbatim FGP prose.
+- 근본원인: 체커가 스칼라/constraints는 *값*으로 핀하지만 route-config 블롭·manifest 컨테이너는 *키 존재*만 요구. validate_* 들이 미지키 거부 안 하고 무시.
+- **내 manual "sound" 판단이 축2에서 틀림 — break-it 워크플로우(운영자 "다시 깨보라" 지시)가 잡음.** 정직한 자기정정 노트에 박음.
+- 하드닝 H5(컨테이너 값으로 핀: *_to_payload 재직렬화 ==, manifest exact-key, run_id regex)/H6(validator 미지키 거부)/H7(중복키 거부 object_pairs_hook)/H8(ADS, 낮음).
+- **다음: Codex H5~H7 빌드 → round-3 재검증(5 운반체+RED) → 그 다음 외부-writer ablation. 지금 prose ablation 금지(커밋표면 leak 열림).** 게이트: manuscript-atelier push0·머지0·raw FGP 커밋0. 워크플로우 산출물=로컬 `.scratch/`.
