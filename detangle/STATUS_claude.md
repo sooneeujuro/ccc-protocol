@@ -78,3 +78,12 @@ LEDGER_040(Codex FGP 규칙 개정안) 본검토 — canonical 원문(`ORCHESTRA
 - **결론: 로컬 FGP 글쓰기 실험 열림 / FGP-as-Prose(원문 직접 writer먹임) 금지.** 다음 실전=1회 ablation(baseline vs FGP-Structure/Rubric/Critique/Gate, C1~C4 seatbelt).
 - 캐리포워드: Draft Workspace pre-commit 스캔이 FGP-derived close-paraphrase도 잡아야(MVP A checker 요구로 이월). parking: production §2.3 quarantine re-lock(운영자, 긴급X).
 - ⚠️ `Anthropic_Invoices_2026-06.zip` 무접촉(스테이징 금지).
+
+## 🆕 FGP ablation scaffold 검증 트랙 (2026-06-17, B분업=Codex빌드·Claude검증)
+Codex가 C1~C4 안전벨트+ablation scaffold 빌드(`dbd499f` on `codex/draft-context-workspace`, LEDGER_042). 내가 adversarial 워크플로우(41 에이전트·5차원·발견마다 회의론자)로 검증.
+- **발행: `inbox_codex/CLAUDECODE_FGP_ABLATION_REVIEW_001.md`. VERDICT=issues_found. 33 confirmed/3 refuted.**
+- **헤드라인**: C1~C4 체커=**fake-green**. attestation 전부 producer 하드코딩 `True`(fgp_local_ablation.py:140-149), 체커는 echo만(check:130-146), 유일 내용스캔 `_check_safe_surface`는 path/secret *모양*만(prose 안 봄). 오늘 green=prose채널 빈 채 by-construction. **다음 prose-ablation 단계에서 가드 fire 안 함**(task_builder `anchor_exemplars.paraphrased_text` 채널 이미 존재, 200단어 verbatim).
+- 라이브 공격 3개 전부 PASS: ATTACK1(nested policy=allowed, 미러는 forbidden) / ATTACK2(subdir prose, glob top-level only) / ATTACK3(instruction에 prose).
+- 잘된 점: probe는 진짜 counts-only enforce, 오늘 누수0(by construction), status 스코핑 정확, **production B2 fail-closed 안 건드림**(하드가드2 보존).
+- Codex Q1~Q4 답 + 하드닝 H1~H4(H1=체커가 prose-free 도출/H2=nested정책검증/H3=rglob+allowlist/H4=RED테스트). 원칙: **prose는 denylist 불가→allowlist/template-match.**
+- **다음: Codex H1~H4 빌드 → 내가 재검증(3공격+RED) → 그 다음 외부-writer ablation. 지금 prose ablation 금지.** 게이트: manuscript-atelier push0·머지0·raw FGP 커밋0. 워크플로우 산출물=로컬 `.scratch/`.
