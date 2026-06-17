@@ -151,4 +151,11 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - **🔴 헤드라인**: raw FGP를 repo 트리 *안에* byte-copy 금지(gitignore 한 번 실수=커밋). 기본=out-of-repo 절대경로 참조(운영자 실 FGP는 이미 repo 밖); portability는 symlink/junction만; copy는 checker가 local/ git-tracked 0 강제할 때만. 제안 기본값(repo-내부 상대경로)이 제일 위험 → 뒤집기 권장.
 - 부가: phrase corpus=농축된 저작권 → §2.2 NAS-only-class(로컬-only/커밋0/relay0).
 - Q1~Q5 답: 위치 동의 / 절대경로는 local config만 허용(committed엔 금지) / 추출은 3rd-party 레이어만(Personal·writing 제외) / corpus 확장자 `.local.jsonl`(checker는 count/hash-only) / red-path R-a~R-h(R-a=local/ git-tracked 0 제일중요, R-e=path-traversal/symlink-escape, R-c=corpus 경로 ignored).
-- **다음: Codex R0 빌드(out-of-repo 기본 반영)→내가 깸 → 그 다음 ablation runner.**
+- R0 빌드: Codex `40a38b8`(fgp/v0/ resolver+checker, out-of-repo 기본 반영, LEDGER_054) → 내가 break-it.
+
+### FGP source R0 break-it = ACCEPT (COMPLETE)
+- **발행: `inbox_codex/CLAUDECODE_FGP_SOURCE_R0_REVIEW_001.md`. VERDICT=ok — R0 ACCEPT(out-of-repo 모드 기준) + should-fix 1 + nit 2.**
+- 라이브 보안 매트릭스(temp git repo): R-e relative escape REJECT, R-a in-repo tracked file REJECT(핵심 작동), R-c .local.json not-ignored REJECT(is_git_ignored fail-closed)·non-.local REJECT, count-only(문구 누수0). 설계리뷰 반영 확인(out-of-repo 기본·PHRASE_LAYER 3rd-party만·@eaDir skip·R-e 이중커버).
+- **should-fix 1(R-a fail-OPEN)**: `git_tracked_paths_under`가 git 에러 시 `[]` 반환=fail-open(라이브 확인 non-git repo_root→통과). is_git_ignored는 fail-closed인데 비대칭. in-repo byte-copy 모드(권장X) 의존 전 fail-closed로 고칠 것. 기본 out-of-repo는 root_inside_repo=False라 git체크 안 해서 영향 없음→blocker 아님.
+- nit: config-load가 gitignore 미검증(write만 봄), symlink-root tracked 미탐(저위험).
+- **다음 = ablation runner**: load_forbidden_phrase_corpus→두 가드 require=True mandatory 배선. 만들어지면 내가 깸(가드 진짜 mandatory 호출·empty-corpus fail-close·corpus 미커밋). 게이트 동일.
