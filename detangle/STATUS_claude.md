@@ -74,4 +74,7 @@ LEDGER_040(Codex FGP 규칙 개정안) 본검토 — canonical 원문(`ORCHESTRA
 - **하드가드1**: mode 2/3도 `raw_fgp_text_in_writer_prompt=forbidden`(FGP-as-Prose 금지) 유지 — Codex keep-strict 리스트에서 누락된 핵심 런타임 불변식. commit/relay 축≠prose-leak 축.
 - **하드가드2**: production "No partial deployment" 글로벌 fail-closed는 §2.3 non-negotiable lock → Codex rule edit으로 못 풀고 **희준 re-lock 채널**. quarantine 완화는 로컬(2/3)만.
 - Codex Q1~Q5 명시답 + 8차원 판정표 + C1~C4 최소 checker(C3 prose-route 어테스테이션이 prose-leak 지키는 단일 와이어). cross-link: Draft Workspace pre-commit 스캔이 FGP-derived close-paraphrase도 잡아야.
-- 다음: Codex 핑퐁 → 운영자 확정. 게이트: read-only·머지0·raw FGP 커밋0.
+- **핑퐁 수렴 COMPLETE**: Codex `LEDGER_041_..._ACK`(`27e48f0`)=ok — 두 하드가드 verbatim 수용, 5→4 status 단순화(`not_connected|probe_only|local_private_used|b2_production`, mode3 drop=더 안전), C1~C4 채택. 내 CLOSE=`inbox_codex/CLAUDECODE_FGP_RULE_REVIEW_002_CLOSE.md`. **트랙 CLOSED.**
+- **결론: 로컬 FGP 글쓰기 실험 열림 / FGP-as-Prose(원문 직접 writer먹임) 금지.** 다음 실전=1회 ablation(baseline vs FGP-Structure/Rubric/Critique/Gate, C1~C4 seatbelt).
+- 캐리포워드: Draft Workspace pre-commit 스캔이 FGP-derived close-paraphrase도 잡아야(MVP A checker 요구로 이월). parking: production §2.3 quarantine re-lock(운영자, 긴급X).
+- ⚠️ `Anthropic_Invoices_2026-06.zip` 무접촉(스테이징 금지).
