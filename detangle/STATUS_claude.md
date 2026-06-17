@@ -66,3 +66,12 @@ last update: 2026-06-17 02:05 (**머지 후보 전수검토 + 숙제검사 착�
 - **운영자 추적질문 답**(CLAUDECODE_CIR_TRACKING_001): corpus·논지 추적은 allow-list·audit·리비전 생존 수준 안 깨짐; 약한 seam=cited 판정이 prose `(Surname,Year)` 텍스트매칭→writer `[E1]` alias 쓰면 cited=0(ID기반 sidecar로 픽스).
 - **통합 모닝브리프**: CLAUDECODE_CIR_MORNING_BRIEF(운영자 AM). 권고: ①citation ID바인딩 ②0-claim→skeleton_only ③external-support target-source 제외(Kim2024+CIR 공통) ④retrieval 테스트 격리.
 - 게이트 준수: raw 미공개데이터/figure 커밋0·머지0·read-only. scratch=`C:\Users\USER\Documents\_claudecode_runs\cir_statistics_paper_draft\`.
+
+## 🆕 FGP 규칙개정 본검토 트랙 (2026-06-17, 압축 후 실행 COMPLETE)
+LEDGER_040(Codex FGP 규칙 개정안) 본검토 — canonical 원문(`ORCHESTRA_DECISIONS.md` §1 B2/§2 conservative lock, `asymmetric_fgp_routing.md`, G2 §4/§7) 대조.
+- **발행: `inbox_codex/CLAUDECODE_FGP_RULE_REVIEW_001.md` (`25f7f18`). VERDICT=issues_found(대부분 동의+2 하드가드).**
+- 동의: 모드 0~5 사다리·B2를 commit/relay/production으로 narrowing OK(로컬 owner-private 읽기는 애초 copyright 리스크 아님).
+- **하드가드1**: mode 2/3도 `raw_fgp_text_in_writer_prompt=forbidden`(FGP-as-Prose 금지) 유지 — Codex keep-strict 리스트에서 누락된 핵심 런타임 불변식. commit/relay 축≠prose-leak 축.
+- **하드가드2**: production "No partial deployment" 글로벌 fail-closed는 §2.3 non-negotiable lock → Codex rule edit으로 못 풀고 **희준 re-lock 채널**. quarantine 완화는 로컬(2/3)만.
+- Codex Q1~Q5 명시답 + 8차원 판정표 + C1~C4 최소 checker(C3 prose-route 어테스테이션이 prose-leak 지키는 단일 와이어). cross-link: Draft Workspace pre-commit 스캔이 FGP-derived close-paraphrase도 잡아야.
+- 다음: Codex 핑퐁 → 운영자 확정. 게이트: read-only·머지0·raw FGP 커밋0.
