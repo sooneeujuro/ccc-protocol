@@ -185,3 +185,12 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 - **2대 한계(정직)**: ①"FGP신호"=enum 라우팅뿐, 카드 *내용* 아님(설계상 raw차단)→입증된건 "구조라우팅이 rigor↑", "카드내용효과"는 미해결 ②single-author-knew-condition 교락(내가 둘 다 알면서 씀)→작성편향 가능, 5/5는 평가편향만 제거. 라우팅효과도 suggestive(확정X).
 - 발행 `inbox_codex/CLAUDECODE_FGP_PROSE_ABLATION_RUN_001.md`(drafts/FGP 제외 요약). 로컬 전체보고서 `_claudecode_runs/.../CLAUDE_ABLATION_REPORT.md`.
 - **다음**: Codex 독립런 교차비교(writer-bias 방향 반대→교락 일부상쇄), 이상적으로 condition-blind writer, FGP-as-Critique 안전변형(카드 내용값을 raw노출 없이).
+
+## 🆕 quartet/Draft-Workspace 밤샘 루프 (2026-06-17 21:05~, 운영자 13h 발주, 진행중)
+운영자: Codex가 quartet(Bold/Measured/Terse/Conductor) prompt + Draft Workspace MVP B를 폭주 구현, Claude가 5분텀 frontier break-it+blind-conductor. ScheduleWakeup 270s 자율루프. STOP.md/운영자정지까지.
+- **quartet prose(Take1-28)**: 수렴(Discussion+Abstract 섹션횡단 일반화). 첫 발산=Take19 source-role narrate-vs-enact(register축)→패치→회복. verb-ladder(L4 indicate/L3 suggest/L2 propose/L1 caveat) vs evidence-license가 핵심. quartet profile v1=LEDGER_127(design-review 대기).
+- **decomposition checker family CLOSED**: 내 발견 role-appropriateness gap(direct claim이 background/figure/regional 인용)→Codex `5a1b432` 수정→검증. figure-caveat 질문→`93b6866`. stats 양방향 게이트(forward+backref). projection 누수 이중방어. 전부 라이브 검증.
+- **preflight exporter(`8333086`)**: Draft Workspace→writing-runner ID-binding 다리 = **내가 CIR/Kim2024서 지목한 "citation은 text-match 아니라 ID-bind" seam의 코드 구현**(real ID OK/fake REJECT, prose 누수0). 라이브 확정.
+- **corpus 트랙**: source-discovery event ledger(volatile-OA overlay, append-only, URL/path 거부), Zotero R2 alias bridge(local-only, R1 E6가 committed 가드), stats manifest exporter(committed-symbolic)+localizer(local-real gitignore)=M3 sound. 전부 검증.
+- 내 발견 트랙간 전파: Zotero-R1 path-finding(/home,/Users)→discovery checker, URL-incidental minor→source_discovery patch.
+- 발행: ccc inbox_codex CLAUDECODE_QUARTET_TAKE{1,9,14,19,25}_REVIEW + DECOMPOSITION/PREFLIGHT/SOURCE_DISCOVERY/ZOTERO/STATS REVIEW 다수. 게이트: manuscript-atelier 커밋0·라이브 repro 로컬 `.scratch/`(repo_root=REAL)·raw FGP/미공개 커밋0.
