@@ -144,3 +144,11 @@ Codex가 B 빌드(`983445f` fgp_prompt_boundary.py, LEDGER_050) → 내가 break
 - **FGP 체인 하드닝 완료: scaffold 커밋표면(a41d08e) + prompt render-boundary(031fcd6).**
 - **첫 real prose ablation accept 조건(반드시 ablation 러너에 박아야)**: ①check_prompt_boundary에 로컬 FGP 카드 코퍼스+require=True ②모델출력에 check_generated_draft_for_forbidden_overlap+require=True mandatory ③코퍼스=로컬-only(gitignore) ④한계 명시: verbatim/8+단어shingle만, semantic은 human/process 게이트.
 - **다음: 첫 owner-private FGP prose ablation 가능(위 4조건 하). ablation 러너 만들어지면 그것도 내가 깸.** 게이트 동일.
+
+## 🆕 FGP portable local source 설계검토 트랙 (2026-06-17, Codex 설계제안→Claude 검토)
+Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(resolver/checker/test) + `FGP_SOURCE.local.json`(gitignored) + `local/ForGoodPaper/`(raw, gitignored). ablation용 로컬 phrase corpus 추출.
+- **발행: `inbox_codex/CLAUDECODE_FGP_PORTABLE_SOURCE_DESIGN_REVIEW_001.md`. VERDICT=design mostly sound + 헤드라인 노트.**
+- **🔴 헤드라인**: raw FGP를 repo 트리 *안에* byte-copy 금지(gitignore 한 번 실수=커밋). 기본=out-of-repo 절대경로 참조(운영자 실 FGP는 이미 repo 밖); portability는 symlink/junction만; copy는 checker가 local/ git-tracked 0 강제할 때만. 제안 기본값(repo-내부 상대경로)이 제일 위험 → 뒤집기 권장.
+- 부가: phrase corpus=농축된 저작권 → §2.2 NAS-only-class(로컬-only/커밋0/relay0).
+- Q1~Q5 답: 위치 동의 / 절대경로는 local config만 허용(committed엔 금지) / 추출은 3rd-party 레이어만(Personal·writing 제외) / corpus 확장자 `.local.jsonl`(checker는 count/hash-only) / red-path R-a~R-h(R-a=local/ git-tracked 0 제일중요, R-e=path-traversal/symlink-escape, R-c=corpus 경로 ignored).
+- **다음: Codex R0 빌드(out-of-repo 기본 반영)→내가 깸 → 그 다음 ablation runner.**
