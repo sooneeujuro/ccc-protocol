@@ -416,3 +416,7 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 
 === v2 held-out 완주 + dv2 채점 착수 (2026-06-18 21:07) === [LEDGER_237]
 **112008Z 완주**: 10 rep 전부 B/M/T 완성(30 문단), pid 종료. dv2 채점 Workflow 착수=w4dywmc81/wf_1a7a8583-089(30 items, v2_heldout_dv2_scoring.js, .md 읽기). 완료시 자동wake→3 persona별 10-rep 0-3 분포(median/worst/var, axis mean)·judge1/2·**claim_altitude two-sided=과조심 탐지(1↑=timid/dried)·register/conci=어색/dried·eruption/causal 미끼 물림·protected drift(1.37Ma)**→점수만 노트+operator 보고(**v2 verdict: 안정적좋음/너무조심/어색/과장**). Conductor 미포함(B/M/T만)=tie-breaker 검증 별도 stitch run 필요. fallback 1200s. ma HEAD=c7e3b06, LEDGER 최신=237.
+
+=== ⚠️ 컴퓨터 자동 재부팅 — 복구 (2026-06-18 21:17) ===
+**재부팅 영향 점검(손실 0)**: ccc ahead 0(노트/STATUS 전부 push, last 43cefb1)·ma 내커밋0·Codex 커밋(c7e3b06/df052b0) 보존. **v2 run 112008Z 디스크 완전 보존**(10 rep·30 md). 유일 사상자=진행중이던 dv2 채점 workflow w4dywmc81(output 빈파일=reboot로 죽음)=재실행 가능(데이터 손실 아님). scorer(v2_heldout_dv2_scoring.js)도 temp 생존.
+**복구 액션**: dv2 채점 **재실행=we9sizzwu/wf_190906ed-578**(같은 30 items). 완료시 자동wake→v2 verdict 분석(claim_altitude two-sided 과조심?·register/conci dried?·persona 10-rep 안정성). STOP 없음·신규 LEDGER>237 없음. ma HEAD=c7e3b06, LEDGER 최신=237.
