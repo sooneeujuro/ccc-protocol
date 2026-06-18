@@ -363,3 +363,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **064019Z 완료**: 45→**43 pass/2 fail**, 72분27초(median 91s/p90 133s). 🔎 **조기 변별 신호**: fail 2건 다 `forbidden_term_present`=**M1 over-reach 미끼 물림**(Measured blind_7e6f37c5·Bold blind_9167875968), **Terse 15/15 저항**. per-persona pass: Bold 14·Measured 14·**Terse 15**(R1~3는 uniform이었음 — 미끼가 claim-pushing persona를 정확히 물어 pass_rate 차등 발생). cross-check PASS(de-blind/key/response-only).
 **dv2 채점 Workflow 착수**: task=w30io9q3v/wf_e053886f-a20(judge1 43 + judge2 on <3). 완료시 자동wake→REVEAL후 round1 9 variant 0-3 분포(cand=median−0.5var−0.5(3−worst))·judge1/2 일치·**spread vs R1~3(0.07~0.19) 비교=하드닝 성패**·took_overreach_bait 카운트·objective→점수만 노트(+N=5 flag·2-run 재현성 필요). operator는 채점 대기 중(잠깐 멈춤). fallback 1200s.
 
+=== 🎯 dv2 채점완료 + 하드닝 변별력 판정 (2026-06-18 17:1x) === [노트 3cc847f]
+**판정: 하드닝 성공(부분).** judge1+judge2(87% exact, mean|diff|0.13). **변별력이 생겼고 정확히 claim_altitude+caveat_survival(operator 2대 핵심)에 집중**: claim 26/43<3·caveat 33/43<3(0-2에선 전부 max였음). 나머지 4축(bound/register/protected/conciseness) 포화→full-6축 희석. scale-normalized stdev: claim+caveat 전용 **0.118=전 라운드 최고**(R1 0.094/R2 0.060/R3 0.035/dv2-full 0.065).
+**winner(claim+caveat, full과 순위일치)**: Bold=**B3_test_framed**>B1>B2(B2 급락 0.94) · Measured=**M3_caveat_front**>M2>M1 · Terse=**T2_frame_bound**>T1>T3(최하).
+**substantive**: B2_caveat_survivor R1-best→dv2-worst(미끼 앞 over-caveat가 claim 깎음=operator "caveat가 claim 죽이면안됨" 측정). T3_minimal_clause easy+hard 둘다 최하(robust 드롭후보). M3 R2+dv2 강세. 미끼는 gate-level(pass_rate Bold/Measured−1·Terse0)에서 변별.
+**한계**: N5 단일 run, within-var 커짐(key축 var≤0.34)→winner 미확정. **다음 권고**: (1)cand를 claim+caveat 중심 재가중. (2)**N=8+2-run 재현성**으로 winner 확정(신호 확인됐으니 정당). (3)T3 드롭. operator 결정 대기.
+
