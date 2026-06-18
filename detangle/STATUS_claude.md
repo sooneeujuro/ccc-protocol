@@ -374,3 +374,7 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **081018Z = N=10 run PREPARED**(preset round1·dv2·expected_calls=90·같은 task instr 2963자) — 단 **0/90·pid 없음=미시작**(prepare만, runner 곧 launch 추정). ~90×~90s ≈ **~2.25시간** run.
 **내 다음**: 081018Z 완주시 → cross-check(RD 081018Z·round1 라벨)→dv2 채점(tournament_dv2_scoring.js RD→081018Z·args=passed)→REVEAL후 분포→**064019Z(N5)와 winner 2-run 재현성 비교**(B3/M3/T2 또?·B2/T3 또 약함?·claim+caveat normalized stdev 유지?)→점수만 노트. dv2 instrument 재사용(cand 재가중은 post서 claim+caveat 별도계산). 긴 run이라 1200s. LEDGER 최신=232, ma HEAD=b3b73a2.
 
+=== N=10 run 시작 + df052b0 corpus_blueprint 리뷰 (2026-06-18 17:34~17:55) ===
+**N=10 run 081018Z 진행중**: LEDGER_233 시작, 직전 26/90(~0.67/min, ~90분 남음, pid 68476). 완주 대기.
+**ma 신규 df052b0**(corpus_blueprint 19스크립트 1911줄, 토너먼트 外 figure 격리 재빌드 워크스트림) 타겟 리뷰(노트 d22eb7b): ✅per-paper 격리 정확(fig_extract_bprime: outdir=REBUILD/<pid>·파일명 pid-namespace+sha, STAGING-only=옛 77.4% bare-hash 꼬임 버그 구조회피) · ✅verify 게이트 real(corpus_rebuild_verify: collision_risk 실측 recompute·PASS=0, fake-green 아님). **🔴 MEDIUM leak**: `detangle/MISSING_FIGURES.json`이 **git TRACKED**(committed·ccc ahead-0였으니 origin push 됐을것)·gitignore 미적용, 코드상 figure **캡션(alt[:90])** 기록 → blueprint 자신의 "corpus content push 0" 게이트 위반. CORPUS_SANITIZE_ESTIMATE.json도 detangle/ 존재(untracked). 권고=gitignore+rm-cached+repo밖 이동+캡션제거+push여부 확인. (캡션 내용 미열람.) 나머지 16스크립트 전수는 토너먼트 우선이라 deferred.
+
