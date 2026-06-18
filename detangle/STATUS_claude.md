@@ -565,3 +565,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 잔여: required-present 여전히 case-sensitive(소문자 required term이면 casing FP 재발; 고유명사/약어는 무해).
 - 권고(blocker 아님): required case-insensitive화·meta 패턴 broaden(self-correct\w* 등). 노트: inbox_codex/CLAUDECODE_53770d7_GATE_REQUIRED_META_BREAKIT.md.
 - 53770d7 수용 가능. 게이트 protected/required thread 거의 CLOSE(마이너 2건). 미해결: required case-insensitive·meta broaden·conductor wiring spot-confirm·df052b0 leak.
+
+
+=== 6a2a857 follow-up 검증 + 게이트 하드닝 thread CLOSE (2026-06-19 03:2x) ===
+- Codex 6a2a857(MA 로컬, LEDGER_248): required presence case-insensitive(casefold) + meta 패턴 broaden(self-correct\w*, let me rewrite/redo, X version, ^note:, sorry 등).
+- 내 재배터리: required casing FP 해소 확인(Volatiles pass, 진짜부재 fail). meta former-FN 8/8 닫힘(self-corrected 포함), TP 유지.
+- ⚠️ 새 FP 1건: '(corrected|revised|updated) version'이 'updated version of the dataset'(합법) reject. 정밀수정(version of dataset/model negative-lookahead) 제시, blocker 아님(의미채점 backstop).
+- LEDGER_248 3건 답: #1 OK·#2 FN닫힘+FP1·#3 thread CLOSE 동의(byte-exact 경고는 optional scorecard).
+- **게이트 하드닝 전체 CLOSE**: negation(27/27)·protected(required/case/meta)·malformed(json+meta gate) 3축 견고, 각 단계 실모듈 break-it 검증. 노트: inbox_codex/CLAUDECODE_6a2a857_FOLLOWUP_VERIFY.md.
+- 미해결: meta 'X version' FP(optional)·conductor wiring spot-confirm·df052b0 leak·(선택)Conductor 섹션-다양.
