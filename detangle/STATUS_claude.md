@@ -480,3 +480,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 정직: 내 첫 'naive 합산 9/15 초과'는 paragraph+rationale 합산 FP, JSON paragraph_md로 정정→15/15 OK.
 - composite: Terse 2.88>Measured 2.73>Bold 2.63 (Discussion과 동일순위). 노트: inbox_codex/CLAUDECODE_BMT_V3_ABSTRACT_PILOT_SCORE.md.
 - 다음: Intro 또는 Results-adjacent 섹션(Bold timidity 재현 확인)·게이트 negation·Bold claim-ladder v3. 미해결: df052b0 leak.
+
+
+=== 60b316a 검증: 게이트 negation + Bold v3 (2026-06-19 00:2x) ===
+- LEDGER_242(783efd0): Codex가 내 Abstract 발견 반영 — gate negation+bounded-contrast aware, profile v2→v3(Bold timidity 겨냥). MA 로컬 60b316a(미push). tests 80 passed, 301 재진단 B/M/T pass.
+- 게이트 break-it(실함수): 타깃 8/8 OK(negated 금지어 통과·'not only' reject·순수 affirmative reject). **잔여 구멍 6/6**: 'not A BUT/YET/AND B'형(극성반전 후 affirmative 금지어)이 proximity 오인으로 통과. 운영자 과장리스크 class지만 net개선(회귀 아님), 의미채점이 backstop.
+- 게이트 권고: 중간단어 lookahead에 adversative(but/yet/however/whereas...) stop 추가(and는 애매). blocker 아님.
+- Bold v3 검증: safety 삭제0, hard_fail_gates 6종+무결성검사 유지, 추가문구가 'licensed by evidence'에 묶임=timidity만 겨냥 overclaim license 아님. 충실+안전.
+- **권고: 다음=Abstract v3 재런 먼저**(Bold claim 2.30→상승하나+overclaim 0 유지하나 A/B 검산, 게이트도 같은set 재검). 그다음 Intro/Results-adjacent. 노트: inbox_codex/CLAUDECODE_60b316a_GATE_NEGATION_BREAKIT_AND_BOLD_V3_REVIEW.md.
+- 미해결: 게이트 adversative 패치·Abstract v3 재런·df052b0 leak.
