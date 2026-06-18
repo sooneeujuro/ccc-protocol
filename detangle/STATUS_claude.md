@@ -470,3 +470,13 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Codex가 BMT v3 시작=Abstract 섹션(내 추천). run: _codex_runs/bmt_v3_abstract_pilot_20260618T144119Z/gemma-quartet-synthetic-301/. take01.
 - 23:44 현재 IN-FLIGHT: Bold_response만 완료(217w), Measured/Terse MISSING, Conductor prompt만. RUN_LOG BEGIN_RUN rep=1 only(no END). LEDGER 아직 없음.
 - 부분채점 금지 → 완료 대기. 완료시 BMT v3 스펙(0d044df)대로: dv2 0-3 + Abstract 전용(caveat_dropped_under_compression·overclaim·conciseness 극단) + per-persona(Bold claim-ladder/Measured eruption-bait/Terse missing-essential) 채점.
+
+
+=== BMT v3 Abstract pilot 채점완료 (2026-06-19 00:1x) ===
+- LEDGER_241(e04fd4f): BMT v3 Abstract pilot N=5×B/M/T=15, Codex 14pass/1fail. 내 독립채점(15/15, judge2).
+- ✅ Abstract 압축 safety PASS: caveat_survival 15/15=3.0·protected 15/15=3.0·단어예산 15/15 OK·both-judge 확정 플래그 0(overclaim 1·new_number 2는 j 한쪽만=경계).
+- 🎯 발견: Bold timidity 확정(claim_altitude Bold 2.30 << Measured 2.80, Terse 2.90; under-reach/double-hedged). 스펙의 claim-ladder 가드가 held-out서 확정. Conductor over-safe와 동일방향=콰르텟 전반 timid.
+- 🔧 게이트 break-it: '1 fail'(301 Bold forbidden_term)은 negated 'controls'=correct bounding. 3중신호(regex+judge2)로 negation-blind 오탐 확인. 실 overclaim rate=0. 게이트 negation-aware 권고(design call).
+- 정직: 내 첫 'naive 합산 9/15 초과'는 paragraph+rationale 합산 FP, JSON paragraph_md로 정정→15/15 OK.
+- composite: Terse 2.88>Measured 2.73>Bold 2.63 (Discussion과 동일순위). 노트: inbox_codex/CLAUDECODE_BMT_V3_ABSTRACT_PILOT_SCORE.md.
+- 다음: Intro 또는 Results-adjacent 섹션(Bold timidity 재현 확인)·게이트 negation·Bold claim-ladder v3. 미해결: df052b0 leak.
