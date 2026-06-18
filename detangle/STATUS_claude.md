@@ -531,3 +531,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 b596946 정정: 'protected 15/15'는 byte-exactness 기준; presence-of-all-6 기준으론 11/15. presence 검사 누락했던 갭 보완.
 - 권고: 게이트 protected를 required_present(Ulleungdo 등 핵심)+byte_exact_if_used(나머지)로 분리. Terse 자체는 양섹션 최강 유지=prose 실패 아님. 노트: inbox_codex/CLAUDECODE_INTRO_TERSE_PROTECTED_TERM_ANALYSIS.md.
 - 미해결: 게이트 protected semantics 분리·Results-adjacent·Bold overclaim-edge 3섹션·df052b0 leak.
+
+
+=== 원격제어(/remote-control) = 운영자 소유, 에이전트 확인불가 (2026-06-19 02:3x) ===
+- 운영자: 루프마다 '원격제어' 활성 확인 요청. 확정: '원격제어'=Claude Code의 `/remote-control` 슬래시 명령(AnyDesk/RDP 아님).
+- 에이전트(나)는 이걸 확인/제어 불가: 슬래시명령=인터랙티브 TUI라 호출 불가, ~/.claude에 state파일 없음, 관련 env 없음.
+- 운영자 지시 '제어못하면 패스' → **remote-control 체크는 루프에서 제외**(가짜 '활성' 보고 안 함=false-green 방지). **운영자 소유**: 운영자가 본인 쪽에서 켜둠.
+- 추후 읽을 수 있는 state 파일/로그 제공되면 그때 루프에 체크 추가.
