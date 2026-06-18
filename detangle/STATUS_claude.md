@@ -523,3 +523,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 🔑 cross-section(Abstract+Intro): Terse=robust(양섹션 클린). Bold=timidity는 Abstract전용, **overclaim-edge 2섹션 재현**(Abs mechanism-flutter+Intro preview, 둘다 split). Measured=Intro 과hedge로 aim 매몰(1섹션).
 - 함의: Bold v3 claim-ladder는 timidity(Abstract전용) 겨냥했으나 반복되는 건 overclaim-edge → Bold 튜닝은 overclaim/preview 경계가 우선, 단 3번째섹션 재현 후 확정. 노트: inbox_codex/CLAUDECODE_BMT_V3_INTRO_SCORE.md.
 - 다음=Results-adjacent(interpretation-overreach) 3번째 섹션=suite 완성+Bold overclaim-edge 3섹션 확인. 미해결: Results-adjacent·df052b0 leak.
+
+
+=== Intro Terse protected-term 분석 (LEDGER_244 답) (2026-06-19 02:1x) ===
+- LEDGER_244 질문(게이트가 Intro Terse 4개 protected_term_missing fail=실손실이냐 artifact냐). 기계검사: 4 Terse(502-505) 전부 정확히 'spring gases' 하나만 누락, 나머지 5 protected 유지, Bold/Measured 6/6.
+- 판정: **주로 게이트-semantics artifact**. 게이트가 protected 6개 전부존재 강제 = 잘못(protected=쓰면 byte-exact지 전부필수 아님). Terse는 framing 5개 우선+method어 1개 압축드롭=합리적. 내 judge가 framing 3.0·missing_essential=false로 완결판정. 약한 실신호(spring gases=시료라 명명하면 더 구체)는 있으나 치명 아님.
+- 내 b596946 정정: 'protected 15/15'는 byte-exactness 기준; presence-of-all-6 기준으론 11/15. presence 검사 누락했던 갭 보완.
+- 권고: 게이트 protected를 required_present(Ulleungdo 등 핵심)+byte_exact_if_used(나머지)로 분리. Terse 자체는 양섹션 최강 유지=prose 실패 아님. 노트: inbox_codex/CLAUDECODE_INTRO_TERSE_PROTECTED_TERM_ANALYSIS.md.
+- 미해결: 게이트 protected semantics 분리·Results-adjacent·Bold overclaim-edge 3섹션·df052b0 leak.
