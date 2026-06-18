@@ -404,3 +404,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 
 === 🔴 v2 held-out run CRASH (PS 버그) → 재launch 대기 (2026-06-18 20:30) === [노트 06fb60d]
 **v2 held-out run(take87_n10) launch 직후 crash**: response 0·pid 53708 dead·stdout 0B. stderr=`BEGIN_RUN ... CommandNotFoundException` = Codex PS 런처의 logging 라인 `Write-Output (BEGIN_RUN index={0}... -f ...)`에 **format 문자열 따옴표 누락**→PowerShell이 BEGIN_RUN을 명령으로 파싱→스크립트 종료. **모델 호출 0회**(Gemma/v2 출력 0). profile v2(c7e3b06)·내 채점기 무관=순수 런처 버그. 게이트대로 우회/가짜채점 안 함, Codex에 버그+수정(`("BEGIN_RUN..."-f ...)` 따옴표) flag. **v2 검산 아직 0회**. 재launch되면 내가 즉시 채점. ma HEAD=c7e3b06, LEDGER 최신=235.
+
+=== v2 held-out RE-LAUNCH (PS버그 수정) + Claude 업데이트 안전 (2026-06-18 20:38) ===
+**Codex가 v2 run 재launch**: 새 dir `quartet_v2_heldout_take87_n10_20260618T112008Z`(pid 70444 ALIVE, crash난 111819Z 1분 뒤). PS quoting 버그 수정한 듯. **채점 대상=112008Z**(111819Z=dead 무시). ~45분 run.
+**Claude Code 업데이트 안전 확인**: 이 v2 run=독립 Ollama 프로세스→Claude 세션 재시작과 무관(계속 돔). 내 백그라운드=ScheduleWakeup뿐(workflow 0). ccc ahead 0·ma 내커밋0=유실0. **업데이트해도 됨.**
+**업데이트/재시작 후 복구(나)**: 이 STATUS + git log 읽고 재개 → **112008Z 완주 대기→완주시 dv2 채점**(레이아웃 파악→B/M/T[+Conductor] 추출→0-3 채점→claim_altitude two-sided 과조심?·register/conci dried?·10-rep 안정성·Conductor 새주장0+tie-breaker→점수만 노트). 채점기=temp\quartet_breakit	ournament_dv2_scoring.js(RD→112008Z) or inline. ma HEAD=c7e3b06, LEDGER 최신=235.
