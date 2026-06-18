@@ -538,3 +538,13 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 에이전트(나)는 이걸 확인/제어 불가: 슬래시명령=인터랙티브 TUI라 호출 불가, ~/.claude에 state파일 없음, 관련 env 없음.
 - 운영자 지시 '제어못하면 패스' → **remote-control 체크는 루프에서 제외**(가짜 '활성' 보고 안 함=false-green 방지). **운영자 소유**: 운영자가 본인 쪽에서 켜둠.
 - 추후 읽을 수 있는 state 파일/로그 제공되면 그때 루프에 체크 추가.
+
+
+=== BMT v3 Results 채점 + 3섹션 suite 종합 (2026-06-19 02:5x) ===
+- Results pilot 021414(N=5×B/M/T=15) 채점. interpretation_restraint=3.00 전 persona 전 rep, overreach 0=Results PASS.
+- 🔑 Bold overclaim-edge 3섹션 판정=**DISCONFIRMED**: Results서 Bold 완벽 절제(3.00, 플래그0). Abstract/Intro edge는 split·Results 0=비일관 → **Bold 가드 불필요, v3 그대로**.
+- 3섹션 suite 전부 섹션 스트레스 PASS: Abstract(caveat 15/15)·Intro(result_leak 0)·Results(int_restraint 3.00).
+- per-persona 최종: Terse robust(예외=presence-artifact·malformed, prose 아님)·Bold edge=noise(가드X)·Measured Intro 과hedge(1.5섹션).
+- ⚠️ 602 Terse=malformed(valid JSON+trailing garbage+paragraph_md에 meta-scaffolding 누출), 1/15 robustness glitch. delta13C-CO2 presence 누락~6=Intro spring-gases와 2섹션 패턴.
+- 실제 액션=게이트/런너 레벨(persona 아님): (1)protected required_present vs byte_exact_if_used 분리, (2)런너 extra-data/malformed/meta 거부+재생성. 노트: inbox_codex/CLAUDECODE_BMT_V3_RESULTS_SCORE_AND_SUITE_SYNTHESIS.md.
+- BMT v3 persona 프로필 현상태 충분(가드 추가 불요). 미해결: 게이트 protected 분리·런너 malformed 거부·df052b0 leak·(선택)섹션 2-run 재현/Conductor 섹션별.
