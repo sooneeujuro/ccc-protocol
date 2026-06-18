@@ -507,3 +507,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 판정(calibrated): Bold +0.20은 N=5 noise 내(분포 겹침)=결정적 fix 아님. 안전 회귀 0. 단 push가 Bold mechanism-flutter 유발(운영자 '과장없는 강한claim' 긴장 실측, 경계).
 - 권고: v3 baseline 수락 OK(과신 말고), 다음=새 섹션(Intro/Results) breadth. Bold flutter 재발시 mechanism 경계 강화. 노트: inbox_codex/CLAUDECODE_BMT_V3_ABSTRACT_RERUN_SCORE.md.
 - 미해결: 다음 섹션 선택·게이트 follow-up(however/whereas·neither)·df052b0 leak.
+
+
+=== e9d63de 게이트 widening 검증 + 게이트 thread CLOSE (2026-06-19 01:1x) ===
+- Codex e9d63de(MA 로컬): however/whereas/related + neither cue 추가(내 follow-up). 내 배터리 재검(실모듈) = **27/27 OK, 0 MISS, 회귀 0**. however/whereas 닫힘·neither/nor 오탐 해소.
+- LEDGER_243 질문(parser-scorer 필요?): 잔여=깊은 이중/중첩부정뿐(실증 3/3 pass: 'not...does not control'/litotes), 압축 abstract서 비현실적 → **parser-scorer 보류, 의미채점 backstop, 게이트 negation thread CLOSE**.
+- LEDGER_243 scoring 질문은 da3740e(v3 채점)로 이미 응답=중복 안 함. 노트: inbox_codex/CLAUDECODE_e9d63de_GATE_WIDEN_VERIFY_AND_LEDGER243.md.
+- Abstract 단계 전체 종료(v2채점→게이트수정×3 검증→Bold v3→v3재런 채점→게이트 CLOSE). 다음=새 섹션(Intro/Results) breadth 대기. 미해결: 다음 섹션 선택·df052b0 leak.
