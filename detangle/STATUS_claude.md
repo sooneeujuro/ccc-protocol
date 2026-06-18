@@ -342,3 +342,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 === 060329Z evolved 2nd run = 미완(채점 안 함) (2026-06-18 15:16) ===
 **060329Z = evolved_round2 2nd run(R4 재현성 시도)** — 같은 Lee2025 task. **6/45에서 멈춤**: 마지막 쓰기 15:13:57·pid 14412 죽음·stderr/stdout 로그 empty(에러 흔적 X=clean 종료/killed 시사)·scoring manifest 없음. 타이밍(내 ee6110a ~15:11 push→run ~15:14 정지)상 **의도적 중단(mere-repeat 비권장 반영) 가능성**, 단 단정 안 함. **채점 안 함**(미완·manifest 없음, 게이트 준수). Codex LEDGER로 사유 확인 대기. 추후 이 dir 채점 시도 금지.
 
+=== operator 결정 (b) 하드닝 + 설계 스펙 (2026-06-18 15:20) === [노트 abb91cb]
+**operator 확정**: 060329Z R4 의도적 중지 맞음(내 해석 정확). 무작정 45-run 중단(R3=포화/노이즈). 방향=**(b) harder task + 0-3 rubric로 변별력 생성 후 새 45-run**. 목표 open(미완료 처리).
+**내 설계 스펙(abb91cb)**: (1) 0–3 rubric — claim_altitude/caveat_integration/register_fit/**evidence_binding(NEW 변별축)**/conciseness 각 0–3 anchor; protected는 hard gate로 이동(scored 제외); overclaim affirmative=hard fail. (2) harder task M1 over-reach미끼·M2 약-evidence·M3 protected near-miss트랩·M4 register압박(값은 Codex). (3) variant set=**round1 원본 재사용**(task를 변별 레버로 격리; evolved는 균질화돼 부적합). (4) 운영: N=8·2nd-judge on <3·**2-run 재현성 게이트 필수**·동률 held-out. (5) 분업: Codex=task instantiation+0–3 runner+DRY갭수정(`_FORBIDDEN_BLIND_STRINGS`를 VARIANT_PRESETS서 파생), 나=Workflow 0–3 schema/evidence_binding/cand 0–3 스케일/detector 갱신·채점. (6) 성공기준=축 비-3↑·spread>R1~3(0.07~0.19)·winner 2-run 재현. 셋 충족시만 profile 승격, 아니면 (a) all-good 회귀.
+**다음**: operator 승인 + Codex 빌드(harder task+0–3 runner+DRY갭) 대기 → 빌드 오면 내 채점장비 0–3 갱신→새 45-run(×2) 채점. ma HEAD=4e03647, LEDGER 최신=228.
+
