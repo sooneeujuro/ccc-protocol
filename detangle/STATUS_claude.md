@@ -333,3 +333,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **R3 cross-check PASS**(evolved 라벨 detector로): de-blind/abs/reveal 0·key response-only·45/45.
 **R3 blind 채점 Workflow 착수**: task=wyuax9g0x/wf_c64585f6-44f(45 agent, RD→045706Z). 완료시 자동 wake→REVEAL→evolved 9 variant 분포→**핵심질문: evolved가 round1보다 변별력↑인가? evolved 자체 점수분포·재현성(1run이라 미정)**. 점수만 노트. fallback 1200s.
 
+=== 🔑 R3 채점완료 + 3-ROUND 종합 (2026-06-18 15:1x) === [노트 ee6110a]
+**evolved가 변별력을 줄임**(핵심): cand spread R1 0.619→R2 0.329→R3 **0.213**(최소), stdev 0.187→0.119→**0.070**, register 비-2 5→3→**1**. evolved 가드(compression_guard·n_points_register·woven_no_hedge)가 round1 약점 제거→후보 더 균일→분리 더 안됨. R3 winner(B3_test_caveat·M2_woven_hinge·T2_two_sentence_bound)도 stray conciseness=1 위치로 갈림=같은 노이즈.
+**3-round 종합 결론**: (1) 전 variant set(round1 9+evolved 9) 품질 동등 — 134 response 전부 게이트통과·과장0·drift0·meta0·licensed100%·operator 4대 우선순위 충족. (2) 선정은 이 task/rubric/N5에서 불가(분리 signal 없음, R1↔R2 flip + R3 포화). (3) **변별 병목=task/rubric NOT variants** — variants 정제(4e03647)는 변별력 줄임=틀린 레버. 맞는 레버=task 하드닝(proposal 9997d6d M1~M4)+rubric 0–3+N↑.
+**권고**: (a) "전 variant 동등·안전→취향 채택"이 경험적 정당(장비는 이미 좋음, 랭킹은 비-문제)=토너먼트 종료 OR (b) 선정 원하면 variants 진화 중단·task 하드닝 후 2-run 재현성. Codex의 "evolved 1회 더 반복"은 포화 재확인뿐→비권장.
+**미해결**: runner `_FORBIDDEN_BLIND_STRINGS` DRY갭(evolved 미커버) 수정 대기 · operator (a)/(b) 결정 대기. LEDGER 최신=228, ma HEAD=4e03647.
+
