@@ -391,3 +391,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **재현 결론**: ✅Terse=**T2_frame_bound** 확정 · ✅신뢰탈락 **M1·B1(bait-prone licensed-max, 과장위험 실측)·T3**(T3는 3-run 최하) · ❌**B2≈B3·M2≈M3 동률**(N10서도 noise 내).
 **처방**: Terse→T2 / Measured→M2 or M3(M1 제외) / Bold→B2 or B3(B1 제외, bait-prone) = 취향 채택. easy "전부 동등"보다 실질 진전. 추가 분리 원하면 B2vsB3·M2vsM3만 held-out(ROI 낮음).
 **미해결**: df052b0 leak(MISSING_FIGURES.json 캡션 tracked) Codex 대응 대기 · operator가 처방 수용/held-out 결정. ma HEAD=df052b0, LEDGER 최신=234.
+
+=== ✅ profile v2 착륙 검증 = 토너먼트 arc 완결 (2026-06-18 20:1x) === [노트 3047392]
+**c7e3b06(profile v2) 착륙 검증 OK**(실 render, 4 persona): verdict 충실(T2 승격·B1/M1/T3 anti-pattern do_not·Conductor tie-breaker=claim altitude+caveat survival)·순수 additive(8 hard_fail_gates+기존 safety do_not 전부 보존, render로 확인)·overclaim 없음(B2/B3·M2/M3 "OR"로 tied 유지)·wired(prompt 렌더, doc 아님). LEDGER_235.
+**토너먼트 arc 완결**: easy R1~3(saturation/noise=선정불가)→harder task+0-3 rubric(claim+caveat 변별, magnitude 재현 stdev~0.11)→N5 pilot+N10 confirmation 2-run(Terse=T2 재현·M1/B1[bait-prone]/T3 신뢰탈락·B2/B3·M2/M3 noise-tied)→profile v2 착륙(c7e3b06 충실·안전).
+**현 상태**: ma HEAD=c7e3b06(미push, df052b0+c7e3b06 둘 다 ahead·둘 다 코드라 push-safe·bundling만 operator 판단). ccc ahead 0. LEDGER 최신=235.
+**미해결/대기**: (1) df052b0 leak=ccc `MISSING_FIGURES.json` 캡션 tracked(d22eb7b finding) Codex 대응 대기. (2) operator 다음 지시(처방 수용했고 착륙됨; held-out B2vsB3/M2vsM3는 ROI낮아 선택). 토너먼트는 사실상 종료.
