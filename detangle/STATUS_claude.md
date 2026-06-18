@@ -328,3 +328,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **리뷰(e5214cf)**: 🔎MED DRY갭=runner `_FORBIDDEN_BLIND_STRINGS`는 round1 라벨만(evolved 미갱신·prepare import 없음)→evolved run scoring self-check가 evolved 라벨 미커버(scoring_entry response-only라 active leak X·defense-in-depth만). 권고=단일소스(VARIANT_PRESETS서 파생). 🔑전략적: 4e03647은 R1-informed(M2/T1 refine·B2/B3 tie·T3→guard)인데 내 R2 verdict가 동시 landing해 일부 falsify(evolved Measured 전부 woven=caveat-front 드롭이나 R2 winner=M3 caveat-front; evolved Bold에 licensed_max 없으나 R2 Bold winner=B1 licensed_max). T3→compression_guard는 sound. 권고=evolved를 자체 변별력으로 평가·2-run 재현성 봐야.
 **내 채점 준비**: cross_check detector에 evolved 라벨 추가 완료. 045706Z 완주시 RD갱신→cross-check→채점→evolved 분포(변별력 비교). evolved run grinding이라 1200s 대기.
 
+=== R3 evolved 완료 + 채점 착수 (2026-06-18 15:05) === [LEDGER_228]
+**R3=045706Z(evolved_round2) 완료**: 45/45 pass·0 fail·~63.7분(median 83s/p90 113s). R1/R2와 타이밍 일관. **같은 Lee2025 task**(rubric 불변). Codex가 재현성 원칙 채택 명시(채점 전 새 generation 안 만들고 evolved 1회 더 반복 가능).
+**R3 cross-check PASS**(evolved 라벨 detector로): de-blind/abs/reveal 0·key response-only·45/45.
+**R3 blind 채점 Workflow 착수**: task=wyuax9g0x/wf_c64585f6-44f(45 agent, RD→045706Z). 완료시 자동 wake→REVEAL→evolved 9 variant 분포→**핵심질문: evolved가 round1보다 변별력↑인가? evolved 자체 점수분포·재현성(1run이라 미정)**. 점수만 노트. fallback 1200s.
+
