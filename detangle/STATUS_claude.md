@@ -497,3 +497,13 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 권고: line68에 however/whereas/although/though/while/nonetheless 추가 + line64 cue에 neither. 노트: inbox_codex/CLAUDECODE_7051602_GATE_PATCH_VERIFY.md.
 - Abstract v3 재런 IN-FLIGHT: dir=bmt_v3_abstract_profile_v3_20260619T002842(synthetic-40N, rep1-2 완료·rep3 생성중, N=5 추정). 002740은 prepare서 abort=dead 무시.
 - v3 완료시: JSON paragraph_md 추출→bmt_v3_abstract_scoring.js launch→v2 대비 Bold claim_altitude delta(2.30→?)+overclaim/caveat-drop 0 유지+게이트pass 집중. 미해결: 게이트 follow-up·v3 채점·df052b0 leak.
+
+
+=== BMT v3 Abstract 재런(profile v3) 채점완료 (2026-06-19 00:5x) ===
+- Abstract profile-v3 재런 002842(N=5×B/M/T=15) 독립채점(judge2). v2(bfee932) 대비.
+- v2→v3 claim: Bold 2.30→2.50(+0.20)·Measured 2.80→2.80·Terse 2.90→3.00. comp: Bold 2.63→2.70·Meas 2.73→2.78·Terse 2.88→3.00.
+- 안전: caveat 15/15=3.0·protected 15/15·예산 15/15·게이트 fail 0·both-judge 확정위반 0.
+- ⚠️ v3 신규 split flutter(확정 아님): causal 2(401·403 Bold), overclaim 1(403 Bold j1), new_number 2. Bold causal는 게이트목록 동사 0=대신 degassing/transport mechanism-framing(push 부작용), 게이트 누락 아님.
+- 판정(calibrated): Bold +0.20은 N=5 noise 내(분포 겹침)=결정적 fix 아님. 안전 회귀 0. 단 push가 Bold mechanism-flutter 유발(운영자 '과장없는 강한claim' 긴장 실측, 경계).
+- 권고: v3 baseline 수락 OK(과신 말고), 다음=새 섹션(Intro/Results) breadth. Bold flutter 재발시 mechanism 경계 강화. 노트: inbox_codex/CLAUDECODE_BMT_V3_ABSTRACT_RERUN_SCORE.md.
+- 미해결: 다음 섹션 선택·게이트 follow-up(however/whereas·neither)·df052b0 leak.
