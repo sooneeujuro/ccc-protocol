@@ -420,3 +420,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 === ⚠️ 컴퓨터 자동 재부팅 — 복구 (2026-06-18 21:17) ===
 **재부팅 영향 점검(손실 0)**: ccc ahead 0(노트/STATUS 전부 push, last 43cefb1)·ma 내커밋0·Codex 커밋(c7e3b06/df052b0) 보존. **v2 run 112008Z 디스크 완전 보존**(10 rep·30 md). 유일 사상자=진행중이던 dv2 채점 workflow w4dywmc81(output 빈파일=reboot로 죽음)=재실행 가능(데이터 손실 아님). scorer(v2_heldout_dv2_scoring.js)도 temp 생존.
 **복구 액션**: dv2 채점 **재실행=we9sizzwu/wf_190906ed-578**(같은 30 items). 완료시 자동wake→v2 verdict 분석(claim_altitude two-sided 과조심?·register/conci dried?·persona 10-rep 안정성). STOP 없음·신규 LEDGER>237 없음. ma HEAD=c7e3b06, LEDGER 최신=237.
+
+=== ✅ v2 held-out smoke test VERDICT (2026-06-18 21:2x) === [노트 4ba592c]
+**v2 = 안정적으로 좋음, 과조심/dried 아님**(operator 우려 반증). 30문단(B/M/T×10) dv2 0-3 채점(judge 76% exact). claim_altitude: 3=12·2=17·**timid 1=1(그것도 over-reach)·0=0** → timid 0%. composite: Bold 2.66·Measured 2.57·**Terse 2.73(최고)**. caveat_survival 28/30=3·protected 30/30=3(1.37Ma 포함)·**bound_tightness 24/30=3**(토너먼트 포화 대비 v2서 개선)·register/conci 1점 0건(어색/dried 없음). **유일 이슈=Measured 1/30 eruption-bait over-reach**(과조심 반대). 
+**verdict**: v2 default 유지 OK(c7e3b06 정당, held-out 일반화 확인). 미검증=**Conductor**(이 run B/M/T만, stitch 출력 없음)→tie-breaker 별도 stitch run 권고. 잔여=eruption-bait 1/30(노이즈, 재발시 가드 고려). reboot 1차채점 죽었으나 재실행 복구(손실0).
+**현 상태**: 토너먼트+v2검산 일단락. ma HEAD=c7e3b06, LEDGER 최신=237, ccc ahead0. 미해결: df052b0 leak(MISSING_FIGURES.json) Codex 대응 · Conductor stitch 검증 run · operator 다음 지시.
