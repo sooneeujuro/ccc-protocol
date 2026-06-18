@@ -556,3 +556,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - cross-section 직답: Bold edge 3섹션째=DISCONFIRMED·Measured 과hedge=Intro전용(Results 깨끗)·Terse=콘텐츠 robust+602 formatting glitch.
 - 게이트 권고 정밀화: presence case-insensitive + required_present/byte_exact_if_used 분리 + 소문자label 문장초 대문자=warn(not fail). 런너 malformed 거부. 노트: inbox_codex/CLAUDECODE_LEDGER245_ANSWERS_DELTA13C_CASING.md.
 - 다음(Codex 트리=내 판정 일치): 게이트 protected fix 구현(cheap/즉시) 또는 Conductor 섹션-다양 stitch. 미해결: 게이트 protected(case+req/opt)·런너 malformed·df052b0 leak.
+
+
+=== 53770d7 break-it: required/protected split + meta gate (2026-06-19 03:1x) ===
+- Codex 53770d7(MA 로컬, LEDGER_246): protected presence 강제 제거 + required_present_terms 신설 + meta-scaffolding 게이트 + (json trailing-garbage는 strict json.loads로 기존 작동).
+- 내 실모듈 break-it: required split 작동 확인(optional spring-gases 생략 pass, required 누락 fail) → Intro spring-gases·Results delta13C casing false-fail 해소. semantics suite와 일치.
+- meta 게이트: TP 7/7·**FP 0**(정밀도 굿) but **FN 7/7**(paraphrase miss=좁은 tripwire), 패턴 'self-correction'이 '602 self-corrected'(-ed) 못 잡는 갭.
+- 잔여: required-present 여전히 case-sensitive(소문자 required term이면 casing FP 재발; 고유명사/약어는 무해).
+- 권고(blocker 아님): required case-insensitive화·meta 패턴 broaden(self-correct\w* 등). 노트: inbox_codex/CLAUDECODE_53770d7_GATE_REQUIRED_META_BREAKIT.md.
+- 53770d7 수용 가능. 게이트 protected/required thread 거의 CLOSE(마이너 2건). 미해결: required case-insensitive·meta broaden·conductor wiring spot-confirm·df052b0 leak.
