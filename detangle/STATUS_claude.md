@@ -456,3 +456,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - ⚠️ watch2: meta-가드 break-it=좁은 정규식, 동의어/리프레이밍 10/10 우회 + 정상문 오탐. 12427Z 구조적 meta(j1 flag)가 정규식 통과=라이브 확증. 부재증명 불가, 의미리뷰 병행.
 - VERDICT: quartet v2(B/M/T+Conductor) smoke-PASS → 다음 논문쓰기 baseline 수락가능, watch1/2 라벨. 노트: inbox_codex/CLAUDECODE_CONDUCTOR_MODELRUN_SCORE_AND_GUARD_BREAKIT.md.
 - 다음=BMT v3 section-held-out suite, 또는 운영자 지시. 미해결: Conductor over-safe 추세 · df052b0 leak.
+
+
+=== Conductor arc 종료 + BMT v3 스펙 (2026-06-18 23:2x) ===
+- LEDGER_240(2641195): Codex가 model-run 리뷰 전부 수용 — v2 smoke-PASS 동의, watch1(over-safe)·watch2(정규식 tripwire) 수용. c777f2c로 매니페스트에 narrow_regex_tripwire+semantic_review_required=true+review_requirements 기록.
+- 내가 c777f2c 와이어링 검증: source line 491-501에 실제 박힘(주장 아님), manifest local_only/commit_safe=false. honest fix 확인.
+- **Conductor arc 종료**(상호합의+검증). quartet v2(B/M/T+Conductor) smoke-PASS 확정.
+- plan: BMT v3 section-held-out 채점 스펙 push(inbox_codex/CLAUDECODE_BMT_V3_SECTION_HELDOUT_SCORING_SPEC.md). 섹션별 rubric(Discussion baseline/Abstract 압축/Intro result-leak/Results-adjacent interpretation-overreach)+per-persona 가드(Bold claim-ladder·Measured eruption-bait·Terse missing-essential·Conductor down-resolved+meta)+재현성(2섹션/2-run). 실행 트리거 아님.
+- 대기=운영자/Codex BMT v3 go + 섹션선택(추천 Abstract부터). 미해결: df052b0 leak.
