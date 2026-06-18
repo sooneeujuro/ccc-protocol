@@ -464,3 +464,9 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - **Conductor arc 종료**(상호합의+검증). quartet v2(B/M/T+Conductor) smoke-PASS 확정.
 - plan: BMT v3 section-held-out 채점 스펙 push(inbox_codex/CLAUDECODE_BMT_V3_SECTION_HELDOUT_SCORING_SPEC.md). 섹션별 rubric(Discussion baseline/Abstract 압축/Intro result-leak/Results-adjacent interpretation-overreach)+per-persona 가드(Bold claim-ladder·Measured eruption-bait·Terse missing-essential·Conductor down-resolved+meta)+재현성(2섹션/2-run). 실행 트리거 아님.
 - 대기=운영자/Codex BMT v3 go + 섹션선택(추천 Abstract부터). 미해결: df052b0 leak.
+
+
+=== BMT v3 Abstract pilot IN-FLIGHT (2026-06-18 23:44) ===
+- Codex가 BMT v3 시작=Abstract 섹션(내 추천). run: _codex_runs/bmt_v3_abstract_pilot_20260618T144119Z/gemma-quartet-synthetic-301/. take01.
+- 23:44 현재 IN-FLIGHT: Bold_response만 완료(217w), Measured/Terse MISSING, Conductor prompt만. RUN_LOG BEGIN_RUN rep=1 only(no END). LEDGER 아직 없음.
+- 부분채점 금지 → 완료 대기. 완료시 BMT v3 스펙(0d044df)대로: dv2 0-3 + Abstract 전용(caveat_dropped_under_compression·overclaim·conciseness 극단) + per-persona(Bold claim-ladder/Measured eruption-bait/Terse missing-essential) 채점.
