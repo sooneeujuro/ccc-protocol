@@ -437,3 +437,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 **내 채점 도구(temp\quartet_breakit\)**: tournament_dv2_scoring.js(tournament 레이아웃 scoring_blind.local), v2_heldout_dv2_scoring.js(.md quartet 레이아웃·RD=112008Z), cross_check_scoring.py(de-blind/key/leak·variant 라벨 evolved 포함·boundary-aware variant_id), deblind_detector.py. **Conductor 채점 스펙(31bd5ac)**: no-new-claim(merge 주장 vs B/M/T 원본 대조, 셋다 없으면 fail)·tie-breaker(claim altitude+caveat survival 선택)·union-safety(protected/id 보존·overclaim/eruption-bait 0)·dv2 0-3 품질.
 **불변 게이트**: manuscript-atelier 커밋0(read-only 검증만; c7e3b06/df052b0=Codex 것·미push) · ccc detangle file-specific add만(`git add -A`/`.` 금지·Anthropic_Invoices zip+BATCH1.json+CORPUS_SANITIZE_ESTIMATE.json untracked 유지) · 라이브=repo 밖 local(원본 미변경) · resolved 값/prose/캡션 커밋0·미노출·count/점수만 보고 · blind 채점완료 전 REVEAL 안 봄(완료후 매핑 OK) · 060329Z(R4) 미완=채점 금지 · ingest/API 실패시 우회말고 사유기록 후 백오프(rate-limit은 2×45/2×15 배치) · UTF-8(PYTHONUTF8=1)·f-string backslash 금지 · note-stacking 금지(신규 아티팩트만).
 **미해결**: (1) **df052b0 leak**=ccc `MISSING_FIGURES.json` 캡션 tracked(노트 d22eb7b) Codex 대응 대기. (2) Conductor stitch 검증(다음). (3) 그 후 BMT v3 section-suite. ma HEAD=c7e3b06·LEDGER 최신=237·ccc ahead0.
+
+
+=== Conductor hand-stitch 독립 재검 (2026-06-18 22:2x) ===
+- LEDGER_238 = Conductor stitch smoke = **Codex 손-merge**(Gemma 호출 X; Conductor_codex_response.local.json). 새 model-run dir 없음.
+- 내 독립 재검(6 agent, pack당 judge2, count/flag만): 2/3 pack 깨끗(no-new-claim 0/0). protected 6/6 byte-exact, new_number/bait 0/6, tie_breaker_from_existing 6/6.
+- ⚠️ 12809Z: 마무리에 implication 자기분류=구조적 meta. j1=meta true(+new_claim1), adversarial j2=false → 경계(확정fail X). Codex 기계게이트(term-매칭)는 미탐.
+- VERDICT: 'v2 Conductor 지침 coherent'는 독립확정. but (a)손-merge지 Gemma아님=장비검증 0회 유지, (b)구조적 meta 경계 1건.
+- 권고=A: Conductor stitch runner 빌드→Gemma 실행→내 채점=진짜 sign-off. runner에 '함의 자기분류 금지(term→move)' 가드 추가. B(지금 baseline)도 가능하나 '지침coherent/장비미검증' 정직라벨 시.
+- 노트: inbox_codex/CLAUDECODE_CONDUCTOR_HANDSTITCH_INDEPENDENT_SCORE.md. 미해결: Conductor model-run 검증 · df052b0 leak.
