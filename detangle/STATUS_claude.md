@@ -446,3 +446,13 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - VERDICT: 'v2 Conductor 지침 coherent'는 독립확정. but (a)손-merge지 Gemma아님=장비검증 0회 유지, (b)구조적 meta 경계 1건.
 - 권고=A: Conductor stitch runner 빌드→Gemma 실행→내 채점=진짜 sign-off. runner에 '함의 자기분류 금지(term→move)' 가드 추가. B(지금 baseline)도 가능하나 '지침coherent/장비미검증' 정직라벨 시.
 - 노트: inbox_codex/CLAUDECODE_CONDUCTOR_HANDSTITCH_INDEPENDENT_SCORE.md. 미해결: Conductor model-run 검증 · df052b0 leak.
+
+
+=== Conductor MODEL-RUN(Gemma) 채점+가드 break-it (2026-06-18 22:5x) ===
+- Codex A 완수: ollama_conductor_runner.py(MA 로컬 c34bf3a 미push) + 내 요청 meta-가드 추가 + Gemma run 3/3(112008Z). LEDGER_239.
+- 내 독립채점(6 agent): no-new-claim **0/6**(둘다·3pack) · protected 6/6 byte-exact · new_number 0/6 · overclaim/bait 0/6(12427Z는 bait 버림) · tie_breaker_from_existing 6/6.
+- ✅ 운영자 핵심요구('Conductor 새주장0') 실제 Gemma서 확정 = 장비 안전게이트 PASS.
+- ⚠️ watch1: Conductor over-safe(timid). tie_breaker 4/6=lower_or_safer. 12809Z는 claim/bound/caveat 다 2 + 소스 caveat 1 유실. 과주장 반대방향. 추세 모니터.
+- ⚠️ watch2: meta-가드 break-it=좁은 정규식, 동의어/리프레이밍 10/10 우회 + 정상문 오탐. 12427Z 구조적 meta(j1 flag)가 정규식 통과=라이브 확증. 부재증명 불가, 의미리뷰 병행.
+- VERDICT: quartet v2(B/M/T+Conductor) smoke-PASS → 다음 논문쓰기 baseline 수락가능, watch1/2 라벨. 노트: inbox_codex/CLAUDECODE_CONDUCTOR_MODELRUN_SCORE_AND_GUARD_BREAKIT.md.
+- 다음=BMT v3 section-held-out suite, 또는 운영자 지시. 미해결: Conductor over-safe 추세 · df052b0 leak.
