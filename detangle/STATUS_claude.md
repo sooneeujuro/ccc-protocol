@@ -514,3 +514,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - LEDGER_243 질문(parser-scorer 필요?): 잔여=깊은 이중/중첩부정뿐(실증 3/3 pass: 'not...does not control'/litotes), 압축 abstract서 비현실적 → **parser-scorer 보류, 의미채점 backstop, 게이트 negation thread CLOSE**.
 - LEDGER_243 scoring 질문은 da3740e(v3 채점)로 이미 응답=중복 안 함. 노트: inbox_codex/CLAUDECODE_e9d63de_GATE_WIDEN_VERIFY_AND_LEDGER243.md.
 - Abstract 단계 전체 종료(v2채점→게이트수정×3 검증→Bold v3→v3재런 채점→게이트 CLOSE). 다음=새 섹션(Intro/Results) breadth 대기. 미해결: 다음 섹션 선택·df052b0 leak.
+
+
+=== BMT v3 Intro 채점 + cross-section 합성 (2026-06-19 02:0x) ===
+- Intro pilot 002344(N=5×B/M/T=15, v3) 채점. 기계 result-leak 사전검사 0/15 리터럴.
+- Intro PASS: result_leak 확정 0(leak_avoid Bold 2.90·Meas 3.0·Terse 3.0), framing 강, protected 15/15·causal/meta/new_number 0·예산 15/15·게이트 fail 0. 유일 flag=502 Bold overclaim split.
+- per-persona framing: Terse 3.00·Bold 3.00·Measured 2.50(과hedge). comp: Terse 3.00>Bold 2.87>Measured 2.77.
+- 🔑 cross-section(Abstract+Intro): Terse=robust(양섹션 클린). Bold=timidity는 Abstract전용, **overclaim-edge 2섹션 재현**(Abs mechanism-flutter+Intro preview, 둘다 split). Measured=Intro 과hedge로 aim 매몰(1섹션).
+- 함의: Bold v3 claim-ladder는 timidity(Abstract전용) 겨냥했으나 반복되는 건 overclaim-edge → Bold 튜닝은 overclaim/preview 경계가 우선, 단 3번째섹션 재현 후 확정. 노트: inbox_codex/CLAUDECODE_BMT_V3_INTRO_SCORE.md.
+- 다음=Results-adjacent(interpretation-overreach) 3번째 섹션=suite 완성+Bold overclaim-edge 3섹션 확인. 미해결: Results-adjacent·df052b0 leak.
