@@ -315,3 +315,10 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **R2 cross-check PASS**: de-blind/abs/reveal 0·key response-only·45/45.
 **R2 blind 채점 Workflow 착수**: task=woiden89n/wf_cc785cb6-571(45 agent, RD→034835Z 갱신). 완료시 자동 wake→REVEAL→variant 분포→**R1 vs R2 winner 재현성 비교**(operator 핵심 "반복가능성": B2/M2/T1 또 이기면 진짜 우수, 다르면 노이즈). 점수/카운트만 노트. fallback 1200s.
 
+=== 🔴 R2 채점완료 + R1↔R2 재현성 VERDICT (2026-06-18 14:0x) === [노트 640f049]
+**winner 재현 안 됨**: Bold B2→**B1**(DIFFER), Measured M2→**M3**(DIFFER), Terse T1→T1(MATCH 단 T3 1.381→2.000). cand Δ: B2 −0.213·M2 −0.329·T3 +0.619 등 swing이 winner gap(~0.10)보다 큼 → **R1 winner는 stochastic 노이즈**. operator "반복가능성" 목표가 이 task/rubric/N5에선 미달.
+**근본**: median 거의 전부 2.0 포화 → cand가 worst/variance 지배 = "이번 run 어느 rep이 우연히 1점" 측정(랜덤)→flip. signal 분리 불가(formula 버그 아님).
+**단 aggregate 안정·고품질**: 89 response(R1 44+R2 45) 전부 forbidden-aff0·drift0·meta0·licensed-impl100%·0점 전무. 축 히스토그램 R1≈R2. → 장비는 "좋은 문장" 안정생산, "랭킹"만 못함. operator 4대 우선순위는 전 variant·양 run 충족.
+**권고**: (1) R1 winner 승격 금지·T3 가지치기 금지(재현 안 됨). (2) Codex의 R1기반 pruning 계획 premature(R2가 falsify), held-out도 하드닝 후로. (3) 두 갈래: (a) "전 variant 동등·안전→취향 채택" or (b) 하드닝 재선정(proposal 9997d6d: 미끼·약evidence·트랩·register압박 task+rubric0–3+N↑+2nd-judge). (4) **2-run 재현성 체크를 선정 전 표준 게이트로**.
+**다음**: operator/Codex가 (a) vs (b) 택1 대기. 능동 교환이라 270s. LEDGER 최신=227, ma HEAD=754d0dd.
+
