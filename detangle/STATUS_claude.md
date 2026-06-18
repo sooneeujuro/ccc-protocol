@@ -347,3 +347,11 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **내 설계 스펙(abb91cb)**: (1) 0–3 rubric — claim_altitude/caveat_integration/register_fit/**evidence_binding(NEW 변별축)**/conciseness 각 0–3 anchor; protected는 hard gate로 이동(scored 제외); overclaim affirmative=hard fail. (2) harder task M1 over-reach미끼·M2 약-evidence·M3 protected near-miss트랩·M4 register압박(값은 Codex). (3) variant set=**round1 원본 재사용**(task를 변별 레버로 격리; evolved는 균질화돼 부적합). (4) 운영: N=8·2nd-judge on <3·**2-run 재현성 게이트 필수**·동률 held-out. (5) 분업: Codex=task instantiation+0–3 runner+DRY갭수정(`_FORBIDDEN_BLIND_STRINGS`를 VARIANT_PRESETS서 파생), 나=Workflow 0–3 schema/evidence_binding/cand 0–3 스케일/detector 갱신·채점. (6) 성공기준=축 비-3↑·spread>R1~3(0.07~0.19)·winner 2-run 재현. 셋 충족시만 profile 승격, 아니면 (a) all-good 회귀.
 **다음**: operator 승인 + Codex 빌드(harder task+0–3 runner+DRY갭) 대기 → 빌드 오면 내 채점장비 0–3 갱신→새 45-run(×2) 채점. ma HEAD=4e03647, LEDGER 최신=228.
 
+=== rubric equipment(b3b73a2) 리뷰 + DRY 닫힘 (2026-06-18 15:26) === [노트 65ed617]
+**ma HEAD=b3b73a2**(discriminating rubric). LEDGER_229(R4 stop, 내 synthesis 동의)·230(rubric equipment).
+**🟢 내 DRY갭 finding CLOSED(검증)**: runner `_FORBIDDEN_BLIND_STRINGS`=2 path + `tuple(_RELAY_FORBIDDEN_VARIANT_TERMS)`(prepare import). 실행검증: relay 18토큰이 18 variant_id 전부 커버, runner forbidden 20개(evolved 포함). 정확히 내 single-source 권고.
+**discriminating_v2(0-3) clean**: `--scoring-rubric`(default standard_v1 0-2 보존), dv2=6축(claim_altitude_two_sided·bound_tightness·caveat_survival·register_fit·protected_preservation·conciseness)·hard_gates==standard(불변)·selection_rule에 two_run_reproducibility·task_pressure_profile에 M1~M4·judge_notes. 메타데이터 주입(채점은 Claude). tests 80 pass.
+**내 4 LOW**: (1)2nd-order DRY(relay vs VARIANT_PRESETS 별개 수기). (2)evidence_binding 축 누락(Codex=bound_tightness 대체, 차원 다름→추가 고려). (3)spread-shadow(`**dict` 안전키 덮을 위험, assert 권고). (4)N=8은 `--repetitions 8` 명시 필요.
+**차이(내 스펙 vs Codex)**: 내 evidence_binding/protected→gate vs Codex bound_tightness/protected 여전 scored. 둘 다 합리적.
+**다음**: Codex가 **harder task instantiation(M1~M4)** 빌드 → 내가 채점 Workflow를 dv2(0-3·6축·cand=median−λvar−μ(3−worst)·2nd-judge on <3)로 갱신 → 새 run(`discriminating_v2`+`--repetitions 8`, ×2 재현성) 채점. LEDGER 최신=230, ma HEAD=b3b73a2.
+
