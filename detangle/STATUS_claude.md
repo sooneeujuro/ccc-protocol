@@ -380,3 +380,6 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 
 === N=10 run 완료 + dv2 채점 착수 (2026-06-18 19:41) ===
 **081018Z(N=10) 완료**: 90/90 pass·**0 fail**(N5의 2 fail은 stochastic 확인)·~2.37h(median 89s). per-persona 30씩. cross-check PASS(de-blind/key/response-only). dv2 채점 Workflow 착수=wjcbbsqww/wf_e161c3c9-5a1(judge1 90 + judge2 on <3). 완료시 자동wake→REVEAL후 9 variant 0-3 분포(full + claim+caveat 전용)·judge1/2 일치·**064019Z(N5)와 winner 2-run 재현성 비교=핵심 verdict**(B3/M3/T2 또 1등?·B2/T3 약함?·claim+caveat stdev?)→점수만 노트+operator 보고. fallback 1200s. ma HEAD=df052b0, LEDGER 최신=233.
+
+=== ⚠️ dv2 N=10 채점 rate-limited (transient) → 재시도 대기 (2026-06-18 19:42) ===
+**채점 Workflow wjcbbsqww 실패**: judge1 90 agent 전원 `API Error: Server is temporarily limiting requests (not your usage limit)·Rate limited`. scored_count=0. = **Claude API 서버측 일시 rate-limit**(내 usage limit 아님). Gemma run(081018Z 90/90)·cross-check는 무사. 40분전 N5 dv2(86 agent) 성공했으니 burst보다 현재 서버조건. 게이트=우회 말고 사유기록+대기후 재시도(즉시 재시도 악화). **~420s 대기 후 재실행**(안 풀리면 2×45 배치). dv2 instrument/worklist/RD(081018Z) 그대로.
