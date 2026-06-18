@@ -43,6 +43,15 @@ articles/
 2. **LLM_off 단가** — 이전 cost ledger or Datalab 가격표 → 2,900편 비용 못박기 (이전 LLM_on 편당 ~$0.15, off는 더 쌈 추정).
 3. **재추출 GO** — 비용 확정 후 운영자 승인.
 
+## 파일럿 결과 (2026-06-18 15:10) ✅ 검증 완료
+- 10편 `convert_pdfs.py`(accurate, LLM_on) → `G:\corpus_rebuild_20260618\<slug>\`. **$1.34 (편당 $0.134)** → 전체 2,900편 ≈ **$389**.
+- 구조: `<slug>/` 폴더 + `<slug>__<hash>_img.jpg` (이중 prefix). slug 0충돌.
+- 그림 검증: `001e3e69` = Jolivet & Tamaki 1992 — figure 12개 alt 정확(Japan Sea tectonics), 실제 렌더(Japan Sea 지도 15/25 m.y.)도 일치.
+- **격리 증명**: 충돌 hash `2236272d`가 기존 corpus엔 Sawai biostrat였는데 새 폴더선 Japan Sea 지도 = namespace로 안 겹침.
+- **LLM 단가 정정**: convert_pdfs 주석 "use_llm on/off **비용 동일**" → LLM_on 유지(텍스트 품질↑, 비용 같음). off 이점 없음.
+- convert_pdfs가 이미 폴더격리+namespace 내장 → 파이프라인 새로 짤 것 없음. `--in <pdf폴더> --out <새corpus> --mode accurate --budget <cents>`.
+- 미해결: ① 전체 2,900편 GO ② reader(read_paper/md_view) 패치 ③ 새 slug(md5(pid)[:12]) ↔ 기존 paper_id 매핑(통합/교체용).
+
 ## 하드게이트
 - live corpus 비파괴. 재추출은 staging(`_rebuild`)에서, articles 배포는 운영자 OK 후.
 - corpus 본문/이미지/index git push 0. 이 계획/스크립트만 push.
