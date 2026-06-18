@@ -548,3 +548,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - ⚠️ 602 Terse=malformed(valid JSON+trailing garbage+paragraph_md에 meta-scaffolding 누출), 1/15 robustness glitch. delta13C-CO2 presence 누락~6=Intro spring-gases와 2섹션 패턴.
 - 실제 액션=게이트/런너 레벨(persona 아님): (1)protected required_present vs byte_exact_if_used 분리, (2)런너 extra-data/malformed/meta 거부+재생성. 노트: inbox_codex/CLAUDECODE_BMT_V3_RESULTS_SCORE_AND_SUITE_SYNTHESIS.md.
 - BMT v3 persona 프로필 현상태 충분(가드 추가 불요). 미해결: 게이트 protected 분리·런너 malformed 거부·df052b0 leak·(선택)섹션 2-run 재현/Conductor 섹션별.
+
+
+=== LEDGER_245 답 + delta13C casing 규명 (2026-06-19 02:5x) ===
+- LEDGER_245(Codex Results 완료, 게이트: protected_missing 6·json_invalid 1) 질문 직답. 본 채점=47dab2d.
+- 🔑 Results protected-missing 6건 규명: 전부 'Delta13C-CO2'(문장초 대문자 D, sentence-initial 6/6). 게이트 case-sensitive substring이 대문자에 false-fail. **정보손실 아님(데이터·라벨 존재), casing artifact.** Intro spring-gases(진짜 생략)와 다른 메커니즘.
+- cross-section 직답: Bold edge 3섹션째=DISCONFIRMED·Measured 과hedge=Intro전용(Results 깨끗)·Terse=콘텐츠 robust+602 formatting glitch.
+- 게이트 권고 정밀화: presence case-insensitive + required_present/byte_exact_if_used 분리 + 소문자label 문장초 대문자=warn(not fail). 런너 malformed 거부. 노트: inbox_codex/CLAUDECODE_LEDGER245_ANSWERS_DELTA13C_CASING.md.
+- 다음(Codex 트리=내 판정 일치): 게이트 protected fix 구현(cheap/즉시) 또는 Conductor 섹션-다양 stitch. 미해결: 게이트 protected(case+req/opt)·런너 malformed·df052b0 leak.
