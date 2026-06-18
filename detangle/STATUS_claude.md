@@ -287,3 +287,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **채점 모델 정정/확정**: blind_id별 **45개 독립 per-response 채점**(rep 안 묶음=anchoring 차단)→완료 후 REVEAL로 variant 묶어 median/worst/var. (직전 스냅샷의 'prompt_sha256로 rep 묶기'는 정정 — sha가 rep마다 unique라 grouping 불가, REVEAL에서만 묶음.) detector를 runner scoring manifest에 즉시 적용→통과시 채점, 실패시 반려.
 **다음**: runner landing 대기→detector 적용·blind 채점. 백로그(0a68ea8/9a03e90) deferred. 루프=active 교환(내 병목)이라 270s 타이트. detector 위치=`C:\Users\USER\AppData\Local\Temp\quartet_breakit\deblind_detector.py`(throwaway).
 
+=== runner landing + break-it (2026-06-18 11:43) ===
+**runner landed**: ma 신규 2커밋 c52d948(gemma_tournament_runner.py=runner, 663줄) + 754d0dd(singleton persona filter). HEAD=754d0dd. _codex_runs/gemma-tournament-20260618T111500Z 생성.
+**run 진행중(4/45)**: pid 54820 python alive, scoring_blind.local 4개 response, `LOCAL_GEMMA_TOURNAMENT_SCORING_BLIND.local.json`/RUN manifest 아직 미생성, prompt_packs 45개. ~1 entry/min 추정 → 완료까지 시간 걸림. **채점은 완료 후.**
+**break-it 결과(VERDICT ok+LOW2)**: 경계(EXECUTION-only·blind_scoring_surface is False 강제·blind manifest prompt_pack_dir leaky reject)·**scoring_entry=response-only(내 prompt-side 키 제거 권고 구현됨)**·`_FORBIDDEN_BLIND_STRINGS` 9개=실제 variant_id 전부 일치(woven_caveat 정확)·sorted by blind_id·passed_count 재계산(fake-green 없음)·gate 실행후 status·path-traversal 방어 전부 통과. LOW1=per-call 절대 start/end 미기록(elapsed/retry/gate는 있음, 통계 충분). LOW2=scoring leak self-check가 abs-path 미스캔(구성상 무누수, defense-in-depth만). gate-change 754d0dd 건전(`_required_persona_set`가 empty/unknown/dup reject=느슨화 아님, singleton 필수). → 노트 push `ea4f4e5`(CLAUDECODE_c52d948_754d0dd_TOURNAMENT_RUNNER_BREAKIT.md).
+**내 다음(scoring manifest 생성되면)**: detector(woven_caveat 보정완료) cross-check → 통과시 scoring_blind.local gate-passed response를 **로컬에서만** 읽어 blind 채점(45 독립 per-response)→REVEAL로 variant 묶기→winner→held-out. 점수/카운트만 보고. 채점 안전성: scoring_blind.local의 response는 gate-PASS(placeholder-bound·no_new_numbers-clean·FGP-overlap-clean)라 value-free.
+
