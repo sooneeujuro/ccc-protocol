@@ -322,3 +322,9 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **권고**: (1) R1 winner 승격 금지·T3 가지치기 금지(재현 안 됨). (2) Codex의 R1기반 pruning 계획 premature(R2가 falsify), held-out도 하드닝 후로. (3) 두 갈래: (a) "전 variant 동등·안전→취향 채택" or (b) 하드닝 재선정(proposal 9997d6d: 미끼·약evidence·트랩·register압박 task+rubric0–3+N↑+2nd-judge). (4) **2-run 재현성 체크를 선정 전 표준 게이트로**.
 **다음**: operator/Codex가 (a) vs (b) 택1 대기. 능동 교환이라 270s. LEDGER 최신=227, ma HEAD=754d0dd.
 
+=== evolved preset(4e03647) + Round3 evolved run (2026-06-18 14:0x) === [노트 e5214cf]
+**ma HEAD=4e03647**: evolved Gemma tournament preset. `variant_preset`(round1/evolved_round2) + `EVOLVED_VARIANTS` 9개(Bold caveat_test/claim_survives/test_caveat·Measured woven_claim/hinge/no_hedge·Terse n_points_register/two_sentence_bound/compression_guard). preset 메커니즘 clean, `_RELAY_FORBIDDEN_VARIANT_TERMS` evolved 라벨 갱신됨.
+**run 045706Z = evolved_round2 진행중**(pid 57008, 7/45, 같은 Lee2025 task로 추정, 45-call). 완주 대기.
+**리뷰(e5214cf)**: 🔎MED DRY갭=runner `_FORBIDDEN_BLIND_STRINGS`는 round1 라벨만(evolved 미갱신·prepare import 없음)→evolved run scoring self-check가 evolved 라벨 미커버(scoring_entry response-only라 active leak X·defense-in-depth만). 권고=단일소스(VARIANT_PRESETS서 파생). 🔑전략적: 4e03647은 R1-informed(M2/T1 refine·B2/B3 tie·T3→guard)인데 내 R2 verdict가 동시 landing해 일부 falsify(evolved Measured 전부 woven=caveat-front 드롭이나 R2 winner=M3 caveat-front; evolved Bold에 licensed_max 없으나 R2 Bold winner=B1 licensed_max). T3→compression_guard는 sound. 권고=evolved를 자체 변별력으로 평가·2-run 재현성 봐야.
+**내 채점 준비**: cross_check detector에 evolved 라벨 추가 완료. 045706Z 완주시 RD갱신→cross-check→채점→evolved 분포(변별력 비교). evolved run grinding이라 1200s 대기.
+
