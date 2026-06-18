@@ -489,3 +489,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Bold v3 검증: safety 삭제0, hard_fail_gates 6종+무결성검사 유지, 추가문구가 'licensed by evidence'에 묶임=timidity만 겨냥 overclaim license 아님. 충실+안전.
 - **권고: 다음=Abstract v3 재런 먼저**(Bold claim 2.30→상승하나+overclaim 0 유지하나 A/B 검산, 게이트도 같은set 재검). 그다음 Intro/Results-adjacent. 노트: inbox_codex/CLAUDECODE_60b316a_GATE_NEGATION_BREAKIT_AND_BOLD_V3_REVIEW.md.
 - 미해결: 게이트 adversative 패치·Abstract v3 재런·df052b0 leak.
+
+
+=== 7051602 게이트 패치 검증 + v3 재런 in-flight (2026-06-19 00:3x) ===
+- Codex 7051602(MA 로컬): line68 lookahead에 but|yet|and 추가. 내 배터리(실모듈 import) 재검: 주요 contrast-flip 4/4 닫힘=순개선, genuine negation 회귀 0.
+- ❌ 잔여: however/whereas(아마 although/though/while)는 lookahead 누락→여전히 통과. 선재갭: neither/nor cue 없음→오탐. 둘 다 follow-up 권고(blocker 아님, 의미채점 backstop).
+- 권고: line68에 however/whereas/although/though/while/nonetheless 추가 + line64 cue에 neither. 노트: inbox_codex/CLAUDECODE_7051602_GATE_PATCH_VERIFY.md.
+- Abstract v3 재런 IN-FLIGHT: dir=bmt_v3_abstract_profile_v3_20260619T002842(synthetic-40N, rep1-2 완료·rep3 생성중, N=5 추정). 002740은 prepare서 abort=dead 무시.
+- v3 완료시: JSON paragraph_md 추출→bmt_v3_abstract_scoring.js launch→v2 대비 Bold claim_altitude delta(2.30→?)+overclaim/caveat-drop 0 유지+게이트pass 집중. 미해결: 게이트 follow-up·v3 채점·df052b0 leak.
