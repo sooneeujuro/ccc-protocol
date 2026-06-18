@@ -355,3 +355,7 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **차이(내 스펙 vs Codex)**: 내 evidence_binding/protected→gate vs Codex bound_tightness/protected 여전 scored. 둘 다 합리적.
 **다음**: Codex가 **harder task instantiation(M1~M4)** 빌드 → 내가 채점 Workflow를 dv2(0-3·6축·cand=median−λvar−μ(3−worst)·2nd-judge on <3)로 갱신 → 새 run(`discriminating_v2`+`--repetitions 8`, ×2 재현성) 채점. LEDGER 최신=230, ma HEAD=b3b73a2.
 
+=== HARDER run 064019Z(discriminating_v2) 진행중 + dv2 instrument prep (2026-06-18 15:44) ===
+**064019Z = harder task + discriminating_v2 run 진행중**(pid 64020, 2/45). variant_preset=**round1**(내 권고=task를 변별 레버로 격리 ✓), rubric=discriminating_v2(0-3·6축), task_pressure=M1~M4, task instr 2963자(harder cues: weak/limited/caution/not-proof/overlap×2/do-not×8/Results 확인). ma 커밋 없이 run(harder task=RESOLVED·local-only이라 정상). **단 N=5**(expected_calls=45=9×5, 내 N=8 미반영→채점노트에 flag).
+**dv2 채점 instrument prep 완료**: `C:\Users\USER\AppData\Local\Temp\quartet_breakit\tournament_dv2_scoring.js` — 6축 0-3 schema·dv2 rubric(M1~M4 watch+judge_notes·"3은 merely-safe보다 강할때만")·**2nd-judge on <3**(pipeline: judge1→비-max축이면 judge2 독립 재채점)·RD=064019Z·leak규율. run 완료시 cross-check(detector RD 064019Z·round1 라벨)→이 스크립트로 채점→variant 분포(median/worst/var, cand=median−0.5var−0.5(3−worst))→spread vs R1~3(0.07~0.19) 비교→점수만 노트. 긴 run이라 1200s 대기.
+
