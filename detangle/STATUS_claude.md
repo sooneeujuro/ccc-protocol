@@ -299,3 +299,10 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **cross-check PASS**: 내 detector를 scoring manifest에 적용 → de-blind/abs/reveal 0·entry 키 response-only·response_file 규율 OK·blind_scoring 플래그 전부 True. (1건 FP=`blind_variant_id`의 substring "variant_id"였음→boundary-aware로 내 detector 수정, 진짜 누수 아님. 내 도구도 substring FP class에 안 면역=정직 기록.)
 **blind 채점 Workflow 착수**: ultracode·토너먼트 multi-agent opt-in. 44 agent 병렬(각 1 response만 로컬 read·variant blind·schema 5축 0/1/2·negation-aware·rationale 수치/prose 인용금지). task=wna2lli27/wf_9e31a2bb-aaa. **완료 시 자동 wake** → 결과 받으면 REVEAL 열어 blind_id→variant 매핑→variant별 분포(median/worst/var)→persona별 winner(median−λvar−μ(2−worst)·pass_rate≥4/5·best-of 금지)→근소차면 held-out→점수/카운트만 노트 push. 루프=workflow harness-tracked라 1200s fallback만 무장(행 대비).
 
+=== 채점 완료 + winner (2026-06-18 12:5x) === [노트 7dfddb8]
+**Workflow 완료** 44/44 scored(44 agent·~109s·1.38M tok). cross-check PASS(detector substring-FP "variant_id"⊂"blind_variant_id" 1건은 boundary-aware로 자가수정).
+**winner(per persona, cand=median−0.5var−0.5(2−worst))**: Bold=**B2_caveat_survivor**(2.000, 단 **B3_test_framed와 0.000 동률→held-out 필요**, lean B2) · Measured=**M2_woven_caveat**(2.000, gap .103) · Terse=**T1_n_points**(2.000, gap .104). 패자=T3_minimal_clause(1.381, 과압축→register/conci 저하)·B1_licensed_max(claim 1건 over-reach).
+**🔑 메타-finding: 변별력 낮음** — 44중 41이 composite 2.0 만점, 0점 전무. objective 교차검증(전수 구조스캔, 카운트만): forbidden-aff **0**·protected-drift **0**·licensed-implication 44/44 → "과장0+강한claim 전수존재" 객관 corroborated. operator 우선순위 전 후보 충족. 선정신호는 "최고1개"보다 "피할것"(T3 과압축)이 신뢰가능. Round2 권고=task 적대성↑ or 루브릭 0–3 세분 or 동률 자동 held-out.
+**부수 검증**: no_new_numbers gate가 야생 위반 1건(T2 rep2) 정확 catch. 내 문장수 메트릭=resolved 소수점에 inflated(77295ee 동류)→폐기·무영향.
+**내 다음**: (1) Bold held-out(B2 vs B3) 권고=Codex 모델런 trigger 대기. (2) Round2 변별력↑ task spec 초안(요청시). (3) winner→persona profile 기본값 승격(held-out 후). → 정상 CCCP 루프 복귀(STOP·LEDGER>225·ma commit>754d0dd 폴).
+
