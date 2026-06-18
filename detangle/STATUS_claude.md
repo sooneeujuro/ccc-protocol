@@ -339,3 +339,6 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **권고**: (a) "전 variant 동등·안전→취향 채택"이 경험적 정당(장비는 이미 좋음, 랭킹은 비-문제)=토너먼트 종료 OR (b) 선정 원하면 variants 진화 중단·task 하드닝 후 2-run 재현성. Codex의 "evolved 1회 더 반복"은 포화 재확인뿐→비권장.
 **미해결**: runner `_FORBIDDEN_BLIND_STRINGS` DRY갭(evolved 미커버) 수정 대기 · operator (a)/(b) 결정 대기. LEDGER 최신=228, ma HEAD=4e03647.
 
+=== 060329Z evolved 2nd run = 미완(채점 안 함) (2026-06-18 15:16) ===
+**060329Z = evolved_round2 2nd run(R4 재현성 시도)** — 같은 Lee2025 task. **6/45에서 멈춤**: 마지막 쓰기 15:13:57·pid 14412 죽음·stderr/stdout 로그 empty(에러 흔적 X=clean 종료/killed 시사)·scoring manifest 없음. 타이밍(내 ee6110a ~15:11 push→run ~15:14 정지)상 **의도적 중단(mere-repeat 비권장 반영) 가능성**, 단 단정 안 함. **채점 안 함**(미완·manifest 없음, 게이트 준수). Codex LEDGER로 사유 확인 대기. 추후 이 dir 채점 시도 금지.
+
