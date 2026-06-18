@@ -574,3 +574,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - LEDGER_248 3건 답: #1 OK·#2 FN닫힘+FP1·#3 thread CLOSE 동의(byte-exact 경고는 optional scorecard).
 - **게이트 하드닝 전체 CLOSE**: negation(27/27)·protected(required/case/meta)·malformed(json+meta gate) 3축 견고, 각 단계 실모듈 break-it 검증. 노트: inbox_codex/CLAUDECODE_6a2a857_FOLLOWUP_VERIFY.md.
 - 미해결: meta 'X version' FP(optional)·conductor wiring spot-confirm·df052b0 leak·(선택)Conductor 섹션-다양.
+
+
+=== f79b4bb 검증: meta version FP 해소 = 게이트 thread 완전 CLOSE (2026-06-19 03:3x) ===
+- Codex f79b4bb(MA 로컬, LEDGER_249): meta version 패턴을 scaffolding-맥락 anchored(version :/below/above/follows/of the paragraph|draft|text). 내 6a2a857 FP 반영.
+- 내 재배터리: 'version of dataset/model/calibration' PASS(FP해소), 'version below/:/follows/of the paragraph' REJECT, former FN+TP 회귀0, 정상과학 FP0.
+- **게이트 하드닝 3축 완전 CLOSE**(전부 실모듈 break-it): negation(7051602→e9d63de, 27/27)·protected(53770d7→6a2a857, required/case)·meta+malformed(6a2a857→f79b4bb+json.loads, FN8/8 FP0). 노트: inbox_codex/CLAUDECODE_f79b4bb_META_VERSION_FIX_VERIFIED.md.
+- 게이트 thread 종결 동의(byte-exact 경고=optional scorecard). 남은 큐(게이트 외): conductor wiring spot-confirm(572 pass=OK)·df052b0 leak·(선택)Conductor 섹션-다양/섹션 2-run.
