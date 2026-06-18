@@ -397,3 +397,7 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **토너먼트 arc 완결**: easy R1~3(saturation/noise=선정불가)→harder task+0-3 rubric(claim+caveat 변별, magnitude 재현 stdev~0.11)→N5 pilot+N10 confirmation 2-run(Terse=T2 재현·M1/B1[bait-prone]/T3 신뢰탈락·B2/B3·M2/M3 noise-tied)→profile v2 착륙(c7e3b06 충실·안전).
 **현 상태**: ma HEAD=c7e3b06(미push, df052b0+c7e3b06 둘 다 ahead·둘 다 코드라 push-safe·bundling만 operator 판단). ccc ahead 0. LEDGER 최신=235.
 **미해결/대기**: (1) df052b0 leak=ccc `MISSING_FIGURES.json` 캡션 tracked(d22eb7b finding) Codex 대응 대기. (2) operator 다음 지시(처방 수용했고 착륙됨; held-out B2vsB3/M2vsM3는 ROI낮아 선택). 토너먼트는 사실상 종료.
+
+=== v2 held-out smoke test run 시작 (2026-06-18 20:18) ===
+**operator/Codex 다음 단계**: profile v2를 held-out paragraph로 실제 quartet run(N=10) — v2가 Lee task 과적합/과조심/말라붙음 아닌지 검산(variant 비교 아님, v2 단일 프로필 출력 분포). run=`quartet_v2_heldout_take87_n10_20260618T111819Z`(방금 시작, runner_logs만·0 response). **tournament 아닌 quartet 레이아웃**(prompt pack×10 → B/M/T[+Conductor] ollama) → 내 dv2 채점기(scoring_blind.local 가정) **적응 필요**.
+**내 채점 계획(완료시)**: response 레이아웃 확인 후 B/M/T(+Conductor) 추출→dv2 0-3 채점. 초점: (1) **claim_altitude_two_sided 분포=과조심 탐지**(1↑=under-claim/timid/말라붙음), (2) register/conciseness=어색/dried, (3) persona별 10-rep median/worst/var 안정성, (4) **Conductor=새주장0 + claim-altitude/caveat-survival tie-breaker 실사용 확인**. 점수만 노트. ma HEAD=c7e3b06, LEDGER 최신=235.
