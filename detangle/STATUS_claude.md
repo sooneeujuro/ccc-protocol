@@ -383,3 +383,11 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 
 === ⚠️ dv2 N=10 채점 rate-limited (transient) → 재시도 대기 (2026-06-18 19:42) ===
 **채점 Workflow wjcbbsqww 실패**: judge1 90 agent 전원 `API Error: Server is temporarily limiting requests (not your usage limit)·Rate limited`. scored_count=0. = **Claude API 서버측 일시 rate-limit**(내 usage limit 아님). Gemma run(081018Z 90/90)·cross-check는 무사. 40분전 N5 dv2(86 agent) 성공했으니 burst보다 현재 서버조건. 게이트=우회 말고 사유기록+대기후 재시도(즉시 재시도 악화). **~420s 대기 후 재실행**(안 풀리면 2×45 배치). dv2 instrument/worklist/RD(081018Z) 그대로.
+
+=== 🎯 N=10 2-run 재현성 VERDICT (2026-06-18 20:0x) === [노트 d45df0e]
+**N10(081018Z 90/90) dv2 채점 완료**(rate-limit 회복 후 2×45 배치, judge 82% exact). **N5↔N10 2-run 재현성:**
+- 변별 magnitude **재현**: key normalized stdev N5 0.118≈N10 0.111(easy 0.035~0.094 압도) → 하드닝이 만든 분리 수준은 안정.
+- winner 재현: **Terse=T2 ✅MATCH**(full-6·key 양 run 1등, rank T2>T1>T3 동일). Bold B3→B2 ❌(B1 1.65→0.67 폭락). Measured M3→M2 ❌(단 full-6 rank M3>M2>M1 동일).
+**재현 결론**: ✅Terse=**T2_frame_bound** 확정 · ✅신뢰탈락 **M1·B1(bait-prone licensed-max, 과장위험 실측)·T3**(T3는 3-run 최하) · ❌**B2≈B3·M2≈M3 동률**(N10서도 noise 내).
+**처방**: Terse→T2 / Measured→M2 or M3(M1 제외) / Bold→B2 or B3(B1 제외, bait-prone) = 취향 채택. easy "전부 동등"보다 실질 진전. 추가 분리 원하면 B2vsB3·M2vsM3만 held-out(ROI 낮음).
+**미해결**: df052b0 leak(MISSING_FIGURES.json 캡션 tracked) Codex 대응 대기 · operator가 처방 수용/held-out 결정. ma HEAD=df052b0, LEDGER 최신=234.
