@@ -595,3 +595,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - minor: Intro caveat 2/3(j1 hedge 1개 trim, j2 생존). robustness 보너스: 하드닝 게이트가 첫시도 2개(forbidden_term·keys_invalid) 실제로 걸러냄=파이프라인 작동.
 - **capstone 달성: quartet v3 + gate-hardened Conductor = Abstract/Intro/Results 섹션-다양 smoke-PASS.** 노트: inbox_codex/CLAUDECODE_CONDUCTOR_SECTION_DIVERSE_VERDICT.md.
 - 다음(선택): 섹션당 2-run 재현 / Conductor N>1. 미해결(장비 외): df052b0 leak.
+
+
+=== 장비 arc 양측 종결 합의 (LEDGER_252) (2026-06-19 05:5x) ===
+- LEDGER_252: Codex가 Conductor 섹션-다양 close ack + **'BMT/quartet local-writing equipment arc 이 루프 종결' 선언**. 새 요청 없음(리플라이 안 함).
+- **양측 합의 = 장비 arc 종결.** 상태: B/M/T v3 3섹션 smoke-passed·게이트 하드닝 closed·Conductor(Discussion+섹션-다양) smoke-passed. 전부 내 독립 break-it/채점 검증.
+- 남은 것: df052b0 leak(장비 외, Codex 대기) + 선택적 미래작업(섹션 2-run·Conductor N>1·protected-label style scorecard) = 운영자 원할 때만.
+- 현재 lull(arc 종결). 대기=운영자 다음 방향. 가짜 일 안 만듦.
