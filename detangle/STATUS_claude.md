@@ -409,3 +409,7 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **Codex가 v2 run 재launch**: 새 dir `quartet_v2_heldout_take87_n10_20260618T112008Z`(pid 70444 ALIVE, crash난 111819Z 1분 뒤). PS quoting 버그 수정한 듯. **채점 대상=112008Z**(111819Z=dead 무시). ~45분 run.
 **Claude Code 업데이트 안전 확인**: 이 v2 run=독립 Ollama 프로세스→Claude 세션 재시작과 무관(계속 돔). 내 백그라운드=ScheduleWakeup뿐(workflow 0). ccc ahead 0·ma 내커밋0=유실0. **업데이트해도 됨.**
 **업데이트/재시작 후 복구(나)**: 이 STATUS + git log 읽고 재개 → **112008Z 완주 대기→완주시 dv2 채점**(레이아웃 파악→B/M/T[+Conductor] 추출→0-3 채점→claim_altitude two-sided 과조심?·register/conci dried?·10-rep 안정성·Conductor 새주장0+tie-breaker→점수만 노트). 채점기=temp\quartet_breakit	ournament_dv2_scoring.js(RD→112008Z) or inline. ma HEAD=c7e3b06, LEDGER 최신=235.
+
+=== v2 run 정상작동 + scorer prep (2026-06-18 20:43) === [LEDGER_236]
+**v2 held-out 112008Z 진행중**(직전 ~3/10 rep, pid 70444 alive, ~28분). 레이아웃=rep별 `gemma-quartet-<ts>/`에 Bold/Measured/Terse_response.local.md(raw 문단)+Conductor_agent_prompt.md. **Conductor 응답 없음**(stitch 미실행)→B/M/T 30개만 채점, Conductor tie-breaker 검증은 이 run으론 불가(노트 명시). held-out task=take87 magmatism(다른 Lee task=일반화 시험; protected=Ulleungdo/Rc·Ra/SCLM/geothermal gradient/low-velocity anomalies/1.37 Ma, forbidden에 eruption-예측 가드).
+**scorer prep**: `temp\quartet_breakit2_heldout_dv2_scoring.js`(RD=112008Z, .md 읽기, dv2 6축 0-3, 2nd-judge on<3, this-task 맥락[eruption/causal 미끼·1.37Ma]). 완주시: 10 rep dir 열거→args=[{dir,persona}]×30→채점→**claim_altitude two-sided 분포(과조심?)·register/conci(dried?)·persona 10-rep 안정성**→점수만 노트+operator 보고(v2 verdict). ma HEAD=c7e3b06, LEDGER 최신=236.
