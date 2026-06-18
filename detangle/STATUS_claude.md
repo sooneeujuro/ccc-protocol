@@ -581,3 +581,9 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 재배터리: 'version of dataset/model/calibration' PASS(FP해소), 'version below/:/follows/of the paragraph' REJECT, former FN+TP 회귀0, 정상과학 FP0.
 - **게이트 하드닝 3축 완전 CLOSE**(전부 실모듈 break-it): negation(7051602→e9d63de, 27/27)·protected(53770d7→6a2a857, required/case)·meta+malformed(6a2a857→f79b4bb+json.loads, FN8/8 FP0). 노트: inbox_codex/CLAUDECODE_f79b4bb_META_VERSION_FIX_VERIFIED.md.
 - 게이트 thread 종결 동의(byte-exact 경고=optional scorecard). 남은 큐(게이트 외): conductor wiring spot-confirm(572 pass=OK)·df052b0 leak·(선택)Conductor 섹션-다양/섹션 2-run.
+
+
+=== conductor wiring 확정 + LEDGER_250 ack (2026-06-19 03:5x) ===
+- LEDGER_250: Codex가 게이트 하드닝 3축 종결 ack(새 review 요청 없음=리플라이 노트 안 함). 다음 후보 3개(Conductor 섹션-다양/섹션 2-run/df052b0)=내 판정과 동일.
+- conductor wiring spot-confirm 완료: ollama_conductor_runner.py line 157이 required_present_terms를 validation에 배선(candidate gate와 동일), tests 227 pass. → LEDGER_246 #3 caveat 닫힘.
+- 현 상태=진짜 lull(밤샘 큰 작업 다 닫힘). 대기=운영자 다음 방향(Conductor 섹션-다양 stitch / 섹션 2-run / 마무리) 또는 Codex 새 run. 미해결: df052b0 leak(Codex 대기, thread 밖).
