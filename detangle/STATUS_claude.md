@@ -307,5 +307,11 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **내 다음**: (1) Bold held-out(B2 vs B3) 권고=Codex 모델런 trigger 대기. (2) Round2 변별력↑ task spec 초안(요청시). (3) winner→persona profile 기본값 승격(held-out 후). → 정상 CCCP 루프 복귀(STOP·LEDGER>226·ma commit>754d0dd 폴).
 **LEDGER_226 close(13:0x, 1c7d51e)**: Codex Round1 핸드오프=내 채점과 일치. hard-fail 게이트 itemized 답(FGP-leak0·new-num1캐치·meta-prose0/44·drift0·conductor N/A). held-out+round2 요청 포함.
 **백로그 CLEAR(13:1x, 04e1e49)**: idle 중 deferred 2건 deep-review 완료. 0a68ea8(same-as→canonical src_id+sorted+dedup)=SOUND. 9a03e90(zotero alias gitignore guard)=ok+🔎LOW-MED(executed): `_repo_root`가 cwd-anchored(Path.cwd())라 cwd≠파일repo면 in-repo non-gitignored alias의 guard 우회([E]/[F] ALLOW vs [A] REJECT). primary 정적 .gitignore는 holds=secondary-belt hole·latent. 권고=file-anchored(path 부모서 .git 탐색). 백로그 비었음.
-**Round2 spec PROPOSAL(13:2x, 9997d6d, 무변화 2회째 능동작성)**: 변별력↑ 메커니즘 M1 over-reach미끼/M2 약-evidence/M3 protected near-miss트랩/M4 register압박 + rubric 0–3 확장 + 동률 자동 held-out + 2nd-judge on deciders. value-free(값 instantiation은 Codex). operator/Codex 택1 대기. **이제 능동 forward 작업 소진**(R1결과·held-out요청·R2spec 다 전달) → 이후 무변화 라운드는 순수 폴(억지작업 금지). Codex 응답(held-out run/round2 task/LEDGER>226) 대기.
+**Round2 spec PROPOSAL(13:2x, 9997d6d, 무변화 2회째 능동작성)**: 변별력↑ 메커니즘 M1 over-reach미끼/M2 약-evidence/M3 protected near-miss트랩/M4 register압박 + rubric 0–3 확장 + 동률 자동 held-out + 2nd-judge on deciders. value-free(값 instantiation은 Codex). operator/Codex 택1 대기.
+
+=== Round2 run 발견 + 채점 착수 (2026-06-18 13:56) === [LEDGER_227]
+**operator 지시**: "Round2 이미 돌고 있으니 완주(실패율+시간분포 2nd 샘플)" + "270s 너무 짧다"→idle cadence 1200s로.
+**Round2 = `gemma-tournament-20260618T034835Z`** (이름은 03:48Z=prepare시각, 실행은 내 R1채점 동안 동시진행, 별도 tournament_id→blind_id R1과 다름). LEDGER_227 VERDICT=round2_complete. **45/45 pass·0 fail·~63.3분**(median 79s/p90 115s). R1(44/45,new-number 1)과 비교: **R1 실패 재현 안 됨=stochastic one-off**. Codex 계획=다음은 B2/B3 held-out·M2/T1 neighborhood·T3 회피(내 R1 finding과 일치).
+**R2 cross-check PASS**: de-blind/abs/reveal 0·key response-only·45/45.
+**R2 blind 채점 Workflow 착수**: task=woiden89n/wf_cc785cb6-571(45 agent, RD→034835Z 갱신). 완료시 자동 wake→REVEAL→variant 분포→**R1 vs R2 winner 재현성 비교**(operator 핵심 "반복가능성": B2/M2/T1 또 이기면 진짜 우수, 다르면 노이즈). 점수/카운트만 노트. fallback 1200s.
 
