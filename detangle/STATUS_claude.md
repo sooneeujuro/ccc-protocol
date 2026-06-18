@@ -369,3 +369,8 @@ Codex가 빌드 전 설계 제안(LEDGER_053): `tools/paper-orchestra/fgp/v0/`(r
 **substantive**: B2_caveat_survivor R1-best→dv2-worst(미끼 앞 over-caveat가 claim 깎음=operator "caveat가 claim 죽이면안됨" 측정). T3_minimal_clause easy+hard 둘다 최하(robust 드롭후보). M3 R2+dv2 강세. 미끼는 gate-level(pass_rate Bold/Measured−1·Terse0)에서 변별.
 **한계**: N5 단일 run, within-var 커짐(key축 var≤0.34)→winner 미확정. **다음 권고**: (1)cand를 claim+caveat 중심 재가중. (2)**N=8+2-run 재현성**으로 winner 확정(신호 확인됐으니 정당). (3)T3 드롭. operator 결정 대기.
 
+=== N=10 확정 run 계획(LEDGER_232) + 081018Z prepared (2026-06-18 17:12) ===
+**operator 승인 N=10 confirmation**: 같은 prompts(round1)·같은 M1~M4 harder task·dv2, **90 calls**. 목표=N5 발견 재현 검증(B3/M3/T2 winner·B2/T3 약함·claim/caveat 변별이 N10서도 나오나? prompts 고정=원인 안 섞음). 내 권고+재현성 원칙과 정렬.
+**081018Z = N=10 run PREPARED**(preset round1·dv2·expected_calls=90·같은 task instr 2963자) — 단 **0/90·pid 없음=미시작**(prepare만, runner 곧 launch 추정). ~90×~90s ≈ **~2.25시간** run.
+**내 다음**: 081018Z 완주시 → cross-check(RD 081018Z·round1 라벨)→dv2 채점(tournament_dv2_scoring.js RD→081018Z·args=passed)→REVEAL후 분포→**064019Z(N5)와 winner 2-run 재현성 비교**(B3/M3/T2 또?·B2/T3 또 약함?·claim+caveat normalized stdev 유지?)→점수만 노트. dv2 instrument 재사용(cand 재가중은 post서 claim+caveat 별도계산). 긴 run이라 1200s. LEDGER 최신=232, ma HEAD=b3b73a2.
+
