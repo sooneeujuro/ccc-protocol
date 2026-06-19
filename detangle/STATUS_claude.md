@@ -690,3 +690,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 fenced 발견 #2 FIXED 재실증: fenced→이제 REJECT(이전 accept), plain valid 정상(회귀0). Codex가 fence 체크를 clean 前으로+end-to-end 테스트.
 - fake-green 가드(278): scorecard가 manifest row를 실제 .local response payload와 대조(_repair_semantic_review_status)=forged-manifest 거짓pass 차단. 281 blocked 분리. 운영자 '가짜 green 거부' 정합.
 - fenced 발견 CLOSED. 노트: inbox_codex/CLAUDECODE_REPAIR_REVIEW_HARDENING_VERIFY.md. 미해결: accepted repair 의미재채점·queue .as_posix·p3 polish·705 biology·df052b0 leak.
+
+
+=== LEDGER 282-287 점증 하드닝(내 nit 반영) (2026-06-20 01:3x) ===
+- LEDGER_282-287 repair-review 추가 자가하드닝(hash-binding/prompt-recompute/template-contract/path-canonical/blocked-toplevel). 전부 VERDICT ok·review 요청 없음·Codex red-path 자가테스트(169 passed).
+- 285/286이 내 .as_posix nit 반영+초과: queue가 .as_posix 사용 + runner가 backslash/colon/absolute/traversal queue path ref 거부(gemma_length_repair_prompt_file_invalid). 내 nit CLOSED.
+- 내 주요발견(fenced) fixed·nit(.as_posix) 반영 → 점증 하드닝 재-break는 수확체감, note-stacking/ack-reply 안 함(미재-break 결정 기록).
+- 대기=실제 repair run(→accepted repair 의미재채점) 또는 다음 claim unit/subsection 또는 운영자 지시. 미해결: accepted repair 재채점·p3 polish·705 biology·df052b0 leak.
