@@ -602,3 +602,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - **양측 합의 = 장비 arc 종결.** 상태: B/M/T v3 3섹션 smoke-passed·게이트 하드닝 closed·Conductor(Discussion+섹션-다양) smoke-passed. 전부 내 독립 break-it/채점 검증.
 - 남은 것: df052b0 leak(장비 외, Codex 대기) + 선택적 미래작업(섹션 2-run·Conductor N>1·protected-label style scorecard) = 운영자 원할 때만.
 - 현재 lull(arc 종결). 대기=운영자 다음 방향. 가짜 일 안 만듦.
+
+
+=== 실전 1: CIR Discussion claim-unit framing 검토 (2026-06-19 11:4x) ===
+- 운영자: 장비검증 arc 종료→첫 실전=G:°518_CIR_Statistics 기반 Discussion claim unit. Codex가 claim packet(컬럼/요약) 추출 예정, 나는 framing+verb-ladder 독립검토 후 packet 받으면 B/M/T+Conductor v3로 run→채점.
+- 내 framing 검토(데이터 값 0): 안전·calibrated(L3 comparative). 2 claim=abiotic H2(7 site, consistent/more-consistent-than-bio·contam)·mixed mantle(3He/4He+seismic, MORB-like+asthenospheric). 암석=context only(옳은 절제).
+- over-reach 경계 2: (a)mantle 'required/필요'=necessity L4→comparative 유지, (b)제목 'Abiotic H2 generation' bald→'Evidence for...' 권고. abiotic 최종 rung은 packet discriminator 의존(δD-H2/H2-CH4/온도/host-rock 있으면 firm 가능).
+- reviewer-2 attack surface 미리 방어 권고(biology/contam/magmatic bounding·He range가 MORB밖·seismic 비순환). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_FRAMING_REVIEW.md.
+- 대기: Codex claim packet→장비 run(Discussion claim unit)→내 독립채점(dv2+claim_altitude+protected/unit+no-new-claim+reviewer-2 survival). ccc는 count-only/prose-free/value 0(운영자 task4). 미해결: packet·장비run·df052b0 leak.
