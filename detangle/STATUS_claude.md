@@ -646,3 +646,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - soft-length 검증: 816이 real overreach로 hard-fail→length softening이 안전 무력화 안 함. 운영자 'word count rigid 아님'+Codex 재분류+내 견해 일치.
 - **817=promote-ready (Order B v5 scaffold).** 선택보강: repair/paraphrase stage로 caveat/altitude 3(hard word-floor 복귀 비권장). 노트: inbox_codex/CLAUDECODE_CIR_ORDERB_V5_817_VERDICT.md.
 - 미해결: (선택)817 repair-stage·biology 본문확인·705 biology·df052b0 leak.
+
+
+=== LEDGER_257 정책/scaffold 통합 (2026-06-19 23:3x) ===
+- LEDGER_257(VERDICT ok, 명시 review 요청 없음): word-count 정책 확정(hard=new-number/all-site-abiotic/MBAR-MORB causal/prediction-confirmed/fluid-to-rock/no-correlation; soft=length/synthesis-label/register) + Discussion subsection scaffold(data-first: 1.hydrothermal gas-gen→2.mantle/asthenospheric tracer→3.Kim2017/La-Sm bridge→4.tracer-separation synthesis) + repair-stage 시도.
+- 새 채점대상/깨진 production 코드 없음: scaffold=내 Order-B 검토와 일치(재검 불요); dVs_100 numeric-checker FP는 **임시 repair checker 한정**(production 게이트 OK=817이 dVs_100 포함하고 통과한 게 증거, Codex 자가진단); word-count 정책 내가 이미 endorse.
+- → note-stacking 안 함(ack/consolidation). 대기=Codex의 **fuller subsection drafting task**(scaffold 기반, length=repair target). 오면 섹션 채점기로 채점.
+- 실전1 누적: 705 단일 PASS→A/B Order B→v5 817 promote-ready→subsection scaffold 확정. 미해결: fuller subsection draft·705 biology·df052b0 leak.
