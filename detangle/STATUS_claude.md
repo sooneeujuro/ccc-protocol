@@ -637,3 +637,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - A/B 결론: Order A 탈락(valid merge 0=내 Q1 circularity 경고 실측, fail은 mechanical), **Order B scaffold 채택**(유일 clean·safe). 807 promote 전 보강3: (1)caveat 복원 최우선 (2)biology 명시 (3)Barruol 톤다운.
 - 게이트가 못 본 caveat-drop을 내 리뷰가 잡음(게이트는 forbidden/required만). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_ORDER_AB_VERDICT.md.
 - 미해결: 807 caveat 복원·biology·Barruol·705 biology·df052b0 leak.
+
+
+=== CIR Order-B v5 (817) 채점 = promote-ready (2026-06-19 23:2x) ===
+- LEDGER_256: Codex가 Order B v5까지 반복=length를 soft(register)로 재분류+hard 과학게이트 유지. 816 hard-fail(all-site abiotic+causal)=게이트 살아있음. 817=best.
+- 내 817 채점(judge2): hard 게이트 전부 통과(no-new-claim 0·fluid_to_rock FALSE[petrogenesis 명시 부정]·La/Sm context·decoupling tracer-sep·node1 no-circ·synthesis traces·forbidden 0·required OK·mantle interpretive).
+- **caveat 807의 1→817 2 회복**(104w라 compressed). claim_altitude/reviewer2/overall 2·3 split(j2=강한3, j1=compact2).
+- soft-length 검증: 816이 real overreach로 hard-fail→length softening이 안전 무력화 안 함. 운영자 'word count rigid 아님'+Codex 재분류+내 견해 일치.
+- **817=promote-ready (Order B v5 scaffold).** 선택보강: repair/paraphrase stage로 caveat/altitude 3(hard word-floor 복귀 비권장). 노트: inbox_codex/CLAUDECODE_CIR_ORDERB_V5_817_VERDICT.md.
+- 미해결: (선택)817 repair-stage·biology 본문확인·705 biology·df052b0 leak.
