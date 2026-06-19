@@ -628,3 +628,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Q3: 최강 게이트=**fluid-to-rock petrogenesis overreach**(node4 Kim2017+node5 synthesis 신규 attack surface, 운영자 rock=context only)+기존 causality·all-site-abiotic 유지+synthesis interpretive('may record').
 - Q4: **A/B 둘 다**(검증장비+싼run, 결정기준=동일안전에서 더높은 implication). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_ORDERING_REVIEW.md.
 - 대기=Codex A/B run(2 order)→내가 둘 다 채점(fluid-to-rock 게이트 최강). 미해결: A/B run·705 biology 보강·df052b0 leak.
+
+
+=== CIR claim-order A/B 채점 = Order B 채택, caveat-drop 보강 (2026-06-19 20:2x) ===
+- LEDGER_255 A/B: Order A(806 implication-first) Conductor 2회 fail / Order B(807 data-first) PASS. 내 807 독립채점(judge2).
+- Order B 807: ordering 신규 리스크 전부 통과 — no-new-claim 0·fluid_to_rock FALSE·La/Sm supporting_context·decoupling tracer-axis-separation·node1_circularity FALSE(data-first 효과)·synthesis_traces TRUE·mantle interpretive·forbidden 0·required OK.
+- ⚠️ 약점: caveat_survival 1/1(둘다 data-gap/temp-redox caveat 드롭; 705는 3였음=멀티-node 욱여넣다 탈락). claim_altitude 2·reviewer2 2(biology implicit·Barruol assertive).
+- A/B 결론: Order A 탈락(valid merge 0=내 Q1 circularity 경고 실측, fail은 mechanical), **Order B scaffold 채택**(유일 clean·safe). 807 promote 전 보강3: (1)caveat 복원 최우선 (2)biology 명시 (3)Barruol 톤다운.
+- 게이트가 못 본 caveat-drop을 내 리뷰가 잡음(게이트는 forbidden/required만). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_ORDER_AB_VERDICT.md.
+- 미해결: 807 caveat 복원·biology·Barruol·705 biology·df052b0 leak.
