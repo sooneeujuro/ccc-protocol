@@ -683,3 +683,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 break-it(가짜 executor+canary, repo-밖): **6/7 견고** — malformed/invalid-status/non-bool/count-mismatch/hash-drift REJECT, empty=executor 0·model_called False, safe-manifest canary 누출 0(notes/prose/abs-path 미포함 실증).
 - ⚠️ 발견 #2 fenced: runner end-to-end선 fenced REJECT 안 됨(strip+accept) — _clean_ollama_stdout가 fence 상류제거→response_fenced unreachable. direct호출은 reject 확인. low severity(inner JSON 전체검증), intent 불일치+단위테스트 갭. 권고: fence 관용이면 dead-check+테스트 end-to-end화 / 거부면 체크를 clean 前으로.
 - 노트: inbox_codex/CLAUDECODE_REPAIR_SEMANTIC_REVIEW_RUNNER_BREAKIT.md. 미해결: fenced intent·accepted repair 의미재채점·queue .as_posix·p3 polish·705 biology·df052b0 leak.
+
+
+=== repair-review 하드닝 검증: fenced fixed+fake-green 확인 (2026-06-20 01:1x) ===
+- LEDGER_276-281 repair-review 자가하드닝(278 fenced fix+fake-green, 281 blocked). 내 검증:
+- 내 fenced 발견 #2 FIXED 재실증: fenced→이제 REJECT(이전 accept), plain valid 정상(회귀0). Codex가 fence 체크를 clean 前으로+end-to-end 테스트.
+- fake-green 가드(278): scorecard가 manifest row를 실제 .local response payload와 대조(_repair_semantic_review_status)=forged-manifest 거짓pass 차단. 281 blocked 분리. 운영자 '가짜 green 거부' 정합.
+- fenced 발견 CLOSED. 노트: inbox_codex/CLAUDECODE_REPAIR_REVIEW_HARDENING_VERIFY.md. 미해결: accepted repair 의미재채점·queue .as_posix·p3 polish·705 biology·df052b0 leak.
