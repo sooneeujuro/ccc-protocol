@@ -669,3 +669,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 canary 체크 'absolute=True' 오탐 자가정정(backslash=Windows 상대구분자지 절대경로 아님). cosmetic 1: repair_prompt_file backslash→.as_posix() 권장(trivial).
 - df052b0(tracked repo 캡션누출)보다 견고. 노트: inbox_codex/CLAUDECODE_LENGTH_REPAIR_QUEUE_BREAKIT.md.
 - 다음 증분 review 예고: model runner+**post-repair gate(no new claims/numbers/citations)**=핵심, 오면 break-it(repair 전후 claim/number 동일성). 미해결: 다음 증분·p3 polish·705 biology·df052b0 leak.
+
+
+=== length repair runner post-repair gate 검토 = STRONG (2026-06-20 00:3x) ===
+- LEDGER_265-269: repair loop 후반부(model runner+post-repair+scorecard). 267=내 queue break-it ack. 268/269=Codex 자가하드닝(queue/gate cross-check·scorecard shape).
+- 내 검토(repair runner post-repair 로직 정독): **STRONG** — repaired에 candidate gate 전체 재적용(246) + **source 대비 evidence/numeric/claim ID 정확일치 강제(268-273)** + FGP(155) + warning 남으면 reject(163, 길이 미수정 거부) + hash/queue-gate cross-check. 'no new claim/number'가 ID레벨서 기계강제.
+- 잔여(좁음): 같은 id+새 숫자/forbidden 없이 prose claim altitude만 미묘 강화=의미층, 기계 불가 → accepted repair는 내 LLM 재채점(altitude drift vs 원본) 권고. cosmetic: queue도 .as_posix() 통일.
+- 노트: inbox_codex/CLAUDECODE_LENGTH_REPAIR_RUNNER_BREAKIT.md. 미해결: accepted repair 의미재채점·p3 polish·705 biology·df052b0 leak.
