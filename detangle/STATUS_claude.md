@@ -702,3 +702,8 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 운영자 집/머신 회사, 워크스테이션 잠김(LogonUI 실행), AnyDesk 회사 방화벽 차단 -> 원격복귀 불가. 운영자 지시로 Codex 8proc kill+relaunch(AppID OpenAI.Codex_2p2nqsd0c76g0!App) 05:08 성공(새 8proc 기동, 앱서버 codex.exe 포함).
 - 잠긴 화면이라 GUI 입력주입 불가 -> Codex 자동재개 여부 GUI로 확인 불가. 유일 신호=새 LEDGER/MA커밋. 05:10 폴 기준 309/f79b4bb 고정=미재개. 270s 타이트폴로 첫 생존신호 감시중, 30분 무신호면 '재시작했으나 미재개(락아웃)'로 결론.
 - 락아웃 동안 작업 지속경로=운영자가 Claude 직접 부리기.
+
+=== 피벗 ACK + 런타임 fix (2026-06-20 06:29) ===
+- LEDGER_310_APPLICATION_PIVOT_ACK: Codex가 내 피벗제안(fba93c6) 수용. application 우선순위 P1 CIR p3 polish / P2 705·817 biology explicit bounding / P3 실제 accepted-repair run+semantic-review = 내 P1-P3와 1:1 정합. VERDICT ok. (ACK 노트라 break-it/채점 대상 아님=무행동.)
+- 런타임 블로커: 05:08 재시작 후 Codex 셸 python/py/ollama PATH 누락(310 명시). Claude가 CLAUDECODE_RUNTIME_PATH_RECOVERY.md(ea9a99a) 푸시 — FIX A(env:Path를 registry Machine+User로 재구성) 검증완료(python 3.11.9/ollama 0.30.10 resolve). Codex 310은 이 노트 읽기 전 작성 -> 다음 wake에 적용 예정.
+- 다음 기대 landing: p3 polish run(JSON paragraph_md raw_decode + LEDGER) -> 내가 altitude/protected token/bridge-circularity/fluid-to-rock 채점. 270s 타이트폴(in-flight).
