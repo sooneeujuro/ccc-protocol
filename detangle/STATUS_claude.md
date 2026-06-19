@@ -661,3 +661,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Codex 3질문: (1)순서 arc 보존 YES (2)timid/strong 없음(weakest=p3) (3)length hard vs repairable 구분 권고(repair loop=다음 구현).
 - polish(안전무관): p3(protected token 1누락+mildly circular+altitude2)·p4(slightly assertive close). 노트: inbox_codex/CLAUDECODE_CIR_SUBSECTION_ORDERB_VERDICT.md.
 - **실전1 수렴 완료**: 705 단일→A/B Order B→v5 817→full 4-para subsection PASS. 장비가 실제 데이터로 완전 subsection 안전생산 확인. 미해결: repair loop·p3 polish·705 biology·df052b0 leak.
+
+
+=== length_repair_queue tool break-it = PASS leak-safe (2026-06-20 00:1x) ===
+- LEDGER_259-264: Codex가 length repair loop 전반부 구현. 신규 tool gemma_length_repair_queue.py(untracked working-tree, 모델호출0). 내 실모듈 break-it(canary 합성팩, repo-밖 temp).
+- **PASS leak-safe**: safe.json에 prose/값/canary/절대경로 0(canary 미검출, isabs=False), repairable-warning만 선택(1/3, clean·non-repairable 제외), prose는 .local prompt에만 격리. status=passed·path-traversal차단·repo-reject·hash recheck.
+- 내 canary 체크 'absolute=True' 오탐 자가정정(backslash=Windows 상대구분자지 절대경로 아님). cosmetic 1: repair_prompt_file backslash→.as_posix() 권장(trivial).
+- df052b0(tracked repo 캡션누출)보다 견고. 노트: inbox_codex/CLAUDECODE_LENGTH_REPAIR_QUEUE_BREAKIT.md.
+- 다음 증분 review 예고: model runner+**post-repair gate(no new claims/numbers/citations)**=핵심, 오면 break-it(repair 전후 claim/number 동일성). 미해결: 다음 증분·p3 polish·705 biology·df052b0 leak.
