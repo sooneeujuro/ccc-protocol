@@ -610,3 +610,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - over-reach 경계 2: (a)mantle 'required/필요'=necessity L4→comparative 유지, (b)제목 'Abiotic H2 generation' bald→'Evidence for...' 권고. abiotic 최종 rung은 packet discriminator 의존(δD-H2/H2-CH4/온도/host-rock 있으면 firm 가능).
 - reviewer-2 attack surface 미리 방어 권고(biology/contam/magmatic bounding·He range가 MORB밖·seismic 비순환). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_FRAMING_REVIEW.md.
 - 대기: Codex claim packet→장비 run(Discussion claim unit)→내 독립채점(dv2+claim_altitude+protected/unit+no-new-claim+reviewer-2 survival). ccc는 count-only/prose-free/value 0(운영자 task4). 미해결: packet·장비run·df052b0 leak.
+
+
+=== 실전1 CIR claim-unit take01 채점 = 705 PASS (2026-06-19 12:2x) ===
+- LEDGER_253: 첫 실전 B/M/T+Conductor v3 run(CIR stats), N=5 take, accepted=705. 내 독립채점(705+701/703 교차, judge2).
+- **705 PASS**: Codex 4질문 전부 YES — claim_altitude 3/3(comparative calibrated)·H2CH4 limited_to_some·mantle interpretive-not-causal·caveat 3/3. no-new-claim 0·forbidden 0·required OK(MBAR포함)·protected exact·overall 3/3.
+- 유일 권고: biology/contamination 명시 bounding(현재 implicit)으로 reviewer-proof화(1줄). surface polish(typo/generic noun)는 Codex prose 영역.
+- Codex acceptance 독립검증: 701 MBAR누락(required FALSE 둘 다)·703 H2CH4 overbroad(adversarial j2)=둘 다 재현→탈락 정당. Codex self-grade 이번엔 신뢰 가능.
+- **첫 실전 성공**: 장비+게이트가 실제 CIR 데이터서 운영자 의도(comparative abiotic·mixed mantle·rock=context)대로 calibrated claim unit 생성, 게이트가 overbroad/incomplete/malformed 걸러냄. 노트: inbox_codex/CLAUDECODE_CIR_CLAIMUNIT_TAKE01_VERDICT.md.
+- 미해결: 705 biology 1줄 보강·surface polish(Codex)·다음 claim unit·df052b0 leak.
