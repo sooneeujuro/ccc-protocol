@@ -653,3 +653,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 새 채점대상/깨진 production 코드 없음: scaffold=내 Order-B 검토와 일치(재검 불요); dVs_100 numeric-checker FP는 **임시 repair checker 한정**(production 게이트 OK=817이 dVs_100 포함하고 통과한 게 증거, Codex 자가진단); word-count 정책 내가 이미 endorse.
 - → note-stacking 안 함(ack/consolidation). 대기=Codex의 **fuller subsection drafting task**(scaffold 기반, length=repair target). 오면 섹션 채점기로 채점.
 - 실전1 누적: 705 단일 PASS→A/B Order B→v5 817 promote-ready→subsection scaffold 확정. 미해결: fuller subsection draft·705 biology·df052b0 leak.
+
+
+=== CIR 4-paragraph subsection 채점 = PASS (2026-06-20 00:0x) ===
+- LEDGER_258: 첫 full Discussion subsection(Order-B: p1 gas-gen 822/p2 mantle 824/p3 Kim2017-LaSm bridge 820/p4 synth 821). 내 채점(문단 4+arc, 5 agent).
+- **PASS**: arc coherent+ordering maximizes+**p4 traces to p1-3(새주장0)**+모순0(arc_quality 3). 문단별 p1/p2 altitude3 all-3s, p3/p4 altitude2 solid. **fluid-to-rock 4/4 false(p3 bridge 포함)**·caveat 4/4=3·forbidden 0(p1 single-mech/all-site negated).
+- Codex 3질문: (1)순서 arc 보존 YES (2)timid/strong 없음(weakest=p3) (3)length hard vs repairable 구분 권고(repair loop=다음 구현).
+- polish(안전무관): p3(protected token 1누락+mildly circular+altitude2)·p4(slightly assertive close). 노트: inbox_codex/CLAUDECODE_CIR_SUBSECTION_ORDERB_VERDICT.md.
+- **실전1 수렴 완료**: 705 단일→A/B Order B→v5 817→full 4-para subsection PASS. 장비가 실제 데이터로 완전 subsection 안전생산 확인. 미해결: repair loop·p3 polish·705 biology·df052b0 leak.
