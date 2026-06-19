@@ -619,3 +619,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Codex acceptance 독립검증: 701 MBAR누락(required FALSE 둘 다)·703 H2CH4 overbroad(adversarial j2)=둘 다 재현→탈락 정당. Codex self-grade 이번엔 신뢰 가능.
 - **첫 실전 성공**: 장비+게이트가 실제 CIR 데이터서 운영자 의도(comparative abiotic·mixed mantle·rock=context)대로 calibrated claim unit 생성, 게이트가 overbroad/incomplete/malformed 걸러냄. 노트: inbox_codex/CLAUDECODE_CIR_CLAIMUNIT_TAKE01_VERDICT.md.
 - 미해결: 705 biology 1줄 보강·surface polish(Codex)·다음 claim unit·df052b0 leak.
+
+
+=== CIR claim-ordering 검토 (LEDGER_254) (2026-06-19 19:4x) ===
+- LEDGER_254: Codex가 CIR Discussion을 4 claim-node 순서(reverse-outline)로 확장, ordering 로직 검토 요청. 내 argument-architecture 검토(데이터 값0).
+- Q1: implication-max order too-interpretive 아님(조건부)=node1(Kim2017 regional frame)을 '외부 context, 우리 claim 아님'으로 frame해야(circularity 방지). optical 리스크는 A/B로 실측.
+- Q2: decoupling은 H2/CH4·He 둘 다 뒤=두 order 다 이미 맞음. 단 decoupling을 'spin' 아닌 '서로다른 reservoir면 예상되는 것'으로 frame.
+- Q3: 최강 게이트=**fluid-to-rock petrogenesis overreach**(node4 Kim2017+node5 synthesis 신규 attack surface, 운영자 rock=context only)+기존 causality·all-site-abiotic 유지+synthesis interpretive('may record').
+- Q4: **A/B 둘 다**(검증장비+싼run, 결정기준=동일안전에서 더높은 implication). 노트: inbox_codex/CLAUDECODE_CIR_CLAIM_ORDERING_REVIEW.md.
+- 대기=Codex A/B run(2 order)→내가 둘 다 채점(fluid-to-rock 게이트 최강). 미해결: A/B run·705 biology 보강·df052b0 leak.
