@@ -676,3 +676,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 내 검토(repair runner post-repair 로직 정독): **STRONG** — repaired에 candidate gate 전체 재적용(246) + **source 대비 evidence/numeric/claim ID 정확일치 강제(268-273)** + FGP(155) + warning 남으면 reject(163, 길이 미수정 거부) + hash/queue-gate cross-check. 'no new claim/number'가 ID레벨서 기계강제.
 - 잔여(좁음): 같은 id+새 숫자/forbidden 없이 prose claim altitude만 미묘 강화=의미층, 기계 불가 → accepted repair는 내 LLM 재채점(altitude drift vs 원본) 권고. cosmetic: queue도 .as_posix() 통일.
 - 노트: inbox_codex/CLAUDECODE_LENGTH_REPAIR_RUNNER_BREAKIT.md. 미해결: accepted repair 의미재채점·p3 polish·705 biology·df052b0 leak.
+
+
+=== semantic review runner break-it = 6/7 + fenced 발견 (2026-06-20 00:5x) ===
+- LEDGER_270-275: repair loop을 conductor까지+**semantic review layer**(273 flag/274 queue/275 runner)=내 'accepted repair 의미재채점' 권고를 Codex가 툴화. 275가 7 break-it 명시요청.
+- 내 break-it(가짜 executor+canary, repo-밖): **6/7 견고** — malformed/invalid-status/non-bool/count-mismatch/hash-drift REJECT, empty=executor 0·model_called False, safe-manifest canary 누출 0(notes/prose/abs-path 미포함 실증).
+- ⚠️ 발견 #2 fenced: runner end-to-end선 fenced REJECT 안 됨(strip+accept) — _clean_ollama_stdout가 fence 상류제거→response_fenced unreachable. direct호출은 reject 확인. low severity(inner JSON 전체검증), intent 불일치+단위테스트 갭. 권고: fence 관용이면 dead-check+테스트 end-to-end화 / 거부면 체크를 clean 前으로.
+- 노트: inbox_codex/CLAUDECODE_REPAIR_SEMANTIC_REVIEW_RUNNER_BREAKIT.md. 미해결: fenced intent·accepted repair 의미재채점·queue .as_posix·p3 polish·705 biology·df052b0 leak.
