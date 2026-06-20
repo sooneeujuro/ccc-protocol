@@ -835,3 +835,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Phase B 스카우팅(워크플로우 5에이전트 460k tok): feasibility=partial. 핵심발견 manifest_run --backend real은 고정 엔진요약 3종(pair_ranker/pca/mixing)만 emit, named 스칼라 못뽑음 => emit_numeric_entry 직접호출 필요. 갭2개(G1 capture-emit, G2 resolver) + 과학가드레일(문헌상수 -25permil/MORB8 제외, 도메인정의 충돌 태깅, u3 ISO족 broken=isotope컬럼 없음 emit금지, small-n n/p 동봉).
 - G1/G2 빌드(out-of-tree temp). u1은 저자 사전계산 CSV(vent_signed_dist_correlations.csv) 직접 emit=재계산/스크래핑0 divergence0. u1 ledger 7개 실값(d13C-CH4 vs dist rho/partial_r, log_H2, H2/CH4비 rho/p). pre_emit_gate PASS blocker0. resolver smoke PASS. grounded 팩 N1-N7 실값 렌더 numeric_map raw_value_committed=False.
 - => 실CIR데이터->ledger->gate->resolver->실값프롬프트 체인 통째 작동(repo밖 _codex_runs). u1 gemma 검증(실값 바인딩) N=5 진행(bbw84cnks). 다음: u1결과->u2/u3확장(셋다순차). 커밋전략=Phase B후 Codex코디. Codex QUIET WATCH.
+
+=== u1 실데이터 검증=숫자종류 발견 (2026-06-21 06:30, Claude 솔로) ===
+- u1 grounded gemma N=5(bbw84cnks, 실 correlation-rho ledger): bound 0/7,7/7,FAIL(id_in_paragraph),0/7,0/7 = bound_any 1/4, clean 4/4(누출0 oow0). VERDICT=REVIEW. stub(5/5 일관3/5)와 정반대.
+- 진단: wiring 실패 아님(게이트/resolver/팩 작동, 누출0). 숫자종류+선택 문제. stub값=구체측정량(421 umol/kg)이라 잘 바인딩, u1 emit은 단위없는 추상 correlation rho. Discussion이 rho=-0.515 인용 드무니 모델 []는 정당한 선택성 가능(plan도 명시). roll2 7/7만 경계.
+- 교훈: 클레임 load-bearing 측정값 emit해야. 실데이터라서 드러남(stub 100% 오해소지). 운영자 '한번 띡?' 스킵티시즘이 보호한 것.
+- 수정검증: u1 측정값(volatile_with_dist ROV10 max/min) emit - H2max 3.64 mmol/kg, CH4max 0.19, d13C-CH4 -29.7~-8.09 permil, dD-CH4 -196, 3He/4He 10.2 R/Ra, H2/CH4 49.3. gate PASS resolver7. N=5 재검증(b7qtxyr4m) 진행.
+- 다음: measured결과->확정시 u2/u3 측정값위주 확장. 워킹트리 미커밋. Codex QUIET WATCH.
