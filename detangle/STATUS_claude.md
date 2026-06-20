@@ -814,3 +814,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 핵심: writer가 실제 데이터값을 봄(예 '42.0 nM' 프롬프트 노출) = false-green 아님(opaque id만 아님). resolver 실패 propagate(fail-loud). numeric_resolver=None=기존동일(non-breaking).
 - 테스트: stub resolver out-of-tree 4/4 PASS(numeric ON=블록+ids+map+값노출 / OFF=non-breaking / empty=graceful / evidence+numeric 공존) + 468 writing-runner non-breaking.
 - 다음: (1)stub-numeric grounded gemma run으로 모델이 numeric_ids 바인딩하는지 검증(evidence 0/0/0->4 의 numeric 버전) (2)Phase B=실데이터->ledger(analysis_manifest+loader+bridges --backend real, CIR 분석 framing 필요)->real resolver. 워킹트리 미커밋. Codex다운.
+
+=== numeric 검증 중 gemma robustness 발견+수정 (2026-06-21 05:50, Claude 솔로) ===
+- numeric Phase A 모델검증 시도: grounded pack OK(allowed_numeric_ids=5, ## Numeric Values 렌더). 근데 gemma run 2회 다른 코드로 실패(causal_verb_overreach, id_in_paragraph) = numeric무관, gemma4:12b가 매 run 다른 gate 코드로 stochastic 미끄러짐(이미 too_short/latex/json도 겪음).
+- 수정1(numeric-specific): ## Numeric Values 헤더 강화 - '핸들(N1)/raw number/numeric: 를 prose에 쓰지말고 numeric_ids 배열에만 바인딩'(evidence처럼). id_in_paragraph 유발 잡음.
+- 수정2(robustness): orchestrator _RETRYABLE_GATE_CODES에 causal_verb_overreach+id_in_paragraph 추가. gate가 accepted 출력 clean 보장하니 stochastic slip reroll 안전. 724 non-breaking(writing-runner 468+local-llm 256).
+- numeric WIRING은 이미 증명됨(stub 4/4 + pack allowed_numeric_ids=5). 모델검증 재run bmgsve0a9 진행(broader retry로 slip 뚫기). 
+- 발견: gemma4:12b가 strict gate에 stochastic 빈번 위반(format+semantic 다양) = 모델 robustness 축. broader retryable이 대응. 향후 reroll-count 로깅(관측성) 고려. 다음: numeric 검증결과 / Phase B(실데이터). 워킹트리 미커밋. Codex다운.
