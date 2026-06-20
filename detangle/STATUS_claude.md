@@ -801,3 +801,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - => 3/3 달성: CIR 3 claim unit(u1 열수 bound4/u2 맨틀 bound2 품질3,3/u3 암석 bound1 품질3,3) 전부 grounded+latex-clean 작동.
 - 오늘밤 개선 6개(conductor retry/gemma_paragraph_pipeline orchestrator/evidence wire-in/handle+map/selectivity k5/json+latex retry/isotope ASCII 지시)가 실제 CIR 전체 통합작동 확인.
 - 다음 큰거=numeric/데이터값 근거(emitter numeric=0, CIR stats 바인딩). 워킹트리 미커밋(local_gemma_prompt_pack+gemma_paragraph_pipeline+ollama_conductor_runner). 미해결: numeric grounding·커밋전략·index<->md정렬·Codex다운.
+
+=== numeric grounding 스코핑 완료 (2026-06-21 04:00, Claude 솔로) ===
+- numeric/데이터값 근거 스코핑(Workflow w6cfh6988, 7맵+trace). 인프라 풍부(ledger_emit/numeric_audit/placeholder_preview/analysis_manifest/author_table_loader/numeric_jsonl_adapter/task_builder).
+- numeric_ids=0 원인 2갭: (1)ledger prod에서 비어있음-CIR데이터->ledger(analysis_manifest+loader+bridges --backend real) prod 미실행 (2)값이 writer 미도달-_collect_numeric_ids/contract가 id만 넘기고 display_value/unit 버림(citation은 citation_anchor_map 해소, numeric analog 없음).
+- 계획 2단계(evidence wire-in 미러): PhaseA(writer wire-in,작음)=prepare_local_gemma_prompt_pack에 numeric_resolver param+_resolve_numeric_values+'## Numeric Values'블록(numeric_id->display_value+unit+provenance), writer가 {{NUMERIC:id}} 슬롯 치환. PhaseB(실데이터->ledger,무거움 data-ops)=CIR 분석 manifest+loader+bridges --backend real, framing 필요.
+- trace 주입점: prepare_local_gemma_prompt_pack에 numeric_resolver(searcher 쌍둥이), ## Numeric Values를 ## Evidence Packets 다음에, N1..Nk 핸들 or num_* id, numeric_map.local.json twin.
+- 주의: false-green 위험(numeric_ref_count가 값해소 아닌 id개수). PhaseA에서 writer가 실값 받아쓰게(id echo만이면 가짜). 다음=PhaseA 빌드(stub테스트). 워킹트리 미커밋 다수. Codex다운.
