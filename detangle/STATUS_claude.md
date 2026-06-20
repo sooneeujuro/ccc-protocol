@@ -745,3 +745,13 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - Claude가 최종 stitch v2 조립: DISCUSSION_SUBSECTION_ORDER_B_FINAL_822_826C_825_821.local.md(로컬 prose 미커밋)+.safe.json. p1=822(93w)/p2=826C(144w)/p3=825(105w)/p4=821(114w) total 456w sha c953cbfc. 구v1(824/820) supersede.
 - 누적 검증: 슬롯4 overall3, arc j1j2 3/3, official gate/scorecard/conductor/diagnostic/static-audit pass, validator pass(error0). 노트 CLAUDECODE_SUBSECTION_FINALIZED_CLAUDE_DRIVING.md push.
 - 다음: 운영자 로드맵 대기(다음 섹션/claim unit/manuscript 통합). 미해결: Codex sandbox approval(운영자만)·705 biology·df052b0 leak.
+
+=== evidence-grounding 스코핑 완료 (2026-06-21 01:10, Claude 솔로) ===
+- 운영자 'evidence-grounding 고고' + 'Claude 알아서, 보고서만'(Codex 완전다운). Workflow wabnbqklb(6 컴포넌트맵+trace)로 스택 매핑.
+- 진단: 두 평행세계 미연결. draft-driver=검색/바인딩하나 writer 외부(LLM없음). gemma파이프(내가 쓴거)=실제 씀이나 검색0·allowed_evidence_ids=[]·프롬프트 evidence텍스트0 -> CIR 0/0/0 근거없음.
+- 스택 전부 존재: DraftEvidenceSearcher.search(q,k)->11키 evidence_packet_v1, emitter, hybrid검색, contract evidence슬롯. 인덱스 실존(corpus/index/ 11GB: bm25 364M+bge 913M+units 205M+papers 3.5M, 5/19빌드). searcher import OK.
+- 끊긴 지점(trace): prepare_local_gemma_prompt_pack, validate후·persona루프전 - 검색->allowed_evidence_ids채움->packets를 _render_gemma_persona_prompt에 '## Evidence Packets'주입. 대상파일 clean(엉킴없음, 커밋가능).
+- MVP계획: searcher 주입형 wire-in(draft-driver _load_default_searcher 패턴), stub searcher로 out-of-tree 테스트(11GB 실로드 불요), 실코퍼스=operator config.
+- config 의존: GEOCHEM_MD_DIR=G:/corpus_md_export_20260602/articles/(3954편 .md, text_path+offset). 주의: 5/19 인덱스<->6/02 export 버전미정렬(테스트논문 quarantine만) - operator data-ops.
+- 경계: 인용근거(문헌)=MVP 해결가능. 숫자/데이터값근거=별개·미해결(emitter numeric id 0). 저작권 스니펫=.local guarded(corpus-no-push).
+- 다음: wire-in 코드 빌드(local_gemma_prompt_pack searcher주입+evidence렌더)->stub테스트->non-breaking. 미해결: evidence wire-in빌드·숫자근거(후속)·index<->md정렬·커밋전략·Codex다운.
