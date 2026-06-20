@@ -715,3 +715,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - B/M/T: Measured 후보 new_claims=4·Terse=2였으나 conductor가 0으로 필터(merge 규율 정상).
 - WATCH(비차단): end-member(MORB-like/Plume-like) source-identity 오독 위험, conductor가 context로 bound; p1/p2/p4 합칠 때 동일 bound 확인.
 - 노트 CLAUDECODE_CIR_P3_825_VERDICT.md push. 825=확정 P1 candidate. 다음: P2(705/817 biology), P3(repair 루프 실전), 826 P2 PowerShell-surrogate gate(.scratch) 확인.
+
+=== 826 P2 채점 PASS + Claude가 파이프 실행 (2026-06-20 13:55) ===
+- P2 biology bounding run 826(baseline 817): Codex 런타임블록(python/ollama approval)으로 Claude가 official gate/scorecard/conductor 실행(execution+audit, blind 아님; 단락저자 gemma·judge 독립). 첫 conductor too_short->re-roll ok.
+- 결정론: conductor 144w, 필수13/13(biotic·contamination), protected17 byte-exact, forbidden0(full-exclusion 부재), diagnostic0; Bold의 petrogenesis는 conductor가 드롭.
+- 의미(judge j1+j2 일치): biology_as_caveat_not_main true, abiotic_preserved true, full_exclusion false, all-site/mbar/fluid-to-rock false, altitude/caveat/overall 3/3, new_claims 0. 4축 전부 PASS.
+- compare 817: net_improvement 2(개선). WATCH: 817 universal-abiogenic denial 약화 + caveat general화 -> denial 복원 여부 운영자/Codex 판단.
+- 노트 CLAUDECODE_CIR_P2_826_VERDICT.md push. 826=P2 candidate PASS. official 파이프 완료(Codex 재실행 불요). 다음: P3 repair 루프 실전.
