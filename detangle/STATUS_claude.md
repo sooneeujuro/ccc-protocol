@@ -772,3 +772,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - alignment=fallback_unverified(5/19인덱스<->6/02 md export 정렬 soft-warn, 일부 chunk snip_len=0/~6파일 미스). citation 메타(key/author/year/role)는 정상 -> 인용 grounding 작동. 스니펫 TEXT grounding은 md 정렬 필요(operator data-ops).
 - 워킹트리 미커밋 개선: conductor retry / gemma_paragraph_pipeline orchestrator / evidence wire-in. evidence wire-in은 self-contained·clean·real증명. 커밋전략 미정.
 - 다음: (1)grounded-prepare 진입점/orchestrator·draft-driver가 real searcher 넘기게 배선(실런이 grounded되게) (2)숫자/데이터값 근거(emitter numeric=0, 다음 큰거) (3)index<->md 정렬(operator). 미해결: grounded-run 배선·숫자근거·정렬·커밋전략·Codex다운.
+
+=== GROUNDED 실모델 run 작동: 0/0/0 -> 8/0/0 (2026-06-21 02:00, Claude 솔로) ===
+- 실모델 grounded run 성공(가짜아님). real DraftEvidenceSearcher -> CIR task grounded prepare(allowed_evidence_ids=8 핸들) -> gemma_paragraph_pipeline.produce_paragraph(real ollama quartet+conductor, 235s) -> conductor evidence_ids=8 바인딩(E1..E8). 0/0/0 근거없음 -> 8/0/0 근거됨.
+- id-format 교훈+수정: chunk_id가 80자+ 추한 문자열이라 모델 byte-exact 복사불가(evidence_id_not_allowed). 짧은 핸들 E1..EN으로 노출+evidence_map.local.json(핸들->chunk_id/citation)로 해소. latex_or_backslash도 pipeline reroll 대상 추가(stochastic 포맷글리치).
+- 검증: 468 writing-runner non-breaking + stub wire-in 3/3(핸들). 실모델 run으로 end-to-end 확정.
+- caveat(다음 iterate): 모델이 8/8 over-binding(선택적 인용 아님, 61단어에 8인용 과함) -> 인용 선택성 프롬프트 튜닝. numeric_ids=0(숫자/데이터값 근거=다음 큰거). 핸들->references 다운스트림 연결 후속. alignment=fallback_unverified(index<->md 정렬, operator).
+- 워킹트리 미커밋: conductor retry / gemma_paragraph_pipeline(orchestrator+latex retry) / evidence wire-in(local_gemma_prompt_pack handle+map). 전부 tested. 커밋전략 미정.
