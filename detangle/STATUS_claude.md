@@ -794,3 +794,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 통합 verdict: 5개 개선(conductor retry/orchestrator/evidence wire-in/handle+map/selectivity k5/json+latex retry)이 실제 CIR에 통합작동 - grounded·선택적·3/3품질. grounding 품질 안깎음 재확인.
 - gap: u1 isotope content(dD/d13C) gemma가 backslash 끈질김, latex-retry 3회 부족(near-deterministic). CIR isotope 많아 실질 gap.
 - 후속 제안: (1)isotope 표기 프롬프트 지시 강화(dD/d13C 명시·backslash 재금지) or sanitize 스텝 -> u1류 통과 (2)numeric grounding(다음 큰거) (3)커밋 정리. 워킹트리 미커밋 유지. Codex다운.
+
+=== 3/3 달성: isotope gap 닫힘 (2026-06-21 03:50, Claude 솔로) ===
+- 운영자 '2/3 어케늘이지'. u1 isotope-latex gap 수정: Output Contract에 'isotope delta를 d로, $·backslash·math 기호 금지, protected token ASCII 그대로' 지시 추가(468 writing-runner non-breaking).
+- u1 재run(grounded): OK 206s, evidence_ids=4, words=69, has_backslash=False, has_dollar=False. U1_PASS - 프롬프트 지시만으로 통과(sanitize 백스톱 불요).
+- => 3/3 달성: CIR 3 claim unit(u1 열수 bound4/u2 맨틀 bound2 품질3,3/u3 암석 bound1 품질3,3) 전부 grounded+latex-clean 작동.
+- 오늘밤 개선 6개(conductor retry/gemma_paragraph_pipeline orchestrator/evidence wire-in/handle+map/selectivity k5/json+latex retry/isotope ASCII 지시)가 실제 CIR 전체 통합작동 확인.
+- 다음 큰거=numeric/데이터값 근거(emitter numeric=0, CIR stats 바인딩). 워킹트리 미커밋(local_gemma_prompt_pack+gemma_paragraph_pipeline+ollama_conductor_runner). 미해결: numeric grounding·커밋전략·index<->md정렬·Codex다운.
