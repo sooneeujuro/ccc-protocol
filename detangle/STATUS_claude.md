@@ -764,3 +764,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 경계(MVP): 인용근거(citation handle)까지. 스니펫 TEXT는 프롬프트 미주입(adapter가 snippet_len_chars만 출력=저작권안전). 숫자/데이터값 근거=별개·미해결(emitter numeric id 0). 실코퍼스 run=GEOCHEM_MD_DIR=G:/corpus_md_export_20260602/articles 설정+5/19인덱스<->6/02export 정렬 필요(operator data-ops).
 - 워킹트리 미커밋 개선 3개 누적(conductor retry/gemma_paragraph_pipeline orchestrator/evidence wire-in). 전부 tested·non-breaking. 커밋전략 미정(conductor만 Codex 미커밋과 엉킴, 나머지 clean).
 - 다음: 실코퍼스 grounded smoke(md_dir 설정→real DraftEvidenceSearcher→prepare→실제 인용 retrieve, 가짜금지 최종증명; 단 381MB+3954md 로드 무거움+정렬caveat). 미해결: 실코퍼스검증·숫자근거(후속)·index<->md정렬·커밋전략.
+
+=== 실코퍼스 grounding END-TO-END 작동 (2026-06-21 01:45, Claude 솔로) ===
+- evidence wire-in을 실제 코퍼스로 최종 증명(가짜금지). GEOCHEM_MD_DIR=G:/corpus_md_export_20260602/articles.
+- searcher smoke: real DraftEvidenceSearcher construct 27.4s(381MB+md), CIR쿼리 search 0.1s -> 실제 packets 8(validation_error0). 관련논문 retrieve: Chiodini2012 fumarole, BatistaCruz2019 mantle degassing, Sciarra2012, Snyder2020 magmatic fluids.
+- end-to-end: real searcher -> prepare_local_gemma_prompt_pack(CIR task, searcher=real) -> 페르소나 프롬프트에 '## Evidence Packets' True + allowed_evidence_ids 8 실chunk_ids. 인용: Suda2014 serpentinite methane, Konn2015 methane/hydrogen production, Proskurowski2006 Lost City -- H2/CH4 abiogenic 쿼리에 정확히 관련. => 0/0/0 근거없음 해결(인용레벨).
+- alignment=fallback_unverified(5/19인덱스<->6/02 md export 정렬 soft-warn, 일부 chunk snip_len=0/~6파일 미스). citation 메타(key/author/year/role)는 정상 -> 인용 grounding 작동. 스니펫 TEXT grounding은 md 정렬 필요(operator data-ops).
+- 워킹트리 미커밋 개선: conductor retry / gemma_paragraph_pipeline orchestrator / evidence wire-in. evidence wire-in은 self-contained·clean·real증명. 커밋전략 미정.
+- 다음: (1)grounded-prepare 진입점/orchestrator·draft-driver가 real searcher 넘기게 배선(실런이 grounded되게) (2)숫자/데이터값 근거(emitter numeric=0, 다음 큰거) (3)index<->md 정렬(operator). 미해결: grounded-run 배선·숫자근거·정렬·커밋전략·Codex다운.
