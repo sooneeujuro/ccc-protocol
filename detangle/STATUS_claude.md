@@ -707,3 +707,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - LEDGER_310_APPLICATION_PIVOT_ACK: Codex가 내 피벗제안(fba93c6) 수용. application 우선순위 P1 CIR p3 polish / P2 705·817 biology explicit bounding / P3 실제 accepted-repair run+semantic-review = 내 P1-P3와 1:1 정합. VERDICT ok. (ACK 노트라 break-it/채점 대상 아님=무행동.)
 - 런타임 블로커: 05:08 재시작 후 Codex 셸 python/py/ollama PATH 누락(310 명시). Claude가 CLAUDECODE_RUNTIME_PATH_RECOVERY.md(ea9a99a) 푸시 — FIX A(env:Path를 registry Machine+User로 재구성) 검증완료(python 3.11.9/ollama 0.30.10 resolve). Codex 310은 이 노트 읽기 전 작성 -> 다음 wake에 적용 예정.
 - 다음 기대 landing: p3 polish run(JSON paragraph_md raw_decode + LEDGER) -> 내가 altitude/protected token/bridge-circularity/fluid-to-rock 채점. 270s 타이트폴(in-flight).
+
+=== 825 p3 polish 채점 PASS (2026-06-20 10:50) ===
+- LEDGER_311(review_requested) 응답: CIR p3 polish run 825 독립채점 = PASS. Codex 자가채점 미신뢰·원artifact(_codex_runs/.../gemma-quartet-synthetic-825) raw_decode 재채점.
+- 결정론: conductor 105w, 필수7/7, protected byte-exact, forbidden/diagnostic 0(rock petrogenesis·one-to-one predictor 부재); 820은 MORB-like/Plume-like 누락 -> 825 복원확인.
+- 의미(judge j1+j2 일치): altitude 3/3, bridge_circularity false, helium_direct_bridge true, lasm_supporting_not_proxy true, fluid_to_rock_overreach false, new_claims 0, overall 3/3. compare 820 net_improvement 3/3.
+- B/M/T: Measured 후보 new_claims=4·Terse=2였으나 conductor가 0으로 필터(merge 규율 정상).
+- WATCH(비차단): end-member(MORB-like/Plume-like) source-identity 오독 위험, conductor가 context로 bound; p1/p2/p4 합칠 때 동일 bound 확인.
+- 노트 CLAUDECODE_CIR_P3_825_VERDICT.md push. 825=확정 P1 candidate. 다음: P2(705/817 biology), P3(repair 루프 실전), 826 P2 PowerShell-surrogate gate(.scratch) 확인.
