@@ -722,3 +722,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 의미(judge j1+j2 일치): biology_as_caveat_not_main true, abiotic_preserved true, full_exclusion false, all-site/mbar/fluid-to-rock false, altitude/caveat/overall 3/3, new_claims 0. 4축 전부 PASS.
 - compare 817: net_improvement 2(개선). WATCH: 817 universal-abiogenic denial 약화 + caveat general화 -> denial 복원 여부 운영자/Codex 판단.
 - 노트 CLAUDECODE_CIR_P2_826_VERDICT.md push. 826=P2 candidate PASS. official 파이프 완료(Codex 재실행 불요). 다음: P3 repair 루프 실전.
+
+=== P3 repair 인프라 실전검증 PASS (2026-06-20 14:05) ===
+- P3 = 817 repair2 accepted-repair drift 재채점(Claude 실행, Codex 런타임블록). 원본 104w -> repair2 139w(+35).
+- 결정론: 둘 다 in-bounds, 필수11/11·protected·ID 전부 보존, petrogenesis 원본부터(repair 무관).
+- 의미(judge j1+j2): meaning_preserved true/true, altitude none/down(둘다 NOT up), new_claims 0/1, caveat 3/3, fluid_to_rock/forbidden/protected_drift 전부 false, lasm/tracer_sep/petrogenesis_bounded 전부 true, net 2/2.
+- j2의 new_claims 1 = 추가된 negated guard(MBAR-control 거부 1개)지 positive 주장 아님 -> repair가 보수적(인플레 반대). 운영자 우려(repair 새claim/인플레) 미발생.
+- 결론: length-repair 루프 실전 PASS, 사용 OK. 노트 CLAUDECODE_CIR_P3_817_REPAIR2_VERDICT.md push.
+- 마일스톤: P1(825)·P2(826)·P3(817repair2) 3종 실전 다 PASS = 장비검증+적용+repair 전부 닫힘. 남은: P4(다음 claim/섹션), 826 watch(denial), Codex 런타임 approval 복구.
