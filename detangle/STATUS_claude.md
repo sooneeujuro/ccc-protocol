@@ -779,3 +779,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 검증: 468 writing-runner non-breaking + stub wire-in 3/3(핸들). 실모델 run으로 end-to-end 확정.
 - caveat(다음 iterate): 모델이 8/8 over-binding(선택적 인용 아님, 61단어에 8인용 과함) -> 인용 선택성 프롬프트 튜닝. numeric_ids=0(숫자/데이터값 근거=다음 큰거). 핸들->references 다운스트림 연결 후속. alignment=fallback_unverified(index<->md 정렬, operator).
 - 워킹트리 미커밋: conductor retry / gemma_paragraph_pipeline(orchestrator+latex retry) / evidence wire-in(local_gemma_prompt_pack handle+map). 전부 tested. 커밋전략 미정.
+
+=== grounding 상호간섭 검증: 품질 안 깎음 (2026-06-21 03:20, Claude 솔로) ===
+- 운영자 질문='grounding 프롬프트가 바인딩 전후 품질 상호간섭?'. grounded vs ungrounded 같은 CIR task dual-run + judge 비교(wkssdzp9o, j1+j2 each+compare).
+- grounded(evidence_ids=4,63w) vs ungrounded(0,82w) 품질: altitude 2/3 vs 3/3, caveat 2/3 vs 3/3, fluid_to_rock/all-site-abiotic/citation_induced_overreach/protected_drift/forbidden 양쪽 전부 clean. overall 2/3 vs 3/3.
+- compare: altitude_shift none, caveat_shift none, overreach_introduced_by_grounding false, citation_stuffing false(4인용 stuffing아님), protected_handling=grounded BETTER(토큰 byte-exact 유지; ungrounded는 ASCII fallback로 degrade), net=comparable.
+- 결론: HARD속성(protected/forbidden/units) 안 깎임(gate보장+grounded가 토큰 더 정확). SOFT속성(altitude/caveat/overreach) harmful 간섭 없음. grounding은 품질비용 없이 인용 추가. 한계=n=1 each(단일 stochastic roll, j1이 grounded 2로=약간 dip 가능성 noise내), 통계아닌 방향성.
+- gemma stochastic 글리치(too_short/latex/json_invalid) 전부 orchestrator reroll로 대응 확인. 워킹트리 미커밋 개선들 유지. 미해결: 숫자/데이터값 근거(다음 큰거)·간섭 표본늘리기(원하면)·index<->md정렬·커밋전략·Codex다운.
