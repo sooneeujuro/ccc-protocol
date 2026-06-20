@@ -786,3 +786,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - compare: altitude_shift none, caveat_shift none, overreach_introduced_by_grounding false, citation_stuffing false(4인용 stuffing아님), protected_handling=grounded BETTER(토큰 byte-exact 유지; ungrounded는 ASCII fallback로 degrade), net=comparable.
 - 결론: HARD속성(protected/forbidden/units) 안 깎임(gate보장+grounded가 토큰 더 정확). SOFT속성(altitude/caveat/overreach) harmful 간섭 없음. grounding은 품질비용 없이 인용 추가. 한계=n=1 each(단일 stochastic roll, j1이 grounded 2로=약간 dip 가능성 noise내), 통계아닌 방향성.
 - gemma stochastic 글리치(too_short/latex/json_invalid) 전부 orchestrator reroll로 대응 확인. 워킹트리 미커밋 개선들 유지. 미해결: 숫자/데이터값 근거(다음 큰거)·간섭 표본늘리기(원하면)·index<->md정렬·커밋전략·Codex다운.
+
+=== 통합 랩 데이터: 5개 개선 x CIR 3units (2026-06-21 03:30, Claude 솔로) ===
+- 운영자 '한바퀴 싹 돌려 데이터' 선택. CIR 3 claim unit(열수/맨틀/암석-supporting) grounded 파이프 통합 run + 품질 judge.
+- 데이터: u2 맨틀 OK(allowed5/bound2/61w/품질3,3), u3 암석 OK(5/1/51w/3,3), u1 열수 FAIL(latex 3reroll). 성공 2/3, grounding 2/2, 선택성 avg bound 1.5/allowed5(과다아님), 품질 둘다 3/3(altitude/caveat/role-overreach/protected/forbidden 전부 clean 양judge).
+- u2: causal/MBAR-control 명시부정 bounded tracer. u3: La/Sm proxy 명시negation·fluid->rock 없음·protected byte-exact.
+- 통합 verdict: 5개 개선(conductor retry/orchestrator/evidence wire-in/handle+map/selectivity k5/json+latex retry)이 실제 CIR에 통합작동 - grounded·선택적·3/3품질. grounding 품질 안깎음 재확인.
+- gap: u1 isotope content(dD/d13C) gemma가 backslash 끈질김, latex-retry 3회 부족(near-deterministic). CIR isotope 많아 실질 gap.
+- 후속 제안: (1)isotope 표기 프롬프트 지시 강화(dD/d13C 명시·backslash 재금지) or sanitize 스텝 -> u1류 통과 (2)numeric grounding(다음 큰거) (3)커밋 정리. 워킹트리 미커밋 유지. Codex다운.
