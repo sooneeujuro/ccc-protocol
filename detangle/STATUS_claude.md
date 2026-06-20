@@ -755,3 +755,12 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - config 의존: GEOCHEM_MD_DIR=G:/corpus_md_export_20260602/articles/(3954편 .md, text_path+offset). 주의: 5/19 인덱스<->6/02 export 버전미정렬(테스트논문 quarantine만) - operator data-ops.
 - 경계: 인용근거(문헌)=MVP 해결가능. 숫자/데이터값근거=별개·미해결(emitter numeric id 0). 저작권 스니펫=.local guarded(corpus-no-push).
 - 다음: wire-in 코드 빌드(local_gemma_prompt_pack searcher주입+evidence렌더)->stub테스트->non-breaking. 미해결: evidence wire-in빌드·숫자근거(후속)·index<->md정렬·커밋전략·Codex다운.
+
+=== evidence wire-in MVP 구현+테스트 (2026-06-21 01:35, Claude 솔로) ===
+- 운영자 풀자율 허가('허락없이 달려, 이상하면 롤백'). evidence-grounding MVP wire-in 구현.
+- 대상: writing-runner/v0/local_gemma_prompt_pack.py(clean·엉킴없음). prepare_local_gemma_prompt_pack에 searcher 파라미터 추가 -> _load_task후 검색(searcher.search(query,k=8), query=instruction+target_section) -> allowed_evidence_ids=packet chunk_ids 채움 -> persona 프롬프트에 '## Evidence Packets'(citation 메타: evidence_id/citation_key/author/year/section_role; prose 인라인 금지=기존 contract 준수) 렌더. _retrieve_evidence_packets/_render_evidence_packets 헬퍼.
+- 설계: 기존 contract(evidence_ids 배열 바인딩, prose에 인라인 인용 금지)에 자연스럽게 부합. searcher 실패=propagate(fail-loud, 우회금지). searcher=None=기존 동일(non-breaking).
+- 테스트: stub searcher out-of-tree 3/3 PASS(grounding on=섹션+ids채움+검색됨 / off=섹션없음·ids[] / empty=graceful) + 468 writing-runner 통과(non-breaking). 11GB 실로드 불요로 검증.
+- 경계(MVP): 인용근거(citation handle)까지. 스니펫 TEXT는 프롬프트 미주입(adapter가 snippet_len_chars만 출력=저작권안전). 숫자/데이터값 근거=별개·미해결(emitter numeric id 0). 실코퍼스 run=GEOCHEM_MD_DIR=G:/corpus_md_export_20260602/articles 설정+5/19인덱스<->6/02export 정렬 필요(operator data-ops).
+- 워킹트리 미커밋 개선 3개 누적(conductor retry/gemma_paragraph_pipeline orchestrator/evidence wire-in). 전부 tested·non-breaking. 커밋전략 미정(conductor만 Codex 미커밋과 엉킴, 나머지 clean).
+- 다음: 실코퍼스 grounded smoke(md_dir 설정→real DraftEvidenceSearcher→prepare→실제 인용 retrieve, 가짜금지 최종증명; 단 381MB+3954md 로드 무거움+정렬caveat). 미해결: 실코퍼스검증·숫자근거(후속)·index<->md정렬·커밋전략.
