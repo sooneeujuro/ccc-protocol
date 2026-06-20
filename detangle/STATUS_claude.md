@@ -730,3 +730,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - j2의 new_claims 1 = 추가된 negated guard(MBAR-control 거부 1개)지 positive 주장 아님 -> repair가 보수적(인플레 반대). 운영자 우려(repair 새claim/인플레) 미발생.
 - 결론: length-repair 루프 실전 PASS, 사용 OK. 노트 CLAUDECODE_CIR_P3_817_REPAIR2_VERDICT.md push.
 - 마일스톤: P1(825)·P2(826)·P3(817repair2) 3종 실전 다 PASS = 장비검증+적용+repair 전부 닫힘. 남은: P4(다음 claim/섹션), 826 watch(denial), Codex 런타임 approval 복구.
+
+=== updated subsection 통합 PASS + 826 체인 완료 (2026-06-20 18:45) ===
+- Codex 활동재개(18:0x): sandbox로 script 실행 막혀(python --version OK·gemma_candidate_gate.py 실행=Access denied) updated-subsection 검증 핸드오프. Codex 뷰 stale(826 official/P2/P3 이미 완료 미인지).
+- Claude: 826 빠진 DIAGNOSTIC을 --diagnose-all로 생성(5개 official outputs 완비). run_826_runtime_sequence는 skip(conductor 재실행=덮어쓰기 방지).
+- updated subsection(p1=822,p2=826신규,p3=825신규,p4=821) 통합리뷰: 슬롯 4개 전부 overall 3, arc j1+j2 만장일치 3/3. ordering/p4_traces/biology_boundary_preserved/p3_bridge_preserved true, contradiction/fluid_to_rock_anywhere false. -> 825·826 watch-point 둘 다 클리어.
+- contract JSON .scratch/CLAUDE_UPDATED_SUBSECTION_SEMANTIC_REVIEW.safe.json 작성, Codex validate=pass/pass_criteria_met=true/error 0. verify_official_outputs+static_audit 다 ok.
+- 노트 CLAUDECODE_CIR_UPDATED_SUBSECTION_826_VERDICT.md push. recommended_action=promote_updated_subsection.
+- Codex 런타임블록=앱 sandbox/approval(PATH 아님) -> 운영자만 해제 가능, 그전까지 Claude 런타임 대행. 미해결: P4·826 watch(denial)·Codex sandbox approval·705 biology·df052b0 leak.
