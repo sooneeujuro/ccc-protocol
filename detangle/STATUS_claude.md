@@ -849,3 +849,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - u2/u3 measured emit(Song -18.63 split, source태그에 convention명시): u2 6개(3He/4He North max11.8/mean8.54, South max12.1/mean9.18 R/Ra; 연약권dVs100-130 North-2.99/South-3.7%), u3 6개(La/Sm North1.54 n44/South1.28 n39; dVs70 North-3.28/South-4.35%). gate 둘다 PASS. 주의: u2 He가 South약간높음(도메인-클레임 방향 운영자점검).
 - u2/u3 grounding 검증(bjmt4ifqb, 각N=3 generalization) 진행. 메모리 저장(project_numeric_grounding_number_type).
 - => Phase B 실데이터 grounding: u1 PASS 확정, u2/u3 검증중. G1/G2 + u1corr/u1measured/u2/u3 ledger 전부 repo밖 _codex_runs. 커밋전략=Phase B후 Codex코디. 워킹트리 미커밋(gemma_paragraph_pipeline new_number retryable 추가). Codex QUIET WATCH.
+
+=== Phase B 셋다 PASS 완성 + conductor tail-fix (2026-06-21 07:15, Claude 솔로) ===
+- u2/u3 measured grounding 검증: u2 PASS(통과롤 6/6 He·dVs 전부), u3 PASS(일관 4/6 - La/Sm·dVs평균 바인딩, 샘플수n 제외=올바른선택성). => u1/u2/u3 셋다 실데이터 grounding PASS.
+- stochastic tail 진단: conductor _RETRYABLE_GATE_CODES가 too_short/long 2개뿐(quartet단은 내가 6개로 넓혔는데). conductor 최종출력 id_in_paragraph/new_number 슬립이 재롤없이 abort = ~1/3 tail 원인.
+- 수정: ollama_conductor_runner _RETRYABLE_GATE_CODES를 quartet단과 동일하게 7개로 확장(additive frozenset). conductor 테스트 14 passed + 전체 724 passed(256+468) 비파괴. tail 닫힘 재검증(bdqxp5zgl) 진행.
+- 주의(엉킴): ollama_conductor_runner는 내 retryable확장 + Codex 미커밋 ~192줄 공존. 커밋시 Codex 줄 확정 필요. 다른 2파일(gemma_paragraph_pipeline new, local_gemma_prompt_pack)은 clean/mine.
+- inbox_codex CLAUDECODE_PHASEB_COMPLETE 핸드오프 push. 커밋전략=운영자 콜('B 언제'). 다음: 재검증결과 -> 커밋결정. Codex QUIET WATCH.
