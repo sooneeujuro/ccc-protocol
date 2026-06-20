@@ -738,3 +738,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - contract JSON .scratch/CLAUDE_UPDATED_SUBSECTION_SEMANTIC_REVIEW.safe.json 작성, Codex validate=pass/pass_criteria_met=true/error 0. verify_official_outputs+static_audit 다 ok.
 - 노트 CLAUDECODE_CIR_UPDATED_SUBSECTION_826_VERDICT.md push. recommended_action=promote_updated_subsection.
 - Codex 런타임블록=앱 sandbox/approval(PATH 아님) -> 운영자만 해제 가능, 그전까지 Claude 런타임 대행. 미해결: P4·826 watch(denial)·Codex sandbox approval·705 biology·df052b0 leak.
+
+=== subsection 최종화 + Claude 주도 전환 (2026-06-20 19:00) ===
+- 운영자 지시: 'Claude 주도'(Codex sandbox-block로 파이프 실행불가·뷰stale). Claude=런타임+리뷰+방향 주도. 보상: 다중judge+적대프롬프트+결정론게이트+투명성, 가짜-green 거부.
+- CIR Discussion subsection 최종화: 후보 822+826C+825+821 (Codex FINAL_DECISION + Claude 독립리뷰 동일결론). watch(826 denial) Codex nonblocking 해소를 Claude 독립 동의(arc 3/3 뒷받침).
+- Claude가 최종 stitch v2 조립: DISCUSSION_SUBSECTION_ORDER_B_FINAL_822_826C_825_821.local.md(로컬 prose 미커밋)+.safe.json. p1=822(93w)/p2=826C(144w)/p3=825(105w)/p4=821(114w) total 456w sha c953cbfc. 구v1(824/820) supersede.
+- 누적 검증: 슬롯4 overall3, arc j1j2 3/3, official gate/scorecard/conductor/diagnostic/static-audit pass, validator pass(error0). 노트 CLAUDECODE_SUBSECTION_FINALIZED_CLAUDE_DRIVING.md push.
+- 다음: 운영자 로드맵 대기(다음 섹션/claim unit/manuscript 통합). 미해결: Codex sandbox approval(운영자만)·705 biology·df052b0 leak.
