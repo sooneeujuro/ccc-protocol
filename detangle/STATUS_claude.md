@@ -821,3 +821,11 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 수정2(robustness): orchestrator _RETRYABLE_GATE_CODES에 causal_verb_overreach+id_in_paragraph 추가. gate가 accepted 출력 clean 보장하니 stochastic slip reroll 안전. 724 non-breaking(writing-runner 468+local-llm 256).
 - numeric WIRING은 이미 증명됨(stub 4/4 + pack allowed_numeric_ids=5). 모델검증 재run bmgsve0a9 진행(broader retry로 slip 뚫기). 
 - 발견: gemma4:12b가 strict gate에 stochastic 빈번 위반(format+semantic 다양) = 모델 robustness 축. broader retryable이 대응. 향후 reroll-count 로깅(관측성) 고려. 다음: numeric 검증결과 / Phase B(실데이터). 워킹트리 미커밋. Codex다운.
+
+
+=== numeric Phase A 모델검증 OK (NUMERIC_BOUND) (2026-06-21 05:30, Claude 솔로) ===
+- bmgsve0a9 재run 완료(broadened retry). grounded pack allowed_numeric_ids=5, gemma가 ## Numeric Values 보고 numeric_ids 3개 실제 바인딩(N1/N2/N3), 70 words, has_backslash=False, has_dollar=False, 174s. VERDICT=NUMERIC_BOUND.
+- 의미: evidence 0/0/0->4 검증의 numeric 짝 완성. writer가 opaque id echo 아닌 실값 본 상태에서 선택적 바인딩(5중 3) = false-green 아님. broadened retryable(causal/id slip)이 gemma stochastic 미끄러짐 뚫음 확인.
+- => evidence + numeric 양쪽 grounding 모두 WIRING+MODEL-VERIFIED 완료. MVP grounded draft writer(quartet->gate->scorecard->conductor->stitch, 인용+숫자 근거) 작동 확인.
+- Phase B(실데이터->ledger) 준비: G:/260518_CIR_Statistics 열람 - out/ 비어있음(canned 산출 JSON 없음), data/(volatile geochem xlsx: CH4/d13C_CH4/1-over-CH4; dVs+He CSV: dVs/3He4He/Age; geophysics) + scripts/(~28: pca/he_vs_age/lasm/co2_h2). claim unit 매핑: u1열수=volatile xlsx+co2_h2, u2맨틀=dVs/He CSV+he_vs_age/pca/lasm_iso, u3암석=lasm/trace. Phase B는 스크립트 실행->숫자 캡처->ledger라 운영자 framing 필요(어느 분석을 ledger로).
+- 결정 5:30am 운영자 부재: Phase B 블라인드 실행 안 함(무한 run-burning 금지). 메뉴 inbox_codex에 남기고 light-watch. 다음: 운영자 Phase B 선택 / 또는 커밋전략. 워킹트리 미커밋 다수(local_gemma_prompt_pack+gemma_paragraph_pipeline+ollama_conductor_runner). Codex QUIET WATCH(ccc_head 10c448e2).
