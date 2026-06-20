@@ -829,3 +829,9 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - => evidence + numeric 양쪽 grounding 모두 WIRING+MODEL-VERIFIED 완료. MVP grounded draft writer(quartet->gate->scorecard->conductor->stitch, 인용+숫자 근거) 작동 확인.
 - Phase B(실데이터->ledger) 준비: G:/260518_CIR_Statistics 열람 - out/ 비어있음(canned 산출 JSON 없음), data/(volatile geochem xlsx: CH4/d13C_CH4/1-over-CH4; dVs+He CSV: dVs/3He4He/Age; geophysics) + scripts/(~28: pca/he_vs_age/lasm/co2_h2). claim unit 매핑: u1열수=volatile xlsx+co2_h2, u2맨틀=dVs/He CSV+he_vs_age/pca/lasm_iso, u3암석=lasm/trace. Phase B는 스크립트 실행->숫자 캡처->ledger라 운영자 framing 필요(어느 분석을 ledger로).
 - 결정 5:30am 운영자 부재: Phase B 블라인드 실행 안 함(무한 run-burning 금지). 메뉴 inbox_codex에 남기고 light-watch. 다음: 운영자 Phase B 선택 / 또는 커밋전략. 워킹트리 미커밋 다수(local_gemma_prompt_pack+gemma_paragraph_pipeline+ollama_conductor_runner). Codex QUIET WATCH(ccc_head 10c448e2).
+
+=== robustness 100% + Phase B u1 실데이터 체인 (2026-06-21 06:00, Claude 솔로) ===
+- 운영자 'A 셋다순차 / 한번띡=통과?': n=1 정직지적 인정. robustness N=5 독립롤(stub pack): BOUND=5/5 bind_rate=100%, 매롤 정확히 3/5 선택(echo-all 아님), clean 5/5. => numeric 바인딩 신뢰성 통계증명(1회 아님).
+- Phase B 스카우팅(워크플로우 5에이전트 460k tok): feasibility=partial. 핵심발견 manifest_run --backend real은 고정 엔진요약 3종(pair_ranker/pca/mixing)만 emit, named 스칼라 못뽑음 => emit_numeric_entry 직접호출 필요. 갭2개(G1 capture-emit, G2 resolver) + 과학가드레일(문헌상수 -25permil/MORB8 제외, 도메인정의 충돌 태깅, u3 ISO족 broken=isotope컬럼 없음 emit금지, small-n n/p 동봉).
+- G1/G2 빌드(out-of-tree temp). u1은 저자 사전계산 CSV(vent_signed_dist_correlations.csv) 직접 emit=재계산/스크래핑0 divergence0. u1 ledger 7개 실값(d13C-CH4 vs dist rho/partial_r, log_H2, H2/CH4비 rho/p). pre_emit_gate PASS blocker0. resolver smoke PASS. grounded 팩 N1-N7 실값 렌더 numeric_map raw_value_committed=False.
+- => 실CIR데이터->ledger->gate->resolver->실값프롬프트 체인 통째 작동(repo밖 _codex_runs). u1 gemma 검증(실값 바인딩) N=5 진행(bbw84cnks). 다음: u1결과->u2/u3확장(셋다순차). 커밋전략=Phase B후 Codex코디. Codex QUIET WATCH.
