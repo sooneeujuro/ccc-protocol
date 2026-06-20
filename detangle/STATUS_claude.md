@@ -842,3 +842,10 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 교훈: 클레임 load-bearing 측정값 emit해야. 실데이터라서 드러남(stub 100% 오해소지). 운영자 '한번 띡?' 스킵티시즘이 보호한 것.
 - 수정검증: u1 측정값(volatile_with_dist ROV10 max/min) emit - H2max 3.64 mmol/kg, CH4max 0.19, d13C-CH4 -29.7~-8.09 permil, dD-CH4 -196, 3He/4He 10.2 R/Ra, H2/CH4 49.3. gate PASS resolver7. N=5 재검증(b7qtxyr4m) 진행.
 - 다음: measured결과->확정시 u2/u3 측정값위주 확장. 워킹트리 미커밋. Codex QUIET WATCH.
+
+=== u1 measured PASS + 숫자종류 확정 + u2/u3 emit (2026-06-21 07:00, Claude 솔로) ===
+- u1 measured grounding 재검증(retry-fix 후): rolls_ok=4 bound_any=4 clean=4 누출0, N1-N4/N6 4/4 바인딩. VERDICT=PASS. => 숫자종류 가설 확정: 측정값=신뢰성 선택바인딩, rho=들쭉날쭉(1/4).
+- gate-fix: gemma_paragraph_pipeline _RETRYABLE_GATE_CODES에 gemma_candidate_new_number_present 추가(측정값 주면 모델이 prose에 raw숫자 쓰려는 stochastic slip↑, 계약상 금지라 재롤로 흡수, 게이트가 accepted clean 보장). FAIL 2/5->1/5.
+- u2/u3 measured emit(Song -18.63 split, source태그에 convention명시): u2 6개(3He/4He North max11.8/mean8.54, South max12.1/mean9.18 R/Ra; 연약권dVs100-130 North-2.99/South-3.7%), u3 6개(La/Sm North1.54 n44/South1.28 n39; dVs70 North-3.28/South-4.35%). gate 둘다 PASS. 주의: u2 He가 South약간높음(도메인-클레임 방향 운영자점검).
+- u2/u3 grounding 검증(bjmt4ifqb, 각N=3 generalization) 진행. 메모리 저장(project_numeric_grounding_number_type).
+- => Phase B 실데이터 grounding: u1 PASS 확정, u2/u3 검증중. G1/G2 + u1corr/u1measured/u2/u3 ledger 전부 repo밖 _codex_runs. 커밋전략=Phase B후 Codex코디. 워킹트리 미커밋(gemma_paragraph_pipeline new_number retryable 추가). Codex QUIET WATCH.
