@@ -808,3 +808,9 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 계획 2단계(evidence wire-in 미러): PhaseA(writer wire-in,작음)=prepare_local_gemma_prompt_pack에 numeric_resolver param+_resolve_numeric_values+'## Numeric Values'블록(numeric_id->display_value+unit+provenance), writer가 {{NUMERIC:id}} 슬롯 치환. PhaseB(실데이터->ledger,무거움 data-ops)=CIR 분석 manifest+loader+bridges --backend real, framing 필요.
 - trace 주입점: prepare_local_gemma_prompt_pack에 numeric_resolver(searcher 쌍둥이), ## Numeric Values를 ## Evidence Packets 다음에, N1..Nk 핸들 or num_* id, numeric_map.local.json twin.
 - 주의: false-green 위험(numeric_ref_count가 값해소 아닌 id개수). PhaseA에서 writer가 실값 받아쓰게(id echo만이면 가짜). 다음=PhaseA 빌드(stub테스트). 워킹트리 미커밋 다수. Codex다운.
+
+=== numeric Phase A 구현+테스트 (2026-06-21 04:50, Claude 솔로) ===
+- numeric grounding Phase A(writer wire-in) 구현, evidence wire-in 정확히 미러. local_gemma_prompt_pack.py에 numeric_resolver param + _resolve_numeric_values + '## Numeric Values' 블록(numeric_id->display_value+unit+numeric_type+status) + allowed_numeric_ids N-handle 채움 + numeric_map.local.json(핸들->실 numeric_id+display_value+provenance).
+- 핵심: writer가 실제 데이터값을 봄(예 '42.0 nM' 프롬프트 노출) = false-green 아님(opaque id만 아님). resolver 실패 propagate(fail-loud). numeric_resolver=None=기존동일(non-breaking).
+- 테스트: stub resolver out-of-tree 4/4 PASS(numeric ON=블록+ids+map+값노출 / OFF=non-breaking / empty=graceful / evidence+numeric 공존) + 468 writing-runner non-breaking.
+- 다음: (1)stub-numeric grounded gemma run으로 모델이 numeric_ids 바인딩하는지 검증(evidence 0/0/0->4 의 numeric 버전) (2)Phase B=실데이터->ledger(analysis_manifest+loader+bridges --backend real, CIR 분석 framing 필요)->real resolver. 워킹트리 미커밋. Codex다운.
