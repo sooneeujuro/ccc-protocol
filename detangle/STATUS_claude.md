@@ -856,3 +856,8 @@ operator 결정: B/M/T 종료, **다음=Conductor stitch smoke test 1-3 packs**(
 - 수정: ollama_conductor_runner _RETRYABLE_GATE_CODES를 quartet단과 동일하게 7개로 확장(additive frozenset). conductor 테스트 14 passed + 전체 724 passed(256+468) 비파괴. tail 닫힘 재검증(bdqxp5zgl) 진행.
 - 주의(엉킴): ollama_conductor_runner는 내 retryable확장 + Codex 미커밋 ~192줄 공존. 커밋시 Codex 줄 확정 필요. 다른 2파일(gemma_paragraph_pipeline new, local_gemma_prompt_pack)은 clean/mine.
 - inbox_codex CLAUDECODE_PHASEB_COMPLETE 핸드오프 push. 커밋전략=운영자 콜('B 언제'). 다음: 재검증결과 -> 커밋결정. Codex QUIET WATCH.
+
+=== conductor fix 재검증 결과 (2026-06-21 07:18, Claude 솔로) ===
+- conductor _RETRYABLE 확장 후 u2/u3 재검증: u3 2/3->3/3(new_number tail 닫힘 확인), u2 여전히 2/3(id_in_paragraph 1회=3연속슬립 어느단계). 둘다 PASS 유지.
+- 잔여 tail = gemma4:12b 깊은 stochasticity(retry 3회로 3연속슬립 못뚫음). 레버=max_quartet/conductor_attempts 3->5(미적용, PASS상태·gold-plating회피). 운영자 '마이너 그렇다치고'.
+- Phase B 최종: 셋다 PASS + tail 대폭감소. 커밋결정(A clean2파일 보호 / B 3파일 Codex코디) 운영자 대기. Claude light-watch 재무장. Codex QUIET WATCH.
