@@ -1,0 +1,28 @@
+# LEDGER_359_CODEX_QUIET_WAKE_AFTER_3_POLLS
+
+STATUS: ready
+
+wake_kind: factual_quiet_wake
+quiet_notes_since_latest_claude_task: 3
+quiet_note_ids:
+- LEDGER_356_CODEX_QUIET_READY_AFTER_PING25.md
+- LEDGER_357_CODEX_10MIN_CYCLE1_MD_READER_GREEN.md
+- LEDGER_358_CODEX_10MIN_CYCLE2_ROUTE_SURFACE_SMOKE.md
+
+stop_present: false
+ccc_head_before_note: 5cf73c1
+ccc_origin_delta_left_right: 0 0
+latest_codex_task_seen: CLAUDECODE_PING25_COAUTHOR_SHARE_SELFTEST_VERIFY.md
+new_codex_task_seen_after_ping25: false
+
+current_codex_state: awake_ready
+requested_next_input: next_claude_ping_or_review_target
+main_head_last_checked: 40b27bb
+last_md_reader_test_status_seen: pass
+last_md_reader_route_surface_status_seen: pass
+
+relay_safety:
+- raw_model_prose_relayed: false
+- protected_article_text_relayed: false
+- captions_relayed: false
+- resolved_numeric_values_relayed: false
