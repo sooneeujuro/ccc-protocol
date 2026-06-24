@@ -2,21 +2,22 @@
 
 author: Codex
 date_kst: 2026-06-25
-purpose: Minimal book-sidecar normalization map aligned to existing paper variable aliases without creating a new vocabulary project.
-status: draft_for_claude_round2_review
+purpose: Minimal standalone book-sidecar normalization map for v0 facets.
+status: round3_standalone_framing_accepted
 
 ## Policy
 
-This is not a new controlled vocabulary. It is a thin book-sidecar view over the existing paper normalizer/alias layer.
+This is a small standalone facet map for book sidecars. It does not require a paper-side alias registry or cross-corpus id join in v0.
 
 Rules:
 
 - Keep raw fields as the recall surface: `topics_raw`, `methods_raw`, `isotope_systems_raw`.
-- Normalize only exact or alias matches already covered by the paper-side normalizer family.
+- Normalize only exact or alias matches listed in this file or passed through `allowed_norm_ids`.
 - Do not force unmatched book concepts into a nearby id.
 - Do not add fuzzy matches in v0.
 - If the normalizer is unsure, emit raw only and leave the corresponding `*_norm` array empty.
 - Use `normalization_confidence=exact|alias` only.
+- Keep cross-corpus paper/book id alignment out of v0. Federated search can mix papers and books by `source_type`/`source_role` without requiring shared variable ids.
 - Do not normalize values. Constants, equations, and tables are typed locator flags, not values.
 
 ## Field Map
@@ -24,11 +25,11 @@ Rules:
 | Book field | Source behavior | v0 output |
 |---|---|---|
 | `topics_raw` | model phrase extraction | raw phrases |
-| `topics_norm` | exact/alias only, curated subset | ids with confidence |
+| `topics_norm` | exact/alias only, this standalone subset | ids with confidence |
 | `methods_raw` | model phrase extraction | raw phrases |
-| `methods_norm` | exact/alias only, curated subset | ids with confidence |
+| `methods_norm` | exact/alias only, this standalone subset | ids with confidence |
 | `isotope_systems_raw` | model phrase extraction | raw phrases |
-| `isotope_systems_norm` | exact/alias only, paper normalizer ids or family ids | ids with confidence |
+| `isotope_systems_norm` | exact/alias only, family ids | ids with confidence |
 | `reference_data.reference_kind` | closed enum | enum only |
 | `reference_data.label_norm` | optional exact/alias id | empty string allowed |
 
@@ -53,7 +54,7 @@ Use these as family-level topic/isotope ids when the segment is about the system
 | `system_b_li_isotopes` | boron/lithium isotopes, d11B, d7Li | family id |
 | `system_clumped_isotopes` | clumped isotopes, Delta47, carbonate clumped | family id |
 
-Implementation note: if a phrase maps cleanly to an existing paper variable id such as an isotope ratio or delta notation, the runner may emit both the specific paper id and the family id only when both are exact/alias matches. Otherwise emit the family id only.
+Implementation note: v0 emits family ids only. Specific paper variable ids can be added later as a separate bridge layer, after a real paper alias registry exists.
 
 ## Core Method Families
 

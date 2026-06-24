@@ -1,0 +1,43 @@
+{
+  "book_count": 17,
+  "confidence_counts": {
+    "high": 609,
+    "medium": 25
+  },
+  "heading_text_written": false,
+  "holdout_count": 8,
+  "holdout_gold_sha256_prefix": "e8aa7cdd3f8dfa73",
+  "holdout_ids": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8"
+  ],
+  "md_quality_counts": {
+    "heading_weak": 4,
+    "ok": 609,
+    "table_weak": 21
+  },
+  "method_counts": {
+    "heading": 613,
+    "table_dense": 21
+  },
+  "raw_text_written": false,
+  "resolved_numeric_values_written": false,
+  "schema": "book_segment_summary_v1_codex_safe",
+  "segment_count": 634,
+  "segment_manifest_sha256_prefix": "5b585ff068af4ee4",
+  "selection_tag_counts": {
+    "equation": 311,
+    "method": 93,
+    "radiogenic": 222,
+    "reference_table": 330,
+    "solubility": 97,
+    "stable_fractionation": 155
+  },
+  "table_cell_text_written": false
+}
