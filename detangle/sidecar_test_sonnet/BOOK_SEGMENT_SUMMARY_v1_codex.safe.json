@@ -6,7 +6,7 @@
   },
   "heading_text_written": false,
   "holdout_count": 8,
-  "holdout_gold_sha256_prefix": "e8aa7cdd3f8dfa73",
+  "holdout_gold_sha256_prefix": "c8cb8a8db1a71d9a",
   "holdout_ids": [
     "H1",
     "H2",

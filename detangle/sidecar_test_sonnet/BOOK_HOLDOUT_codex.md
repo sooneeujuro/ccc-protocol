@@ -106,12 +106,13 @@ Report these counts after running the holdout:
 - `numeric_value_string_count`
 - `low_confidence_production_count`
 
-Pass rule for round2:
+Pass rule for round2/round5:
 
 - hard fail if copied-field mismatch > 0
 - hard fail if value extraction count > 0
 - hard fail if locator-required missing > 0 on H5/H6/H7
 - hard fail if low-confidence production count > 0
+- topic_norm and method_norm gold are semantic checks and should be soft-fail unless a later content-verified gold file explicitly promotes one to hard-fail
 - soft fail if a normalized topic/method is missing but raw field captured the phrase
 - pass only if all hard-fail counts are zero
 
