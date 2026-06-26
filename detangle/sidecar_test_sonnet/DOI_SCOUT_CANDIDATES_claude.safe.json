@@ -1,0 +1,14 @@
+{
+ "input_missing_count": 822,
+ "scouted_count": 675,
+ "not_scouted_count": 147,
+ "not_scouted_reason": "workflow_monthly_spend_limit_batches_26_27_30_31_32",
+ "high_confidence_candidate_count": 604,
+ "high_confidence_with_doi_value": 604,
+ "medium_confidence_candidate_count": 6,
+ "low_confidence_candidate_count": 1,
+ "none_found_count": 64,
+ "candidate_local_sha256_prefix": "6b2302bd74021a92",
+ "not_scouted_pidlist_sha256_prefix": "877fbb5adf5c28be",
+ "public_doi_values_relayed_in_ledger": false
+}
