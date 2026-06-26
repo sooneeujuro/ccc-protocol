@@ -1,0 +1,68 @@
+[
+ {
+  "pid": "006f3a79-6623-ab35-34a2-35fb",
+  "label": "noble gas fractionation factor F^x (Xe",
+  "sonnet": "modeled",
+  "gemma": "measured"
+ },
+ {
+  "pid": "006f3a79-6623-ab35-34a2-35fb",
+  "label": "3He/4He ratio",
+  "sonnet": "cited",
+  "gemma": "measured"
+ },
+ {
+  "pid": "4ee99fb9-4b58-71bf-0bf7-9f53",
+  "label": "δ¹³C-C₂ (δ¹³C-ethane)",
+  "sonnet": "cited",
+  "gemma": "modeled"
+ },
+ {
+  "pid": "4ee99fb9-4b58-71bf-0bf7-9f53",
+  "label": "TOC (total organic carbon)",
+  "sonnet": "cited",
+  "gemma": "modeled"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "87Sr/86Sr (90 Ma)",
+  "sonnet": "modeled",
+  "gemma": "measured"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "δ³⁴S",
+  "sonnet": "cited",
+  "gemma": "measured"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "Kv^Sr (fluid/solid partition coefficie",
+  "sonnet": "modeled",
+  "gemma": "measured"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "Kv^Ox (fluid/solid partition coefficie",
+  "sonnet": "modeled",
+  "gemma": "cited"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "magmatic 87Sr/86Sr of fresh glasses",
+  "sonnet": "cited",
+  "gemma": "measured"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "Cretaceous seawater 87Sr/86Sr at 90 Ma",
+  "sonnet": "cited",
+  "gemma": "measured"
+ },
+ {
+  "pid": "Bickle_and_Teagle,_1992",
+  "label": "87Sr/86Sr of active black-smoker vent ",
+  "sonnet": "cited",
+  "gemma": "measured"
+ }
+]

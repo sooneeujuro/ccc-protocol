@@ -1,0 +1,4297 @@
+{
+ "matched": 310,
+ "gap_recoverable": [],
+ "gap_never": [
+  {
+   "pdf": "3b1bc31e8906__Bosch, 2008, Pb, Hf and Nd isotope compositions of the two Réunion volcanoes (Indian Ocean); A tale of two small-scale m.pdf",
+   "doi": "10.1016/j.epsl.2007.11.018"
+  },
+  {
+   "pdf": "289e5fdf1c88__Cande, 2011, Indian and African plate motions driven by the push force of the Réunion plume head.pdf",
+   "doi": "10.1038/nature10174"
+  },
+  {
+   "pdf": "211d63372017__Class, 2005, Evolution of helium isotopes in the Earth's mantle.pdf",
+   "doi": "10.1038/nature03930"
+  },
+  {
+   "pdf": "93b59391faad__Ito, 2005, Flow and melting of a heterogeneous mantle; 1. Method and importance to the geochemistry of ocean island and .pdf",
+   "doi": "10.1016/j.epsl.2004.10.035"
+  },
+  {
+   "pdf": "c957716e2048__Lenat, 2009, La réunion; An example of channeled hot spot plume.pdf",
+   "doi": "10.1016/j.jvolgeores.2008.12.001"
+  },
+  {
+   "pdf": "29344bcd5ca2__Mather, 2024, Spreading ridge migration enabled by plume-ridge de-anchoring.pdf",
+   "doi": "10.1038/s41467-024-53397-w"
+  },
+  {
+   "pdf": "72f88c0c997d__Seton, 2012, Global continental and ocean basin reconstructions since 200 Ma.pdf",
+   "doi": "10.1016/j.earscirev.2012.03.002"
+  },
+  {
+   "pdf": "b1c5369dbe98__Sleep, 1996, Lateral flow of hot plume material ponded at sublithospheric depths.pdf",
+   "doi": "10.1029/96jb02463"
+  },
+  {
+   "pdf": "8caa1de08b18__Steinberger, 2006, Models of large-scale viscous flow in the Earth's mantle with constraints from mineral physics and su.pdf",
+   "doi": "10.1111/j.1365-246x.2006.03131.x"
+  },
+  {
+   "pdf": "7435341791ff__Torsvik, 2014, Deep mantle structure as a reference frame for movements in and on the Earth.pdf",
+   "doi": "10.1073/pnas.1318135111"
+  },
+  {
+   "pdf": "1fd51ac831aa__Whittaker, 2015, Long-term interaction between mid-ocean ridges and mantle plumes.pdf",
+   "doi": "10.1038/ngeo2437"
+  },
+  {
+   "pdf": "af8acc9bef9e__Hamelin et al., 2011, PAR isotopic data.pdf",
+   "doi": "10.1016/j.epsl.2010.12.007"
+  },
+  {
+   "pdf": "685e53cf5762__Marty et al., 2020, An evaluation of the CN ratio of the mantle from natural CO2-rich gas analysis.pdf",
+   "doi": "10.1016/j.epsl.2020.116574"
+  },
+  {
+   "pdf": "b37734c6dab3__Choi SH, 2021, Geochemistry and petrogenesis of Quaternary volcanic rocks from Ulleung Island, South Korea.pdf",
+   "doi": "10.1016/j.lithos.2020.105874"
+  },
+  {
+   "pdf": "8e8851108dd3__Mukhopadhyay (2012) Nature supplementary.pdf",
+   "doi": "10.1038/nature11141"
+  },
+  {
+   "pdf": "63e58d0b4a09__Guo et al., 2016, Thermochemical structure of the North China Craton from multi observable probabilistic inversion Exten.pdf",
+   "doi": "10.1016/j.gr.2016.07.002"
+  },
+  {
+   "pdf": "171141fc4c7d__Hanyu et al., 2011, Constraints on the origin of the HIMU reservoir from HeΓÇôNeΓÇôAr isotope systematics.pdf",
+   "doi": "10.1016/j.epsl.2011.05.012"
+  },
+  {
+   "pdf": "4b9a9f6ddcd8__6886af1f-f803-f1f5-3082-45e7ee29557e.pdf",
+   "doi": "10.1016/j.earscirev.2021.103624"
+  },
+  {
+   "pdf": "420c9db022e5__JR9CN0~X.pdf",
+   "doi": "10.1016/j.chemgeo.2016.10.038"
+  },
+  {
+   "pdf": "1300e59d4289__Day et al., 2015, The helium flux from the continents and ubiquity of low 3He 4He recycled crust and lithosphere.pdf",
+   "doi": "10.1016/j.gca.2015.01.008"
+  },
+  {
+   "pdf": "148703bc6f8e__NA Stroncik et al. 2007, Neon and helium isotopes as tracers of mantle reservoirs and mantle dynamics.pdf",
+   "doi": "10.1016/j.epsl.2007.03.046"
+  },
+  {
+   "pdf": "ed14984c5b08__Baldwin and Das, 2015, Atmospheric Ar and Ne returned from mantle depths to the EarthΓÇÖs surface by forearc recycling.pdf",
+   "doi": "10.1073/pnas.1424122112"
+  },
+  {
+   "pdf": "c895a0ec125f__Zhang et al. (2024) EPSL L-chondrite body breakup in Ordovician strata in China.pdf",
+   "doi": "10.1016/j.epsl.2024.118891"
+  },
+  {
+   "pdf": "d33a4bfe7b26__French and Romanowicz (2015). Broad plumes rooted at the base of the EarthΓÇÖs mantle beneath major hotspots. Nature525,.pdf",
+   "doi": "10.1038/nature14876"
+  },
+  {
+   "pdf": "aee608b4ba02__2007_CMP_Kil & Wendlandt.pdf",
+   "doi": "10.1007/s00410-007-0183-y"
+  },
+  {
+   "pdf": "5326df618085__Mikhail & (2014) Nitrogen speciation in upper mantle fluids and the origin of Earth's nitrogen-rich atmosphere.pdf",
+   "doi": "10.1038/ngeo2271"
+  },
+  {
+   "pdf": "d623f8b8c436__Halama et al., 2010, Nitrogen recycling in subducted oceanic lithosphere The record in high- and ultrahigh-pressure meta.pdf",
+   "doi": "10.1016/j.gca.2009.12.003"
+  },
+  {
+   "pdf": "51acd33a31a5__Zhang et al., 2009, Geochemical evidence for interaction between oceanic crust and lithospheric mantle.pdf",
+   "doi": "10.1016/j.lithos.2009.01.006"
+  },
+  {
+   "pdf": "aa2c6a21fa5c__Xu et al., 2012, SlabΓÇômantle interaction for thinning of cratonic lithospheric mantle in North China.pdf",
+   "doi": "10.1016/j.lithos.2012.05.019"
+  },
+  {
+   "pdf": "11e220b49620__Scott et al. (2016) Peridotitic Lithosphere Metasomatized by Volatile-bearing Melts, and its Association with Intraplate.pdf",
+   "doi": "10.1093/petrology/egw069"
+  },
+  {
+   "pdf": "7aec1ef7d444__Tang et al., 2014, Heterogeneous lithospheric mantle metasomatism in the eastern North China Craton.pdf",
+   "doi": "10.1016/j.jseaes.2013.11.012"
+  },
+  {
+   "pdf": "7e44e16c0989__Daucet et al. 2020 Distinct formation history for deep-mantle domains reflected in geochemical differences.pdf",
+   "doi": "10.1038/s41561-020-0599-9"
+  },
+  {
+   "pdf": "e99b3633b134__Tian et al., 2016, Origin of low ╬┤26Mg basalts with EM-I component; Evidence for interaction between enriched lithosphe.pdf",
+   "doi": "10.1016/j.gca.2016.05.021"
+  },
+  {
+   "pdf": "95b63d696073__Sakuyama et al. 2014, Melting of the Uppermost Metasomatized.pdf",
+   "doi": "10.1093/petrology/egt074"
+  },
+  {
+   "pdf": "44476ed3d004__1-s2.0-S0016703716301788-main.pdf",
+   "doi": "10.1016/j.gca.2016.04.019"
+  },
+  {
+   "pdf": "4d1ccde19262__Kuritani et al. 2019, Buoyant hydrous mantle plume from the mantle transition zone.pdf",
+   "doi": "10.1038/s41598-019-43103-y"
+  },
+  {
+   "pdf": "b8ef84b4b1da__Guo et al., 2014, Lithosphere thinning beneath west North China Craton; Evidence from geochemical and SrΓÇôNdΓÇôHf isoto.pdf",
+   "doi": "10.1016/j.lithos.2014.04.024"
+  },
+  {
+   "pdf": "57893d85c771__Lee et al., 2021, Petrogenesis of the Cenozoic volcanic rocks in Baekdu volcano in northeastern Asia and the expected de.pdf",
+   "doi": "10.1016/j.lithos.2021.106080"
+  },
+  {
+   "pdf": "c56b8a7515c7__Pepin et al. (2011) - The Astrophysical Journal - Presolar grains from novae evidence from Neon and Helium isotopes.pdf",
+   "doi": "10.1088/0004-637x/742/2/86"
+  },
+  {
+   "pdf": "b36d3a8e7631__Raquin et al., 2008, He, Ne and Ar systematics in single vesicles; Mantle isotopic ratios and origin of the air componen.pdf",
+   "doi": "10.1016/j.epsl.2008.07.007"
+  },
+  {
+   "pdf": "8122794d0dac__Yamamoto and Burnard, 2005, Solubility controlled noble gas fractionation during magmatic degassing; Implications for no.pdf",
+   "doi": "10.1016/j.gca.2004.07.014"
+  },
+  {
+   "pdf": "650d04a08e95__Brook et al. (2009) Flux and size fractionation of 3He in interplanetary dust from Antarctic ice core samples.pdf",
+   "doi": "10.1016/j.epsl.2009.07.024"
+  },
+  {
+   "pdf": "4cdc7cfb6dda__Li Yuan et al. (2024) The origin and evolution of Earth's nitrogen.pdf",
+   "doi": "10.1093/nsr/nwae201"
+  },
+  {
+   "pdf": "398b3136be44__Geofluids - 2023 - Wilske - Mineral Crushing Methods for Noble Gas Analyses of Fluid Inclusions.pdf",
+   "doi": "10.1155/2023/8040253"
+  },
+  {
+   "pdf": "968f02e4a796__Pang et al., 2015, Pyroxenite-derived Early Cretaceous lavas in the Liaodong Peninsula; Implication for metasomatism and.pdf",
+   "doi": "10.1016/j.lithos.2015.03.022"
+  },
+  {
+   "pdf": "c7c3bb06525b__Russell and Jones, 2023, Transport and eruption of mantle xenoliths creates a lagging problem.pdf",
+   "doi": "10.1038/s43247-023-00843-0"
+  },
+  {
+   "pdf": "71e665eb0e18__70e8e3e6-a598-d88b-010f-887edbc4a2be.pdf",
+   "doi": "10.1016/j.lithos.2021.106075"
+  },
+  {
+   "pdf": "f4113965327f__Chough and Sohn, 2010, Tectonic and sedimentary evolution of a Cretaceous continental arc backarc system in the Korean P.pdf",
+   "doi": "10.1016/j.earscirev.2010.05.004"
+  },
+  {
+   "pdf": "51d9ac50016c__Sun MD et al., 2002, Exploring small scale recycled mantle components with intraplate continenral twin volcanoes.pdf",
+   "doi": "10.1016/j.chemgeo.2022.120842"
+  },
+  {
+   "pdf": "2b0bb4603f16__Dai et al., 2021, Pyroxenite Xenoliths Record Complex Melt Impregnation in the Deep Lithosphere of the Northwestern Nort.pdf",
+   "doi": "10.1093/petrology/egaa079"
+  },
+  {
+   "pdf": "b140503ac8dd__Barfod et al., 1999, Noble gases in the Cameroon line and the He Ne and Ar.pdf",
+   "doi": "10.1029/1999jb900280"
+  },
+  {
+   "pdf": "374f5a8f64d6__Schaffer et al., 2019, Rio Grande Rift.pdf",
+   "doi": "10.1016/j.gca.2018.10.005"
+  },
+  {
+   "pdf": "064a852354bc__Li Xiaohui et al. (2024) A HIMU-like component in Mariana Convergent Margin magma sources during initial arc rifting rev.pdf",
+   "doi": "10.1038/s41467-024-48308-y"
+  },
+  {
+   "pdf": "26eff309dc81__Brauer et al., 2013, Indications for the existence of different magmatic reservoirs beneath the Eifel area (Germany); A .pdf",
+   "doi": "10.1016/j.chemgeo.2013.08.013"
+  },
+  {
+   "pdf": "8fab690a03eb__Samuel et al., 2023, Fertile upper mantle peridotite xenoliths indicate no wholesale destruction of cratonic root in Eas.pdf",
+   "doi": "10.1038/s43247-023-01170-0"
+  },
+  {
+   "pdf": "a835876234a7__Yang, 2016, Composition and Evolution of Lithosphere Beneath the Jeju Island Region (I)_ A Review.pdf",
+   "doi": "10.7854/jpsk.2016.25.3.261"
+  },
+  {
+   "pdf": "2adfea31a8c3__Bernadou et al., 2021, Nitrogen solubility in basaltic silicate melt.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120192"
+  },
+  {
+   "pdf": "ed51f17e581c__Lee et al., 2017, Incipient rifting accompanied by the release of subcontinental lithospheric mantle volatiles in the Ma.pdf",
+   "doi": "10.1016/j.jvolgeores.2017.03.017"
+  },
+  {
+   "pdf": "89b6e3be956f__1-s2.0-S0024493723003213-main.pdf",
+   "doi": "10.1016/j.lithos.2023.107337"
+  },
+  {
+   "pdf": "1e660e87dd19__Rooney, 2020, The Cenozoic magmatism of East Africa; Part V - Magma sources and processes in the East African Rift.pdf",
+   "doi": "10.1016/j.lithos.2019.105296"
+  },
+  {
+   "pdf": "f05f5b922b0c__Xu Qinghu et al., 2019, Nature and evolution of the lithospheric mantle revealed by water contents and He-Ar isotopes of.pdf",
+   "doi": "10.1016/j.scib.2019.07.006"
+  },
+  {
+   "pdf": "bb7cabf93f48__Mortimer et al., 2006, Zealandia west antarctica breakup.pdf",
+   "doi": "10.1130/g22168.1"
+  },
+  {
+   "pdf": "7106e01e8505__Veevers, 2006, Updated Gondwana earth history of Australia.pdf",
+   "doi": "10.1016/j.gr.2005.11.005"
+  },
+  {
+   "pdf": "3f05e29ee357__Banerjee (2015) Nitrogen isotopic compositions and concentrations in MARID xenoliths.pdf",
+   "doi": "10.1016/j.chemgeo.2014.11.003"
+  },
+  {
+   "pdf": "8c421aacc3df__s41598-020-60867-w.pdf",
+   "doi": "10.1038/s41598-020-60867-w"
+  },
+  {
+   "pdf": "db4641ae70b2__Parai et al. (2012) SWIR.pdf",
+   "doi": "10.1016/j.epsl.2012.10.017"
+  },
+  {
+   "pdf": "7c0787015586__Lu (2026) GRL, Migration of Multimodal Deep Crustal Earthquake Swarm Beneath the Abu Volcano (1).pdf",
+   "doi": "10.1029/2025gl119316"
+  },
+  {
+   "pdf": "035428496640__Zhao et al., 2009, Seismic image and origin of the Changbai intraplate volcano in East Asia Role of big mantle wedge abo.pdf",
+   "doi": "10.1016/j.pepi.2008.11.009"
+  },
+  {
+   "pdf": "0457b717f4df__J. Lu et al., 2020, Lithospheric memory of subduction in mantle pyroxenite xenoliths from rift-related basalts.pdf",
+   "doi": "10.1016/j.epsl.2020.116365"
+  },
+  {
+   "pdf": "55f6d092f5f0__Gautheron et al., 2005, Evidence for a mantle component shown by rare gases, C and N isotopes in diamonds.pdf",
+   "doi": "10.1016/j.epsl.2005.09.060"
+  },
+  {
+   "pdf": "877f61a93f27__Xu et al., 2017, The origin of Cenozoic continental basalts in east-central China; Constrained by linking Pb isotopes to.pdf",
+   "doi": "10.1016/j.lithos.2016.11.006"
+  },
+  {
+   "pdf": "522659d79e71__Sun et al., 2017, Trace element partitioning between plagioclase and silicate melt.pdf",
+   "doi": "10.1016/j.gca.2017.03.003"
+  },
+  {
+   "pdf": "c258381c167f__Korolev et al., 2018, The oxygen isotope composition of mantle eclogites as a proxy of their origin and evolution.pdf",
+   "doi": "10.1016/j.earscirev.2018.06.007"
+  },
+  {
+   "pdf": "0c46b1d4f8f1__Lee et al., 2024, Carbon isotope fractionation between CO2 and carbon in silicate melts at high temperature.pdf",
+   "doi": "10.1016/j.gca.2024.07.015"
+  },
+  {
+   "pdf": "d18fd1e9f622__De Hoog et al., 2010, Trace element geochemistry of mantle olivine and application to mantle petrogenesis and geothermob.pdf",
+   "doi": "10.1016/j.chemgeo.2009.11.017"
+  },
+  {
+   "pdf": "040f862f68d1__Halldorsson et al., 2016, Recycling of crustal material by the Iceland mantle plume; New evidence from nitrogen elementa.pdf",
+   "doi": "10.1016/j.gca.2015.12.021"
+  },
+  {
+   "pdf": "91a888566320__Zhang, Guo - 2016 - Origin of Late Cenozoic AbagaΓÇôDalinuoer basalts, eastern China Implications for a mixed pyroxenite.pdf",
+   "doi": "10.1016/j.gr.2016.05.014"
+  },
+  {
+   "pdf": "4ecb7b02e301__Zhao et al., 2021, Origin of arc-like intraplate volcanism by melting of lithospheric mantle pyroxenite of the South Chi.pdf",
+   "doi": "10.1016/j.lithos.2021.106236"
+  },
+  {
+   "pdf": "c05de5830918__choi et al., 2014, Isotope geochemistry of Jeongok basalts, northernmost South Korea; Implications for the enriched mant.pdf",
+   "doi": "10.1016/j.jseaes.2014.05.010"
+  },
+  {
+   "pdf": "227dce64968d__Aubaud, 2022, Carbon stable isotope constraints on CO2 degassing models of ridge, hotspot and arc magmas.pdf",
+   "doi": "10.1016/j.chemgeo.2022.120962"
+  },
+  {
+   "pdf": "a711849ad99e__SnyderetalChemGeol2020.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119462"
+  },
+  {
+   "pdf": "87f8e7ab198d__Lin et al, 2019, A refined model for lithosphere evolution beneath the decratonized northeastern North China Craton.pdf",
+   "doi": "10.1007/s00410-019-1551-0"
+  },
+  {
+   "pdf": "a31850be6426__Shimizu et al. 2016, Two-component mantle melting-mixing model.pdf",
+   "doi": "10.1016/j.gca.2015.10.033"
+  },
+  {
+   "pdf": "ab6cf6fb5e61__Lim JS et al. (2024).pdf",
+   "doi": "10.18814/epiiugs/2024/02403s16"
+  },
+  {
+   "pdf": "080bd9e8a78c__Jackson et al., 2009, Helium and neon isotopes in phenocrysts from Samoan lavas; Evidence for heterogeneity in the terre.pdf",
+   "doi": "10.1016/j.epsl.2009.08.039"
+  },
+  {
+   "pdf": "9e81651e3538__Lobidoux et al., 2020, Petrological and noble gas features of Lascar and Lastarria volcanoes (Chile).pdf",
+   "doi": "10.1016/j.lithos.2020.105615"
+  },
+  {
+   "pdf": "1cf4af0efe0f__1-s2.0-S2589915522000141-main.pdf",
+   "doi": "10.1016/j.hydroa.2022.100132"
+  },
+  {
+   "pdf": "0b78125413df__Kuritani et al., 2011, Intensive hydration of the mantle transition zone beneath China caused by ancient slab stagnation.pdf",
+   "doi": "10.1038/ngeo1250"
+  },
+  {
+   "pdf": "2d7ab198c71b__Bekaert et al., 2021, Subduction driven volatile recycling.pdf",
+   "doi": "10.1146/annurev-earth-071620-"
+  },
+  {
+   "pdf": "227da76ae84e__Umeda et al. (2013) Release of mantle and crustal helium from a fault following an inland earthquake.pdf",
+   "doi": "10.1016/j.apgeochem.2013.07.018"
+  },
+  {
+   "pdf": "d6a526fc34ff__Pearce et al., 2007, Hf-Nd evidence for the origin and distribution of mantle domains in the SW Pacific.pdf",
+   "doi": "10.1016/j.epsl.2007.05.023"
+  },
+  {
+   "pdf": "479b3f05352a__Choi et al., 2022, Petrogenesis of submarine volcanic rocks dredged from Dokdo, Ulleungdo, and the neighboring seamounts.pdf",
+   "doi": "10.1016/j.lithos.2022.106783"
+  },
+  {
+   "pdf": "5d42383ace93__1-s2.0-S0012821X12004621-main.pdf",
+   "doi": "10.1016/j.epsl.2012.08.034"
+  },
+  {
+   "pdf": "1a2508654c92__G49375_SuppMat.pdf",
+   "doi": "10.1130/g49375.1"
+  },
+  {
+   "pdf": "1bf041432dd1__G3UTRW~2.pdf",
+   "doi": "10.1016/j.gca.2024.09.009"
+  },
+  {
+   "pdf": "822bcd2f77bb__Island Arc - 2009 - Yamamoto - Intergranular trace elements in mantle xenoliths from Russian Far East Example for mantle.pdf",
+   "doi": "10.1111/j.1440-1738.2008.00642.x"
+  },
+  {
+   "pdf": "bdaa4a2d67bd__1-s2.0-S0024493712004124-main.pdf",
+   "doi": "10.1016/j.lithos.2012.10.010"
+  },
+  {
+   "pdf": "39b573767f2b__Wang et al., 2023, Multistage plate subduction controls intraplate volcanism and cratonic lithospheric thinning in North.pdf",
+   "doi": "10.1016/j.earscirev.2023.104590"
+  },
+  {
+   "pdf": "43178ad16160__s10040-018-1889-9.pdf",
+   "doi": "10.1007/s10040-018-1889-9"
+  },
+  {
+   "pdf": "1bac2499483d__5797da3f-d862-3717-5e61-09a97b9987f3.pdf",
+   "doi": "10.1016/j.chemgeo.2012.06.014"
+  },
+  {
+   "pdf": "be245c89fcad__Lee et al., 2023, Crustal and uppermost mantle structures imaged by teleseismic p wave traveltime tomography.pdf",
+   "doi": "10.1093/gji/ggad319"
+  },
+  {
+   "pdf": "f62694841e14__Niu, 2008, The Origin of Alkaline lavas.pdf",
+   "doi": "10.1126/science.1158378"
+  },
+  {
+   "pdf": "ce599151404f__Guo et al., 2016, The origin of Cenozoic basalts from central Inner Mongolia, East China.pdf",
+   "doi": "10.1016/j.lithos.2015.11.010"
+  },
+  {
+   "pdf": "0e50eade9ef6__NA Stroncik et al. 2016, He, Ne and Ar isotope signatures of mid-ocean ridge basalts and their implications for upper ma.pdf",
+   "doi": "10.1016/j.gca.2016.04.002"
+  },
+  {
+   "pdf": "78ff54a651a1__716deaa7-4758-f5e1-4078-2d13e287ea47.pdf",
+   "doi": "10.1016/j.gca.2022.06.002"
+  },
+  {
+   "pdf": "06522f40a57b__Hu et al. (2016) - Meteorit Planetary Scien -, In situ 3ΓÇÉD mapping of pore structures and hollow grains of interplanet.pdf",
+   "doi": "10.1111/maps.12674"
+  },
+  {
+   "pdf": "605f4bc6ded2__Li et al. (2009) Kinetic nitrogen isotope fractionation associated with thermal decomposition of NH3.pdf",
+   "doi": "10.1016/j.gca.2009.07.016"
+  },
+  {
+   "pdf": "ee54da6590e2__Kil, 2007, Geochemistry and petrogenesis of spinel lherzolite xenoliths from Boeun, Korea.pdf",
+   "doi": "10.1016/j.jseaes.2005.12.006"
+  },
+  {
+   "pdf": "ed3927462b95__Graham 2002, Noble Gas Isotope Geochemistry of Mid-Ocean Ridge and Ocean Island Basalts Characterization of Mantle Sourc.pdf",
+   "doi": "10.2138/rmg.2002.47.8"
+  },
+  {
+   "pdf": "19b78c97fd7b__Foley and Fischer (2017).pdf",
+   "doi": "10.1038/s41561-017-0002-7"
+  },
+  {
+   "pdf": "20e05069c909__Niu and O'Hara, 2008, Global correlations of Ocean Ridge Basalts Chemistry with Axial depth.pdf",
+   "doi": "10.1093/petrology/egm051"
+  },
+  {
+   "pdf": "64a303250cb5__Shimizu et al., 2022, High-C content and CO2 Ba ratio of the Easth's enriched upper mantle.pdf",
+   "doi": "10.1016/j.gca.2022.10.023"
+  },
+  {
+   "pdf": "a3bb4e5f9eb8__Lee et al., 2021, Contributions from lithospheric and upper-mantle heterogeneities to upper crustal seismicity in the Ko.pdf",
+   "doi": "10.1093/gji/ggab527"
+  },
+  {
+   "pdf": "5ba58654acf0__s41598-021-98307-y.pdf",
+   "doi": "10.1038/s41598-021-98307-y"
+  },
+  {
+   "pdf": "5261e2c13c5e__Chu et al., 2013, Source of highly potassic basalts in northeast China Evidence from ReΓÇôOs, SrΓÇôNdΓÇôHf isotopes and .pdf",
+   "doi": "10.1016/j.chemgeo.2013.08.007"
+  },
+  {
+   "pdf": "8944413a8d47__Yamamoto et al. (2020) Noble gas isotopic compositions of seamount lavas from the central Chile trench-Implications for .pdf",
+   "doi": "10.1016/j.epsl.2020.116611"
+  },
+  {
+   "pdf": "3b128f716820__Xu et al., 2005, Role of lithosphereΓÇôasthenosphere interaction in the genesis of Quaternary alkali and tholeiitic basa.pdf",
+   "doi": "10.1016/j.chemgeo.2005.08.004"
+  },
+  {
+   "pdf": "3a9cc30b40ac__konrad et al., 2016, AsthenosphereΓÇôlithosphere interactions in Western Saudi Arabia; Inferences from 3He4He in xenolit.pdf",
+   "doi": "10.1016/j.lithos.2016.01.031"
+  },
+  {
+   "pdf": "0e87e1243cc9__Barry and Broadley, 2021, Nitrogen and noble gases reveal a complex history of metasomatism in the Siberian lithospheric.pdf",
+   "doi": "10.1016/j.epsl.2020.116707"
+  },
+  {
+   "pdf": "1432fad19919__Kimura et al. (2018) Plume-stagnant slab-lithosphere interactions Origin of the late Cenozoic intra-plate basalts on the.pdf",
+   "doi": "10.1016/j.lithos.2017.12.003"
+  },
+  {
+   "pdf": "3f3c1a158520__Labidi, 2022, The origin of nitrogen in Earth's mantle Constraints from basalts 15N14N and N23He ratios.pdf",
+   "doi": "10.1016/j.chemgeo.2022.120780"
+  },
+  {
+   "pdf": "f05bf02f6e50__Choi et al. - 2006 - Sr, Nd, Pb and Hf isotopic compositions of late Cenozoic alkali basalts in South Korea Evidence for.pdf",
+   "doi": "10.1016/j.chemgeo.2006.02.014"
+  },
+  {
+   "pdf": "850e93f00d46__Cui et al..pdf",
+   "doi": "10.1016/j.scib.2020.12.022"
+  },
+  {
+   "pdf": "ef7797637445__1a9c4741-3032-7685-33e1-f22559d08af3.pdf",
+   "doi": "10.1016/j.gca.2020.11.011"
+  },
+  {
+   "pdf": "f924492064cc__Wang et al. (2020), J. Ocean. Lim. Geochemical characteristics and geological implication of ferromanganese crust from C.pdf",
+   "doi": "10.1007/s00343-021-1032-y"
+  },
+  {
+   "pdf": "10c90808ca5d__Yokochi.2009.Nitrogen in peridotite xenoliths-Lithophile behavior and magmatic isotope fractionation.pdf",
+   "doi": "10.1016/j.gca.2009.05.054"
+  },
+  {
+   "pdf": "d5edbd79edda__Liu et al., 2012, Mesozoic accretion of juvenile sub-continental lithospheric mantle beneath South China and its implica.pdf",
+   "doi": "10.1016/j.chemgeo.2011.10.006"
+  },
+  {
+   "pdf": "2f9cdb9fb502__Sohn et al. 2008, Primary versus secondary and subaerial versus submarine hydrovolcanic deposits in the subsurface of Je.pdf",
+   "doi": "10.1111/j.1365-3091.2007.00927.x"
+  },
+  {
+   "pdf": "f383821c8e71__1-s2.0-S0009254122004399-main.pdf",
+   "doi": "10.1016/j.chemgeo.2022.121145"
+  },
+  {
+   "pdf": "c335d82be5e0__Nardini et al. (2009) Sr-Nd-Pb-He-O isotope WAR.pdf",
+   "doi": "10.1093/petrology/egn082"
+  },
+  {
+   "pdf": "146c6e633c42__GRWSZB~F.pdf",
+   "doi": "10.1016/s0025-3227(04)00025-8"
+  },
+  {
+   "pdf": "a252017c707e__Yan and Zhao, 2008, Cenozoic alkali basalts from Jingpohu, NE China.pdf",
+   "doi": "10.1016/j.jseaes.2007.11.001"
+  },
+  {
+   "pdf": "843cc5c7f88c__1-s2.0-S0883292719300046-main.pdf",
+   "doi": "10.1016/j.apgeochem.2019.01.004"
+  },
+  {
+   "pdf": "4081a89cc2b2__Hoernle et al. (2020) Late Cretaceous (99-69 Ma) basaltic intraplate volcanism on and around Zealandia; Hikurangi Platea.pdf",
+   "doi": "10.1016/j.epsl.2019.115864"
+  },
+  {
+   "pdf": "0448c23b072e__Artemieva, 2023, Back-arc basins A global view from geophysical synthesis and analysis.pdf",
+   "doi": "10.1016/j.earscirev.2022.104242"
+  },
+  {
+   "pdf": "baef614a864a__Li Long et al. (2023), EPSL.pdf",
+   "doi": "10.1016/j.epsl.2023.118307"
+  },
+  {
+   "pdf": "ee1fa56ee56a__Masotta et al. (2020), 3D X-ray tomographic analysis reveals how coesite is preserved in Muong Nong-type tektites.pdf",
+   "doi": "10.1038/s41598-020-76727-6"
+  },
+  {
+   "pdf": "0c2f3ed7114f__Zheng et al., 2003, Stable isotope geochemistry of ultrahigh pressure metamorphic rocks from the DabieΓÇôSulu orogen in .pdf",
+   "doi": "10.1016/s0012-8252(02)00133-2"
+  },
+  {
+   "pdf": "650c5c99800c__Sawai et al. (2025) Re-examination of coastal submergence events during the last 4000 years in the Ukishima-ga-hara lowl.pdf",
+   "doi": "10.1186/s40623-025-02208-7"
+  },
+  {
+   "pdf": "6ae9d151d4d1__09951649-b777-b423-57f5-c614bf61a313.pdf",
+   "doi": "10.1016/j.palaeo.2025.113339"
+  },
+  {
+   "pdf": "b9f2b45a2d0f__1-s2.0-S0024493723003900-main.pdf",
+   "doi": "10.1016/j.lithos.2023.107406"
+  },
+  {
+   "pdf": "bee9c3648ea8__Gurenko et al. (2006) Major, trace element and NdΓÇôSrΓÇôPbΓÇôOΓÇôHeΓÇôAr isotope signatures of shield stage lavas from .pdf",
+   "doi": "10.1016/j.chemgeo.2006.02.016"
+  },
+  {
+   "pdf": "9083d02f3487__Stracke and Bourdon, 2009.pdf",
+   "doi": "10.1016/j.gca.2008.10.015"
+  },
+  {
+   "pdf": "44732ab4215c__1-s2.0-S0016703719304843-main.pdf",
+   "doi": "10.1016/j.gca.2019.07.055"
+  },
+  {
+   "pdf": "619ec5092215__s12303-024-0039-8.pdf",
+   "doi": "10.1007/s12303-024-0039-8"
+  },
+  {
+   "pdf": "264a4a4b9124__s12303-020-0044-5.pdf",
+   "doi": "10.1007/s12303-020-0044-5"
+  },
+  {
+   "pdf": "a9108a7e97e2__Yu et al., 2016, Helium isotopes in volcanic rocks from the Okinawa Trough impact of volatile recycling and.pdf",
+   "doi": "10.1002/gj.2794"
+  },
+  {
+   "pdf": "004623982e81__Halldorsson et al., 2022, Evidence from gas rich ultramafic xenoiths for superplume derived recycled volatiles in the Ea.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120682"
+  },
+  {
+   "pdf": "272d7a1a022c__Chen et al., 2018, Calcium isotope evidence for subduction enriched lithospheric mantle under the northern North China C.pdf",
+   "doi": "10.1016/j.gca.2018.06.038"
+  },
+  {
+   "pdf": "6838377df907__Kim et al., 2015, Tectonics and volcanism in East Asia Insights from geophysical observations.pdf",
+   "doi": "10.1016/j.jseaes.2015.07.032"
+  },
+  {
+   "pdf": "daa27cfc577c__Li et al. (2007) Nitrogen concentration and delta15N of AOC.pdf",
+   "doi": "10.1016/j.gca.2007.02.001"
+  },
+  {
+   "pdf": "060e08d8a1e0__Day et al. (2022) Mantle sources of ocean islands basalts revealed from noble gas isotope systematics.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120626"
+  },
+  {
+   "pdf": "ae74d3483dce__He et al., 2011, Noble gas isotopes in corundum and peridotite xenoliths from the eastern North China Craton; Implicatio.pdf",
+   "doi": "10.1016/j.pepi.2011.09.001"
+  },
+  {
+   "pdf": "6f5e757aeab6__Xu et al., 2024, Iron isotope evidence in continental intraplate basalt.pdf",
+   "doi": "10.1016/j.epsl.2023.118499"
+  },
+  {
+   "pdf": "15dff8de159b__Usui et al. (2017) Ore Geo. Rev..pdf",
+   "doi": "10.1016/j.oregeorev.2016.09.032"
+  },
+  {
+   "pdf": "aae7a2f5f964__4d0ad4ef-fb09-587b-4f19-dce6a3ea5a92.pdf",
+   "doi": "10.1016/j.gr.2006.06.006"
+  },
+  {
+   "pdf": "fafdd10b5c66__i0091-7613-36-6-439.pdf",
+   "doi": "10.1130/g24577a.1"
+  },
+  {
+   "pdf": "0f6dc4d3482c__Mazza et al. (2019) Sampling the volatile-rich transition zone beneath Bermuda.pdf",
+   "doi": "10.1038/s41586-019-1183-6"
+  },
+  {
+   "pdf": "9d7a8c1fac0b__Early Life Record from Nitrogen Isotopes.pdf",
+   "doi": "10.1007/978-90-481-8794-2_8"
+  },
+  {
+   "pdf": "f83e6d15fce8__2b56197d-1e99-8cd1-5fcd-1c150448ec17.pdf",
+   "doi": "10.1016/j.epsl.2008.10.014"
+  },
+  {
+   "pdf": "cfbf01f74cae__Ono et al. (2023) -J. Hydrology - Vertical distribution of groundwater age in and around the freshwaterΓÇôsaltwater tran.pdf",
+   "doi": "10.1016/j.jhydrol.2023.130353"
+  },
+  {
+   "pdf": "95e6500e6979__Dynamical Geochemistry.pdf",
+   "doi": "10.1016/b978-0-323-99762-1.00103-0"
+  },
+  {
+   "pdf": "fe403331f0e7__Klein and Langmuir, (1987), Solid Earth Global correlations of ocean ridge basalt chemistry.pdf",
+   "doi": "10.1029/jb092ib08p08089"
+  },
+  {
+   "pdf": "5f18aac4e2ec__1-s2.0-S0012821X10004978-main.pdf",
+   "doi": "10.1016/j.epsl.2010.07.049"
+  },
+  {
+   "pdf": "7a083320dc6e__Pettke et al. (2018) From Ocean to mantle; new evidence for U cycling with implications for HIMU source.pdf",
+   "doi": "10.1016/j.lithos.2018.07.010"
+  },
+  {
+   "pdf": "00c3ac8bf657__Li et al., 2016, Olivine and melt inclusion chemical constraints on the source of intracontinental basalts from the east.pdf",
+   "doi": "10.1016/j.gca.2015.12.032"
+  },
+  {
+   "pdf": "1e6b936809ad__Zhao et al. (2011) Low-frequency earthquakes and tomography in western Japan- Insight into fluid and magmatic activity.pdf",
+   "doi": "10.1016/j.jseaes.2011.08.003"
+  },
+  {
+   "pdf": "d2905d5ef70b__Shin2020_Article_LatePleistoceneSedimentaryEnvi.pdf",
+   "doi": "10.1007/s12303-020-0026-7"
+  },
+  {
+   "pdf": "ab7d15782578__Mikahil et al. (2017) The relationship between mantle pH and the deep nitrogen cycle.pdf",
+   "doi": "10.1016/j.gca.2017.04.007"
+  },
+  {
+   "pdf": "66086c49298f__Riefstahl et al. 2020, Cretaceous intracontinental rifting at the southern Chatham Rise margin and initialisation of sea.pdf",
+   "doi": "10.1016/j.tecto.2019.228298"
+  },
+  {
+   "pdf": "378b00ffe299__Bradley et al. (2014) - PNAS - ΓÇ£Detection of solar windΓÇôproduced waterΓÇªΓÇ¥.pdf",
+   "doi": "10.1073/pnas.1320115111"
+  },
+  {
+   "pdf": "17b6e1685e5f__Mohapatra (2006) ΓÇ£RecycledΓÇ¥ volatiles in mantle-derived diamonds_Evidence from nitrogen and noble gas isotopic data.pdf",
+   "doi": "10.1016/j.epsl.2006.09.025"
+  },
+  {
+   "pdf": "d49ed7230945__Geochem Geophys Geosyst - 2011 - Tian - Petrology and SrΓÇÉNdΓÇÉPbΓÇÉHe isotope geochemistry of postspreading lavas on f.pdf",
+   "doi": "10.1029/2010gc003319"
+  },
+  {
+   "pdf": "2dff0c489a9c__Graham et al., 2009, Mantle source provinces beneath the Northwestern USA delimited by helium isotopes in young basalts.pdf",
+   "doi": "10.1016/j.jvolgeores.2008.12.004"
+  },
+  {
+   "pdf": "c903dcf481b3__Lee and Walker, 2006, ReΓÇôOs isotope systematics of mantle xenoliths from South Korea; Evidence for complex growth and .pdf",
+   "doi": "10.1016/j.chemgeo.2006.01.003"
+  },
+  {
+   "pdf": "d63881237ab3__Sun et al., 2015, Contribution of crustal materials to the mantle sources of Xiaogulihe ultrapotassic volcanic rocks, No.pdf",
+   "doi": "10.1016/j.chemgeo.2015.04.005"
+  },
+  {
+   "pdf": "34f49c418151__Lee et al., 2015, Age, geochemistry and Sr-Nd-Pb isotopic compositions of alkali volcanic rocks from Mt. Melbourne and t.pdf",
+   "doi": "10.1007/s12303-015-0061-y"
+  },
+  {
+   "pdf": "a7bd4ce6fd6b__Farley et al. (2006) Nature.pdf",
+   "doi": "10.1038/nature04391"
+  },
+  {
+   "pdf": "320bc0690096__Dalton et al. (2022) Geophysical Research Letters, Evidence for a Global Slowdown in Seafloor Spreading Since 15 Ma.pdf",
+   "doi": "10.1029/2022gl097937"
+  },
+  {
+   "pdf": "048eebc6cbab__Lin et al. (2013) On-land active thrust faults of the NankaiΓÇôSuruga subduction zone- The Fujikawa-kako Fault Zone, cen.pdf",
+   "doi": "10.1016/j.tecto.2013.04.020"
+  },
+  {
+   "pdf": "3534a6ab2a62__McCoy et al. 2016, Rapid Cenozoic ingrowth of isotopic signatures simulating ΓÇ£HIMUΓÇ¥ in ancient lithospheric mantle.pdf",
+   "doi": "10.1016/j.gca.2016.05.013"
+  },
+  {
+   "pdf": "6701352108e3__Labidi and Young (2022).pdf",
+   "doi": "10.1016/j.chemgeo.2022.120709"
+  },
+  {
+   "pdf": "c95969bf701b__s13131-014-0461-2.pdf",
+   "doi": "10.1007/s13131-014-0461-2"
+  },
+  {
+   "pdf": "9cc8598ee602__Colin and Marty, Mechanism of magma degassing at mid oceanic ridges and the local volatile composition of the mantle by .pdf",
+   "doi": "10.1016/j.epsl.2012.10.022"
+  },
+  {
+   "pdf": "f4a7e66a8379__Hilton et al., 2002, Noble Gases and Volatile Recycling at Subduction Zones.pdf",
+   "doi": "10.2138/rmg.2002.47.9"
+  },
+  {
+   "pdf": "1900ac3af58c__Williams et al, 2005, Using pyroxene microphenocrysts to determine cosmogenic 3He concentrations in old volcanic rocks a.pdf",
+   "doi": "10.1016/j.quascirev.2004.07.004"
+  },
+  {
+   "pdf": "294f76fb798e__Sano et al. (2009) Tracing extinct spreading center in SW Japan by helium-3 emanation.pdf",
+   "doi": "10.1016/j.chemgeo.2008.10.020"
+  },
+  {
+   "pdf": "7aa30f3d7b15__Li (2014) Anomalous nitrogen isotopes in ultrahigh-pressure metamorphic rocks from the Sulu orogenic belt.pdf",
+   "doi": "10.1016/j.epsl.2014.06.029"
+  },
+  {
+   "pdf": "d80f5331d7e4__Li Kan et al. (2025) - EPSL - , Hybrid mantle plumes with recycled and primordial nitrogen- Insights from plume-influenc.pdf",
+   "doi": "10.1016/j.epsl.2025.119538"
+  },
+  {
+   "pdf": "f21aea752b6a__Woo et al. 2014, Silica- and LREE-enriched spinel peridotite xenoliths from the Quaternary intraplate alkali basalt, Jej.pdf",
+   "doi": "10.1016/j.lithos.2014.09.003"
+  },
+  {
+   "pdf": "dc55f73e8f51__s12303-026-00097-w.pdf",
+   "doi": "10.1007/s12303-026-00097-w"
+  },
+  {
+   "pdf": "641d1823fdca__Sasse et al. 2020, Transport, survival and modification of xenoliths and xenocrysts from source to surface.pdf",
+   "doi": "10.1016/j.epsl.2020.116499"
+  },
+  {
+   "pdf": "bf91e9797d19__Gogus et al., 2018, Peeling back the lithosphere.pdf",
+   "doi": "10.1016/j.jog.2018.03.003"
+  },
+  {
+   "pdf": "52c4e7198be2__Jackson et al., 2018, EPSL, Evidence for a deep mantle source for EM and HIMU domains from integrated geochemical and ge.pdf",
+   "doi": "10.1016/j.epsl.2017.11.052"
+  },
+  {
+   "pdf": "bd75a67fa1f5__Stracke et al. (2003) Recycling oceanic crust Quantitative constraints.pdf",
+   "doi": "10.1029/2001gc000223"
+  },
+  {
+   "pdf": "9e34e04959c4__Yoo et al. 2007, Imaging the Three-Dimensional Crust of the Korean Peninsula by Joint Inversion of Surface-Wave Dispersi.pdf",
+   "doi": "10.1785/0120060134"
+  },
+  {
+   "pdf": "5f38966420fd__0a5c07e1-bbc3-7d27-357f-bb11951f39a3.pdf",
+   "doi": "10.1016/j.apgeochem.2020.104773"
+  },
+  {
+   "pdf": "d1f5e15d8507__Busigny et al. (2011) Nitrogen isotopes in ophiolitic metagabbros.pdf",
+   "doi": "10.1016/j.gca.2011.09.049"
+  },
+  {
+   "pdf": "5e9ad722e947__Dauphas et al. (2017) Iron isotope systematics. Rev. Mineral. Geochemistry.pdf",
+   "doi": "10.2138/rmg.2017.82.11"
+  },
+  {
+   "pdf": "712b77e0c178__Usui et al. (2007) Island Arc Growth history and formation environments of ferromanganese deposits on the Philippine Sea.pdf",
+   "doi": "10.1111/j.1440-1738.2007.00592.x"
+  },
+  {
+   "pdf": "1050cefeb46b__Caracausi et al. (2022) Earthquakes control the impulsive nature of crustal helium degassing to the atmosphere.pdf",
+   "doi": "10.1038/s43247-022-00549-9"
+  },
+  {
+   "pdf": "f576b56842c8__Liu et al. (2022) Olivine and melt inclusion chemical constraints on the nature and origin of the common mantle componen.pdf",
+   "doi": "10.1007/s00410-022-01981-y"
+  },
+  {
+   "pdf": "fa61c05db695__Wei et al. 2020, New geochemical and Sr-Nd-Pb isotope evidence for FOZO and Azores plume components in the sources of DS.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119858"
+  },
+  {
+   "pdf": "92e57e1ff9a0__Mollex et al. 2018, Tracing helium isotope compositions from mantle source to fumaroles at Oldoinyo Lengai volcano.pdf",
+   "doi": "10.1016/j.chemgeo.2017.08.015"
+  },
+  {
+   "pdf": "ca0a507465c5__Sano et al. (2016) Groundwater helium anomaly reflects strain change during the 2016 Kumamoto earthquake in Southwest Ja.pdf",
+   "doi": "10.1038/srep37939"
+  },
+  {
+   "pdf": "8c412704a411__Herzberg et al., (2010) Thermal history of the Earth and its petrological expression.pdf",
+   "doi": "10.1016/j.epsl.2010.01.022"
+  },
+  {
+   "pdf": "c78b2209cb73__Guo et al., 2022, The delamination of lower crust in continental back-arc basin.pdf",
+   "doi": "10.1016/j.lithos.2022.106653"
+  },
+  {
+   "pdf": "7de0cb2808d5__Ricketts et al., 2016.pdf",
+   "doi": "10.1130/b31223.1"
+  },
+  {
+   "pdf": "41c9b40fa9a2__Choi et al., 2008, Mantle dynamics beneath East Asia constrained by Sr, Nd, Pb and Hf isotopic systematic.pdf",
+   "doi": "10.1016/j.chemgeo.2007.10.008"
+  },
+  {
+   "pdf": "97f4f62fb621__Forster et al. (2019), Chemical Geology, Partitioning of nitrogen during melting and recycling in subduction zones and t.pdf",
+   "doi": "10.1016/j.chemgeo.2019.07.042"
+  },
+  {
+   "pdf": "25bebc0b1c94__Jena et al. (2023), GCA, Spatial heterogeneity in beryllium isotopic distribution in the Indian Ocean.pdf",
+   "doi": "10.1016/j.gca.2022.12.009"
+  },
+  {
+   "pdf": "28c96b7296a2__Phillips et al., 2018, The nature and evolution of mantle upwelling at Ross Island, Antarctica.pdf",
+   "doi": "10.1016/j.epsl.2018.05.049"
+  },
+  {
+   "pdf": "b233a2d38aec__Rowe et al. (2020) Auckland Volcanic Field.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119639"
+  },
+  {
+   "pdf": "b1de4c85a729__Li Kan et al. (2019), Diamond isotope compositions indicate altered igneous oceanic crust dominates deep carbon recyclin.pdf",
+   "doi": "10.1016/j.epsl.2019.03.041"
+  },
+  {
+   "pdf": "3d85ed7ec442__Pilet et al. 2008, Metasomatized Lithosphere and the Origin of Alkaline lavas.pdf",
+   "doi": "10.1126/science.1154367"
+  },
+  {
+   "pdf": "e7917041cf9b__van der Meer et al. 2017, EPSL, Variable sources for Cretaceous to recent HIMU and HIMU like intraplate magmatism in New.pdf",
+   "doi": "10.1016/j.epsl.2017.03.037"
+  },
+  {
+   "pdf": "6e86e68c635b__i1553-040X-2-7-333.pdf",
+   "doi": "10.1130/ges00058.1"
+  },
+  {
+   "pdf": "f2b2990ef347__Chen et al., 2015, Variations in the geochemical structure of the mantle wedge beneath the northeast Asian marginal regi.pdf",
+   "doi": "10.1016/j.lithos.2015.03.008"
+  },
+  {
+   "pdf": "cdf3bc012755__Durkin et al. 2023, Petrogenesis of alkaline magmas across a continent to ocean transect, northern Ross Sea, Antarctica.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121780"
+  },
+  {
+   "pdf": "ab8e6357a3d2__Choi et al., 2020, Petrogenesis and mantle source characteristics of the late Cenozoic Baekdusan (Changbaishan) basalts,.pdf",
+   "doi": "10.1016/j.gr.2019.08.004"
+  },
+  {
+   "pdf": "5c81bd8e52db__Hansen et al., 2014, Imaging the Antarctic mantle using adaptively parameterized P-wave tomography.pdf",
+   "doi": "10.1016/j.epsl.2014.09.043"
+  },
+  {
+   "pdf": "3a744c3bdcd7__Castillo et al. (2007) He, Sr, Nd, and Pb isotopic constraints on the origin of the Marquesas and other linear volcanic .pdf",
+   "doi": "10.1016/j.chemgeo.2007.02.012"
+  },
+  {
+   "pdf": "7b59655e1c9e__Yu et al., 2010, Remnants of oceanic lower crust in the subcontinental lithospheric mantle; Trace element and SrΓÇôNdΓÇô.pdf",
+   "doi": "10.1016/j.epsl.2010.06.043"
+  },
+  {
+   "pdf": "43dd79d9d998__Mortimer et al., 2019, Late Cretaceous oceanic plate reorganization and the breakup of Zealandia and Gondwana.pdf",
+   "doi": "10.1016/j.gr.2018.07.010"
+  },
+  {
+   "pdf": "302933e33cff__6759d0ab-fe90-52d5-0dff-ed5c34e4dd56.pdf",
+   "doi": "10.1016/j.lithos.2021.106123"
+  },
+  {
+   "pdf": "e9b210ca7257__Kim et al., 2003, Crustal structures of the continental margin of Korea in the East Sea.pdf",
+   "doi": "10.1016/s0040-1951(03)00048-9"
+  },
+  {
+   "pdf": "9026859f6285__Georgen et al., (2003), Low 3He4He ratios in basalt glasses from SWIR.pdf",
+   "doi": "10.1016/s0012-821x(02)01106-8"
+  },
+  {
+   "pdf": "4f8377da42fb__ngeo1187.pdf",
+   "doi": "10.1038/ngeo1187"
+  },
+  {
+   "pdf": "746205262153__Day and Hilton (2011) Origin of 3He4He ratios in HIMU type basalts constrained from Canary Island lavas.pdf",
+   "doi": "10.1016/j.epsl.2011.03.006"
+  },
+  {
+   "pdf": "42db3c95d604__Guo et al., 2013, Crustal recycling processes in generating the early Cretaceous Fangcheng basalts,North China Craton.pdf",
+   "doi": "10.1016/j.lithos.2013.02.015"
+  },
+  {
+   "pdf": "054dbae954be__Kil et al., 2019, Geoheritage values of the Quaternary Hantangang river volcanic field in teh Central Korean Peninsula.pdf",
+   "doi": "10.1007/s12371-018-0329-5"
+  },
+  {
+   "pdf": "cda2d5e282db__Chen et al. (2007) Geochemistry of Cenozoic basalts and mantle xenoliths in.pdf",
+   "doi": "10.1016/j.lithos.2006.09.015"
+  },
+  {
+   "pdf": "773443c3b06f__Sandoval Velasquez et al., 2021, The composition of fluids stored in the central Mexican lithospheric mantle.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120270"
+  },
+  {
+   "pdf": "117a979683c0__Halama & Bebout (2021) EarthΓÇÖs Nitrogen and Carbon Cycles.pdf",
+   "doi": "10.1007/s11214-021-00826-7"
+  },
+  {
+   "pdf": "1d51136c4cfe__Geochem Geophys Geosyst - 2003 - Hauff - SrΓÇÉNdΓÇÉPb composition of Mesozoic Pacific oceanic crust Site 1149 and 801 OD.pdf",
+   "doi": "10.1029/2002gc000421"
+  },
+  {
+   "pdf": "f3a57b006d5d__Azevedo Vannson et al., 2021, Mantle metasomatic influence on water contents in continental lithosphere.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120257"
+  },
+  {
+   "pdf": "0f7687a95d51__Keppler et al., 2022, The solubility of N2 in silicate melts and nitrogen partitioning between upper mantle minerals and.pdf",
+   "doi": "10.1007/s00410-022-01948-z"
+  },
+  {
+   "pdf": "2ee7e54f0c2f__Mitchell et al. (2010) Nitrogen sources and recycling at subduction zones Insights from the.pdf",
+   "doi": "10.1029/2009gc002783"
+  },
+  {
+   "pdf": "8282d120c6f0__Um K.I. et al. (2010) Provenance of late Quaternary sediments on the southwestern slope of the Ulleung Basin.pdf",
+   "doi": "10.1016/j.quaint.2017.04.013"
+  },
+  {
+   "pdf": "cfb82163ed3d__Huang et al. 2024, Inefficient nitrogen transport to the lower mantle by sediment subduction.pdf",
+   "doi": "10.1038/s41467-024-51524-1"
+  },
+  {
+   "pdf": "ea0a85c7b6ea__Lazarewicz and Schwank (1984) JGR -solid earth - Evidence for a hot spot origin of the Caroline.pdf",
+   "doi": "10.1029/jb089ib12p09937"
+  },
+  {
+   "pdf": "6fb131bec19d__Koll et al. (2025) Nature com. A cosmogenic 10Be anomaly during the late Miocene as independent time marker for marine a.pdf",
+   "doi": "10.1038/s41467-024-55662-4"
+  },
+  {
+   "pdf": "db73bafea60c__Johnson and Goldblatt, 2015, The nitrogen budget of Earth.pdf",
+   "doi": "10.1016/j.earscirev.2015.05.006"
+  },
+  {
+   "pdf": "00e6907f2dac__Zhang et al. (2020) Chemical Geology Geochemical and chronological constraints on the mantle plume origin of the Carolin.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119566"
+  },
+  {
+   "pdf": "544f107be39c__7adcd64c-2b03-9a3b-4e08-28e8b359b133.pdf",
+   "doi": "10.1016/j.marpetgeo.2010.10.004"
+  },
+  {
+   "pdf": "6bef357b5ce9__Marty and Dauphas, 2003, The nitrogen record of crust mantle interaction and mantle convection Archean to Present.pdf",
+   "doi": "10.1016/s0012-821x(02)01108-1"
+  },
+  {
+   "pdf": "ed7e09c9462c__Park et al., 2019, An isotopically distinct Zealandia-Antartic.pdf",
+   "doi": "10.1038/s41561-018-0292-4"
+  },
+  {
+   "pdf": "24baaf0bb6c4__Moreira et al., 2003, He and Ne isotopes in oceanic crust; implications for noble gas recycling in the mantle.pdf",
+   "doi": "10.1016/s0012-821x(03)00554-5"
+  },
+  {
+   "pdf": "f7595020e3fc__Helo et al. 2011 Explosive eruptions at mid ocean ridges driven by CO2 rich magmas.pdf",
+   "doi": "10.1038/ngeo1104"
+  },
+  {
+   "pdf": "b601f93818b1__Willenbring and Blanckenburg (2010) Nature, Long-term stability of global erosion rates and wearthering during late-Ceno.pdf",
+   "doi": "10.1038/nature09044"
+  },
+  {
+   "pdf": "2b04c2cb9e16__A_possible_high_NbTa_reservoir_in_the_continental_.pdf",
+   "doi": "10.1016/j.gca.2011.11.017"
+  },
+  {
+   "pdf": "7f735d8392e8__Cho and choh, 2025.pdf",
+   "doi": "10.1016/j.sedgeo.2025.106824"
+  },
+  {
+   "pdf": "c5e38cb006a4__Jackson et al, 2014, Helium and lead isotopes reveal the geochemical geometry of the Samoan Plume.pdf",
+   "doi": "10.1038/nature13794"
+  },
+  {
+   "pdf": "9be71edba3f4__Li Kan et al. (2025) - EPSL- Mantle wedge serpentinites as a potential nitrogen reservoir regulating subduction-zone nit.pdf",
+   "doi": "10.1016/j.epsl.2025.119211"
+  },
+  {
+   "pdf": "d78af7a6e3d5__Basu et al. (2006) Helium isotopes in ferromanganese crusts from the central Pacific Ocean.pdf",
+   "doi": "10.1016/j.gca.2006.05.015"
+  },
+  {
+   "pdf": "fd7aa8de9048__Kim et 2023.pdf",
+   "doi": "10.1016/j.palaeo.2023.111835"
+  },
+  {
+   "pdf": "c350e485dabb__Timm et al. (2010) Temporal and geochemical evolution of the Cenozoic intraplate volcanism of Zealandia.pdf",
+   "doi": "10.1016/j.earscirev.2009.10.002"
+  },
+  {
+   "pdf": "f7436cceff02__5be6cad5-b5ba-19e9-4a5c-6a78847972db.pdf",
+   "doi": "10.1038/s41467-025-58625-5"
+  },
+  {
+   "pdf": "36b57b8363f6__Z╠îA╠üK et al. (2012) A review of volatile compounds in tektites and carbon content and isotopic.pdf",
+   "doi": "10.1111/j.1945-5100.2012.01369.x"
+  },
+  {
+   "pdf": "5a7d1f38d3ca__Li and Wang, 2018, Formation time of the big mantle wedge beneath eastern China and a new lithospheric thinning mechanis.pdf",
+   "doi": "10.1007/s11430-017-9217-7"
+  },
+  {
+   "pdf": "2b0601436104__Correale et al., 2019, The nature of the West Antarctic Rift System as revealed by noble gases in mantle minerals.pdf",
+   "doi": "10.1016/j.chemgeo.2019.06.020"
+  },
+  {
+   "pdf": "9e4cacddaac8__Lee et al., 2020, The age and geochemistry of the mid-Cretaceous volcanic rocks in the Jinan Basin.pdf",
+   "doi": "10.1016/j.lithos.2020.105383"
+  },
+  {
+   "pdf": "0ee084375e0d__Wallace, 2005, Volatiles in subduction zone magmas concentrations and fluxes based on melt inclusion and volcanic gas da.pdf",
+   "doi": "10.1016/j.jvolgeores.2004.07.023"
+  },
+  {
+   "pdf": "42ec0f24b7f9__Hoernle et al. (2006) Cenozoic intraplate volcanism on New Zealand; Upwelling induced by lithospheric removal.pdf",
+   "doi": "10.1016/j.epsl.2006.06.001"
+  },
+  {
+   "pdf": "1d4e6672bd7b__Jackson and Dasgupta, 2008, Compositions of HIMU, EM1, and EM2 from global trends between radiogenic isotopes and major .pdf",
+   "doi": "10.1016/j.epsl.2008.09.023"
+  },
+  {
+   "pdf": "defe61b2c06d__Brenna et al. 2012b, Spatio-temporal evolution of a dispersed magmatic system and its implications for volcano growth, J.pdf",
+   "doi": "10.1016/j.lithos.2012.06.021"
+  },
+  {
+   "pdf": "1bfb5ca8d400__Morishita et al., 2020, Alkali basalt from the Seifu Seamount in the Sea of Japan.pdf",
+   "doi": "10.5194/se-11-23-2020"
+  },
+  {
+   "pdf": "fbd2b552b3cb__Choi et al., 2013, Geochemical evolution of basaltic volcanism within the tertiary basins of southeastern Korea and the .pdf",
+   "doi": "10.1016/j.jvolgeores.2012.09.007"
+  },
+  {
+   "pdf": "df9f27ddc427__Cesca et al. (2022) Massive earthquake swarm driven by magmatic intrusion at the Bransfield Strait, Antarctica. Commun E.pdf",
+   "doi": "10.1038/s43247-022-00418-5"
+  },
+  {
+   "pdf": "274f8ad02390__Brenna et al. 2012a, How Small-volume Basaltic Magmatic Systems Develop a Case study from the Jeju Island Volcanic Field.pdf",
+   "doi": "10.1093/petrology/egs007"
+  },
+  {
+   "pdf": "7757144c8f7e__Nuccio et al., 2008, Elemental and isotope covariation of noble gases in mineral phases.pdf",
+   "doi": "10.1016/j.epsl.2008.06.007"
+  },
+  {
+   "pdf": "a1fbcd1c57b0__1-s2.0-S1871101424001535-main.pdf",
+   "doi": "10.1016/j.quageo.2024.101649"
+  },
+  {
+   "pdf": "7bd71b9c0420__Bini et al., (2022), Nitrogen, helium, and argon reveal the magmatic signature of fumarole gases and episodes of outgass.pdf",
+   "doi": "10.1016/j.gca.2022.08.028"
+  },
+  {
+   "pdf": "6288fdee4319__Rasmussen et al., 2020, Olivine chemistry reveals compositional source heterogeneities within a tilted mantle plume bene.pdf",
+   "doi": "10.1016/j.epsl.2019.116008"
+  },
+  {
+   "pdf": "79521e6ebb0f__Global Biogeochemical Cycles - 2001 - Johnson - Iron supply and demand in the upper ocean Is extraterrestrial dust a.pdf",
+   "doi": "10.1029/2000gb001295"
+  },
+  {
+   "pdf": "6540d66ef784__Yamazaki et al. (2025) Relationship between helium isotopes and focal depths of low-frequency earthquake, Northeastern J.pdf",
+   "doi": "10.1186/s40562-025-00394-6"
+  },
+  {
+   "pdf": "b3b0e1063e30__Korochantseva et al. (2021) - Meteorit Planetary Scien - The lunar Dhofar 1436 meteorite 40ArΓÇÉ39Ar chronology and vola.pdf",
+   "doi": "10.1111/maps.13632"
+  },
+  {
+   "pdf": "ed54df95c78d__Li (2014) Nitrogen speciation in mantle and crustal fluids.pdf",
+   "doi": "10.1016/j.gca.2013.12.031"
+  },
+  {
+   "pdf": "1d7562f3d18c__Akbari et al., 2023, A robust discrimination scheme for ocean island basalts.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121486"
+  },
+  {
+   "pdf": "117dcf51127a__00fbbdc1-6e17-1b65-5962-be89329269ef.pdf",
+   "doi": "10.1007/s00445-009-0316-4"
+  },
+  {
+   "pdf": "f2cf5540de5f__Kil and Wendlandt (2004).pdf",
+   "doi": "10.1007/s00410-004-0608-9"
+  },
+  {
+   "pdf": "911ed85b588d__Lee et al., 2023, The Cretaceous tectonic evolution of the Northeast Asia.pdf",
+   "doi": "10.1016/j.lithos.2023.107366"
+  },
+  {
+   "pdf": "8adc74b8429b__Meteorit Planetary Scien - 2021 - Kenkmann - The terrestrial impact crater record A statistical analysis of morphologies.pdf",
+   "doi": "10.1111/maps.13657"
+  },
+  {
+   "pdf": "c927bb7f0c0c__1-s2.0-S0022169423015342-main.pdf",
+   "doi": "10.1016/j.jhydrol.2023.130592"
+  },
+  {
+   "pdf": "a6a1eb6a1d72__Yu et al., 2011, H2O contents and their modification in the Cenozoic SCLM beneath the Cathaysia block, SE China.pdf",
+   "doi": "10.1016/j.lithos.2011.07.009"
+  },
+  {
+   "pdf": "55afd33afe2d__Furi et al., 2022, In situ quantification of the nitrogen content of olivine-hosted melt inclusions from Klyuchevskoy vo.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120456"
+  },
+  {
+   "pdf": "8035e4d0c59c__Xu et al., 2022, Three-stage modification of lithospheric mantle; Evidence from petrology, in-situ trace elements, and S.pdf",
+   "doi": "10.1130/b36140.1"
+  },
+  {
+   "pdf": "e0877ec46498__McGee et al. 2013 Asthenospheric Control of Melting Processes in a Monogenetic Basaltic System.pdf",
+   "doi": "10.1093/petrology/egt043"
+  },
+  {
+   "pdf": "1ac309835acd__Aubaud et al., 2004, Kinetic disequilbrium of C, He, Ar and carbon isotopes during degassing of MORB.pdf",
+   "doi": "10.1016/j.epsl.2004.03.001"
+  },
+  {
+   "pdf": "733dda922621__Furi et al., 2010, Apparent decoupling of the He and Ne isotope systematics of the Icelandic mantle; The role of He depl.pdf",
+   "doi": "10.1016/j.gca.2010.03.023"
+  },
+  {
+   "pdf": "cf2a9f83cecf__Suttle et al. (2023) - GCA- Fossil micrometeorites from Monte dei Corvi- Searching for dust from the Veritas asteroid fa.pdf",
+   "doi": "10.1016/j.gca.2023.06.027"
+  },
+  {
+   "pdf": "e85cf3f9f9ea__Pontesilli et al., 2021, Intraplate Basalt Alkalinity Modulated by a Lithospheric Mantle Filter at the Dunedin Volcano (.pdf",
+   "doi": "10.1093/petrology/egab062"
+  },
+  {
+   "pdf": "c999a7b06ef1__Jackson et al. (2017) Primordial helium entrained by the hottest mantle plumes.pdf",
+   "doi": "10.1038/nature21023"
+  },
+  {
+   "pdf": "029273556798__Guo et al., 2022, Helium, neon and argon in alkaline basalt-related corundum megacrysts Implications for their origin an.pdf",
+   "doi": "10.1016/j.gca.2022.01.016"
+  },
+  {
+   "pdf": "712191f8bc1f__kim et al., 2019, Petrogenesis and mantle source characteristics of volcanic rocks on Jeju Island, South Korea.pdf",
+   "doi": "10.1016/j.lithos.2018.12.034"
+  },
+  {
+   "pdf": "07729bf853ec__Kim and Yang, 2006, Historical Seismicity of Korea.pdf",
+   "doi": "10.1785/0120050050"
+  },
+  {
+   "pdf": "443eee729ba9__Jackson et al., 2013, Constraints on light noble gas partitioning at the conditions of spinel-peridotite melting.pdf",
+   "doi": "10.1016/j.epsl.2013.09.046"
+  },
+  {
+   "pdf": "cd4481ddd56e__Yang et al., 2016, On the chemical markers of pyroxenite contributions in continental basalts in Eastern China; Implicat.pdf",
+   "doi": "10.1016/j.earscirev.2016.04.001"
+  },
+  {
+   "pdf": "e14b0c3bbc99__Hofig et al.,2014 From the lavas to the gabbros.pdf",
+   "doi": "10.1016/j.lithos.2014.08.013"
+  },
+  {
+   "pdf": "d8f23e72d975__nature07852.pdf",
+   "doi": "10.1038/nature07852"
+  },
+  {
+   "pdf": "3faa75209a32__Merle et al., 2022, The age and origin of the Balleny and Scott volcanic provinces, Ross Sea, Antartica.pdf",
+   "doi": "10.1016/j.chemer.2022.125904"
+  },
+  {
+   "pdf": "ec324c353a03__Italiano et al. (2017) Noble gases and rock geochemistry of alkaline intraplate volcanics from the Amik and Ceyhan-Osman.pdf",
+   "doi": "10.1016/j.chemgeo.2017.04.003"
+  },
+  {
+   "pdf": "5fe0ee0026d7__Novais Rodrigues et al., 2021, He Ne Ar Sr Nd isotope compositions of Patagonia mantle xenolith.pdf",
+   "doi": "10.1016/j.gr.2021.06.003"
+  },
+  {
+   "pdf": "5fd5544b1369__Mukuhira et al. (2002) Slab-derived fluid storage in the crust elucidated by earthquake swarm.pdf",
+   "doi": "10.1038/s43247-022-00610-7"
+  },
+  {
+   "pdf": "f5f22c7afddb__Kupriyanov et al. (2023) Chem. Geo..pdf",
+   "doi": "10.1016/j.chemgeo.2023.121476"
+  },
+  {
+   "pdf": "0f2d0ddf23e2__527b663c-dde7-60f7-0554-e4d175b36abf.pdf",
+   "doi": "10.4294/zisin.2017-21"
+  },
+  {
+   "pdf": "5ad863e3a391__Reinhard et al., 2016, Samoa.pdf",
+   "doi": "10.1016/j.chemgeo.2016.05.017"
+  },
+  {
+   "pdf": "2a1f81b61e73__Yamamoto et al., 2009, Diffusive fractionation of noble gases in mantle with magma channels; Origin of low He Ar in mant.pdf",
+   "doi": "10.1016/j.epsl.2009.01.029"
+  },
+  {
+   "pdf": "e2243d0a6354__s12303-022-0018-x.pdf",
+   "doi": "10.1007/s12303-022-0018-x"
+  },
+  {
+   "pdf": "014e5971791b__Yoon et al., 2014, Tectonic, sedimentary, and volcanic evolution of a back-arc basin in the East Sea.pdf",
+   "doi": "10.1016/j.margeo.2014.03.004"
+  },
+  {
+   "pdf": "69bb56a8a58e__Broadley et al., 2016, Sedimentary halogens and noble gases within Western Antarctic xenoliths; Implications of extensiv.pdf",
+   "doi": "10.1016/j.gca.2015.12.013"
+  },
+  {
+   "pdf": "c614c7b5e02c__6feb3b8e-5a26-67a1-2143-f464dbc3b89b.pdf",
+   "doi": "10.1016/j.epsl.2024.118591"
+  },
+  {
+   "pdf": "f7c75687a75b__Hofmann A. W. 1988, Chemical_differentiation_of_the_Earth_The_relation.pdf",
+   "doi": "10.1016/0012-821x(88)90132-x"
+  },
+  {
+   "pdf": "2afa0c6bf1d3__Stachel et al. (2022) Carbon and Nitrogen in Mantle-Derived Diamonds.pdf",
+   "doi": "10.2138/rmg.2022.88.15"
+  },
+  {
+   "pdf": "8311d624120b__Geochem Geophys Geosyst - 2013 - Ball - The spatial and temporal evolution of strain during the separation of Australia .pdf",
+   "doi": "10.1002/ggge.20160"
+  },
+  {
+   "pdf": "b7db0097e942__Yang et al. 2012, Gabbroic xenoliths and megacrysts in the Pleisto-Holocene alkali basalts from Jeju Island, South Korea.pdf",
+   "doi": "10.1016/j.lithos.2012.03.006"
+  },
+  {
+   "pdf": "9033bb2f4474__Dai et al., 2016, Termination time of peak decratonization in North China; Geochemical evidence from mafic igneous rocks.pdf",
+   "doi": "10.1016/j.lithos.2015.11.014"
+  },
+  {
+   "pdf": "03d8fec69edf__Elkins et al. 2008, Partitioning of U and Th during garnet pyroxenite partial melting.pdf",
+   "doi": "10.1016/j.epsl.2007.10.034"
+  },
+  {
+   "pdf": "a602b88ab7a8__Kim et al., 2019, An automated laser fluorination technique for highΓÇÉprecision analysis of three oxygen isotopes in si.pdf",
+   "doi": "10.1002/rcm.8389"
+  },
+  {
+   "pdf": "4b2ca1426eb6__Geochem Geophys Geosyst - 2006 - Willbold - Trace element composition of mantle endΓÇÉmembers Implications for recycling.pdf",
+   "doi": "10.1029/2005gc001005"
+  },
+  {
+   "pdf": "f6f452d07e83__Pepin et al. (2001) Meteorit Planetary Scien - Noble gases in interplanetary dust particles II Excess heliumΓÇÉ3 in clus.pdf",
+   "doi": "10.1111/j.1945-5100.2001.tb01843.x"
+  },
+  {
+   "pdf": "ebe8bd70ba7e__Castillo (2015) The recycling of marine carbonates and sources of HIMU and FOZO ocean island basalts.pdf",
+   "doi": "10.1016/j.lithos.2014.12.005"
+  },
+  {
+   "pdf": "b63cb3af8b1d__Aoi et al. (2010) Stress transfer in the Tokai subduction zone from the 2009 Suruga Bay earthquake in Japan.pdf",
+   "doi": "10.1038/ngeo885"
+  },
+  {
+   "pdf": "fd2d15a87bc6__kim et al., 2021, Geochemical studies on the mantle source lithologies of late Cenozoic alkali basalts from Baengnyeong,.pdf",
+   "doi": "10.1016/j.lithos.2021.106434"
+  },
+  {
+   "pdf": "eb17b004d27e__1-s2.0-S0024493723002438-main.pdf",
+   "doi": "10.1016/j.lithos.2023.107259"
+  },
+  {
+   "pdf": "190ee4343eaa__Son et al. 2015, JGS, Miocene tectonic evolution of the basins and fault systems, SE Korea dextral, simple shear during .pdf",
+   "doi": "10.1144/jgs2014-079"
+  },
+  {
+   "pdf": "ae8bed59dfd4__Hiett et al., 2021, 3He evidence for fluid transfer and continental hydration above a flat slab.pdf",
+   "doi": "10.1016/j.epsl.2020.116722"
+  },
+  {
+   "pdf": "3f9c16b95324__Chen Huan et al., 2015, Changing recycled oceanic components in the mantle source of the Shuangliao Cenozoic basalts, NE.pdf",
+   "doi": "10.1016/j.tecto.2014.07.022"
+  },
+  {
+   "pdf": "07b21c6a1d0a__Hanyu et al., 2014, Isotope evolution in the HIMU reservoir beneath St. Helena Implications for the mantle recycling of .pdf",
+   "doi": "10.1016/j.gca.2014.03.016"
+  },
+  {
+   "pdf": "21c1dd2bb103__Wang et al., 2016, Magnesium isotopic heterogeneity across the cratonic lithosphere in eastern China and its origins.pdf",
+   "doi": "10.1016/j.epsl.2016.07.021"
+  },
+  {
+   "pdf": "54ffaa01768a__70d575de-1701-cacf-5f31-143012d92ee3.pdf",
+   "doi": "10.1146/annurev-earth-053018-"
+  },
+  {
+   "pdf": "ac013abdb969__song et al., 2020, Heterogeneous modification and reactivation of a craton margin beneath the Korean Peninsula from tele.pdf",
+   "doi": "10.1016/j.gr.2019.11.016"
+  },
+  {
+   "pdf": "551346bd739f__Gu et al. 2019, Low water content in the mantle source of the Hainan plume as a factor inhibiting the formation of a lar.pdf",
+   "doi": "10.1016/j.epsl.2019.03.034"
+  },
+  {
+   "pdf": "7b0c175c0e04__Homrighausen et al. (2018) Global distribution of the HIMU end member; Formation through Archean plume-lid tectonics.pdf",
+   "doi": "10.1016/j.earscirev.2018.04.009"
+  },
+  {
+   "pdf": "70fb8c81d9bf__Soager et al., 2021, The Patagonian intraplate basalts; A reflection of the South Atlantic convection cell.pdf",
+   "doi": "10.1016/j.gr.2020.12.008"
+  },
+  {
+   "pdf": "38f811ed8ef1__Foley et al., 2013, Minor and trace elements in olivine as probes into early igneous and mantle melting process.pdf",
+   "doi": "10.1016/j.epsl.2012.11.025"
+  },
+  {
+   "pdf": "74b68907165e__684d0bbc-e964-b3cd-44c3-2b6658193257.pdf",
+   "doi": "10.1016/j.tecto.2016.09.029"
+  },
+  {
+   "pdf": "1e4f2eaff07b__Xu Wen-Liang et al., 2013, Destruction of the North China Craton; Delamination or thermal chemical erosion Mineral chemi.pdf",
+   "doi": "10.1016/j.gr.2012.02.008"
+  },
+  {
+   "pdf": "3bbe3ff35c03__1-s2.0-S0012825209001640-main.pdf",
+   "doi": "10.1016/j.earscirev.2009.10.009"
+  },
+  {
+   "pdf": "16a8be5d9402__s44221-022-00001-4.pdf",
+   "doi": "10.1038/s44221-022-00001-4"
+  },
+  {
+   "pdf": "961e7f8fd10b__2f569a8e-5ba2-62db-3784-f4fa63a4ba7b.pdf",
+   "doi": "10.1016/j.chemgeo.2012.09.033"
+  },
+  {
+   "pdf": "64dbf9065a4a__Sheldrick et al., 2020, Peridotite versus pyroxenite input in Mongolian Mesozoic-Cenozoic lavas, and dykes.pdf",
+   "doi": "10.1016/j.lithos.2020.105747"
+  },
+  {
+   "pdf": "9da894afa47d__Baek et al. 2014, Geochemistry of anorthositic xenolith and host tholeiite basalt from Jeju Island, South Korea.pdf",
+   "doi": "10.1007/s12303-013-0060-9"
+  },
+  {
+   "pdf": "35a1975ba8f7__Xu et al., 2014, Phenocryst HeΓÇôAr isotopic and whole-rock geochemical constraints on the origin of crustal components .pdf",
+   "doi": "10.1016/j.jvolgeores.2014.01.001"
+  },
+  {
+   "pdf": "b576e0914a32__Yamamoto et al., 2004, Evidence for subduction-related components in the subcontinental mantle from low 3He 4He and 40Ar.pdf",
+   "doi": "10.1016/j.chemgeo.2004.03.007"
+  },
+  {
+   "pdf": "8e70b11fe2c6__Kim et al., 2022, Neotectonics at the SE continental Margin of the Korean Peninsula; Implications for the Back Arc regio.pdf",
+   "doi": "10.1007/s00024-022-02979-0"
+  },
+  {
+   "pdf": "d079bc405c0c__Nohda, 2009, Formation of the Japan Sea basin; Reassessment from ArΓÇôAr ages and NdΓÇôSr isotopic data of basement basa.pdf",
+   "doi": "10.1016/j.jseaes.2008.08.003"
+  },
+  {
+   "pdf": "995e6c9844c5__Heinonen et al., 2017, High Ni and low Mn Fe in olivine phenocrysts of the Karoo meimechites do not reflect pyroxenitic .pdf",
+   "doi": "10.1016/j.chemgeo.2017.08.002"
+  },
+  {
+   "pdf": "7329b67b1696__Carrcedo et al., 2019, Episodic erosion in West Antarctica inferred from cosmogenic 3He and 10Be in olivine from Mount H.pdf",
+   "doi": "10.1016/j.geomorph.2018.11.019"
+  },
+  {
+   "pdf": "b906430fa43f__Bragagni et al., 2021, A carbon-rich lithospheric mantle as a source for the large CO2 emissions of Etna volcano (Italy).pdf",
+   "doi": "10.1130/g49510.1"
+  },
+  {
+   "pdf": "9d135ee6f408__Gudmundsson et al., 2008, Dike induced reverse faulting in a graben.pdf",
+   "doi": "10.1130/g24185a.1"
+  },
+  {
+   "pdf": "47a1bb4adb06__1-s2.0-S0022169416308277-main.pdf",
+   "doi": "10.1016/j.jhydrol.2016.12.036"
+  },
+  {
+   "pdf": "311d598bbf5d__Guan et al. (2018) - Minerals - Helium and Argon Isotopes in the Fe-Mn Polymetallic Crusts and Nodules from the South Ch.pdf",
+   "doi": "10.3390/min8100471"
+  },
+  {
+   "pdf": "84e04f4fb34c__Mohapatra et al. (2009) Noble gas and nitrogen isotopic components in Oceanic Island Basalts.pdf",
+   "doi": "10.1016/j.chemgeo.2009.03.022"
+  },
+  {
+   "pdf": "e00e3e4d24b0__006f3a79-6623-ab35-34a2-35fb003aeb4f.pdf",
+   "doi": "10.1029/2001gl014013"
+  },
+  {
+   "pdf": "c84e9a072147__Day et al. (2014) Melt-modified lithosphere beneath Ross Island and its role in the tectono-magmatic evolution of the We.pdf",
+   "doi": "10.1016/j.chemgeo.2019.04.012"
+  },
+  {
+   "pdf": "fd1fc67118d6__Hofmann (2014).pdf",
+   "doi": "10.1016/b978-0-08-095975-7.00203-5"
+  },
+  {
+   "pdf": "8bfe5d8e61b6__Ohno et al. (2011) Helium isotopes of Izu Peninsula.pdf",
+   "doi": "10.1016/j.jvolgeores.2010.11.001"
+  },
+  {
+   "pdf": "ad5d1360f698__Gautheron et al. (2015) Constraints on the DUPAL anomaly from helium isotope systematics in SWIR.pdf",
+   "doi": "10.1016/j.chemgeo.2015.10.005"
+  },
+  {
+   "pdf": "2d4a56746f0e__Weis et al. 2023, EarthΓÇÖs mantle composition revealed by mantle plumes.pdf",
+   "doi": "10.1038/s43017-023-00467-0"
+  },
+  {
+   "pdf": "76dac4b7e0e8__Mosher and Symons (2008) Macquarie Ridge Complex, Australia-Pacific plate boundary.pdf",
+   "doi": "10.1130/g24236a.1"
+  },
+  {
+   "pdf": "5b2a95eb1d07__Chemeleff et al. (2010) Determination of the 10Be half-life by multicollector ICP-MS and liquid scintillation counting.pdf",
+   "doi": "10.1016/j.nimb.2009.09.012"
+  },
+  {
+   "pdf": "2adb1cfbc452__Garapic et al., 2015, A radiogenic isotopic (He-Sr-Nd-Pb-Os) study of lavas from the Pitcairn.pdf",
+   "doi": "10.1016/j.lithos.2015.04.010"
+  },
+  {
+   "pdf": "e481722f4ab7__Wu et al., 2006, The chemical-temporal evolution of lithospheric mantle underlying the North China Craton.pdf",
+   "doi": "10.1016/j.gca.2006.07.014"
+  },
+  {
+   "pdf": "f7f393756438__LeMasurier et al., 2016, Reconciling the shadow of a subduction signature with rift geochemistry and tectonic environmen.pdf",
+   "doi": "10.1016/j.lithos.2016.05.018"
+  },
+  {
+   "pdf": "4ec061409566__Tilhac et al., 2022, A global review of Hf and Nd isotopes.pdf",
+   "doi": "10.1016/j.chemgeo.2022.121039"
+  },
+  {
+   "pdf": "c7f3f0a05106__Kim et al., 2023, Hf isotope compositions of basaltic rocks from Jeju Island, South Korea.pdf",
+   "doi": "10.1016/j.lithos.2023.107047"
+  },
+  {
+   "pdf": "aed145a3f18f__Yang and Zhou, 2013.pdf",
+   "doi": "10.1038/srep01856"
+  },
+  {
+   "pdf": "29292d78a40e__Nakata et al. (2019) Degassing behavior of noble gases from groundwater during groundwater sampling.pdf",
+   "doi": "10.1016/j.apgeochem.2019.03.007"
+  },
+  {
+   "pdf": "23fbae44c00f__Zhong et al. (2025) - Nature communications - Enhanced phosphorus weathering contributed to Late Miocene cooling.pdf",
+   "doi": "10.1038/s41467-025-56477-7"
+  },
+  {
+   "pdf": "7d3c44207de2__Stuart and Lee (2012) Chem. Geo. Micrometeorites and extraterrestrial He in a ferromanganese crust from the Pacific Ocea.pdf",
+   "doi": "10.1016/j.chemgeo.2012.07.002"
+  },
+  {
+   "pdf": "b4eebd36b251__Pitcairn et al. 2005, The behavior of nitrogen and nitrogen isotopes during metamorphism and mineralization.pdf",
+   "doi": "10.1016/j.epsl.2005.01.029"
+  },
+  {
+   "pdf": "3e3e2d1f8a84__Panteretal2018_JPET_NWRSbasalt.pdf",
+   "doi": "10.1093/petrology/egy036"
+  },
+  {
+   "pdf": "0acd6c6cd494__Lee et al., 2011, Sr-Nd-Pb isotopic compositions of submarine alkali basalts recovered from the South Korean Plateau, Ea.pdf",
+   "doi": "10.1007/s12303-011-0017-9"
+  },
+  {
+   "pdf": "5d54ba21454b__Panter et al. (2006) The Origin of HIMU in the SW Pacific.pdf",
+   "doi": "10.1093/petrology/egl024"
+  },
+  {
+   "pdf": "e678aecf8abc__Sapienza et al. (2005) Helium isotopes in peridotite mineral phases from Hyblean Plateau xenoliths (south-eastern Sicily.pdf",
+   "doi": "10.1016/j.chemgeo.2005.02.012"
+  },
+  {
+   "pdf": "0c3d99ffef70__Zheng et al., 2005, Trace elemental and PGE geochemical constraints of Mesozoic and Cenozoic peridotitic xenoliths on li.pdf",
+   "doi": "10.1016/j.gca.2005.03.020"
+  },
+  {
+   "pdf": "f2c9fd2697cb__Choi et al. 2005, Sr_Nd_Pb isotope and trace element systematics of mantle xenoliths from Late Cenozoic alkaline lavas, .pdf",
+   "doi": "10.1016/j.chemgeo.2005.04.008"
+  },
+  {
+   "pdf": "4a98f6a7229a__1-s2.0-S187852201730019X-main.pdf",
+   "doi": "10.1016/j.proeps.2017.01.019"
+  },
+  {
+   "pdf": "115b56a16be0__Jackson et al. (2007) EPSL New Samoan lavas from Ofu Island.pdf",
+   "doi": "10.1016/j.epsl.2007.09.023"
+  },
+  {
+   "pdf": "708419fddd97__Hein and Koschinsky (2014)- Treatise on Geochemistry 2nd- Deep-ocean ferromanganese crusts and nodules.pdf",
+   "doi": "10.1016/b978-0-08-095975-7.01111-6"
+  },
+  {
+   "pdf": "3624089fcc56__Bebout et al. (2007) Isotope-ratio-monitoring gas chromatography methods for high-precision isotopic analysis of nanomol.pdf",
+   "doi": "10.1016/j.chemgeo.2007.01.006"
+  },
+  {
+   "pdf": "573985a9a3ca__Oh et al., 2019, Correlation of Paleoproterozoic igneous and metamorphic events of the Korean Peninsula.pdf",
+   "doi": "10.1016/j.precamres.2018.03.010"
+  },
+  {
+   "pdf": "fe9a95bea001__Limnology Ocean Methods - 2018 - Olack - Seawater DIC analysis The effects of blanks and longΓÇÉterm storage on.pdf",
+   "doi": "10.1002/lom3.10235"
+  },
+  {
+   "pdf": "2cb59aeb799e__Yu et al., 2021, Magnesium isotope constraints on contributions of recycled oceanic crust and lithospheric mantle to gen.pdf",
+   "doi": "10.1016/j.lithos.2021.106327"
+  },
+  {
+   "pdf": "3ae0c2371d88__science.291.5510.1952.pdf",
+   "doi": "10.1126/science.1056341"
+  },
+  {
+   "pdf": "a51552486ab2__Parai, 2025, Noble gases in mantle sources from accretion to the present-day.pdf",
+   "doi": "10.1016/b978-0-323-99762-1.00111-x"
+  },
+  {
+   "pdf": "d2025c777e74__65878-delamination-thinning-of-sub-continental-lithospheric-mantle-under-eastern-china-the-role-of-water-and-multiple-su.pdf",
+   "doi": "10.2475/10.2010.03"
+  },
+  {
+   "pdf": "7f9d06008887__Okazaki et al., (2015)- Earth, Plnets and Space - Mineralogy and noble gas isotopes of micrometeorites collected from An.pdf",
+   "doi": "10.1186/s40623-015-0261-8"
+  },
+  {
+   "pdf": "e7dbda17fa61__Park et al., 2017, Evolution of the lithospheric mantle beneath Mt. Baekdu (Changbaishan) Constraints from geochemical a.pdf",
+   "doi": "10.1016/j.lithos.2017.06.011"
+  },
+  {
+   "pdf": "2d21cb91ce9e__Hart et al., 2008, Scale length of mantle heterogeneities; Constraints from helium diffusion.pdf",
+   "doi": "10.1016/j.epsl.2008.03.010"
+  },
+  {
+   "pdf": "a9c90a051246__1-s2.0-S0883292723002810-main.pdf",
+   "doi": "10.1016/j.apgeochem.2023.105836"
+  },
+  {
+   "pdf": "75f0a88292d6__Liu et al., 2019, Thinning and destruction of the lithospheric mantle root beneath the North China Craton A review.pdf",
+   "doi": "10.1016/j.earscirev.2019.05.017"
+  },
+  {
+   "pdf": "056c0afb9653__Tatsumi et al. 2005, The petrology and Geochemistry of Volcanic Rocks on Jeju Island, Plume magmatism along the Asian Co.pdf",
+   "doi": "10.1093/petrology/egh087"
+  },
+  {
+   "pdf": "59fa17b31f72__Herzberg, 2011, Identification of source lithology in the Hawaiian and Canary Islands.pdf",
+   "doi": "10.1093/petrology/egq075"
+  },
+  {
+   "pdf": "8e59bf0092c5__Wei et al., 2016, Helium and carbon isotopes in the hot springs of Changbaishan Volcano, northeastern China; A material .pdf",
+   "doi": "10.1016/j.jvolgeores.2016.09.005"
+  },
+  {
+   "pdf": "ff7e14aee3f9__Kessel et al., 2005, Trace element signature of subduction-zone fluids, melts and supercritical liquids at 120ΓÇô180ΓÇëk.pdf",
+   "doi": "10.1038/nature03971"
+  },
+  {
+   "pdf": "e229aa729101__Kipf et al., (2014) Marie-Byrd-Seamounts_GondwanaResearch_2014.pdf",
+   "doi": "10.1016/j.gr.2013.06.013"
+  },
+  {
+   "pdf": "67b753ef685e__Barry et al. (2015) Helium isotopic evidence for modification of the cratoni.pdf",
+   "doi": "10.1016/j.lithos.2014.12.001"
+  },
+  {
+   "pdf": "fddec8fdfad6__Li Kan et al. (2023), Geology.pdf",
+   "doi": "10.1130/g51464.1"
+  },
+  {
+   "pdf": "20b151aef370__Armienti and Gasperini, 2007, Do we really need mantle components to define mantle composition.pdf",
+   "doi": "10.1093/petrology/egl078"
+  },
+  {
+   "pdf": "048461370710__Barry et al., 2007, Helium isotopes provide no evidence for deep mantle involvement in widespread Cenozoic volcanism acr.pdf",
+   "doi": "10.1016/j.lithos.2006.09.003"
+  },
+  {
+   "pdf": "802cc80aee3f__Chen et al. 2018, Muliti-stage magmatic pluming system of the volcano; A case study from Ulleung Island, South Korea.pdf",
+   "doi": "10.1016/j.lithos.2018.05.028"
+  },
+  {
+   "pdf": "18dde8d5e141__Bekaert et al., 2021, High 3He 4He in Central Panama reveals a distal connection to the Galapagos plume, PNAS.pdf",
+   "doi": "10.1073/pnas.2110997118/-/dcsupplemental"
+  },
+  {
+   "pdf": "34cbe682df4f__Heber et al. 2007, Crystal melt partitioning of noble gases for olivine and clinopyroxene.pdf",
+   "doi": "10.1016/j.gca.2006.11.010"
+  },
+  {
+   "pdf": "d2d94d3a8d20__TF Kokfelt et al., 2006, Combined Trace Element and Pb-NdΓÇôSr-O isotope evidence for recycled oceanic crust in the icel.pdf",
+   "doi": "10.1093/petrology/egl025"
+  },
+  {
+   "pdf": "f1ca15db4952__Correale et al. (2018) A combined study of noble gases, trace elements, and Sr-Nd isotopes for alkaline and tholeiitic l.pdf",
+   "doi": "10.1016/j.lithos.2018.05.010"
+  },
+  {
+   "pdf": "6e788d8d29e6__Martelli et al. (2011) Helium and argon isotopic compositions of mantle xenoliths from Tallante and Calatrava, Spain.pdf",
+   "doi": "10.1016/j.jvolgeores.2010.11.015"
+  },
+  {
+   "pdf": "a8fba761b8c5__Millot et al., 2004, Lead isotopic systematics of major river sediments; a new estimate of the Pb isotopic composition o.pdf",
+   "doi": "10.1016/j.chemgeo.2003.09.002"
+  },
+  {
+   "pdf": "edc9d32a588d__Dygert et al., 2013, The importance of melt TiO2 in affecting major and trace elment partitioning.pdf",
+   "doi": "10.1016/j.gca.2012.12.005"
+  },
+  {
+   "pdf": "e22950c14b8a__Labidi et al., 2021, Recycling of nitrogen and light noble gases in the Central American subduction zone; Constraints fr.pdf",
+   "doi": "10.1016/j.epsl.2021.117112"
+  },
+  {
+   "pdf": "031730159d5d__Hao et al., 2012, Recognizing juvenile and relict lithospheric mantle beneath the North China Craton.pdf",
+   "doi": "10.1016/j.lithos.2012.03.013"
+  },
+  {
+   "pdf": "d13fe15b2cff__Nishi et al. (2017) OGR, Formation age of the dual structure and environmental change recorded in hydrogenetic ferromang.pdf",
+   "doi": "10.1016/j.oregeorev.2016.09.004"
+  },
+  {
+   "pdf": "22e33d67b7a7__Rudnick et al., 2004, Petrology and geochemistry of spinel peridotite xenoliths from Hannuoba and Qixia, Norht China Cra.pdf",
+   "doi": "10.1016/j.lithos.2004.03.033"
+  },
+  {
+   "pdf": "5ddd9566f8c2__Josso et al. (2020) - Marine Geology - Late Cretaceous and Cenozoic paleoceanography from north-east Atlantic ferromanga.pdf",
+   "doi": "10.1016/j.margeo.2020.106122"
+  },
+  {
+   "pdf": "02817ff03b8a__Day and Hilton, 2020, Heterogeneous mantle-derived helium isotopes in the Canary Islands and other ocean islands.pdf",
+   "doi": "10.1130/g47676.1"
+  },
+  {
+   "pdf": "7b736d2bf08f__Jackson et al., 2020, Ancient helium and tungsten isotopic signatures preserved in mantle domains least modified by crus.pdf",
+   "doi": "10.1073/pnas.2009663117/-/dcsupplemental"
+  },
+  {
+   "pdf": "9559d5272f8f__Sano et al. (2015) Ten-year helium anomaly prior to the 2014 Mt Ontake eruption.pdf",
+   "doi": "10.1038/srep13069"
+  },
+  {
+   "pdf": "0799e961a0b4__Wallace et al., 2021, Olivine hosted melt inclusion; a microscopic perspective on a complex magmatic world.pdf",
+   "doi": "10.1146/annurev-earth-082420-"
+  },
+  {
+   "pdf": "ff46a327d931__Zhenhan WU, 2018, A Thickness Gauge for the Lithosphere Based on Ce Yb and Sm Yb of Mantle Derived.pdf",
+   "doi": "10.1111/1755-6724.13719"
+  },
+  {
+   "pdf": "352f71189a78__Demouchy et al. 2006, Rapid magma ascent recorded by water diffusion profiles in mantle olivine.pdf",
+   "doi": "10.1130/g22386.1"
+  },
+  {
+   "pdf": "724a6210aa23__Sun et al. - 2017 - Elemental and SrΓÇôNdΓÇôPb isotope geochemistry of the Cenozoic basalts in Southeast China Insights .pdf",
+   "doi": "10.1016/j.lithos.2016.12.005"
+  },
+  {
+   "pdf": "f27b63602293__Korschinek et al. (2010) A new value for the half-life of 10Be by Heavy-Ion Elastic Recoil Detection and liquid scintill.pdf",
+   "doi": "10.1016/j.nimb.2009.09.020"
+  },
+  {
+   "pdf": "ccccf006ec17__Ballentine and Burnard, 2002, Production, Release and Transport of Noble Gases in the Continental Crust.pdf",
+   "doi": "10.2138/rmg.2002.47.12"
+  },
+  {
+   "pdf": "545314000a0b__Li et al., 2022, JPH monogenetic, BD polygenetic.pdf",
+   "doi": "10.1016/j.jseaes.2022.105482"
+  },
+  {
+   "pdf": "d815f08682bf__Guo, 2019, Lithosphere thickness controls continental basalt compositions.pdf",
+   "doi": "10.1130/g46710.1"
+  },
+  {
+   "pdf": "c1d6e2eda13e__Oda et al. (2011) Geology, Ultrafine-scale magnetostratigraphy of marine ferromanganese crust.pdf",
+   "doi": "10.1130/g31610.1"
+  },
+  {
+   "pdf": "355174cd9dd8__Rizzo et al., 2021, Melting and metasomatism in West Eifel and Siebengebirge Sub-Continental Lithospheric Mantle (1).pdf",
+   "doi": "10.1016/j.chemgeo.2021.120400"
+  },
+  {
+   "pdf": "43a1324e193b__Malik et al. (2018), - EPSL - Nitrogen evolution within the Earth's atmosphereΓÇômantle system assessed by recycling in .pdf",
+   "doi": "10.1016/j.epsl.2017.11.045"
+  },
+  {
+   "pdf": "f8328fa4e534__science.1254509.pdf",
+   "doi": "10.1126/science.1253618"
+  },
+  {
+   "pdf": "25ad0af02648__Naverrete et al. (2020) The fate of the Farallon slab beneath Patagonia and its links to Cenozoic intraplate magmatism, .pdf",
+   "doi": "10.1016/j.earscirev.2020.103379"
+  },
+  {
+   "pdf": "7fa5138ce50c__Kim et al., 2016, SHRIMP UΓÇôPb dating and geochemistry of the Cretaceous plutonic rocks in the Korean Peninsula.pdf",
+   "doi": "10.1016/j.lithos.2016.06.027"
+  },
+  {
+   "pdf": "da582e021708__Wang et a., 2017, Mantle transition zone-derived EM1 component beneath NE China; Geochemical evidence from Cenozoic pota.pdf",
+   "doi": "10.1016/j.epsl.2017.02.028"
+  },
+  {
+   "pdf": "7a60a43e366a__Lages et al., 2021, Noble gas magmatic signature of the Andean Northern Volcanic Zone from fluid inclusions in minerals.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119966"
+  },
+  {
+   "pdf": "d302e4d23112__003fa19b-565f-6753-1ce4-a7051b9d44c3.pdf",
+   "doi": "10.1016/j.epsl.2009.06.008"
+  },
+  {
+   "pdf": "d11e7bc80cc0__1-s2.0-S0012821X22002163-main.pdf",
+   "doi": "10.1016/j.epsl.2022.117580"
+  },
+  {
+   "pdf": "19706ccfdda4__Choi et al. (2017) The kinematic evolution of the Macquarie plate.pdf",
+   "doi": "10.1016/j.epsl.2017.08.035"
+  },
+  {
+   "pdf": "503818f56298__Bekaert et al., 2024, A carbon, nitrogen, and multiple isotope study of basalt glasses near 14N on the MAR. Part A.pdf",
+   "doi": "10.1016/j.gca.2023.12.015"
+  },
+  {
+   "pdf": "54c7f034b122__Tatsumi et al. (2020) Contrasting volcano spacing along SW Japan arc caused by difference in age of subducting lithosphe.pdf",
+   "doi": "10.1038/s41598-020-72173-6"
+  },
+  {
+   "pdf": "9d62296a2808__Correale et al. (2016) Refertilization of lithospheric mantle beneath the Yangtze craton in South east China; Evidence f.pdf",
+   "doi": "10.1016/j.gr.2016.01.003"
+  },
+  {
+   "pdf": "51d73be1c1c0__s12303-024-0026-0-1.pdf",
+   "doi": "10.1007/s12303-024-0026-0"
+  },
+  {
+   "pdf": "04955a2eec3f__Jiang et al. (2021) Origin of geochemically heterogeneous mid-ocean ridge basalts from the Macquarie Ridge Complex, SW P.pdf",
+   "doi": "10.1016/j.lithos.2020.105893"
+  },
+  {
+   "pdf": "68d0e5123a13__Kurz et al. 2005, Correlated helium, neon, and melt production on the super-fast spreading East Pacific Rise near 17┬░S.pdf",
+   "doi": "10.1016/j.epsl.2005.01.005"
+  },
+  {
+   "pdf": "76d123d818fa__Chen et al., 2021, Geochemical and seismic tomography constraints of two-layer magma chambers beneath the bimodal volcan.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120386"
+  },
+  {
+   "pdf": "bb1e8a861fa7__Sano_et_al_06_PAGEOPH.pdf",
+   "doi": "10.1007/s00024-006-0035-0"
+  },
+  {
+   "pdf": "0a8ebac435b5__2017_EJM_Park_etal.pdf",
+   "doi": "10.1127/ejm/2017/0029-2658"
+  },
+  {
+   "pdf": "ae01a0367b9e__Gautheron & (2005) He, Ne and Ar composition of the European lithospheric mantle.pdf",
+   "doi": "10.1016/j.chemgeo.2004.12.009"
+  },
+  {
+   "pdf": "27194d654267__McGee and Mukhopadhyay (2013) Extraterrestrial He in Sediments.pdf",
+   "doi": "10.1007/978-3-642-28836-4_7"
+  },
+  {
+   "pdf": "dec2372b6ba9__Blomgren et al., 2019, Hot spring hydrochemistry of the Rio Grande rift in northern NewMexico.pdf",
+   "doi": "10.1016/j.jvolgeores.2019.106663"
+  },
+  {
+   "pdf": "48c88db2150f__Yamasaki and Stephenson, 2011, Back-arc rifting initiated with a hot and wet continental lithosphere.pdf",
+   "doi": "10.1016/j.epsl.2010.12.009"
+  },
+  {
+   "pdf": "918d36667749__Rizzo et al., 2022, Applied Sceinces MDPI.pdf",
+   "doi": "10.3390/app12094241"
+  },
+  {
+   "pdf": "67c2cc3f9e69__Bekaert et al., 2024, A carbon, nitrogen, and multiple isotope study of basalt glasses near 14N on the MAR. Part B.pdf",
+   "doi": "10.1016/j.gca.2023.12.017"
+  },
+  {
+   "pdf": "c4c499a84f76__Pete Burnard, 2004, Diffusive fractionation of noble gases and helium isotopes during mantle melting.pdf",
+   "doi": "10.1016/s0012-821x(04)00060-3"
+  },
+  {
+   "pdf": "1c2a443c6625__Nebel et al. (2007) Indian-Pacific mantle boundary in the SW Pacific.pdf",
+   "doi": "10.1016/j.epsl.2006.11.046"
+  },
+  {
+   "pdf": "d28269892f50__Sano et al. (2023) Older magma at Aso caldera than at Unzen stratovolcano in south west Japan as recorded through helium.pdf",
+   "doi": "10.1038/s43247-022-00649-6"
+  },
+  {
+   "pdf": "733c34e8249c__Veevers, 2012, Reconstructions before rifting and drifting reveal the geological connections between Antarctica and its .pdf",
+   "doi": "10.1016/j.earscirev.2011.11.009"
+  },
+  {
+   "pdf": "d1f5756bf0be__Faccini et al., 2020, Subduction-related melt refertilisation and alkaline metasomatism in the Eastern Transylvanian Bas.pdf",
+   "doi": "10.1016/j.lithos.2020.105516"
+  },
+  {
+   "pdf": "72564e6746c0__Montanari et al. (2017) Stratigraphic record of the asteroidal Veritas breakup in the Tortonian Monte dei Corvi section .pdf",
+   "doi": "10.1130/b31476.1"
+  },
+  {
+   "pdf": "abef80538923__Palot et al., 2012, Evidence for deep mantle convection and primordial heterogeneity from nitrogen and carbon stable iso.pdf",
+   "doi": "10.1016/j.epsl.2012.09.015"
+  },
+  {
+   "pdf": "198e26926b58__Meteorit Planetary Scien - 2021 - Rudraswami - Extraterrestrial dust as a source of bioavailable iron contributing to th.pdf",
+   "doi": "10.1111/maps.13764"
+  },
+  {
+   "pdf": "408736125cf3__Wang et al., 2011, Geochemical constraints on the nature of mantle source for Cenozoic continental basalts in east-centr.pdf",
+   "doi": "10.1016/j.lithos.2011.05.007"
+  },
+  {
+   "pdf": "b1c2f81932cf__Ishibashi (1981) Specification of a SoonΓÇÉtoΓÇÉOccur Seismic Faulting in the Tokai District Central.pdf",
+   "doi": "10.1029/me004p0297"
+  },
+  {
+   "pdf": "0618ad06c90d__Melchiorre et al. (2020) Melting and metasomatism refertilisation processes in the Patagonian sub-continental lithospher.pdf",
+   "doi": "10.1016/j.lithos.2019.105324"
+  },
+  {
+   "pdf": "6bd4bbc5bd3b__Yamamoto et al., 2020, Nitrogen and noble gas isotopic compositions of mantle xenoliths from Far Eastern Russia Implicat.pdf",
+   "doi": "10.1016/j.epsl.2020.116109"
+  },
+  {
+   "pdf": "524df2bb3115__Mukhopadhyay and Farley (2006) New insights into the carrier phase(s) of extraterrestrial 3He in geologically old sedime.pdf",
+   "doi": "10.1016/j.gca.2006.06.1566"
+  },
+  {
+   "pdf": "9bb82b31877a__Yokochi and Marty, 2004, A determination of the neon isotopic composition of the deep mantle.pdf",
+   "doi": "10.1016/j.epsl.2004.06.010"
+  },
+  {
+   "pdf": "0bb4078f711c__Kawabe et al. (2003) Deep-water circulation at low latitudes in the western North Pacific.pdf",
+   "doi": "10.1016/s0967-0637(03)00040-2"
+  },
+  {
+   "pdf": "859cba894ee2__Schwarz et al., 2005, Subduction of solar type noble gases from extraterrestrial dust; constraints from high pressure lo.pdf",
+   "doi": "10.1007/s00410-005-0671-x"
+  },
+  {
+   "pdf": "b1717fbbf2b0__Park et al., 2022, Basaltic cognate enclaves from Dokdo Island as a window for intraplate mafic alkaline OIB magma dynam.pdf",
+   "doi": "10.1007/s00410-022-01951-4"
+  },
+  {
+   "pdf": "f4e21b6c628c__Yu et al., 2018, Late Cenozoic basaltic lavas from the Changbaishan-Baoqing Volcanic Belt, NE China; Products of lithosp.pdf",
+   "doi": "10.1016/j.jseaes.2018.06.031"
+  },
+  {
+   "pdf": "b462c54bd4cb__Eiler(2007)_Clumped isotope geochemistry.pdf",
+   "doi": "10.1016/j.epsl.2007.08.020"
+  },
+  {
+   "pdf": "cf82c43b02e4__078_Huth_etal_2022.pdf",
+   "doi": "10.1016/j.gca.2021.11.002"
+  },
+  {
+   "pdf": "5c87dfbf5af8__Fiebig et al 2021 Dual Clump Calibration.pdf",
+   "doi": "10.1016/j.gca.2021.07.012"
+  },
+  {
+   "pdf": "d1622b7b4759__Passey & Levin (2021) Triple oxygen isotopes in meteoric waters, carbonates, and biological apatites-implications for co.pdf",
+   "doi": "10.2138/rmg.2021.86.13"
+  },
+  {
+   "pdf": "2be61558970b__Eiler(2011)_Paleoclimate reconstruction using carbonate clumped isotope geochemistry.pdf",
+   "doi": "10.1016/j.quascirev.2011.09.001"
+  },
+  {
+   "pdf": "0e56ea871e01__Eiler and Schauble(2004)_18O13C16O in Earth's atmosphere.pdf",
+   "doi": "10.1016/j.gca.2004.05.035"
+  },
+  {
+   "pdf": "47ecae8ef972__Huntington(2009)_Methods and limitations of clumped CO2 isotope analysis.pdf",
+   "doi": "10.1002/jms.1614"
+  },
+  {
+   "pdf": "26c556904e96__Ghosh(2006)_13C–18O bonds in carbonate minerals A new kind of paleothermometer.pdf",
+   "doi": "10.1016/j.gca.2005.11.014"
+  },
+  {
+   "pdf": "b332a23ef39b__Schauble(2006)_Preferential formation of 13C–18O bonds in carbonate minerals, estimated using first-principles lattice d.pdf",
+   "doi": "10.1016/j.gca.2006.02.011"
+  },
+  {
+   "pdf": "f043ff55a7d0__Affek(2008)_Glacial interglacial temperature variations in Soreq cave speleothems.pdf",
+   "doi": "10.1016/j.gca.2008.06.031"
+  },
+  {
+   "pdf": "13febf0d40f9__Huntington(2015)_Carbonate clumped isotope thermometry in tectonics.pdf",
+   "doi": "10.1016/j.tecto.2015.02.019"
+  },
+  {
+   "pdf": "9549aa1c8c6f__Quade(2007)_Paleoelevation.pdf",
+   "doi": "10.2138/rmg.2007.66.3"
+  },
+  {
+   "pdf": "00bb6fb930af__Passey and Ji(2019)_Triple oxygen signatures of evaporation in lake waters and cabonates.pdf",
+   "doi": "10.1016/j.epsl.2019.04.026"
+  },
+  {
+   "pdf": "f206ac6b1689__Miller and Pack(2021)_Triple oxygen review.pdf",
+   "doi": "10.2138/rmg.2021.86.01"
+  },
+  {
+   "pdf": "9b3e25dbc293__Tierney(2020)_LGM cooling.pdf",
+   "doi": "10.1038/s41586-020-2617-x"
+  },
+  {
+   "pdf": "648a9bc4c24a__030_Passey_etal_2010.pdf",
+   "doi": "10.1073/pnas.1001824107"
+  },
+  {
+   "pdf": "d7241af552a0__Aron(2021)_Triple oxygen isotopes in water cycle.pdf",
+   "doi": "10.1016/j.chemgeo.2020.120026"
+  },
+  {
+   "pdf": "721e0d7b265c__Pack and Herwartz(2014)_17O in rocks and minerals.pdf",
+   "doi": "10.1016/j.epsl.2014.01.017"
+  },
+  {
+   "pdf": "0abda6890245__Luz and Barkan(2010)_Variations of 17O in meteoric waters.pdf",
+   "doi": "10.1016/j.gca.2010.08.016"
+  },
+  {
+   "pdf": "1e17bdbeac1b__Mcgee(2020)_Glacial Interglacial precipitation change.pdf",
+   "doi": "10.1146/annurev-marine-010419-"
+  },
+  {
+   "pdf": "0248e0e5a53e__Kanner(2012)_South American Monsoon.pdf",
+   "doi": "10.1126/science.1214451"
+  },
+  {
+   "pdf": "fa3c277918c1__Benettin(2018)_Seasonality isotopic composition of soil water.pdf",
+   "doi": "10.5194/hess-22-2881-2018"
+  },
+  {
+   "pdf": "0a81f7557e12__Tagliavento et al 2023 PNAS Troodon dual clumped.pdf",
+   "doi": "10.1073/pnas.2213987120"
+  },
+  {
+   "pdf": "bc23b5d6abf7__Bowen(2018)_Evaporation O H isotope.pdf",
+   "doi": "10.1007/s00442-018-4192-5"
+  },
+  {
+   "pdf": "c29d4dd8ba7e__Batchelor(2023)_Wisconsin cave paleoclimate.pdf",
+   "doi": "10.1038/s41561-023-01132-3"
+  },
+  {
+   "pdf": "230f30f95c97__Wen(2023)_land ST late Miocene.pdf",
+   "doi": "10.1073/pnas.2214655120"
+  },
+  {
+   "pdf": "81b4d424d826__Polyak(2022)_Climatic backdrip for Pueblo cultural development.pdf",
+   "doi": "10.1038/s41598-022-12220-6"
+  },
+  {
+   "pdf": "77e807c3d06b__Passey(2014)_Triple oxygen carbonates.pdf",
+   "doi": "10.1016/j.gca.2014.06.006"
+  },
+  {
+   "pdf": "3aa8eb334b2d__Ellis(2023)_Triple oxygen method.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121616"
+  },
+  {
+   "pdf": "fdcaf0cca83f__Nace(2014).pdf",
+   "doi": "10.1016/j.palaeo.2014.05.030"
+  },
+  {
+   "pdf": "4bfe8e13ee5b__Affek(2023)_17O Soreq Cave.pdf",
+   "doi": "10.1016/j.epsl.2023.118366"
+  },
+  {
+   "pdf": "fc985b490e90__Wanner(2008)_Mid to late Holocene climate.pdf",
+   "doi": "10.1016/j.quascirev.2008.06.013"
+  },
+  {
+   "pdf": "629ce509f96e__Cheng(2012)_global monsoon speleothem.pdf",
+   "doi": "10.1007/s00382-012-1363-7"
+  },
+  {
+   "pdf": "0826e38a9b68__Libera(2022)_Amazonian lowlands last three millennia.pdf",
+   "doi": "10.1016/j.quascirev.2022.107383"
+  },
+  {
+   "pdf": "2787e626192b__Baker and Fritz(2015)_Amazon Quaternary paleoclimate review.pdf",
+   "doi": "10.1016/j.quascirev.2015.06.011"
+  },
+  {
+   "pdf": "6ae1434bc408__Dino(2012)_Middle Miocene flucial deposits Amazonas Basin.pdf",
+   "doi": "10.1016/j.jsames.2011.11.008"
+  },
+  {
+   "pdf": "eba9bc576f15__Hoppner(2018)_suspended particulate matter in the Amazon Basin.pdf",
+   "doi": "10.1016/j.quascirev.2018.04.021"
+  },
+  {
+   "pdf": "1c3b13d65a8a__Maslin(2000)_Amazon river sediment discharge Site 942.pdf",
+   "doi": "10.1002/1099-1417(200005)15:4"
+  },
+  {
+   "pdf": "e9d46089c459__Huntington and Petersen(2023)_clumped review.pdf",
+   "doi": "10.1146/annurev-earth-031621-"
+  },
+  {
+   "pdf": "55a81ef98dac__Ibarra(2023)_High elevation Tibetan Plateau triple oxygen isotope.pdf",
+   "doi": "10.1038/s41561-023-01243-x"
+  },
+  {
+   "pdf": "d7295c99ebb7__Huth(2020)_Soil carbonate Colorado Plateau.pdf",
+   "doi": "10.1016/j.gca.2020.05.022"
+  },
+  {
+   "pdf": "1b33c9647e0b__Meckler(2015)_spleothem clumped.pdf",
+   "doi": "10.1016/j.quascirev.2015.06.015"
+  },
+  {
+   "pdf": "cfff996eda2b__Wainer(2011)_Speleothem France.pdf",
+   "doi": "10.1016/j.quascirev.2010.07.004"
+  },
+  {
+   "pdf": "71cc4daac258__Coplen(2007)_Devils Hole.pdf",
+   "doi": "10.1016/j.gca.2007.05.028"
+  },
+  {
+   "pdf": "df51e9c8604d__Jasechko(2013)_evaporation tranpiration.pdf",
+   "doi": "10.1038/nature11983"
+  },
+  {
+   "pdf": "72b5717b51c3__Novello(2017)_SA monsoon speleothem.pdf",
+   "doi": "10.1038/srep44267"
+  },
+  {
+   "pdf": "8aa74c18dfae__Molnar(2022)_soil and air temperature.pdf",
+   "doi": "10.1130/ges02448.1"
+  },
+  {
+   "pdf": "1a7f3fdeb8f5__Xia and Winnick 2021_The competing effects of terrestrial evapotranspiration and raindrop re-evaporation on the deuteriu.pdf",
+   "doi": "10.1016/j.epsl.2021.117120"
+  },
+  {
+   "pdf": "73c56038d077__Hren(2013)_PNAS - EOT Cooling (pub version).pdf",
+   "doi": "10.1073/pnas.1210930110"
+  },
+  {
+   "pdf": "8dec29278760__Sarkar(2024)_South Asia 17O and archaeology.pdf",
+   "doi": "10.1016/j.quascirev.2023.108470"
+  },
+  {
+   "pdf": "5431a1f88632__Gray&Brandon_PrePrint.pdf",
+   "doi": "10.1002/essoar.10510341.1"
+  },
+  {
+   "pdf": "29846a028504__Fiebig(2019)_D47 D48.pdf",
+   "doi": "10.1016/j.chemgeo.2019.05.019"
+  },
+  {
+   "pdf": "848d71003187__Beck(2005)_O isotope fractionation in the carbonic acid system.pdf",
+   "doi": "10.1016/j.gca.2005.02.003"
+  },
+  {
+   "pdf": "b9486dee85a7__Wostbrock and Sharp(2021)_triple oxygen in silica-water and carbonate-water.pdf",
+   "doi": "10.2138/rmg.2021.86.11"
+  },
+  {
+   "pdf": "d2aebf3993f6__Wostbrock(2020)_Calibration of triple oxygen.pdf",
+   "doi": "10.1016/j.gca.2020.07.045"
+  },
+  {
+   "pdf": "acf075828ac3__Bonifacie(2017).pdf",
+   "doi": "10.1016/j.gca.2016.11.028"
+  },
+  {
+   "pdf": "0e0b8e8ac510__Fiebig(2024)_nitrate contamination clumped isotope.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122382"
+  },
+  {
+   "pdf": "723714b72949__Parvez(2024)_Dual clumped cave carbonates.pdf",
+   "doi": "10.1016/j.gca.2023.11.017"
+  },
+  {
+   "pdf": "459a47be34b1__Urrego(2005)_LGM western Amazon.pdf",
+   "doi": "10.1002/jqs.976"
+  },
+  {
+   "pdf": "b55595bb48c2__Shackleton(2021)_MIS4 mean ocean temperature.pdf",
+   "doi": "10.5194/cp-17-2273-2021"
+  },
+  {
+   "pdf": "f75eae92c55c__Harmon(1979)_Kentucky Karst.pdf",
+   "doi": "10.1029/wr015i002p00476"
+  },
+  {
+   "pdf": "2856b5927711__Schoenemann_etal_2012.pdf",
+   "doi": "10.1002/rcm.6486"
+  },
+  {
+   "pdf": "69a484ee42df__Katz(2023)_Clumpes isotope lake carbonate.pdf",
+   "doi": "10.1016/j.epsl.2022.117927"
+  },
+  {
+   "pdf": "c84272a361b1__Wostbrock(2020)_Standard calibrations for triple oxygen analyese.pdf",
+   "doi": "10.1016/j.chemgeo.2019.119432"
+  },
+  {
+   "pdf": "62bdb37f1818__White and Defliese(2023)_nonlinear mixing dual clumped carbonate.pdf",
+   "doi": "10.1002/rcm.9627"
+  },
+  {
+   "pdf": "952c0998eaf4__Daeron(2011)_clumpind speleothem.pdf",
+   "doi": "10.1016/j.gca.2010.10.032"
+  },
+  {
+   "pdf": "1a0e2e1de252__Sha(2020)_triple oxygen speleothems.pdf",
+   "doi": "10.1016/j.gca.2019.12.003"
+  },
+  {
+   "pdf": "3ba87b83ae1c__McDermott(2004)_speleothem stable isotope.pdf",
+   "doi": "10.1016/j.quascirev.2003.06.021"
+  },
+  {
+   "pdf": "5125195a3ed7__Häggi et al 2017.pdf",
+   "doi": "10.1016/j.epsl.2017.09.013"
+  },
+  {
+   "pdf": "9bbd14ac8e6a__Sha(2023)_Triple oxygen spleothem Asian monsoon.pdf",
+   "doi": "10.1038/s43247-023-01043-6"
+  },
+  {
+   "pdf": "a7e004328ad6__Zhang(2015)_Terrigenous supply Amazon.pdf",
+   "doi": "10.1016/j.epsl.2015.09.054"
+  },
+  {
+   "pdf": "5595bb5bb83b__Latrubesse(2010).pdf",
+   "doi": "10.1016/j.earscirev.2010.02.005"
+  },
+  {
+   "pdf": "168b1ac09aa0__Loland et al 2021 (Borneo Temperature).pdf",
+   "doi": "10.1038/s41467-022-32712-3"
+  },
+  {
+   "pdf": "af501c49cf49__Vizy and Cook 2005 Amazon LGM Climate4.pdf",
+   "doi": "10.1029/2004jd005415"
+  },
+  {
+   "pdf": "8a6d824aeb72__Guo and Zhou(2019)_IsoDIC.pdf",
+   "doi": "10.1016/j.gca.2018.11.018"
+  },
+  {
+   "pdf": "6c13101755d1__Terzer-Wassmuth(2023)_Global and local meteoric water 18O 17O.pdf",
+   "doi": "10.1038/s41598-023-45920-8"
+  },
+  {
+   "pdf": "4cb3460be5bd__Parvez(2023)_dual clumped N Cali.pdf",
+   "doi": "10.1016/j.gca.2023.06.022"
+  },
+  {
+   "pdf": "a6f856997dfb__Wang(2004)_multiply subtituted molecular gases.pdf",
+   "doi": "10.1016/j.gca.2004.05.039"
+  },
+  {
+   "pdf": "f3cc7345b817__Bajnai(2024)_17O hydroxylation.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122059"
+  },
+  {
+   "pdf": "02977eb51c5a__Uchikawa and Zeebe(2012)_CA effect on DIC.pdf",
+   "doi": "10.1016/j.gca.2012.07.022"
+  },
+  {
+   "pdf": "3e191cc82f17__Mills2024_PerspectivePaleoclimatePaleotempsJudd.pdf",
+   "doi": "10.1126/science.ads1544"
+  },
+  {
+   "pdf": "48824b7200e2__Kohn and Cerling(2002)_Biological apatite isotope.pdf",
+   "doi": "10.2138/rmg.2002.48.12"
+  },
+  {
+   "pdf": "49b047cc74a8__Novello(2021)_SA stal d13C.pdf",
+   "doi": "10.1016/j.quascirev.2021.106822"
+  },
+  {
+   "pdf": "0027e003ec70__Mickler(2006)_kinetic isotope effects in modern speleothems.pdf",
+   "doi": "10.1130/b25698.1"
+  },
+  {
+   "pdf": "62680507a7e2__Lu(2025)_Dual clumped isotope Bahama Bank.pdf",
+   "doi": "10.1016/j.epsl.2025.119322"
+  },
+  {
+   "pdf": "0aa6698d3b1f__Sade(2020)_BaCO3 kinetic effects.pdf",
+   "doi": "10.1016/j.gca.2020.04.025"
+  },
+  {
+   "pdf": "8aab6443fe63__Affek(2025)_17O excess Devil Hole calcite.pdf",
+   "doi": "10.1016/j.epsl.2025.119528"
+  },
+  {
+   "pdf": "f3aea2a5a0da__Rolph(2017)_READY HYSPLIT.pdf",
+   "doi": "10.1016/j.envsoft.2017.06.025"
+  },
+  {
+   "pdf": "979b1152b0ad__Rama-Corredor(2015)_Guiana Basin SST.pdf",
+   "doi": "10.5194/cp-11-1297-2015"
+  },
+  {
+   "pdf": "bfe45d77bc9f__Kukuljan(2021)_Ventilation cave.pdf",
+   "doi": "10.1007/s00704-021-03722-w"
+  },
+  {
+   "pdf": "d8b6490e5649__Cheng(2013)_U-Th dating.pdf",
+   "doi": "10.1016/j.epsl.2013.04.006"
+  },
+  {
+   "pdf": "0bc5fe746aa6__MARGO(2009)_ocean cooling LGM.pdf",
+   "doi": "10.1038/ngeo411"
+  },
+  {
+   "pdf": "4d9504add34c__Arellano(2024)_17O Panama.pdf",
+   "doi": "10.1016/j.gca.2024.09.024"
+  },
+  {
+   "pdf": "b200d411d006__Sharp(2025)_17O fractionation in Equisetum.pdf",
+   "doi": "10.1073/pnas.2507455122"
+  },
+  {
+   "pdf": "dab8e86129d1__Barkan and Luz(2007)_Diffusivity.pdf",
+   "doi": "10.1002/rcm.3180"
+  },
+  {
+   "pdf": "cfeb8b301cd2__Groot(2011)_Andes pollen record.pdf",
+   "doi": "10.5194/cp-7-299-2011"
+  },
+  {
+   "pdf": "c2403ff1e79d__Medina(2023)_Temperature variations in caves.pdf",
+   "doi": "10.1038/s41598-023-48014-7"
+  },
+  {
+   "pdf": "9faeed2ed312__Kluge(2014)_Devils Hole paleotemperature.pdf",
+   "doi": "10.1016/j.epsl.2014.05.047"
+  },
+  {
+   "pdf": "461a7c1163f3__Kim(2006)_aragonite.pdf",
+   "doi": "10.1016/j.gca.2006.08.003"
+  },
+  {
+   "pdf": "e8be966c64fd__Helliker and Ehleringer(2002)_glass blades O isotopes.pdf",
+   "doi": "10.1046/j.1469-8137.2002.00480.x"
+  },
+  {
+   "pdf": "8a42b5e1dd43__Rodrigues-Zorro(2020)_Shut down of SASM during glacial.pdf",
+   "doi": "10.1038/s41598-020-62888-x"
+  },
+  {
+   "pdf": "d69c37c6ce77__Reis(2022)_SE Amazonia hydroclimate.pdf",
+   "doi": "10.1016/j.quascirev.2022.107466"
+  },
+  {
+   "pdf": "15352d700152__Wang(2017)_Paraiso hydroclilmate change.pdf",
+   "doi": "10.1038/nature20787"
+  },
+  {
+   "pdf": "2bab34edc1b7__Nelissen(2026)_PETM.pdf",
+   "doi": "10.1073/pnas.2509231122"
+  },
+  {
+   "pdf": "0be442ed1144__Cael and Foster(2026)_PETM how unusual.pdf",
+   "doi": "10.1029/2025gl120456"
+  },
+  {
+   "pdf": "b58d69cb712b__Walker(1989)_oxygen isotopic composition of sea water.pdf",
+   "doi": "10.1029/gl016i004p00323"
+  },
+  {
+   "pdf": "75d45061137a__Badgley(2025)_Siwalik record review.pdf",
+   "doi": "10.1146/annurev-earth-080723-"
+  },
+  {
+   "pdf": "cbbabf144fd0__Sharp and Wostbrock(2021)_17O standardization.pdf",
+   "doi": "10.2138/rmg.2021.86.05"
+  },
+  {
+   "pdf": "a20584385208__Kageyama(2021)_LGM PMIP4.pdf",
+   "doi": "10.5194/cp-17-1065-2021"
+  },
+  {
+   "pdf": "f8e307360ae7__Torres(2013)_Andes pollen Quaternary.pdf",
+   "doi": "10.1016/j.quascirev.2012.11.004"
+  },
+  {
+   "pdf": "29542a5c7355__Lyons(2015)_1.3My east afrcian hydroclimate record.pdf",
+   "doi": "10.1073/pnas.1512864112"
+  },
+  {
+   "pdf": "18dc2bedacb5__Kohfeld(2013)_LGM southern ocean data.pdf",
+   "doi": "10.1016/j.quascirev.2013.01.017"
+  },
+  {
+   "pdf": "aaae1615c41a__Sato(2021)_Dry corridors Amazon LGM.pdf",
+   "doi": "10.1038/s41561-021-00777-2"
+  },
+  {
+   "pdf": "1a299bedddcb__Guo and Zhou(2019)_IsoCave.pdf",
+   "doi": "10.1016/j.gca.2019.07.028"
+  },
+  {
+   "pdf": "498335795c78__Tripati(2015)_DIC clumped.pdf",
+   "doi": "10.1016/j.gca.2015.06.021"
+  },
+  {
+   "pdf": "87d329767b49__Karp(2018)_Late Miocene fire.pdf",
+   "doi": "10.1073/pnas.1809758115"
+  },
+  {
+   "pdf": "01165ee129d1__Hill(2014)_theoretical constraints.pdf",
+   "doi": "10.1016/j.gca.2013.06.018"
+  },
+  {
+   "pdf": "1606148cf77d__Swart(2021)_D48 calibration.pdf",
+   "doi": "10.1002/rcm.9147"
+  },
+  {
+   "pdf": "d839628261c8__Cao and Liu(2011)_17O equilibrium.pdf",
+   "doi": "10.1016/j.gca.2011.09.048"
+  },
+  {
+   "pdf": "77ceff41536d__Kanner(2013)_SA speleothem.pdf",
+   "doi": "10.1016/j.quascirev.2013.05.008"
+  },
+  {
+   "pdf": "0f524ad955a4__Kageyama(2021)_suppl.pdf",
+   "doi": "10.5194/cp-17-1065-2021-supplement"
+  },
+  {
+   "pdf": "723df723c443__Staudigel(2025)_CO2 resetting with carbonate samples.pdf",
+   "doi": "10.1016/j.chemgeo.2025.123012"
+  },
+  {
+   "pdf": "8bf43eff396d__Dominguez-Villar(2013)_Cave T and surface T.pdf",
+   "doi": "10.1016/j.epsl.2013.03.017"
+  },
+  {
+   "pdf": "154cf73db439__Sekhon et al. 2021 Paraiso etc Cave Climate.pdf",
+   "doi": "10.1016/j.gloplacha.2020.103378"
+  },
+  {
+   "pdf": "8adcdf8b6204__Lachniet(2009)_Oxygen isotope speleothems.pdf",
+   "doi": "10.1016/j.quascirev.2008.10.021"
+  },
+  {
+   "pdf": "0a4383548c90__Cheng(2016)_Asian monsoon past 640,000 years.pdf",
+   "doi": "10.1038/nature18591"
+  },
+  {
+   "pdf": "7cb2ec5e9899__Matthews(2021)_Soreq Cave.pdf",
+   "doi": "10.1016/j.quascirev.2021.107223"
+  },
+  {
+   "pdf": "fc16be4d96b8__Lucarelli(2023b)_amorphous carbonate dual clumped isotopes.pdf",
+   "doi": "10.1016/j.gca.2023.07.027"
+  },
+  {
+   "pdf": "c9026238f17e__Huth(2025)_Lake Michigan.pdf",
+   "doi": "10.1016/j.jhydrol.2025.134002"
+  },
+  {
+   "pdf": "c8007b216d7c__Laskar(2004)_Orbital insolation.pdf",
+   "doi": "10.1051/0004-6361:20041335"
+  },
+  {
+   "pdf": "e366ef046387__Hermanowski(2012)_Carajas.pdf",
+   "doi": "10.1016/j.palaeo.2012.09.030"
+  },
+  {
+   "pdf": "8d43ee08ab1b__Ledru(2001)_Lagoa do Caco.pdf",
+   "doi": "10.1006/qres.2000.2187"
+  },
+  {
+   "pdf": "7ed65f0fdd0a__Cruz(2009)_Rio Grande do Norte.pdf",
+   "doi": "10.1038/ngeo444"
+  },
+  {
+   "pdf": "5ebe65a198cd__Dennis(2011)_Clumped reference frame.pdf",
+   "doi": "10.1016/j.gca.2011.09.025"
+  },
+  {
+   "pdf": "c5b4a4925354__Liu and Cao(2026)_17O acid fractionation.pdf",
+   "doi": "10.1016/j.gca.2026.03.038"
+  },
+  {
+   "pdf": "7a890ee4a388__Olson(2024)_Peru cave monitoring.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122315"
+  },
+  {
+   "pdf": "5e9ff3108335__Kaufman(2020)_Holocene paleotemperature.pdf",
+   "doi": "10.1038/s41597-020-0445-3"
+  },
+  {
+   "pdf": "87fd6e3a7d99__Ward(2019)_SASM speleothem.pdf",
+   "doi": "10.1016/j.quascirev.2019.02.019"
+  },
+  {
+   "pdf": "fe0a17750950__Fontes(2017)_Lago do Saci.pdf",
+   "doi": "10.1016/j.quascirev.2017.08.021"
+  },
+  {
+   "pdf": "736e32f12ed4__DApolito(2013)_Hill of Six Lakes.pdf",
+   "doi": "10.1016/j.quascirev.2013.07.013"
+  },
+  {
+   "pdf": "97f0fa0cfefa__Molsblech(2012)_Santiago Cave.pdf",
+   "doi": "10.1038/ngeo1588"
+  },
+  {
+   "pdf": "25c746f5f752__Maslin(2011)_Amazon river discharge.pdf",
+   "doi": "10.1016/j.quascirev.2011.10.007"
+  },
+  {
+   "pdf": "ac319f8ce463__Kelson(2025)_Michigan soil.pdf",
+   "doi": "10.1017/qua.2024.41"
+  },
+  {
+   "pdf": "1c47481db09c__Bernecker(2026)_D4Xgui.pdf",
+   "doi": "10.1016/j.softx.2025.102492"
+  },
+  {
+   "pdf": "cf6624a5360d__Uemura(2010)_triple oxygen in water vapor.pdf",
+   "doi": "10.1029/2009gl041960"
+  },
+  {
+   "pdf": "a672fc2ea6ce__Busigny, 2005, Nitrogen content and isotopic composition of oceanic crust at a superfast.pdf",
+   "doi": "10.1029/2005gc001020"
+  },
+  {
+   "pdf": "17b2d9b9b0e0__Bommer, 2006, Control of hazard due to seismicity induced by a hot fractured rock geothermal project.pdf",
+   "doi": "10.1016/j.enggeo.2005.11.002"
+  },
+  {
+   "pdf": "bc3baeee8348__Deichmann, 2009, Earthquakes Induced by the Stimulation of an Enhanced Geothermal System below Basel (Switzerland).pdf",
+   "doi": "10.1785/gssrl.80.5.784"
+  },
+  {
+   "pdf": "cf2e4d4badae__Keranen, 2013, Potentially induced earthquakes in Oklahoma, USA; Links between wastewater injection and the 2011 Mw 5.7 .pdf",
+   "doi": "10.1130/g34045.1"
+  },
+  {
+   "pdf": "d5eb2a3695e0__Majer, 2007, Induced seismicity associated with Enhanced Geothermal Systems.pdf",
+   "doi": "10.1016/j.geothermics.2007.03.003"
+  },
+  {
+   "pdf": "60d2e053f6ab__Mcgarr, 2015, Coping with earthquakes induced by fluid injection.pdf",
+   "doi": "10.1126/science.aaa0494"
+  },
+  {
+   "pdf": "6e7e8d9f9004__Sutherland, 2012, Drilling reveals fluid control on architecture and rupture of the Alpine fault, New Zealand.pdf",
+   "doi": "10.1130/g33614.1"
+  },
+  {
+   "pdf": "c4ef03e91271__Trutnevyte, 2018, Induced seismicity hazard and risk by enhanced geothermal systems; an expert elicitation approach.pdf",
+   "doi": "10.1088/1748-9326/aa9eb2"
+  },
+  {
+   "pdf": "ed034f376ca7__Zhai, 2009, Pore-pressure diffusion, enhanced by poroelastic stresses, controls induced seismicity in Oklahoma.pdf",
+   "doi": "10.1073/pnas.1819225116"
+  },
+  {
+   "pdf": "9e46933fde23__Choi et al. (2005) Estimation of deep-reservoir temperature of CO2-rich springs in KW, S Korea.pdf",
+   "doi": "10.1016/j.jvolgeores.2004.10.001"
+  },
+  {
+   "pdf": "692d8764e54b__Jeong et al. (2016) Hydrogeochemistry and noble gas isotopes of GW in the FZ.pdf",
+   "doi": "10.9720/kseg.2016.4.551"
+  },
+  {
+   "pdf": "f21623299d3a__정찬호 (2016) 제주도 서귀포지역 천연탄산수의 기원과 수리화학특성.pdf",
+   "doi": "10.9720/kseg.2016.4.515"
+  },
+  {
+   "pdf": "2dec30816532__Agusto et al. (2013) Gas geochemistry of the magmatic-hydrothermal fluid reservoir in the Copahue–Caviahue Volcanic Comp.pdf",
+   "doi": "10.1016/j.jvolgeores.2013.03.003"
+  },
+  {
+   "pdf": "35232d2257e7__Asamori, 2010, Electrical resistivity structure and helium isotopes around Naruko volcano, northeastern Japan and its im.pdf",
+   "doi": "10.1155/2010/738139"
+  },
+  {
+   "pdf": "1df402d73e8f__Avice, 2019, High-precision measurements of krypton and xenon isotopes with a new static-mode quadrupole ion trap mass s.pdf",
+   "doi": "10.1039/c8ja00218e"
+  },
+  {
+   "pdf": "04a9e26a3df4__Baptiste, 2004, Helium isotopes at the Rainbow hydrothermal site (Mid-Atlantic Ridge, 36°14′N).pdf",
+   "doi": "10.1016/s0012-821x(04)00094-9"
+  },
+  {
+   "pdf": "76e815e9a1e5__Barruol, 2019, Large-scale flow of Indian Ocean asthenosphere driven by Réunion plume.pdf",
+   "doi": "10.1038/s41561-019-0479-3"
+  },
+  {
+   "pdf": "fe585f596f84__Barry et al. (2020) Volatile sources, sinks and pathways, A helium‑carbon isotope study of Baja California fluids and ga.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119722"
+  },
+  {
+   "pdf": "efd7f35f63b5__Barry, 2013, Helium and carbon isotope systematics of cold “mazuku” CO2 vents and hydrothermal gases and fluids from Run.pdf",
+   "doi": "10.1016/j.chemgeo.2012.07.003"
+  },
+  {
+   "pdf": "44b60339f5eb__Barry, 2019, Forearc carbon sink reduces long-term volatile recycling into the mantle.pdf",
+   "doi": "10.1038/s41586-019-1131-5"
+  },
+  {
+   "pdf": "2b370f52c1a2__Baumberger_2016_Fluid composition of the sediment-influenced Loki’s Castle vent field at the ultra-slow spreading Arctic.pdf",
+   "doi": "10.1016/j.gca.2016.05.017"
+  },
+  {
+   "pdf": "f66da28c6830__Blenkinsop, 2008, Relationships between faults, extension fractures and veins, and stress.pdf",
+   "doi": "10.1016/j.jsg.2008.01.008"
+  },
+  {
+   "pdf": "c2501ea28e7f__Bougault_1993_Fast_and_Slow_Spreading_Ridges.pdf",
+   "doi": "10.1029/93jb00508"
+  },
+  {
+   "pdf": "dfa995aaf90d__Bradley, 2010, Multiple origins of methane at the Lost City Hydrothermal Field.pdf",
+   "doi": "10.1016/j.epsl.2010.05.034"
+  },
+  {
+   "pdf": "f77e8444cd16__Brauer et al. (2017) Regional distribution pattern of carbon and helium isotopes from different volcanic fields in the F.pdf",
+   "doi": "10.1016/j.chemgeo.2017.04.004"
+  },
+  {
+   "pdf": "6d2796a9866a__Brauer, 2016, Helium and carbon isotope signatures of gas exhalations in the westernmost part of the Pannonian Basin (SE.pdf",
+   "doi": "10.1016/j.chemgeo.2015.12.016"
+  },
+  {
+   "pdf": "3bb5e6338200__Brauer, 2018, Monitoring of helium and carbon isotopes in the western Eger Rift area (Czech Republic) Relationships with.pdf",
+   "doi": "10.1016/j.chemgeo.2018.02.017"
+  },
+  {
+   "pdf": "faf908fe8925__Burnette, 2003, Estimating the dynamics of groundwater input into the coastal zone via continuous radon-222 measurements.pdf",
+   "doi": "10.1016/s0265-931x(03)00084-5"
+  },
+  {
+   "pdf": "20fe6eea0653__Buzek, 2010, Temperature programmed desorption of coal gases – Chemical and carbon isotope composition.pdf",
+   "doi": "10.1016/j.fuel.2009.09.020"
+  },
+  {
+   "pdf": "ee708b662e4d__Byrne, 2018, Determining gas expulsion vs retention during hydrocarbon generation in the Eagle Ford Shale using noble ga.pdf",
+   "doi": "10.1016/j.gca.2018.08.042"
+  },
+  {
+   "pdf": "5c6a32885c90__Chang, 2005, Crustal Structure in Southern Korea from Joint Analysis of Teleseismic Receiver Functions and Surface-Wave .pdf",
+   "doi": "10.1785/0120040080"
+  },
+  {
+   "pdf": "dc3faf39c3b0__Chang, 2006, Crustal Structure in Southern Korea from Joint Analysis of Regional Broadband Waveforms and Travel Times.pdf",
+   "doi": "10.1785/0120040165"
+  },
+  {
+   "pdf": "6b0db1c3efd5__Chang, 2007, Moho Depth and Crustal VPVS Variation in Southern Korea from Teleseismic Receiver Functions Implication for.pdf",
+   "doi": "10.1785/0120050264"
+  },
+  {
+   "pdf": "5c2c7bc8fe82__Chang, 2010, Interaction between regional stress state and faults Complementary analysis of borehole in situ stress and .pdf",
+   "doi": "10.1016/j.tecto.2009.12.012"
+  },
+  {
+   "pdf": "404189eb6b26__Chen et al. (2019) Mantle fluids associated with crustal-scale faulting in a continental subduction setting, Taiwan.pdf",
+   "doi": "10.1038/s41598-019-47070-2"
+  },
+  {
+   "pdf": "0d46934d802e__Chen, 2016, The chemical and isotopic compositions of gas discharge from shallow-water hydrothermal vents at Kueishantao.pdf",
+   "doi": "10.2343/geochemj.2.0425"
+  },
+  {
+   "pdf": "3d9569f8463e__Chen, 2017, Mantle transition zone, stagnant slab and intraplate volcanism in Northeast Asia.pdf",
+   "doi": "10.1093/gji/ggw491"
+  },
+  {
+   "pdf": "ea4326ca798a__Cheon, 2019, Tectonically controlled multiple stages of deformation along the Yangsan Fault Zone, SE Korea, since Late C.pdf",
+   "doi": "10.1016/j.jseaes.2018.11.003"
+  },
+  {
+   "pdf": "3640f5da045e__Chiodini (2008) Carbon isotopic composition of soil CO2 efflux.pdf",
+   "doi": "10.1016/j.epsl.2008.07.051"
+  },
+  {
+   "pdf": "356984eac25c__Choi et al. (2019) An analysis of the intraplate earthquake (2016M5. 8_GY) that occurred in the Gyeongsang Basin in the .pdf",
+   "doi": "10.1093/gji/ggz001"
+  },
+  {
+   "pdf": "ff9257fd8fc9__Choi et al. (2019) Surface Deformations and Rupture Processes Associated with the 2017 Mw 5.4 Pohang, Korea, Earthquake.pdf",
+   "doi": "10.1785/0120180167"
+  },
+  {
+   "pdf": "d1040f70122a__Choi, 2024, Combined effect of magmatic fluid–seawater mixing and host rock alteration on the formation of gold-enriched.pdf",
+   "doi": "10.1016/j.oregeorev.2024.106235"
+  },
+  {
+   "pdf": "bccd9b82b28f__Chung, 2018, Depth-dependent seismicity and crustal heterogeneity in South Korea.pdf",
+   "doi": "10.1016/j.tecto.2018.10.020"
+  },
+  {
+   "pdf": "49884d549c5c__Clement, 2024, Mascarene basin asthenosphere reservoir source and composition revealed by Central Indian Ridge basalt ge.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122291"
+  },
+  {
+   "pdf": "a3640de90747__Conrad, 2011, Patterns of intraplate volcanism controlled by asthenospheric shear.pdf",
+   "doi": "10.1038/ngeo1111"
+  },
+  {
+   "pdf": "c59b305c6720__Cordoba.SE.V13.P1585.2022.pdf",
+   "doi": "10.5194/se-13-1585-2022"
+  },
+  {
+   "pdf": "a19be89ee67d__Cox, 2010, The application of failure mode diagrams for exploring the roles of fluid pressure and stress states in contr.pdf",
+   "doi": "10.1111/j.1468-8123.2010.00281.x"
+  },
+  {
+   "pdf": "0edc63d49217__Crossey, 2006, Dissected hydrologic system at the Grand Canyon Interaction between deeply derived fluids and plateau aqu.pdf",
+   "doi": "10.1130/g22057.1"
+  },
+  {
+   "pdf": "d9f3a7ca4b4c__Crossey, 2009, Degassing of mantle-derived CO2 and He from springs in the southern Colorado Plateau region—Neotectonic c.pdf",
+   "doi": "10.1130/b26394.1"
+  },
+  {
+   "pdf": "d27725e4cab6__Darrah, 2012, Geochemical evidence for possible natural migration of Marcellus Formation brine to shallow aquifers in Pe.pdf",
+   "doi": "10.1073/pnas.1121181109/-/dcsupplemental"
+  },
+  {
+   "pdf": "5cd782d11de3__Darrah, 2013, Gas chemistry of the Dallol region of the Danakil Depression in the Afar region of the northern-most East .pdf",
+   "doi": "10.1016/j.chemgeo.2012.10.036"
+  },
+  {
+   "pdf": "9dc1ff538ede__Darrah, 2015, Elevated levels of diesel range organic compounds in groundwater near Marcellus gas operations are derived.pdf",
+   "doi": "10.1073/pnas.1511474112"
+  },
+  {
+   "pdf": "fe4a6f96762f__Darrah, 2015, The evolution of Devonian hydrocarbon gases in shallow aquifers of the northern Appalachian Basin Insights.pdf",
+   "doi": "10.1016/j.gca.2015.09.006"
+  },
+  {
+   "pdf": "03ae3733c4d7__de Leeuw, 2010, Regional and temporal variations in CO23He, 3He4He and δ13C along the North Anatolian Fault Zone, Turkey.pdf",
+   "doi": "10.1016/j.apgeochem.2010.01.010"
+  },
+  {
+   "pdf": "99d4304b3583__de Moor, 2013, Gas chemistry and nitrogen isotope compositions of cold mantle gases from Rungwe Volcanic Province, south.pdf",
+   "doi": "10.1016/j.chemgeo.2012.08.004"
+  },
+  {
+   "pdf": "e10f4746e8b4__Dunai, 2002, Storage and Transport of Noble Gases in the Subcontinental Lithosphere.pdf",
+   "doi": "10.2138/rmg.2002.47.10"
+  },
+  {
+   "pdf": "a2193215e93d__Elkins.2006.Tracing nitrogen in volcanic and geothermal volatiles from the Nicaraguan volcanic front.pdf",
+   "doi": "10.1016/j.gca.2006.07.024"
+  },
+  {
+   "pdf": "9efef86426af__Ellsworth et al. (2019) Triggering of the Pohang, Korea, Earthquake ( 5.5) by Enhanced Geothermal System Stimulation.pdf",
+   "doi": "10.1785/0220190102"
+  },
+  {
+   "pdf": "81bfdcc499f8__Escobar (2019) Assessment of Helium Isotopes near the Japan Trench 5 Years after the 2011 Tohoku-Oki Earthquak.pdf",
+   "doi": "10.1021/acsearthspacechem.8b00190"
+  },
+  {
+   "pdf": "b5b1d3cceec9__Escobar, 2020, Observation of the deep Indonesian throughflow using helium isotopes.pdf",
+   "doi": "10.1007/s10872-020-00560-8"
+  },
+  {
+   "pdf": "c7b37a2af46f__Etiope, 2009, Evidence of subsurface anaerobic biodegradation of hydrocarbons and potential secondary methanogenesis in .pdf",
+   "doi": "10.1016/j.marpetgeo.2008.12.002"
+  },
+  {
+   "pdf": "3e3461326d66__Fairley, 2004, Rapid transport pathways for geothermal fluids in an active Great Basin fault zone.pdf",
+   "doi": "10.1130/g20617.1"
+  },
+  {
+   "pdf": "c58d20631ab5__Faulkner, 2010, A review of recent developments concerning the structure, mechanics and fluid flow properties of fault z.pdf",
+   "doi": "10.1016/j.jsg.2010.06.009"
+  },
+  {
+   "pdf": "d1050d74dafc__Fischer, 2009, Upper-mantle volatile chemistry at Oldoinyo Lengai volcano and the origin of carbonatites.pdf",
+   "doi": "10.1038/nature07977"
+  },
+  {
+   "pdf": "747097897d3b__Fischer, 2024, CO2 emissions during the 2023 Litli Hrútur eruption in Reykjanes, Iceland ẟ13C tracks magma degassing.pdf",
+   "doi": "10.1007/s00445-024-01751-7"
+  },
+  {
+   "pdf": "c840b542c491__Friedlingstein, 2023, Global Carbon Budget 2023.pdf",
+   "doi": "10.5194/essd-15-5301-2023"
+  },
+  {
+   "pdf": "d10cd3f63ea1__Fruh-green, 2022, Diversity of magmatism, hydrothermal processes and microbial interactions at mid-ocean ridges.pdf",
+   "doi": "10.1038/s43017-022-00364-y"
+  },
+  {
+   "pdf": "a458243bdf4d__Geofluids - 2008 - KUMAGAI - Geological background of the Kairei and Edmond hydrothermal fields along the Central Indian.pdf",
+   "doi": "10.1111/j.1468-8123.2008.00223.x"
+  },
+  {
+   "pdf": "947311fcfa41__German et al_2022_Volcanically hosted venting at Aurora hydrothermal field.pdf",
+   "doi": "10.1038/s41467-022-34014-0"
+  },
+  {
+   "pdf": "ad06e979b4c7__German, 2010, Heat, volume and chemical fluxes from submarine venting A synthesis of results from the Rainbow hydrotherm.pdf",
+   "doi": "10.1016/j.dsr.2009.12.011"
+  },
+  {
+   "pdf": "fe5e5365a882__Gilfillan et al., 2008, The noble gas geochemistry of natural CO2gas reservoirs fromthe Colorado Plateau and Rocky Mount.pdf",
+   "doi": "10.1016/j.gca.2007.10.009"
+  },
+  {
+   "pdf": "67060838166b__Golding, 2013, Stable isotope geochemistry of coal bed and shale gas and related production waters; A review.pdf",
+   "doi": "10.1016/j.coal.2013.09.001"
+  },
+  {
+   "pdf": "e444ceba5e5f__Graf, 2009, Stable–unstable flow of geothermal fluids in fractured rock.pdf",
+   "doi": "10.1111/j.1468-8123.2008.00233.x"
+  },
+  {
+   "pdf": "ccc0aada4c75__Graham et al. (2016) Extreme incompatibility of helium during mantle melting-Evidence from undegassed mid-ocean ridge ba.pdf",
+   "doi": "10.1016/j.epsl.2016.09.016"
+  },
+  {
+   "pdf": "eedbc01ab076__Gudmundsson, 2010, Effects of internal structure and local stresses on fracture propagation, deflection, and arrest in f.pdf",
+   "doi": "10.1016/j.jsg.2009.08.013"
+  },
+  {
+   "pdf": "6bbac375174b__Higgs, 2019, Seep-bubble characteristics and gas flow rates from a shallow-water, high-density seep field on the shelf-t.pdf",
+   "doi": "10.1016/j.margeo.2019.105985"
+  },
+  {
+   "pdf": "9e84d846051a__Hilton, 2007, The Leaking Mantle.pdf",
+   "doi": "10.1126/science"
+  },
+  {
+   "pdf": "3f948116f3cd__Hirayama, 2020, Estimation of water seepage rate in the active crater lake system of Kusatsu-Shirane volcano, Japan, usi.pdf",
+   "doi": "10.1016/j.jenvrad.2020.106257"
+  },
+  {
+   "pdf": "585841d21d21__Hirota, 2010, Simultaneous determination of δ15N and δ18O of N2O and δ13C of CH4 in nanomolar quantities from a single w.pdf",
+   "doi": "10.1002/rcm.4483"
+  },
+  {
+   "pdf": "10694c4642ab__Holzer, 2017, Objective estimates of mantle 3He in the ocean and implications for constraining the deep ocean circulatio.pdf",
+   "doi": "10.1016/j.epsl.2016.10.054"
+  },
+  {
+   "pdf": "f14d493d8622__Hong et al. (2010) Nitrogen as the carrier gas for helium emission along an active fault in NW Taiwan.pdf",
+   "doi": "10.1016/j.apgeochem.2010.01.016"
+  },
+  {
+   "pdf": "f2182e7d4405__Hong, 2016, Seismotectonic Properties and Zonation of the Far-Eastern Eurasian Plate Around the Korean Peninsula.pdf",
+   "doi": "10.1007/s00024-015-1170-2"
+  },
+  {
+   "pdf": "4b82cfddc823__Hong, 2023, Fault-related basins as carbon reservoirs Soil CO2 emissions in the SE Korean Peninsula.pdf",
+   "doi": "10.1016/j.catena.2023.107300"
+  },
+  {
+   "pdf": "30779843e3af__Horiguchi, 2010, Geographical distribution of helium isotope ratios in northeastern Japan].pdf",
+   "doi": "10.1111/j.1440-1738.2009.00703.x"
+  },
+  {
+   "pdf": "9f270be3f71d__Horiguchi, 2013, Geographical distribution of 3He4He ratios in north Kyushu, Japan Geophysical implications for the occu.pdf",
+   "doi": "10.1016/j.chemgeo.2012.12.008"
+  },
+  {
+   "pdf": "1aa4f44e27b0__Huang, 2013, Aseismic deep subduction of the Philippine Sea plate and slab window.pdf",
+   "doi": "10.1016/j.jseaes.2013.07.002"
+  },
+  {
+   "pdf": "cd925d67128a__Hunt Darrah Podera, 2012, Determining the source and genetic fingerprint of natural gases using noble gas geochemistry A.pdf",
+   "doi": "10.1306/03161211093"
+  },
+  {
+   "pdf": "5b9d0118b6da__Ilanko, 2019, Modification of fumarolic gases by the ice-covered edifice of Erebus volcano, Antarctica.pdf",
+   "doi": "10.1016/j.jvolgeores.2019.05.017"
+  },
+  {
+   "pdf": "fc5595fe18a1__Inbal, 2016, Localized seismic deformation in the upper mantle revealed by dense siesmic arrays.pdf",
+   "doi": "10.1126/science.aaf6689"
+  },
+  {
+   "pdf": "625d6cf6a915__Inguaggiato, 2017, The hydrothermal system of Cerro Machín volcano (Colombia) Newmagmatic signals observed during 2011–2.pdf",
+   "doi": "10.1016/j.chemgeo.2016.12.020"
+  },
+  {
+   "pdf": "bdd9d5e69d4b__Inostroza, 2020, Geochemistry of gas and water discharge from the magmatic-hydrothermal system of Guallatiri volcano, no.pdf",
+   "doi": "10.1007/s00445-020-01396-2"
+  },
+  {
+   "pdf": "bd40cd1a6a6e__Jean-Baptiste et al. (2014) Helium isotope systematics of volcanic gases and thermal waters of Guadeloupe island.pdf",
+   "doi": "10.1016/j.jvolgeores.2014.07.003"
+  },
+  {
+   "pdf": "5dd93c8cdf66__Jenkins, 2015, The distributions of helium isotopes and tritium along the U.S. GEOTRACES North Atlantic sections (GEOTRA.pdf",
+   "doi": "10.1016/j.dsr2.2014.11.017"
+  },
+  {
+   "pdf": "5a0310888a7d__Jihyun Kim, 2019, CO2 leakage detection in the near-surface above natural CO2-rich water aquifer using soil gas monitori.pdf",
+   "doi": "10.1016/j.ijggc.2019.06.015"
+  },
+  {
+   "pdf": "8d9f388a2e5e__John, 2005, Zinc stable isotopes in seafloor hydrothermal vent fluids and chimneys.pdf",
+   "doi": "10.1016/j.epsl.2007.12.011"
+  },
+  {
+   "pdf": "ce0f2dd63270__John, 2020, AWESOME OCIM A simple, flexible, and powerful tool for modeling elemental cycling in the oceans.pdf",
+   "doi": "10.1016/j.chemgeo.2019.119403"
+  },
+  {
+   "pdf": "e1a37cca472e__Kadko, 1996, Radioisotopic studies of submarine hydrothermal vents.pdf",
+   "doi": "10.1029/96rg01762"
+  },
+  {
+   "pdf": "f163dfb449cf__Kagoshima, 2016, Spatial and temporal variations of gas geochemistry at Mt. Ontake, Japan.pdf",
+   "doi": "10.1016/j.jvolgeores.2016.06.013"
+  },
+  {
+   "pdf": "6ed726ef2a9e__Kalacheva, 2017, Hydrothermal system and acid lakes of Golovnin caldera, Kunashir, Kuril Islands Geochemistry, solute fl.pdf",
+   "doi": "10.1016/j.jvolgeores.2017.06.001"
+  },
+  {
+   "pdf": "358d2708ec2e__Karlstrom, 2012, Mantle-driven dynamic uplift of the Rocky Mountains and Colorado Plateau and its surface response Towar.pdf",
+   "doi": "10.1130/l150.1"
+  },
+  {
+   "pdf": "e225fb59e1b8__Karlstrom, 2013, Mantle 3He and CO2 degassing in carbonic and geothermal springs of Colorado and implications for neotec.pdf",
+   "doi": "10.1130/g34007.1"
+  },
+  {
+   "pdf": "5b20945300ac__Karolyte, 2019, Tracing the migration of mantle CO2 in gas fields and mineral water springs in south-east Australia usin.pdf",
+   "doi": "10.1016/j.gca.2019.06.002"
+  },
+  {
+   "pdf": "8328a6c815a0__Kawagucci et al. (2016) Fluid chemistry in the Solitaire and Dodo hydrothermal fields of the Central Indian Ridge.pdf",
+   "doi": "10.1111/g"
+  },
+  {
+   "pdf": "a229649dc3a2__Kawagucci, 2013, Post-drilling changes in fluid discharge pattern, mineral deposition, and fluid chemistry in the Iheya .pdf",
+   "doi": "10.1002/2013gc004895"
+  },
+  {
+   "pdf": "ee319ea0bfe5__Keegan Treloar, 2022, Fault-controlled springs; A review.pdf",
+   "doi": "10.1016/j.earscirev.2022.104058"
+  },
+  {
+   "pdf": "2fb104f53746__Keir, 2008, Flux and dispersion of gases from the “Drachenschlund” hydrothermal vent at 8°18' S, 13°30' W on the Mid-Atl.pdf",
+   "doi": "10.1016/j.epsl.2008.03.054"
+  },
+  {
+   "pdf": "dba8e8480531__Kennedy.2007.Flow of Mantle Fluids Through the Ductile Lower Crust- Helium Isotope Trends.pdf",
+   "doi": "10.1126/science.1148092"
+  },
+  {
+   "pdf": "a10c9ac1bb6e__Kim, 2002, Tidal pumping of groundwater into the coastal ocean revealed from submarine 222Rn and CH4 monitoring.pdf",
+   "doi": "10.1029/2002gl015093"
+  },
+  {
+   "pdf": "a30354f4ca9f__Kim, 2004, Accumulation records of radionuclides and trace metals in two contrasting Delaware salt marshes.pdf",
+   "doi": "10.1016/j.marchem.2004.02.002"
+  },
+  {
+   "pdf": "a5c84133ec69__Kim, 2004, Fault damage zones.pdf",
+   "doi": "10.1016/j.jsg.2003.08.002"
+  },
+  {
+   "pdf": "9df53864b166__Kim, 2005, Evidence for anthropogenic 210Po in the Urban Atmosphere of Seoul, Korea.pdf",
+   "doi": "10.1021/es049023u"
+  },
+  {
+   "pdf": "123a51164bd3__Kim, 2007, Crustal Structure of the Southern Korean Peninsula from Seismic Waves Generated by Large Explosions in 2002 a.pdf",
+   "doi": "10.1007/s00024-006-0149-4"
+  },
+  {
+   "pdf": "f7dd3f0fc84d__Kim, 2015, Back-arc rifting in the Korea Plateau in the East Sea (Japan Sea) and the separation of the southwestern Japa.pdf",
+   "doi": "10.1016/j.tecto.2014.11.003"
+  },
+  {
+   "pdf": "7692e42e41fe__Kim, 2020, Mantle-Derived Helium Emission near the Pohang EGS Site, South Korea; Implications for Active Fault Distribut.pdf",
+   "doi": "10.1155/2020/2359740"
+  },
+  {
+   "pdf": "6e681244c817__Kim, 2020, Tracing river water versus wastewater sources of trace elements using rare earth elements in the Nakdong Rive.pdf",
+   "doi": "10.1016/j.marpolbul.2020.111589"
+  },
+  {
+   "pdf": "ef412e11a21c__Kim, 2024, He-Ar isotopic signatures of the Mesozoic granitoids in South Korea implications for genesis of the granitic .pdf",
+   "doi": "10.1007/s12303-024-0038-9"
+  },
+  {
+   "pdf": "4e6798e26e3e__Klemperer, 2013, Mantle fluids in the Karakoram fault; Helium isotope evidence.pdf",
+   "doi": "10.1016/j.epsl.2013.01.013"
+  },
+  {
+   "pdf": "23635d259011__Klemperer, 2022, Limited underthrusting of India below Tibet 3He4He analysis of thermal springs locates the mantle sutur.pdf",
+   "doi": "10.1073/pnas"
+  },
+  {
+   "pdf": "7dee023ab837__Konn (2015) The Production of Methane, Hydrogen, and Organic Compounds in Ultramafic-Hosted Hydrothermal Vents of the Mi.pdf",
+   "doi": "10.1089/ast.2014.1198"
+  },
+  {
+   "pdf": "9dab53d52929__Konn, 2018, Organic Gas and Element Geochemistry of Hydrothermal Fluids of the Newly Discovered Extensive.pdf",
+   "doi": "10.1155/2018/7692839"
+  },
+  {
+   "pdf": "4390aec87e0d__KONN, 2022, Extending the dataset of fluid geochemistry of the Menez Gwen, Lucky Strike, Rainbow, TAG and Snake Pit hydr.pdf",
+   "doi": "10.1016/j.dsr.2021.103630"
+  },
+  {
+   "pdf": "bd3a6be68fee__Konrad et al. (2018) Spatial and temporal variability in Marquesas Islands volcanism revealed by 3He-4He and the composi.pdf",
+   "doi": "10.1016/j.chemgeo.2017.12.025"
+  },
+  {
+   "pdf": "6c6b6f688954__Kulikowski, 2018, Mapping permeable subsurface fracture networks; A case study on the Cooper Basin, Australia.pdf",
+   "doi": "10.1016/j.jsg.2018.02.009"
+  },
+  {
+   "pdf": "b830b3ac675a__Kulogoski, 2005, Source and movement of helium in the eastern Morongo groundwater Basin; The influence of regional tecto.pdf",
+   "doi": "10.1016/j.gca.2005.03.001"
+  },
+  {
+   "pdf": "6d516df29ad4__Kulongoki et al. (2013) Volatile fluxes through the Big Bend section of the San Andreas Fault.pdf",
+   "doi": "10.1016/j.chemgeo.2012.09.007"
+  },
+  {
+   "pdf": "b9d410bc3559__Kurihara, 2020, Isotopic ratios of uranium and caesium in spherical radioactive caesium-bearing microparticles derived f.pdf",
+   "doi": "10.1038/s41598-020-59933-0"
+  },
+  {
+   "pdf": "d16f2948852b__Kuwahara, 2021, Rapid coupling between solid earth and ice volume during the Quaternary.pdf",
+   "doi": "10.1038/s41598-021-84448-7"
+  },
+  {
+   "pdf": "f8bad4545a60__Kwon saeha,2019,Article_CharacterizationOf42-km-DeepFr.pdf",
+   "doi": "10.1007/s00603-018-1639-2"
+  },
+  {
+   "pdf": "74b2b64cab04__Larson, 2015, Subsurface conditions in hydrothermal vents inferred from diffuse flow composition, and models of reaction.pdf",
+   "doi": "10.1016/j.epsl.2015.05.033"
+  },
+  {
+   "pdf": "538a5035adc0__Lee et al. (2010) Geothermal resource assessment in Korea.pdf",
+   "doi": "10.1016/j.rser.2010.05.003"
+  },
+  {
+   "pdf": "fe42c71fbd64__Lee et al. (2011) Strontium isotope geochemistry and its geochemical implication from hot spring waters in South Korea.pdf",
+   "doi": "10.1016/j.jvolgeores.2011.09.004"
+  },
+  {
+   "pdf": "b1f65da56012__Lee et al., 3D crustal velocity structure beneath the broadband seismic array in the Gyeongju area of Korea by receiver .pdf",
+   "doi": "10.1016/j.tecto.2016.08.022"
+  },
+  {
+   "pdf": "150749ee6a03__Lee(2006)_A simple and rapid method for analyzing radon in coastal and ground waters using a radon-in-air monitor.pdf",
+   "doi": "10.1016/j.jenvrad.2006.05.006"
+  },
+  {
+   "pdf": "5c6103b1f311__Lee, 2016, Massive and prolonged deep carbon emissions associated with continental rifting.pdf",
+   "doi": "10.1038/ngeo2622"
+  },
+  {
+   "pdf": "98489e35d3b4__Lee, 2019, Mantle degassing along strike-slip faults in the Southeastern Korean Peninsula.pdf",
+   "doi": "10.1038/s41598-019-51719-3"
+  },
+  {
+   "pdf": "31a45c6710f6__Lee, 2021, Integrated assessment of major element geochemistry and geological setting of traditional natural mineral wat.pdf",
+   "doi": "10.1016/j.jhydrol.2021.126249"
+  },
+  {
+   "pdf": "72391e29a2e9__Lee, 2025, Water and gas geochemistry of springs in Ulleungdo volcano, South Korea; Implications for degassing of upper .pdf",
+   "doi": "10.1016/j.jhydrol.2024.132286"
+  },
+  {
+   "pdf": "b16ede9971cc__Lewis, 2020, High-resolution imaging of hydrothermal heat flux using optical and thermal Structure-from-Motion photogram.pdf",
+   "doi": "10.1016/j.jvolgeores.2020.106818"
+  },
+  {
+   "pdf": "bd511dd97fe6__Li, 2010, High-pressure sorption isotherms and sorption kinetics of CH4 and CO2 on coals.pdf",
+   "doi": "10.1016/j.fuel.2009.06.008"
+  },
+  {
+   "pdf": "243bcaa9a416__Lim, Genesis of the columnar joints from welded tuff in Mount Mudeung National Geopark, Republic of Korea, 2015.pdf",
+   "doi": "10.1186/s40623-015-0323-y"
+  },
+  {
+   "pdf": "599af4b82a7e__Lin et al. (2020) Mantle degassing of primordial helium through submarine ridge flank basaltic basement.pdf",
+   "doi": "10.1016/j.epsl.2020.116386"
+  },
+  {
+   "pdf": "c8cb4bb842fa__Liu, 2023, Mantle serpentinization and associated hydrogen flux at North Atlantic magma-poor rifted margins.pdf",
+   "doi": "10.1130/g50722.1"
+  },
+  {
+   "pdf": "2501c75b1b3f__Lough, 2017, Opposing authigenic controls on the isotopic signature of dissolved iron in hydrothermal plumes.pdf",
+   "doi": "10.1016/j.gca.2016.12.022"
+  },
+  {
+   "pdf": "99dfbbe735b2__Lowenstern et al. (2015) Origins of geothermal gases at Yellowstone.pdf",
+   "doi": "10.1016/j.jvolgeores.2015.06.010"
+  },
+  {
+   "pdf": "c50290465580__Lowenstern, 2014, Prodigious degassing of a billion years of accumulated radiogenic helium at Yellowstone.pdf",
+   "doi": "10.1038/nature12992"
+  },
+  {
+   "pdf": "a65e2225f803__Lucic et al. (2014) The degassing character of a young volcanic center Cerro Negro.pdf",
+   "doi": "10.1007/s00445-014-0850-6"
+  },
+  {
+   "pdf": "b6ad4d4d5be0__Machida, 2014, Regional mantle heterogeneity regulates melt production along the Réunion hotspot-influenced Central Indi.pdf",
+   "doi": "10.2343/geochemj.2.0320"
+  },
+  {
+   "pdf": "2f75615d872c__mcdermott-et-al-pathways-for-abiotic-organic-synthesis-at-submarine-hydrothermal-fields.pdf",
+   "doi": "10.1073/pnas.1506295112"
+  },
+  {
+   "pdf": "b84bad6f5dfb__McMurtry et al. (2019) High 3He 4He ratios in lower East Rift Zone steaming vents precede a new phase of Kilauea 2018 er.pdf",
+   "doi": "10.1038/s41598-019-48268-0"
+  },
+  {
+   "pdf": "56287975f6d3__Méjean, 2020, Mantle helium in Southern Quebec groundwater A possible fossil record of the New England hotspot.pdf",
+   "doi": "10.1016/j.epsl.2020.116352"
+  },
+  {
+   "pdf": "74dbaa6832a6__Mendel, 2000, Relationship of the Central Indian Ridge segmentation with the evolution of the Rodrigues Triple Junction .pdf",
+   "doi": "10.1029/2000jb900098"
+  },
+  {
+   "pdf": "20ca6180d6c9__Menzies, 2016, The fluid budget of a continental plate boundary fault Quantification from the Alpine Fault, New Zealand.pdf",
+   "doi": "10.1016/j.epsl.2016.03.046"
+  },
+  {
+   "pdf": "92cf8f776a5b__Meredith, 2014, Ecosystem fluxes of hydrogen; a comparison of flux-gradient methods.pdf",
+   "doi": "10.5194/amt-7-2787-2014"
+  },
+  {
+   "pdf": "6c44ac4f3cd6__Micklethwaite, 2004, Fault-segment rupture, aftershock-zone fluid flow, and mineralization.pdf",
+   "doi": "10.1130/g20559.1"
+  },
+  {
+   "pdf": "f8fa5a9c062c__Micklethwaite, 2010, Active fault and shear processes and their implications for mineral deposit formation and discovery.pdf",
+   "doi": "10.1016/j.jsg.2009.10.009"
+  },
+  {
+   "pdf": "dff5d9aa4c1f__Mittelstaedt, 2012, Quantifying diffuse and discrete venting at the Tour Eiffel vent site, Lucky Strike hydrothermal fie.pdf",
+   "doi": "10.1029/2011gc003991"
+  },
+  {
+   "pdf": "73ec0f3c1e51__Morikawa, 2016, Widespread distribution of ascending fluids transporting mantle helium in the fore-arc region and their .pdf",
+   "doi": "10.1016/j.gca.2016.03.017"
+  },
+  {
+   "pdf": "03780c5acd47__Mottl, 2011, Chemistry of hot springs along the Eastern Lau Spreading Center.pdf",
+   "doi": "10.1016/j.gca.2010.12.008"
+  },
+  {
+   "pdf": "6c47b3c5969f__Naik et al. (2019) Geological and Structural Control on Localized Ground Effects within the Heunghae Basin during the Po.pdf",
+   "doi": "10.3390/geosciences9040173"
+  },
+  {
+   "pdf": "3ccc363cab0a__Nauret, 2006, Correlated trace element-Pb isotope enrichments in Indian MORB along 18–20°S, Central Indian Ridge.pdf",
+   "doi": "10.1016/j.epsl.2006.03.015"
+  },
+  {
+   "pdf": "1e149d581e97__Newell, 2023, Roadblocks and speed limits; Mantle-to-surface volatile flux through the lithospheric_scale Denali fault, .pdf",
+   "doi": "10.1130/g51068.1"
+  },
+  {
+   "pdf": "8f1c44ebd8c2__Nozaki, 2020, Microbial sulfate reduction plays an important role at the initial stage of subseafloor sulfide mineraliza.pdf",
+   "doi": "10.1130/g47943.1"
+  },
+  {
+   "pdf": "88db732f5b86__Oh hyunjoo, 2011, GIS mapping of regional probabilistic groundwater potential in the area of Pohang City, Korea.pdf",
+   "doi": "10.1016/j.jhydrol.2010.12.027"
+  },
+  {
+   "pdf": "b71c446572bc__Oh, 2015, A radon-thoron isotope pair as a reliable earthquake precursor.pdf",
+   "doi": "10.1038/srep13084"
+  },
+  {
+   "pdf": "9754d47dfd95__Ohba, 2010, Magmatic fluids of Tatun volcanic group, Taiwan.pdf",
+   "doi": "10.1016/j.apgeochem.2010.01.009"
+  },
+  {
+   "pdf": "6489a32451db__Okino et al. (2015) Tectonic Background of Four Hydrothermal Fields Along the Central Indian Ridge.pdf",
+   "doi": "10.1007/978-4-431-54865-2_11"
+  },
+  {
+   "pdf": "4e4d46d2244a__Onda, 2016, Groundwater oxygen isotope anomaly before the M6.6 Tottori earthquake in Southwest Japan.pdf",
+   "doi": "10.1038/s41598-018-23303-8"
+  },
+  {
+   "pdf": "01f33288b7ba__Pak, 2017, Widespread tectonic extension at the Central Indian Ridge between 8°S and 18°S.pdf",
+   "doi": "10.1016/j.gr.2016.12.015"
+  },
+  {
+   "pdf": "8e96f626d400__Park sehyeok, 2017, First Hydraulic Stimulation in Fractured Geothermal Reservoir in Pohang PX-2 Well.pdf",
+   "doi": "10.1016/j.proeng.2017.05.250"
+  },
+  {
+   "pdf": "31e6bcadc895__Park, 2016, Hydrochemistry and noble gas geochemistry of geothermal waters in Chungcheong Province, South Korea.pdf",
+   "doi": "10.2343/geochemj.2.0388"
+  },
+  {
+   "pdf": "f5ca6488b895__Park, 2021, Mantle-derived helium released through the Japan trench bend-faults.pdf",
+   "doi": "10.1038/s41598-021-91523-6"
+  },
+  {
+   "pdf": "cb6a3cf1404e__Parks, 2013, Distinguishing contributions to diffuse CO2 emissions in volcanic areas from magmatic degassing and thermal.pdf",
+   "doi": "10.1016/j.epsl.2013.06.046"
+  },
+  {
+   "pdf": "3d55206a5a00__Peng, 2011, Characteristics and source of inorganic and organic compounds in the sediments from two hydrothermal fields .pdf",
+   "doi": "10.1016/j.jseaes.2011.03.005"
+  },
+  {
+   "pdf": "26efa840537c__Pinti, 2017, Fluid circulation and reservoir conditions of the Los Humeros GeothermalField (LHGF), Mexico, as revealed b.pdf",
+   "doi": "10.1016/j.jvolgeores.2017.01.015"
+  },
+  {
+   "pdf": "bbba78f0954c__Pirajno, 2009, Intraplate magmatism in Central Asia and China and associated metallogeny.pdf",
+   "doi": "10.1016/j.oregeorev.2008.10.003"
+  },
+  {
+   "pdf": "7096bf5b27a7__Podowski, 2010, Biotic and abiotic factors affecting distributions of megafauna in diffuse flow on andesite and basalt a.pdf",
+   "doi": "10.3354/meps08797"
+  },
+  {
+   "pdf": "c7844a21d43a__Porcelli, 2018, Noble Gases in Geochemistry and Cosmochemistry.pdf",
+   "doi": "10.2138/rmg.2002.47.14"
+  },
+  {
+   "pdf": "7d056b178fbc__Proskurowski_2008_Stable_isotopic_evidence_microbial_methane_cycling_EPR.pdf",
+   "doi": "10.1016/j.gca.2008.01.025"
+  },
+  {
+   "pdf": "fe15f31458f2__Ramondenc_2006_EPSL.pdf",
+   "doi": "10.1016/j.epsl.2006.03.023"
+  },
+  {
+   "pdf": "b23336bdefa2__Ree_et_al-2003-Quaternary reactivation of Tertiary faults in the southeastern Korean Peninsula.pdf",
+   "doi": "10.1046/j.1038-4871.2003.00372.x"
+  },
+  {
+   "pdf": "e0f681cfe282__Roques,2020,In situ observation of helium and argon release during fluid pressure triggered rock deformation.pdf",
+   "doi": "10.1038/s41598-020-63458-x"
+  },
+  {
+   "pdf": "090fc2b40e47__Roulleau et al. (2013) He, N and C isotopes and fluxes in Aira caldera.pdf",
+   "doi": "10.1016/j.jvolgeores.2013.04.003"
+  },
+  {
+   "pdf": "63045d620eb1__Roulleau et al. (2015) He, Ar, N and C isotope compositions in Tatun Volcanic Group (TVG), Taiwan.pdf",
+   "doi": "10.1016/j.jvolgeores.2015.07.017"
+  },
+  {
+   "pdf": "b79b6d3ce536__Saegusa, 2006, Development of a multibottle gas‐tight fluid sampler WHATS II for Japanese submersibles ROVs.pdf",
+   "doi": "10.1111/j.1468-8123.2006.00143.x"
+  },
+  {
+   "pdf": "0d96dd3c8e2e__Saiga, 2010, Velocity structure in the crust beneath the Kyushu area.pdf",
+   "doi": "10.5047/eps.2010.02.003"
+  },
+  {
+   "pdf": "d95038933f6f__Wen, 2016, Helium and methane sources and fluxes of shallow submarine hydrothermal plumes near the Tokara Islands, South.pdf",
+   "doi": "10.1038/srep34126"
+  },
+  {
+   "pdf": "8e1ad5ecd55b__Sano, 2017, Origin of methane-rich natural gas at the West Pacific convergent plate boundary.pdf",
+   "doi": "10.1038/s41598-017-15959-5"
+  },
+  {
+   "pdf": "9fc86edb515e__Sano, 2020, Groundwater oxygen anomaly related to the 2016 Kumamoto earthquake in Southwest Japan.pdf",
+   "doi": "10.2183/pjab.96.024"
+  },
+  {
+   "pdf": "8c0e9a1c0906__Sartandel, 2014, Assessment of 226Ra and 228Ra activity concentration in west coast of India.pdf",
+   "doi": "10.1007/s10967-014-3037-x"
+  },
+  {
+   "pdf": "95d61ba5dfb8__Schmadant, 2010, Complex subduction and small-scale convection revealed by body-wave tomography of the western United St.pdf",
+   "doi": "10.1016/j.epsl.2010.06.047"
+  },
+  {
+   "pdf": "b95eb6a354d8__Schmidt, 2007, Geochemistry of hydrothermal fluids from the ultramafic-hosted Logatchev hydrothermal field, 15°N on the .pdf",
+   "doi": "10.1016/j.chemgeo.2007.01.023"
+  },
+  {
+   "pdf": "e0fcd6c250d2__Schrenk and Brazelton, 2013, Serpentinization, Carbon, and Deep Life.pdf",
+   "doi": "10.2138/rmg.2013.75.18"
+  },
+  {
+   "pdf": "4b6f07f3692f__Sepulveda, 2007, Gas geochemistry of the Cordón Caulle geothermal system, Southern Chile.pdf",
+   "doi": "10.1016/j.geothermics.2007.05.001"
+  },
+  {
+   "pdf": "1327bca29e9f__Shozugawa, 2020, Landside tritium leakage over through years from Fukushima Dai-ichi nuclear plant and relationship betw.pdf",
+   "doi": "10.1038/s41598-020-76964-9"
+  },
+  {
+   "pdf": "3de75654f620__Sim ho, 2017, Reactivated_Timings_of_Yangsan_Fault_in_the_Northern_Pohang_Area,_Korea.pdf",
+   "doi": "10.9719/eeg.2017.50.2.97"
+  },
+  {
+   "pdf": "5ea954cb1c08__Song and Lee (2018) Static Slip Model of the 2017 Mw 5.4 Pohang, South Korea, Earthquake Constrained by the InSAR Data.pdf",
+   "doi": "10.1785/0220180156"
+  },
+  {
+   "pdf": "0f442845b63b__Sorey, 1998, Carbon dioxide and helium emissions from a reservoir of magmatic gas beneath Mammoth Mountain, California.pdf",
+   "doi": "10.1029/98jb01389"
+  },
+  {
+   "pdf": "b7b1815b2258__Stein, 1995, Heat flow and hydrothermal circulation.pdf",
+   "doi": "10.1029/gm091p0425"
+  },
+  {
+   "pdf": "b3eaee57450a__Stolper, 2015, Combined 13C–D and D–D clumping in methane Methods and preliminary results.pdf",
+   "doi": "10.1016/j.gca.2013.10.045"
+  },
+  {
+   "pdf": "ffcf6f763af1__Stolper, 2015, Distinguishing and understanding thermogenic and biogenic sources of methane using multiply substituted i.pdf",
+   "doi": "10.1016/j.gca.2015.04.015"
+  },
+  {
+   "pdf": "6b87f03f0c03__Stroncik et al. (2017) Helium isotope evidence for a deep-seated mantle plume involved in South Atlantic breakup.pdf",
+   "doi": "10.1130/g39151.1"
+  },
+  {
+   "pdf": "53ab87ebe472__Suda (2014) Origin of methane in serpentinite-hosted hydrothermal systems TheCH4–H2–H2O hydrogen isotope systematics of .pdf",
+   "doi": "10.1016/j.epsl.2013.11.001"
+  },
+  {
+   "pdf": "cd2d68a64ce3__Sun, 2011, Discussion on Carbon Isotope Distribution Characteristics of Coalbed Methane and Gas Genetic Types.pdf",
+   "doi": "10.1016/j.proeps.2011.09.101"
+  },
+  {
+   "pdf": "9831de3e4452__Tao_2012_First_active_hydrothermal_vents_SWIR.pdf",
+   "doi": "10.1130/g32389.1"
+  },
+  {
+   "pdf": "84138de12dfd__Taran et al. (2013) Geochemistry of thermal springs and geodynamics of the convergent Mexican Pacific margin.pdf",
+   "doi": "10.1016/j.chemgeo.2012.08.025"
+  },
+  {
+   "pdf": "8a719b5ba231__Taran, 2009, Geochemistry of volcanic and hydrothermal fluids and volatile budget of the Kamchatka–Kuril subduction zone.pdf",
+   "doi": "10.1016/j.gca.2008.11.020"
+  },
+  {
+   "pdf": "025312187dbb__Taran_2011_N2 Ar And He As A Tool For Discriminat.pdf",
+   "doi": "10.1007/s00445-011-0448-1"
+  },
+  {
+   "pdf": "5992f2e96eba__Tardani, 2016, Exploring the structural controls on helium, nitrogen and carbon isotope signatures in hydrothermal fluid.pdf",
+   "doi": "10.1016/j.gca.2016.04.031"
+  },
+  {
+   "pdf": "4f039698a9b6__Tassi, 2012, Origins of methane discharging from volcanic-hydrothermal, geothermal and coldemissions in Italy.pdf",
+   "doi": "10.1016/j.chemgeo.2012.03.018"
+  },
+  {
+   "pdf": "c66862703a80__Teagle, 2003, Recharge flux to ocean-ridge black smoker systems a geochemical estimate from ODP Hole 504B.pdf",
+   "doi": "10.1016/s0012-821x(03)00126-2"
+  },
+  {
+   "pdf": "be837d29d3cc__Tedesco.2010.Gas isotopic signatures (He, C, and Ar) in the Lake Kivu region (western branch of the East African rift sy.pdf",
+   "doi": "10.1029/2008jb006227"
+  },
+  {
+   "pdf": "4df01fe61893__Teresa, 2021, Monitoring the magmatic activity and volatile fluxes of an actively degassing submarine caldera in souther.pdf",
+   "doi": "10.1016/j.gca.2021.10.023"
+  },
+  {
+   "pdf": "26a5a017f1dd__Umeda et al. (2006) Aqueous fluids derived from a subducting slab Observed high 3He emanation and conductive anomaly in .pdf",
+   "doi": "10.1016/j.jvolgeores.2005.06.005"
+  },
+  {
+   "pdf": "5247337d6447__Umeda et al. (2013) Spatial variations in 3He 4He ratios along a high strain rate zone, central Japan.pdf",
+   "doi": "10.1016/j.jseaes.2013.04.016"
+  },
+  {
+   "pdf": "f5448d32476a__Vauchez_etal-Tphy_2012.pdf",
+   "doi": "10.1016/j.tecto.2012.06.006"
+  },
+  {
+   "pdf": "b13fb8a5696c__Verdon, 2011, Linking microseismic event observations with geomechanical models to minimise the risks of storing CO2 in .pdf",
+   "doi": "10.1016/j.epsl.2011.02.048"
+  },
+  {
+   "pdf": "6a35e05e68bb__Villagomez, 2014, Mantle flow and multistage melting beneath the Galápagos hotspot revealed by seismic imaging.pdf",
+   "doi": "10.1038/ngeo2062"
+  },
+  {
+   "pdf": "43788c4be063__Wang, 2020, Helium and carbon isotopic signatures of thermal spring gases in southeast Yunnan, China.pdf",
+   "doi": "10.1016/j.jvolgeores.2020.106995"
+  },
+  {
+   "pdf": "031212a135b7__Welhan, 1979, Methane and hydrogen in East Pacific Rise hydrothermal fluids.pdf",
+   "doi": "10.1029/gl006i011p00829"
+  },
+  {
+   "pdf": "e9c2a229e703__Werner, 2008, Volatile emissions and gas geochemistry of Hot Spring Basin, Yellowstone National Park, USA.pdf",
+   "doi": "10.1016/j.jvolgeores.2008.09.016"
+  },
+  {
+   "pdf": "b247bf1f8801__Westaway (2019) Fault “Corrosion” by Fluid Injection A Potential Cause of the November 2017 5.5 Korean Earthquake.pdf",
+   "doi": "10.1155/2019/1280721"
+  },
+  {
+   "pdf": "d732aff2fdbd__Wiersberg, 2018, Mantle-derived fluids in the Nankai Trough Kumano forearc basin.pdf",
+   "doi": "10.1186/s40645-018-0235-0"
+  },
+  {
+   "pdf": "e5507b59135f__Yan, 2012, Significant emissions of 210Po by coal burning into the urban atmosphere of Seoul, Korea.pdf",
+   "doi": "10.1016/j.atmosenv.2012.02.090"
+  },
+  {
+   "pdf": "703a00e50e31__You et al. (2014) Bathymetric influence on dissolved methane in hydrothermal plumes revealed by concentration and stable.pdf",
+   "doi": "10.1016/j.dsr.2014.05.011"
+  },
+  {
+   "pdf": "fb739c39d1cc__Zahirovic, 2015, Tectonic speed limits from plate kinematic reconstructions.pdf",
+   "doi": "10.1016/j.epsl.2015.02.037"
+  },
+  {
+   "pdf": "a5e32bf02ff7__Zhao, 2011, East Asia; Seismotectonics, magmatism and mantle dynamics.pdf",
+   "doi": "10.1016/j.jseaes.2010.11.013"
+  },
+  {
+   "pdf": "0ca162298218__Zhou, 2023, Undulating electrical lithosphere–asthenosphere boundary beneath Northeast China; as revealed by long–period.pdf",
+   "doi": "10.1016/j.tecto.2023.229770"
+  },
+  {
+   "pdf": "0fa999a7cb16__Zimmer et al.,2004, Nitrogen systematics and gas fluxes of subduction zones;Insights from Costa Rica arc volatiles.pdf",
+   "doi": "10.1029/2003gc000651"
+  },
+  {
+   "pdf": "523f261d8f3b__권이균, 2018, 포항분지 해상 중소규모 CO2 지중저장 실증연구 안전성 평가.pdf",
+   "doi": "10.9720/kseg.2018.2.217"
+  },
+  {
+   "pdf": "c36e203de590__권이균, 2018, 포항분지 해상 중소규모 CO2 지중저장 실증연구.pdf",
+   "doi": "10.9720/kseg.2018.2.133"
+  },
+  {
+   "pdf": "964d4b7f27df__김규한 외(2008) He–Ar and Nd–Sr isotopic compositions of late Pleistocene felsic plutonic back arc basin rocks from ulleungd.pdf",
+   "doi": "10.1016/j.chemgeo.2008.05.009"
+  },
+  {
+   "pdf": "f9d7e8970189__김종선, 2017, 봉길 슈도타킬라이트.pdf",
+   "doi": "10.14770/jgsk.2017.53.1.173"
+  },
+  {
+   "pdf": "07e4fb49a492__류충렬 (2018) 양산단층 북부 일대의 최후기 지구조환경에 대해.pdf",
+   "doi": "10.7854/jpsk.2018.27.3.173"
+  },
+  {
+   "pdf": "885908b1b8ec__박재용, 2015, 이산화탄소 지중 윀장을 위한 한국 포항분지의 삼차원 지질 모델링.pdf",
+   "doi": "10.14770/jgsk.2015.51.3.289"
+  },
+  {
+   "pdf": "fdbfe5bc7d95__배성호, 2016, 현장 초기응력 측정과 시추공 이미지 스캐닝 자료의 통합 분석을 통한 포항분지 제 3기 지층 내 수평응력 분포 특성.pdf",
+   "doi": "10.7474/tus.2016.26.4.304"
+  },
+  {
+   "pdf": "bb2346b72555__송철우, 2015, 한반도 남동부 마이오세 포항분지 내 이산화탄소 지중저장 후보지에 관한 연구.pdf",
+   "doi": "10.14770/jgsk.2015.51.1.53"
+  },
+  {
+   "pdf": "46168ca47c89__송철우, 2015, 한반도 동남부 마이오세 포항분지 내 달전현무암의 층서적 의미.pdf",
+   "doi": "10.7854/jpsk.2015.24.4.323"
+  },
+  {
+   "pdf": "c32cdcd800ac__안해성, 2015, 한국 포항시 남구 해도동 일대에 분포하는 포항분지의 삼차원 지질 모델링.pdf",
+   "doi": "10.14770/jgsk.2015.51.1.21"
+  },
+  {
+   "pdf": "06f2039fa240__이병선 et al., 2014, 농어촌지하수 관측망.pdf",
+   "doi": "10.7857/jsge.2014.19.4.001"
+  },
+  {
+   "pdf": "664be37d4737__이상철 et al. (2014) 백두산 화산가스 및 온천수에 대한 지화학적 연구.pdf",
+   "doi": "10.14770/jgsk.2014.50.6.811"
+  },
+  {
+   "pdf": "d1a99d8c577a__이태호, 2014, 포항분지 시추 코어시료의 SHRIMP U-Pb 저어콘 연대 및 지구화학.pdf",
+   "doi": "10.7854/jpsk.2014.23.3.167"
+  },
+  {
+   "pdf": "6e8f873e3acd__정태웅, 2018, 포항 지진의 진원 깊이 연구.pdf",
+   "doi": "10.7582/gge.2018.21.2.125"
+  },
+  {
+   "pdf": "ae31d7d8813c__최지민, 2020, 강원도 인제군 기린면 일대에 발달한 금왕단층의 진화와 시-공간적 활동형태.pdf",
+   "doi": "10.14770/jgsk.2020.56.4.425"
+  },
+  {
+   "pdf": "ca12f9c38880__Pham, 2024, Gravity patterns and crustal architecture of the South-Central Indian Ridge at 22°-17°S Evidence for the asy.pdf",
+   "doi": "10.1016/j.jseaes.2023.105966"
+  },
+  {
+   "pdf": "7f28319a407a__Valentine, 2004, Carbon and hydrogen isotope fractionation by moderately thermophilic methanogens.pdf",
+   "doi": "10.1016/j.gca.2003.10.012"
+  },
+  {
+   "pdf": "ab0c577f9639__OKumura, 2016, Hydrogen and carbon isotope systematics in hydrogenotrophic methanogenesis under H2-limited and H2-enrich.pdf",
+   "doi": "10.1186/s40645-016-0088-3"
+  },
+  {
+   "pdf": "0aab65f967ae__Mccollom, 2006, Carbon isotope composition of organic compounds produced by abiotic synthesis under hydrothermal conditi.pdf",
+   "doi": "10.1016/j.epsl.2006.01.027"
+  },
+  {
+   "pdf": "122e4c02241a__Stefansson, 2024, Isotopic and kinetic constraints on methane origins in Icelandic hydrothermal fluids.pdf",
+   "doi": "10.1016/j.gca.2024.03.015"
+  },
+  {
+   "pdf": "4e7f46069722__Taran, 2007, Carbon isotope effects in the open-system Fischer–Tropsch synthesis.pdf",
+   "doi": "10.1016/j.gca.2007.06.057"
+  },
+  {
+   "pdf": "62a065da3631__김창환, 2019, 동해후포퇴왕돌초주변의정밀해저지형및해저면특성분석.pdf",
+   "doi": "10.9719/eeg.2014.47.5.533"
+  },
+  {
+   "pdf": "b32b1db01e8b__김창환, 2019, 동해후포분지의Pockmark해저지형특성연구.pdf",
+   "doi": "10.9719/eeg.2019.52.6.561"
+  },
+  {
+   "pdf": "88d6dc37851f__Brunelli, 2025, Large melt diversity at a mid-ocean ridge thermal low.pdf",
+   "doi": "10.25625/wfjzky"
+  },
+  {
+   "pdf": "359171a4b78c__Tsunogai, 2020, Dual stable isotope characterization of excess methane in oxic waters of a mesotrophic lake.pdf",
+   "doi": "10.1002/lno.11566"
+  },
+  {
+   "pdf": "960ad034eae4__Ryu, 2019, The first reference transcriptome assembly of the stalked barnacle, Neolepas marisindica, from the Onnuri Ven.pdf",
+   "doi": "10.1016/j.margen.2019.04.004"
+  },
+  {
+   "pdf": "34423f72a0ef__Rubin, 2007, Inferences on mid-ocean ridge thermal and magmatic structure from MORB compositions.pdf",
+   "doi": "10.1016/j.epsl.2007.05.035"
+  },
+  {
+   "pdf": "7d3d42bf17cb__Yu, 2025, Deep mantle earthquakes linked to CO2 degassing at the Mid-Atlantic Ridge.pdf",
+   "doi": "10.1038/s41467-024-55792-9"
+  },
+  {
+   "pdf": "971d8967494b__Spera, 2016, Dynamics and thermodynamics of magma mixing Insights from a simple exploratory model.pdf",
+   "doi": "10.2138/am-2016-5305"
+  },
+  {
+   "pdf": "220ee6250f6d__Clemens, 2023, Indian margin methane hydrate dissociation recorded in the carbon isotopes of benthic (Miliolida) foramin.pdf",
+   "doi": "10.1016/j.epsl.2023.118101"
+  },
+  {
+   "pdf": "b682b4d27eb1__Kelly, 1999, Abiogenic methane in deep-seated mid-ocean ridge environments Insights from stable isotope analyses.pdf",
+   "doi": "10.1029/1999jb900058"
+  },
+  {
+   "pdf": "880d9f1a5fb3__Klein, 2019, Abiotic methane synthesis and serpentinization in olivine-hosted fluid inclusions.pdf",
+   "doi": "10.1073/pnas.1907871116"
+  },
+  {
+   "pdf": "7339d02a71b4__Kueter, 2019, Experimental determination of equilibrium CH4–CO2–CO carbon isotope fractionation factors (300–1200 °C).pdf",
+   "doi": "10.1016/j.epsl.2018.10.021"
+  },
+  {
+   "pdf": "1f6822944cd2__Tibshirani, 2001, Estimating the number of clusters in a data set via the gap statistic.pdf",
+   "doi": "10.1111/1467-9868.00293"
+  },
+  {
+   "pdf": "9a69914266a1__Cattell, 1966, The Scree Test For The Number Of Factors.pdf",
+   "doi": "10.1207/s15327906mbr0102_10"
+  },
+  {
+   "pdf": "2f63ba58dbf5__Gamo, 2012, First measurements of methane and its carbon isotope ratio in the Japan Sea (East Sea).pdf",
+   "doi": "10.1016/j.marchem.2011.10.006"
+  },
+  {
+   "pdf": "32ee1f89b54b__Bange, 1998, Methane in surface waters of the Arabian Sea.pdf",
+   "doi": "10.1029/98gl02710"
+  },
+  {
+   "pdf": "6ed7ef6eb56b__Reeburgh, 2007, Oceanic methane biogeochemistry.pdf",
+   "doi": "10.1021/cr050362v"
+  },
+  {
+   "pdf": "e1386c7be20a__Resing, 2015, Basin-scale transport of hydrothermal dissolved metals across the South Pacific Ocean.pdf",
+   "doi": "10.1038/nature14577"
+  },
+  {
+   "pdf": "9d12d0f8fec2__Berndt, 2023, Shallow-water hydrothermal venting linked to the Palaeocene–Eocene Thermal Maximum.pdf",
+   "doi": "10.1038/s41561-023-01246-8"
+  },
+  {
+   "pdf": "cf320178777f__Hu, 2021, Protistan grazing impacts microbial communities and carbon cycling at deep-sea hydrothermal vents.pdf",
+   "doi": "10.1073/pnas.2102674118/-/dcsupplemental"
+  },
+  {
+   "pdf": "6c9666772b52__Torres Rodriguez, 2023, Mercury fluxes from hydrothermal venting at mid-ocean ridges constrained by measurements.pdf",
+   "doi": "10.1038/s41561-023-01341-w"
+  },
+  {
+   "pdf": "63abbeafe062__Anantharaman, 2012, Evidence for hydrogen oxidation and metabolic plasticity in widespread deep-sea sulfur-oxidizing bac.pdf",
+   "doi": "10.1073/pnas.1215340110"
+  },
+  {
+   "pdf": "9bcae232874a__Seton, 2020, A Global Data Set of Present-Day Oceanic Crustal Age and Seafloor Spreading Parameters.pdf",
+   "doi": "10.1029/2018tc005462"
+  },
+  {
+   "pdf": "31be0467d28e__Chen, 2016, Energy, ecology and environment a nexus perspective.pdf",
+   "doi": "10.1007/s40974-016-0017-8"
+  },
+  {
+   "pdf": "d322cd3d9595__Zhang, 2026, Variable roles of oceanic transform faults in plume dispersion along segmented mid-ocean ridges.pdf",
+   "doi": "10.1016/j.epsl.2025.119766"
+  },
+  {
+   "pdf": "9e12e8090d45__Schwietzke, 2016, Upward revision of global fossil fuel methane emissions based on isotope database.pdf",
+   "doi": "10.1038/nature19797"
+  },
+  {
+   "pdf": "6dcfc9049dd0__Jenkins, 2019, Acomprehensive global oceanic dataset of helium isotope and tritium measurements.pdf",
+   "doi": "10.5194/essd-11-441-2019"
+  },
+  {
+   "pdf": "fcef71ed7b7b__Postlethwaite, 2005, A tracer study of ventilation in the Japan_East Sea.pdf",
+   "doi": "10.1016/j.dsr2.2004.07.032"
+  },
+  {
+   "pdf": "cd8d63615a9d__Horozal, 2021, Seismic evidence of shallow gas in sediments on the southeastern continental shelf of Korea, East Sea (Ja.pdf",
+   "doi": "10.1016/j.marpetgeo.2021.105291"
+  },
+  {
+   "pdf": "336adf654213__Trinchero, 2020, Models for the assessment of transport of naturally-occurring nuclides in fractured media.pdf",
+   "doi": "10.1016/j.jhydrol.2019.124322"
+  },
+  {
+   "pdf": "a72c86aecc73__Lollar, 2024, The Hidden Hydrogeosphere; The Contribution of Deep Groundwater to the Planetary Water Cycle.pdf",
+   "doi": "10.1146/annurev-earth-040722-"
+  },
+  {
+   "pdf": "3e70d9f470ff__Zhou, 2006, 4He dating of groundwater associated with hydrocarbon reservoirs.pdf",
+   "doi": "10.1016/j.chemgeo.2005.09.030"
+  },
+  {
+   "pdf": "e98df50e8cc7__Pinti, 2011, Fossil brines preserved in the St-Lawrence Lowlands, Québec, Canada as revealed by their chemistry and nobl.pdf",
+   "doi": "10.1016/j.gca.2011.05.006"
+  },
+  {
+   "pdf": "f662acaae0a8__Kietavainen, 2014, Noble gas residence times of saline waters within crystalline bedrock, Outokumpu Deep Drill Hole, Fin.pdf",
+   "doi": "10.1016/j.gca.2014.09.012"
+  },
+  {
+   "pdf": "dea530299e11__Gerber, 2017, Using 81Kr and noble gases to characterize and date groundwater and brines in the Baltic Artesian Basin on.pdf",
+   "doi": "10.1016/j.gca.2017.01.033"
+  },
+  {
+   "pdf": "19c0266e9fe3__Solomon, 1996, Source of radiogenic helium 4 in shallow aquifers Implications for dating.pdf",
+   "doi": "10.1029/96wr00600"
+  },
+  {
+   "pdf": "6936eda44bc8__Fourre, 2011, Dissolved helium distribution in the Oxfordian and Dogger deep aquifers of the Meuse_Haute-Marne area..pdf",
+   "doi": "10.1016/j.pce.2011.10.006"
+  },
+  {
+   "pdf": "b738e0d1f703__Weinstein, 2011, Isotopic fractionation of Cu in plants.pdf",
+   "doi": "10.1016/j.chemgeo.2011.05.010"
+  },
+  {
+   "pdf": "7d7a9d031823__Rufer, 2018, Identifying temporally and spatially changing boundary conditions at an aquifer – aquitard interface using .pdf",
+   "doi": "10.1016/j.apgeochem.2018.05.022"
+  },
+  {
+   "pdf": "a0c8cd5a0777__Gimeno, 2023, Hydrogeochemical characterisation of the groundwater in the crystalline basement of Forsmark, the selected.pdf",
+   "doi": "10.1016/j.jhydrol.2023.129818"
+  },
+  {
+   "pdf": "1837edafc6a1__Wei, 2015, Uranium fate in Hanford sediment altered by simulated acid waste solutions.pdf",
+   "doi": "10.1016/j.apgeochem.2015.07.010"
+  },
+  {
+   "pdf": "22db516c1a3b__Peterson, 2018, Groundwater flowpaths and residence times inferred by 14C, 36Cl and 4He isotopes in the Continental Inte.pdf",
+   "doi": "10.1016/j.jhydrol.2018.03.003"
+  },
+  {
+   "pdf": "4edb26100d71__Cesur 등 - 2025 - New He-O-Sr-Nd isotopes and chronology of Quaternary lavas from the Kula volcanic field (western Tür.pdf",
+   "doi": "10.1016/j.chemgeo.2025.123070"
+  },
+  {
+   "pdf": "7e0b182dfde7__Tang 등 - 2022 - Links between continental subduction and generation of Cenozoic potassic–ultrapotassic rocks reveale.pdf",
+   "doi": "10.1007/s00410-022-01920-x"
+  },
+  {
+   "pdf": "e32b31bd5b77__Long - 2024 - Evolution, Modification, and Deformation of Continental Lithosphere Insights from the Eastern Margi.pdf",
+   "doi": "10.1146/annurev-earth-040522-"
+  },
+  {
+   "pdf": "3d7d968866f0__Zhang 등 - 2020 - Multiple metasomatism of the lithospheric mantle b.pdf",
+   "doi": "10.1016/j.lithos.2020.105719"
+  },
+  {
+   "pdf": "6aeab874ced8__Xu 등 - 2026 - Temporal variation of water content in the lithospheric mantle beneath the central North China Crato.pdf",
+   "doi": "10.1016/j.lithos.2026.108412"
+  },
+  {
+   "pdf": "c50c1ae4ec6a__Alt 및 Bach - 2006 - Oxygen isotope composition of a section of lower oceanic crust, ODP Hole 735B.pdf",
+   "doi": "10.1029/2006gc001385"
+  },
+  {
+   "pdf": "c77d8175055a__Bindeman - 2008 - Oxygen Isotopes in Mantle and Crustal Magmas as Revealed by Single Crystal Analysis.pdf",
+   "doi": "10.2138/rmg.2008.69.12"
+  },
+  {
+   "pdf": "4c91daa78fe9__Kim 등 - 2025 - Upper mantle scale enrichment of Cenozoic intraplate magmatism in Northeast Asia He-Sr-Nd-Pb-O isot.pdf",
+   "doi": "10.1016/j.gr.2024.09.016"
+  },
+  {
+   "pdf": "e78c40cd7452__Yeo 등 - 2026 - Lithology and redox–hydration state of the mantle source of the late Cenozoic Baekdusan (Changbaisha.pdf",
+   "doi": "10.1016/j.jseaes.2026.107017"
+  },
+  {
+   "pdf": "4dac97f362ae__Xu - 2004 - Contrasting Enrichments in High- and Low-Temperature Mantle Xenoliths from Nushan, Eastern China Re.pdf",
+   "doi": "10.1093/petrology/egg098"
+  },
+  {
+   "pdf": "17c0418ae046__Correale 등 - 2012 - New evidence of mantle heterogeneity beneath the Hyblean Plateau (southeast Sicily, Italy) as inferr.pdf",
+   "doi": "10.1016/j.lithos.2011.11.007"
+  },
+  {
+   "pdf": "2e4f71a36f9c__Fan 등 - 2021 - A metasomatized 18O-rich veined lithospheric mantle source for ultrapotassic magmas.pdf",
+   "doi": "10.1016/j.lithos.2020.105964"
+  },
+  {
+   "pdf": "e109cb425fbc__Brooker 등 - 2024 - Tracking subduction-related metasomatism of the subcontinental lithospheric mantle using Ca-, O-, an.pdf",
+   "doi": "10.1016/j.gca.2024.09.036"
+  },
+  {
+   "pdf": "1b8aa004ac89__Philippot 등 - 2007 - Oxygen and nitrogen isotopes as tracers of fluid activities in serpentinites and metasediments duri.pdf",
+   "doi": "10.1007/s00710-007-0183-7"
+  },
+  {
+   "pdf": "35fc11c8e2c1__Yu 등 - 2022 - Oxygen isotope heterogeneity of olivine crystals in orogenic peridotites from Songshugou, North Qinl.pdf",
+   "doi": "10.2138/am-2022-7990"
+  },
+  {
+   "pdf": "24d97895ef95__Lee 등 - 2013 - Oxygen Isotopic Ratios for Ultramafic Xenoliths from the Korean Peninsula.pdf",
+   "doi": "10.5467/jkess.2013.34.1.28"
+  },
+  {
+   "pdf": "91c6d44799d9__Coote 등 - 2019 - Olivine phenocryst origins and mantle magma sources for monogenetic basalt volcanoes in northern New.pdf",
+   "doi": "10.1016/j.lithos.2019.06.026"
+  },
+  {
+   "pdf": "ca0b5b8f5996__Yamamoto 등 - 2009 - Noble gas isotopic compositions of mantle xenoliths from northwestern Pacific lithosphere.pdf",
+   "doi": "10.1016/j.chemgeo.2009.09.009"
+  },
+  {
+   "pdf": "b3947712ec3b__Chen 등 - 2023 - Li and O isotopes of mantle xenoliths from deep fault-related Cenozoic basalts in eastern China The.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121471"
+  },
+  {
+   "pdf": "d62dd0622a78__Van Blerk 등 - 2025 - Oxygen isotope constraints on proto-kimberlite melt modification through assimilation of low δ18O r.pdf",
+   "doi": "10.1016/j.gca.2024.12.028"
+  },
+  {
+   "pdf": "9de45e733a19__Hopp 및 Ionov - 2011 - Tracing partial melting and subduction-related metasomatism in the Kamchatkan mantle wedge using n.pdf",
+   "doi": "10.1016/j.epsl.2010.12.001"
+  },
+  {
+   "pdf": "d1dd46509535__Bustos-Moreno 등 - 2025 - Nitrogen (N) and its isotopes in serpentinized forearc wedges and implications for N cycling ac.pdf",
+   "doi": "10.1130/g52492.1"
+  },
+  {
+   "pdf": "ae4a122caca1__Peslier 등 - 2010 - Olivine water contents in the continental lithosphere and the longevity of cratons.pdf",
+   "doi": "10.1038/nature09317"
+  },
+  {
+   "pdf": "f3587c28e2d9__Lee 등 - 2026 - Metasomatized lithospheric mantle as a reservoir for recycled volatiles Noble gas and oxygen isotop.pdf",
+   "doi": "10.1016/j.gca.2025.12.037"
+  },
+  {
+   "pdf": "a81d968bb8c4__Liu 등 - 2014 - A ‘hidden’ 18O-enriched reservoir in the sub-arc mantle.pdf",
+   "doi": "10.1038/srep04232"
+  },
+  {
+   "pdf": "077f28b1ff46__Sobolev 및 Brown - 2019 - Surface erosion events controlled the evolution of plate tectonics on Earth.pdf",
+   "doi": "10.1038/s41586-019-1258-4"
+  },
+  {
+   "pdf": "30b0846a6ac5__Perkins 등 - 2006 - Oxygen isotope evidence for subduction and rift-related mantle metasomatism beneath the Colorado Pla.pdf",
+   "doi": "10.1007/s00410-006-0075-6"
+  },
+  {
+   "pdf": "1845b4211a40__Choi 등 - 2017 - Geochemistry of olivine-hosted melt inclusions in the Baekdusan (Changbaishan) basalts Implications.pdf",
+   "doi": "10.1016/j.lithos.2017.04.006"
+  },
+  {
+   "pdf": "096b7d46de4b__Xu 등 - 2014 - The hydrous properties of subcontinental lithospheric mantle Constraints from water content and hyd.pdf",
+   "doi": "10.1016/j.gca.2013.12.025"
+  },
+  {
+   "pdf": "9b7e746c36ac__Litton 등 - 2026 - Xenolith hydrogen isotope evidence for lower crustal hydration during cycles of flat slab subduction.pdf",
+   "doi": "10.1130/g53815.1"
+  },
+  {
+   "pdf": "ea23175e8d08__Busigny 등 - 2018 - Insight into hydrothermal and subduction processes from copper and nitrogen isotopes in oceanic meta.pdf",
+   "doi": "10.1016/j.epsl.2018.06.030"
+  },
+  {
+   "pdf": "116f44a1b445__Kim 및 Choi - 2025 - Origin of low-δ18O olivine phenocrysts in Late Cenozoic EM2-type intraplate basalts from Jeju Island.pdf",
+   "doi": "10.1016/j.jseaes.2024.106452"
+  },
+  {
+   "pdf": "3327fb48226d__Toyama 등 - 2021 - Halogen heterogeneity in the subcontinental lithospheric mantle revealed by IBr ratios in kimberlit.pdf",
+   "doi": "10.2138/am-2021-7332"
+  },
+  {
+   "pdf": "2097fd85c810__Shejwalkar 및 Coogan - 2013 - Experimental calibration of the roles of temperature and composition in the Ca-in-olivine g.pdf",
+   "doi": "10.1016/j.lithos.2013.06.013"
+  },
+  {
+   "pdf": "374747240c5a__Vesin 등 - 2023 - Multistage hydration during oceanic serpentinisation revealed by in situ oxygen isotope and t.pdf",
+   "doi": "10.1016/j.gca.2023.06.032"
+  },
+  {
+   "pdf": "6b214907240c__Caracciolo 등 - 2022 - Oxygen isotope evidence for progressively assimilating trans-crustal magma plumbing systems in Ice.pdf",
+   "doi": "10.1130/g49874.1"
+  },
+  {
+   "pdf": "ce9e4a16d131__Ouyang 등 - 2024 - Light oxygen isotopic composition in deep mantle reveals oceanic crust subduction before 3.3 billion.pdf",
+   "doi": "10.1038/s43247-023-01197-3"
+  },
+  {
+   "pdf": "7825b2285ecf__Fukushima 등 - 2024 - Two metasomatic events recorded by noble gas characteristics in the Finero mantle wedge Extreme fra.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121829"
+  },
+  {
+   "pdf": "e09fca43ecd1__Roots et al. - 2025 - Channelized metasomatism in Archean cratonic roots as a mechanism of lithospheric refertilization.pdf",
+   "doi": "10.1038/s41467-025-62912-6"
+  },
+  {
+   "pdf": "bdb34182fcd3__Swindle 등 - 2023 - Helium isotope evidence for mixing of mantle-derived fluids and deeply penetrating surface waters in.pdf",
+   "doi": "10.1016/j.gca.2023.05.015"
+  },
+  {
+   "pdf": "11d91f675155__Kil - 2006 - Characteristics of subcontinental lithospheric mantle beneath Baegryeong Island, Korea Spinel perid.pdf",
+   "doi": "10.1111/j.1440-1738.2006.00526.x"
+  },
+  {
+   "pdf": "1afc6cfb5a53__Vlastélic 등 - 2023 - Arc volcano activity driven by small-scale metasomatism of the magma source.pdf",
+   "doi": "10.1038/s41561-023-01143-0"
+  },
+  {
+   "pdf": "84308122472f__Arai 등 - 2007 - Mantle peridotites from the Western Pacific.pdf",
+   "doi": "10.1016/j.gr.2006.04.004"
+  },
+  {
+   "pdf": "0be275b84ff8__Giuliani 등 - 2019 - Mantle-like oxygen isotopes in kimberlites determined by in situ SIMS analyses of zoned olivi.pdf",
+   "doi": "10.1016/j.gca.2019.03.032"
+  },
+  {
+   "pdf": "be04652967f3__Barry 등 - 2025 - Carbon, nitrogen, and noble gas isotopes reveal deep volatile signatures in thermal springs in the C.pdf",
+   "doi": "10.1016/j.epsl.2024.119169"
+  },
+  {
+   "pdf": "2a495a34744c__Benedetti 등 - 2025 - Fe Oxidation State and Oxygen Isotope Composition of Diverse Metasomatized Peridotite Rocks.pdf",
+   "doi": "10.1111/ter.70001"
+  },
+  {
+   "pdf": "ad581f47fe2f__Satsukawa 등 - 2017 - Chemical interactions in the subduction factory New insights from an in situ trace element and hydr.pdf",
+   "doi": "10.1016/j.gca.2017.03.042"
+  },
+  {
+   "pdf": "76221fbcd040__Choi 등 - 2002 - Geochemistry of peridotite xenoliths in alkali basalts from Jeju Island, Korea.pdf",
+   "doi": "10.1046/j.1038-4871.2002.00367.x"
+  },
+  {
+   "pdf": "f8ba717de49a__Barry 등 - 2012 - High precision nitrogen isotope measurements in oceanic basalts using a static triple collection nob.pdf",
+   "doi": "10.1029/2011gc003878"
+  },
+  {
+   "pdf": "a567b92152f9__Broadley 등 - 2025 - Noble Gas Isotopes and Nitrogen Isotopologues Reveal Deep Sources and Subsurface Fractionation in Ye.pdf",
+   "doi": "10.1021/acsearthspacechem.4c00349"
+  },
+  {
+   "pdf": "11e8ed66b8a1__Li et al., 2009 Lithogeochemistry of Volcanic Rocks and Hosted Melt Inclusions in Wudalianchi.pdf",
+   "doi": "10.1007/s12583-009-0067-3"
+  },
+  {
+   "pdf": "dfb49fa10046__Lucy et al., 2015 A spectrum of disequilibrium melting preserved in lava-hosted, partially.pdf",
+   "doi": "10.1016/j.chemgeo.2015.09.023"
+  },
+  {
+   "pdf": "be346ce38ef8__Mathieu et al. (2021) Degassing and gas percolation in basaltic magmas.pdf",
+   "doi": "10.1016/j.epsl.2021.117134"
+  },
+  {
+   "pdf": "55595716638d__Mitchell et al. (2022) Isotopic signatures of magmatic fluids and seawater within silicic submarine volcanic deposits.pdf",
+   "doi": "10.1016/j.gca.2022.03.022"
+  },
+  {
+   "pdf": "af68e4821149__Sergei et al., 2016 Control of Volcanism in Asia by Transtensional Zones.pdf",
+   "doi": "10.1016/j.jvolgeores.2014.08.016"
+  },
+  {
+   "pdf": "73363d248807__Sun et al., 2019 Tephra evidence for the most recent eruption of Laoheishan volcano.pdf",
+   "doi": "10.1016/j.jvolgeores.2018.03.014"
+  },
+  {
+   "pdf": "59934e22c309__Wang et al., 2005.pdf",
+   "doi": "10.1016/j.jseaes.2003.12.010"
+  },
+  {
+   "pdf": "5b25da12ea76__Blundy & Cashman (2008) Petrologic Reconstruction of Magmatic System Variables and Processes.pdf",
+   "doi": "10.2138/rmg.2008.69.6"
+  },
+  {
+   "pdf": "ead4edf28e10__Magee et al. (2021) Days to weeks of syn-eruptive magma interaction-High-resolution geochemistry of the 2002-03 branched.pdf",
+   "doi": "10.1016/j.epsl.2021.116904"
+  },
+  {
+   "pdf": "1fb8dbe04435__shea_2017.pdf",
+   "doi": "10.1016/j.jvolgeores.2017.06.025"
+  },
+  {
+   "pdf": "85b474674d45__CO2-H2O solubility in K-rich phonolitic and leucititic melts.pdf",
+   "doi": "10.1007/s00410-019-1581-7"
+  },
+  {
+   "pdf": "b65806d79bc7__Cooling-induced crystallization of microlite crystals in two basaltic pumice clasts.pdf",
+   "doi": "10.2138/am.2010.3270"
+  },
+  {
+   "pdf": "9b507a8b60b7__Experimental insights on the shear-induced crystallization of a phonotephrite magma.pdf",
+   "doi": "10.1016/j.chemgeo.2023.121682"
+  },
+  {
+   "pdf": "eceb1ead0f65__Guarino 2024.pdf",
+   "doi": "10.1016/j.chemer.2023.126076"
+  },
+  {
+   "pdf": "4c8cc85112d6__Leucite basanites of Virunga (East African Rift) some insights.pdf",
+   "doi": "10.1016/j.lithos.2021.105972"
+  },
+  {
+   "pdf": "eedd9f38bb42__Nature and Evolution of Primitive Vesuvius magma_Un esperimental study (2014).pdf",
+   "doi": "10.1093/petrology/egu057"
+  },
+  {
+   "pdf": "bda16609369e__Petrology of parasitic and eccentric cones on the flanks.pdf",
+   "doi": "10.1007/s00710-015-0410-6"
+  },
+  {
+   "pdf": "47ca9715513d__Shea et al. (2014) Conduit- to Localized-scale Degassing during Plinian Eruptions.pdf",
+   "doi": "10.1093/petrology/egt069"
+  },
+  {
+   "pdf": "25558e8a89dc__Lustrino et al. (2019) Leucitites within and around the Mediterranean area.pdf",
+   "doi": "10.1016/j.lithos.2018.11.007"
+  },
+  {
+   "pdf": "782895684aa1__s00445-021-01505-9.pdf",
+   "doi": "10.1007/s00445-021-01505-9"
+  },
+  {
+   "pdf": "f19ee13f3ba1__Using microlites to gain insights into ascent conditions of differing styles of volcanism at Soufriere Hills Volcano.pdf",
+   "doi": "10.1016/j.jvolgeores.2019.07.022"
+  },
+  {
+   "pdf": "c6020a076606__Allan et al. (2017) A cascade of magmatic events during the assembly and eruption of a super-sized magma body.pdf",
+   "doi": "10.1007/s00410-017-1367-8"
+  },
+  {
+   "pdf": "723cae84d6a8__Aufrere et al. (2024) Olivine Time-Capsules Constrain the Pre-Eruptive History of Holocene Basalts, Mount Meager Volcani.pdf",
+   "doi": "10.1093/petrology/egae089"
+  },
+  {
+   "pdf": "1ab522a8d254__Auwera et al. (2021) The petrology of a hazardous volcano; Calbuco (Central Southern Volcanic Zone, Chile).pdf",
+   "doi": "10.1007/s00410-021-01803-7"
+  },
+  {
+   "pdf": "d311b4f21b12__Brenna et al. (2018) Olivine xenocryst diffusion reveals rapid monogenetic basaltic magma ascent following complex stora.pdf",
+   "doi": "10.1016/j.epsl.2018.07.015"
+  },
+  {
+   "pdf": "8683e01e89c4__Cardone et al. (2026) Magma recharge dynamics before the 2021 eruption at Pacaya volcano (Guatemala) as revealed by text.pdf",
+   "doi": "10.1007/s00445-026-01943-3"
+  },
+  {
+   "pdf": "629282f90019__Cortes et al. (2024) Magma recharge in persistently active basaltic–andesite systems and its geohazards implications; th.pdf",
+   "doi": "10.1007/s00531-024-02414-w"
+  },
+  {
+   "pdf": "16faa093693a__Cserep et al. (2023) Constraints on the pre-eruptive magma storage conditions and magma evolution of the 56–30 ka explos.pdf",
+   "doi": "10.1007/s00410-023-02075-z"
+  },
+  {
+   "pdf": "00ff851d86f3__Didonna et al. (2022) Dynamics and timescales of mafic–silicic magma interactions at Soufrière Hills Volcano, Montserrat.pdf",
+   "doi": "10.1007/s00410-022-01891-z"
+  },
+  {
+   "pdf": "ac804f783ef2__Jankovics et al. (2013) Origin and ascent history of unusually crystal-rich alkaline basaltic magmas from the westrn Pan.pdf",
+   "doi": "10.1007/s00445-013-0749-7"
+  },
+  {
+   "pdf": "769b229aec58__Law et al. (2021) Tracing mantle source variation through xenocrystic olivine in the Taupo Volcanic Zone, New Zealand.pdf",
+   "doi": "10.1016/j.lithos.2021.106185"
+  },
+  {
+   "pdf": "b26356bd2374__Romero et al. (2022) Pre-eruptive Conditions of the 3 March 2015 Lava Fountain of Villarrica Volcano (Southern Andes).pdf",
+   "doi": "10.1007/s00445-022-01621-0"
+  },
+  {
+   "pdf": "dd31b137db69__Romero et al. (2025) Magma recharge and reheating driving the 2021–2023 tephra emissions of Villarrica volcano, southern.pdf",
+   "doi": "10.1007/s00445-025-01827-y"
+  },
+  {
+   "pdf": "abff186f7d7c__Rooyakkers et al. (2022) Rifting and recharge as triggers of the mixed basalt–rhyolite Halarauður ignimbrite eruption (K.pdf",
+   "doi": "10.1007/s00410-021-01881-7"
+  },
+  {
+   "pdf": "f5ba68c3d956__Shane et al. (2023) Priming and eruption of andesite magmas at Taranaki volcano recorded in plagioclase phenocrysts.pdf",
+   "doi": "10.1007/s00445-023-01661-0"
+  },
+  {
+   "pdf": "001093a1260f__Thomson & (2013) The Distribution of Olivine Compositions in Icelandic basalts and picrites.pdf",
+   "doi": "10.1093/petrology/egs083"
+  },
+  {
+   "pdf": "fb5853587e2c__Welsch et al. (2012) Dendritic Crystallization.pdf",
+   "doi": "10.1093/petrology/egs077"
+  },
+  {
+   "pdf": "8d6c86cfc121__Zhang et al. (2021) Contrasting compositions between phenocrystic and xenocrystic olivines in the Cenozoic basalts from .pdf",
+   "doi": "10.2138/am-2020-7431"
+  },
+  {
+   "pdf": "Wei, 2015, Identification of He sources and estimation of He ages in groundwater of the North China Plain.pdf",
+   "doi": "10.1016/j.apgeochem.2015.08.010"
+  },
+  {
+   "pdf": "Bell et al. (2009) CG, Lithium isotope analysis of olivine by SIMS; Calibration of a matrix effect and application to magmatic phenocrysts.pdf",
+   "doi": "10.1016/j.chemgeo.2008.10.008"
+  },
+  {
+   "pdf": "Burnham (2020) CG, Key concepts in interpreting the concentrations of the rare earth elements in zircon.pdf",
+   "doi": "10.1016/j.chemgeo.2020.119765"
+  },
+  {
+   "pdf": "Bouvier et al. (2008) JP, Slab-Derived Fluids in the Magma Sources of St. Vincent (Lesser Antilles Arc); Volatile and Light Element Imprints.pdf",
+   "doi": "10.1093/petrology/egn031"
+  },
+  {
+   "pdf": "Chen et al. (2026) JVGR, Multi-level magma reservoir and open system processes of the Tianchi caldera, Changbaishan Volcanic Field, NE China.pdf",
+   "doi": "10.1016/j.jvolgeores.2026.108598"
+  },
+  {
+   "pdf": "Cannao (2020) Lithos, Boron isotope fractionation in subducted serpentinites; A modelling attempt.pdf",
+   "doi": "10.1016/j.lithos.2020.105768"
+  },
+  {
+   "pdf": "Cheong et al. (2024) GR, Long-lived shallow crustal magma reservoirs beneath Ulleung Island volcano (South Korea) and their rejuvenation recorded in zircon.pdf",
+   "doi": "10.1016/j.gr.2023.12.006"
+  },
+  {
+   "pdf": "Choi H-O. et al. (2024) Geo Fron, Zircon U–Pb ages and O–Hf isotopes of Quaternary trachytes from the East Sea; the genesis of low-δ18O magmas.pdf",
+   "doi": "10.1016/j.gsf.2023.101738"
+  },
+  {
+   "pdf": "Clog et al. (2013) EPSL, The hydrogen isotopic composition and water content of southern Pacific MORB; A reassessment of the D-H ratio of the depleted mantle reservoir.pdf",
+   "doi": "10.1016/j.epsl.2013.08.043"
+  },
+  {
+   "pdf": "Cui et al. (2022) JAAS, High-precision apatite δ37Cl measurement by SIMS with a 1012 Ω amplifier Faraday cup.pdf",
+   "doi": "10.1039/d1ja00347j"
+  },
+  {
+   "pdf": "Denny et al. (2024) CG, Source of Li isotope bias during SIMS analysis of standard glasses.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122015"
+  },
+  {
+   "pdf": "Ding et al. (2026) LITHOS, Direct magmatic input into a Mid-Ocean Ridge hydrothermal system; the Deyin hydrothermal field (15.2°S, Mid-Atlantic Ridge).pdf",
+   "doi": "10.1016/j.lithos.2026.108484"
+  },
+  {
+   "pdf": "Gao et al. (2025) ACS, A Low-Background, High-Flatness Mounting Method for In Situ SIMS Isotopic Analysis for Fine-Grained Samples.pdf",
+   "doi": "10.1021/acs.analchem.5c04185"
+  },
+  {
+   "pdf": "Giuliani et al. (2025) JP, Hydrogen Zoning in Olivine from Kimberlites Based on Coupled FTIR and SIMS Analyses; H2O Distribution in the Lithospheric Mantle and H2O Concentrations in Kimberlite Melts.pdf",
+   "doi": "10.1093/petrology/egaf018"
+  },
+  {
+   "pdf": "Harvey et al. (2014) CG, 11B-rich fluids in subduction zones; antigorite dehydration in subducting slabs and boron isotope heterogeneity in the mantle.pdf",
+   "doi": "10.1016/j.chemgeo.2014.03.015"
+  },
+  {
+   "pdf": "Hauri et al. (2006) CG, Matrix effects in hydrogen isotope analysis of silicate glasses by SIMS.pdf",
+   "doi": "10.1016/j.chemgeo.2006.08.010"
+  },
+  {
+   "pdf": "Hazra et al. (2021) Lithosphere, Refertilization of Mantle Peridotites from the Central Indian Ridge; Response to a Geodynamic Transition.pdf",
+   "doi": "10.2113/2021/9706924"
+  },
+  {
+   "pdf": "Helper et al. (2024) GCA, Cycling of fluid-mobile elements through the forearc; Cl, B, and Li isotope composition of Costa Rican spring fluids.pdf",
+   "doi": "10.1016/j.gca.2024.05.030"
+  },
+  {
+   "pdf": "Hu et al. (2014) GCA, NanoSIMS analyses of apatite and melt inclusions in the GRV 020090 Martian meteorite; Hydrogen isotope evidence for recent past underground hydrothermal activity on Mars.pdf",
+   "doi": "10.1016/j.gca.2014.05.008"
+  },
+  {
+   "pdf": "Huang et al. (2024) CG, Hidden magma reservoirs; helium and carbon isotopic compositions in shallow groundwater beneath the Wudalianchi volcanic field, Northeastern China.pdf",
+   "doi": "10.1016/j.chemgeo.2024.122310"
+  },
+  {
+   "pdf": "Huh et al. (2026) Tectonophysics, Localized slab heating as a trigger for East Asian Back-arc volcanism.pdf",
+   "doi": "10.1016/j.tecto.2026.231138"
+  },
+  {
+   "pdf": "Itano et al. (2025) RCMS, Evaluation of Matrix Effects in SIMS Using Gaussian Process Regression; The Case of Olivine Mg Isotope Microanalysis.pdf",
+   "doi": "10.1002/rcm.10038"
+  },
+  {
+   "pdf": "Ji et al. (2022) Sci Bull, The 1;2,500,000-scale geologic map of the global Moon.pdf",
+   "doi": "10.1016/j.scib.2022.05.021"
+  },
+  {
+   "pdf": "Kang H. et al. (2021) Seismic crustal structure beneath Jeju Volcanic Island, South Korea from teleseismic P-receiver functions.pdf",
+   "doi": "10.1093/gji/ggab211"
+  },
+  {
+   "pdf": "Kim M-C. et al. (2026) JH, Stable isotope signatures of precipitation and implications for groundwater recharge on Jeju volcanic island, South Korea.pdf",
+   "doi": "10.1016/j.ejrh.2026.103141"
+  },
+  {
+   "pdf": "Kimura & Yoshida (2006) Contributions of Slab Fluid, Mantle Wedge and Crust to the Origin of Quaternary Lavas in the NE Japan Arc.pdf",
+   "doi": "10.1093/petrology/egl041"
+  },
+  {
+   "pdf": "Koh D-C. et al. (2005) Hydrol. Process, Hydrogeochemistry and environmental isotopes of ground water in Jeju volcanic island, Korea; nitrate contamination.pdf",
+   "doi": "10.1002/hyp.5672"
+  },
+  {
+   "pdf": "Koh D-C. et al. (2006) JH, Application of environmental tracers to mixing, evolution, and nitrate contamination of ground water in Jeju Island, Korea.pdf",
+   "doi": "10.1016/j.jhydrol.2005.11.021"
+  },
+  {
+   "pdf": "Koh D-C. et al. (2007) JH, Evidence for terrigenic SF6 in groundwater from basaltic aquifers, Jeju Island, Korea; groundwater dating.pdf",
+   "doi": "10.1016/j.jhydrol.2007.03.011"
+  },
+  {
+   "pdf": "Koh D-C. et al. (2009) JH, Baseline geochemical characteristics of groundwater in the mountainous area of Jeju Island, South Korea; degree of mineralization and nitrate contamination.pdf",
+   "doi": "10.1016/j.jhydrol.2009.07.016"
+  },
+  {
+   "pdf": "Koh et al. (2016) AG, Occurrence and mobility of major and trace elements in groundwater from pristine volcanic aquifers in Jeju Island, Korea.pdf",
+   "doi": "10.1016/j.apgeochem.2015.11.004"
+  },
+  {
+   "pdf": "Kumamoto et al. (2017) AM, New SIMS reference materials for measuring water in upper mantle minerals.pdf",
+   "doi": "10.2138/am-2017-5863ccbyncnd"
+  },
+  {
+   "pdf": "Lee S-J. et al. (2021) Upper crustal shear wave velocity and radial anisotropy beneath Jeju Island volcanoes from ambient noise tomography.pdf",
+   "doi": "10.1093/gji/ggab026"
+  },
+  {
+   "pdf": "Lee Y. et al. (2026) Ultrahigh-Temperature Metamorphism and Near-Isobaric Cooling of Garnet-Orthopyroxene Granulite Xenoliths in the Sancheong Anorthosite, Yeongnam Massif, Korea.pdf",
+   "doi": "10.1111/jmg.70014"
+  },
+  {
+   "pdf": "Leeman et al. (2004) CG, Boron and lithium isotopic variations in a hot subduction zone—the southern Washington Cascades.pdf",
+   "doi": "10.1016/j.chemgeo.2004.08.010"
+  },
+  {
+   "pdf": "Li et al. (2026) Lithos, Intracratonic magmatism associated with metallogeny and its magma sources and magmatic fertility; the Early Cretaceous Laiyuan complex in North China Craton.pdf",
+   "doi": "10.1016/j.lithos.2026.108409"
+  },
+  {
+   "pdf": "Li et al. (2026) LITHOS, Petrogenesis of Late Triassic adakitic rocks and basalts from the southern Lhasa; subduction initiation of Neo-Tethys.pdf",
+   "doi": "10.1016/j.lithos.2026.108498"
+  },
+  {
+   "pdf": "Liu et al. (2026) LITHOS, Geodynamics of the Southern Central Asian orogenic belt; the mineral chemistry of pyroxenites in the Liuyuan ophiolite.pdf",
+   "doi": "10.1016/j.lithos.2026.108500"
+  },
+  {
+   "pdf": "Lockyer et al. (2024) nat rev, Secondary ion mass spectrometry.pdf",
+   "doi": "10.1038/s43586-024-00311-9"
+  },
+  {
+   "pdf": "Miyagi & Matsubaya (2003) JVGR, Hydrogen isotopic composition of hornblende and biotite phenocrysts from Japanese island arc volcanoes; Evaluation of alteration process of the hydrogen isotopic ratios by degassing and re-equilibration.pdf",
+   "doi": "10.1016/s0377-0273(03)00148-3"
+  },
+  {
+   "pdf": "Muller et al. (2016) PNAS, Multiple sulfur-isotope signatures in Archean sulfates and their implications for the chemistry and dynamics of the early atmosphere.pdf",
+   "doi": "10.1073/pnas.1520522113"
+  },
+  {
+   "pdf": "Perez-Sanhueza et al. (2026) JSAES, Amphibole textures, and Sr and U-Th radiogenic compositions revealing changes in magma dynamics at Guallatiri volcano (18°25′ S, 69°05’ W), northern Chile.pdf",
+   "doi": "10.1016/j.jsames.2026.106041"
+  },
+  {
+   "pdf": "Qiao et al. (2025) NSR, Magnesium and boron isotope evidence for the generation of arc magma through serpentinite-mélange melting.pdf",
+   "doi": "10.1093/nsr/nwae363"
+  },
+  {
+   "pdf": "Ray et al. (2013) JAES, Geochemical variability of MORBs along slow to intermediate spreading Carlsberg-Central Indian Ridge, Indian Ocean.pdf",
+   "doi": "10.1016/j.jseaes.2013.03.008"
+  },
+  {
+   "pdf": "Rosner et al. (2008) GGR, Composition-Induced Variations in SIMS Instrumental Mass Fractionation during Boron Isotope Ratio Measurements of Silicate Glasses.pdf",
+   "doi": "10.1111/j.1751-908x.2008.00875.x"
+  },
+  {
+   "pdf": "Sano et al. (2024) JAST, Jf-W dating of zircon in mesosiderite with high-P sintered standard.pdf",
+   "doi": "10.1186/s40543-024-00438-0"
+  },
+  {
+   "pdf": "Schettino et al. (2024) SR, Slab melting boosts the mantle wedge contribution to Li-rich magmas.pdf",
+   "doi": "10.1038/s41598-024-66174-y"
+  },
+  {
+   "pdf": "Shaw et al. (2012) Nat Geosci, Long-term preservation of slab signatures in the mantle inferred from hydrogen isotopes.pdf",
+   "doi": "10.1038/ngeo1406"
+  },
+  {
+   "pdf": "Shin W-J. et al. (2017) JGE, Hydrogeochemical and isotopic features of the groundwater flow systems in the central-northern part of Jeju Island (Republic of Korea).pdf",
+   "doi": "10.1016/j.gexplo.2017.01.004"
+  },
+  {
+   "pdf": "Sobolev et al. (2019) Nat, Deep hydrous mantle reservoir provides evidence for crustal recycling before 3.3 billion years ago.pdf",
+   "doi": "10.1038/s41586-019-1399-5"
+  },
+  {
+   "pdf": "Stromberg et al. (2019) OGR, Applications of synchrotron X-ray techniques to orogenic gold studies; examples from the Timmins gold camp.pdf",
+   "doi": "10.1016/j.oregeorev.2018.11.015"
+  },
+  {
+   "pdf": "Taracsak et al. (2021) CG, Instrumental mass fractionation during sulfur isotope analysis by secondary ion mass spectrometry in natural and synthetic glasses.pdf",
+   "doi": "10.1016/j.chemgeo.2021.120318"
+  },
+  {
+   "pdf": "Tsusumi et al. (2024) Nat Geosci, Water in subducted slabs under core-mantle boundary.pdf",
+   "doi": "10.1038/s41561-024-01464-8"
+  },
+  {
+   "pdf": "Walowski et al. (2015) Nat Geosci, Slab melting beneath the Cascade Arc driven by dehydration of altered oceanic peridotite.pdf",
+   "doi": "10.1038/ngeo2417"
+  },
+  {
+   "pdf": "Weber et al. (2024) ACS, The NanoSIMS-HR; The Next Generation of High Spatial Resolution Dynamic SIMS.pdf",
+   "doi": "10.1021/acs.analchem.4c03091"
+  },
+  {
+   "pdf": "Wenzel et al. (2021) MnP, Water contents of nominally anhydrous orthopyroxenes from oceanic peridotites determined by SIMS and FTIR.pdf",
+   "doi": "10.1007/s00710-021-00757-9"
+  },
+  {
+   "pdf": "Xia et al. (2019) JAAS, Zircon water content; reference material development and simultaneous measurement of oxygen isotopes by SIMS.pdf",
+   "doi": "10.1039/c9ja00073a"
+  },
+  {
+   "pdf": "Yadav (2026) GJ, Olivine as Probe Into Mantle Source  Magma Crystallisation and Lithospheric Thickness.pdf",
+   "doi": "10.1002/gj.70247"
+  },
+  {
+   "pdf": "Yang et al. (2024) Nat Commun, Light δD apatites reveal deep origin water in North China Craton intracontinental granites and basalts.pdf",
+   "doi": "10.1038/s41467-024-53133-4"
+  },
+  {
+   "pdf": "Yi et al. (2014) JAES, Polyphase tectono-magmatic episodes as revealed by SHRIMP U–Pb geochronology and microanalysis of zircon and titanite from the central Okcheon belt, Korea.pdf",
+   "doi": "10.1016/j.jseaes.2014.04.021"
+  },
+  {
+   "pdf": "Yu et al. (2026) GR, Mineral and isotopic archives of potassic volcanic rocks; magma evolution and lithospheric heterogeneity in the Lhasa terrane.pdf",
+   "doi": "10.1016/j.gr.2026.01.015"
+  },
+  {
+   "pdf": "Zellmer et al. (2014) Interaction of arc magmas with subvolcanic hydrothermal systems; composition and metasomatic textures of olivine crystals in fresh basalts of Daisen and Mengameyama, Western Honshu, Japan.pdf",
+   "doi": "10.1144/sp410.1"
+  },
+  {
+   "pdf": "Zhang et al. (2025) GCA, Magnesium isotope composition of volcanic rocks from cold and warm subduction zones; the recycling of subducted serpentinites and carbonates.pdf",
+   "doi": "10.1016/j.gca.2024.12.024"
+  },
+  {
+   "pdf": "Zhang et al. (2026) LITHOS, Unveiling an Ordovician continental back-arc basin; the gabbros and adakitic granitoids of the Erlangping unit, Tongbai Orogen (Central China).pdf",
+   "doi": "10.1016/j.lithos.2026.108506"
+  },
+  {
+   "pdf": "Zhong et al. (2026) EPSL, Melt-depleted plume mantle sourced the oldest Atlantic Ocean crust.pdf",
+   "doi": "10.1016/j.epsl.2026.119962"
+  },
+  {
+   "pdf": "Zhuang et al. (2026) CG, Tectonic controls on geochemical heterogeneity of hydrothermal fluids across the Eastern Tibetan Plateau fault system; hydrochemistry and He-C isotopes.pdf",
+   "doi": "10.1016/j.chemgeo.2026.123337"
+  },
+  {
+   "pdf": "김용하 외 (2021) JSTA, 우주과학자에게 필요한 달의 지형과 지질.pdf",
+   "doi": "10.52912/jsta.2021.1.2.217"
+  },
+  {
+   "pdf": "An et al. (2026) GF, Lithospheric thickness controls asymmetric mantle plume spreading and metallogenesis in the Tarim Large Igneous Province–Central Asian Orogenic Belt System.pdf",
+   "doi": "10.1016/j.gsf.2026.102249"
+  }
+ ],
+ "no_doi_count": 831,
+ "no_doi_sample": [
+  "9291c0bb8d62__41598_2025_32674_MOESM1_ESM.pdf",
+  "d7e40c9a3536__Allegre, 1983, Constraints on evolution of Earth's mantle from rare gas systematics.pdf",
+  "e57e8763b2cb__Hart, 1984, A large-scale isotope anomaly in the Southern Hemisphere mantle.pdf",
+  "d10504ec0c05__Hofmann, 1997, Mantle geochemistry the message from oceanic volcanism.pdf",
+  "c664606dafd1__Mellor,1998,The geochemistry and petrology of the Rodrigues Ridge (Western Indian Ocean).pdf",
+  "a3d383c00b53__Torsvik, 2014, Deep mantle structure as a reference frame for movements in and on the Earth.pdf_Supp.pdf",
+  "3631d3b187f7__ggge21278-sup-0001-2016gc006673-s01.pdf",
+  "57d0141dbdc2__1-s2.0-S0012821X07007558-mmc2.pdf",
+  "215aff3cb762__1-s2.0-S0012821X07007558-mmc3.pdf",
+  "211db06774ec__2025gc012748-sup-0001-supporting information si-s01.pdf",
+  "4c1d8b819454__41467_2024_53397_MOESM1_ESM.pdf",
+  "e64cac50fa66__41467_2024_53397_MOESM2_ESM.pdf",
+  "dffda29fc640__41467_2024_53397_MOESM3_ESM.pdf",
+  "deb483196b7a__Javoy and Pineau, 1991, Popping rock.pdf",
+  "52b981b8f4ba__sciadv.adv5938.pdf",
+  "c2193a686a77__Xu et al., 1998, He, Sr and Nd isotopes of mantle-derived xenoliths in volcanic rocks of NE China,.pdf",
+  "8575da5f80ab__Sample locations.pdf",
+  "264c48be3593__Nielsen and Marschall. 2017, Geochemical evidence for me╠ülange melting in global arc.pdf",
+  "57cdc6cd593e__Walter, 1998, Melting of Garnet Peridotite and the Origin of Komatiite and Depleted Lithosphere.pdf",
+  "826345011643__Kawabe and Fujio (2010) Pacific ocean circulation based on observation.pdf",
+  "91c25acc0bc4__Mukasa and Dalziel (2000.pdf",
+  "b4564a3a742f__Li (2006) CARBON AND NITROGEN GEOCHEMISTRY OF WEDGE SEDIMENTS.pdf",
+  "28a41487eea8__Xu, 2001, Thermo-tectonic destruction of the archaean lithospheric keel beneath the sino-korean craton in china; evidenc.pdf",
+  "fb796b44f70c__Hofmann et al., 1986, Nb and Pb in oceanic basalts; new constraints on mantle evolution.pdf",
+  "8b0160429ffc__Patterson et al. (1998) Preservation of extraterrestrial 3He in 480-Ma-old marine limestones.pdf",
+  "9451442668be__Salters et al. 1996, The generation of mid ocean ridge basalts from the Hf and Nd isotope perspective.pdf",
+  "668c416f47b8__Marty (1995) Nitrogen content of the mantle inferred from N2ΓÇôAr correlation in oceanic basalts.pdf",
+  "1d4d7f9967df__Koppers et al. (2021), Mantle plumes and their role in the Earth processes.pdf",
+  "6b0df455389b__O Hara, 1968.pdf",
+  "169bbe80322e__sumino 2004 basalt trace element.pdf",
+  "301d49985608__Stuart et al, 2003, High 3He4He ratios in picritic basalts from Baffin Island and the role of a mixed reservoir in mantl.pdf",
+  "b368a8c5ceaa__Ozawa et al. (2002) Detection and Monitoring of Ongoing Aseismic Slip in the Tokai Region, Central Japan.pdf",
+  "c7f9f1b611bc__nature03297.pdf",
+  "aa10199574cf__Gautheron and Moreira, 2002, Helium signature of the SCLM.pdf",
+  "d92f49c98339__Siedler et al. (2004) Deep-water flow in the mariana and Caroline basins.pdf",
+  "6a90ffb9b51d__Mather et al. 2020, Intraplate volcanism triggered by bursts in slab flux sciadv.abd0953.pdf",
+  "fb31b0fdb9c1__Mohapatra & (2000) Search for the mantle nitrogen in the ultramafic xenoliths from San Carlos, Arizona.pdf",
+  "5a65deadba3e__Mahoney et al. 1994, Isotope and trace element characteristics of a super fast spreading ridge EPR.pdf",
+  "c4e36bf8968e__Ballentine and Barfod, 2000, The origin of air like noble gases in MORB and OIB.pdf",
+  "22ec4d265dde__Goldtz et al. (2024) Operational Earthquake Forecasting in Japan- A Study of Municipal Government Planning for an Earthq.pdf"
+ ]
+}

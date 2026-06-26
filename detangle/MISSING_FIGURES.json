@@ -1,0 +1,83 @@
+{
+ "collision_risk": [],
+ "missing_figures": [
+  {
+   "paper": "Chen_et_al._(2021)_Geochemistry_of_Cretaceous_basalts_from_the_Ontong_",
+   "slug": "6930c6a95e5a",
+   "figure": "Figure 14: Schematic model for the emplacement and evolution of the Ontong Java Plateau.",
+   "hash_ref": "fed39b841ae2dce01088b84bfc1e2789_img.jpg"
+  },
+  {
+   "paper": "Hu_et_al._(2016)_Metasomatism-induced_mantle_magnesium_isotopic_hetero",
+   "slug": "86b375f9bcea",
+   "figure": "Figure 2: Major and trace element variations of Hannuoba (HNB) mantle xenoliths. Panel A: ",
+   "hash_ref": "a71911ad87414271aeb190e0eebcb989_img.jpg"
+  },
+  {
+   "paper": "Mangler_et_al._(2020)_A_Pyroxenic_View_on_Magma_Hybridization_and_Crys",
+   "slug": "d8d0b09f2f03",
+   "figure": "Check for updates icon",
+   "hash_ref": "30a26f2d17ca95672702bf50fb4f0242_img.jpg"
+  },
+  {
+   "paper": "Wang_et_al._(2021)_Geochemical_and_O-C-Sr-Nd_Isotope_on_Petrogenesis_b",
+   "slug": "0b0bb7ed323b",
+   "figure": "ORCID icon",
+   "hash_ref": "c468cde8f04e2e2a6ba3c2a373e05c45_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Map of the Japan Sea region showing the location and structural setting of ODP Sites 794, ",
+   "hash_ref": "f9782e7145d2__49ad3a646d84bcfeac02bdf2b3792a3e_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 2: Core recovery of igneous rocks at Site 794. The figure is a stratigraphic column",
+   "hash_ref": "f9782e7145d2__d9d706121d1c4ba9ad2c793746382361_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 3: Covariation diagrams in the Y-, Nb-, and Zr-incompatible elements. The top plot ",
+   "hash_ref": "f9782e7145d2__e0d425c8e4eef259e4c52d81426d93fa_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 4: Spidergrams. A. Chondrite-normalized REE pattern (La to Lu). B. N-MORB normalize",
+   "hash_ref": "f9782e7145d2__bc04d002fc79e8a3637b1552ac3361e6_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 5: Four triangular discriminant diagrams (A, B, C, D) for basalt classification. Di",
+   "hash_ref": "f9782e7145d2__c54b3ca7603d65d4589151bc3a49d054_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 6: Zr/Y vs. Zr diagram. The y-axis is Zr/Y on a log scale from 1 to 10. The x-axis ",
+   "hash_ref": "f9782e7145d2__73c3e4508cae529acf4e6c7fa70b361a_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 7: Nb/17Yb vs. Th/Yb covariation diagram. The y-axis is Th/Yb on a log scale from 0",
+   "hash_ref": "f9782e7145d2__01da0d212fb571933f10f96556157745_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 8: A scatter plot comparing K-Ar age dating per units (This work) and Ar-Ar measure",
+   "hash_ref": "f9782e7145d2__2396add2849eccefcbcfbe1c7142a253_img.jpg"
+  },
+  {
+   "paper": "47._Pouclet_&_Bellon_(1992)_Geochemistry_and_Isotopic_Composition_of_V",
+   "slug": "articles",
+   "figure": "Figure 9: A scatter plot showing Sr and Nd isotope ratios. The x-axis is 87Sr/86Sr (rangin",
+   "hash_ref": "f9782e7145d2__ae21ece48844b14b230832cbb6fcf735_img.jpg"
+  }
+ ]
+}

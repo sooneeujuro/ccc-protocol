@@ -1,0 +1,690 @@
+[
+ {
+  "base": "1a9c4741-3032-7685-33e1-f22559d08af3",
+  "keep": "1a9c4741-3032-7685-33e1-f22559d08af3__2",
+  "keep_words": 13521,
+  "drops": [
+   {
+    "drop": "1a9c4741-3032-7685-33e1-f22559d08af3",
+    "lost_unique": 8,
+    "content_lost": 8,
+    "sample": [
+     "129i",
+     "244pu",
+     "around",
+     "b97f396d1daa",
+     "clustered",
+     "dougeris",
+     "shallower",
+     "type"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_Field",
+  "keep": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_Field__3",
+  "keep_words": 4706,
+  "drops": [
+   {
+    "drop": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_Field",
+    "lost_unique": 13,
+    "content_lost": 13,
+    "sample": [
+     "19284baf671404613a3cfde8341d68ce",
+     "2053059a183575d0574a0edc9e4d7a45",
+     "2322d49d302a",
+     "3547d8dc1ba9bc8e4bbec26b5724549d",
+     "50dae0dfbde108cee0040a29f2a42e88",
+     "abiologically",
+     "daptation",
+     "decreasing",
+     "fall",
+     "fitted",
+     "gasemijit",
+     "relationship"
+    ]
+   },
+   {
+    "drop": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_Field__2",
+    "lost_unique": 8,
+    "content_lost": 8,
+    "sample": [
+     "33c3a1671d75",
+     "3547d8dc1ba9bc8e4bbec26b5724549d",
+     "50dae0dfbde108cee0040a29f2a42e88",
+     "fakhraai",
+     "fall",
+     "fitted",
+     "relationship",
+     "while"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Brauer_et_al._(2003)_Gas_isotopic_evidence_of_fluid‐triggered_intraplate_seismic",
+  "keep": "Brauer_et_al._(2003)_Gas_isotopic_evidence_of_fluid‐triggered_intraplate_seismic",
+  "keep_words": 8984,
+  "drops": [
+   {
+    "drop": "Brauer_et_al._(2003)_Gas_isotopic_evidence_of_fluid‐triggered_intraplate_seismic__2",
+    "lost_unique": 8,
+    "content_lost": 7,
+    "sample": [
+     "axis",
+     "bailey",
+     "boundary",
+     "bubblak",
+     "credited",
+     "f98a9b340e53",
+     "pochazkova"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Chen_et_al._(2023)_The_off-axis_plume–ridge_interaction_model;_the_mineral_chemi",
+  "keep": "Chen_et_al._(2023)_The_off-axis_plume–ridge_interaction_model;_the_mineral_chemi",
+  "keep_words": 16038,
+  "drops": [
+   {
+    "drop": "Chen_et_al._(2023)_The_off-axis_plume–ridge_interaction_model;_the_mineral_chemi__2",
+    "lost_unique": 1369,
+    "content_lost": 1022,
+    "sample": [
+     "0538daaa5583c23e17db3a12f2281a55",
+     "2000a",
+     "2000b",
+     "2017zt07z066",
+     "2021qntd23",
+     "22qntd2101",
+     "2db53d6ef524be5cde118e647f73ed90",
+     "390120de4fe440c42fea8154fcaad334",
+     "55d2bfe1c3d04e86df8d7a104d802172",
+     "7a3561af571faf036baa93f5f4b1bdb9",
+     "7e2f2d03a5dda38b038fd4884629a2b4",
+     "7fb5215fd72210a2e4cce6df55550c89"
+    ]
+   }
+  ],
+  "need_llm": true
+ },
+ {
+  "base": "Drake,_1975,_partition_coefficients",
+  "keep": "Drake,_1975,_partition_coefficients__2",
+  "keep_words": 9332,
+  "drops": [
+   {
+    "drop": "Drake,_1975,_partition_coefficients",
+    "lost_unique": 17,
+    "content_lost": 14,
+    "sample": [
+     "93f2f1cb1fc3",
+     "9d1abc573e35610946ece87a18cbe862",
+     "baso4",
+     "decreases",
+     "downward",
+     "frequency",
+     "legend",
+     "marked",
+     "side",
+     "single",
+     "slight",
+     "srso4"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Dunai_and_Wijbrans,_2000,_Long-term_cosmogenic_3He_production_rates",
+  "keep": "Dunai_and_Wijbrans,_2000,_Long-term_cosmogenic_3He_production_rates",
+  "keep_words": 4879,
+  "drops": [
+   {
+    "drop": "Dunai_and_Wijbrans,_2000,_Long-term_cosmogenic_3He_production_rates__2",
+    "lost_unique": 8,
+    "content_lost": 6,
+    "sample": [
+     "arranged",
+     "axis",
+     "b717d354201f",
+     "column",
+     "columns",
+     "rows"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Eiler_2001,_Oxygen_Isotope_Variations_of_Basaltic_Lavas_and_Upper_Mantle_Rocks",
+  "keep": "Eiler_2001,_Oxygen_Isotope_Variations_of_Basaltic_Lavas_and_Upper_Mantle_Rocks__2",
+  "keep_words": 16905,
+  "drops": [
+   {
+    "drop": "Eiler_2001,_Oxygen_Isotope_Variations_of_Basaltic_Lavas_and_Upper_Mantle_Rocks",
+    "lost_unique": 32,
+    "content_lost": 30,
+    "sample": [
+     "542171a4632d",
+     "aggregate",
+     "alone",
+     "applies",
+     "assumptions",
+     "changing",
+     "clearly",
+     "corrected",
+     "decreases",
+     "divided",
+     "extend",
+     "fertile"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Elderfield_&_Schultz_(1996)_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical",
+  "keep": "Elderfield_&_Schultz_(1996)_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical",
+  "keep_words": 12785,
+  "drops": [
+   {
+    "drop": "Elderfield_&_Schultz_(1996)_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical__2",
+    "lost_unique": 65,
+    "content_lost": 47,
+    "sample": [
+     "1033ab90cd19fd4c5901966aeec07a86",
+     "1893e9dc091ea311057341f98b65310b",
+     "1d3994bfe548ae7545d57df703e32a02",
+     "3e10",
+     "4e10",
+     "6de7dcb072cef2388026fb0f504084b2",
+     "73c3e4508cae529acf4e6c7fa70b361a",
+     "8ccbc9fa77bf60ba0ca0b79dec8681b8",
+     "939b79420df0cf962959ccef56f3371f",
+     "af06598cfb31b517e79b50d74f72a0ca",
+     "arsenic",
+     "bb0668e97861"
+    ]
+   }
+  ],
+  "need_llm": true
+ },
+ {
+  "base": "Epstein_et_al._(2021)_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margi",
+  "keep": "Epstein_et_al._(2021)_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margi__2",
+  "keep_words": 19601,
+  "drops": [
+   {
+    "drop": "Epstein_et_al._(2021)_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margi",
+    "lost_unique": 427,
+    "content_lost": 278,
+    "sample": [
+     "1992a",
+     "1992b",
+     "2021gc009650",
+     "276767bb6b14",
+     "46f43cb4ffd47565e7c0ca306d461435",
+     "64662465bba247703fdec49c8f3309f9",
+     "6e5a85131eedf6b98db62877ee64506e",
+     "7f687094e6abe34a9cf491942b296d9a",
+     "821x",
+     "8fd97886a32c3ac7abb08aba9f7f231b",
+     "98ee20ceb85cd84e2415b20b1eda1bcf",
+     "a1545557e366b6302109d13360b199c3"
+    ]
+   }
+  ],
+  "need_llm": true
+ },
+ {
+  "base": "Etiope_&_Lollar_(2013)_Abiotic_methane_on_Earth",
+  "keep": "Etiope_&_Lollar_(2013)_Abiotic_methane_on_Earth__2",
+  "keep_words": 19211,
+  "drops": [
+   {
+    "drop": "Etiope_&_Lollar_(2013)_Abiotic_methane_on_Earth",
+    "lost_unique": 21,
+    "content_lost": 21,
+    "sample": [
+     "76ad33ed284f",
+     "awra",
+     "baci",
+     "bostr",
+     "bracket",
+     "center",
+     "chiadini",
+     "cliff",
+     "colored",
+     "connecting",
+     "contaminated",
+     "determinations"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Farmer,_2007,_3.03_-_Continental_Basaltic_Rocks",
+  "keep": "Farmer,_2007,_3.03_-_Continental_Basaltic_Rocks",
+  "keep_words": 18250,
+  "drops": [
+   {
+    "drop": "Farmer,_2007,_3.03_-_Continental_Basaltic_Rocks__2",
+    "lost_unique": 22,
+    "content_lost": 18,
+    "sample": [
+     "asterisk",
+     "bohrsen",
+     "compares",
+     "depicted",
+     "direction",
+     "dots",
+     "e144418bc19f",
+     "highlights",
+     "indicating",
+     "leonardos",
+     "linear",
+     "longitudes"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Jambon_et_al,_1986,_Solubility_of_He,_Ne,_Ar,_Kr_and_Xe_in_a_basalt_melt_in_the_range_1250ΓÇô1600_C._Geochemical_implications",
+  "keep": "Jambon_et_al,_1986,_Solubility_of_He,_Ne,_Ar,_Kr_and_Xe_in_a_basalt_melt_in_the_range_1250ΓÇô1600_C._Geochemical_implications",
+  "keep_words": 7305,
+  "drops": [
+   {
+    "drop": "Jambon_et_al,_1986,_Solubility_of_He,_Ne,_Ar,_Kr_and_Xe_in_a_basalt_melt_in_the_range_1250ΓÇô1600_C._Geochemical_implications__2",
+    "lost_unique": 13,
+    "content_lost": 13,
+    "sample": [
+     "55d2bfe1c3d04e86df8d7a104d802172",
+     "7fb5215fd72210a2e4cce6df55550c89",
+     "8110fdcee527",
+     "867fce43c58fda6178b06e454b4ed73a",
+     "963e3d9330a1aca4f016ef9e1a3f82e1",
+     "connects",
+     "entire",
+     "gradually",
+     "represented",
+     "slightly",
+     "square",
+     "steeply"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Kim_et_al._(2024)_Emissions_of_mantle_helium_and_abiogenic_methane_at_newly_discovered_black_smokers_along_the_Central_Indian_ridge_(12°S–16°S)",
+  "keep": "Kim_et_al._(2024)_Emissions_of_mantle_helium_and_abiogenic_methane_at_newly_discovered_black_smokers_along_the_Central_Indian_ridge_(12°S–16°S)",
+  "keep_words": 9441,
+  "drops": [
+   {
+    "drop": "Kim_et_al._(2024)_Emissions_of_mantle_helium_and_abiogenic_methane_at_newly_discovered_black_smokers_along_the_Central_Indian_ridge_(12°S–16°S)__2",
+    "lost_unique": 138,
+    "content_lost": 123,
+    "sample": [
+     "13cch4",
+     "30a26f2d17ca95672702bf50fb4f0242",
+     "3heexcess",
+     "73c3e4508cae529acf4e6c7fa70b361a",
+     "81a6620597cb30d7e74bd14011f374d5",
+     "8d2f4e036a5e0205a1ea3f0b3378f584",
+     "92742095857f176331b4211795043476",
+     "adapted",
+     "addressed",
+     "af191c691aa1282801a350dbb14c7925",
+     "affiliations",
+     "african"
+    ]
+   }
+  ],
+  "need_llm": true
+ },
+ {
+  "base": "Kipfer_et_al._(2002)_Noble_gases_in_meteoric_waters_atmospheric_components_and_radiogenicterrigenous_origins",
+  "keep": "Kipfer_et_al._(2002)_Noble_gases_in_meteoric_waters_atmospheric_components_and_radiogenicterrigenous_origins",
+  "keep_words": 45502,
+  "drops": [
+   {
+    "drop": "Kipfer_et_al._(2002)_Noble_gases_in_meteoric_waters_atmospheric_components_and_radiogenicterrigenous_origins__2",
+    "lost_unique": 19,
+    "content_lost": 15,
+    "sample": [
+     "516d9f1866cc2e359a35fb1d8c046454",
+     "circle",
+     "corner",
+     "distances",
+     "f31752848fcb",
+     "falling",
+     "frolikh",
+     "intermediate",
+     "marked",
+     "mazar",
+     "realtive",
+     "represented"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Krishna,_1995,_Seismic_moment_release_along_selected_major_transforms_on_the_Cen",
+  "keep": "Krishna,_1995,_Seismic_moment_release_along_selected_major_transforms_on_the_Cen",
+  "keep_words": 5670,
+  "drops": [
+   {
+    "drop": "Krishna,_1995,_Seismic_moment_release_along_selected_major_transforms_on_the_Cen__2",
+    "lost_unique": 122,
+    "content_lost": 32,
+    "sample": [
+     "2583a26b85126a2fd60062a7e7ec4ed0",
+     "ages",
+     "america",
+     "angle",
+     "antarctica",
+     "b3fe1b7fe9e5",
+     "background",
+     "blue",
+     "coding",
+     "color",
+     "difference",
+     "finite"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Labidi_et_al.,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nitrogen",
+  "keep": "Labidi_et_al.,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nitrogen__2",
+  "keep_words": 17754,
+  "drops": [
+   {
+    "drop": "Labidi_et_al.,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nitrogen",
+    "lost_unique": 13,
+    "content_lost": 10,
+    "sample": [
+     "003082e50e3009141f59bd5df831749f",
+     "05120a8130b7",
+     "article",
+     "avce",
+     "description",
+     "e05232e09f8d0a603eef5812f7313d4b",
+     "f439ede8735757e3190eab35e168f1de",
+     "orcid",
+     "subdivided",
+     "white"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Lockyer_et_al._(2024)_Nat_Rev,_Secondary_ion_mass_spectrometry",
+  "keep": "Lockyer_et_al._(2024)_Nat_Rev,_Secondary_ion_mass_spectrometry__2",
+  "keep_words": 19177,
+  "drops": [
+   {
+    "drop": "Lockyer_et_al._(2024)_Nat_Rev,_Secondary_ion_mass_spectrometry",
+    "lost_unique": 19,
+    "content_lost": 19,
+    "sample": [
+     "256x256",
+     "2e3fbf06eeb3",
+     "alpha",
+     "analyzed",
+     "apply",
+     "arbitrary",
+     "categorized",
+     "deflected",
+     "displays",
+     "downwards",
+     "false",
+     "groups"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Marty_and_Zimmermann,_1999,_Volatiles_in_MORB",
+  "keep": "Marty_and_Zimmermann,_1999,_Volatiles_in_MORB__2",
+  "keep_words": 11981,
+  "drops": [
+   {
+    "drop": "Marty_and_Zimmermann,_1999,_Volatiles_in_MORB",
+    "lost_unique": 13,
+    "content_lost": 12,
+    "sample": [
+     "across",
+     "coordinate",
+     "d8478917440e",
+     "jendzejewski",
+     "labels",
+     "lagabriele",
+     "longitudes",
+     "marks",
+     "ranges",
+     "uvre",
+     "vand",
+     "while"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Miller_and_Pack(2021)_Triple_oxygen_review",
+  "keep": "Miller_and_Pack(2021)_Triple_oxygen_review__2",
+  "keep_words": 17037,
+  "drops": [
+   {
+    "drop": "Miller_and_Pack(2021)_Triple_oxygen_review",
+    "lost_unique": 14,
+    "content_lost": 12,
+    "sample": [
+     "9607c93e5b38",
+     "bohlke",
+     "brinjikji",
+     "gypcrites",
+     "kabling",
+     "klindinst",
+     "matsuhsa",
+     "permil",
+     "precamb",
+     "thamman",
+     "thieme",
+     "thiemeis"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Nuccio_et_al.,_2008,_Elemental_and_isotope_covariation_of_noble_gases_in_mineral_phases",
+  "keep": "Nuccio_et_al.,_2008,_Elemental_and_isotope_covariation_of_noble_gases_in_mineral_phases",
+  "keep_words": 5971,
+  "drops": [
+   {
+    "drop": "Nuccio_et_al.,_2008,_Elemental_and_isotope_covariation_of_noble_gases_in_mineral_phases__2",
+    "lost_unique": 14,
+    "content_lost": 14,
+    "sample": [
+     "arrows",
+     "b5196fb5ee58",
+     "clustered",
+     "downward",
+     "drawn",
+     "follow",
+     "increasing",
+     "indicated",
+     "label",
+     "mostly",
+     "ottolini",
+     "pyroclastics"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Plummer_and_Busenberg(1982)_CaCO3-CO2-H2O_system",
+  "keep": "Plummer_and_Busenberg(1982)_CaCO3-CO2-H2O_system__2",
+  "keep_words": 23923,
+  "drops": [
+   {
+    "drop": "Plummer_and_Busenberg(1982)_CaCO3-CO2-H2O_system",
+    "lost_unique": 26,
+    "content_lost": 14,
+    "sample": [
+     "347f418b3d10",
+     "cross",
+     "decline",
+     "etude",
+     "experimentale",
+     "indicates",
+     "indicating",
+     "iuta",
+     "merilainen",
+     "oldsymbol",
+     "phenomene",
+     "possibilite"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Tang_et_al.,_2014,_Heterogeneous_lithospheric_mantle_metasomatism_in_the_eastern_North_China_Craton",
+  "keep": "Tang_et_al.,_2014,_Heterogeneous_lithospheric_mantle_metasomatism_in_the_eastern_North_China_Craton__2",
+  "keep_words": 12352,
+  "drops": [
+   {
+    "drop": "Tang_et_al.,_2014,_Heterogeneous_lithospheric_mantle_metasomatism_in_the_eastern_North_China_Craton",
+    "lost_unique": 14,
+    "content_lost": 14,
+    "sample": [
+     "31170141d11d",
+     "categorized",
+     "clustered",
+     "doulgeris",
+     "filled",
+     "growth",
+     "labeled",
+     "logarithmic",
+     "luijiang",
+     "open",
+     "symbols",
+     "tieloff"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "Wang_et_al._(2018)_Olivine_Oxygen_Isotope_Evidence_for_Intracontinental_Recycling_of_Delaminated_Continental_Crust",
+  "keep": "Wang_et_al._(2018)_Olivine_Oxygen_Isotope_Evidence_for_Intracontinental_Recycling_of_Delaminated_Continental_Crust",
+  "keep_words": 6865,
+  "drops": [
+   {
+    "drop": "Wang_et_al._(2018)_Olivine_Oxygen_Isotope_Evidence_for_Intracontinental_Recycling_of_Delaminated_Continental_Crust__2",
+    "lost_unique": 20,
+    "content_lost": 18,
+    "sample": [
+     "0af066940f31e2a4f15c10824101a8fe",
+     "19d44b37fb4fa155bf9d60c77a3d3cb2",
+     "2b34fae75fe5",
+     "32b0d4c179ff868011656ab6c9e92913",
+     "88f51de89ad086b589f72a007ec18f8c",
+     "broader",
+     "disequilibria",
+     "divided",
+     "faults",
+     "haufl",
+     "inside",
+     "layers"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "nature07852",
+  "keep": "nature07852",
+  "keep_words": 5608,
+  "drops": [
+   {
+    "drop": "nature07852__2",
+    "lost_unique": 11,
+    "content_lost": 9,
+    "sample": [
+     "73e3c9b4bc35",
+     "degrees",
+     "gillfillan",
+     "highlighting",
+     "legend",
+     "respectively",
+     "symbols",
+     "views",
+     "zoomed"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "이병대_외_(2013)_나리분지_추산용천수의_수리지질학적_특성",
+  "keep": "이병대_외_(2013)_나리분지_추산용천수의_수리지질학적_특성",
+  "keep_words": 532,
+  "drops": [
+   {
+    "drop": "이병대_외_(2013)_나리분지_추산용천수의_수리지질학적_특성__2",
+    "lost_unique": 3,
+    "content_lost": 3,
+    "sample": [
+     "mineral",
+     "내수진천과",
+     "화산섬이다"
+    ]
+   }
+  ],
+  "need_llm": false
+ },
+ {
+  "base": "이창열_외_(2015)_울릉도_산출_암석의_열물성_자료를_이용한_울릉도_지열_성인에_대한_열전도_수치모델링_연구",
+  "keep": "이창열_외_(2015)_울릉도_산출_암석의_열물성_자료를_이용한_울릉도_지열_성인에_대한_열전도_수치모델링_연구__2",
+  "keep_words": 3786,
+  "drops": [
+   {
+    "drop": "이창열_외_(2015)_울릉도_산출_암석의_열물성_자료를_이용한_울릉도_지열_성인에_대한_열전도_수치모델링_연구",
+    "lost_unique": 25,
+    "content_lost": 23,
+    "sample": [
+     "100m",
+     "4000m",
+     "6c89ebafdc00",
+     "about",
+     "boundaries",
+     "clear",
+     "coarser",
+     "cross",
+     "diagrams",
+     "distance",
+     "feature",
+     "five"
+    ]
+   }
+  ],
+  "need_llm": false
+ }
+]

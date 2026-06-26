@@ -1,0 +1,65 @@
+{
+ "counts": {
+  "exact": 3976,
+  "rmap": 16,
+  "norm": 0,
+  "jaccard": 9,
+  "orphan": 13,
+  "helium": 19,
+  "sidecars_total": 3996
+ },
+ "orphans": [
+  "Cande,_2011,_Indian_and_African_plate_motions_driven_by_the_push_force_of_the_Ré",
+  "Drake_&_Weill_(1975)_partition_of_Sr,_Ba,_Ca,_Y,_Eu_and_other_REE_between_plagio",
+  "Farmer_(2013)_Continental_Basaltic_Rocks",
+  "Gilfillan_et_al.,_2009,_Solubility_trapping_in_formation_water_as_dominant_CO2_s",
+  "Jamron_et_al._(1986)_solubility_of_He,_Ne,_Ar,_Kr_and_Xe_in_a_basalt_melt_in_the",
+  "Kim,_2025,_Emissions_of_mantle_helium_and_abiotic_methane_at_newly_discovered_bl",
+  "Marty,_Zimmermann,_1999,_Volatiles_(He,_C,_N,_Ar)_in_mid-ocean_ridge_basalts_Ass",
+  "Miller_&_(2021)_Why_Measure_17O-Historical_Perspective,_Triple-Isotope_Systemati",
+  "Parai_&_Mukhopadhyay_(2021)_Heavy_noble_gas_signatures_of_the_North_Atlantic_Pop",
+  "Plummer_&_Busenbero_(1982)_The_solubilities_of_calcite,_aragonite_and_vaterite_i",
+  "Porcelli,_2018,_Noble_Gases_in_Geochemistry_and_Cosmochemistry",
+  "Proskurowski_et_al._(2008)_Abiogenic_hydrocarbon_production_at_Lost_City_hydroth",
+  "Torsvik,_2014,_Deep_mantle_structure_as_a_reference_frame_for_movements_in_and_o"
+ ],
+ "jaccard": [
+  [
+   "Brauer_et_al.,_2003,_Isotopic_evidence_of_fluo-triggered_intraplate_seismicity",
+   "Brauer_et_al._(2003)_Gas_isotopic_evidence_of_fluid‐triggered_intraplate_seismic"
+  ],
+  [
+   "Busigny_et_al._(2005)_Nitrogen_content_and_isotopic_composition_of_oceanic_crust_at_a_superfast_spreading_ridge_A_profile_in_altered_basalts_from_ODP",
+   "Busigny_등_-_2005_-_Nitrogen_content_and_isotopic_composition_of_oceanic_crust_at_a_superfast_spreading_ridge_A_profile"
+  ],
+  [
+   "Dunai_&_Wijbrans_(2000)_Long-term_cosmogenic_3He_production_rates",
+   "Dunai_and_Wijbrans,_2000,_Long-term_cosmogenic_3He_production_rates__2"
+  ],
+  [
+   "Eiler_et_al._(2001)_Oxygen_isotope_variations_of_basaltic_lavas_and_upper_mantle",
+   "Eiler_2001,_Oxygen_Isotope_Variations_of_Basaltic_Lavas_and_Upper_Mantle_Rocks"
+  ],
+  [
+   "Elderfield,_1996,_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical_Compositi",
+   "Elderfield_&_Schultz_(1996)_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical__2"
+  ],
+  [
+   "Epstein,_in_review,_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margin,",
+   "Epstein_et_al._(2021)_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margi__2"
+  ],
+  [
+   "Etiope,_2013,_ABIOTIC_METHANE_ON_EARTH",
+   "Etiope_&_Lollar_(2013)_Abiotic_methane_on_Earth__2"
+  ],
+  [
+   "Labidi,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nit",
+   "Labidi_et_al.,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nitrogen"
+  ],
+  [
+   "안건상_외_(2014)_국립공원_무등산의_지질_형성사와_자연경관",
+   "안건상_(2014)_국립공원_무등산의_지질_형성사와_자연경관"
+  ]
+ ],
+ "sidecar_not_in_articles": []
+}

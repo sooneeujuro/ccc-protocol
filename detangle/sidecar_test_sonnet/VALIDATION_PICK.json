@@ -1,0 +1,354 @@
+[
+ {
+  "paper_id": "Hofmann_and_White,_1982,_Mantle_plumes_from_ancient_oceanic_crust",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Hofmann_and_White,_1982,_Mantle_plumes_from_ancient_oceanic_crust.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "87Sr/86Sr (eSr)",
+    "expected": "cited"
+   },
+   {
+    "label": "143Nd/144Nd (eNd)",
+    "expected": "cited"
+   },
+   {
+    "label": "206Pb/204Pb and 207Pb/204Pb",
+    "expected": "cited"
+   },
+   {
+    "label": "REE concentrations (chondrite-normalized)",
+    "expected": "modeled"
+   },
+   {
+    "label": "K, U, Th concentrations in MORB",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 11
+ },
+ {
+  "paper_id": "Wilhelm,_1977,_Low-pressure_solubility_of_gases_in_liquid_water",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Wilhelm,_1977,_Low-pressure_solubility_of_gases_in_liquid_water.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Gas solubility (He, Ne, Ar, Kr, Xe, N2, O2, CO2, CH4, etc.)",
+    "expected": "cited"
+   },
+   {
+    "label": "Enthalpy of solution (DeltaH degrees)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Entropy of solution (DeltaS degrees)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Heat capacity of solution (DeltaCp degrees)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Henry's law constant",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 24
+ },
+ {
+  "paper_id": "Hancock(2023)_Global_Synthesis_of_Regional_Holocene_Hydroclimate_Variability_Using_Proxy",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Hancock(2023)_Global_Synthesis_of_Regional_Holocene_Hydroclimate_Variability_Using_Proxy.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Speleothem δ18O",
+    "expected": "cited"
+   },
+   {
+    "label": "Leaf wax δD",
+    "expected": "cited"
+   },
+   {
+    "label": "Pollen-based precipitation reconstruction",
+    "expected": "cited"
+   },
+   {
+    "label": "Lake level / effective moisture status",
+    "expected": "cited"
+   },
+   {
+    "label": "Regional precipitation composite timeseries (z-score)",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 0
+ },
+ {
+  "paper_id": "Elliott_et_al._(1999)_Exploring_the_kappa_conundrum;_the_role_of_recycling_in_the_lead_isotope_evolution_of_the_mantle",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Elliott_et_al._(1999)_Exploring_the_kappa_conundrum;_the_role_of_recycling_in_the_lead_isotope_evolution_of_the_mantle.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "206Pb/204Pb of MORB",
+    "expected": "cited"
+   },
+   {
+    "label": "232Th/238U (kappa) of MORB",
+    "expected": "cited"
+   },
+   {
+    "label": "230Th/238U disequilibrium",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 6
+ },
+ {
+  "paper_id": "Rodbell(2022)_700,000_years_of_tropical_Andean_glaciation",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Rodbell(2022)_700,000_years_of_tropical_Andean_glaciation.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Glaciation Index (GI)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Atmospheric CH4 concentration",
+    "expected": "cited"
+   },
+   {
+    "label": "Siliciclastic sediment flux",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 10
+ },
+ {
+  "paper_id": "Jackson_et_al._(2017)_primordial_helium_entrained_by_the_hottest_mantle_plumes",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Jackson_et_al._(2017)_primordial_helium_entrained_by_the_hottest_mantle_plumes.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "3He/4He (Ra)",
+    "expected": "cited"
+   },
+   {
+    "label": "Maximum 3He/4He per hotspot (compiled database)",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 1
+ },
+ {
+  "paper_id": "Loewen_et_al._(2019)_Hydrogen_isotopes_in_high_3He_4He_submarine_basalts",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Loewen_et_al._(2019)_Hydrogen_isotopes_in_high_3He_4He_submarine_basalts.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "87Sr/86Sr",
+    "expected": "cited"
+   },
+   {
+    "label": "206Pb/204Pb",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 14
+ },
+ {
+  "paper_id": "Marty_&_Tolstikhin_(1998)_CO2_fluxes_from_mid-ocean_ridges,_arcs_and_plumes",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Marty_&_Tolstikhin_(1998)_CO2_fluxes_from_mid-ocean_ridges,_arcs_and_plumes.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "87Sr/86Sr ratio",
+    "expected": "cited"
+   },
+   {
+    "label": "Arc/plume CO2/3He ratios (Fig. 1 compilation)",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 7
+ },
+ {
+  "paper_id": "Woodhead_et_al._(1993)_Oxygen_isotope_evidence_for_recycled_crust_in_the_source_",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Woodhead_et_al._(1993)_Oxygen_isotope_evidence_for_recycled_crust_in_the_source_.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "87Sr/86Sr, 143Nd/144Nd, Pb isotope ratios",
+    "expected": "cited"
+   },
+   {
+    "label": "SiO2 and MgO (major elements)",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 8
+ },
+ {
+  "paper_id": "Liang_et_al._(2013)_A_REE-in-two-pyroxene_thermometer_for_mafic_and_ultramafic_r",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Liang_et_al._(2013)_A_REE-in-two-pyroxene_thermometer_for_mafic_and_ultramafic_r.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "REE abundances in opx and cpx",
+    "expected": "cited"
+   },
+   {
+    "label": "Mg# of pyroxenes",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 7
+ },
+ {
+  "paper_id": "Colombier_et_al._(2021)_Degassing_and_gas_percolation_in_basaltic_magmas",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Colombier_et_al._(2021)_Degassing_and_gas_percolation_in_basaltic_magmas.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "polydispersity (S)",
+    "expected": "cited"
+   },
+   {
+    "label": "percolation threshold (φc)",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 9
+ },
+ {
+  "paper_id": "Deegan_et_al._(2016)_Pyroxene_standards_for_SIMS_oxygen_isotope_analysis_and_the",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Deegan_et_al._(2016)_Pyroxene_standards_for_SIMS_oxygen_isotope_analysis_and_the.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Crystallisation pressure of Merapi pyroxene (253-601 MPa, peak 470 MPa)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Primary magma delta-18O estimate (~6.1 per mil)",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 109
+ },
+ {
+  "paper_id": "Giuliani_et_al._(2020)_Evolution_of_textures,_crystal_size_distributions_and_gro",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Giuliani_et_al._(2020)_Evolution_of_textures,_crystal_size_distributions_and_gro.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Crystal growth rates (Gmax, GCSD)",
+    "expected": "modeled"
+   },
+   {
+    "label": "Residual H2O content and Fe2+/Fetot ratio",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 11
+ },
+ {
+  "paper_id": "Furi_et_al.,_2010,_Apparent_decoupling_of_the_He_and_Ne_isotope_systematics_of_the_Icelandic_mantle;_The_role_of_He_depletion,_melt_mixing,_degassing_",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Furi_et_al.,_2010,_Apparent_decoupling_of_the_He_and_Ne_isotope_systematics_of_the_Icelandic_mantle;_The_role_of_He_depletion,_melt_mixing,_degassing_.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "4He/21Ne* elemental ratio (nucleogenic-corrected)",
+    "expected": "modeled"
+   },
+   {
+    "label": "4He/40Ar* ratio (radiogenic Ar corrected)",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 15
+ },
+ {
+  "paper_id": "Poreda_&_Craig_(1989)_Helium_isotope_ratios_in_circum-Pacific_volcanic_arcs",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Poreda_&_Craig_(1989)_Helium_isotope_ratios_in_circum-Pacific_volcanic_arcs.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "R_C/R_A (atmospheric-corrected 3He/4He)",
+    "expected": "modeled"
+   },
+   {
+    "label": "87Sr/86Sr",
+    "expected": "cited"
+   }
+  ],
+  "haiku_vars_n": 4
+ },
+ {
+  "paper_id": "Sano_et_al._(1998)_Helium_degassing_related_to_the_Kobe_earthquake_",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Sano_et_al._(1998)_Helium_degassing_related_to_the_Kobe_earthquake_.md",
+  "kind": "dispute",
+  "disputed": [
+   {
+    "label": "Tritium-3He age",
+    "expected": "modeled"
+   }
+  ],
+  "haiku_vars_n": 8
+ },
+ {
+  "paper_id": "Nan_et_al._(2024)_Unraveling_abiotic_organic_synthesis_pathways_in_the_mafic_cru",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Nan_et_al._(2024)_Unraveling_abiotic_organic_synthesis_pathways_in_the_mafic_cru.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 4
+ },
+ {
+  "paper_id": "1-s2.0-S0012821X12004621-main",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\1-s2.0-S0012821X12004621-main.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 13
+ },
+ {
+  "paper_id": "Kim_D._et_al._(2024)_Upper_mantle_scale_enrichment_of_Cenozoic_intraplate_magmat",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Kim_D._et_al._(2024)_Upper_mantle_scale_enrichment_of_Cenozoic_intraplate_magmat.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 13
+ },
+ {
+  "paper_id": "Shejwalkar_et_al._(2013)_Experimental_calibration_of_the_roles_of_temperature_and_composition_in_the_Ca-in-olivine_geothermometer_at_0.1_MPa",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Shejwalkar_et_al._(2013)_Experimental_calibration_of_the_roles_of_temperature_and_composition_in_the_Ca-in-olivine_geothermometer_at_0.1_MPa.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 6
+ },
+ {
+  "paper_id": "006f3a79-6623-ab35-34a2-35fb003aeb4f",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\006f3a79-6623-ab35-34a2-35fb003aeb4f.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 9
+ },
+ {
+  "paper_id": "Seyfried_et_al._(2007)_Redox_evolution_and_mass_transfer_during_serpentinization",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Seyfried_et_al._(2007)_Redox_evolution_and_mass_transfer_during_serpentinization.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 13
+ },
+ {
+  "paper_id": "Arai_et_al._(2018)_Abyssal_Peridotite_as_a_Component_of_Forearc_Mantle;_New_Mant",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Arai_et_al._(2018)_Abyssal_Peridotite_as_a_Component_of_Forearc_Mantle;_New_Mant.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 7
+ },
+ {
+  "paper_id": "Benko_et_al._(2021)_Combined_petrography,_noble_gas,_stable_isotope_and_fluid_in",
+  "md_path": "C:\\Users\\USER\\corpus_md_export_20260612\\articles\\Benko_et_al._(2021)_Combined_petrography,_noble_gas,_stable_isotope_and_fluid_in.md",
+  "kind": "clean",
+  "disputed": [],
+  "haiku_vars_n": 12
+ }
+]

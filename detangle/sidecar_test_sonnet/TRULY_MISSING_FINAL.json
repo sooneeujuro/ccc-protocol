@@ -1,0 +1,400 @@
+[
+ {
+  "title": "Indian and African plate motions driven by the push force of the Réunion plume head",
+  "pools": [
+   "Q_dup20260602",
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\_duplicates_quarantine\\Cande,_2011,_Indian_and_African_plate_motions_driven_by_the_push_force_of_the_Réunion_plume_head.md",
+  "doi": "",
+  "best_ov": 0.8,
+  "near": "Mather_et_al._(2024)_Spreading_ridge_migration_enabled_by_plume-ridge_de-anchori.md",
+  "clean_vs_near": 0.37
+ },
+ {
+  "title": "Extremely thin crust in the Indian Ocean possibly resulting from Plume–Ridge Interaction",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Singh_et_al._(2011)_Extremely_thin_crust_in_the_Indian_Ocean_possibly_resulting_.md",
+  "doi": "",
+  "best_ov": 0.8,
+  "near": "Douglass_et_al._(1999)_Plume-ridge_interactions_of_the_Discovery_and_Shona_mantl.md",
+  "clean_vs_near": 0.32
+ },
+ {
+  "title": "Can Hot and Cold Slabs Transpor",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Ribeiro_et_al._(2025)_Can_Hot_and_Cold_Slabs_Transport_Water_Into_the_Deep_Mantle_Beyond_Subduction_Zone_Magmatism.md",
+  "doi": "10.1029/2024GC011694",
+  "best_ov": 0.8,
+  "near": "Guo_et_al._(2024)_Carbonate_metasomatism_in_sub-continental_lithospheric_mantle;.md",
+  "clean_vs_near": 0.28
+ },
+ {
+  "title": "A review on volcanic gas compositions related to volcanic activities and non-volcanologica",
+  "pools": [
+   "Q_20260612",
+   "v20260602",
+   "v20260610",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260612\\quarantine\\Lee_S.C._et_al._(2018)_Geochemistry_of_gas_and_water_discharge_from_the_magmatic.md",
+  "doi": "",
+  "best_ov": 0.78,
+  "near": "Inguaggiato_et_al._(2018)_Review_of_the_evolution_of_geochemical_monitoring,_net.md",
+  "clean_vs_near": 0.31
+ },
+ {
+  "title": "[The heterogeneity of the](https://www.frontiers",
+  "pools": [
+   "Q_dup20260602",
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\_duplicates_quarantine\\Sandoval-Velasquez_et_al._(2022)_The_heterogeneity_of_the_Mexican_lithospheric_m.md",
+  "doi": "10.3389/feart.2022.973645",
+  "best_ov": 0.75,
+  "near": "Andres_et_al._(2022)_The_heterogeneity_of_the_Mexican_lithospheric_mantle;_noble.md",
+  "clean_vs_near": 0.59
+ },
+ {
+  "title": "Global Synthesis of Regional Holoce",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Hancock(2023)_Global_Synthesis_of_Regional_Holocene_Hydroclimate_Variability_Using_Proxy.md",
+  "doi": "10.1029/2022PA004597",
+  "best_ov": 0.75,
+  "near": "Cheng(2012)_global_monsoon_speleothem.md",
+  "clean_vs_near": 0.36
+ },
+ {
+  "title": "[Biodiversity and community](https://www.frontiersin.org/articles/10.3389/fmars.2024.14126",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Kim,_2024,_Biodiversity_and_community_structures_across_the_Magellan_seamounts_a.md",
+  "doi": "10.3389/fmars.2024.1412678",
+  "best_ov": 0.74,
+  "near": "Kim,_2024,_Biodiversity_and_community_structures_across_the_Magellan_seamounts_a.md",
+  "clean_vs_near": 0.55
+ },
+ {
+  "title": "Deep mantle structure as a reference frame for movements in and on the Earth",
+  "pools": [
+   "Q_dup20260602",
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\_duplicates_quarantine\\Torsvik,_2014,_Deep_mantle_structure_as_a_reference_frame_for_movements_in_and_on_the_Earth.md",
+  "doi": "",
+  "best_ov": 0.71,
+  "near": "Hurbcova_et_al._(2017)_Active_Magmatic_Underplating_in_Western_Eger_Rift,_Centra.md",
+  "clean_vs_near": 0.26
+ },
+ {
+  "title": "[A SO<sub>2</sub>](https://www.frontiersin.org/articles/10.3389/feart.2023.1115111/full) [",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Aiuppa_et_al._(2023)_Front_Earth_Sci,_A_SO2_flux_study_of_the_Etna_volcano_2020–.md",
+  "doi": "10.3389/feart.2023.1115111",
+  "best_ov": 0.71,
+  "near": "Aiuppa_et_al._(2023)_Front_Earth_Sci,_A_SO2_flux_study_of_the_Etna_volcano_2020–.md",
+  "clean_vs_near": 0.19
+ },
+ {
+  "title": "Resolving lithospheric and sub-lithospheric contributions to helium isotope variations in ",
+  "pools": [
+   "Q_dup20260602"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\_duplicates_quarantine\\Reid_and_Graham,_1996,_Resoliving_lithsopheric_and_sublithospheric_contributions_to_helium_isotope_variations_in_basalts_from_the_SW_US.md",
+  "doi": "",
+  "best_ov": 0.7,
+  "near": "Cousens_(1996)_Magmatic_evolution_of_Quaternary_mafic_magmas_at_Long_Valley_Cald.md",
+  "clean_vs_near": 0.26
+ },
+ {
+  "title": "[MushPEC: Correcting](https://www.frontiersin.org/articles/10.3389/feart.2020.599726/full)",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Brahm_et_al._(2021)_Correcting_Post-entrapment_Processes_Affecting_Melt_Inclusio.md",
+  "doi": "10.3389/feart.2020.599726/full)",
+  "best_ov": 0.67,
+  "near": "Brahm_et_al._(2021)_Correcting_Post-entrapment_Processes_Affecting_Melt_Inclusio.md",
+  "clean_vs_near": 0.26
+ },
+ {
+  "title": "[2021 Tajogaite eruption records](https://www.frontiersi",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Sandoval-Velasquez_et_al._(2024)_2021_Tajogaite_eruption_records_infiltration_of.md",
+  "doi": "10.3389/feart.2024.1303872",
+  "best_ov": 0.67,
+  "near": "Sandoval-Velasquez_et_al._(2024)_2021_Tajogaite_eruption_records_infiltration_of.md",
+  "clean_vs_near": 0.6
+ },
+ {
+  "title": "[Low-temperature hydrogen](https://www.frontiersin.org/articles/10.3389/fgeoc.2024.1366268",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Templeton_et_al._(2024)_Low-temperature_hydrogen_production_and_consumption_in_p.md",
+  "doi": "10.3389/fgeoc.2024.1366268",
+  "best_ov": 0.67,
+  "near": "Templeton_et_al._(2024)_Low-temperature_hydrogen_production_and_consumption_in_p.md",
+  "clean_vs_near": 0.6
+ },
+ {
+  "title": "[Petrology of continental,](https://www.frontiersin.org/articles/10.3389/feart.2022.921994",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Ali_et_al._(2022)_Petrology_of_continental,_OIB-like,_basaltic_volcanism_in_Saud.md",
+  "doi": "10.3389/feart.2022.921994",
+  "best_ov": 0.64,
+  "near": "Ali_et_al._(2022)_Petrology_of_continental,_OIB-like,_basaltic_volcanism_in_Saud.md",
+  "clean_vs_near": 0.57
+ },
+ {
+  "title": "[Deep to shallow crustal differentiation of within-plate alkaline magmatism at Mt. Bambout",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Marzoli_et_al._(2015)_Deep_to_shallow_crustal_differentiation.md",
+  "doi": "10.1016/j.lithos.2015.02.005",
+  "best_ov": 0.64,
+  "near": "Marzoli_et_al._(2015)_Deep_to_shallow_crustal_differentiation.md",
+  "clean_vs_near": 0.61
+ },
+ {
+  "title": "Mantle flow and multistage melting beneath the Galápagos hotspot revealed by seismic imagi",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Villagomez,_2014,_Mantle_flow_and_multistage_melting_beneath_the_Galápagos_hotsp.md",
+  "doi": "",
+  "best_ov": 0.64,
+  "near": "Abiado_et_al._(2015)_Submarine_and_subaerial_lavas_in_the_West_Antarctic_Rift_Sy.md",
+  "clean_vs_near": 0.38
+ },
+ {
+  "title": "[A numerical simulation of tephra transport and deposition for millennium eruption of chan",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Yu_et_al._(2013)_Probabilistic_assessment_of_tephra_fallout_hazard_at_Changbaish.md",
+  "doi": "",
+  "best_ov": 0.62,
+  "near": "Yu_et_al._(2013)_Probabilistic_assessment_of_tephra_fallout_hazard_at_Changbaish.md",
+  "clean_vs_near": 0.38
+ },
+ {
+  "title": "[Geochemical characterisation of gases along the dead sea rift: Evidences of mantle-co<sub",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Inguaggiato_et_al._(2016)_(Dead_Sea_Rift)_Geochemical_characterisation_of_gases_.md",
+  "doi": "10.1016/j.jvolgeores.2016.04.008",
+  "best_ov": 0.61,
+  "near": "Inguaggiato_et_al._(2016)_(Dead_Sea_Rift)_Geochemical_characterisation_of_gases_.md",
+  "clean_vs_near": 0.53
+ },
+ {
+  "title": "[The 2002](https://www.frontiersin.org/articles/10.3389/feart.2020.599329/full)[–2005 Chan",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Liu_et_al._(2021)_Front_Earth_Sci,_The_2002–2005_Changbaishan_Volcanic_Unrest_Tr.md",
+  "doi": "10.3389/feart.2020.599329/full)",
+  "best_ov": 0.6,
+  "near": "Liu_et_al._(2021)_Front_Earth_Sci,_The_2002–2005_Changbaishan_Volcanic_Unrest_Tr.md",
+  "clean_vs_near": 0.46
+ },
+ {
+  "title": "[Marine Geophysical Constraints on the Origin and Evolution of Ulleung Basin and the Seamo",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\김진호_외_(2005)_울릉분지와_동해_해산의_기원과_발달과정에_대한_해양지구물리학적_연구.md",
+  "doi": "",
+  "best_ov": 0.6,
+  "near": "김진호_외_(2005)_울릉분지와_동해_해산의_기원과_발달과정에_대한_해양지구물리학적_연구.md",
+  "clean_vs_near": 0.14
+ },
+ {
+  "title": "[Miocene Crustal Deformation, Basin Development, and Tectonic Implication in the Southeast",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\손문,_2013,_한반도_남동부_마이오세_지각변형,_분지발달_그리고_지구조적_의미.md",
+  "doi": "",
+  "best_ov": 0.6,
+  "near": "손문,_2013,_한반도_남동부_마이오세_지각변형,_분지발달_그리고_지구조적_의미.md",
+  "clean_vs_near": 0.12
+ },
+ {
+  "title": "[Transport of incompatible elements associated with the dehydration of serpentine in a dow",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Tatsumi_et_al._(1986)_Chemistry_of_fluid_phase_released_from_subducted_lithosphe.md",
+  "doi": "",
+  "best_ov": 0.58,
+  "near": "Tatsumi_et_al._(1986)_Chemistry_of_fluid_phase_released_from_subducted_lithosphe.md",
+  "clean_vs_near": 0.37
+ },
+ {
+  "title": "[Tectonics](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1944-9194)",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Jolivet_et_al._(2018)_Mantle_flow_and_deforming_continents;_from_India-Asia_conv.md",
+  "doi": "10.1002/(ISSN)1944-9194)",
+  "best_ov": 0.57,
+  "near": "An_Yin_(2010)_Cenozoic_tectonic_evolution_of_Asia;_A_preliminary_synthesis.md",
+  "clean_vs_near": 0.26
+ },
+ {
+  "title": "[Mid- Ocean Ridge Hydrothermal Fluxes and the Chemical Composition of the Ocean](https://w",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Elderfield,_1996,_Mid-Ocean_Ridge_Hydrothermal_Fluxes_and_the_Chemical_Compositi.md",
+  "doi": "10.1146/annurev.earth.24.1.191",
+  "best_ov": 0.55,
+  "near": "Butterfield,_1997,_Seafloor_eruptions_and_evolution_of_hydrothermal_fluid_chemis.md",
+  "clean_vs_near": 0.45
+ },
+ {
+  "title": "[Ages and Evolutions of the Volcanic Rocks from Ulleung-do and Dok-do](https://www.researc",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\송용선_외_(2006)_울릉도와_독도_화산암의_생성연대_및_진화사.md",
+  "doi": "",
+  "best_ov": 0.55,
+  "near": "송용선_외_(2006)_울릉도와_독도_화산암의_생성연대_및_진화사.md",
+  "clean_vs_near": 0.14
+ },
+ {
+  "title": "[Noble Gases in Geochemistry and Cosmochemistry: Reviews in Mineralogy and Geochemistry](h",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Porcelli_&_Ballentine_(2002)_Noble_gases_in_geochemistry_and_cosmochemistry.md",
+  "doi": "",
+  "best_ov": 0.52,
+  "near": "Porcelli_&_Ballentine_(2002)_Noble_gases_in_geochemistry_and_cosmochemistry.md",
+  "clean_vs_near": 0.6
+ },
+ {
+  "title": "[Dynamic evolution of](https://www.frontiersin.org/articles/10.3389/feart.2022.1084213/ful",
+  "pools": [
+   "v20260602",
+   "v20260610",
+   "v20260612",
+   "Atelier_pilot",
+   "PaperAtelier"
+  ],
+  "src": "G:\\corpus_md_export_20260602\\articles\\Zhao_et_al._(2023)_Dynamic_evolution_of_changbaishan_volcanism_in_Northeast_Chin.md",
+  "doi": "10.3389/feart.2022.1084213",
+  "best_ov": 0.5,
+  "near": "Fan_et_al._(2020)_Intraplate_Volcanism_and_Regional_Geodynamics_in_NE_Asia_by_An.md",
+  "clean_vs_near": 0.27
+ }
+]

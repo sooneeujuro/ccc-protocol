@@ -1,0 +1,106 @@
+[
+ {
+  "iter": "1",
+  "version": "v2-split",
+  "dev": {
+   "set": "dev",
+   "n": 7,
+   "fail": 3,
+   "cls%": 86,
+   "mnm%": 57,
+   "prov%": 63,
+   "nonmeas_prov%": 61,
+   "complete%": 60,
+   "latex": 0
+  },
+  "holdout": {
+   "set": "holdout",
+   "n": 12,
+   "fail": 3,
+   "cls%": 83,
+   "mnm%": 100,
+   "prov%": 64,
+   "nonmeas_prov%": 40,
+   "complete%": 47,
+   "latex": 0
+  }
+ },
+ {
+  "iter": "2",
+  "version": "v4-fullmd-ctx32k",
+  "dev": {
+   "set": "dev",
+   "n": 8,
+   "fail": 2,
+   "cls%": 62,
+   "mnm%": 62,
+   "prov%": 66,
+   "nonmeas_prov%": 51,
+   "complete%": 69,
+   "latex": 0
+  },
+  "holdout": {
+   "set": "holdout",
+   "n": 13,
+   "fail": 2,
+   "cls%": 77,
+   "mnm%": 100,
+   "prov%": 62,
+   "nonmeas_prov%": 48,
+   "complete%": 90,
+   "latex": 0
+  }
+ },
+ {
+  "iter": "3",
+  "version": "v5-cot",
+  "dev": {
+   "set": "dev",
+   "n": 7,
+   "fail": 3,
+   "cls%": 71,
+   "mnm%": 71,
+   "prov%": 80,
+   "nonmeas_prov%": 79,
+   "complete%": 77,
+   "latex": 0
+  },
+  "holdout": {
+   "set": "holdout",
+   "n": 11,
+   "fail": 4,
+   "cls%": 73,
+   "mnm%": 100,
+   "prov%": 61,
+   "nonmeas_prov%": 38,
+   "complete%": 75,
+   "latex": 0
+  }
+ },
+ {
+  "iter": "4",
+  "version": "v6-antiover",
+  "dev": {
+   "set": "dev",
+   "n": 5,
+   "fail": 5,
+   "cls%": 60,
+   "mnm%": 80,
+   "prov%": 74,
+   "nonmeas_prov%": 54,
+   "complete%": 86,
+   "latex": 0
+  },
+  "holdout": {
+   "set": "holdout",
+   "n": 7,
+   "fail": 8,
+   "cls%": 100,
+   "mnm%": 100,
+   "prov%": 68,
+   "nonmeas_prov%": 32,
+   "complete%": 62,
+   "latex": 0
+  }
+ }
+]

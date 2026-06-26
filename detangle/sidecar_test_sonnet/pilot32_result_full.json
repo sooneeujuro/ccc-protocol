@@ -1,0 +1,2017 @@
+{
+  "summary": "Pilot: Sonnet re-judges 8 papers vs existing Haiku sidecars (instrument + measured/cited/modeled + classification), flags Haiku errors. Read-only; returns verdicts.",
+  "agentCount": 32,
+  "logs": [
+    "audited 32/32 | tally: {\"sonnet_better\":29,\"equivalent\":3,\"haiku_better\":0} | Haiku errors flagged: 112"
+  ],
+  "result": {
+    "tally": {
+      "sonnet_better": 29,
+      "equivalent": 3,
+      "haiku_better": 0
+    },
+    "total_haiku_errors": 112,
+    "verdicts": [
+      {
+        "paper_id": "1-s2.0-S0012821X12004621-main",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "laser_ablation",
+          "haiku": "irms",
+          "agree": false,
+          "note": "The paper uses XRF, ICP-MS, EPMA, LA-ICP-MS, TIMS, and MC-ICP-MS. The Haiku correctly identified multiple instruments but misclassified TIMS as 'irms'. TIMS (Thermal Ionization Mass Spectrometry) measures Sr, Nd, Pb, and Os isotope ratios in geological samples and is NOT IRMS (which handles light stable isotopes C/N/O/S via gas-source). Per the task enum rules, TIMS maps to 'other'. The most analytically prominent unique instrument in this paper is laser_ablation (LA-ICP-MS for cpx trace elements), with TIMS as primary for isotopic data (correctly 'other'). The Haiku's irms assignment for TIMS is a concrete misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "87Sr/86Sr",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 reports measured values from TIMS on cpx separates for 12+ samples"
+          },
+          {
+            "label": "187Os/188Os",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 reports whole-rock Os isotopic compositions measured by TIMS for all samples"
+          },
+          {
+            "label": "Al2O3 wt%",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 5.1 and Appendix A.1 report whole-rock XRF measurements of Al2O3 for all samples"
+          },
+          {
+            "label": "Spinel Cr#",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "EPMA measurements of spinel composition reported; Cr# = molar Cr/(Cr+Al) calculated from measured major elements"
+          },
+          {
+            "label": "Equilibration temperature T_BKN",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not listed as variable in sidecar",
+            "agree": false,
+            "evidence": "Section 5.4: temperatures calculated using two-pyroxene thermometer (Brey and Kohler 1990), not directly measured; T_BKN is a geothermometric model. Haiku omitted this modeled quantity entirely."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "TIMS misclassified as 'irms': TIMS (Thermal Ionization Mass Spectrometry for Sr/Nd/Pb/Os isotope ratios) is not IRMS (gas-source isotope ratio MS for light stable isotopes C/N/O/S). TIMS maps to 'other' per the task enum.",
+          "Standards V-SMOW and V-PDB listed in sidecar are light stable isotope standards (oxygen, carbon) that are irrelevant to this paper's TIMS measurements of radiogenic isotopes (Sr, Nd, Pb, Os). This error flows directly from the TIMS/IRMS confusion.",
+          "Classification type 'petrology' is not in the required enum (research/review/compilation/methods/other). The correct classification is 'research' — this is an original-data study with new isotopic measurements and new field samples.",
+          "Equilibration temperature (T_BKN, two-pyroxene thermometer) is a key modeled quantity discussed at length in Section 5.4, used to constrain xenolith extraction depth. It is not listed in variables_measured at all, and its modeled (calculated) nature is not captured."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "The Haiku sidecar contains three concrete errors: (1) TIMS misclassified as 'irms' instead of 'other', causing spurious V-SMOW/V-PDB standards to appear; (2) classification type 'petrology' does not match the required enum — should be 'research'; (3) the key modeled variable T_BKN (equilibration temperature from two-pyroxene thermometer, central to depth estimates and the delamination argument) is entirely absent. The variables_measured list is otherwise accurate. The geographic and bibliographic fields are correct. These are real, not marginal, errors.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Arai_et_al._(2018)_Abyssal_Peridotite_as_a_Component_of_Forearc_Mantle;_New_Mant",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "epma",
+          "haiku": "laser_ablation",
+          "agree": false,
+          "note": "The paper uses three main instrument types: EPMA (JEOL JXA-8800R) for mineral major elements, LA-ICP-MS for mineral and whole-rock trace elements, and XRF for whole-rock major elements. The most analytically distinctive and scientifically central measurements are the mineral major-element compositions by EPMA (Fo, Cr#, Mg# that define the key petrological arguments), making epma the best single representative category. Haiku lists laser_ablation as its primary entry (first in the instruments array), which is defensible but not the best fit since the key petrological discriminants (Fo, Cr#, Na2O in cpx) are EPMA data. The sidecar does correctly list all four instrument types (xrf, laser_ablation x2, icp_ms, epma) so this is a ranking/ordering judgment, not a gross error."
+        },
+        "variables_checked": [
+          {
+            "label": "Fo (olivine forsterite content)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured without modeled/cited distinction",
+            "agree": true,
+            "evidence": "Table 2 reports EPMA-measured Fo values for all six xenolith samples; abstract states Fo91 for least metasomatized sample."
+          },
+          {
+            "label": "Cr# of chromian spinel (Cr/(Cr+Al))",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "Table 2 reports EPMA-measured Cr2O3 and Al2O3; Cr# calculated directly from stoichiometry as standard formula, not a published thermometer."
+          },
+          {
+            "label": "REE in clinopyroxene (La–Lu)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "Tables 3 and 4 report LA-ICP-MS trace element data for all six xenolith samples with individual spot analyses."
+          },
+          {
+            "label": "Equilibrium temperature (T1, T2)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not listed as a variable at all in sidecar",
+            "agree": false,
+            "evidence": "Table 2 footnote states T1 calculated from Wells (1977) pyroxene thermometry and T2 from Wood & Banno (1973); these are thermometric models applied to EPMA data, not direct measurements. Sidecar omits them entirely."
+          },
+          {
+            "label": "Whole-rock major elements (XRF)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "Table 1 reports SiO2, TiO2, Al2O3, FeO etc. for three basalt samples B1, B2, B3 measured by XRF at Kanazawa University."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type 'petrology' does not match the required enum (research/review/compilation/methods/other); correct value is 'research' — this is a new-data primary research paper presenting original xenolith petrological and geochemical data.",
+          "Equilibrium temperatures T1 (Wells 1977) and T2 (Wood & Banno 1973) are modeled quantities (thermometric calculations from EPMA inputs) but are entirely absent from variables_measured in the sidecar.",
+          "The instruments array lists laser_ablation first (implying it is the primary instrument), but the pivotal petrological discriminants in this paper (Fo, Cr#, Na2O in cpx) are EPMA measurements; epma arguably deserves higher prominence than laser_ablation in the instrument ranking."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) classification type 'petrology' is outside the allowed enum and should be 'research'; (2) thermometric temperatures T1 and T2 (modeled quantities) are entirely missing from variables. The instrument list is otherwise accurate, but the ordering de-emphasizes EPMA which carries the key petrological arguments. These are real, documentable errors rather than marginal judgment calls.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Benko_et_al._(2021)_Combined_petrography,_noble_gas,_stable_isotope_and_fluid_in",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "Haiku correctly identified the primary instrument category as noble_gas_ms (HELIX-SFT for He, VG 5400 for Ne/Ar). However Haiku made two subcategory errors: (1) the Tescan MIRA 3GMU FEG-SEM with Oxford EDX is categorized as 'epma' but should be 'sem' — EDX on a SEM is not EPMA/WDS; (2) the Thermo Scientific DXR Raman microscope is listed as 'other' but fits the 'raman' enum."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He (R/Ra)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — correctly identified",
+            "agree": true,
+            "evidence": "Table 3 reports new R/Ra values for whole-rock, calcite, apatite, pyroxene separates from Sukulu and Tororo measured on HELIX-SFT"
+          },
+          {
+            "label": "20Ne/22Ne and 21Ne/22Ne",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — correctly identified",
+            "agree": true,
+            "evidence": "Table 3 reports new Ne isotope ratios measured on VG 5400 for multiple mineral separates; Fig. 10 shows new data"
+          },
+          {
+            "label": "40Ar/36Ar",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — correctly identified",
+            "agree": true,
+            "evidence": "Table 3 reports new Ar isotope ratios from same crushing experiments on VG 5400"
+          },
+          {
+            "label": "delta13C and delta18O",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — correctly identified",
+            "agree": true,
+            "evidence": "Table 2 reports new delta13C and delta18O values measured on DeltaPLUS XP IRMS and Delta V Advantage IRMS at two labs"
+          },
+          {
+            "label": "Fluid inclusion Th and salinity",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — correctly identified",
+            "agree": true,
+            "evidence": "Section 4.4 and Fig. 9 report new microthermometry data (Th 222-364 C, salinity 3.7-17.6 wt% NaCl) using Linkam heating-freezing stage on Sukulu and Tororo apatite"
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification 'gas' is outside the controlled vocabulary (research/review/compilation/methods/other); this paper is an original research paper presenting new analytical data on Ugandan carbonatites — should be 'research'",
+          "FEG-SEM Tescan MIRA 3GMU with Oxford Instruments X-Max 20 EDX is categorized as 'epma' but should be 'sem' — EDX is energy-dispersive X-ray spectrometry on a scanning electron microscope, not electron probe microanalysis (EPMA uses WDS); the distinction matters for data precision characterization",
+          "Thermo Scientific DXR Raman microscope is categorized as 'other' rather than 'raman' — this instrument is explicitly used for micro-Raman spectroscopy of fluid inclusion gas composition (CO2, CH4 identification), which fits the 'raman' enum precisely"
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three concrete errors: (1) classification 'gas' is an invented type not in the controlled vocabulary — should be 'research'; (2) SEM+EDX instrument miscategorized as 'epma' instead of 'sem'; (3) Raman microscope listed as 'other' instead of 'raman'. The primary instrument category (noble_gas_ms) and all measured variables were correctly identified, and no cited-as-measured errors were found. The errors are real but not catastrophic — the core geochemical content is well captured.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Brounce_et_al._(2021)_Covariation_of_Slab_Tracers,_Volatiles,_and_Oxidation_Duri",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "ftir",
+          "haiku": "ftir",
+          "agree": true,
+          "note": "The sidecar correctly identifies FTIR as the first/primary instrument (two FTIR instruments at UCR and Hannover). SIMS and mu-XANES are equally central but ftir is defensible. No misclassification error."
+        },
+        "variables_checked": [
+          {
+            "label": "H2O",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (FTIR and SIMS on Expedition 352 glasses)",
+            "agree": true,
+            "evidence": "Measured by FTIR at UCR and Hannover, and by SIMS at JAMSTEC. Tabulated in Table 1."
+          },
+          {
+            "label": "Fe3+/SigmaFe",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (mu-XANES at APS beamline 13-IDE)",
+            "agree": true,
+            "evidence": "Measured by Fe-mu-XANES at beamline 13-IDE, Advanced Photon Source. Core new measurement of the paper."
+          },
+          {
+            "label": "fO2 (DELTA-QFM)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured — listed as a measured variable in the sidecar",
+            "agree": false,
+            "evidence": "Table 1 footnote 4 explicitly states 'Calculated using the oxybarometer of Kress and Carmichael (1991) at magmatic temperature and 1 atmosphere.' It is derived from measured Fe3+/SigmaFe, not directly measured."
+          },
+          {
+            "label": "delta-18O and delta-D",
+            "sonnet_judgment": "unclear",
+            "haiku_judgment": "measured — listed in the sidecar variables_measured array",
+            "agree": false,
+            "evidence": "These stable isotope ratios do not appear anywhere in this paper's methods, data tables, figures, or results. Only referenced in the title of companion paper Coulthard et al. (2021). Fabricated entry."
+          },
+          {
+            "label": "87Sr/86Sr, 143Nd/144Nd, 206-208Pb/204Pb",
+            "sonnet_judgment": "unclear",
+            "haiku_judgment": "measured — listed as measured variables in the sidecar",
+            "agree": false,
+            "evidence": "Radiogenic isotope ratios are completely absent from this paper. No TIMS or MC-ICP-MS measurements described. These variables are hallucinated, likely confused from Coulthard et al. (2021)."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Variables delta-18O and delta-D listed as measured in the sidecar but these stable isotope ratios are completely absent from this paper; likely confused from companion Coulthard et al. (2021) whose title mentions stable isotope ratios.",
+          "Radiogenic isotope ratios 87Sr/86Sr, 143Nd/144Nd, 206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb listed as measured variables but are not measured, mentioned, or discussed in this paper anywhere.",
+          "fO2 (DELTA-QFM) is listed as a measured variable but is explicitly calculated/modeled from measured Fe3+/SigmaFe using oxybarometers (Kress and Carmichael 1991 etc.); it should be classified as modeled.",
+          "Classification 'both' is imprecise; the paper is a standard primary RESEARCH ARTICLE with original analytical data and should be classified as research."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "The sidecar contains three significant errors: (1) fabricated stable isotope variables (delta-18O, delta-D) that do not exist in this paper; (2) fabricated radiogenic isotope variables (Sr, Nd, Pb ratios) that are completely absent; (3) fO2 misclassified as measured when it is explicitly calculated from measured Fe3+/SigmaFe. The isotope hallucinations appear to be confusion with the companion Coulthard et al. (2021) paper. These are non-trivial errors that would corrupt any analysis of what was measured here.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Chen_et_al._(2012)_Cenozoic_Mg-rich_potassic_rocks_in_the_Tibetan_Plateau;_geoch",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "icp_ms",
+          "haiku": "noble_gas_ms",
+          "agree": false,
+          "note": "The paper uses four instruments: XRF (major elements), ICP-MS (trace elements), MC-ICP-MS (Sr-Nd isotopes), and a GV-5400 Ar-Ar mass spectrometer (40Ar/39Ar dating). The dominant analytical instrument for geochemical characterization is ICP-MS (trace elements + REEs). Haiku selected noble_gas_ms as the primary category, which applies to the Ar-Ar geochronology instrument — that instrument is correctly an Ar noble-gas MS, but the primary analytical workhorse for the geochemistry goals of this paper is ICP-MS. If only one category is allowed, icp_ms best represents this geochemistry paper. The GV-5400 is legitimately a noble_gas_ms so Haiku's choice is defensible but not the best single-instrument representative."
+        },
+        "variables_checked": [
+          {
+            "label": "Major elements (SiO2, MgO, K2O, Al2O3, CaO)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured — correct",
+            "agree": true,
+            "evidence": "Table 1 reports new XRF-measured major element data for 11 samples from Sailipu, Mibale, Dongyuehu, Bamaoqiongzong"
+          },
+          {
+            "label": "Trace elements (Rb, Sr, Zr, Th, Ba, REE, Ni, Cr)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured — correct for new samples",
+            "agree": true,
+            "evidence": "Table 1 reports new ICP-MS trace element data for same 11 samples; figures also include compiled literature data but new measurements are present"
+          },
+          {
+            "label": "87Sr/86Sr and 143Nd/144Nd isotope ratios",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured — correct",
+            "agree": true,
+            "evidence": "Table 1 includes MC-ICP-MS Sr-Nd isotope data for 4 new samples (Mibale and Bamaoqiongzong localities); Section 5.2 discusses new and compiled isotope data"
+          },
+          {
+            "label": "40Ar/39Ar plateau age",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured — correct",
+            "agree": true,
+            "evidence": "Table 2 and Fig. 2 report new 40Ar/39Ar step-heating data for sample 08SLP4-2 phlogopite from Sailipu, yielding plateau age 18.48 ± 0.34 Ma"
+          },
+          {
+            "label": "Nd model ages (TDM)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not explicitly listed as a variable in the sidecar — absent",
+            "agree": false,
+            "evidence": "Section 5.2 reports TDM values of 1.4-2.7 Ga for southern Tibet and 0.8-1.5 Ga for northern Tibet; these are calculated/modeled from measured isotope ratios, not directly measured. Haiku omitted this derived quantity entirely."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type field uses 'petrology' — a domain descriptor not in the required enum (research/review/compilation/methods/other). The paper is a research paper presenting new analytical data plus synthesis; it should be classified as 'research'.",
+          "Nd model ages (TDM) are omitted from variables_measured despite being explicitly reported as key results (TDM = 1.4-2.7 Ga for south, 0.8-1.5 Ga for north). These are modeled quantities derived from measured isotope ratios and should be noted.",
+          "Instrument primary category selected as noble_gas_ms (GV-5400 Ar-Ar spectrometer), but the dominant geochemical instrument for this paper's main goals is ICP-MS (trace elements, REEs). The noble_gas_ms assignment is factually defensible but misrepresents the paper's analytical focus — the Ar-Ar dating is secondary to the geochemical characterization."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three errors: (1) classification type 'petrology' is non-standard and outside the required enum — should be 'research'; (2) Nd model ages (TDM), explicitly reported as key geochemical results, are absent from variables_measured; (3) the primary instrument category was assigned to noble_gas_ms based on the Ar-Ar dating instrument rather than icp_ms which is the analytical workhorse for the geochemical objectives. The noble_gas_ms assignment is technically defensible (the GV-5400 is indeed a noble gas mass spectrometer) but fails to represent the paper's analytical focus. The classification and missing TDM variable are clear errors.",
+          "confidence": "med"
+        }
+      },
+      {
+        "paper_id": "Colombier_et_al._(2021)_Degassing_and_gas_percolation_in_basaltic_magmas",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "other",
+          "haiku": "xrd",
+          "agree": false,
+          "note": "Haiku assigned 'xrd' to X-ray computed tomography (XCT). XCT is imaging/tomography, not X-ray diffraction. The correct category is 'other'. Primary instruments are He-pycnometer and gas permeameter (both 'other'), plus Avizo and FOAMS as software. No true XRD instrument was used."
+        },
+        "variables_checked": [
+          {
+            "label": "porosity (φ)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured — correct for new samples; also compiled from literature but new pycnometry measurements are presented",
+            "agree": true,
+            "evidence": "Section 2.2: 'We carried out measurements of porosity and connectivity on these new samples using a Quantachrome He-pycnometer'"
+          },
+          {
+            "label": "connectivity (C)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured — correct; new He-pycnometry connectivity measurements are presented",
+            "agree": true,
+            "evidence": "Section 2.2 describes new He-pycnometry measurements of connectivity on basaltic samples"
+          },
+          {
+            "label": "permeability (k)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured — correct; new gas permeameter measurements presented",
+            "agree": true,
+            "evidence": "Section 2.2: 'Permeability measurements were conducted on dry, cylindrical samples ... in a GasPerm steady state permeameter'"
+          },
+          {
+            "label": "polydispersity (S)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "listed in variables_measured without qualification, implying measurement; incorrect — S values are entirely compiled from literature SEM image analysis data, not measured in this study",
+            "agree": false,
+            "evidence": "Section 2.3: 'S values were obtained from literature data of vesicle size distributions measured by scanning electron microscopy image analysis following Vasseur et al. (2020) (Table SM2)'"
+          },
+          {
+            "label": "percolation threshold (φc)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed in variables_measured without qualification, implying measurement; φc is derived entirely from Monte Carlo numerical simulations, never physically measured in the lab",
+            "agree": false,
+            "evidence": "Section 2.5 and 3.1 describe Monte Carlo numerical simulations from which φc is extracted; it is not directly measured"
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "XCT (X-ray computed tomography) misclassified as 'xrd'; XCT is imaging/tomography, not X-ray diffraction — should be 'other'",
+          "Polydispersity (S) listed in variables_measured without noting it is entirely cited/compiled from literature SEM data, not measured in this study",
+          "Percolation threshold (φc) listed in variables_measured without noting it is a modeled/simulated quantity derived from Monte Carlo numerical simulations, not a laboratory measurement",
+          "Classification set to 'both' when the correct type is 'research'; no geochemical measurements were performed — volatiles (H2O, CO2) are mentioned conceptually but not analytically measured in this paper"
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made a concrete instrument misclassification (XCT labeled 'xrd' instead of 'other'), failed to distinguish that polydispersity S and percolation threshold φc are cited/modeled quantities not directly measured, and used 'both' classification when 'research' is correct. These errors would mislead downstream users.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Deegan_et_al._(2016)_Pyroxene_standards_for_SIMS_oxygen_isotope_analysis_and_the",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "sims",
+          "haiku": "sims",
+          "agree": true,
+          "note": "Haiku correctly identifies SIMS (CAMECA IMS 1280) as the primary instrument. However, Haiku miscategorized the laser fluorination technique as 'laser_ablation'. Laser fluorination liberates O2 gas for gas-source IRMS; it is not laser ablation in the sense of this enum. This is a secondary-instrument misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "delta-18O of NRM-AG-1 and NRM-EN-2 standards (by SIMS and LF)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "Listed as measured (delta_18O) but no provenance distinction provided",
+            "agree": true,
+            "evidence": "Paper analytically measured delta-18O by both laser fluorination (5.4-5.5 per mil NRM-AG-1; 5.5-5.7 per mil NRM-EN-2) and SIMS in this study."
+          },
+          {
+            "label": "delta-18O of Merapi pyroxene by SIMS (n=204, avg 5.8 per mil)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "Listed as measured (delta_18O) - correct",
+            "agree": true,
+            "evidence": "This paper measured 209 SIMS spots on 32 Merapi pyroxene crystals; 204 accepted analyses range 4.3-8.1 per mil."
+          },
+          {
+            "label": "delta-18O of Merapi bulk pyroxene separates and whole-rocks from Troll et al. 2013",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "Not distinguished as cited - sidecar does not capture cited-vs-measured provenance",
+            "agree": false,
+            "evidence": "Bulk pyroxene values (5.9-7.2 per mil, n=7) and whole-rock values (5.6-8.3 per mil, n=32) are explicitly from Troll et al. 2013 and Gertisser & Keller 2003, not re-measured here."
+          },
+          {
+            "label": "Crystallisation pressure of Merapi pyroxene (253-601 MPa, peak 470 MPa)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "Not included in variables_measured at all",
+            "agree": false,
+            "evidence": "Derived via clinopyroxene barometry using Putirka (2008) Eq. 32b applied to EPMA compositions. This is a model-derived quantity omitted entirely from the Haiku sidecar."
+          },
+          {
+            "label": "Primary magma delta-18O estimate (~6.1 per mil)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "Not included in variables_measured",
+            "agree": false,
+            "evidence": "Derived by applying pyroxene-magma fractionation (D=-0.6) and FC correction (+0.3 per mil) to measured pyroxene average 5.8 per mil. Model-derived, not measured."
+          }
+        ],
+        "classification": {
+          "sonnet": "methods",
+          "haiku": "other",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Laser fluorination miscategorized as 'laser_ablation': LF liberates O2 via fluorination reagent for gas-source IRMS analysis, not laser ablation ICP-MS. Clear instrument category error.",
+          "variables_measured is severely incomplete: Only delta-18O is listed with no provenance distinctions. Cited bulk data from Troll et al. 2013, modeled crystallization pressures (Putirka barometry), and derived primary magma delta-18O (~6.1 per mil) are entirely absent.",
+          "Classification as 'petrology' is a domain label not a paper-type: The paper is primarily a methods/standardization paper characterizing NRM-AG-1 and NRM-EN-2 as SIMS reference materials. Correct type is 'methods'.",
+          "Cited bulk Merapi delta-18O data (Troll et al. 2013, Gertisser & Keller 2003) are not flagged as 'cited', creating false impression all delta-18O values are analytically measured in this study."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three concrete errors: (1) miscategorized laser fluorination as laser_ablation instead of recognizing it as a gas-source O2 liberation technique, (2) failed to distinguish measured vs. cited vs. modeled quantities and omitted barometry-derived pressures and the modeled primary magma delta-18O, (3) used a domain label 'petrology' instead of correctly identifying the paper type as 'methods'. These are clear errors with direct textual evidence.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Elliott_et_al._(1999)_Exploring_the_kappa_conundrum;_the_role_of_recycling_in_the_lead_isotope_evolution_of_the_mantle",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "software",
+          "haiku": "other",
+          "agree": false,
+          "note": "The paper presents no new analytical measurements. All MORB Pb isotope data are a literature compilation ('references available on request'). The core contribution is Monte Carlo forward modeling (PURE model). The sidecar leaves instruments empty (correct) but the analytical section carries no instrument category. The correct enum value is 'software' because the primary tool is Monte Carlo numerical simulation."
+        },
+        "variables_checked": [
+          {
+            "label": "206Pb/204Pb of MORB",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "listed as measured (phase: whole rock)",
+            "agree": false,
+            "evidence": "Fig. 1 caption explicitly states 'from a literature compilation (references available on request)'; no new measurements are reported."
+          },
+          {
+            "label": "232Th/238U (kappa) of MORB",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "listed as measured (phase: whole rock)",
+            "agree": false,
+            "evidence": "Fig. 1c caption: 'Only samples where kappa has been determined by isotope dilution mass-spectrometry are plotted (references available on request).' These are from other labs, not measured in this paper."
+          },
+          {
+            "label": "230Th/238U disequilibrium",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "listed as measured (phase: whole rock)",
+            "agree": false,
+            "evidence": "Text references compilations [16,17] for 230Th excess data in MORB. No TIMS or mass spec measurements reported in this paper."
+          },
+          {
+            "label": "Kappa evolution trajectories (Monte Carlo PURE model output)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "The paper's primary result is 1178 successful Monte Carlo solutions for kappa-DMM evolution (Figs. 3, 5, 6). Haiku did not identify this as the key output or flag it as modeled."
+          },
+          {
+            "label": "Recycled U flux estimates",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "Excess U flux values (e.g., 1.5e9 g/a) are computed from data cited from Staudigel et al. [27], Klinkhammer & Palmer [45], Palmer & Edmond [46], Plank & Langmuir [52]. Not measured in this study."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type 'gas' is invalid and incorrect. The paper is a research article presenting an original geochemical model (PURE model) with Monte Carlo simulations. Haiku appears to have confused 'gas' with some thematic tag related to volatile/fluid content, which is not a valid paper-type classification.",
+          "Haiku misidentified 230Th-238U disequilibrium as 'noble gas systematics' in its evidence list. 230Th and 238U are actinides (U-series decay chain), not noble gases. This is a fundamental geochemical category error.",
+          "All MORB Pb isotope ratios (206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb) and kappa values listed as 'variables_measured' are actually cited from literature compilations; they were not analytically measured in this paper.",
+          "230Th/238U disequilibrium data listed as measured are in fact cited from external compilations (Bourdon et al. 1996 [16]; Lundstrom et al. 1998 [17]).",
+          "The modeled outputs — Monte Carlo kappa-DMM evolution paths and PURE model Pb isotope predictions — are not captured in the sidecar as modeled quantities, even though they constitute the paper's primary scientific contribution."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made multiple significant errors: (1) an invalid and wrong paper classification ('gas' instead of 'research'); (2) a serious geochemical category error confusing U-series disequilibrium with noble gas systematics; (3) treating all MORB Pb isotope data and kappa values as analytically measured in this paper when they are exclusively cited from literature compilations; (4) missing that the paper's core outputs are modeled Monte Carlo results. The sidecar would mislead any downstream use relying on instrument type, measurement provenance, or paper classification.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Furi_et_al.,_2010,_Apparent_decoupling_of_the_He_and_Ne_isotope_systematics_of_the_Icelandic_mantle;_The_role_of_He_depletion,_melt_mixing,_degassing_",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "Haiku correctly identifies all three mass spectrometers (MAP 215, VG5400 x2) as noble_gas_ms. Mechanical crushers are tagged 'other', appropriate as sample prep devices."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He ratio (R/RA)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured",
+            "agree": true,
+            "evidence": "Tables 1 and 3 present primary 3He/4He measurements on geothermal fluids, glasses, and phenocrysts using MAP 215."
+          },
+          {
+            "label": "21Ne/22Ne and 20Ne/22Ne isotope ratios",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured",
+            "agree": true,
+            "evidence": "Tables 2 and 4 present primary Ne isotope ratio measurements on geothermal fluids and subglacial glasses using VG5400."
+          },
+          {
+            "label": "40Ar/36Ar and 38Ar/36Ar ratios",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured",
+            "agree": true,
+            "evidence": "Table 4 presents primary Ar isotope ratio measurements on subglacial glasses using modified VG5400."
+          },
+          {
+            "label": "4He/21Ne* elemental ratio (nucleogenic-corrected)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed as measured",
+            "agree": false,
+            "evidence": "Requires correction for nucleogenic 21Ne*; it is a derived/processed quantity, not a direct instrument reading. Haiku lists it in variables_measured without flagging its derived nature."
+          },
+          {
+            "label": "4He/40Ar* ratio (radiogenic Ar corrected)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed as measured",
+            "agree": false,
+            "evidence": "Requires subtraction of atmospheric 40Ar to isolate radiogenic 40Ar*; a derived quantity, not directly measured. Haiku lists it alongside directly measured quantities."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "research",
+          "agree": true
+        },
+        "haiku_errors_found": [
+          "4He/21Ne* and 3He/22Ne_s are listed in variables_measured as if directly measured, but these are derived quantities requiring nucleogenic and solar component corrections and should be flagged as modeled.",
+          "4He/40Ar* is listed as measured but requires subtraction of atmospheric 40Ar to isolate radiogenic 40Ar*, making it a derived rather than directly measured quantity.",
+          "The classification.type field uses a domain taxonomy ('gas') rather than a research-type taxonomy; while not a factual error about the paper, the schema does not answer the standard research/review/compilation/methods question."
+        ],
+        "overall": {
+          "verdict": "equivalent",
+          "reason": "The Haiku sidecar is largely accurate. Instrument categorization (noble_gas_ms) is correct. The key directly measured variables (3He/4He, Ne and Ar isotope ratios, concentrations) are correctly identified. The instances where corrected elemental ratios (4He/21Ne*, 4He/40Ar*) are listed as measured rather than modeled represent a minor imprecision since they are computed within this paper from its own primary measurements. No instruments are misidentified. The sidecar performs well overall.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Giuliani_et_al._(2020)_Evolution_of_textures,_crystal_size_distributions_and_gro",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "sem",
+          "haiku": "sem",
+          "agree": true,
+          "note": "Both agree on SEM as the primary instrument. The paper uses field-emission SEM (BSE imaging + EDS) as the core analytical tool for textural quantification; EPMA and FTIR are secondary. Haiku correctly lists sem first, followed by epma, ftir, and software tools."
+        },
+        "variables_checked": [
+          {
+            "label": "crystal size (major/minor axes)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Image analysis on SEM BSE images directly measured thousands of crystal axes (μm) across six cooling rate experiments."
+          },
+          {
+            "label": "CSD slope (m) and population density (n0)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "CSD parameters computed by CSD-Corrections 1.53 from image data collected in this paper; constitutes the core new analytical output."
+          },
+          {
+            "label": "Crystal growth rates (Gmax, GCSD)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Gmax is derived from averaged major axis of five longest crystals; GCSD from CSD slope m. Both are computed/derived quantities, not directly measured by an instrument. Haiku lists them as measured without flagging the derived nature."
+          },
+          {
+            "label": "Residual H2O content and Fe2+/Fetot ratio",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Paper explicitly states these were 'determined by Vetere et al. (2015).' These are cited values from a prior study, not measured by Giuliani et al. (2020). Haiku places them in variables_measured without any citation flag."
+          },
+          {
+            "label": "Number of crystals per area (#/A)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Directly counted from segmented SEM BSE images for each experimental charge."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Residual H2O content (cited from Vetere et al. 2015) logged as measured variable; paper explicitly attributes this measurement to the prior study.",
+          "Fe2+/Fetot ratio (cited from Vetere et al. 2015) logged as measured variable; same error.",
+          "Growth rates Gmax and GCSD listed as measured rather than modeled/computed; these are derived from averaged crystal axes and CSD slopes, not directly instrument-measured.",
+          "Classification type uses 'petrology' (non-enum, subdiscipline label) instead of valid value 'research'."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three substantive errors: (1) logged H2O and Fe2+/Fetot as measured when explicitly cited from Vetere et al. 2015; (2) classified growth rates as measured rather than modeled/computed; (3) used non-enum classification 'petrology' instead of 'research'. Instrument identification (sem) is correct.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Hancock(2023)_Global_Synthesis_of_Regional_Holocene_Hydroclimate_Variability_Using_Proxy",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "software",
+          "haiku": "software",
+          "agree": true,
+          "note": "Haiku correctly identified all analytical tools as software (compositeR, geoChronR, OxCal, LiPD-utilities, CCSM3, HadCM3, CMIP6). No laboratory instruments were used; the paper is a data synthesis relying entirely on software and climate models."
+        },
+        "variables_checked": [
+          {
+            "label": "Speleothem δ18O",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed (variables_measured is empty array)",
+            "agree": false,
+            "evidence": "74 speleothem δ18O records compiled from SISALv2 (Comas-Bru et al. 2020) and primary literature; these authors did not measure them."
+          },
+          {
+            "label": "Leaf wax δD",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed (variables_measured is empty array)",
+            "agree": false,
+            "evidence": "31 leaf wax δD records sourced from prior compilations and repositories (PANGAEA, NCDC); not newly measured by these authors."
+          },
+          {
+            "label": "Pollen-based precipitation reconstruction",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed (variables_measured is empty array)",
+            "agree": false,
+            "evidence": "345 pollen records sourced from LegacyClimate 1.0 (Herzschuh et al. 2023) and other databases; calibration applied by original authors, not this paper."
+          },
+          {
+            "label": "Lake level / effective moisture status",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed (variables_measured is empty array)",
+            "agree": false,
+            "evidence": "139 lake level records from Oxford Lake Status Data Bank, Liefert & Shuman 2020, and regional compilations; compiled, not measured."
+          },
+          {
+            "label": "Regional precipitation composite timeseries (z-score)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not listed (variables_measured is empty array)",
+            "agree": false,
+            "evidence": "Authors computed 500-member ensemble composites using compositeR by standardizing compiled proxy records; this is a derived/modeled output of this paper."
+          }
+        ],
+        "classification": {
+          "sonnet": "compilation",
+          "haiku": "other",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification assigned as 'other' (confidence 0.75) instead of 'compilation'. The paper explicitly states it compiled 813 proxy records from multiple prior databases (SISALv2, LegacyClimate 1.0, Oxford Lake Status Data Bank, PAGES iso2k, etc.) and is a data synthesis paper — 'compilation' is the precise matching category.",
+          "variables_measured is an empty array []. The paper compiles and analyzes five distinct variable types (speleothem δ18O, leaf wax δD, pollen-based precipitation, lake level indicators, and derived composite timeseries) that should all be listed with appropriate 'cited' or 'modeled' status. An empty field fails to document any of the data the paper works with."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two clear errors: (1) classified the paper as 'other' instead of the more precise 'compilation', despite its own evidence text correctly describing it as a synthesis/compilation; (2) left variables_measured completely empty, failing to document the five key proxy/derived variable types compiled and analyzed in the paper. The instrument category (software) was correctly identified.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Hofmann_and_White,_1982,_Mantle_plumes_from_ancient_oceanic_crust",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "software",
+          "haiku": "software",
+          "agree": true,
+          "note": "The paper performs no original analytical measurements. Its only instrument is a simple batch-melting arithmetic model (Figs. 3-6) and geophysical heating calculations. 'software' is the closest available enum, and Haiku correctly identified this. No mass spectrometers, ICP, or any other lab instruments are described."
+        },
+        "variables_checked": [
+          {
+            "label": "87Sr/86Sr (eSr)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "Listed in variables_measured with no provenance flag, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Fig. 7a shows compiled fields from prior literature; Galapagos example data cited from refs [73,74]. No new Sr isotope measurements were made in this paper."
+          },
+          {
+            "label": "143Nd/144Nd (eNd)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "Listed in variables_measured with no provenance flag, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Fig. 7a shows compiled MORB and OIB fields from prior literature (e.g. Hart and Brooks [56]). No Nd isotope measurements were made in this paper."
+          },
+          {
+            "label": "206Pb/204Pb and 207Pb/204Pb",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "Listed in variables_measured with no provenance flag, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Fig. 7b shows compiled Pb isotope fields from prior literature; model ages cited from Chase [37] and Brooks et al. [38]. No Pb isotope measurements were made in this paper."
+          },
+          {
+            "label": "REE concentrations (chondrite-normalized)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "Listed in variables_measured, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Fig. 5 shows CALCULATED REE patterns from a batch-melting model. Kohala basalt comparison data are cited from Feigenson and Hofmann [72]. No REE measurements were made."
+          },
+          {
+            "label": "K, U, Th concentrations in MORB",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "Listed in variables_measured, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Values of K=1000 ppm, U=0.1 ppm, Th=0.4 ppm used in heating calculations are described as order-of-magnitude estimates from literature, not original measurements."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Noble gas hallucination: The classification evidence states 'Focus on noble gas and radiogenic isotope systematics (Sr, Nd, Pb isotopes)' but the paper contains zero noble gas data. This is a fabricated evidence item.",
+          "All isotopic variables (87Sr/86Sr, 143Nd/144Nd, 206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb) are listed in variables_measured as if analytically measured in this paper, but all are CITED from prior literature. This is a model paper that compiles existing isotope data; no new isotopic measurements were made.",
+          "REE concentrations listed in variables_measured are MODELED (batch-melting calculation Fig. 5), not measured. The observational Kohala Hawaii REE data are cited from ref [72] Feigenson and Hofmann.",
+          "Bibliographic year_print is recorded as 1981 (year received/revised) rather than 1982 (year published per the filename and standard citation).",
+          "Trace element concentrations (K, Rb, U, Th, Sr) listed in variables_measured are cited estimates from prior literature, not original measurements made in this paper."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made multiple concrete errors: (1) hallucinated noble gas data in the classification evidence, (2) systematically misclassified all cited isotope data and modeled REE patterns as measured variables, and (3) recorded the wrong publication year (1981 instead of 1982). The core problem is that Haiku failed to recognize this as a purely theoretical/modeling paper that cites all geochemical data from prior literature - none of the isotopic or trace element values were analytically measured in this study.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Ionov_et_al._(2024)_The_stable_isotope_character_of_the_Earth's_mantle_-_A_review",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "irms",
+          "haiku": "irms",
+          "agree": true,
+          "note": "Haiku correctly identifies irms as primary instrument category. The sidecar also lists icp_ms (MC-ICP-MS), sims, other (TIMS), and laser_ablation as additional instruments referenced in the paper. These are instruments discussed in cited literature, not used by this review paper itself, but the sidecar does not flag this distinction. The irms-first ordering is reasonable given the paper's structure starting with traditional volatile isotopes."
+        },
+        "variables_checked": [
+          {
+            "label": "δ²H (hydrogen isotope composition of mantle minerals and MORB)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "variables_measured is empty — not assessed",
+            "agree": true,
+            "evidence": "Fig. 3 and surrounding text compile δ²H data from phlogopites, amphiboles, MORB from Kyser and O'Neil (1984), Poreda et al. (1986), Dixon et al. (2017), etc. All data cited from other studies."
+          },
+          {
+            "label": "δ¹³C (carbon isotope composition of diamonds, MORB, carbonatites)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "variables_measured is empty — not assessed",
+            "agree": true,
+            "evidence": "Sections 4.2 extensively review δ¹³C values from Deines (1989), Cartigny (2005), Shirey et al. (2013), Howell et al. (2020), and many others. No original measurements in this paper."
+          },
+          {
+            "label": "δ¹⁵N (nitrogen isotope composition of diamonds, MORB, OIB)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "variables_measured is empty — not assessed",
+            "agree": true,
+            "evidence": "Section 4.3 compiles δ¹⁵N data from Javoy et al. (1986), Hauri et al. (2002), Cartigny et al. (2014), etc. Fig. 6 is described as 'modified after Marty and Zimmermann (1999)'."
+          },
+          {
+            "label": "δ²⁶Mg (magnesium isotope composition of peridotites, MORB, OIB)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "variables_measured is empty — not assessed",
+            "agree": true,
+            "evidence": "Section 5.2.1 synthesizes δ²⁶Mg data from Teng et al. (2010), Hin et al. (2013), Liu et al. (2023a,b,c), Yuan et al. (2023), and others. Fig. 12 is credited to Yuan et al. (2023)."
+          },
+          {
+            "label": "δ⁵⁶Fe (iron isotope composition of mantle peridotites and oceanic basalts)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "variables_measured is empty — not assessed",
+            "agree": true,
+            "evidence": "Section 5.2.2 compiles δ⁵⁶Fe data from Weyer and Ionov (2007), Teng et al. (2013), Richter et al. (2021), Foden et al. (2018), and others. Fig. 13 data are credited to Ionov and Kang (2024) and Richter et al. (2021)."
+          }
+        ],
+        "classification": {
+          "sonnet": "review",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type is 'petrology' — incorrect. The paper is explicitly labeled 'Invited review article' in the header and 'A review' in the title. It synthesizes stable isotope data from hundreds of published studies with no original analytical measurements. The correct classification is 'review', not a subdiscipline label like 'petrology'.",
+          "Instruments listed in the sidecar (irms, icp_ms, sims, other/TIMS, laser_ablation) are presented as methods of this paper, but this is a review paper — all instruments described were used in the studies being cited, not by the authors of this review. The sidecar does not flag this critical distinction, which could mislead downstream use expecting these to be this paper's own analytical methods.",
+          "The classification confidence of 0.95 assigned to 'petrology' is high, yet the paper type is clearly 'review' — this represents a fundamental misidentification of paper type (review vs. original research subdiscipline) with inappropriately high confidence."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku misclassified this clearly labeled 'Invited review article' as 'petrology' (a research subdiscipline) rather than 'review' (the correct paper type). The instrument list, while partially accurate in listing techniques discussed in the review, lacks the crucial qualifier that none of these were used analytically in this paper — all data are cited from the literature. The classification error is the most significant finding: the paper has 'review' in its title and header, but Haiku assigned type='petrology' with 0.95 confidence.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Jung_et_al._(2022)_Diel_variations_in_chemical_and_isotope_of_a_stream_on_King_G",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "crds",
+          "haiku": "noble_gas_ms",
+          "agree": false,
+          "note": "The Picarro L2140-i uses Wavelength-Scanned Cavity Ring-Down Spectroscopy (WSCRDS), which is an optical laser spectroscopy technique, not a mass spectrometer. Haiku wrongly placed it in noble_gas_ms. The correct enum value is crds. The paper also uses icp_aes for cations and ic for anions; the primary geochemical novelty instrument is the WSCRDS/crds for stable water isotopes."
+        },
+        "variables_checked": [
+          {
+            "label": "delta-18O (stream/snow/groundwater)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured - correct",
+            "agree": true,
+            "evidence": "Analyzed at Ewha Womans University using Picarro L2140-i WSCRDS; 77 samples collected and measured in this study."
+          },
+          {
+            "label": "deltaD (stream/snow/groundwater)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured - correct",
+            "agree": true,
+            "evidence": "Same WSCRDS analysis as delta-18O; both measured on same instrument from same samples."
+          },
+          {
+            "label": "EC (electrical conductivity)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured - correct",
+            "agree": true,
+            "evidence": "Measured in situ using Thermo Scientific Orion Star A223 EC probe during field sampling."
+          },
+          {
+            "label": "Cations Ca Mg Na K Si",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured - correct",
+            "agree": true,
+            "evidence": "Analyzed by ICP-AES (Jobin Yvon Horiba Ultima 2) at Seoul Center KBSI; five cations measured in triplicate."
+          },
+          {
+            "label": "GMWL and LMWL reference lines",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed as a measured variable - no commission error, but these are cited from Craig 1961 and Simoes 2004",
+            "agree": true,
+            "evidence": "GMWL from Craig (1961); LMWL from Simoes et al. (2004) for Chile Frei Station; used as reference lines in Fig. 3, not measured by this paper."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "other",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "CRITICAL - Instrument misclassification: Picarro L2140-i WSCRDS labeled as noble_gas_ms. WSCRDS (Wavelength-Scanned Cavity Ring-Down Spectroscopy) is an optical laser absorption technique, not a mass spectrometer. Correct category is crds.",
+          "Minor - geography.tectonic_setting listed as geothermal system, which is incorrect. The Barton Peninsula study site is a periglacial/permafrost catchment; no geothermal activity is mentioned in the paper.",
+          "Minor - classification type set to both is ambiguous for paper-type classification; the study is plainly research (original field measurements with 77 new samples collected Jan 12-29 2020)."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku committed a clear instrument misclassification by categorizing the Picarro WSCRDS (a laser optical spectroscopy instrument) as noble_gas_ms. CRDS/WSCRDS does not involve a mass spectrometer. The correct enum is crds. The tectonic_setting is also wrong (geothermal vs periglacial), and paper-type classification is ambiguous. These are concrete, verifiable errors.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Kim_D._et_al._(2024)_Upper_mantle_scale_enrichment_of_Cenozoic_intraplate_magmat",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "The primary headline instrument is the Helix SFT split-flight-tube MS for He/Ne noble gas isotopes, correctly categorized as noble_gas_ms. However, Haiku also made multiple secondary instrument misclassifications: (1) TIMS (Thermo Finnigan TRITON) for Sr/Nd/Pb isotopes was assigned 'irms' but should be 'other' per protocol (TIMS maps to other by design); (2) the CO2 laser fluorination system was assigned 'crds' which is wrong — CRDS is Cavity Ring-Down Spectroscopy, not laser fluorination; (3) the MAT 253 plus dual-inlet mass spectrometer for oxygen isotopes was assigned 'noble_gas_ms' but should be 'irms' since it measures stable isotope ratios (delta-18O), not noble gases."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He ratio (R/Ra)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "New He isotope measurements made at INGV Palermo using Helix SFT for HT, JPH, BD samples. JJ, UL, DD He data cited from Kim et al. (2021) and Lee et al. (2021), but the paper does measure new He data."
+          },
+          {
+            "label": "87Sr/86Sr isotope ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "Sr isotopes for HT, BD, JPH newly measured by TIMS at KOPRI; JJ, UL, DD Sr data previously reported in cited papers. Overall correctly flagged as measured since the paper does present new TIMS measurements."
+          },
+          {
+            "label": "delta-18O olivine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "Oxygen isotope analysis of olivine phenocrysts conducted at KOPRI using CO2 laser fluorination + MAT 253 plus for ALL areas including previously published JJ, UL, DD samples — explicitly stated as new in this study."
+          },
+          {
+            "label": "La/Yb ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured as raw_label_only",
+            "agree": true,
+            "evidence": "Derived from measured trace element concentrations by ICP-MS and LA-ICP-MS; treated as measured since trace elements were analytically determined."
+          },
+          {
+            "label": "4He concentration (ccSTP/g)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured",
+            "agree": true,
+            "evidence": "He and Ne concentrations in olivine-hosted fluid inclusions measured by Helix SFT at INGV Palermo."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification field uses invalid enum value 'gas' — the correct value from the allowed set is 'research' (this is an original analytical geochemistry study, not a compilation or review)",
+          "TIMS (Thermo Finnigan TRITON) miscategorized as 'irms' — per protocol, TIMS maps to 'other' by design, not irms",
+          "CO2 laser fluorination system mislabeled as 'crds' (Cavity Ring-Down Spectroscopy) — it is a sample preparation and gas-liberation system, not a CRDS spectrometer; the actual isotope ratio measurement is done by the downstream dual-inlet IRMS",
+          "MAT 253 plus dual-inlet mass spectrometer (used for delta-18O oxygen isotope measurement) mislabeled as 'noble_gas_ms' — it is an IRMS instrument measuring stable isotope ratios, not a noble gas mass spectrometer; noble_gas_ms should be reserved for the Helix SFT used for He/Ne"
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three concrete instrument misclassifications (TIMS as irms instead of other; CO2 laser fluorination system as crds; MAT 253 plus dual-inlet IRMS as noble_gas_ms instead of irms) and used an invalid classification enum value 'gas' instead of 'research'. The primary noble_gas_ms assignment for Helix SFT was correct, but the secondary instrument catalog contains significant errors that would mislead downstream queries.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Kumagai_et_al._(2008)_Geological_background_of_the_Kairei_and_Edmond_hydrotherma",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "epma",
+          "haiku": "gc",
+          "agree": false,
+          "note": "Haiku chose 'gc' as the primary instrument category, pointing to the isotope-ratio-monitoring GC/MS used at Hokkaido University for δ13C of CO2 and CH4. However, the dominant analytical work in this paper is rock geochemistry using EPMA (JXA-8800, JEOL, Kanazawa University) for major elements of lava glass, plus LA-ICP-MS for trace elements — these are the primary data tables (Table 2A and 2B). Fluid chemistry also used ICP-AES and IRMS, not GC as primary. GC/MS was a single secondary measurement. The most representative single category is 'epma' (or 'laser_ablation'), not 'gc'."
+        },
+        "variables_checked": [
+          {
+            "label": "H2 concentration (fluid)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Sampled with WHATS gas-tight bottles, dissolved gases extracted onboard, H2 analysed by continuous flow IRMS at ORI; values tabulated in Table 1."
+          },
+          {
+            "label": "delta13C of CO2 and CH4 (fluid)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Analysed at Hokkaido University by isotope-ratio-monitoring GC/MS; values tabulated in Table 1."
+          },
+          {
+            "label": "Major elements of lava glass (SiO2, MgO, FeO, etc.)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured by EPMA (JXA-8800 JEOL) at Kanazawa University; full data in Table 2A."
+          },
+          {
+            "label": "Trace elements of lava glass (La, Sm, Nb, Th, etc.)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured by LA-ICP-MS (Agilent 7500S + GeoLas ArF excimer laser) at Kanazawa University; full data in Table 2B."
+          },
+          {
+            "label": "Major fluid ions (Na, Ca, K, Cl, Fe, Mn, Sr, Ba)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Analysed at Kyushu University by ICP-AES (Na, Ca, Mg, Si, Mn, Sr, Ba, Fe), flame spectrophotometry (K), IC (SO4), Mohr method (Cl); tabulated in Table 1."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type = 'gas' is not a valid enum value (valid values: research/review/compilation/methods/other). This paper presents new field data (hydrothermal fluid samples, rock samples, bathymetric and geophysical surveys) from a single expedition (YK05-16 cruise, 2006) and should be classified as 'research'.",
+          "Instrument category = 'gc' is a poor primary choice. The GC/MS at Hokkaido University measured only δ13C of CO2 and CH4, a secondary dataset. The dominant analytical effort was EPMA (major elements of lava glasses, Table 2A) and LA-ICP-MS (trace elements of lava glasses, Table 2B) at Kanazawa University, plus ICP-AES for fluid major/minor elements at Kyushu University. A representative single category should be 'epma' or 'laser_ablation', not 'gc'."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) an invalid classification type 'gas' instead of the correct 'research', and (2) an unrepresentative primary instrument category 'gc' when the paper's dominant analytical methods are EPMA and LA-ICP-MS for rock geochemistry, plus ICP-AES for fluid chemistry. Variable-level judgments (measured/cited/modeled) were all correct.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Lei_et_al._(2023)_Origin_of_Late_Cenozoic_Basaltic_Magmatism_in_Inner_Mongolia__",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "The Helix SFT (Thermo Scientific Noblesse) is a static-field noble gas mass spectrometer used for in-vacuo crushing He isotope analysis of olivine phenocrysts. Haiku's noble_gas_ms assignment is correct. The paper also uses XRF and MC-ICP-MS, but the primary novel instrument for the He isotope measurements (the paper's key novelty) is the noble_gas_ms."
+        },
+        "variables_checked": [
+          {
+            "label": "³He/⁴He ratio (R/Ra) in olivine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 3.1 details in-vacuo crushing and measurement on Helix SFT at AORI; results reported in Table S5; values 0.8-5.5 Ra."
+          },
+          {
+            "label": "δ⁹⁸/⁹⁵Mo whole-rock",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 3.3 describes double-spike MC-ICP-MS measurement on Neptune Plus at GIGCAS; results -0.71 to -0.18 per mil reported in Section 4.3."
+          },
+          {
+            "label": "⁸⁷Sr/⁸⁶Sr, εNd, εHf, Pb isotope ratios",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 3.2 describes MC-ICP-MS (Micromass Isoprobe) analysis at Guizhou Tongwei; numerical ranges given in Section 4.2."
+          },
+          {
+            "label": "Major elements (MgO, SiO2, CaO, FeOt/MnO)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 3.2: XRF at GIGCAS; analytical errors within 5%; values given in Section 4.2."
+          },
+          {
+            "label": "Trace elements and REE (La/Yb, Mo/Ce)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Section 3.2: ICP-MS at Guizhou Tongwei; precision better than 10% on USGS standards BCR-2 and BHVO-2."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification error: Haiku assigned 'both' (research + review hybrid) but the paper is explicitly labeled 'RESEARCH ARTICLE' in the journal header and presents entirely new primary analytical data (21 samples from the Chifeng volcanic field); there is no review component justifying 'both'.",
+          "Standards error: Haiku listed 'V-SMOW' as used for 'Sr isotope normalization' and 'V-PDB' as used for 'Nd isotope normalization' — these are oxygen and carbon isotope standards respectively and were never mentioned in the paper. The actual normalization used internal ratio corrections (86Sr/88Sr = 0.1194, 146Nd/144Nd = 0.7219, 179Hf/177Hf = 0.7325) which are not named external standards."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) misclassified the paper type as 'both' when the paper is a standard research article with new primary data labeled explicitly as 'RESEARCH ARTICLE'; (2) erroneously assigned V-SMOW and V-PDB as standards for Sr and Nd isotope normalization — these are oxygen/carbon standards not used in this paper. All variable classifications (measured/cited/modeled) and the instrument category were correctly handled by Haiku.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Loewen_et_al._(2019)_Hydrogen_isotopes_in_high_3He_4He_submarine_basalts",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "irms",
+          "haiku": "irms",
+          "agree": true,
+          "note": "Haiku correctly identifies irms as primary instrument (TC/EA-IRMS for delta D), noble_gas_ms for He, icp_ms for trace elements. The separate 'other' entry for TC/EA is a minor redundancy but not a misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "delta_D",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "New delta D analyses by TC/EA-IRMS at University of Oregon on SEIR ASP and Loihi glasses are the primary contribution of this paper."
+          },
+          {
+            "label": "H2O",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "H2O concentrations determined by TC/EA peak integration in the same analytical sessions as delta D, reported in Table S2."
+          },
+          {
+            "label": "3He/4He",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "SEIR He isotope data are entirely cited from Graham et al. (1999) and Nicolaysen et al. (2007), stated explicitly in section 2.3. Only 11 new Loihi He analyses were measured here. Blanket 'measured' overstates paper contribution."
+          },
+          {
+            "label": "87Sr/86Sr",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Sr isotope data are not measured in this study; cited throughout from Graham et al. 1999, Nicolaysen et al. 2007, Garcia et al. 1989/1993/1998, Dixon et al. 2017. No Sr isotope analyses performed."
+          },
+          {
+            "label": "206Pb/204Pb",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Pb isotope ratios cited from prior publications (Graham et al. 1999, Nicolaysen et al. 2007, Garcia et al.). Used as context variables, not new measurements in this study."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type 'gas' is invalid and not in the enum (research/review/compilation/methods/other); correct value is 'research'.",
+          "87Sr/86Sr listed as measured but is entirely cited from prior publications (Graham et al. 1999, Nicolaysen et al. 2007, Garcia et al. 1989/1993/1998) not determined in this study.",
+          "206Pb/204Pb and 208Pb/206Pb listed as measured but are cited from prior publications not measured here.",
+          "3He/4He classified uniformly as measured but SEIR He data are explicitly cited from Graham et al. (1999) and Nicolaysen et al. (2007); only 11 new Loihi analyses were made here.",
+          "Loihi trace element data (La/Sm etc.) cited from Garcia et al. publications are not distinguished from the SEIR trace elements newly measured by LA-ICP-MS in this study."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku used an invalid classification type ('gas' instead of 'research') and incorrectly labeled several cited-only variables (87Sr/86Sr, Pb isotopes) as measured, and did not distinguish the partly-cited 3He/4He dataset. These are genuine extraction errors.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Marty_&_Tolstikhin_(1998)_CO2_fluxes_from_mid-ocean_ridges,_arcs_and_plumes",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "Paper states rare gases analysed on-line via static mass spectrometry (Marty 1995; Marty et al. 1995) with vacuum crushing extraction; CO2 measured separately by volumetry. Instrument is correctly identified as noble_gas_ms. CO2 volumetry is a secondary technique but noble_gas_ms is the primary analytical instrument for He/Ar isotopics."
+        },
+        "variables_checked": [
+          {
+            "label": "CO2/3He ratio in MORB glasses (Table 1)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured — correct",
+            "agree": true,
+            "evidence": "Table 1 presents new simultaneous CO2 and He data from vacuum crushing of 22 MORB glass samples at CRPG; these are genuinely new measurements in this paper."
+          },
+          {
+            "label": "3He concentration in MORB glasses (Table 1)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured — correct",
+            "agree": true,
+            "evidence": "Table 1 directly reports 3He concentrations (×10^-16 mol/g) measured at CRPG via noble gas mass spectrometry."
+          },
+          {
+            "label": "CO2 flux from ridges/arcs/plumes",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed as measured without modeled flag",
+            "agree": false,
+            "evidence": "The CO2 fluxes (2.2×10^12 mol/a for ridges, ~2.5×10^12 mol/a for arcs, ≤3×10^12 mol/a for plumes) are all computed/modeled quantities derived from equations combining measured CO2/3He ratios with cited 3He flux estimates and magma production rates, not directly measured."
+          },
+          {
+            "label": "87Sr/86Sr ratio",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "listed in variables_measured without citation flag",
+            "agree": false,
+            "evidence": "The paper uses 87Sr/86Sr data entirely from prior literature (Graham et al. 1996, Castillo & Batiza 1989, Kurz et al. 1983, Marty et al. 1993b, Poreda et al. 1986). No Sr isotope analyses were performed in this study; all Sr data plotted in Fig. 4 come from cited sources."
+          },
+          {
+            "label": "Arc/plume CO2/3He ratios (Fig. 1 compilation)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not distinguished from this paper's own measured MORB data",
+            "agree": false,
+            "evidence": "Fig. 1 compiles arc CO2/3He from Marty et al. 1989, Varekamp et al. 1992, Allard 1992, Sano & Marty 1995, Sano & Williams 1996; plume data from multiple prior studies. Only the MORB Table 1 data are new measurements. The sidecar does not flag this distinction."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification field error: Haiku assigned type='gas' (a sample/phase category) instead of a paper-type category. The schema expects one of: research, review, compilation, methods, other. The paper is best classified as 'research' (with a strong review component) — 'gas' is not a valid paper classification.",
+          "87Sr/86Sr listed as a variable_measured but is entirely cited from external literature (Graham et al. 1996, Castillo & Batiza 1989, Kurz et al. 1983, Poreda et al. 1986, Marty et al. 1993b). No Sr isotope measurements were made in this study.",
+          "CO2 flux values listed as measured but are in fact modeled/computed quantities derived from equations combining CO2/3He ratios, cited 3He flux, and magma production rates — not direct analytical measurements.",
+          "Arc and plume CO2/3He ratios in Fig. 1 compilation are not distinguished from the paper's own new MORB Table 1 measurements. The sidecar treats all CO2/3He values as equivalent without flagging which are cited from prior work.",
+          "Bibliographic error: year_print listed as 1997 but the paper is published in 1998 (copyright line: 1998 Elsevier; paper_id uses 1998; journal volume 146 is 1998). Accepted date of May 1997 was incorrectly used as the publication year."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made a clear schema-category error in the classification field (using a sample-phase type 'gas' instead of a paper-type category), incorrectly treated 87Sr/86Sr as a measured variable when all Sr data are cited from external sources, and failed to distinguish modeled CO2 flux outputs from directly measured quantities. Additionally there is a bibliographic year error (1997 vs. 1998). These are concrete, verifiable errors that degrade the sidecar quality.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Minissale_et_al._(2002)_Geochemistry_of_Quaternary_travertines_in_the_region_nor",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "irms",
+          "haiku": "noble_gas_ms",
+          "agree": false,
+          "note": "The primary analytical instruments in this paper are: (1) Finnigan 250 Delta-S IRMS for delta13C/delta18O/deltaD — correctly classed irms by Haiku; (2) XRF for Sr — correctly classed; (3) MAP 215-50 for 3He/4He — correctly classed noble_gas_ms; (4) VG-54R TIMS at Argonne for 87Sr/86Sr — Haiku wrongly classed noble_gas_ms, should be 'other' per schema; (5) TIMS at Los Alamos for 230Th-234U dating — Haiku also wrongly classed noble_gas_ms, should be 'other'. The dominant new-data instrument is irms; but the critical error is TIMS misclassified as noble_gas_ms."
+        },
+        "variables_checked": [
+          {
+            "label": "delta13C (travertine and CO2 gas)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Paper Section 2 states travertine samples analyzed for delta13C with Finnigan 250 Delta-S IRMS at University of Florence; Table 3 contains measured values."
+          },
+          {
+            "label": "delta18O (travertine and water)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Paper Section 2 states delta18O measured with Finnigan 250 Delta-S IRMS at University of Florence for both travertines and water samples; Table 1 and 3 contain measured values."
+          },
+          {
+            "label": "3He/4He ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Three new 3He/4He measurements made on gas samples at Parrano, Stifone and Acquasanta using MAP 215-50 at CNR Pisa (Section 2). Many other values in Table 2 are cited from references [1] and [13], but new measurements were made so 'measured' is defensible for the paper overall."
+          },
+          {
+            "label": "87Sr/86Sr ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Section 2: 87Sr/86Sr measured for 6 travertine samples using modified VG-54R TIMS at Argonne National Laboratory; Table 3 shows results."
+          },
+          {
+            "label": "PCO2",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Section 3 explicitly states PCO2 and saturation indices for calcite, aragonite and dolomite were 'calculated using WATEQ4F' — this is a model calculation from chemical data, not a direct analytical measurement. Haiku lists it under variables_measured without flagging it as modeled/calculated."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "TIMS misclassified as noble_gas_ms (x2): The VG-54R TIMS at Argonne National Laboratory (used for 87Sr/86Sr) and the TIMS at Los Alamos National Laboratory (used for 230Th-234U dating) are both classified as 'noble_gas_ms' in the sidecar. Per the schema instructions, TIMS maps to 'other', not noble_gas_ms. Only the MAP 215-50 (used for 3He/4He) is correctly a noble_gas_ms.",
+          "Classification 'both' is not a valid enum value: The sidecar uses classification.type = 'both', which is not in the valid enum (research/review/compilation/methods/other). This paper is an original research paper presenting new analytical data; the correct value is 'research'.",
+          "PCO2 listed as measured when it is modeled/calculated: PCO2 values in Table 1 are stated in Section 3 to be 'calculated using WATEQ4F', a geochemical speciation code. They are derived quantities (modeled), not directly measured analytical outputs. Haiku lists PCO2 under variables_measured without distinction."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete instrument misclassification errors (TIMS at Argonne for 87Sr/86Sr and TIMS at Los Alamos for U-series dating both wrongly assigned 'noble_gas_ms' instead of 'other'), used an invalid enum value for classification ('both' instead of 'research'), and incorrectly listed PCO2 as a measured variable when the paper explicitly states it was calculated with WATEQ4F software.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Nan_et_al._(2024)_Unraveling_abiotic_organic_synthesis_pathways_in_the_mafic_cru",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "sims",
+          "haiku": "sims",
+          "agree": true,
+          "note": "Haiku correctly identifies TOF-SIMS (IONTOF TOF-SIMS V) as 'sims' for the dominant geochemical characterization instrument. However, Haiku categorized the WiTec Raman microscope as 'other' rather than 'raman', which is a valid enum value. The primary organic-matter fingerprinting instrument is TOF-SIMS."
+        },
+        "variables_checked": [
+          {
+            "label": "Raman shift / vibrational modes of CCM functional groups",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured (Raman shift, cm-1)",
+            "agree": true,
+            "evidence": "WiTec alpha 300R Raman microscope used in situ on basalt samples; peaks at 1060-2930 cm-1 directly measured from CCM"
+          },
+          {
+            "label": "TOF-SIMS fragment ion m/z (C2H+, CN-, etc.)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed as measured (m/z, Da)",
+            "agree": true,
+            "evidence": "TOF-SIMS V used on FIB-prepared foils; ion peaks at 25.0 and 26.0 m/z directly measured from CCM region"
+          },
+          {
+            "label": "DFT reaction free energies for CO2 hydrogenation on goethite surface",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed in variables_measured without modeled distinction",
+            "agree": false,
+            "evidence": "CASTEP DFT spin-polarized calculations used to compute free-energy diagram; values like -0.40 eV are computationally derived, not analytically measured. Haiku places these in variables_measured without flagging as modeled."
+          },
+          {
+            "label": "H2 concentration in Dragon Horn vent fluids (~0.3 mM)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed as a variable",
+            "agree": false,
+            "evidence": "Paper states Tao et al. reported H2 ~0.3 mM at Dragon Horn (ref [30]); this is cited from another study, not measured here. Haiku omits it entirely."
+          },
+          {
+            "label": "Fe oxyhydroxide mineral volume fraction (~2 vol%) and phenocryst fraction (~20 vol%)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "not listed as a variable",
+            "agree": false,
+            "evidence": "Vol% estimated from microscope observations on the 7 SWIR basalt samples; Haiku omits these petrographic measurements from variables list."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "research",
+          "agree": true
+        },
+        "haiku_errors_found": [
+          "Sidecar classification.type field is 'both', not a valid enum value (research/review/compilation/methods/other); paper is clearly 'research'",
+          "Raman spectroscopy (WiTec alpha 300R) categorized as instrument category 'other' instead of 'raman', which is an explicitly supported enum value",
+          "DFT-computed reaction free energies (CASTEP modeling) placed in variables_measured without distinguishing them as modeled; these are computationally derived not analytically measured",
+          "H2 concentration (~0.3 mM at Dragon Horn, cited from Tao et al. 2020) not identified as a cited variable - key cited datum used to justify synthesis pathway argument omitted",
+          "Modal mineral abundances measured by microscopy (Fe oxyhydroxide ~2 vol%, silicate phenocrysts ~20 vol%) absent from variables list"
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made a schema-invalid classification error ('both' instead of 'research'), misclassified Raman as 'other' instead of the valid enum value 'raman', and failed to distinguish DFT-modeled free energies from analytically measured quantities. These are real errors that degrade sidecar utility.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Panter_et_al._(2022)_Mantle_sources_and_melting_processes_beneath_East_Antarctic",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "icp_ms",
+          "haiku": "irms",
+          "agree": false,
+          "note": "The paper uses multiple instruments. The dominant new analytical contribution is radiogenic isotopes (Sr, Nd, Pb) measured by NEPTUNE MC-ICP-MS (icp_ms) and TIMS (other). The CO2 laser fluorination + Finnigan MAT 251 for O isotopes is irms. Haiku listed irms as the category for the laser fluorination instrument entry, but as the primary paper-level instrument category, icp_ms (MC-ICP-MS for radiogenic isotopes) is more representative. Both instruments are present and correctly identified; the disagreement is on which is primary. Haiku's instrument list entries are individually correct."
+        },
+        "variables_checked": [
+          {
+            "label": "87Sr/86Sr",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 2 reports 87Sr/86Sr for 19 samples measured by MC-ICP-MS and TIMS at WHOI in this paper."
+          },
+          {
+            "label": "143Nd/144Nd",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 2 reports 143Nd/144Nd measured by MC-ICP-MS and TIMS for 19 samples."
+          },
+          {
+            "label": "206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 2 reports three Pb isotope ratios measured by MC-ICP-MS and TIMS for 19 samples."
+          },
+          {
+            "label": "delta_18O (olivine)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 reports delta-18O measured by CO2 laser fluorination + Finnigan MAT 251 for 22 samples at UW-Madison."
+          },
+          {
+            "label": "Fo% (olivine forsterite content)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 and S2 report Fo% measured by EPMA (Cameca SX-100) at EMAL, University of Michigan, for 480+ spot analyses."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification field uses subject-domain label 'petrology' instead of the paper-type category 'research'. The schema expects research/review/compilation/methods/other, not a discipline name.",
+          "Minor: The primary instrument category at the paper level is debatable. Haiku's irms entry for the laser fluorination system is correct for that specific instrument, but the dominant new analytical contribution (Sr, Nd, Pb isotopes by MC-ICP-MS) would make icp_ms the more representative primary paper-level category. Since all instruments are individually listed correctly, this is a minor framing issue."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku's instrument entries are individually accurate (epma, irms, icp_ms, other/TIMS, software all correctly identified). However, Haiku used 'petrology' as the classification type, which is a subject-domain descriptor rather than the required paper-type category (research/review/compilation/methods/other). This paper is clearly original research presenting new isotopic measurements on 19-22 samples. Variable assignments (all marked measured) are correct for this original-data paper.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Poreda_&_Craig_(1989)_Helium_isotope_ratios_in_circum-Pacific_volcanic_arcs",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "Clarke-type double-collecting mass spectrometer (GAD) at SIO is correctly classified as noble_gas_ms. The activated charcoal He/Ne separation step listed as a second instrument with category 'other' is technically a sample prep step, not an instrument, but this is a minor issue rather than a misclassification of the main analytical tool."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He (R/R_A)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Authors directly measured 3He/4He ratios on volcanic gases and phenocrysts at SIO using the GAD mass spectrometer. Primary analytical output of the paper."
+          },
+          {
+            "label": "He/Ne ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "Neon was also measured at SIO and He/Ne ratios are tabulated in Table 1. Paper states neon was measured and He/Ne ratios were used to correct 3He/4He."
+          },
+          {
+            "label": "R_C/R_A (atmospheric-corrected 3He/4He)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured (listed in variables_measured without qualification)",
+            "agree": false,
+            "evidence": "R_C is explicitly defined in Table 1 footnote as a calculated correction: R_C = (R_N - R_A*N_A)/(N - N_A). It is derived from measured R/R_A and He/Ne, not directly measured. Should be modeled, not measured."
+          },
+          {
+            "label": "87Sr/86Sr",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured (listed in variables_measured at SIO lab without qualification)",
+            "agree": false,
+            "evidence": "Inspection of Table 1 shows most 87Sr/86Sr values carry reference numbers to prior publications (refs 10, 16, 23, 32, 41, 42, 43, 44, 45, 46, 47, 48). Sr isotope data are overwhelmingly cited from prior studies, not newly measured in this work. The sidecar lab entry lists SIO as measuring 87Sr/86Sr, which is incorrect for the majority of values."
+          },
+          {
+            "label": "Temperature (T, deg C)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "Fumarole and spring temperatures are tabulated in Table 1 and measured in situ during sampling. The sidecar does not list temperature as a variable at all."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "other",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "R_C/R_A listed as a measured variable when it is actually a calculated atmospheric correction derived from measured R/R_A and He/Ne ratios (formula given explicitly in Table 1 footnote); should be classified as modeled.",
+          "87Sr/86Sr listed as measured by SIO in this study, but inspection of Table 1 shows that the vast majority of Sr isotope values carry reference numbers to prior publications (refs 10, 16, 23, 32, 41, 42, 43, 44, 45, 46, 47, 48). This is a cited-logged-as-measured error.",
+          "Classification field encodes sample type ('gas') rather than paper type. No paper-type classification (research/review/compilation/methods/other) is present; the paper is an original research paper and should be classified as 'research'."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made three concrete errors: (1) R_C/R_A is a modeled/computed correction but listed as measured; (2) 87Sr/86Sr is predominantly cited from prior publications but treated as measured by this study's lab; (3) the classification field stores sample type ('gas') rather than paper type, missing the 'research' classification entirely. The instrument identification (noble_gas_ms) is correct.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Rodbell(2022)_700,000_years_of_tropical_Andean_glaciation",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "xrf",
+          "haiku": "xrf",
+          "agree": true,
+          "note": "Haiku correctly identified xrf (Cox Analytical ITRAX) as the dominant instrument category. The paper also uses magnetic susceptibility sensors, coulometry, and a superconducting rock magnetometer (all 'other'), plus PAST software. Haiku listed all instrument entries appropriately. No misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "Glaciation Index (GI)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured (z-score composite of MS and Ti/Ca)",
+            "agree": false,
+            "evidence": "Methods section states GI is derived as 'the average z-score of both of these datasets' (log-transformed MS and Ti/Ca). It is a computed composite index, not a direct measurement."
+          },
+          {
+            "label": "Magnetic susceptibility (MS)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured directly at 0.5 cm intervals using Bartington MS2E point sensor at LacCore."
+          },
+          {
+            "label": "Ti/Ca ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured by XRF scanning (Cox Analytical ITRAX) at LacCore XRF Lab."
+          },
+          {
+            "label": "Atmospheric CH4 concentration",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "CH4 data are from Loulergue et al. 2008 (ref 41) and Brook et al. 1996 (ref 11), explicitly cited external Antarctic ice core datasets. Not measured by this study. Sidecar lists it under variables_measured despite noting 'from Antarctic ice cores'."
+          },
+          {
+            "label": "Siliciclastic sediment flux",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Flux_clastic is calculated via formula: SR x (BD minus BD x TOM plus BD x TCC). It is a derived/computed quantity from measured inputs, not a direct measurement."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification error: Haiku labeled the paper 'both' (research + review/compilation) when it is clearly a primary research paper presenting new lake core data, new measurements, and a new 700 ka glaciation record. The use of external cited datasets for comparison does not make it a review paper.",
+          "Variables error: Atmospheric CH4 concentration is listed under variables_measured despite being an external cited dataset from Loulergue et al. 2008 and Brook et al. 1996 (Antarctic ice cores). This paper's authors did not measure CH4.",
+          "Variables error: Atmospheric CO2 concentration is similarly listed under variables_measured but is entirely cited from Bereiter et al. 2015 and Luthi et al. 2008. Not measured in this study.",
+          "Variables error: Siliciclastic sediment flux is listed as measured but is a derived/modeled quantity computed from a formula using measured inputs (sedimentation rate, bulk density, organic matter fraction, carbonate fraction).",
+          "Variables classification issue: The Glaciation Index (GI) is listed as a measured variable but it is a modeled/derived composite index calculated from log-transformed MS and Ti/Ca z-scores, not a direct measurement."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made a clear classification error (primary research paper labeled 'both'), and incorrectly included two externally-cited datasets (atmospheric CH4 and CO2 from Antarctic ice cores) as variables measured by this paper. Additionally, derived quantities (siliciclastic flux, glaciation index) were labeled as measured rather than modeled. These are substantive errors.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Sano_et_al._(1998)_Helium_degassing_related_to_the_Kobe_earthquake_",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "Haiku correctly identifies noble_gas_ms as primary. Paper explicitly states 'noble gas mass spectrometer at Okayama University' for rock analysis and 'noble gas purifications' at Hiroshima University for groundwater 3He/4He and 4He/20Ne measurements. Secondary irms for delta-D/18O and 'other' for tritium also correctly categorized."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured without status tag, treated as measured",
+            "agree": true,
+            "evidence": "Analytically measured in 17 groundwater samples from 6 wells (Table 1). Error ~3% from repeated atmospheric standard."
+          },
+          {
+            "label": "4He/20Ne ratio",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured, treated as measured",
+            "agree": true,
+            "evidence": "Analytically measured alongside 3He/4He with ~6% error stated in methodology."
+          },
+          {
+            "label": "Tritium-3He age",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "listed in variables_measured, implicitly treated as measured",
+            "agree": false,
+            "evidence": "Tritium-3He age is a calculated quantity (derived from measured tritium and excess 3He using Schlosser et al. 1988 formula). Haiku lists it in variables_measured without flagging it as modeled/derived."
+          },
+          {
+            "label": "Global He flux (1.2e13 cm3 STP/yr)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed; no cited/modeled distinction made anywhere in sidecar",
+            "agree": false,
+            "evidence": "Explicitly cited from Torgersen (1989) and O'Nions & Oxburgh (1983). Sidecar has no entry for this value and no mechanism to flag it as cited from external sources."
+          },
+          {
+            "label": "Total He degassing from Kobe earthquake (4e11 cm3 STP)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "absent from variables_measured entirely",
+            "agree": false,
+            "evidence": "Key modeled result calculated by multiplying measured radiogenic He by estimated affected rock volume from fault model. Absent from sidecar variables_measured."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "gas",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification field uses 'gas' (a fluid/material type) instead of the correct paper-type enum value 'research' — schema-level misclassification.",
+          "Tritium-3He groundwater age is listed in variables_measured as if directly measured, but it is a calculated/modeled quantity derived from tritium and excess 3He.",
+          "Radiogenic 4He and excess 3He listed in variables_measured without noting they are calculated subtractions, not raw instrument outputs.",
+          "Total He degassing from the Kobe earthquake (4e11 cm3 STP), a key modeled result, is absent from variables_measured entirely.",
+          "The globally-cited He flux (1.2e13 cm3 STP/yr from Torgersen 1989 and O'Nions & Oxburgh 1983) is not flagged as cited — no provenance distinction from original measurements."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made a definite schema-level error in the classification field ('gas' instead of 'research'), conflated modeled/derived quantities (tritium-3He age, radiogenic He excess) with directly measured variables, omitted the key modeled result (total earthquake He degassing), and provided no citation provenance for the globally-cited He flux comparison value.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Shejwalkar_et_al._(2013)_Experimental_calibration_of_the_roles_of_temperature_and_composition_in_the_Ca-in-olivine_geothermometer_at_0.1_MPa",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "epma",
+          "haiku": "epma",
+          "agree": true,
+          "note": "Haiku correctly identified the Cameca SX-50 electron microprobe as epma. The paper's analytical section explicitly states 'Experimental run products were analysed using a Cameca SX-50 electron microprobe at the University of British Columbia.' No misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "CaO content of olivine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured (implicitly measured)",
+            "agree": true,
+            "evidence": "EPMA measurements of CaO in olivine crystals grown in experiments; reported as wt.% in Supplementary Table 2 and Figs 1-3."
+          },
+          {
+            "label": "Forsterite (Fo) content of olivine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "listed in variables_measured (implicitly measured)",
+            "agree": true,
+            "evidence": "EPMA-derived Mg/(Mg+Fe) ratio measured on each experimental olivine crystal; used as independent variable in geothermometer calibration."
+          },
+          {
+            "label": "Experimental temperature",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "not listed in sidecar",
+            "agree": false,
+            "evidence": "Temperature monitored by type B thermocouple, checked against Au melting point (1064 degrees C). Primary controlled/measured variable absent from sidecar."
+          },
+          {
+            "label": "Geothermometer calibration coefficients (Eq. 11)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not listed in sidecar",
+            "agree": false,
+            "evidence": "Eq. 11 parameters derived by empirical regression of experimental data. Primary output of paper but absent from sidecar."
+          },
+          {
+            "label": "Oxygen fugacity (fO2)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "not listed in sidecar",
+            "agree": false,
+            "evidence": "fO2 monitored using EMF cell, checked against Ni-NiO and Co-CoO buffers. Not listed in sidecar."
+          }
+        ],
+        "classification": {
+          "sonnet": "methods",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Minor omission: experimental temperature (type B thermocouple) is not listed among variables_measured despite being the primary controlled variable.",
+          "Minor omission: geothermometer calibration coefficients (Eq. 11 parameters) are the paper's primary modeled output but absent from variables_measured.",
+          "Minor omission: oxygen fugacity (fO2) measured by EMF cell is a key experimental parameter not listed in variables_measured.",
+          "Classification schema mismatch: Haiku used a disciplinary label ('petrology') rather than a paper-type from the expected enum (research/review/compilation/methods/other). The paper is a methods/calibration study."
+        ],
+        "overall": {
+          "verdict": "equivalent",
+          "reason": "The Haiku sidecar is substantively accurate: instrument (epma, Cameca SX-50) is correctly identified, and all variables it lists are genuinely analytically measured in this paper with no cited-logged-as-measured errors. Omissions (temperature, fO2, geothermometer equation coefficients) are incomplete coverage rather than factual misclassifications. The classification uses a different schema dimension (disciplinary vs. paper-type) but does not mischaracterize the paper.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Stuart_&_Turner_(1998)_Mantle-derived_40Ar_in_mid-ocean_ridge_hydrothermal_fluid",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "noble_gas_ms",
+          "haiku": "noble_gas_ms",
+          "agree": true,
+          "note": "MAP 215-50 is a dedicated static noble gas mass spectrometer used for He, Ne, Ar isotopes and abundances. Both Sonnet and Haiku correctly classify this as noble_gas_ms."
+        },
+        "variables_checked": [
+          {
+            "label": "3He/4He (R/Ra)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed as He3_He4_RRa in variables_measured, phase=fluid inclusion",
+            "agree": true,
+            "evidence": "Table 1 reports R/Ra range 7.3–9.3 for 11 samples analyzed on the MAP 215-50 in this study"
+          },
+          {
+            "label": "40Ar/36Ar (delta40Ar)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed as Ar40_Ar36 and delta40Ar in variables_measured",
+            "agree": true,
+            "evidence": "Table 1 reports delta40Ar from +0.4 to +2.6% for samples measured on the MAP 215-50 in this study"
+          },
+          {
+            "label": "4He concentration",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured — listed in variables_measured, unit 10^-8 cm^3 STP g^-1",
+            "agree": true,
+            "evidence": "Table 1 reports 4He concentrations from 0.21 to 8.85 × 10^-8 cm^3 STP g^-1 directly measured on MAP 215-50"
+          },
+          {
+            "label": "40Ar mantle flux (1–2.6 × 10^7 mol/a)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "not listed in variables_measured — correctly absent as a modeled output",
+            "agree": true,
+            "evidence": "Flux is derived by scaling mean (40Ar/3He)mantle of fluid inclusions to external 3He flux estimates from Jean-Baptiste (1992) and Farley (1995); not a directly measured quantity"
+          },
+          {
+            "label": "3He mantle flux reference values (400±100 mol/a; 1000 mol/a)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "not listed in variables_measured — correctly absent as cited input values",
+            "agree": true,
+            "evidence": "Section 5.2 cites these values from Jean-Baptiste (1992) and Farley (1995) as inputs to flux calculations; not measured in this study"
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "research",
+          "agree": true
+        },
+        "haiku_errors_found": [
+          "The sidecar classification.type field is set to 'gas' (a geochemical sample-type category) rather than using a paper-type classification such as research/review/compilation/methods/other; this reflects a schema design choice in the Haiku extraction but means the paper-type cannot be directly read from the sidecar without interpretation",
+          "variables_measured list does not flag that (4He/40Ar)mantle ratios are derived/calculated quantities rather than raw instrument outputs, though this is a minor distinction standard in noble gas MS work and all listed variables are genuinely from measurements made in this study"
+        ],
+        "overall": {
+          "verdict": "equivalent",
+          "reason": "The Haiku sidecar correctly identifies the instrument as noble_gas_ms (MAP 215-50), correctly captures all analytically measured variables from Table 1 (He/Ar/Ne isotopes and abundances in fluid inclusions), does not mislabel any cited or modeled quantities as measured, and faithfully reproduces the abstract and conclusions. No substantive extraction errors were found; the two minor observations are schema-level design choices rather than factual mistakes.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Till_et_al._(2015)_Months_between_rejuvenation_and_volcanic_eruption_at_Yellowst",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "sims",
+          "haiku": "sims",
+          "agree": true,
+          "note": "Haiku correctly identified the NanoSIMS 50L as the primary instrument (sims). EPMA and SEM/EBSD are correctly listed as secondary instruments."
+        },
+        "variables_checked": [
+          {
+            "label": "Ba concentration in sanidine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (NanoSIMS profiling)",
+            "agree": true,
+            "evidence": "NanoSIMS 50L used to measure Ba profiles with 0.3 µm spacing across sanidine core-rim boundaries, explicitly described as the primary measurement in this study."
+          },
+          {
+            "label": "Sr concentration in sanidine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (NanoSIMS profiling)",
+            "agree": true,
+            "evidence": "Sr profiles measured by NanoSIMS alongside Ba and Mg, yielding elapsed time of 15+73/-11 yr."
+          },
+          {
+            "label": "Mg concentration in sanidine",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (NanoSIMS profiling)",
+            "agree": true,
+            "evidence": "Mg profiles measured by NanoSIMS; three of four grains are flat (fast diffuser), one yields 0.8 yr timescale."
+          },
+          {
+            "label": "delta-18O/16O in zircon",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured — listed as a measured variable with phase zircon and unit per mil",
+            "agree": false,
+            "evidence": "The paper says 'preservation of 18O/16O disequilibrium in the resorbed cores of SCL zircons (Bindeman et al., 2008)' — this is cited from a prior study, not measured in this paper."
+          },
+          {
+            "label": "Diffusion timescales (Ba, Sr, Mg)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "unclear — not explicitly labeled as modeled in sidecar",
+            "agree": false,
+            "evidence": "Timescales (Ba: 1031+3298/-729 yr, Sr: 15+73/-11 yr, Mg: 0.8+8/-0.6 yr) are derived via misfit-minimization forward diffusion modeling, not directly measured. Haiku does not flag these as modeled quantities."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "delta-18O/16O in zircon listed as 'measured' but is actually cited from Bindeman et al. (2008); the paper explicitly references this result from a prior study, not new measurements in this paper.",
+          "Standards V-SMOW, V-PDB, and NBS-19 are listed in the sidecar but do not appear anywhere in the paper text — these appear to be hallucinated by Haiku, likely generic isotope standard placeholders.",
+          "Classification type 'both' does not match the required enum values (research/review/compilation/methods/other); the correct classification is 'research'.",
+          "Diffusion timescales are modeled quantities (via forward misfit-minimization modeling) but are not explicitly labeled as 'modeled' in the sidecar — their status as derived rather than directly measured is unclear in the Haiku output."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) it logged delta-18O/16O (cited from Bindeman et al. 2008) as a measured variable in this study, and (2) it hallucinated three isotope standards (V-SMOW, V-PDB, NBS-19) that appear nowhere in the paper. The classification 'both' is also non-conforming with the required enum. These are real extraction errors, not marginal issues.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Wang_et_al._(2003)_Oxygen_isotope_geochemistry_of_the_second_HSDP_core",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "irms",
+          "haiku": "other",
+          "agree": false,
+          "note": "The paper uses laser fluorination as the sample preparation step to liberate O2, followed by analysis on an isotope ratio mass spectrometer (IRMS). The correct instrument category is 'irms' (gas-source IRMS). Haiku assigned 'other' to the laser fluorination system, treating it as the measurement instrument rather than recognizing the IRMS as the actual measuring device. The Sharp [1990] reference cited is a laser fluorination IRMS method paper. 'other' is defensible but 'irms' is more accurate."
+        },
+        "variables_checked": [
+          {
+            "label": "delta_18O olivine phenocrysts",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (correctly listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 presents original δ18O measurements of 89 samples; paper states 'Oxygen isotope ratios were measured in olivine phenocrysts'."
+          },
+          {
+            "label": "delta_18O glass/matrix",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (correctly listed in variables_measured)",
+            "agree": true,
+            "evidence": "Table 1 includes δ18O for glass and matrix separates from HSDP-2 samples, measured by laser fluorination at Caltech."
+          },
+          {
+            "label": "Mg# (forsterite content)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed as Mg# forsterite content)",
+            "agree": true,
+            "evidence": "Table 2 reports EPMA forsterite content measurements from two olivine separates; explicitly measured by the authors."
+          },
+          {
+            "label": "epsilon_Hf, 3He/4He, 208Pb*/206Pb*, Sm/Yb",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "Figure 4 caption explicitly states these data are 'taken from Blichert-Toft et al. [2003], Kurz submitted manuscript, Eisele et al. [2003], Feigenson et al. [2003]'. These are cited values from companion papers, not measured in this study. Haiku does not include these in variables_measured, which is correct, but does not flag them as cited in any explicit field."
+          },
+          {
+            "label": "MELTS crystallization model predictions",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "modeled (identified via MELT algorithm/software instrument entry)",
+            "agree": true,
+            "evidence": "Figure 9 caption states 'Amounts, identities and mineral-chemistries of crystallizing phases are calculated using the MELT algorithm [Ghiorso et al., 1994]'. Haiku correctly identified this as software/modeled."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "petrology",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification type field uses free-text 'petrology' instead of the required enum value 'research'. The paper is a primary analytical research paper presenting original oxygen isotope measurements, not a review or compilation.",
+          "Instrument category: laser fluorination oxygen isotope analysis is correctly a gas-source IRMS measurement (category 'irms'), not 'other'. The laser is the fluorination/liberation step; the actual measurements are by IRMS. The Haiku assigned 'other' to the laser fluorination system rather than recognizing the underlying IRMS measurement."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) used a non-enum free-text value 'petrology' for classification type instead of the required 'research'; (2) categorized the instrument as 'other' (laser fluorination) when the actual measurement technique is gas-source IRMS, which maps to 'irms'. The variable extraction was otherwise accurate — Haiku correctly identified the primary measured variables (δ18O phases, Mg#) and correctly flagged the MELTS software. The cited geochemical variables from companion papers (εHf, 3He/4He, Pb isotopes, Sm/Yb) were not misclassified as measured, which is correct. The classification schema error is the clearest Haiku mistake.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Woodhead_et_al._(1993)_Oxygen_isotope_evidence_for_recycled_crust_in_the_source_",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "irms",
+          "haiku": "irms (for O-isotope) and irms again (for radiogenic isotopes)",
+          "agree": false,
+          "note": "Haiku correctly identified irms for the O-isotope IRMS (BrF5 fluorination + CO2 mass spectrometry). However, the second instrument entry for radiogenic Sr/Nd/Pb isotope analyses was also assigned 'irms', which is wrong. In 1993, Sr/Nd/Pb ratios were universally measured by TIMS (thermal ionization mass spectrometry). Per the audit rules, TIMS maps to 'other', not 'irms'. The paper provides no brand/model details for the radiogenic instruments, but the lab context (RSES Canberra, CRPG Nancy in 1993) unambiguously implies TIMS. Haiku hallucinated 'irms' for the second instrument."
+        },
+        "variables_checked": [
+          {
+            "label": "delta18O",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured (listed in variables_measured)",
+            "agree": true,
+            "evidence": "New analytical measurements made at NERC Isotope Geosciences Laboratory using BrF5 fluorination; Table 1 presents original data with duplicate statistics. This is the primary new contribution of the paper."
+          },
+          {
+            "label": "87Sr/86Sr, 143Nd/144Nd, Pb isotope ratios",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "The paper explicitly states in Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10: analytical details can be found therein.' These were not newly measured by this paper — they are cited/reproduced values."
+          },
+          {
+            "label": "SiO2 and MgO (major elements)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "Table 1 footnote states: 'SiO2 and MgO values are based on X-ray fluorescence data for co-existing (crystalline) pillow interiors...' These co-exist with the reproduced radiogenic isotope data from refs 9 and 10 and were not newly measured in this study."
+          },
+          {
+            "label": "Proportion of crustal oxygen in mantle source (~9%)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "The ~9% figure is derived from mixing hyperbola mass balance calculations, not directly measured. Haiku did not capture this modeled quantity in the variables list at all."
+          },
+          {
+            "label": "MORB delta18O reference value (+5.7 +/- 0.2 permil)",
+            "sonnet_judgment": "cited",
+            "haiku_judgment": "unclear",
+            "agree": false,
+            "evidence": "This standard MORB reference value is cited from ref 6 (Ito et al. 1987). Haiku did not distinguish cited reference values from measured values in the sidecar."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Instrument category for radiogenic isotope analyses wrongly assigned as 'irms' instead of 'other'. Sr/Nd/Pb isotope ratios in 1993 were measured by TIMS, which maps to 'other' per the audit rules.",
+          "Radiogenic isotope ratios (87Sr/86Sr, 143Nd/144Nd, 206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb) listed as 'measured' variables when the paper explicitly states they are 'reproduced from refs 9 and 10' — these should be classified as 'cited'.",
+          "SiO2 and MgO listed as 'measured' variables when they are XRF data from prior publications (the same refs 9 and 10) and were not newly measured in this study.",
+          "Classification assigned as 'both' — this is not a valid enum value from {research/review/compilation/methods/other}. The paper is a primary research paper and should be classified as 'research'.",
+          "Modeled quantity (proportion of recycled crustal oxygen, up to 9%) not captured in variables at all — missing an important derived/modeled output of the study."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made multiple concrete errors: (1) misclassified the TIMS radiogenic isotope instrument as 'irms' instead of 'other'; (2) labeled radiogenic isotope ratios and major elements as 'measured' when the paper explicitly states they are reproduced from prior publications (refs 9 and 10) — only delta18O is newly measured in this paper; (3) used an invalid classification type 'both' instead of 'research'; (4) missed the key modeled output (% crustal oxygen). The most consequential error is treating cited radiogenic isotope data as measured, which is directly contradicted by the paper's own text.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Yang_et_al._(2007)_Sources_and_Petrogenesis_of_Late_Triassic_Dolerite_Dikes_in_t",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "sims",
+          "haiku": "noble_gas_ms",
+          "agree": false,
+          "note": "The primary geochronological instrument is the SHRIMP II (SIMS), the key novel measurement. The Haiku sidecar lists the Finnigan MAT 262 multi-collector mass spectrometer under category noble_gas_ms, but the MAT 262 is a TIMS instrument used for Rb-Sr and Sm-Nd isotopic analysis, not for noble gases. Per design rules, TIMS maps to 'other'. The Neptune MC-ICP-MS used for Hf is correctly icp_ms. For the dominant single-instrument determination, sims is most appropriate given the paper's core geochronological contribution, and the noble_gas_ms categorization for the MAT 262 is a concrete misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "87Sr/86Sr (whole-rock Sr isotope ratio)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Paper describes dissolution, ion exchange separation, and measurement on Finnigan MAT 262; Table 4 reports raw ratios for all 17 samples."
+          },
+          {
+            "label": "143Nd/144Nd (whole-rock Nd isotope ratio)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured on Finnigan MAT 262 after Sm-Nd separation; Table 4 lists raw ratios with 2-sigma errors."
+          },
+          {
+            "label": "176Hf/177Hf (whole-rock Hf isotope ratio)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Measured on ThermoElectron Neptune MC-ICP-MS after two-column Hf separation; Table 4 lists raw ratios."
+          },
+          {
+            "label": "eNd(t) and eHf(t) values",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "measured",
+            "agree": false,
+            "evidence": "The paper states these are CALCULATED at 213 Ma from the measured isotope ratios using the U-Pb zircon age; they are derived quantities, not directly measured. Sidecar records epsilon_Nd and epsilon_Hf as measured variables but they are computed from measured ratios plus the geochronological age."
+          },
+          {
+            "label": "206Pb/238U age (zircon)",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured",
+            "agree": true,
+            "evidence": "Directly measured on SHRIMP II; Table 2 reports raw ratios and calculated ages for individual zircon grains."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "research",
+          "agree": true
+        },
+        "haiku_errors_found": [
+          "Instrument misclassification: Finnigan MAT 262 multi-collector mass spectrometer categorized as noble_gas_ms. The MAT 262 is a TIMS instrument used for Rb-Sr and Sm-Nd isotopic measurements; per design rules TIMS maps to 'other', not noble_gas_ms (which is reserved for noble gas isotope measurements like He, Ar, Ne).",
+          "Variable status error: eNd(t) and eHf(t) recorded as measured variables, but these are calculated (modeled) values derived from measured isotope ratios corrected to the crystallization age of 213 Ma using decay equations; they are not directly measured instrumental outputs."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku made two concrete errors: (1) misclassified the Finnigan MAT 262 TIMS as noble_gas_ms instead of other - the MAT 262 is used for Sr and Nd isotope ratio measurements by thermal ionization, not for noble gas isotopes; (2) labeled computed epsilon values (eNd(t), eHf(t)) as measured rather than modeled - these are quantities calculated from measured isotope ratios using the decay constant and age. The instrument misclassification is the most significant error.",
+          "confidence": "high"
+        }
+      },
+      {
+        "paper_id": "Zhang_et_al._(2023)_Mantle_plume_plays_an_important_role_in_modern_seafloor_hydr",
+        "read_ok": true,
+        "instrument": {
+          "sonnet": "laser_ablation",
+          "haiku": "laser_ablation, icp_ms, noble_gas_ms (multiple instruments listed; primary is laser_ablation)",
+          "agree": true,
+          "note": "The paper uses LA-ICP-MS (GeolasPro + Agilent 7700e) and LA-MC-ICP-MS (Geolas HD + Neptune Plus) as primary tools for trace elements and Pb isotopes, plus a Helix SFT noble gas MS for He-Ar. Haiku correctly categorizes each instrument. No misclassification."
+        },
+        "variables_checked": [
+          {
+            "label": "Pb isotope ratios (206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb) in sulfides",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured - listed as variables_measured with phase=sulfide",
+            "agree": true,
+            "evidence": "Table 2 reports 30 in situ LA-MC-ICP-MS measurements on Deyin-1 sulfides."
+          },
+          {
+            "label": "3He/4He ratios in sulfides",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured - listed in variables_measured as He3_He4_RRa, phase=sulfide",
+            "agree": true,
+            "evidence": "Section 3.3 and Table 3: Helix SFT noble gas MS analyses of six Deyin-1 sulfide subsamples, values 7.1-7.9 Ra."
+          },
+          {
+            "label": "40Ar/36Ar ratios in sulfides",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured - listed in variables_measured as Ar40_Ar36, phase=sulfide",
+            "agree": true,
+            "evidence": "Table 3 reports 40Ar/36Ar of 290.4-293.3 from Helix SFT analyses of Deyin-1 sulfides."
+          },
+          {
+            "label": "Pyrite trace elements (Co, Ni, As, Zn, Cu, Pb, Se, Ag, Ba) in ppm",
+            "sonnet_judgment": "measured",
+            "haiku_judgment": "measured - all listed in variables_measured with phase=pyrite and unit=ppm",
+            "agree": true,
+            "evidence": "Table 1 reports 30-spot LA-ICP-MS analyses of six chimney layers. All analytically determined."
+          },
+          {
+            "label": "Saint Helena plume component contribution fraction (~3%)",
+            "sonnet_judgment": "modeled",
+            "haiku_judgment": "Not captured in variables_measured",
+            "agree": false,
+            "evidence": "End-member mixing calculation from Pb-He isotopes yields ~3% plume contribution (Fig. 6). Key conclusion omitted by Haiku."
+          }
+        ],
+        "classification": {
+          "sonnet": "research",
+          "haiku": "both",
+          "agree": false
+        },
+        "haiku_errors_found": [
+          "Classification 'both' is not a valid entry in the research/review/compilation/methods/other enum; the paper is clearly 'research' (original analytical study with new measurements from one chimney sample). Haiku used an internal petrology-vs-gas distinction schema instead of the standard classification.",
+          "The key modeled variable - Saint Helena plume component contribution (~3%, derived from end-member Pb-He isotope mixing calculation) - is absent from variables_measured. This is the paper's headline quantitative conclusion and is modeled, not directly measured."
+        ],
+        "overall": {
+          "verdict": "sonnet_better",
+          "reason": "Haiku's instrument identification and directly-measured variable assignments are accurate. However it made two concrete errors: (1) classification 'both' is non-standard and should be 'research'; (2) the key modeled output (~3% Saint Helena plume contribution from end-member mixing) is missing from variables_measured. These are real extraction gaps.",
+          "confidence": "high"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1687 @@
+[
+ {
+  "pid": "006f3a79-6623-ab35-34a2-35fb003aeb4f",
+  "g": [
+   "pressure",
+   "He",
+   "Ne",
+   "Ar",
+   "Kr",
+   "Xe",
+   "delta13C_CH4",
+   "delta2H_CH4",
+   "14C"
+  ],
+  "s": [
+   "He concentration",
+   "Ne concentration",
+   "Ar concentration",
+   "Kr concentration",
+   "Xe concentration",
+   "delta13C of CH4",
+   "delta2H of CH4",
+   "14C activity of CH4",
+   "noble gas fractionation factor F^x (Xe/Ar, Kr/Ar normalized to air)",
+   "3He/4He ratio",
+   "noble gas concentrations in Blake Ridge hydrates",
+   "ASW (ambient seawater) noble gas composition",
+   "container total pressure"
+  ],
+  "cls": "gas",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "mass spectrometric system for the analysis of noble gases and tritium from water samples"
+   },
+   {
+    "category": "ams",
+    "raw_verbatim": "AMS facility at Groningen"
+   }
+  ],
+  "geo": {
+   "region": "Hydrate Ridge, Cascadia Margin",
+   "country": "US",
+   "tectonic_setting": "accretionary complex"
+  }
+ },
+ {
+  "pid": "527b663c-dde7-60f7-0554-e4d175b36abf",
+  "g": [
+   "magnitude",
+   "year",
+   "depth",
+   "vertical slip rate",
+   "horizontal width",
+   "uplift",
+   "two-way travel time"
+  ],
+  "s": [
+   "vertical slip rate of active faults",
+   "anticline uplift (two-way travel time)",
+   "fault length",
+   "sedimentation rate",
+   "earthquake magnitude (Mj)",
+   "seismic profile vertical resolution",
+   "survey line total length",
+   "cumulative vertical displacement of faults (two-way travel time)"
+  ],
+  "cls": "petrology",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "xrf",
+    "raw_verbatim": "multi-beam type depth sounder"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "air gun"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "boomer"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "single channel high resolution sonar"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "GMT"
+   }
+  ],
+  "geo": {
+   "region": "Japan Sea",
+   "country": "JP",
+   "tectonic_setting": "active fault zones"
+  }
+ },
+ {
+  "pid": "Aiuppa_et_al._(2017)_Along-arc,_inter-arc_and_arc-to-arc_variations_in_volcanic_",
+  "g": [
+   "CO2/ST",
+   "H2O",
+   "SO2",
+   "H2S",
+   "S2",
+   "HCl",
+   "delta13C",
+   "Ba/La",
+   "U/Th",
+   "Sr/Nd"
+  ],
+  "s": [
+   "CO2/ST (molar ratio)",
+   "CO2/ST (molar ratio) — literature compilation",
+   "delta13C (CO2)",
+   "Ba/La (whole rock)",
+   "U/Th (whole rock)",
+   "Sr/Nd (whole rock)",
+   "CO2 flux (arc volcanic)",
+   "SO2 flux (arc volcanic)",
+   "CO2/SO2 (volcanic gas ratio)",
+   "Gas temperature (fumarole/plume)",
+   "CO2 in subducted sediments",
+   "Ba in subducted sediments",
+   "Sr in subducted sediments",
+   "CO2/ST — mean global arc gas (magmatic)",
+   "CO2/ST — scrubbing model output",
+   "CO2/S (slab melt L1–L4)",
+   "delta34S (arc magmas/gases)",
+   "H2O (mol%)",
+   "CO2 (mol%)",
+   "SO2 (mol%)",
+   "C content in limestone (assimilation model)",
+   "delta13C (limestone)"
+  ],
+  "cls": "both",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "ftir",
+    "raw_verbatim": "Fourier Transform Infra-Red spectrometry"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Multi-GAS"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "EQ3/6"
+   }
+  ],
+  "geo": {
+   "region": "Global (Arc systems)",
+   "country": null,
+   "tectonic_setting": "arc"
+  }
+ },
+ {
+  "pid": "Anderson(2021)_clumped_calibration",
+  "g": [
+   "Delta47",
+   "delta18O",
+   "delta13C",
+   "Temperature",
+   "1/T^2"
+  ],
+  "s": [
+   "Δ47 (I-CDES90°C)",
+   "δ13C (VPDB)",
+   "δ18O (VSMOW)",
+   "Formation temperature T(°C)",
+   "1/T²–Δ47 regression (calibration equation)",
+   "δ18O of precipitating fluid",
+   "long-term repeatability (1SD) of Δ47",
+   "IAEA-C1 Δ47 (internal consistency check)",
+   "18O acid fractionation factor (AFF) at 90°C",
+   "70°C 18O acid fractionation factor"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Nu Perspective dual-inlet isotope ratio mass spectrometer"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "D47crunch"
+   }
+  ],
+  "geo": {
+   "region": "Antarctica, Italy, China, USA, Spain",
+   "country": "AQ, IT, CN, US, ES",
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Arzilli_et_al._(2019)_Magma_fragmentation_in_highly_explosive_basaltic_eruptions",
+  "g": [
+   "temperature",
+   "undercooling",
+   "crystal content",
+   "viscosity",
+   "plagioclase crystal size",
+   "pyroxene crystal size",
+   "growth rate of plagioclase",
+   "growth rate of pyroxene",
+   "characteristic time",
+   "pressure",
+   "H2O content (dissolved and exsolved)",
+   "CO2 content",
+   "Na",
+   "K",
+   "Mg",
+   "Al",
+   "Fe",
+   "Mn",
+   "P",
+   "Ca",
+   "Si",
+   "Ti"
+  ],
+  "s": [
+   "Chemical composition of trachybasaltic starting glass (SiO2, TiO2, Al2O3, FeO, MnO, MgO, CaO, Na2O, K2O, P2O5)",
+   "H2O content of hydrous starting glass",
+   "Plagioclase crystal volume fraction (vol%)",
+   "Clinopyroxene crystal volume fraction (vol%)",
+   "Plagioclase crystal growth rate (Y_L3D)",
+   "Clinopyroxene crystal growth rate",
+   "Plagioclase crystal maximum length (L3D)",
+   "Clinopyroxene crystal maximum length",
+   "Undercooling (ΔT) for plagioclase growth",
+   "Undercooling (ΔT) for clinopyroxene growth",
+   "Characteristic time of crystallization (τ(c)) — measured/experimental",
+   "Cooling rate",
+   "Magma viscosity (µ) as function of depth — conduit model",
+   "Undercooling as function of conduit depth — conduit model",
+   "Syn-eruptive crystal content as function of depth — conduit model",
+   "Magma ascent rate",
+   "Likelihood of explosive eruption (%)",
+   "Sobol index for undercooling sensitivity",
+   "Fragmentation viscosity threshold",
+   "Pre-eruptive temperature of Etna and Fontana Plinian eruptions",
+   "Initial phenocryst content of basaltic Plinian eruption products",
+   "Characteristic time of crystallization (τ(c)) — effusive/mild activity"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "xrd",
+    "raw_verbatim": "X-ray microtomography"
+   },
+   {
+    "category": "ftir",
+    "raw_verbatim": "Fourier Transform Infrared spectroscopy"
+   },
+   {
+    "category": "epma",
+    "raw_verbatim": "microprobe"
+   },
+   {
+    "category": "sem",
+    "raw_verbatim": "FE-SEM"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "ImageJ"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Avizo"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "VGStudio 3.0"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Pore3D"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "DAKOTA"
+   }
+  ],
+  "geo": {
+   "region": "Etna",
+   "country": "IT",
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Baker_et_al._(2010)_An_introduction_to_the_application_of_X-ray_microtomography_",
+  "g": [
+   "crystal size distribution",
+   "pore size distribution",
+   "pore-throat size",
+   "pore-surface roughness",
+   "tortuosity",
+   "permeability",
+   "porosity",
+   "mass density",
+   "linear attenuation coefficient",
+   "X-ray energy",
+   "penetration depth",
+   "mass attenuation coefficient",
+   "Zirconium (Zr)",
+   "Cerium (Ce)",
+   "Iron (Fe)",
+   "Zirconium",
+   "Cerium"
+  ],
+  "s": [
+   "vesicle size distribution",
+   "crystal size distribution (CSD)",
+   "porosity",
+   "permeability",
+   "mass attenuation coefficient (μ/ρ)",
+   "penetration depth (1/μ)",
+   "phase volume abundance (mode, Vv)",
+   "surface area per unit volume (Sv)",
+   "spatial resolution / voxel size",
+   "bubble/vesicle diameter",
+   "crystal content",
+   "linear attenuation coefficient contrast between minerals"
+  ],
+  "cls": "petrology",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "xrd",
+    "raw_verbatim": "X-ray diffraction"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "VGStudio Max 2.0"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "COBRA Exxim"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Pore3D"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "MATLAB"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "IDL"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "3DMA"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "ITK"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "ImageJ"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Blob3D"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "DIPlib"
+   }
+  ],
+  "geo": {
+   "region": null,
+   "country": null,
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Barry_et_al._(2022)_The_Helium_and_Carbon_Isotope_Characteristics_of_the_Andean_",
+  "g": [
+   "4He/20Ne",
+   "delta13CO2",
+   "Rc/Ra",
+   "RC/RA",
+   "CO2/3He",
+   "pH",
+   "Temperature",
+   "Salinity",
+   "87Sr/86Sr",
+   "143Nd/144Nd"
+  ],
+  "s": [
+   "R/R_A (measured He isotope ratio)",
+   "R_C/R_A (atmosphere-corrected He isotope)",
+   "4He/20Ne",
+   "delta-13C (CO2)",
+   "CO2/3He",
+   "Temperature (°C)",
+   "pH",
+   "Salinity (g/L)",
+   "% mantle He",
+   "L:S:M carbon source fractions",
+   "Calcite precipitation temperature",
+   "Fraction of carbon loss (f) from calcite precipitation",
+   "3He/4He (literature compiled values)",
+   "87Sr/86Sr (mentioned for crustal contamination context)",
+   "143Nd/144Nd (mentioned for crustal contamination context)",
+   "Crustal thickness",
+   "Sediment thickness (offshore)",
+   "L/S carbon input ratio (subducting sediments)",
+   "LAB depth"
+  ],
+  "cls": "both",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Noblesse HR mass spectrometer"
+   },
+   {
+    "category": "qms",
+    "raw_verbatim": "quadrupole mass spectrometer"
+   },
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "Precision IRMS"
+   },
+   {
+    "category": "gc",
+    "raw_verbatim": "Agilent 6890N gas chromatograph"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "R Statistical software"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "ggplot2"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "ggtern"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "GeoMapApp"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "Inkscape"
+   }
+  ],
+  "geo": {
+   "region": "Andean Convergent Margin (ACM)",
+   "country": "CL, AR",
+   "tectonic_setting": "subduction zone"
+  }
+ },
+ {
+  "pid": "Bercovici_&_Karato_(2003)_whole-mantle_convection_and_the_transition_zone_water_",
+  "g": [
+   "uranium",
+   "thorium",
+   "water content",
+   "melt fraction",
+   "partition coefficient",
+   "density",
+   "temperature",
+   "pressure",
+   "water solubility",
+   "diffusion coefficient of water",
+   "rise velocity",
+   "radium-206",
+   "rubidium-87",
+   "strontium-87",
+   "samarium-143",
+   "neodymium-143",
+   "uranium-238",
+   "helium-4",
+   "helium-3",
+   "argon-40",
+   "potassium-40",
+   "lithium"
+  ],
+  "s": [
+   "water content in MORB source region",
+   "water content in OIB source region",
+   "water content in subduction zone upper mantle",
+   "water solubility in transition-zone minerals",
+   "water solubility in upper- and lower-mantle minerals",
+   "estimated transition-zone water content",
+   "bulk mantle water (planetary accretion/geochemical mass-balance)",
+   "ambient mantle upwelling velocity w0",
+   "slab descent velocity w_slab",
+   "melt fraction f required to filter incompatible elements",
+   "partition coefficient of uranium/thorium (solid/melt)",
+   "mantle plume ascent velocity w_plume",
+   "water solubility in olivine vs temperature",
+   "water solubility in ringwoodite vs temperature",
+   "wet solidus temperature at 410 km",
+   "ambient mantle temperature at 410 km",
+   "40Ar enrichment in deep mantle",
+   "4He/3He ratio (MORB vs OIB comparison)",
+   "206Pb / 204Pb",
+   "207Pb / 204Pb",
+   "water diffusivity in wadsleyite D_w (modeled range)",
+   "melt layer thickness above 410 km",
+   "heat flux from mantle plumes (fraction of total)",
+   "total mantle heat output",
+   "Archaean mantle temperature excess"
+  ],
+  "cls": "both",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "software",
+    "raw_verbatim": "theoretical model"
+   }
+  ],
+  "geo": {
+   "region": "Earth mantle",
+   "country": null,
+   "tectonic_setting": "mid-ocean ridge; intraplate hotspot"
+  }
+ },
+ {
+  "pid": "Bini_et_al._(2022)_N2,_He,_Ar_reveal_the_magmatic_signature_of_fulmarole_gases_a",
+  "g": [
+   "T",
+   "H2O",
+   "CO2",
+   "H2S",
+   "Ar",
+   "O2",
+   "N2",
+   "CH4",
+   "H2",
+   "He",
+   "CO",
+   "delta18O_H2O",
+   "deltaD_H2O",
+   "delta13C_CO2",
+   "delta18O_CO2",
+   "delta15N",
+   "40Ar/36Ar",
+   "3He/4He",
+   "4He/20Ne",
+   "N2/4He",
+   "36Ar/4He",
+   "N2/36Ar",
+   "N2/40Ar",
+   "4He/40Ar",
+   "CO2/CH4",
+   "He/CH4",
+   "He/CO2",
+   "s"
+  ],
+  "s": [
+   "T (°C) fumarole vent temperature",
+   "H2O",
+   "CO2",
+   "H2S",
+   "Ar",
+   "O2",
+   "N2",
+   "CH4",
+   "H2",
+   "He",
+   "CO",
+   "δ18O H2O",
+   "δD H2O",
+   "δ13C CO2",
+   "δ18O CO2",
+   "δ15N",
+   "40Ar/36Ar",
+   "3He/4He (Ra)",
+   "4He/20Ne",
+   "N2/4He (deep endmember)",
+   "36Ar/4He (deep endmember)",
+   "40Ar/36Ar (deep endmember)",
+   "N2/36Ar (deep endmember)",
+   "δ15N (deep endmember)",
+   "3He/4He (deep endmember)",
+   "N2/40Ar (deep endmember)",
+   "4He/40Ar (deep endmember)",
+   "N2/3He (deep endmember)",
+   "T0 hydrothermal equilibrium temperature",
+   "s fraction of vapor separated through boiling",
+   "CO2/CH4",
+   "He/CH4",
+   "He/CO2",
+   "CO2/3He",
+   "N2/4He (upper mantle, cited)",
+   "40Ar/36Ar (upper mantle, cited)",
+   "3He/4He (upper mantle, cited)",
+   "δ15N (upper mantle, cited)",
+   "δ15N (sediment endmember, cited)",
+   "40Ar/36Ar (air, cited)"
+  ],
+  "cls": "gas",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "gc",
+    "raw_verbatim": "gas chromatography (Agilent Technologies 6890 N)"
+   },
+   {
+    "category": "ms",
+    "raw_verbatim": "mass spectrometry (Thermo Finningan Delta plus XP)"
+   },
+   {
+    "category": "ic",
+    "raw_verbatim": "ion chromatography (Dionex ICS-3000)"
+   },
+   {
+    "category": "ftir",
+    "raw_verbatim": "near infrared laser analyzer (Picarro L2130-i)"
+   }
+  ],
+  "geo": {
+   "region": "Aegean Arc",
+   "country": "GR",
+   "tectonic_setting": "subduction zone"
+  }
+ },
+ {
+  "pid": "Bougault_1993_Fast_and_Slow_Spreading_Ridges",
+  "g": [
+   "Mn/CH4 ratio",
+   "manganese",
+   "methane",
+   "TDM",
+   "3He/heat ratio"
+  ],
+  "s": [
+   "CH4 concentration in seawater",
+   "Mn/CH4 ratio in seawater",
+   "TDM (total dissolved manganese)",
+   "3He/heat ratio",
+   "3He anomaly",
+   "methane concentration (seawater background)",
+   "spreading rate",
+   "microearthquake depth",
+   "axial graben depth (fast spreading)",
+   "axial valley depth (slow spreading)",
+   "pH of serpentinization fluids (Mariana forearc)"
+  ],
+  "cls": "both",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "hydrocast"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "side scan sonar synthetic aperture radar"
+   }
+  ],
+  "geo": {
+   "region": "Mid-Atlantic Ridge, East Pacific Rise",
+   "country": "None",
+   "tectonic_setting": "mid-ocean ridge"
+  }
+ },
+ {
+  "pid": "030_Passey_etal_2010",
+  "g": [
+   "Delta 47",
+   "delta 13C",
+   "delta 18O",
+   "delta 18O of water",
+   "soil temperature",
+   "mean annual temperature",
+   "mean warm season temperature",
+   "precipitation",
+   "delta 48"
+  ],
+  "s": [
+   "Delta47",
+   "delta13C (carbonate)",
+   "delta18O (carbonate)",
+   "Clumped isotope temperature (soil formation temperature)",
+   "delta18O (soil water)",
+   "Mean annual temperature (MAT)",
+   "Mean warm season temperature (MWST)",
+   "Soil temperature (in situ logged)",
+   "40Ar/39Ar ages (tuff chronology)",
+   "Burial depth",
+   "Modeled maximum burial temperature",
+   "Annual precipitation"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Thermo MAT 253 mass spectrometer"
+   },
+   {
+    "category": "gc",
+    "raw_verbatim": "Porapak-Q gas chromatograph (GC)"
+   }
+  ],
+  "geo": {
+   "region": "Turkana Basin, East Africa",
+   "country": "KE",
+   "tectonic_setting": "East African Rift System"
+  }
+ },
+ {
+  "pid": "1a9c4741-3032-7685-33e1-f22559d08af3",
+  "g": [
+   "4He/3He*",
+   "20Ne/22Ne",
+   "21Ne/22Ne",
+   "40Ar/36Ar",
+   "129Xe/130Xe",
+   "129Xe/132Xe",
+   "130Xe/132Xe",
+   "131Xe/132Xe",
+   "134Xe/132Xe",
+   "136Xe/132Xe",
+   "136Xe_Pu/136Xe_TF",
+   "129Xe*/136Xe_Pu"
+  ],
+  "s": [
+   "4He/3He",
+   "3He/4He (RA)",
+   "20Ne/22Ne",
+   "21Ne/22Ne",
+   "21Ne/22Ne(E) (mantle source)",
+   "40Ar/36Ar",
+   "40Ar/36Ar(E) (mantle source)",
+   "129Xe/130Xe",
+   "129Xe/130Xe(E) (mantle source)",
+   "129Xe/132Xe(E) (mantle source)",
+   "130Xe/132Xe (mantle source)",
+   "131Xe/132Xe (mantle source)",
+   "134Xe/132Xe (mantle source)",
+   "136Xe/132Xe (mantle source)",
+   "136Xe/130Xe",
+   "129Xe/136Xe",
+   "130Xe/136Xe",
+   "3He/130Xe",
+   "4He/40Ar* (elemental ratio)",
+   "4He abundance",
+   "40Ar abundance",
+   "130Xe abundance",
+   "20Ne abundance",
+   "fraction of 132Xe from regassed atmosphere",
+   "fraction of 132Xe from initial mantle",
+   "fraction of 132Xe from Pu fission",
+   "fraction of 132Xe from U fission",
+   "129Xe*/136XePu",
+   "136XePu/136XeTF"
+  ],
+  "cls": "gas",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Nu Noblesse 1F3M"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "crusher"
+   }
+  ],
+  "geo": {}
+ },
+ {
+  "pid": "Akbari_et_al.,_2023,_A_robust_discrimination_scheme_for_ocean_island_basalts",
+  "g": [
+   "Ce/Rb",
+   "Tb/La",
+   "Ba/Nb",
+   "Sr87/Sr86",
+   "143Nd/144Nd",
+   "206Pb/204Pb",
+   "207Pb/204Pb",
+   "208Pb/204Pb",
+   "epsilon Hf",
+   "mu (238U/204Pb)",
+   "MgO",
+   "SiO2",
+   "LOI",
+   "Ba",
+   "Rb",
+   "Nb",
+   "La",
+   "Ce",
+   "Tb",
+   "Ta",
+   "Sr",
+   "Nd",
+   "Hf",
+   "Pb",
+   "U",
+   "Sm",
+   "Yb",
+   "Gd",
+   "Dy",
+   "Y",
+   "Ti",
+   "Pr",
+   "P",
+   "Zr",
+   "K",
+   "Mn",
+   "Fe",
+   "Ni",
+   "Ca"
+  ],
+  "s": [
+   "Ce/Rb",
+   "(Tb/La)*100",
+   "(Ba/Nb)/5",
+   "87Sr/86Sr",
+   "143Nd/144Nd",
+   "206Pb/204Pb",
+   "207Pb/204Pb",
+   "208Pb/204Pb",
+   "Ba",
+   "Rb",
+   "Nb",
+   "La",
+   "Ce",
+   "Tb",
+   "(La/Sm)N",
+   "(Tb/Yb)N",
+   "(Sm/Yb)N",
+   "Nb/La",
+   "Ba/Rb",
+   "MgO",
+   "SiO2",
+   "LOI",
+   "238U/204Pb (mu)",
+   "Mn/Fe (olivine)",
+   "Mn/Zn (olivine)",
+   "Zn/Fe (olivine)",
+   "Ni (olivine)",
+   "Fe/Mn"
+  ],
+  "cls": "petrology",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "software",
+    "raw_verbatim": "GEOROC"
+   }
+  ],
+  "geo": {}
+ },
+ {
+  "pid": "Amidon_&_Farley_(2012)_Cosmogenic_3He_and_21Ne_dating_of_biotite_and_hornblende",
+  "g": [
+   "3He",
+   "4He",
+   "3He/4He (Ra)",
+   "21Ne",
+   "20Ne",
+   "22Ne",
+   "21Ne/20Ne",
+   "22Ne/20Ne",
+   "21Ne_x",
+   "22Ne_x",
+   "Li",
+   "F",
+   "O"
+  ],
+  "s": [
+   "3He (hornblende)",
+   "4He (hornblende)",
+   "3He/4He (Ra) hornblende",
+   "3He (biotite)",
+   "4He (biotite)",
+   "3He/4He (Ra) biotite",
+   "20Ne (hornblende)",
+   "21Ne (hornblende)",
+   "22Ne (hornblende)",
+   "21Ne/20Ne (hornblende)",
+   "22Ne/20Ne (hornblende)",
+   "21Ne_x (hornblende)",
+   "22Ne_x (hornblende)",
+   "20Ne (biotite)",
+   "21Ne (biotite)",
+   "22Ne (biotite)",
+   "21Ne/20Ne (biotite)",
+   "22Ne/20Ne (biotite)",
+   "21Ne_x (biotite)",
+   "22Ne_x (biotite)",
+   "Li concentration (hornblende, Bolivia)",
+   "Li concentration (biotite, Bolivia)",
+   "Li concentration (hornblende, other sites)",
+   "21Ne_sp/21Ne_qtz ratio (hornblende)",
+   "21Ne_sp/21Ne_qtz ratio (biotite)",
+   "21Ne spallation production rate (hornblende)",
+   "21Ne spallation production rate (biotite)",
+   "21Ne spallation production rate (quartz)",
+   "3He_nuc (hornblende)",
+   "3He spallation production rate (hornblende)",
+   "3He_cn production rate (hornblende)",
+   "21Ne_nuc (hornblende)",
+   "21Ne_nuc (biotite)",
+   "22Ne_F/21Ne_0 (Durango apatite)",
+   "sigma_F/sigma_O",
+   "3He_m,hbl/3He_m,ap ratio",
+   "3He_bio/3He_ap ratio",
+   "erosion rate",
+   "attenuation length scale (3He)",
+   "attenuation length scale (21Ne)",
+   "apparent diffusivity D/a2 (biotite He)"
+  ],
+  "cls": "both",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "MAP 215-50 mass spectrometer"
+   },
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "GV Helix-SFT split tube mass spectrometer"
+   },
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "Agilent 7500 ICP-MS"
+   },
+   {
+    "category": "epma",
+    "raw_verbatim": "JEOL JXA-8200 electron microprobe"
+   }
+  ],
+  "geo": {
+   "region": "Bolivian Altiplano",
+   "country": "BO",
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Anufiev_and_Botenkov_(2007)_Ferromanganese_nodules_of_the_Baltic_Sea-_Composition,_helium_isotopes,_and_growth_rate_",
+  "g": [
+   "Mn",
+   "Fe",
+   "Si",
+   "Al",
+   "Na",
+   "Mg",
+   "Ti",
+   "K",
+   "V",
+   "Cu",
+   "Ni",
+   "Zn",
+   "P",
+   "Ba",
+   "Pb",
+   "He4",
+   "He3",
+   "He3/He4",
+   "He3_s",
+   "growth rate",
+   "age"
+  ],
+  "s": [
+   "Mn",
+   "Fe",
+   "Si",
+   "Al",
+   "Na",
+   "Mg",
+   "Ti",
+   "K",
+   "V",
+   "Cu",
+   "Ni",
+   "Zn",
+   "Pb",
+   "Ba",
+   "4He",
+   "3He",
+   "3He/4He",
+   "3He/4He in eolian dust",
+   "3He_s (solar 3He component)",
+   "FMN growth rate (r)",
+   "FMN age (t)",
+   "FMN growth rate (diffusion-sorption model)",
+   "Mn/Fe ratio",
+   "Western Baltic Sea FMN: Mn, Fe, Al, Mg, Cu, Zn",
+   "3He/4He (terrigenous, literature range)",
+   "3He/4He (solar wind)",
+   "3He flux F from Pacific",
+   "Western Baltic Sea FMN growth rate",
+   "Mn diffusion constant D",
+   "Mn concentration in interstitial water (C)"
+  ],
+  "cls": "both",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "ICP-MS spectrometer (PC 1000)"
+   },
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "high-resolution magnetic resonance mass spectrometer (MRMS)"
+   }
+  ],
+  "geo": {
+   "region": "Gulf of Finland",
+   "country": "RU",
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Bajnai_et_al_2020_Dual_Clumped_Isotopes_Nat_Comm",
+  "g": [
+   "delta18O",
+   "delta13C",
+   "Delta47 (CDES90)",
+   "Delta48 (CDES90)",
+   "Delta63",
+   "Delta64",
+   "Delta49 (raw)",
+   "temperature"
+  ],
+  "s": [
+   "Δ47 (CDES90)",
+   "Δ48 (CDES90)",
+   "δ13C carbonate",
+   "δ18O carbonate",
+   "δ18O water",
+   "carbonate formation temperature (dual clumped isotope thermometry)",
+   "acid fractionation factor Δ63–Δ47",
+   "acid fractionation factor Δ64–Δ48",
+   "Δ47 (CDES90) of ETH 1, ETH 2, ETH 3 reference materials",
+   "equilibrium Δ47 vs temperature relationship (Equation 1)",
+   "equilibrium Δ48 vs temperature relationship (Equation 2)",
+   "extent of Δ47 disequilibrium",
+   "extent of Δ48 disequilibrium"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "isotope ratio mass spectrometer"
+   }
+  ],
+  "geo": {}
+ },
+ {
+  "pid": "Bar-Matthews(1996)_karstic_Mediterranean_cave",
+  "g": [
+   "delta_18O (SMOW)",
+   "delta_13C (PDB)",
+   "DIC",
+   "Ca2+",
+   "HCO3-",
+   "pH",
+   "temperature",
+   "annual rainfall (mm)"
+  ],
+  "s": [
+   "δ¹⁸O of cave waters (SMOW)",
+   "δ¹³C of dissolved inorganic carbon (DIC) in cave waters (PDB)",
+   "DIC concentration of cave waters",
+   "δ¹⁸O of present-day LMC speleothems (PDB)",
+   "δ¹³C of present-day LMC speleothems (PDB)",
+   "δ¹⁸O of fossil LMC speleothems (PDB)",
+   "δ¹³C of fossil LMC speleothems (PDB)",
+   "δ¹⁸O of rainfall (SMOW)",
+   "Annual rainfall amount",
+   "Cave temperature",
+   "Cave pCO2",
+   "Cave relative humidity",
+   "Isotopic temperature from calcite-water equilibrium",
+   "Effective carbon isotope fractionation factor (1000 ln α) from Rayleigh distillation",
+   "Initial δ¹³C of DIC (δ¹³C₀) from Rayleigh fit",
+   "δ¹³C of C3-type vegetation",
+   "δ¹³C of C4-type vegetation",
+   "δ¹³C of dolomite host rock",
+   "δ¹⁸O of dolomite host rock"
+  ],
+  "cls": "both",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "mass-spectrometer",
+    "raw_verbatim": "VG SIRA-II mass-spectrometer"
+   },
+   {
+    "category": "xrd",
+    "raw_verbatim": "Phillips XRD"
+   },
+   {
+    "category": "sem",
+    "raw_verbatim": "Jeol 840 Scanning Electron Microscope (SEM)"
+   },
+   {
+    "category": "edx",
+    "raw_verbatim": "Link 10000 Energy Dispersive (EDS) system"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "VG Isocarb system"
+   }
+  ],
+  "geo": {
+   "region": "Eastern Mediterranean",
+   "country": "IL",
+   "tectonic_setting": null
+  }
+ },
+ {
+  "pid": "Basu_et_al._(1991)_Major_element,_REE,_Pb,_Nd_and_Sr_isotopic_geochemistry_of_Ce",
+  "g": [
+   "SiO2",
+   "TiO2",
+   "Al2O3",
+   "Cr2O3",
+   "Fe2O3",
+   "FeO",
+   "MnO",
+   "MgO",
+   "CaO",
+   "Na2O",
+   "K2O",
+   "P2O5",
+   "H2O",
+   "H2O+",
+   "CO2",
+   "LOI",
+   "Q",
+   "O",
+   "Ne",
+   "Or",
+   "Ab",
+   "An",
+   "Ac",
+   "Ns",
+   "Di",
+   "Hy",
+   "Ol",
+   "Mt",
+   "Hm",
+   "Il",
+   "Ap",
+   "Pf",
+   "La",
+   "Ce",
+   "Nd",
+   "Sm",
+   "Eu",
+   "Tb",
+   "Yb",
+   "Lu",
+   "Gd",
+   "Rb",
+   "Sr",
+   "U",
+   "Th",
+   "Pb",
+   "Sm/Nd",
+   "147Sm/144Nd",
+   "143Nd/144Nd",
+   "epsilon Nd",
+   "87Rb/86Sr",
+   "87Sr/86Sr",
+   "206Pb/204Pb",
+   "207Pb/204Pb",
+   "208Pb/204Pb",
+   "238U/204Pb",
+   "232Th/238U",
+   "La/Sm",
+   "La/Yb",
+   "La/Lu",
+   "T147Sm/144Nd",
+   "delta 8/4Pb",
+   "delta 7/4Pb"
+  ],
+  "s": [
+   "SiO2",
+   "TiO2",
+   "Al2O3",
+   "Fe2O3",
+   "FeO",
+   "MnO",
+   "MgO",
+   "CaO",
+   "Na2O",
+   "K2O",
+   "P2O5",
+   "LOI",
+   "CIPW norms",
+   "La",
+   "Ce",
+   "Nd",
+   "Sm",
+   "Eu",
+   "Tb",
+   "Yb",
+   "Lu",
+   "Rb",
+   "Sr",
+   "Pb",
+   "U",
+   "Th",
+   "147Sm/144Nd",
+   "143Nd/144Nd",
+   "εNd",
+   "87Rb/86Sr",
+   "87Sr/86Sr",
+   "εSr",
+   "206Pb/204Pb",
+   "207Pb/204Pb",
+   "208Pb/204Pb",
+   "238U/204Pb",
+   "232Th/238U",
+   "(La/Yb)N",
+   "(La/Sm)N",
+   "Delta 8/4 Pb",
+   "Delta 7/4 Pb",
+   "Chondrite-normalized REE patterns",
+   "mantle component fields (EMI, EMII, HIMU, DMM, MORB)"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "xrf",
+    "raw_verbatim": "X-ray fluorescence"
+   },
+   {
+    "category": "inaa",
+    "raw_verbatim": "instrumental neutron activation (INA)"
+   },
+   {
+    "category": "mass_spectrometer",
+    "raw_verbatim": "NBS tandem-type mass spectrometer"
+   },
+   {
+    "category": "mass_spectrometer",
+    "raw_verbatim": "V.G. Micromass 54R mass spectrometer"
+   }
+  ],
+  "geo": {
+   "region": "eastern China, northeastern China",
+   "country": "CN",
+   "tectonic_setting": "continental rift system"
+  }
+ },
+ {
+  "pid": "Bemis,_2012,_Diffuse_Flow_On_and_Around_Hydrothermal_Vents_at_Mid-Ocean_Ridges",
+  "g": [
+   "temperature",
+   "diffuse flow velocity",
+   "area of diffuse flow",
+   "total diffuse heat output",
+   "ratio of diffuse to total heat flux",
+   "Mg",
+   "Si",
+   "H2S",
+   "dissolved organic carbon (DOC)",
+   "CH4",
+   "CO2",
+   "H2",
+   "Fe",
+   "mass flux Q1",
+   "mass flux Q2",
+   "mass flux Q3",
+   "mass flux Q4",
+   "mixing ratio xi"
+  ],
+  "s": [
+   "Diffuse flow temperature",
+   "Black smoker temperature",
+   "Diffuse flow velocity",
+   "Total diffuse heat output",
+   "Ratio of diffuse to total heat flux",
+   "Mg concentration in diffuse vent fluid",
+   "Mg concentration in high-temperature vent fluid",
+   "Mg concentration in seawater",
+   "Mean diffuse heat output (vent-field scale)",
+   "Mean high-temperature heat output (vent-field scale)",
+   "Mean diffuse vent temperature",
+   "Mean high-temperature vent temperature",
+   "Q1 (deep high-temperature mass flow rate)",
+   "Q2 (shallow seawater mass flow rate)",
+   "Q3 (focused discharge mass flux)",
+   "Q4 (diffuse discharge mass flux)",
+   "Mixing ratio ξ (high-temperature fluid fraction in diffuse flow)",
+   "Q1* (hypothetical all-high-T mass flux)",
+   "DOC concentration in focused vent fluid (MEF)",
+   "DOC concentration in diffuse vent fluid (MEF)",
+   "DOC flux from high-temperature vents (MEF)",
+   "DOC flux from diffuse vents (MEF)",
+   "Fe concentration in high-temperature vent fluid (EPR 9°50'N)",
+   "Fe concentration in diffuse vent fluid (EPR 9°50'N)",
+   "Fe flux from high-temperature vents (EPR)",
+   "Fe flux from diffuse-flow vents (EPR)",
+   "H2S flux at diffuse-flow vents (EPR 9°50'N)",
+   "CH4 geochemical flux (Endeavour diffuse vents)",
+   "CO2 geochemical flux (Endeavour diffuse vents)",
+   "H2 geochemical flux (Endeavour diffuse vents)",
+   "Area of diffuse flow",
+   "Acoustic decorrelation (sonar shimmering index)"
+  ],
+  "cls": "both",
+  "mnm": false,
+  "instr": [
+   {
+    "category": "other",
+    "raw_verbatim": "cup anemometer"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "sonar-based and remote-sensing technique"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "thermistor flow sensor"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "modular acoustic velocity sensors (MAVs)"
+   },
+   {
+    "category": "other",
+    "raw_verbatim": "particle image velocimetry"
+   }
+  ],
+  "geo": {
+   "region": "mid-ocean ridge",
+   "country": null,
+   "tectonic_setting": "hydrothermal vent"
+  }
+ },
+ {
+  "pid": "Bian_et_al._(2023)_Circum-cratonic_mantle_archives_the_cumulative_effects_of_plu",
+  "g": [
+   "Mg# in Ol",
+   "Olivine modal %",
+   "Orthopyroxene modal %",
+   "Clinopyroxene modal %",
+   "Spinel modal %",
+   "T_BK",
+   "T_Wells",
+   "T_Nims",
+   "T_REE",
+   "P_Mercier",
+   "CaO",
+   "MgO",
+   "TiO2",
+   "Na2O",
+   "Al2O3",
+   "MnO",
+   "Cr2O3",
+   "Cr# in Sp",
+   "S",
+   "Fe",
+   "Co",
+   "Ni",
+   "Cu",
+   "Ba",
+   "Th",
+   "Nb",
+   "Ta",
+   "La",
+   "Ce",
+   "Pr",
+   "Sr",
+   "Nd",
+   "Zr",
+   "Hf",
+   "Sm",
+   "Eu",
+   "Ti",
+   "Gd",
+   "Tb",
+   "Dy",
+   "Y",
+   "Ho",
+   "Er",
+   "Tm",
+   "Yb",
+   "Lu",
+   "La/Yb_N",
+   "Ti/Eu",
+   "Nb/Yb",
+   "87Sr/86Sr",
+   "Re",
+   "Os",
+   "187Os/188Os",
+   "187Re/188Os",
+   "187Os/188Os_initial",
+   "Ru",
+   "Pd",
+   "Ir",
+   "Pt",
+   "Os/Ir_N",
+   "Pd/Ir_N",
+   "T_RD",
+   "T_MA"
+  ],
+  "s": [
+   "Mg# in Ol",
+   "CaO in olivine",
+   "Al2O3 in olivine",
+   "MnO in olivine",
+   "Mg# in Opx",
+   "TiO2 in Opx",
+   "Na2O in Opx",
+   "Mg# in Cpx",
+   "Al2O3 in Cpx",
+   "TiO2 in Cpx",
+   "CaO in Cpx",
+   "Al2O3 in spinel",
+   "Cr2O3 in spinel",
+   "TiO2 in spinel",
+   "Cr# in spinel",
+   "sulfide major element compositions (S, Fe, Co, Ni, Cu)",
+   "trace elements in clinopyroxene (REE, LILE, HFSE)",
+   "trace elements in orthopyroxene (REE)",
+   "Ti/Eu in clinopyroxene",
+   "(La/Yb)N in clinopyroxene",
+   "Nb/Yb in clinopyroxene",
+   "87Sr/86Sr in clinopyroxene",
+   "Sr content in clinopyroxene",
+   "Re",
+   "Os",
+   "187Os/188Os",
+   "187Re/188Os",
+   "187Os/188Os initial (187Os/188Os_i)",
+   "TRD eruption model age",
+   "TMA model age",
+   "Ru",
+   "Pd",
+   "Ir",
+   "Pt",
+   "Al2O3 whole rock",
+   "whole-rock CaO",
+   "whole-rock MgO",
+   "whole-rock TiO2",
+   "equilibration temperature TBK90",
+   "equilibration temperature TWells",
+   "equilibration temperature TNims",
+   "TREE (two-pyroxene REE thermometer)",
+   "PMercier pressure",
+   "mineral modal abundances (Ol, Opx, Cpx, Sp)",
+   "187Os/188Os Tuoyun peridotites",
+   "187Os/188Os and PGE Xikeer peridotites",
+   "(Os/Ir)N",
+   "(Pd/Ir)N"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "epma",
+    "raw_verbatim": "JEOL JXA-8230 electron probe microanalyzer (EPMA)"
+   },
+   {
+    "category": "laser_ablation",
+    "raw_verbatim": "193 nm RESOLUTION S-155 laser-ablation system"
+   },
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "Thermo ICAP RQ inductively coupled plasma mass spectrometer (LA-ICP-MS)"
+   },
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Neptune Plus MC-ICP-MS"
+   },
+   {
+    "category": "noble_gas_ms",
+    "raw_verbatim": "Geolas HD excimer ArF laser ablation system"
+   },
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "Plasma Quant inductively-coupled plasma mass spectrometry (ICP-MS)"
+   },
+   {
+    "category": "icp_ms",
+    "raw_verbatim": "Thermo-Scientific XSERIES"
+   }
+  ],
+  "geo": {
+   "region": "NW Tarim Craton",
+   "country": "CN",
+   "tectonic_setting": "cratonic"
+  }
+ },
+ {
+  "pid": "Birner_et_al._(2024)_Deep,_hot,_ancient_melting_recorded_by_ultralow_oxygen_fugacity_in_peridotites",
+  "g": [
+   "fO2",
+   "log(fO2)",
+   "delta QFM",
+   "delta FFM",
+   "Spinel Cr#",
+   "Spinel Mg#",
+   "Fe3+/Sigma Fe",
+   "Fe2O3",
+   "CaO",
+   "FeO",
+   "MgO",
+   "Al2O3",
+   "Cr2O3",
+   "SiO2",
+   "HREE",
+   "T",
+   "P",
+   "F"
+  ],
+  "s": [
+   "fO2 (log fO2, ΔQFM)",
+   "fO2 (log fO2, ΔFFM)",
+   "spinel Fe3+/ΣFe",
+   "spinel Cr#",
+   "spinel Mg#",
+   "olivine Fo#",
+   "X_Fe^M1 * X_Fe^M2 (orthopyroxene)",
+   "TiO2 in spinel",
+   "Temperature (T, °C) from olivine-spinel thermometry",
+   "Yb in orthopyroxene",
+   "bulk Fe3+/ΣFe (mantle/residue)",
+   "melt fraction F",
+   "D_Fe3+ (bulk residue/liquid partition coefficient)",
+   "bulk Fe2O3 (wt%, residue)",
+   "spinel Fe3+/ΣFe (SWIR peridotites)",
+   "fO2 (global ridge peridotite dataset)",
+   "potential temperature Tp",
+   "pressure of equilibration (P)"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "epma",
+    "raw_verbatim": "microprobe"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "pMELTS"
+   },
+   {
+    "category": "software",
+    "raw_verbatim": "alphaMELTS"
+   }
+  ],
+  "geo": {
+   "region": "Gakkel Ridge, East Pacific Rise, Southwest Indian Ridge",
+   "country": null,
+   "tectonic_setting": "mid-ocean ridge"
+  }
+ },
+ {
+  "pid": "Boroughs_et_al._(2005)_Large-volume,_low-δ18O_rhyolites_of_the_central_Snake_Riv",
+  "g": [
+   "delta18O_feldspar",
+   "delta18O_quartz",
+   "SiO2",
+   "FeO*",
+   "HFSE",
+   "Ga/Al",
+   "Rb",
+   "Th",
+   "Al",
+   "Ca",
+   "Sr",
+   "K/Na",
+   "Delta18O_quartz-feldspar"
+  ],
+  "s": [
+   "δ18O feldspar",
+   "δ18O quartz",
+   "Δ18O quartz-feldspar",
+   "SiO2",
+   "FeO*",
+   "Ga/Al",
+   "Rb",
+   "Th",
+   "magmatic temperature",
+   "volume (km3)",
+   "δ18O feldspar (Idaho Batholith altered rocks)",
+   "δ18O whole-rock (Idaho Batholith)",
+   "K/Na",
+   "percent assimilant",
+   "age (Ma)"
+  ],
+  "cls": "petrology",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "other",
+    "raw_verbatim": "not specified"
+   }
+  ],
+  "geo": {
+   "region": "Snake River Plain",
+   "country": "US",
+   "tectonic_setting": "extensional graben"
+  }
+ },
+ {
+  "pid": "Brauer_et_al._(2013)_Indications_for_the_existence_of_different_magmatic_reservo",
+  "g": [
+   "CO2 concentration",
+   "He concentration",
+   "H2 concentration",
+   "O2 concentration",
+   "N2 concentration",
+   "Ar concentration",
+   "CH4 concentration",
+   "delta 13C",
+   "3He/4He ratio",
+   "4He/20Ne ratio",
+   "40Ar/36Ar ratio",
+   "20Ne/22Ne ratio",
+   "21Ne/22Ne ratio",
+   "delta 15N",
+   "CO2/3He ratio",
+   "T (temperature)",
+   "Cond. (conductivity)",
+   "pH value"
+  ],
+  "s": [
+   "CO2 (vol.%)",
+   "He (ppmv)",
+   "N2 (vol.%)",
+   "O2 (vol.%)",
+   "Ar (vol.%)",
+   "CH4 (vol.%)",
+   "H2 (ppmv)",
+   "delta13C (CO2)",
+   "3He/4He (Ra)",
+   "4He/20Ne",
+   "delta15N (N2)",
+   "40Ar/36Ar",
+   "20Ne/22Ne",
+   "21Ne/22Ne",
+   "CO2/3He",
+   "4He/40Ar*",
+   "CO2/40Ar*",
+   "N2/36Ar",
+   "3He/4He MORB range (6.5-9.5 Ra)",
+   "20Ne/22Ne MORB (>=12.5)",
+   "21Ne/22Ne MORB (>=0.07)",
+   "40Ar/36Ar MORB (up to 40,000)",
+   "delta13C MORB (-5.2 ± 0.7‰)",
+   "delta15N MORB (-3.3 ± 1.0‰)",
+   "CO2/3He MORB (~2e9)",
+   "3He/4He SCLM (6.5 Ra assumed endmember)",
+   "water temperature (°C)",
+   "electrical conductivity (µS/cm)",
+   "pH value"
+  ],
+  "cls": "gas",
+  "mnm": true,
+  "instr": [
+   {
+    "category": "gc",
+    "raw_verbatim": "gas chromatography"
+   },
+   {
+    "category": "mass_spectrometer",
+    "raw_verbatim": "Finnigan MAT Delta-S mass spectrometer"
+   },
+   {
+    "category": "mass_spectrometer",
+    "raw_verbatim": "VG5400 mass spectrometer"
+   }
+  ],
+  "geo": {
+   "region": "Eifel",
+   "country": "DE",
+   "tectonic_setting": "European Cenozoic Rift System"
+  }
+ }
+]

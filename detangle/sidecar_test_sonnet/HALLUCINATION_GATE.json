@@ -1,0 +1,4831 @@
+{
+ "summary": {
+  "sidecars_scanned": 3948,
+  "by_extraction_model": {
+   "claude-haiku-4-5": 3388,
+   "claude-sonnet-4-5": 560
+  },
+  "no_md_found": 35,
+  "total_measured_vars": 40337,
+  "gateable_iso_vars": 15510,
+  "flagged_iso_vars_absent": 862,
+  "flagged_iso_var_rate": 0.0556,
+  "REAL_hallucination_suspect_papers": 468,
+  "real_suspect_rate": 0.1185,
+  "real_suspect_by_model": {
+   "claude-haiku-4-5": 431,
+   "claude-sonnet-4-5": 37
+  },
+  "md_ocr_suspect_papers(separate)": 25
+ },
+ "hallucination_suspect": [
+  {
+   "stem": "Klemperer,_2022,_Limited_underthrusting_of_India_below_Tibet_3He4He_analysis_of_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 9,
+   "n_gateable": 14,
+   "missing_labels": [
+    "21Ne/22Ne",
+    "38Ar/36Ar",
+    "40Ar/36Ar",
+    "[22Ne] concentration",
+    "[36Ar] concentration",
+    "CO2 concentration",
+    "N2 concentration",
+    "O2 concentration",
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Kuritani_et_al._(2021)_Tracing_the_subducting_Pacfiic_slab_to_the_mantle_transit",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 9,
+   "missing_labels": [
+    "CO₂ content",
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd",
+    "²⁰⁶Pb/²⁰⁴Pb",
+    "²⁰⁷Pb/²⁰⁴Pb",
+    "²⁰⁸Pb/²⁰⁴Pb"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2019)_Thinning_and_destruction_of_the_lithospheric_mantle_root_benea",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 9,
+   "missing_labels": [
+    "4He/20Ne",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "H2O content (ppm) in peridotites"
+   ]
+  },
+  {
+   "stem": "1_20250825172743784",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 5,
+   "n_gateable": 10,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "δ18O",
+    "N2/Ar"
+   ]
+  },
+  {
+   "stem": "Barry_et_al._(2019)_Helium,_inorganic_and_organic_carbon_isotopes_of_fluids_and_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 10,
+   "missing_labels": [
+    "21Ne/22Ne",
+    "delta 13C (delta 13C-VPDB) of dissolved inorganic carbon (DIC)",
+    "delta 13C (delta 13C-VPDB) of dissolved organic carbon (DOC)",
+    "delta 13C (delta 13C-VPDB) of gas phase CO2",
+    "delta 13C of total organic carbon (TOC) in sediments"
+   ]
+  },
+  {
+   "stem": "Brounce_et_al._(2021)_Covariation_of_Slab_Tracers,_Volatiles,_and_Oxidation_Duri",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd",
+    "²⁰⁶Pb/²⁰⁴Pb",
+    "²⁰⁷Pb/²⁰⁴Pb",
+    "²⁰⁸Pb/²⁰⁴Pb"
+   ]
+  },
+  {
+   "stem": "Che_et_al._(2024)_Miocene_Alkaline_Basaltic_Magmatism_in_Northeastern_Tibetan_Plateau_Implications_for_Mantle_Evolution_and_Plateau_Outward_Growth",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 12,
+   "missing_labels": [
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "δ25Mg",
+    "δ26Mg"
+   ]
+  },
+  {
+   "stem": "Chung_et_al._(1995)_Miocene_basalts_in_northwestern_Taiwan;_Evidence_for_EM-type",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 10,
+   "missing_labels": [
+    "Al2O3",
+    "Fe2O3",
+    "Na2O",
+    "K2O",
+    "P2O5"
+   ]
+  },
+  {
+   "stem": "Garcia_et_al._(2000)_Magmatic_Processes_During_the_Prolonged_Pu’u_’O’o_Eruption_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Gibson_&_Richards_(2018)_Delivery_of_deep-sourced,_volatile-rich_plume_material_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "d18O",
+    "87Sr/86Sr",
+    "206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb",
+    "H2O/K2O ratio",
+    "Cl/Nb and Cl/K2O ratios"
+   ]
+  },
+  {
+   "stem": "Hirayama,_2020,_Estimation_of_water_seepage_rate_in_the_active_crater_lake_syste",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "Mg2+ concentration",
+    "Ca2+ concentration",
+    "Al3+ concentration",
+    "Mn2+ concentration",
+    "SO42− concentration"
+   ]
+  },
+  {
+   "stem": "Lee,_2011,_Strontium_isotope_geochemistry_and_its_geochemical_implication_from_h",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "Ca2+ concentration",
+    "Mg2+ concentration",
+    "SiO2 concentration",
+    "SO42- concentration",
+    "40Ar/36Ar ratio"
+   ]
+  },
+  {
+   "stem": "Proskurowski_et_al._(2008)_Abiogenic_hydrocarbon_production_at_Lost_City_hydroth",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 13,
+   "missing_labels": [
+    "14C content of CH₄",
+    "H₂ concentration",
+    "CO₂ concentration",
+    "3He concentration",
+    "CO₂/3He ratio"
+   ]
+  },
+  {
+   "stem": "Vigouroux_et_al._(2012)_The_sources_of_volatile_and_fluid-mobile_elements_in_the",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 9,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2021)_Subduction_erosion_and_crustal_material_recycling_indicated_b",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "δ18O zircon"
+   ]
+  },
+  {
+   "stem": "Asamori,_2010,_Electrical_resistivity_structure_and_helium_isotopes_around_Naruk",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 7,
+   "missing_labels": [
+    "CO2 concentration",
+    "N2 concentration",
+    "CH4 concentration",
+    "O2 concentration"
+   ]
+  },
+  {
+   "stem": "Chiodini_et_al._(2012)_fumarole_gas_geochemistry_on_the_origin_of_hydrothermal_f",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 12,
+   "missing_labels": [
+    "δ¹⁸O of water",
+    "δ¹⁸O of CO₂",
+    "δ¹⁵N of N₂",
+    "H₂S concentration"
+   ]
+  },
+  {
+   "stem": "Dodson_et_al._(1998)_Helium_isotopes_in_lithospheric_mantle;_evidence_from_terti",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 11,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne",
+    "143Nd/144Nd (reported as εNd)",
+    "22Ne abundance"
+   ]
+  },
+  {
+   "stem": "Dogan_et_al.,_2009,_Adjacent_releases_of_mantle_helium_and_soil_CO2_from_active_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 10,
+   "missing_labels": [
+    "CO2 efflux",
+    "21Ne/22Ne",
+    "40Ar/36Ar",
+    "38Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Gurenko_et_al._(2011)_Oxygen_isotope_heterogeneity_of_the_mantle_beneath_the_Can",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 6,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Haller_et_al._(2020)_Cenozoic_intraplate_magmatism_of_central_Patagonia,_Argenti",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 4,
+   "n_gateable": 6,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Hanyu_et_al._(2014)_Supplementary_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 4,
+   "n_gateable": 12,
+   "missing_labels": [
+    "176Hf/177Hf",
+    "3He/4He (R/Ra)",
+    "20Ne/22Ne",
+    "K2O"
+   ]
+  },
+  {
+   "stem": "Ishibashi_et_al._(2014)_Diversity_of_fluid_geochemistry_by_processes_during_flui",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 16,
+   "missing_labels": [
+    "H₂S concentration",
+    "NH₄⁺ concentration",
+    "SO₄²⁻ concentration",
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Jenner_et_al._(2012)_Chalcophile_element_systematics_in_volcanic_glasses_from_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 11,
+   "missing_labels": [
+    "δ18O",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Minissale_et_al_(2000)_Fluid_geochemical_transect_in_N_Apennines_(central-northe",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 13,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne",
+    "40Ar/36Ar",
+    "δ15N in N2"
+   ]
+  },
+  {
+   "stem": "Tang_et_al._(2021)_The_origin_of_volatiles_in_the_Emeishan_large_igneous_provinc",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 17,
+   "missing_labels": [
+    "δ¹³C of CO₂",
+    "δ¹³C of CH₄",
+    "H₂O contents",
+    "H₂S contents"
+   ]
+  },
+  {
+   "stem": "Welhan,_1979,_Methane_and_hydrogen_in_East_Pacific_Rise_hydrothermal_fluids",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 6,
+   "missing_labels": [
+    "³He/⁴He ratio",
+    "⁴He/²⁰Ne ratio",
+    "H₂ concentration",
+    "N₂ concentration"
+   ]
+  },
+  {
+   "stem": "장명훈_&_최희복_(2013)_제주산_현무암의_콘크리트용_골재_사용을_위한_품질_특성_평가",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 7,
+   "missing_labels": [
+    "SiO2 content",
+    "TiO2 content",
+    "Na2O content",
+    "K2O content"
+   ]
+  },
+  {
+   "stem": "006f3a79-6623-ab35-34a2-35fb003aeb4f",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "²⁰Ne concentrations",
+    "⁴⁰Ar/³⁶Ar",
+    "δ¹³C of CH₄"
+   ]
+  },
+  {
+   "stem": "Affek(2025)_suppl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "238U",
+    "232Th",
+    "230Th/238U activity"
+   ]
+  },
+  {
+   "stem": "Diehl_et_al._(2026)_Comm_Earth_Environ,_High_H2_production_in_sediment-hosted_hy",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 14,
+   "missing_labels": [
+    "C₁/(C₂-C₃) ratio",
+    "⁸⁷Sr/⁸⁶Sr",
+    "SO₄²⁻ concentration"
+   ]
+  },
+  {
+   "stem": "Epstein_et_al._(2021)_Cycling_of_CO2_and_N2_along_the_Hikurangi_subduction_margi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 12,
+   "missing_labels": [
+    "δ18O of carbonate",
+    "δ15N of whole-rock samples",
+    "20Ne/22Ne ratio"
+   ]
+  },
+  {
+   "stem": "Foustoukos_et_al._(2009)_Dissolved_carbon_species_in_associated_diffuse_and_focu",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "H2S(aq) concentration",
+    "CH4(aq) concentration",
+    "C1/(C2+C3) ratio"
+   ]
+  },
+  {
+   "stem": "Guo_et_al._(2013)_Formation_of_mafic_magmas_through_lower_crustal_AFC_processes;",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 3,
+   "n_gateable": 12,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "176Hf/177Hf",
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Hallis_(2016)_DH_ratios_of_the_inner_Solar_System",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd",
+    "⁴⁰Ar/³⁶Ar"
+   ]
+  },
+  {
+   "stem": "Inguaggiato_et_al._(2011)_Monitoring_active_volcanoes;_the_geochemical_approach",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CO2/SO2",
+    "SO2 flux",
+    "CO2 flux"
+   ]
+  },
+  {
+   "stem": "Kietvinen_et_al._(2014)_Noble_gas_residence_times_of_saline_waters_within_crystalline_bedrock,_Outokumpu_Deep_Drill_Hole,_Finland",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 18,
+   "missing_labels": [
+    "N2 concentration",
+    "H2 concentration",
+    "CO2 concentration"
+   ]
+  },
+  {
+   "stem": "Kobayashi_et_al._(2019)_Halogen_Heterogeneity_in_the_Lithosphere_and_Evolution_o",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 8,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne",
+    "84Kr (10^-12 ccSTP/g)"
+   ]
+  },
+  {
+   "stem": "Kulogoski,_2005,_Source_and_movement_of_helium_in_the_eastern_Morongo_groundwate",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 6,
+   "missing_labels": [
+    "mantle-derived helium-3 (³He_m) concentrations",
+    "deep crustal helium-4 (⁴He_dc) concentrations",
+    "crustal helium-4 flux (J₀)"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2010)_Fluid-melt_inclusions_in_Cenozoic_mantle_xenoliths_from_Linqu,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CO2 density",
+    "CO2 mole percentage",
+    "N2 mole percentage"
+   ]
+  },
+  {
+   "stem": "Lowenstern,_2015,_Origins_of_geothermal_gases_at_Yellowstone",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 15,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne",
+    "38Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Marini_et_al._(2005)_Hf_isotope_compositions_of_northern_Luzon_arc_lavas_suggest",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "McDermott_et_al._(2015)_Pathways_for_abiotic_organic_synthesis_at_submarine_hydr",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 12,
+   "missing_labels": [
+    "CH4/3He",
+    "ΣCO2/3He",
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "McLaughlin‐West_et_al._(1999)_Variations_in_hydrothermal_methane_and_hydrogen_co",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 6,
+   "missing_labels": [
+    "CH₄/³He ratios",
+    "δ¹³C of CH₄",
+    "CH₄/Mn ratios"
+   ]
+  },
+  {
+   "stem": "Mikhail_&_(2014)_Nitrogen_speciation_in_upper_mantle_fluids_and_the_origin_of_Earth's_nitrogen-rich_atmosphere",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 8,
+   "missing_labels": [
+    "N₂ (molecular nitrogen) speciation",
+    "NH₄⁺ (ammonium) speciation",
+    "NH₃ (ammonia) speciation"
+   ]
+  },
+  {
+   "stem": "Mook_et_al._(1974)_Carbon_isotope_fractionation_between_dissolved_bicarbonate_an",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "epsilon_b(g) [carbon isotope fractionation between HCO3- and CO2(g)]",
+    "epsilon_b(a) [carbon isotope fractionation between HCO3- and CO2(aq)]",
+    "epsilon_g(c) [carbon isotope fractionation between CO3(2-) and CO2(g)]"
+   ]
+  },
+  {
+   "stem": "Nakata_et_al._(2019)_Degassing_behavior_of_noble_gases_from_groundwater_during_groundwater_sampling_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 8,
+   "missing_labels": [
+    "Ne/20Ne",
+    "Ne/22Ne",
+    "Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Piccoli_et_al._(2019)_Subducting_serpentinites_release_reduced,_not_oxidized,_aq",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H₂S concentration",
+    "H₂O concentration",
+    "SiO₂ activity"
+   ]
+  },
+  {
+   "stem": "Randazzo_et_al._(2021)_Active_Degassing_of_Deeply_Sourced_Fluids_in_Central_Euro",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 13,
+   "missing_labels": [
+    "21Ne/22Ne ratio",
+    "40Ar/36Ar ratio",
+    "38Ar/36Ar ratio"
+   ]
+  },
+  {
+   "stem": "s10040-018-1889-9",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Mg2+ concentration",
+    "Ca2+ concentration",
+    "SO42- concentration"
+   ]
+  },
+  {
+   "stem": "Shangguan_et_al._(1997)_Material_sources_of_escaped_gases_from_Tianchi_volcanic_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 9,
+   "missing_labels": [
+    "δ¹³C of CO₂(g)",
+    "δ¹³C of CH₄",
+    "δ¹³C of CO₂(L)"
+   ]
+  },
+  {
+   "stem": "Sun_et_al._(2023)_Geochemical_characteristics_and_water_quality_assessment_in_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 8,
+   "missing_labels": [
+    "NO3- concentration",
+    "HCO3- concentration",
+    "CO32- concentration"
+   ]
+  },
+  {
+   "stem": "Taran_et_al.,_2013,_Geochemistry_of_thermal_springs_and_geodynamics_of_the_conve",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 9,
+   "missing_labels": [
+    "CO2 concentration",
+    "CH4 concentration",
+    "N2 concentration"
+   ]
+  },
+  {
+   "stem": "Umeda_et_al._(2007)_Helium_isotopes_as_geochemical_indicators_of_a_serpentinized",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "CO₂ concentration",
+    "N₂ concentration",
+    "O₂ concentration"
+   ]
+  },
+  {
+   "stem": "Veevers,_2012,_Reconstructions_before_rifting_and_drifting_reveal_the_geological_connections_between_Antarctica_and_its_conjugates_in_Gondwanaland",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 3,
+   "n_gateable": 5,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "weis_et_al._(2023)_Earth’s_mantle_composition_revealed_by_mantle_plumes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 23,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "38Ar/36Ar",
+    "δ13C (delta 13C)"
+   ]
+  },
+  {
+   "stem": "Xu_et_al._(2013)_Hydrothermal_He_and_CO2_at_Wudalianchi_intra-plate_volcano,_NE_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 7,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "CH4 (%) abundance",
+    "CO2 (%) abundance"
+   ]
+  },
+  {
+   "stem": "김규한_외_(2005)_He-Ar_and_Nd-Sr_isotopic_compositions_of_ultramafic_xenoliths_and_h",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 11,
+   "missing_labels": [
+    "20Ne concentration",
+    "84Kr concentration",
+    "132Xe concentration"
+   ]
+  },
+  {
+   "stem": "5797da3f-d862-3717-5e61-09a97b9987f3",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 11,
+   "missing_labels": [
+    "^87Sr/^86Sr",
+    "^143Nd/^144Nd"
+   ]
+  },
+  {
+   "stem": "Akizawa_et_al._(2021)_Geochemical_characteristics_of_back-arc_basin_lower_crust_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 13,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Aminov_et_al._(2017)_Pamir_Plateau_formation_and_crustal_thickening_before_the_I",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "143Nd/144Nd(i)",
+    "206Pb/238U"
+   ]
+  },
+  {
+   "stem": "Bange,_1998,_Methane_in_surface_waters_of_the_Arabian_Sea",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 4,
+   "missing_labels": [
+    "Atmospheric CH₄ dry mole fraction",
+    "CH₄ air-sea exchange flux"
+   ]
+  },
+  {
+   "stem": "Barry_&_Broadley_(2021)_Nitrogen_and_noble_gases_reveal_a_complex_history_of_met",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 11,
+   "missing_labels": [
+    "N2 abundance",
+    "N2/40Ar ratio"
+   ]
+  },
+  {
+   "stem": "Bindemann_(2008)_Oxygen_isotopes_in_mantle_and_crustal_magmas_as_revealed_by_sin",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "3He/4He ratio (R/Ra)",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Binder_et_al._(2024)_Two_Distinct_Metasomatized_Mantle_Sources_Produced_Two_Grou",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "δ18O",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Bougault_1993_Fast_and_Slow_Spreading_Ridges",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "Mn/CH₄ ratio",
+    "³He/⁴He"
+   ]
+  },
+  {
+   "stem": "Brounce_et_al._(2019)_The_redox_budget_of_the_Mariana_subduction_zone",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "S⁶⁺ concentration",
+    "S²⁻ concentration"
+   ]
+  },
+  {
+   "stem": "Capaccioni_et_al._(2014)_Geochemistry_of_thermal_fluids_in_NW_Honduras",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 17,
+   "missing_labels": [
+    "SO42- concentration",
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Carr_et_al._(2007)_Element_fluxes_from_the_volcanic_front_of_Nicaragua_and_Costa",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "K2O concentration",
+    "SiO2 concentration"
+   ]
+  },
+  {
+   "stem": "Chen_et_al._(2017)_Heterogeneous_source_components_of_intraplate_basalts_from_NE",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Chen_S-S_et_al._(2022)_Carbon_flux_and_alkaline_volcanism;_carbonatite-like_carb",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "K2O wt%",
+    "Na2O wt%"
+   ]
+  },
+  {
+   "stem": "Cheong_A._C-S_et_al._(2024)_Long-lived_shallow_crustal_magma_reservoirs_beneath_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 10,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Choi_S.H._et_al._(2024)_Rhenium–Os_isotopic_systematics_of_late_Cenozoic_intrapl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 10,
+   "missing_labels": [
+    "176Hf/177Hf",
+    "40Ar/39Ar age"
+   ]
+  },
+  {
+   "stem": "Clog_et_al._(2013)_The_hydrogen_isotopic_composition_and_water_content_of_southern_Pacific_MORB_A_reassessment_of_the_D-H_ratio_of_the_depleted_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Connelly_2012_Connelly_et_al.,_2012",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "Fe:H2S ratio",
+    "Cu:H2S ratio"
+   ]
+  },
+  {
+   "stem": "Coulthard_et_al._(2020)_Magma_Source_Evolution_Following_Subduction_Initiation__",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "206Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Dai_et_al.,_2021,_Pyroxenite_Xenoliths_Record_Complex_Melt_Impregnation_in_the_Deep_Lithosphere_of_the_Northwestern_North_China_Craton",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "147Sm/144Nd"
+   ]
+  },
+  {
+   "stem": "Dai_et_al._(2024)_Slab_Subduction_and_Pull_Link_Magmatism_at_Active_and_Passive_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Dansgaard(1964)_Stable_isotopes_in_precipitation",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "δ18 or δ_18 (delta oxygen-18)",
+    "4He/3He ratio (R/Ra)"
+   ]
+  },
+  {
+   "stem": "Ding,_2001,_In_situ_measurement_of_dissolved_H2_and_H2S_in_high-temperature_hydr",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "H₂ fugacity (fH₂)",
+    "H₂ activity (aH₂)"
+   ]
+  },
+  {
+   "stem": "Fischer,_2009,_Upper-mantle_volatile_chemistry_at_Oldoinyo_Lengai_volcano_and_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 14,
+   "missing_labels": [
+    "²⁰Ne/²²Ne",
+    "N₂/Ar"
+   ]
+  },
+  {
+   "stem": "Fitton_et_al._(1997)_Thermal_and_chemical_structure_of_the_Iceland_plume",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 4,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd",
+    "²⁰⁶Pb/²⁰⁴Pb"
+   ]
+  },
+  {
+   "stem": "Galer_and_O'Nions_(1985)",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Gazel_et_al._(2012)_Lithosphere_vs._asthenosphere_mantle_sources_at_the_Big_Pine",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "d18O",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Geng_et_al._(2019)_Thermal-chemical_conditions_of_the_North_China_Mesozoic_litho",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Halama_&_Bebout_(2021)_EarthΓÇÖs_Nitrogen_and_Carbon_Cycles",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "CH4 fluxes",
+    "NH4+ abundance"
+   ]
+  },
+  {
+   "stem": "Hanan_et_al._2004,_SEIR_Hf_and_Pb_isotopes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Hazra_et_al._(2021)_Lithosphere,_Refertilization_of_Mantle_Peridotites_from_the_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "SiO2 concentration",
+    "TiO2 concentration"
+   ]
+  },
+  {
+   "stem": "Heinonen_et_al._(2015)_Enriched_continental_flood_basalts_from_depleted_mantle_m",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Holland_&_(2006)_Seawater_subduction_controls_the_heavy_noble_gas_composition_of",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 14,
+   "missing_labels": [
+    "¹³¹Xe/¹³²Xe",
+    "¹³⁴Xe/¹³²Xe"
+   ]
+  },
+  {
+   "stem": "Hong_et_al.,_2010,_Nitrogen_as_the_carrier_gas_for_helium_emission_along_an_acti",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "δ¹³C of CO₂",
+    "δ¹⁵N of N₂"
+   ]
+  },
+  {
+   "stem": "Horita_&_Berndt_(1999)_Abiogenic_Methane_Formation_and_Isotopic_Fractionation_Un",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CH₄/(C₂H₆ + C₃H₈) ratio",
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Houben_et_al._(2018)_Comparison_of_depth-specific_groundwater_sampling_methods_a",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "δ13C-CH4"
+   ]
+  },
+  {
+   "stem": "Jensen,_2024,_Relationship_Between_D‐MORB_and_E‐MORB_Magmatism_During_Crustal_Ac",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Kadko,_1996,_Radioisotopic_studies_of_submarine_hydrothermal_vents",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 13,
+   "missing_labels": [
+    "4He/20Ne ratio",
+    "H2 concentration"
+   ]
+  },
+  {
+   "stem": "Kagoshima_et_al._(2016)_Spatial_and_temporal_variations_of_gas_geochemistry_at_M",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ13C of CO2",
+    "δ15N of N2"
+   ]
+  },
+  {
+   "stem": "Kaneoka_(1993)_Noble_gas_signatures_of_magmatic_sources_and_processes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 12,
+   "missing_labels": [
+    "84Kr abundance",
+    "132Xe abundance"
+   ]
+  },
+  {
+   "stem": "Karolyte_et_al._(2021)_Noble_gas_signatures_constrain_oil-field_water_as_the_car",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 17,
+   "missing_labels": [
+    "²¹Ne/²²Ne",
+    "¹⁴C-DIC (carbon-14 in dissolved inorganic carbon)"
+   ]
+  },
+  {
+   "stem": "Karp(2018)_Late_Miocene_fire",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "δ13C of n-alkanes (C29, C31, C33, C35)",
+    "δ18O of paleosol carbonates"
+   ]
+  },
+  {
+   "stem": "Keller_et_al._(2006)_Primary_magmas_at_Oldoinyo_Lengai-The_role_of_olivine_melil",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "Na2O content",
+    "K2O content"
+   ]
+  },
+  {
+   "stem": "Kim_S.W._et_al._(2016)_SHRIMP_U–Pb_dating_and_geochemistry_of_the_Cretaceous_plu",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 12,
+   "missing_labels": [
+    "208Pb/204Pb",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Kimura_et_al._(2005)_Reinitiation_of_subduction_and_magmatic_responses_in_SW_Jap",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "Sr-87/Sr-86",
+    "Nd-143/Nd-144"
+   ]
+  },
+  {
+   "stem": "Kumagai_et_al._(2008)_Geological_background_of_the_Kairei_and_Edmond_hydrotherma",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ13CCO2",
+    "δ13CCH4"
+   ]
+  },
+  {
+   "stem": "Kupriyanov_et_al._(2023)_Chem._Geo._",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "H2O/(H2O+CO2) ratio in fluid",
+    "NH3/(NH3+N2) ratio in fluid"
+   ]
+  },
+  {
+   "stem": "Lee,_2016,_Massive_and_prolonged_deep_carbon_emissions_associated_with_continent",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "CO₂ flux",
+    "CO₂ concentration"
+   ]
+  },
+  {
+   "stem": "Leeman_(2017)_G3,_Boron_isotope_variations_in_Tonga‐Kermadec‐New_Zealand_arc_lav",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 12,
+   "missing_labels": [
+    "TiO2 wt%",
+    "SiO2 wt%"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2023)_840–820_Ma_Dahongshan_bimodal_volcanic_rocks;_Neoproterozoic_a",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 11,
+   "missing_labels": [
+    "208Pb/204Pb",
+    "3He/4He"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2025)_Geochemical_evidence_of_paleo-pacific_slab_melting_in_the_big_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "143Nd/144Nd",
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Lowenstern,_2014,_Prodigious_degassing_of_a_billion_years_of_accumulated_radioge",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "CO₂/³He",
+    "CO₂ emission rate"
+   ]
+  },
+  {
+   "stem": "Mattioli_et_al._(2023)_Geochemistry,_petrology,_and_isotopic_characteristics_of_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "Na2O major element concentration",
+    "K2O major element concentration"
+   ]
+  },
+  {
+   "stem": "McGee_and_Mukhopadhyay_(2013)_Extraterrestrial_He_in_Sediments",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "20Ne/22Ne ratio",
+    "21Ne/22Ne ratio"
+   ]
+  },
+  {
+   "stem": "Mortimer_et_al.,_2006,_Zealandia_west_antarctica_breakup",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "3He/4He ratios",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Nakamura_et_al._(2012)_Discovery_of_new_hydrothermal_activity_and_chemosynthetic",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CH4 concentration",
+    "3He"
+   ]
+  },
+  {
+   "stem": "Nisi_et_al._(2019)_The_Campo_de_Calatrava_Volcanic_Field_(central_Spain);_Fluid_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 10,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Novello(2017)_suppl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "238U concentration",
+    "232Th concentration"
+   ]
+  },
+  {
+   "stem": "Oppenheimer_et_al._(2018)_Influence_of_eruptive_style_on_volcanic_gas_emission_c",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 4,
+   "missing_labels": [
+    "SO2 abundance",
+    "SO2/HCl ratio"
+   ]
+  },
+  {
+   "stem": "Pastor-Galan_et_al._(2021)_Evidence_for_crustal_removal,_tectonic_erosion_and_fl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "206Pb/238U age",
+    "207Pb/206Pb age"
+   ]
+  },
+  {
+   "stem": "Pearce_&_Peate_(1995)_TECTONIC_IMPLICATIONS_OF_THE_COMPOSITION_OF_VOLCANIC_ARC_M",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "Na2O",
+    "K2O"
+   ]
+  },
+  {
+   "stem": "Perinelli_et_al._(2016)_An_improved_clinopyroxene-based_hygrometer_for_Etnean_ma",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₂O content (wt%)",
+    "CO₂ content"
+   ]
+  },
+  {
+   "stem": "Peron_et_al._(2019)_Noble_gas_systematics_in_new_popping_rocks_from_the_Mid-Atla",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 13,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Rielli_et_al._(2018)_Garnet_peridotites_reveal_spatial_and_temporal_changes_in_t",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr",
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Saegusa,_2006,_Development_of_a_multibottle_gas‐tight_fluid_sampler_WHATS_II_for",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "δ13C of methane (CH4)",
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Sano,_1984,_Helium-3_emission_related_to_volcanic_activity",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "N2 content",
+    "CO2 content"
+   ]
+  },
+  {
+   "stem": "Sano,_1992,_Helium_isotope_ratios_of_pore_gases_in_deep-sea_sediments,_LEG128",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "CH4 (methane) concentration",
+    "C2H6 (ethane) concentration"
+   ]
+  },
+  {
+   "stem": "Sano_et_al.,_1986,_Helium_flux_in_a_continental_land_area_estimated_from_He-3_He",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "CO2 concentration",
+    "N2 concentration"
+   ]
+  },
+  {
+   "stem": "science.272.5259.249",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "²²Ne concentration",
+    "³⁶Ar concentration"
+   ]
+  },
+  {
+   "stem": "Seltzer(2021)_6C_cooling_LGM_notes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "20Ne/22Ne ratio",
+    "40Ar/36Ar ratio"
+   ]
+  },
+  {
+   "stem": "Shamsudduha_et_al._(2024)_Characterizing_deep_groundwater_using_evidence_from_oi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CO32- concentration",
+    "SO42- concentration"
+   ]
+  },
+  {
+   "stem": "SherwoodLollar_et_al._(2024)_The_Hidden_Hydrogeosphere_The_Contribution_of_Deep_Groundwater_to_the_Planetary_Water_Cycle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 17,
+   "missing_labels": [
+    "20Ne/22Ne ratio",
+    "38Ar/36Ar ratio"
+   ]
+  },
+  {
+   "stem": "Siebe_et_al._(2007)_Geology_and_hydrogeochemistry_of_the_Jungapeo_CO2-rich_therm",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "3H (tritium)"
+   ]
+  },
+  {
+   "stem": "Sliwinski_et_al._(2017)_Rapid_pre-eruptive_thermal_rejuvenation_in_a_large_silicic_magma_body_the_case_of_the_Masonic_Park_Tuff,_Southern_Rocky_Mounta",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Sumino_et_al._(2004)_Noble_gas_and_carbon_isotopes_of_fumarolic_gas_from_Iwojima",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 15,
+   "missing_labels": [
+    "84Kr concentration",
+    "132Xe concentration"
+   ]
+  },
+  {
+   "stem": "Syrbu_et_al._(2022)_Geochemistry_of_helium,_hydrogen,_carbon_dioxide,_and_methan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "δ13C of methane",
+    "δ13C of carbon dioxide"
+   ]
+  },
+  {
+   "stem": "Tassi_et_al._(2005)_The_hydrothermal-volcanic_system_of_Rincon_de_la_Vieja_volca",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 13,
+   "missing_labels": [
+    "H2S content",
+    "SO4^2- content"
+   ]
+  },
+  {
+   "stem": "Wallace_(2005)_Volatiles_in_subduction_zone_magma;_concentration_and_fluxes_base",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ18O",
+    "Fe³⁺/Fe²⁺"
+   ]
+  },
+  {
+   "stem": "Wei_et_al._(2013)_Review_of_eruptive_activity_at_Tianchi_volcano,_Changbaishan,_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "He/CO2 ratio",
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Werner,_2008,_Volatile_emissions_and_gas_geochemistry_of_Hot_Spring_Basin,_Yello",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 12,
+   "missing_labels": [
+    "δ¹³C of CO2",
+    "SO4²⁻ concentration"
+   ]
+  },
+  {
+   "stem": "Werner_et_al._(2022)_Magmatic_carbon_and_helium_in_springs_reveals_the_vitality_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 9,
+   "missing_labels": [
+    "SO4 2- concentration",
+    "CO2 gas concentration"
+   ]
+  },
+  {
+   "stem": "Worman_et_al._(2020)_Abiotic_hydrogen_(H2)_sources_and_sinks_near_the_Mid-Ocean_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H₂ flux/venting rate",
+    "³He concentration in hydrothermal fluids"
+   ]
+  },
+  {
+   "stem": "Wu_et_al._(2021)_Petrogenesis_and_magmatic_evolution_of_the_intermediate–felsic_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 8,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Wu_et_al._(2025)_Geothermal_gas_geochemistry_in_Southeast_Tibetan_Plateau_margin",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 22,
+   "missing_labels": [
+    "21Ne/22Ne",
+    "38Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Yamada_et_al._(2011)_Mixing_of_magmatic_CO2_into_volcano_groundwater_flow_at_Aso",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 6,
+   "missing_labels": [
+    "SO42- concentration",
+    "HCO3- concentration"
+   ]
+  },
+  {
+   "stem": "Yu_et_al._(2010)_Remnants_of_oceanic_lower_crust_in_the_subcontinental_lithosphe",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Zheng_et_al._(2007)_Mechanism_and_timing_of_lithospheric_modification_and_replac",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 2,
+   "missing_labels": [
+    "187Os/188Os",
+    "187Re/188Os"
+   ]
+  },
+  {
+   "stem": "Zhu_et_al._(2025)_Heterogeneous_slab_components_impart_diverse_oxygen_isotope_of",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 2,
+   "n_gateable": 3,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "김규한_외_(2008)_He–Ar_and_Nd–Sr_isotopic_compositions_of_late_Pleistocene_felsic_pl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 2,
+   "n_gateable": 12,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "1-s2.0-S0883292719300046-mmc1",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "SO42- concentration"
+   ]
+  },
+  {
+   "stem": "9.Carbon_in_the_Convecting_Mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr"
+   ]
+  },
+  {
+   "stem": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_Field",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "H2 concentration"
+   ]
+  },
+  {
+   "stem": "Aiuppa_et_al._(2000)_Mobility_and_fluxes_of_elements_during_basalt_weathering_an",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "SO₄ concentration"
+   ]
+  },
+  {
+   "stem": "Albers_et_al._(2025)_Ultramafic-influenced_submarine_venting_on_basaltic_seafloo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "δ13C of CH4"
+   ]
+  },
+  {
+   "stem": "Aldanmaz_et_al.,_2000,_Petrogenetic_evolution_of_late_Cenozoic,_post_collision_volacanism_in_western_Anatolia,_Turkey",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "d18O"
+   ]
+  },
+  {
+   "stem": "Alt_et_al._(2013)_The_role_of_serpentinites_in_cycling_of_carbon_and_sulfur;_Sea",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "δ18O of serpentine and bulk rock"
+   ]
+  },
+  {
+   "stem": "Baker_(2008)_CMP_Fidelity_of_melt_inclusions",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H2O diffusion coefficient in basaltic melt"
+   ]
+  },
+  {
+   "stem": "Ballentine_et_al._(2025)_Natural_hydrogen_resource_accumulation_in_the_continent",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H₂ generation yield"
+   ]
+  },
+  {
+   "stem": "Barruol_et_al._(2019)_Large-scale_flow_of_Indian_Ocean_asthenosphere_driven_by_R",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "He3/He4 ratios"
+   ]
+  },
+  {
+   "stem": "Barry_et_al._(2021)_Helium-carbon_systematics_of_groundwaters_in_the_Lassen_Peak",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ¹⁸O of water"
+   ]
+  },
+  {
+   "stem": "Barry_et_al._(2025)_C,_N,_noble_gas_isotopes_reveal_deep_volatile_signatures_in_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 14,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Basu_et_al._(2006)_Helium_isotopes_in_ferromanganese_crusts_from_the_central_Pacific_Ocean__",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Becker_et_al._(2008)_Himalayan_metamorphic_CO2_fluxes;_Quantitative_from_hydroth",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "δ18O of water"
+   ]
+  },
+  {
+   "stem": "Bekaert_et_al._(2021)_High_3He4He_in_central_Panama_reveals_a_distal_connection_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Bernard,_1976,_Natural_gas_seepage_in_the_Gulf_of_Mexico",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "C₁/(C₂ + C₃) ratio"
+   ]
+  },
+  {
+   "stem": "Bian_et_al._(2023)_Circum-cratonic_mantle_archives_the_cumulative_effects_of_plu",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "Na2O in orthopyroxene"
+   ]
+  },
+  {
+   "stem": "Bindeman_(2008)_Oxygen_isotope_heterogeneity_and_disequilibria_of_olivine_crysta",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Birner_et_al._(2024)_Deep,_hot,_ancient_melting_recorded_by_ultralow_oxygen_fugacity_in_peridotites",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "He3_He4_RRa"
+   ]
+  },
+  {
+   "stem": "Blundy_et_al._(1998)_Heavy_REE_are_compatible_in_clinopyroxene_on_the_spinel_lhe",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "Na2O wt% (sodium oxide content)"
+   ]
+  },
+  {
+   "stem": "Blundy_et_al._(2008)_Petrologic_Reconstruction_of_Magmatic_System_Variables_and_Processes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Boudoire_et_al._(2022)_Chemical_variability_in_volcanic_gas_plumes_and_fumaroles",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 14,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Bradley,_2010,_Multiple_origins_of_methane_at_the_Lost_City_Hydrothermal_Field",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "4He/20Ne"
+   ]
+  },
+  {
+   "stem": "Brandon_&_Gordon_(1995)_Assessing_subcontinental_lithospheric_mantle_source_for_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Brauer_et_al.,_2003,_Isotopic_evidence_of_fluo-triggered_intraplate_seismicity",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ²H of water"
+   ]
+  },
+  {
+   "stem": "Brauer_et_al.,_2017,_Regional_distribution_pattern_of_carbon_and_helium_isotopes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Brauer_et_al._(2013)_Indications_for_the_existence_of_different_magmatic_reservo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "δ15N or δ15NN2"
+   ]
+  },
+  {
+   "stem": "Braunger_et_al._(2018)_The_Petrology_of_the_Kaiserstuhl_Volcanic_Complex,_SW_Ger",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "143Nd/144Nd isotope ratios"
+   ]
+  },
+  {
+   "stem": "Brenna_et_al._(2021)_Anatomy_of_Intraplate_Monogenetic_Alkaline_Basaltic_Magmati",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H2O and CO2 in glass and melt inclusions"
+   ]
+  },
+  {
+   "stem": "Burnard_et_al._(2003)_Degassing_and_contamination_of_noble_gases_in_Mid‐Atlantic",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 20,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Burnard_et_al._(2012)_Constraints_on_fluid_origins_and_migration_velocities_alon",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Buso_et_al._(2025)_Commun_Earth_Environ,_Melt_inclusions_reveal_massive_carbon_d",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₂O content (wt%)"
+   ]
+  },
+  {
+   "stem": "Cannata_et_al._(2019)_First_3D_imaging_of_Pele’s_hair_from_Kilauea_volcano_(Hawa",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content (wt%)"
+   ]
+  },
+  {
+   "stem": "Cardoso_et_al._(2023)_Helium_isotope_evidence_for_cryptic_magmatism_along_Centra",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 15,
+   "missing_labels": [
+    "δ¹⁵N of N₂"
+   ]
+  },
+  {
+   "stem": "Chang_et_al._(2021)_Geofluids,_Fluid_Geochemistry_within_the_North_China_Craton;",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Chaplygin_et_al._(2016)_Geochemistry_of_volcanic_gas_at_the_2012–13_New_Tolbachi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "H2O concentration"
+   ]
+  },
+  {
+   "stem": "Chiodini_&_Marini_(1998)_Hydrothermal_gas_equilibria;_the_H2O-H2-CO2-CO-CH4_syst",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "H₂S concentration"
+   ]
+  },
+  {
+   "stem": "Chiodini_et_al._(2004)_Carbon_dioxide_Earth_degassing_and_seismogenesis_in_centr",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "CO2 pressure"
+   ]
+  },
+  {
+   "stem": "Choi_S._et_al._(2025)_Multi-source_hydrothermal_mineralisation_in_the_ultramafic",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr"
+   ]
+  },
+  {
+   "stem": "Chough,_2000,_Tectonic_and_sedimentary_evolution_of_the_Korean_peninsula_a_revie",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "delta 18O of whole rock and quartz"
+   ]
+  },
+  {
+   "stem": "Class_&_Goldstein_(2005)_Evolution_of_helium_isotopes_in_the_Earth's_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  },
+  {
+   "stem": "Clay_et_al._(2012)_Texture,_major_and_volatile_element_and_Ar-Ar_systematics_of_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "δ18O"
+   ]
+  },
+  {
+   "stem": "Combaudon_et_al._(2022)_Hydrogen_emissions_from_hydrothermal_fields_in_Iceland_a",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "H₂ specific flux (t/km²/yr)"
+   ]
+  },
+  {
+   "stem": "Coote_&_Shane_(2016)_Crystal_origins_and_magmatic_system_beneath_Ngauruhoe_volca",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "Na2O"
+   ]
+  },
+  {
+   "stem": "Corliss,_1979,_Submarine_Termal_Springs_on_the_Galapagos_Rift",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "222Rn"
+   ]
+  },
+  {
+   "stem": "Correale_et_al._(2014)_A_two-component_mantle_source_feeding_Mt._Etna_magmatism;",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Corts_et_al._(2024)_Magma_recharge_in_persistently_active_basaltic–andesite_systems_and_its_geohazards_implications_the_case_of_Villarrica_volcano,_Ch",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "delta_18O"
+   ]
+  },
+  {
+   "stem": "Costa_et_al._(2020)_Diffusion_chronometry_and_the_timescales_of_magmatic_processes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "CO2 diffusion in olivine-hosted melt embayments"
+   ]
+  },
+  {
+   "stem": "Crossey_et_al._(2006)_Dissected_hydrologic_system_at_the_Grand_Canyon;_Interacti",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CO2/3He"
+   ]
+  },
+  {
+   "stem": "Crossey_et_al._(2009)_Degassing_of_mantle-derived_CO2_and_He_Spring_in_Colorado_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Czuppon_et_al._(2010)_Noble_gases_in_anhydrous_mantle_xenoliths_from_Tasmania_in",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "^130Xe elemental concentration"
+   ]
+  },
+  {
+   "stem": "Dai_et_al.,_2016,_Termination_time_of_peak_decratonization_in_North_China;_Geochemical_evidence_from_mafic_igneous_rocks",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Dai_et_al._(2021)_Melting_Dynamics_of_Late_Cretaceous_Lamprophyres_in_Central_As",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Darrah,_2013,_Gas_chemistry_of_the_Dallol_region_of_the_Danakil_Depression_in_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 17,
+   "missing_labels": [
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Dasgupta_&_Hirschmann_(2010)_The_deep_carbon_cycle_and_melting_in_Earth's_interi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "CO2/Nb ratio"
+   ]
+  },
+  {
+   "stem": "Day_et_al._(2019)_Melt-modified_lithosphere_beneath_Ross_Island_and_its_role_in_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "⁴⁰Ar/³⁶Ar"
+   ]
+  },
+  {
+   "stem": "de_Moor,_2013,_Gas_chemistry_and_nitrogen_isotope_compositions_of_cold_mantle_ga",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 14,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Demouchy_et_al._2006,_Rapid_magma_ascent_recorded_by_water_diffusion_profiles_in_mantle_olivine",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "water or H₂O content"
+   ]
+  },
+  {
+   "stem": "Deng_et_al._(in_review)_The_return_of_deeply_subducted_organic_carbon_through_in",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "δ²⁵Mg"
+   ]
+  },
+  {
+   "stem": "Doctor_et_al._(2008)_C_isotope_fractionation_of_dissolved_inorganic_carbon_(DIC)",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "dD or d2H implied from DOC context"
+   ]
+  },
+  {
+   "stem": "Dong_et_al._(2019)_Onset_of_the_North-South_Gravity_Lineament,_NE_China;_Late_Ju",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Donze_et_al._(2020)_Migration_of_Natural_Hydrogen_from_Deep-Seated_Sources_in_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H2 solubility in water"
+   ]
+  },
+  {
+   "stem": "Doucet_et_al._(2020)_Decoupled_water_and_iron_enrichments_in_the_cratonic_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "d18O and dD (mentioned in context of volatile elements)"
+   ]
+  },
+  {
+   "stem": "Eiler_et_al._(1995)_Oxygen_isotope_evidence_against_bulk_recycled_sediment_in_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Etiope,_2013,_ABIOTIC_METHANE_ON_EARTH",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "CH4 dissolved concentration in water"
+   ]
+  },
+  {
+   "stem": "Evans_&_Tomkins_(2011)_The_relationship_between_subduction_zone_redox_budget_and",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "SO4-2 (sulphate) concentration"
+   ]
+  },
+  {
+   "stem": "Farmer_et_al._(2013)_Mantle_lithosphere_as_a_source_of_postsubduction_magmatism,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Faure_&_Schiano_(2005)_Experimental_investigation_of_equilibration_conditions_du",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "SiO2 weight percent"
+   ]
+  },
+  {
+   "stem": "Fein_&_Walther_(1987)_Calcite_solubility_in_supercritical_CO2-H2O_fluids",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "ionization constant K(2) for CO2(aq) ionization"
+   ]
+  },
+  {
+   "stem": "Fiebig(2024)_nitrate_contamination_clumped_isotope",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "Δ₄₇ (Delta 47) - clumped isotope composition"
+   ]
+  },
+  {
+   "stem": "Fischer,_1998,_Fluxes_and_sources_of_volatiles_discharged_from_Kudryavy",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ¹³C–CO₂"
+   ]
+  },
+  {
+   "stem": "Fischer,_2002,_Subduction_and_Recycling_of_Nitrogen_Along_the_Central_American_M",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "N2 concentration"
+   ]
+  },
+  {
+   "stem": "Fischer_and_Chiodini_(2015)_Volcanic,_Magmatic_and_Hydrothermal_gases",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ34S of sulfur species"
+   ]
+  },
+  {
+   "stem": "Fischer_et_al._(2019)_The_emissions_of_CO2_and_other_volatiles_from_the_world’s_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H₂O flux"
+   ]
+  },
+  {
+   "stem": "Foley_&_Fischer_(2017)_An_essential_role_for_continental_rifts_and_lithosphere_i",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "CO₂ outgassing"
+   ]
+  },
+  {
+   "stem": "Fournier_&_Truesdell_(1977)_An_empirical_Na-K-Ca_geothermometer_for_natural_wate",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  },
+  {
+   "stem": "Fruh-green_et_al._(2022)_Diversity_of_magmatism,_hydrothermal_processes_and_micr",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CH4 concentrations"
+   ]
+  },
+  {
+   "stem": "Furi_et_al.,_2022,_In_situ_quantification_of_the_nitrogen_content_of_olivine-hosted_melt_inclusions_from_Klyuchevskoy_volcano_(Kamchatka)_Implications",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "¹⁸O composition"
+   ]
+  },
+  {
+   "stem": "G49375_SuppMat",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "(Na2O+K2O)/SiO2 ratio"
+   ]
+  },
+  {
+   "stem": "Gale_et_al.,_2013,_The_mean_composition_of_ocean_ridge_basalt",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Gamo,_2001,_Chemical_characteristics_of_newly_discovered_black_smoker_fluids_and",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Gao_et_al._(2004)_Recycling_lower_continental_crust_in_the_North_China_Craton",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Gao_et_al._(2008)_Recycling_deep_cratonic_lithosphere_and_generation_of_intrapla",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Gena_(2013)_Deep_sea_mining_of_submarine_hydrothermal_deposits_and_its_possible_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content (wt%)"
+   ]
+  },
+  {
+   "stem": "Gibson_et_al._(2002)_Major__element__heterogeneity__in__Archean__to__Recent__man",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Giggenbach,_1991,_Chemical_techniques_in_geothermal_exploration",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "H2S content"
+   ]
+  },
+  {
+   "stem": "Giggenbach_(1991)_Application_of_geochemistry_of_geothermal_reservoir_developmen",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "4He/20Ne"
+   ]
+  },
+  {
+   "stem": "Gilfillan_et_al.,_2008,_The_noble_gas_geochemistry_of_natural_CO2gas_reservoirs_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 17,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Gleeson_et_al._(2022)_Constraint_on_the_behaviour_and_content_of_volatiles_in_Ga",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Golding,_2013,_Stable_isotope_geochemistry_of_coal_bed_and_shale_gas_and_related",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "C1/(C2+C3) ratio"
+   ]
+  },
+  {
+   "stem": "Goss_&_Kay_(2006)_Steep_REE_patterns_and_enriched_Pb_isotopes_in_southern_Centra",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Graham_et_al.,_2016,_Extreme_incompatibility_of_helium_during_mantle_melting-Evi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "H₂O concentration"
+   ]
+  },
+  {
+   "stem": "Grassa_et_al._(2006)_Chemical_and_Isotope_of_Waters_and_Dissolved_Gases_in_Some_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "CH₄ (methane) content"
+   ]
+  },
+  {
+   "stem": "Gu_et_al._(2025)_Hydrogen_emission_characteristics_of_Changbaishan_Volcano;_Spat",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Guo_et_al._(2013)_A_metasomatized_mantle_wedge_origin_for_low-δ_18O_olivine_in_l",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Guo_et_al._(2013)_Crustal_recycling_processes_in_generating_the_early_Cretaceous",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "δ18O of olivine"
+   ]
+  },
+  {
+   "stem": "Guo_et_al._2024,_Geology,_Ridgeward_flow_of_compositionally_heterogenous_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Haile-Selassie(2025)_Australopithecus_deyiremeda",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "C₃ vs C₄ dietary composition"
+   ]
+  },
+  {
+   "stem": "Hartogh_et_al._(2011)_Ocean-like_water_in_the_Jupiter-family_comet",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H2^18O/H2^16O ratio"
+   ]
+  },
+  {
+   "stem": "Haymon_et_al._(1993)_Volcanic_eruption_of_the_mid-ocean_ridge_along_the_East_Pac",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "dissolved H2S concentrations"
+   ]
+  },
+  {
+   "stem": "Heck_et_al._(2019)_Lifetimes_of_interstellar_dust_form_cosmic_ray_exposure_ages_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "²⁰Ne/²²Ne"
+   ]
+  },
+  {
+   "stem": "Heinonen_et_al._(2018)_Enrichment_of_18O_in_the_mantle_sources_of_the_Antarctic_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "Nd143_Nd144"
+   ]
+  },
+  {
+   "stem": "Hiett_et_al.,_2021,_3He_evidence_for_fluid_transfer_and_continental_hydration_above_a_flat_slab",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Hiett_et_al._(2021)_3He_evidence_for_fluid_transfer_and_continental_hydration_ab",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Hoernle_et_al._(2020)_Late_Cretaceous_(99-69_Ma)_basaltic_intraplate_volcanism_on_and_around_Zealandia;_Hikurangi_Plateau",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Hofmann_(2014)",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 13,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Hofmann_et_al.,_1986,_Nb_and_Pb_in_oceanic_basalts;_new_constraints_on_mantle_evolution",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "129Xe"
+   ]
+  },
+  {
+   "stem": "Homrighausen_et_al._(2023)_Evidence_for_compositionally_distinct_upper_mantle_pl",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "TiO2/Yb"
+   ]
+  },
+  {
+   "stem": "Hong,_2023,_Fault-related_basins_as_carbon_reservoirs_Soil_CO2_emissions_in_the_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "²⁰Ne/²²Ne"
+   ]
+  },
+  {
+   "stem": "Hoyer_et_al._(2022)_Mantle_plume_and_rift-related_volcanism_during_the_evolution",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "TiO2/Yb ratio"
+   ]
+  },
+  {
+   "stem": "Hu,_2021,_Protistan_grazing_impacts_microbial_communities_and_carbon_cycling_at_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H2S concentration (mM)"
+   ]
+  },
+  {
+   "stem": "Ikeda_et_al._(1998)_Noble_gases_in_pillow_basalt_glasses_from_the_northern_Maria",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "CO2 content"
+   ]
+  },
+  {
+   "stem": "Inguaggiato_et_al._(2005)_Isotopic,_chemical_and_dissolved_gas_constraints_on_sp",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "delta-34S of SO4"
+   ]
+  },
+  {
+   "stem": "Inguaggiato_et_al._(2012)_Long-time_variation_of_soil_CO2_fluxes_at_the_summit_c",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "SO₂ plume flux"
+   ]
+  },
+  {
+   "stem": "Inostroza_et_al._(2020)_Geochemistry_of_gas_and_water_discharge_from_the_magmati",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Ishibashi_et_al._(1997)_Hydrothermal_methane_and_manganese_variation_in_the_plum",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₂S/Fe ratio"
+   ]
+  },
+  {
+   "stem": "Jeong,_2005,_Hydrochemistry_and_genesis_of_CO2-rich_springs_from_Mesozoic_granit",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "SO₄²⁻ concentration"
+   ]
+  },
+  {
+   "stem": "Jeong_et_al.,_2016,_Hydrogeochemistry_and_noble_gas_isotopes_of_GW_in_the_FZ",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "⁴⁰Ar absolute abundance"
+   ]
+  },
+  {
+   "stem": "Jicha_&_Kay_(2018)_Quantifying_arc_migration_and_the_role_of_forearc_subduction_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Jicha_et_al._(2009)_Isotopic_and_trace_element_constraints_on_the_petrogenesis_o",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "John,_2005,_Zinc_stable_isotopes_in_seafloor_hydrothermal_vent_fluids_and_chimne",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H₂S concentration"
+   ]
+  },
+  {
+   "stem": "John_et_al._(2010)_Cl_isotope_evidence_for_crustal_recycling_into_the_Earths_man",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Judd&al2024_Paleoclimatescience.adk3705",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "δ18Osw (seawater oxygen isotope composition)"
+   ]
+  },
+  {
+   "stem": "Kadoya_et_al._(2020)_Mantle_data_imply_a_decline_of_oxidizable_volcanic_gases_co",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "CO/CO2 ratio in volcanic gases"
+   ]
+  },
+  {
+   "stem": "Kang_et_al._(2020)_Quantitative_assessment_of_deep-seated_CO2_leakage_around_CO2",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "14C age"
+   ]
+  },
+  {
+   "stem": "Karlstrom,_2012,_Mantle-driven_dynamic_uplift_of_the_Rocky_Mountains_and_Colorad",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "143Nd/144Nd (εNd)"
+   ]
+  },
+  {
+   "stem": "Katz(2024)_Holocene_water_stress_Peruvian_Andes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "d2H / dD"
+   ]
+  },
+  {
+   "stem": "Kawagucci_et_al._(2013)_Geochemical_origin_of_hydrothermal_fluid_methane_in_sedi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "H$_2$S concentration"
+   ]
+  },
+  {
+   "stem": "Kawagucci_et_al._(2016)_Fluid_chemistry_in_the_Solitaire_and_Dodo_hydrothermal_f",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "4He/20Ne"
+   ]
+  },
+  {
+   "stem": "Kedzior_et_al._(2016)_Geochemical_observations_within_the_water_column_at_the_CO",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "CO₂ mole %"
+   ]
+  },
+  {
+   "stem": "Keir,_2008,_Flux_and_dispersion_of_gases_from_the_“Drachenschlund”_hydrothermal_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "H₂ concentration"
+   ]
+  },
+  {
+   "stem": "Keir_(2011)_A_note_on_the_fluxes_of_abiogenic_methane_and_hydrogen_from_mid-ocea",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "H2 concentration"
+   ]
+  },
+  {
+   "stem": "Keir_et_al._(2006)_Separation_of_3He_and_CH4_signals_on_the_Mid-Atlantic_Ridge_a",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Kelley_et_al._(2005)_A_serpentinite-hosted_ecosystem;_the_lost_city_hydrothermal",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Keppler_et_al.,_2022,_The_solubility_of_N2_in_silicate_melts_and_nitrogen_partitioning_between_upper_mantle_minerals_and_basalt",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "¹⁵N content measured by SIMS"
+   ]
+  },
+  {
+   "stem": "Kim_D._et_al._(2021)_Helium_and_olivine_geochemistry_of_basalts_and_mantle_xenol",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Kimura_et_al._(2015)_Ocean_Basalt_Simulator_version_1_(OBS1);_Trace_element_mass",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Kipfer_et_al._(2002)_Noble_gases_in_meteoric_waters_atmospheric_components_and_radiogenicterrigenous_origins",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 17,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Kis_et_al_(2019)_Noble_Gas_and_Carbon_Isotope_Systematics_at_the_inactive_Ciomad",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Kita_et_al._(2004)_Origin_of_ureilites_inferred_from_a_SIMS_oxygen_isotopic_and_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "K2O concentration"
+   ]
+  },
+  {
+   "stem": "Klein,_2019,_Abiotic_methane_synthesis_and_serpentinization_in_olivine-hosted_fl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "CH₄(g) partial pressure"
+   ]
+  },
+  {
+   "stem": "Klein,_2020,_Abiotic_Sources_of_Molecular_Hydrogen_on_Earth",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "H2(aq) activity"
+   ]
+  },
+  {
+   "stem": "Koch,_2003,_Hydrogeological_effects_of_the_latest_Vogtland-NW_Bohemian_swarmquak",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CO2 concentration (dissolved)"
+   ]
+  },
+  {
+   "stem": "Konn,_2018,_Organic__Gas__and_Element_Geochemistry_of_Hydrothermal_Fluids_of_the",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Konn,_2022,_Origin_of_organic_compounds_in_fluids_from_ultramafic-hosted_hydroth",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Konn_et_al._(2022)_Extending_the_dataset_of_fluid_geochemistry_of_the_Menez_Gwen",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "4He/20Ne"
+   ]
+  },
+  {
+   "stem": "Kulongoki_et_al.,_2013,_Volatile_fluxes_through_the_Big_Bend_section_of_the_San_",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "20Ne"
+   ]
+  },
+  {
+   "stem": "Kumagai_et_al._(2014)_Evolution_of_carbon_dioxide-bearing_saline_fluids_in_the_m",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₂O molar fraction"
+   ]
+  },
+  {
+   "stem": "Kusakabe_et_al._(2004)_CO2_laser-BrF5_fluoorination_for_triple_O_isotopes_of_roc",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "O2 yield"
+   ]
+  },
+  {
+   "stem": "Kyriaki_et_al._(2018)_Gas_geochemistry_and_CO2output_estimation_at_the_island_of",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "H₂S concentration"
+   ]
+  },
+  {
+   "stem": "Labidi,_2020,_Hydrothermal_15N15N_abundances_constrain_the_origins_of_mantle_nit",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "δ13C"
+   ]
+  },
+  {
+   "stem": "Landi_et_al._(2004)_Dynamics_of_magma_mixing_and_degassing_recorded_in_plagiocla",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "CO₂ ppm"
+   ]
+  },
+  {
+   "stem": "Lee_S.G._et_al._(2021)_Geochemistry_of_Mineral_Water_(Bottled_Water)_Produced_Ne",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "HCO3− concentration (alkalinity)"
+   ]
+  },
+  {
+   "stem": "Lee_W._et_al._(2025)_Water_and_gas_geochemistry_of_springs_in_Ulleungdo_volcano,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 17,
+   "missing_labels": [
+    "SO42- concentration"
+   ]
+  },
+  {
+   "stem": "Leybourne_&_Cameron_(2010)_Groundwater_in_geochemical_exploration",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Li,_2010,_High-pressure_sorption_isotherms_and_sorption_kinetics_of_CH4_and_CO2_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CH₄ sorption kinetics"
+   ]
+  },
+  {
+   "stem": "Li_and_Wang,_2018,_Formation_time_of_the_big_mantle_wedge_beneath_eastern_China_and_a_new_lithospheric_thinning_mechanism_of_North_China_craton-Geodyn",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Li_et_al._(2014)_Geochemistry_of_Cenozoic_basalts_from_the_Bohai_Bay_Basin;_hete",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Li_et_al._(2026)_Lithos,_Intracratonic_magmatism_associated_with_metallogeny_and",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "He3_He4_RRa"
+   ]
+  },
+  {
+   "stem": "Ling_et_al._(2013)_Destruction_of_the_North_China_Craton_Induced_by_Ridge_Subduc",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "²⁰⁸Pb/²⁰⁴Pb"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(1994)_Major-_and_trace-element_compositions_of_Cenozoic_basalts_in_e",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "3He/4He"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2023)_Circum‐Cratonic_Triassic_Syenite_Province_of_North_China_Crato",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Lormand_et_al._(2021)_Shallow_magmatic_processes_revealed_by_cryptic_microantecr",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H2O content"
+   ]
+  },
+  {
+   "stem": "Lupton_et_al._(2006)_Submarine_venting_of_liquid_carbon_dioxide_on_a_Mariana_Arc",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "14C age (radiocarbon)"
+   ]
+  },
+  {
+   "stem": "Lupton_et_al._(2015)_Helium_isotope,_C_3He,_and_Ba‐Nb‐Ti_signatures_in_the_north",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "Ne20/Ne22"
+   ]
+  },
+  {
+   "stem": "Macdonald_&_Scaillet_(2006)_The_central_Kenya_peralkaline_province-_Insights_int",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Mahoney_et_al._(2002)_Between_a_Hotspot_and_a_Cold_Spot;_Isotopic_Variation_in_t",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "K2O/TiO2"
+   ]
+  },
+  {
+   "stem": "Malvoisin_(2015)_Mass_transfer_in_the_oceanic_lithosphere;_Serpentinization_is_n",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "H₂ produced"
+   ]
+  },
+  {
+   "stem": "Mandarano_et_al._(2016)_Revealing_magma_degassing_below_closed-conduit_active_vo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Marais_(1978)_Variable_temperature_cryogenic_pump_for_the_separation_of_gas_mixt",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "δ¹³C"
+   ]
+  },
+  {
+   "stem": "MARGO(2009)_ocean_cooling_LGM",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "alkenone U37K unsaturation ratios"
+   ]
+  },
+  {
+   "stem": "Marini_et_al._(1986)_New_geothermometers_for_carbonate-evaporite_geothermal_rese",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "SO₄/F ratio (molality)"
+   ]
+  },
+  {
+   "stem": "Marras_et_al._(2023)_Extensive_oxidizing_events_recorded_by_peridotite_mantle_xe",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Marty_&_Jambon_(1987)_C-3He_in_volatile_fluxes_from_the_solid_Earth;_carbon_geod",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "²⁰Ne/²²Ne"
+   ]
+  },
+  {
+   "stem": "Marty_and_Dauphas,_2003,_The_nitrogen_record_of_crust_mantle_interaction_and_mantle_convection_Archean_to_Present",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "N2/36Ar"
+   ]
+  },
+  {
+   "stem": "Marty_et_al._(1989)_He_isotopes_and_CO2_in_volcanic_gases_of_Japan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Marty_et_al._(2020)_An_evaluation_of_the_C-N_ratio_of_the_mantle_from_natural_CO",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Matsuhisa_&_Kurasawa_(1983)_Oxygen_and_strontium_isotopic_characteristics_of_cal",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "K2O or K"
+   ]
+  },
+  {
+   "stem": "Matsumoto_et_al._(2000)_Noble_gases_in_pyroxenites_and_metasomatised_peridotites",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "84Kr concentration"
+   ]
+  },
+  {
+   "stem": "Matsumoto_et_al._(2002)_Recycled_noble_gas_and_nitrogen_in_the_subcontinental_li",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "N2 concentration"
+   ]
+  },
+  {
+   "stem": "Mayhew_et_al._(2013)_Hydrogen_generation_from_low-temperature_water–rock_reactio",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Mccollom,_2006,_Carbon_isotope_composition_of_organic_compounds_produced_by_abio",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Meckler(2015)_spleothem_clumped",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "³⁶Ar"
+   ]
+  },
+  {
+   "stem": "Merlivat(1978)_alpha_diff",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "oxygen-18 ratio (¹⁸O/¹⁶O)"
+   ]
+  },
+  {
+   "stem": "Minissale_et_al._(2019)_Systematic_of_geochemistry_from_thermal_springs,_gas_ven",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "δ18O of water samples"
+   ]
+  },
+  {
+   "stem": "Mittal_&_Richards_(2017)_Plume-ridge_interaction_via_melt_channelization_at_Galá",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Mohapatra_et_al-2004-Nitrogen_isotopic_composition_of_the_MORB_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "3He/4He"
+   ]
+  },
+  {
+   "stem": "Mollo_&_Masotta_(2014)_Optimizing_pre-eruptive_temperature_in_thermally_and_chem",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 composition of melt"
+   ]
+  },
+  {
+   "stem": "Moore,_2009,_Marine_Chemical_Technology_and_Sensors_for_Marine_Waters;_Potential",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "Si(OH)₄ or SiO₂ (silicic acid)"
+   ]
+  },
+  {
+   "stem": "Moran_et_al._(2017)_Dual_stable_isotopes_of_CH4_from_Yellowstone_hot-springs_sug",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ18O of spring water"
+   ]
+  },
+  {
+   "stem": "Mori,_2001,_An_in_situ_method_for_measuring_CO2_flux_from_volcanic-hydrothermal_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "H2S concentration"
+   ]
+  },
+  {
+   "stem": "Morikawa_et_al._(2016)_Widespread_distribution_of_ascending_fluids_transporting_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 18,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Morishita_et_al._(2015)_Petrology_of_Peridotites_and_Related_Gabbroic_Rocks_Arou",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "Na2O content"
+   ]
+  },
+  {
+   "stem": "Morris_et_al._(1990)_Potassium-argon_ages_of_Cenozoic_igneous_rocks_from_eastern",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "Radiogenic 40Ar"
+   ]
+  },
+  {
+   "stem": "Morrison_&_Pine_(1955)_RADIOGENIC_ORIGIN_OF_THE_HELIUM_ISOTOPES_IN_ROCK",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H³ radioactivity"
+   ]
+  },
+  {
+   "stem": "Mottl,_2011,_Chemistry_of_hot_springs_along_the_Eastern_Lau_Spreading_Center",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ13C in methane and DIC"
+   ]
+  },
+  {
+   "stem": "Moussallam_et_al._(2019)_On_the_relationship_between_oxidation_state_and_tempera",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "H2S mole fraction"
+   ]
+  },
+  {
+   "stem": "Muirhead_et_al._(2016)_Evolution_of_upper_crustal_faulting_by_magmatic_volatile_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Mukasa_and_Dalziel_(2000",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Mukhopadhyay_&_Parai_(2019)_Noble_Gases;_A_Record_of_Earth's_Evolution_and_Mantl",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 14,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Mukuhira_et_al._(2002)_Slab-derived_fluid_storage_in_the_crust_elucidated_by_earthquake_swarm_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO₂ precipitation (kg)"
+   ]
+  },
+  {
+   "stem": "Neal_&_Stanger_(1983)_Hydrogen_generation_from_mantle_source_rocks_in_Oman",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CH4 content"
+   ]
+  },
+  {
+   "stem": "Newell_et_al._(2015)_Mantle-derived_helium_in_hot_springs_of_the_Cordillera_Blan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ18O of water"
+   ]
+  },
+  {
+   "stem": "Nicklas_et_al._(2021)_Oxidized_mantle_sources_of_HIMU_and_EM_type_ocean_island_b",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr"
+   ]
+  },
+  {
+   "stem": "Niu_et_al._(2013)_Continental_collision_zones_are_primary_sites_for_net_continen",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Nuccio_et_al._(2008)_Elemental_and_isotope_covariation_of_noble_gases_in_mineral",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "38Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "O'Connor_et_al._(2024)_Synchronous_motion_of_the_Easter_mantle_plume_and_the_Eas",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Ohba,_2010,_Magmatic_fluids_of_Tatun_volcanic_group,_Taiwan",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 21,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Ohno_et_al._(2011)_Helium_isotopes_of_Izu_Peninsula",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "84Kr concentration"
+   ]
+  },
+  {
+   "stem": "Pan_et_al._(2023)_Investigation_of_hot_spring_gas_components_and_soil_gas_fluxes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "soil CO2 flux"
+   ]
+  },
+  {
+   "stem": "Paonita_et_al._(2021)_Intense_overpressurization_at_basaltic_open-conduit_volcan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "40Ar/36Ar isotope ratio"
+   ]
+  },
+  {
+   "stem": "partition_coefficient",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "fO2 - Oxygen fugacity"
+   ]
+  },
+  {
+   "stem": "Paternoster_et_al._He-Sr_isotope_constraints_on_the_mantle_beneath_the_Monte_Vulture_volcano,_southern_Italy",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Pearce_et_al.,_2001,_Geochemical_tracing_of_Pacific-to-Atlantic_upper-mantle_flow_through_the_Drake_passage",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "⁸⁷Sr/⁸⁶Sr"
+   ]
+  },
+  {
+   "stem": "Pearce_et_al.,_2007,_Hf-Nd_evidence_for_the_origin_and_distribution_of_mantle_domains_in_the_SW_Pacific",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Peate_et_al._(2001)_U-series_Isotope_Data_on_Lau_Basin_Glasses;_the_Role_of_Subd",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "Ra-226 concentration"
+   ]
+  },
+  {
+   "stem": "Pedersen_et_al._(2010)_Discovery_of_a_black_smoker_vent_field_and_vent_fauna_at_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "δ13C"
+   ]
+  },
+  {
+   "stem": "Peng,_2011,_Characteristics_and_source_of_inorganic_and_organic_compounds_in_the",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "Pristane/n-C17 ratio"
+   ]
+  },
+  {
+   "stem": "Pietruszka_et_al._(2025)_Melt_Flux_from_the_Mantle_Regulates_the_Crustal_Process",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 13,
+   "missing_labels": [
+    "234U excess"
+   ]
+  },
+  {
+   "stem": "Porcelli,_2018,_Noble_Gases_in_Geochemistry_and_Cosmochemistry",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 17,
+   "missing_labels": [
+    "CFC-11 concentration"
+   ]
+  },
+  {
+   "stem": "Prinzhofer_et_al._(2018)_Discovery_of_a_large_accumulation_of_natural_hydrogen_i",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 13,
+   "missing_labels": [
+    "CH4 concentration"
+   ]
+  },
+  {
+   "stem": "Proskurowski_et_al._(2006)_Low_temperature_volatile_production_at_the_Lost_City_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "CH₄ concentration (endmember)"
+   ]
+  },
+  {
+   "stem": "Putirka_et_al._(2003)_New_clinopyroxene-liquid_thermobarometers_for_mafic,_evolv",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "Na2O in liquid"
+   ]
+  },
+  {
+   "stem": "Putirka_et_al._(2011)_Mineralogy_and_composition_of_the_oceanic_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Na2O whole rock"
+   ]
+  },
+  {
+   "stem": "Qian_et_al._(2025)_Mantle_transition_zone_water_triggers_lithospheric_weakening_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "δ¹⁸O of olivine"
+   ]
+  },
+  {
+   "stem": "Quade(2007)_Paleoelevation",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ¹³Cₛc"
+   ]
+  },
+  {
+   "stem": "Rapp_et_al._(1999)_Reaction_between_slab-derived_melts_and_peridotite_in_the_man",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "rapp_et_al._(2003)_Growth_of_early_continental_crust_by_partial_melting_of_eclog",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  },
+  {
+   "stem": "Regier_et_al._(2018)_An_oxygen_isotope_test_for_the_origin_of_Archean_mantle_roo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  },
+  {
+   "stem": "Reich_et_al._(2007)_Formation_of_cristobalite_nanofibers_during_explosive_volcan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  },
+  {
+   "stem": "Ricketts_et_al.,_2016",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "4He concentration"
+   ]
+  },
+  {
+   "stem": "Robert_(2003)_The_DH_ratio_in_chondrites",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "H2O concentration"
+   ]
+  },
+  {
+   "stem": "Robidoux_et_al._(2017)_Volatile_contents_of_mafic-to-intermediate_magmas_at_San_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Rosenberg,_1988,_Estimation_of_heat_and_chemical_fluxes_from_a_seafloor_hydrothe",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "222Rn (radon)"
+   ]
+  },
+  {
+   "stem": "Rosenthal_et_al._(2014)_Continuous_eclogite_melting_and_variable_refertilisation",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H2O content in melts and minerals"
+   ]
+  },
+  {
+   "stem": "Ruffa_et_al._(1999)_Isotope_and_chemical_assessment_of_geothermal_potential_of_K",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "N2/He ratio"
+   ]
+  },
+  {
+   "stem": "Ruzie_et_al._(2012)_Noble_gas_isotopes_in_hydrothermal_volcanic_fluids_of_La_Sou",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "¹²⁹Xe/¹³⁰Xe ratio"
+   ]
+  },
+  {
+   "stem": "Sandoval-Bohorquez_et_al._(2020)_A_method_for_the_highly_accurate_quantification",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "H2O production (molar flow)"
+   ]
+  },
+  {
+   "stem": "Sano,_2014,_Helium_anomalies_suggest_a_fluid_pathway_from_mantle_to_trench_durin",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CH4/3He ratio"
+   ]
+  },
+  {
+   "stem": "Sano,_2020,_Groundwater_oxygen_anomaly_related_to_the_2016_Kumamoto_earthquake_i",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "δ2H or δ^2H or δD"
+   ]
+  },
+  {
+   "stem": "Sano_et_al._(1994)_Carbon_and_helium_isotopic_ratios_at_Kusatsu-Shirane_Volcano,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "H2S content"
+   ]
+  },
+  {
+   "stem": "Sano_et_al._(1998)_He_and_C_isotopes_at_Ontake_volcano,_Japan",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ13C of CO2"
+   ]
+  },
+  {
+   "stem": "Sano_et_al._(2020)_Groundwater_anomaly_related_to_CCS-CO2_injection_and_2018_Hok",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ2H or δD"
+   ]
+  },
+  {
+   "stem": "Sato_et_al._(2004)_Crustal_control_on_the_redox_state_of_granitoid_magmas;_grani",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Sato_et_al._(2013)_Late_Oligocene_to_Middle_Miocene_Adakitic_Andesites,_High_Mag",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Schine,_2021,_Massive_Southern_Ocean_phytoplankton_bloom_fed_by_iron_of_possible",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "δ³He (helium-3 isotope ratio)"
+   ]
+  },
+  {
+   "stem": "Schmid_et_al._(2019)_Physico-chemical_properties_of_newly_discovered_hydrotherma",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "²⁰Ne/²²Ne ratio"
+   ]
+  },
+  {
+   "stem": "Schmidt,_2007,_Geochemistry_of_hydrothermal_fluids_from_the_ultramafic-hosted_Lo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "H2S (hydrogen sulfide) concentrations"
+   ]
+  },
+  {
+   "stem": "Schwarzenbach_et_al._(2020)_Fluids_in_submarine_mid-ocean_ridge_hydrothermal_set",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₂ concentration"
+   ]
+  },
+  {
+   "stem": "Shaw_et_al._(2004)_The_CO2-He-Ar-H2O_systematics_of_the_Manus_backarc_basin;_sou",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "H₂O abundance"
+   ]
+  },
+  {
+   "stem": "Shaw_et_al._(2012)_Long-term_preservation_of_slab_signatures_in_the_mantle_inferred_from_hydrogen_isotopes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ13C"
+   ]
+  },
+  {
+   "stem": "Sheldrick_et_al.,_2020,_Peridotite_versus_pyroxenite_input_in_Mongolian_Mesozoic-Cenozoic_lavas,_and_dykes",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Sheldrick_et_al._(2020)_Evidence_for_southward_subduction_of_the_Mongol-Okhotsk_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Shen_et_al._(2007)_Genesis_of_volcanic-hosted_gold_deposits_in_the_Sawur_gold_be",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ13C of calcite from late mineralization stage"
+   ]
+  },
+  {
+   "stem": "Sheng_(2013)_Helium__Argon_and_Carbon_Isotopic_Compositions_of_Spring_Gases_in_t",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Shimizu_et_al._(2019)_Identifying_volatile_mantle_trend_with_the_water–fluorine–",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "δ18O"
+   ]
+  },
+  {
+   "stem": "Shimizu_et_al._(2019)_In_situ_analyses_of_hydrogen_and_sulfur_isotope_ratios_in_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "CO₂ content"
+   ]
+  },
+  {
+   "stem": "Shuto_et_al._(2015)_Across-arc_variations_in_geochemistry_of_Oligocene_to_quater",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "d18O"
+   ]
+  },
+  {
+   "stem": "Sim_ho,_2017,_Reactivated_Timings_of_Yangsan_Fault_in_the_Northern_Pohang_Area,_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Illite 1M polytype relative abundance (%)"
+   ]
+  },
+  {
+   "stem": "Solomon_et_al._(1996)_Source_of_radiogenic_helium_4_in_shallow_aquifers_Implications_for_dating_young_groundwater",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "238U concentration"
+   ]
+  },
+  {
+   "stem": "Stanley_&_Jenkins_(2013)_Noble_gases_in_seawater_as_tracers_for_physical_and_bio",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 12,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Stroncik_et_al.,_2017,_Helium_isotope_evidence_for_a_deep-seated_mantle_plume_in",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Sun_et_al._(2015)_Contribution_of_crustal_materials_to_the_mantle_sources_of_Xia",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Sun_et_al._(2023)_The_role_of_high_oxygen_fugacity_on_genesis_of_the_late_Cenozo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "40Ar/39Ar ages"
+   ]
+  },
+  {
+   "stem": "Takahata,_2008,_Helium_isotopes_of_seawater_in_the_Japan_Sea",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "3H (tritium) concentration"
+   ]
+  },
+  {
+   "stem": "Tassi_et_al._(2017)_The_2012–2016_eruptive_cycle_at_Copahue_volcano_(Argentina)_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Tatsumi_et_al._(2020)_Contrasting_volcano_spacing_along_SW_Japan_arc_caused_by_d",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "H2O content"
+   ]
+  },
+  {
+   "stem": "The_Molecular_Geochemistry_of_Coals_An_Information_Resource_for_the_Biodegradati",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "22S/(22S+22R) hopane isomerization parameter"
+   ]
+  },
+  {
+   "stem": "Tian_et_al.,_2016,_Origin_of_low_╬┤26Mg_basalts_with_EM-I_component;_Evidence_for_interaction_between_enriched_lithosphere_and_carbonated_asthenospher",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Tian_et_al._(2019),_G._G._G.__Devolatilization_of_Subducting_Slabs__Part_I__Thermodynamic_Parameterization_and",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H2O mass fraction (cl^H2O) in liquid volatile phase"
+   ]
+  },
+  {
+   "stem": "Troch_et_al._(2020)_Low-δ18O_silicic_magmas_on_Earth-A_review",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "143Nd/144Nd or εNd"
+   ]
+  },
+  {
+   "stem": "Truche_et_al._(2024)_A_deep_reservoir_for_hydrogen_drives_intense_degassing_in_t",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "CH₄ concentration (vol%)"
+   ]
+  },
+  {
+   "stem": "Umeda,_2007,_Relationship_between_helium_isotopes_and_heat_flux_from_hot_springs",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "40Ar/36Ar"
+   ]
+  },
+  {
+   "stem": "Umeda_et_al.,_2013,_Release_of_mantle_and_crustal_helium_from_a_fault_following_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "CH₄ concentration"
+   ]
+  },
+  {
+   "stem": "Umeda_et_al._(2024),_GRL_Geochemical_Signature_of_Deep_Fluids_Triggering_Earthquake_Swarm_in_the_Noto",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "40Ar/36Ar ratios"
+   ]
+  },
+  {
+   "stem": "Van_Soest_et_al._(1998)_Tracing_crustal_and_slab_contributions_to_arc_magmatism_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "²⁰Ne/²²Ne"
+   ]
+  },
+  {
+   "stem": "Von_Damm_et_al._(2006)_Chemistry_of_vent_fluids_and_its_implications_for_subsurf",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "δ18O"
+   ]
+  },
+  {
+   "stem": "VonDamm,_1985,_Chemistry_of_submarine_hydrothermal_solutions_at_21_°N,_East_Paci",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "87Sr/86Sr"
+   ]
+  },
+  {
+   "stem": "Wang_et_al._(2003)_Carboniferous_adakites_and_Nb-enriched_arc_basaltic_rocks_ass",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Na2O content"
+   ]
+  },
+  {
+   "stem": "Wang_et_al._(2019)_Metasomatized_lithospheric_mantle_for_Mesozoic_giant_gold_dep",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H2O (water) content"
+   ]
+  },
+  {
+   "stem": "Wang_et_al._(2022)_Crust–mantle_interaction_recorded_by_Early_Cretaceous_volcani",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Wang_et_al._(2022)_Gold_endowment_of_the_metasomatized_lithospheric_mantle_for_g",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Wang_et_al._(2024)_Volatile_budgets_and_gold_mobilization_in_metasomatized_sub-c",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Wegener,_2024,_Hydrothermal_vents_supporting_persistent_plumes_and_microbial_che",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "20Ne concentration"
+   ]
+  },
+  {
+   "stem": "White_et_al._(2009)_The_origin_of_trachyte_and_pantellerite_from_Pantelleria,_It",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "H2O in melt inclusions"
+   ]
+  },
+  {
+   "stem": "Whiticar,_1999,_Carbon_and_hydrogen_isotope_systematics_of_bacterial_formation_a",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "δD-methane or δ2H-methane"
+   ]
+  },
+  {
+   "stem": "Woodhead_et_al._(2016)_Advances_in_Isotope_Ratio_Determination_by_LA–ICP–MS",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Workman_&_Hart_(2005)_Major_and_trace_element_composition_of_the_depleted_MORB_m",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "H₂O/Ce ratio"
+   ]
+  },
+  {
+   "stem": "Wu_et_al._(2017)_Major_transition_of_continental_basalts_in_the_Early_Cretaceous",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "K2O/TiO2"
+   ]
+  },
+  {
+   "stem": "Wu_et_al._(2022)_Oceanic_carbon_cycle_in_a_symbiotic_zone_between_hydrothermal_v",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "4He/20Ne"
+   ]
+  },
+  {
+   "stem": "Xia_&_Li_(2019)_Basalt_geochemistry_as_a_diagnostic_indicator_of_tectonic_settin",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Xia_et_al._(2013)_Water_contents_of_the_Cenozoic_lithospheric_mantle_beneath_the",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "Spinel Fe³⁺/ΣFe ratio"
+   ]
+  },
+  {
+   "stem": "Xia_et_al._(2015)_Neoproterozoic_active_continental_margin_of_the_Cathaysia_bloc",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Xu_(2007)_Diachronous_lithospheric_thinning_of_the_North_China_Craton_and_format",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "Al2O3 and CaO concentrations"
+   ]
+  },
+  {
+   "stem": "Xu_et_al._(2017)_The_origin_of_Cenozoic_continental_basalts_in_east-central_Chin",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Yamamoto_et_al._(2001)_Helium_and_carbon_isotopes_in_fluorites;_mantle_carbon_co",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "²³⁸U concentration"
+   ]
+  },
+  {
+   "stem": "Yamamoto_et_al._(2004)_subduction-related_components_in_the_subcontinental_mantl",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "238U concentration"
+   ]
+  },
+  {
+   "stem": "Yan_et_al._(2016)_Hydrochemical_tracing_of_mineral_water_in_Jingyu,_NE_China",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "3H/TU (tritium)"
+   ]
+  },
+  {
+   "stem": "Yan_et_al._(2017)_Characteristics_of_the_geothermal_water_in_Changbai_Mountain_v",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "SO42- concentration"
+   ]
+  },
+  {
+   "stem": "Yan_et_al._(2019)_Characteristics_of_Mineral_Fluids_and_Geothermal_Reservoir_in_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "H₃BO₃"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2007)_Sources_and_Petrogenesis_of_Late_Triassic_Dolerite_Dikes_in_t",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "176Hf/177Hf"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2010)_Diachronous_decratonization_of_the_Sino-Korean_craton;_mantle",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2012)_Slab–mantle_interaction_in_continental_subduction_channel;_Me",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Hf176/Hf177"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2018)__Mesozoic_magmatism_in_the_eastern_North_China_Craton;_tecton",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "TDM2 or TDMc (Hf crustal model age)"
+   ]
+  },
+  {
+   "stem": "Yang_et_al._(2022)_Petrogenetic_evolution_of_early_Paleozoic_trachytic_rocks_in_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Yu_et_al.,_2021,_Magnesium_isotope_constraints_on_contributions_of_recycled_oceanic_crust_and_lithospheric_mantle_to_generation_of_intraplate_basalts_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 4,
+   "missing_labels": [
+    "^143Nd/^144Nd"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2017)_Hydrogeochemistry_of_mineral_water_with_water-rock_interacti",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H2SiO3 (silicic acid)"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2018)_Mantle_Source_and_Magmatic_Evolution_of_the_Dying_Spreading_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2021)_Lithosphere–asthenosphere_interactions_beneath_northeast_Chi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "3He/4He (helium isotope ratios)"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2024)_Bulk_Rock_and_Olivine_Chemistry_and_Isotopes_of_106–58_Ma_Ba",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2024)_EPSL_L-chondrite_body_breakup_in_Ordovician_strata_in_China",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 10,
+   "missing_labels": [
+    "Os-188 isotope ratio"
+   ]
+  },
+  {
+   "stem": "Zhang_et_al._(2026)_Lithos,_Unveiling_an_Ordovician_continental_back-arc_basin;_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "He4_Ne20"
+   ]
+  },
+  {
+   "stem": "Zhao_&_Yi_(2021)_Geochemistry_of_thermal_waters_in_the_Changbaishan_volcanic_geo",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 9,
+   "missing_labels": [
+    "SO₄²⁻ concentration"
+   ]
+  },
+  {
+   "stem": "Zhao_et_al._(2018)_Geochemistry_of_HCO3-Na_thermal_water;_fluid_origin,_formatio",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ13C limestone"
+   ]
+  },
+  {
+   "stem": "Zhao_et_al._(2022)_Subducting_Indian_Lithosphere_Controls_the_Deep_Carbon_Emissi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "δ¹⁵N of N₂"
+   ]
+  },
+  {
+   "stem": "Zhao_et_al._(2025)_Titanium_isotopes_as_a_tracer_of_eclogite_in_the_mantle_sourc",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "¹⁴³Nd/¹⁴⁴Nd"
+   ]
+  },
+  {
+   "stem": "Zimmer_et_al.,_2004,_Nitrogen_systematics_and_gas_fluxes_of_subduction_zones;Ins",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 11,
+   "missing_labels": [
+    "20Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "Zou_&_Zhang_(2024)_Modification_of_Archean_lower_crust_of_the_North_China_Craton",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 7,
+   "missing_labels": [
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "김종선,_2017,_봉길_슈도타킬라이트",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 2,
+   "missing_labels": [
+    "Na2O + K2O"
+   ]
+  },
+  {
+   "stem": "송용선_외_(2006)_울릉도와_독도_화산암의_생성연대_및_진화사",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 3,
+   "missing_labels": [
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "정찬호,_2008,_강화_석모도_지역_온천수와_지하수의_수리지구화학_및_동위원소_연구",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 8,
+   "missing_labels": [
+    "21Ne/22Ne"
+   ]
+  },
+  {
+   "stem": "황상구_&_조인화_(2016)_울릉도_화산암류의_분화이력과_분출량에_따른_위험도_분석",
+   "model": "claude-haiku-4-5",
+   "n_missing": 1,
+   "n_gateable": 1,
+   "missing_labels": [
+    "SiO2 content"
+   ]
+  }
+ ],
+ "md_ocr_suspect": [
+  {
+   "stem": "Onuma_et_al._(1968)_Trace_element_partition_between_two_pyroxenes_and_the_host_l",
+   "model": "claude-haiku-4-5",
+   "n_missing": 18,
+   "n_gateable": 18,
+   "missing_labels": [
+    "Mn2+ concentration (ppm)",
+    "Co2+ concentration (ppm)",
+    "Sr2+ concentration (ppm)",
+    "Ba2+ concentration (ppm)",
+    "Sc3+ concentration (ppm)",
+    "In3+ concentration (ppm)",
+    "La3+ concentration (ppm)",
+    "Ce3+ concentration (ppm)",
+    "Nd3+ concentration (ppm)",
+    "Sm3+ concentration (ppm)",
+    "Eu3+ concentration (ppm)",
+    "Gd3+ concentration (ppm)",
+    "Tb3+ concentration (ppm)",
+    "Tm3+ concentration (ppm)",
+    "Yb3+ concentration (ppm)",
+    "Lu3+ concentration (ppm)",
+    "U4+ concentration (ppm)",
+    "Th4+ concentration (ppm)"
+   ]
+  },
+  {
+   "stem": "Lilley_et_al._(1993)_Anomalous_CH4_and_NH4+_concentrations_at_an_unsedimented_mi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 8,
+   "n_gateable": 10,
+   "missing_labels": [
+    "δ¹³C of CH₄",
+    "δ²H of CH₄",
+    "³He/⁴He ratio (R/Ra)",
+    "CH₄/³He ratio",
+    "CH₄/C₂+ ratio",
+    "Endmember CH₄ concentration",
+    "Endmember NH₄⁺ concentration",
+    "δ¹⁵N of NH₄⁺"
+   ]
+  },
+  {
+   "stem": "Wallace_et_al.,_2021,_Olivine_hosted_melt_inclusion;_a_microscopic_perspective_on_a_complex_magmatic_world",
+   "model": "claude-haiku-4-5",
+   "n_missing": 8,
+   "n_gateable": 11,
+   "missing_labels": [
+    "δ18O",
+    "δ13C",
+    "3He/4He",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Kuritani_et_al._(2020)_Buoyant_hydrous_mantle_plume_from_the_mantle_transition_z",
+   "model": "claude-haiku-4-5",
+   "n_missing": 7,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ18O",
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb",
+    "H2O content"
+   ]
+  },
+  {
+   "stem": "0a5c07e1-bbc3-7d27-357f-bb11951f39a3",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 8,
+   "missing_labels": [
+    "delta 13C of methane",
+    "CH₄ concentration",
+    "N₂ concentration",
+    "O₂ concentration",
+    "CO₂ concentration",
+    "H₂ concentration"
+   ]
+  },
+  {
+   "stem": "Aiuppa_(2010)_Unusally_large_magmatic_CO2_gas_emission_prior_to_a_basaltic_parox",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 6,
+   "missing_labels": [
+    "CO₂ flux",
+    "SO₂ flux",
+    "CO₂/SO₂ ratio",
+    "excess CO₂ flux",
+    "cumulative CO₂ flux",
+    "cumulative SO₂ flux"
+   ]
+  },
+  {
+   "stem": "Arslan_&_Temizel_(2024)_A_geochemical_perspective_on_the_genesis_of_Cenozoic_bas",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 7,
+   "missing_labels": [
+    "SiO2 wt%",
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Sakai_et_al._(1990)_Venting_of_CO2-rich_fluid_and_hydrate_formation_in_Mid-Okina",
+   "model": "claude-haiku-4-5",
+   "n_missing": 6,
+   "n_gateable": 7,
+   "missing_labels": [
+    "δ13CO2",
+    "δ13CCH4",
+    "3He/4He (R/Ra)",
+    "CO2 content (vol%)",
+    "H2S content (vol%)",
+    "CH4 + H2 residual gas (vol%)"
+   ]
+  },
+  {
+   "stem": "Bergfeld_et_al._(2001)_Carbon_isotope_systematics_and_CO2_sources_in_The_Geysers",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 6,
+   "missing_labels": [
+    "δ13C of CO2",
+    "δ13C of CH4",
+    "δ13C of calcite veins",
+    "δ18O of calcite veins",
+    "δ13C of organic carbon"
+   ]
+  },
+  {
+   "stem": "Dawson_(2012)_Nephelinite–melilitite–carbonatite_relationships;_Pleistocene–rece",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "Douglas_(1987)_manganese_rich_rock_coatings_from_iceland",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Al2O3",
+    "Fe2O3",
+    "Na2O",
+    "K2O",
+    "P2O5"
+   ]
+  },
+  {
+   "stem": "Kelley_et_al._(2001)_An_off-axis_hydrothermal_vent_field_near_the_Mid-Atlantic_R",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "δ13C",
+    "δ18O",
+    "H₂S concentration",
+    "CH₄ (methane) concentration",
+    "H₂ (hydrogen) concentration"
+   ]
+  },
+  {
+   "stem": "Lilley_et_al._(2003)_Magmatic_events_can_produce_rapid_changes_in_hydrothermal_v",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 6,
+   "missing_labels": [
+    "3He/heat ratio",
+    "CO2 concentration",
+    "H2 concentration",
+    "CH4 concentration",
+    "N2 concentration"
+   ]
+  },
+  {
+   "stem": "Morris_(1995)_Slab_melting_as_an_explanation_of_Quaternary_volcanism_and_aseismi",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Al2O3",
+    "Fe2O3",
+    "Na2O",
+    "K2O",
+    "P2O5"
+   ]
+  },
+  {
+   "stem": "Richer_et_al._(2004)_Mafic_magma_injection_triggers_eruption_at_Ilopango_Calera,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Al₂O₃ (wt%)",
+    "FeO/Fe₂O₃ (wt%)",
+    "Na₂O (wt%)",
+    "K₂O (wt%)",
+    "P₂O₅ (wt%)"
+   ]
+  },
+  {
+   "stem": "sumino_2004_basalt_trace_element",
+   "model": "claude-haiku-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Al2O3",
+    "Fe2O3",
+    "Na2O",
+    "K2O",
+    "P2O5"
+   ]
+  },
+  {
+   "stem": "Usui_et_al._(2017)_Ore_Geo._Rev.",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 5,
+   "n_gateable": 6,
+   "missing_labels": [
+    "87Sr/86Sr",
+    "143Nd/144Nd",
+    "206Pb/204Pb",
+    "207Pb/204Pb",
+    "208Pb/204Pb"
+   ]
+  },
+  {
+   "stem": "길영우_외_(2007)_강원도_고성지역에_분포하는_알칼리_현무암질_마그마의_상승경로",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 5,
+   "n_gateable": 5,
+   "missing_labels": [
+    "Al2O3",
+    "Fe2O3",
+    "Na2O",
+    "K2O",
+    "P2O5"
+   ]
+  },
+  {
+   "stem": "Geissler,_2005,_Seismic_structure_and_location_of_a_CO2_source_in_the_upper_mant",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 4,
+   "missing_labels": [
+    "3He/4He ratio (R/Ra)",
+    "δ13C (PDB)",
+    "CO₂ content (vol %)",
+    "N₂ content (vol %)"
+   ]
+  },
+  {
+   "stem": "Jiang_et_al._(2020)_Longest_continuously_erupting_large_igneous_province_driven_",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 5,
+   "missing_labels": [
+    "206Pb/204Pb",
+    "208Pb/204Pb",
+    "87Sr/86Sr",
+    "143Nd/144Nd"
+   ]
+  },
+  {
+   "stem": "Loiseau_et_al._(2024)_Hydrogen_generation_and_heterogeneity_of_the_serpentinizat",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 5,
+   "missing_labels": [
+    "H₂ concentration (ppmv)",
+    "CO₂ concentration (%)",
+    "O₂ concentration (%)",
+    "H₂S concentration (ppmv)"
+   ]
+  },
+  {
+   "stem": "Newell,_2023,_Roadblocks_and_speed_limits;_Mantle-to-surface_volatile_flux_throu",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 5,
+   "missing_labels": [
+    "δ13C of dissolved inorganic carbon (DIC)",
+    "δ13C of CO2 in bubbling springs",
+    "δ18O of spring water",
+    "δ2H (dD) of spring water"
+   ]
+  },
+  {
+   "stem": "Revillon_et_al._(2002)_Heterogeneity_of_the_Caribbean_plateau_mantle_source;_Sr,",
+   "model": "claude-haiku-4-5",
+   "n_missing": 4,
+   "n_gateable": 4,
+   "missing_labels": [
+    "$^{87}\text{Sr}/^{86}\text{Sr}$",
+    "$^{143}\text{Nd}/^{144}\text{Nd}$",
+    "$delta^{18}\text{O}$",
+    "$^4\text{He}$ (mol/g)"
+   ]
+  },
+  {
+   "stem": "Liu_et_al._(2020)_Continuous_water_supply_from_the_subducted_pacific_plate_to_th",
+   "model": "claude-haiku-4-5",
+   "n_missing": 3,
+   "n_gateable": 3,
+   "missing_labels": [
+    "H₂O in clinopyroxene",
+    "H₂O in basaltic melt",
+    "H₂O in mantle source"
+   ]
+  },
+  {
+   "stem": "Schaefer_&_Parmentier_(2021)_The_Air_Over_There;_Exploring_Exoplanet_Atmospheres",
+   "model": "claude-sonnet-4-5",
+   "n_missing": 3,
+   "n_gateable": 4,
+   "missing_labels": [
+    "20Ne/22Ne",
+    "3He/22Ne",
+    "129Xe/130Xe"
+   ]
+  }
+ ]
+}

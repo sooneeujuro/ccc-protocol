@@ -1,0 +1,2171 @@
+{
+ "summary": [
+  [
+   "20260618(=정본 재빌드)",
+   3706,
+   3706,
+   0
+  ],
+  [
+   "20260602",
+   3683,
+   3494,
+   189
+  ],
+  [
+   "20260610",
+   3683,
+   3494,
+   189
+  ],
+  [
+   "20260612",
+   3652,
+   3477,
+   175
+  ],
+  [
+   "Atelier_pilot",
+   3125,
+   2920,
+   205
+  ],
+  [
+   "PaperAtelier_datalab",
+   3095,
+   2893,
+   202
+  ],
+  [
+   "Q_duplicates(20260602)",
+   612,
+   584,
+   28
+  ],
+  [
+   "Q_newdup(20260609)",
+   93,
+   92,
+   1
+  ],
+  [
+   "Q_20260612",
+   37,
+   22,
+   15
+  ],
+  [
+   "coop_inbox",
+   25,
+   0,
+   25
+  ]
+ ],
+ "unique_gaps": 223,
+ "gaps": [
+  {
+   "title_tokens": "2023 adam assessment beyer ecosystem hydrogen microbial oxidation",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2022 3389 838993 articles cameroon feart forty frontiersin full geophysical hot https insights into line lines magmatic org source studies volcanic www years",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "111 1115111 2020 2021 2023 3389 articles etna feart flux frontiersin full https org paroxysmal sub volcano www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "222410902 alkaline c31bdce1fe6ce204971939902e55610c cenozoic constraints enrichid enrichsource esc geochemical https implications mantle melting net oib processes publication publicationcoverpdf researchgate rgreq rocks sources turkey type volcanic www xxx y292zxjqywdloziymjqxmdkwmjtbuzo1otk2odqznzy2otq3odramtuxotk4nzmwntq0mg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2022 3389 921994 articles basaltic continental feart fronti frontiersin full https like oib org petrology volcanism www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "asia cenozoic evolution preliminary synthesis tectonic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "312333897 basaltic cenozoic e9461a00df16b5cc38e2144768852827 enrichid enrichsource esc https late net petrogenesis publication publicationcoverpdf researchgate rgreq rocks southern vietnam www xxx y292zxjqywdlozmxmjmzmzg5nztbuzo1nti0otq5odkznti5njbamtuwodcznjq3ody5mq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2025 alkaline andreeva basaltic cha magmas sources tholeiitic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "frontiers heterogeneity https www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "high ion krypton mass measurements mode precision quadrupole spectrometer static trap xenon",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "261565588 abundance basalts carbon co2 enrichid enrichsource esc fb9dfe9cf8db8f0d014c4e8f6c8406d5 fluids fluxes gases geothermal https icelandic implications mantle net plume publication publicationcoverpdf related researchgate rgreq sub subglacial systematics www xxx y292zxjqywdlozi2mtu2ntu4odtbuzo3mdexnteyntkzotqwntfamtu0nde3odg5nty5mg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "binary code data logo scientific",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2022 3389 897267 andean articles carbon characteristics convergent feart frontiersin full helium https margin org www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "338037853 a1b51a1b4d20bcdb8df0ceb17f1ef543 bearing enrichid enrichsource esc evolution external facies https italy liguride mantle net plagioclase publication publicationcoverpdf pyroxenite researchgate rgreq suvero thermobarometric www xxx y292zxjqywdlozmzodaznzg1mztbuzo4mzc3ntg4oda4ntgxmtvamtu3njc0ody5mdu1mq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "hydrothermal oceanic ridges spreading undiscovered vents where",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "aseismic fault fluid induced migration outpaces pore slip",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "368425126 66503bdb8a1e91496031c9c58ebfe036 carbon continental eclogites enrichid enrichsource esc https inclusions mantle melt metasomatism net publication publicationcoverpdf recycling researchgate revealed rgreq role subduction uhp www xxx y292zxjqywdlozm2odqynteynjtbuzoxmtqzmti4mtexotg2mjm2nkaxnjc2mjc2otcxnzuw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2020 3389 599726 affecting antecrysts articles correcting entrapment feart frontiersin full hosted https inclusions melt mushpec olivine org post processes www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "283555525 a62a72787be16ab9581a7f48375c6fb9 basaltic comment controls enrichid enrichsource esc heterogeneity https mantle net publication publicationcoverpdf researchgate rgreq small volcanism volume www xxx y292zxjqywdlozi4mzu1ntuynttbuzozodezmtuwnje5nja3mdramtq2nzkyndawmzywmq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "accretion buoyancy dynamics geometry role sediment subduction",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "0000 0002 0003 0652 9394 9402 9469 covariation during https initiation orcid org oxidation slab subduction tracers volatiles",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "diversity large low melt mid ocean ridge thermal",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along analysis basin carbon data decatur dioxide faults illinois migration monitoring project revealed seismic shift time",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "248810264 c0c85352a8f1d2dac27d38bcfa7cf3fb chemistry enrichid enrichsource eruptions esc evolution fluid https hydrothermal net publication publicationcoverpdf researchgate rgreq seafloor www xxx y292zxjqywdlozi0odgxmdi2ndtbuzoxnti4otaymte1nzm3njbamtqxmzq2mzi3ntixng",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "gears logo red reports scientific two",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "african driven force head indian motions plate plume push union",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "00291 2020 3389 advances analysis articles challenges crystal csd distribution feart frontiersin full https org samples size volcanic www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00021 2014 3389 abstract africa east element feart frontiersin geochemistry http implications journal magmatism org province rift rungwe source superplume tanzania trace volcanic www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1produced chapter water",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "12phenols chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "2bioaccumulation chapter mechanisms",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "3arsenic chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "4barium chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "5cadmium chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "7chromium chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "8copper chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "9lead chapter ocean",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "content hosted hydrogen inclusion melt olivine water",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "decomposition matter measurement natural organic respiration rhizosphere text",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "basalts central crust eaction evolution indian influence jung lower mailto melt mid ocean oceanic park ridge roc snu woo",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2019 avalanche chun debris lahar lee subaerial subaqueous volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "altitude both changbaishan eruption extended millennium more paektu phases plumes than volcano",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2020 coulthard evolution following initiation magma source subduction",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2022 3389 996583 articles case contribution deep earth feart fluids frontiersin full geothermal https org system www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "across asia basaltic blanketing central compositional continental dichotomy diffuse eastern explains province thermal",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2021 3389 615766 articles czech feart fluids frontiersin full hartou https insight into mofette org republic tales www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "224377470 6e5fa3fd83d51242ac6b158fcbf23088 cluster enrichid enrichsource esc https measure net publication publicationcoverpdf researchgate rgreq separation www xxx y292zxjqywdloziyndm3nzq3mdtbuzo5nze1mji2nta5nzizm0axndawmtc0mzezotq2",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "266207196 799ec56909d15aa4b4f42c220fe2f15a arc boroujerd complex enrichid enrichsource esc geochemistry https intraplate iran mafic magmatic magmatism malayer net northern petrogenesis plutonic publication publicationcoverpdf related researchgate rgreq sanandaj sirjan www xxx y292zxjqywdlozi2njiwnze5njtbuzoxnte4ntc3ntawodk3mjhamtqxmzixnzexnzcwmw zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "carbon carbonate evolution existence gas ground phase ratios stable waters",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "2021 3389 808914 action articles cenozoic china feart fluid frontiersin full genesis https northeast org progress research volcano www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "analogue data evaluation groundwater hydrochemical impacts korea leakage long natural quality site south sub term",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "hoste occurring plagioclase processes reequilibration",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "230892327 a4c49729fa93c7bc63012e93ff52c0a3 chemical composition enrichid enrichsource esc fluxes https hydrothermal mid net ocean publication publicationcoverpdf researchgate rgreq ridge www xxx y292zxjqywdlozizmdg5mjmynztbuzoxndk3ntu0mjy1mti4otzamtqxmjcxntg4ndeymg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "approach compositions element granulites kapuskasing major reconstitution rock structural trace whole zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along co2 cycling epstein hikurangi margin review subduction",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "325344126 application b0a4ba9ea360e4d862c742f8deb186d9 enrichid enrichsource esc fractionation https imf instrumental mass methodology net prediction publication publicationcoverpdf researchgate response rgreq rsm stable surface www xxx y292zxjqywdlozmyntm0ndeynjtbuzo4nda2ntiymdgymzq0otzamtu3nzqzoduxmzcxoq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "08943502b24b632d67de761b9d62ea2b 344961774 central east enrichid enrichsource esc functions https implications inferred joint lithospheric net plateau publication publicationcoverpdf receiver researchgate rgreq structures surface tectonic tibetan tomography waves www xxx y292zxjqywdlozm0ndk2mtc3ndtbuzo5njgwotk1otu1njmwmdhamtywnzgyndmzode5mg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "alteration china craton geodetic lithospheric north observations ongoing revealed surface tomography wave",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2020 aiuppa carbon degassing fault fischer monoxide seismic zones",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "228667508 2ab131d8c73d625df8817966e99b3004 cratonic enrichid enrichsource erosion esc https lithosphere net publication publicationcoverpdf rejuvenation researchgate rgreq www xxx y292zxjqywdloziyody2nzuwodtbuzoxmdm3mduxmji3mdu0mjlamtqwmtcznjyznjkyoa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "327675903 bdba9892ae93dbc763684cd2a651129b beneath china enrichid enrichsource esc geochemical https implications its jurassic late lithospheric mantle metasomatised net publication publicationcoverpdf researchgate rgreq rocks shoshonitic south www xxx y292zxjqywdlozmynzy3ntkwmztbuzo3mde5mdg2ndu4ntexmzzamtu0ndm1otq3mde1ng",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "featuring gears logo red reports scientific two",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "basin deep deposits environmental guinea hydrothermal impact its manus mining papua possible sea submarine",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1998 activity along german hydrothermal indian ridge southwest",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "2017 case earthquake induced korea november pohang possible seismicity south",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "deep exploration ferromanganese fields nodule ocean radon tracer",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2024 hand hidden hydrogen",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "03c7ce73057ecc18822e773f6e42318a 355077762 contamination crustal enrichid enrichsource esc https insight magmatic mexico net oxygen paleogene publication publicationcoverpdf researchgate rgreq rocks sources southern variations volcanic www xxx y292zxjqywdlozm1nta3nzc2mjtbuzoxmdc1nty5ota3mjqwoty4qde2mzm0ndcyntc2nje",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "284793248 basalt diffusion e15c8a2f8d11e49abb2b56551a6dfa07 enrichid enrichsource esc https melt net publication publicationcoverpdf researchgate rgreq www xxx y292zxjqywdlozi4ndc5mzi0odtbuzozmtq0odg0mdq4mdc2odbamtq1mtk5mti4njy3nw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "arc constrained deep fluxes lava nitrogen phenocrysts sources",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2019 anderson gases hurwitz magmatic scrubbing temporal variations",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "china democratic emissions eruption gas korea millennium paektu people quantifying republic volcano",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "301309131 4239 4741e373 4bc4 along b68f c9adfcd0efd5 characterisation co2 dead degassing enrichid enrichsource evidences gases geochemical https mantle net publication researchgate rgreq rift sea sub www y292zxjqywdlozmwmtmwotezmttbuzozntqzmtq3ote5otc0ndbamtq2mtq4njyznziymw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "chemical classification common guide rocks volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "backarc basin central chemical composition fluids hydrothermal mariana southern trough",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "earth interiors physics planetary",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along atlantic distributions gao3 geotraces helium north sections tritium",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "313287463 36b29bbf051d3b120f4d00db3e684edc carbon communities dioxide enrichid enrichsource esc extent fixation high https integration mechanisms metagenomic microbial net publication publicationcoverpdf researchgate reveals rgreq stable temperature www xxx y292zxjqywdlozmxmzi4nzq2mztbuzo0ntc3ndi0mdcymtmwntdamtq4nje0ntcwmjm1ma",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "325232325 bbdad0e5fbb31bb01669b9d26e1f5bff enrichid enrichsource esc https igneous magmatic net petrogenesis processes publication publicationcoverpdf researchgate rgreq systems textures understand www xxx y292zxjqywdlozmyntizmjmynttbuzo3mza1mdixnte1ndq4mzjamtu1mte3njy5mze0mg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1002 1944 9194 com http issn journal onlinelibrary tectonics wiley",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "application atlas convection driven dynamics edge lithospheric mantle melting moroccan mountains thinning",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1993 anelasticity importance interpretation karato seismic tomogr",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1412678 2024 3389 abyssal across articles biodiversity community fmars fronti frontiersin full https magellan ocean org pacific plains seamounts structures western www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2025 abiotic discovered emissions helium kim mantle methane newly",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "analysis atmospheric baekdu correction dinsar investigation potential risk series time volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "350042336 alkaline antarctica d9aa7603c4255aec0e9b2991e4eef0d8 enrichid enrichsource esc evolution https land magmatic net northern oxygen pleiades publication publicationcoverpdf record researchgate rgreq rocks victoria volcanic www xxx y292zxjqywdlozm1mda0mjmznjtbuzoxmde0otq3mtkwndmxnzq0qde2mtg5otm2nzuxnda",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00157 2014 2015 2020 3389 articles cape during eruption feart fogo frontiersin full https islands magma org plumbing verde www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "abundances evolution halogen heterogeneity inferred intraplate lithosphere mantle xenoliths",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)",
+    "Q_newdup(20260609)"
+   ]
+  },
+  {
+   "title_tokens": "area environmental flow groundwater hydrogeochemistry island jeju mixing paths properties southwestern tracers volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "chemical compositions isotopic korea rich sub waters",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along central implications indian its major moment ocean release ridge seismic selected tectonic transforms western",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "343499755 656d1702bcdc496943f6e9e34aa22618 enrichid enrichsource esc https interactions mantle net plume publication publicationcoverpdf researchgate rgreq ridge spreading www xxx y292zxjqywdlozm0mzq5otc1nttbuzo5mjiymtaynjkxnjm1mjfamtu5njg4mzq3mdc2mq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "igneous plagioclase thermometer",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along carbon contents fluxes global magma mid ocean primary ridge sub system",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "energy renewable reviews sustainable",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "282532376 air cefbac2f44213711808f3f578dce4f19 dissolved enrichid enrichsource esc fractionation https hydrothermal implications kinetic net nitrogen publication publicationcoverpdf researchgate rgreq sub systems water www xxx y292zxjqywdlozi4mjuzmjm3njtbuzoyotqzntq0nja2ntk3mtzamtq0nze5mdk4mdqxmg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "activities compositions effects gas non related review volcanic volcanological",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "baekdu bottled changbai chemical china composition geochemical implication mineral near northeast produced water",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2021 3389 729905 articles based changbai china compositions dikes early feart field frontiersin full geochemistry geochronology https isotopic mountain org petrogenesis pleistocene volcanic www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "asia beneath lower mantle northeastern reservoirs water",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "act carbon dissolved flux hydrothermally inorganic sources",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "303447722 34597b172cb32aeacc84f0c63ea93331 britain element enrichid enrichsource esc extensional guinea https net papua publication publicationcoverpdf regional researchgate rgreq sinistral slip strike system trench www xxx y292zxjqywdlozmwmzq0nzcymjtbuzoznjuxmda0mzixnta1mjhamtq2nda1odezndyxoq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1c50f1a1c1ea2f445718ca14d3565e35 227154332 basin beneath changbaishan china crustal eastern enrichid enrichsource esc flank function https mantle net northeast publication publicationcoverpdf receiver region researchgate rgreq seismic songliao structure upwelling www xxx y292zxjqywdloziynze1ndmzmjtbuzoxmdq0mtq4mzi0oty2ndnamtqwmtkwntg0ndg2oa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2002 2005 2020 3389 599329 articles changbaishan deep earthquake feart focus frontiersin full https org triggered unrest volcanic wangqing www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "basalts chang constraints degassing features fractionation geochemical isotopic magma mantle source sulfur youngest",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "244553137 67b9751c9d747da71297f9fa285721fa ablation acquisition analyte calculation concentration coupled data enrichid enrichsource esc https inductively laser mass net plasma publication publicationcoverpdf researchgate rgreq signal spectrometric transient www xxx y292zxjqywdlozi0ndu1mzeznztbuzoznjywmtgyntkxmte5mzlamtq2ndi3njk2mtkznq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1126 2023 2fsciadv adf3024 alaska aleutian along arc carbon crossmark crossref date dialog doi domain http org outgassing pdf stamp subduction tracking volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "contributions crustal evaluating hawaiian mantle nickel olivine processes relative variability",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "360556425 8c6ee754a43050c6381b0cb1f03e8c7a andesites china derived enrichid enrichsource esc geochemical high https incorporation into mantle melts net northwestern paleozoic publication publicationcoverpdf researchgate rgreq sediment source subducting tianshan western www xxx y292zxjqywdlozm2mdu1njqynttbuzoxmtu5ntczoduxmzg5otuyqde2ntm0nzuzntg5otq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "central delta depleted high iceland lithosphere low magmatism mantle oceanic recycled source text",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00362 2020 3389 articles crystallization feart frontiersin full https hybridization magma mexico org petl popocat pyroxenic view volcano www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "344378388 analysis c9ffab3804fceab9a1279692a254f5a1 cosmochemical creativecommons enrichid enrichsource esc evaluation gas geochemical http httpcreativecommonsorglicensesby https implications license licenses mantle natural nd40 net org publication publicationcoverpdf ratio researchgate rgreq rich sub www xxx y292zxjqywdlozm0ndm3odm4odtbuzo5mzk2njawmzmzoty3mzdamtywmta0mzgxodi5oa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "272946349 454b869a39a03e93745da8dac8a65143 alkaline bambouto cameroon crustal deep differentiation enrichid enrichsource esc https line magmatism net plate publication publicationcoverpdf researchgate rgreq shallow volcano www xxx y292zxjqywdlozi3mjk0njm0ottbuzo1otc0ndizmzy2ode5odramtuxotq1mjc2mtm3na",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "arc carbon crustal dominate emissions may remobilization volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "37253205 analysis df7118b079e2ccab58a537a10621d851 enrichid enrichsource esc extraction fluorination forming https laser minerals net oxygen publication publicationcoverpdf researchgate rgreq rock stable system www xxx y292zxjqywdlozm3mjuzmja1o0ftojk5odi0ndk4mte4njywqde0mda4mte0mjqxntc",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "brahin brenham com distributions elemental gmail guil icp mailto mallmann mapping meteorites olivine pallasite plex precursor",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "geochemistry isotopic magmas subduction zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "228969355 3d557f544ffae178fcf18cae0944eb7f 4th conference enrichid enrichsource environmental esc field high https icp international metal multicollector net publication publicationcoverpdf researchgate resolution reviewpresented rgreq sect sector speciation studies tools trace www xxx y292zxjqywdloziyodk2otm1nttbuzoxndcxnta3njc5mjmymdbamtqxmja5ndg4nti5ng",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "crystallization dokdo hydrous implications inclusions islands korea magmatism magnetite melt oxidized rocks south trachytic ulleung",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "barrier earth gas gases noble origin rare revisited subduction",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "343362618 a71b6cceac7d27d582d2781563f09f05 arc back basin crustal denounced enrichid enrichsource esc finisterra https mafic magmatism net process publication publicationcoverpdf researchgate rgreq stretching terrane www xxx y292zxjqywdlozm0mzm2mjyxodtbuzo5mtk2ntmynjyymzuzotnamtu5nji3mzgzmzi2nw yield",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "ago billion carbon degassing earth sequestration since solid years",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "251430871 4303 461f 69c0b834 along aqueous baaf bda7462fdce0 co2 degassing enrichid enrichsource fluid geochemistry https implications margin mineral net plateau publication regional researchgate rgreq sources southern springs sub tibetan www y292zxjqywdlozi1mtqzmdg3mttbuzozmzaxnjy1otawmzm5mjfamtq1ntcyoti1nzm2oq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2020 arc distortion evolution feedback late nguyen slab volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "black featuring gears interlocking logo one positioned red reports scientific two words",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "229414248 3689cb91 4ce7 ac32 b2f8 big deep dehydration effects enrichid enrichsource fa53cb6c7df0 https its mantle net publication researchgate rgreq role slabs stagnant transition upper water wedge www y292zxjqywdloziyotqxndi0odtbuzoxmde1odexmzezntqxmjnamtqwmtizmdiznzg5nq zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "anomaly before block earthquake groundwater japan oxygen southwest tottori",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1174315 2023 3389 articles arxan china components feart field fluxes frontiersin full gas holocene hot https inner investigation mongolia org soil spring volcanic www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2018 basaltic case conduit december eruption etna geochemical inferred intense open overpressurization signals volcanoes",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00193 2019 3389 articles ash basaltic case etna feart frontiersin full generation https italy mechanisms mount org volcanoes www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "238281428 33890b501af212e7106d800c46df96f1 cosmochemistry enrichid enrichsource esc gases geochemistry https mineralogy net noble publication publicationcoverpdf researchgate reviews rgreq www xxx y292zxjqywdlozizodi4mtqyodtbuzozmdkwnta3mzcxmzu2mthamtq1mdy5ndg0ntc0mg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1989 arcs circum craig helium pacific poreda ratios volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "238424289 79d8d69fb4e3cc7ccba2ca524a46e5d1 arc back basin cenozoic constraints cretaceous enrichid enrichsource esc https japan korea magmatic net opening publication publicationcoverpdf researchgate rgreq sea south volcanism www xxx y292zxjqywdlozizodqyndi4ottbuzo0mtcwntg4nzq1mteznjfamtq3njq0ntk5mji3ma",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2008 abiogenic city hydrocarbon hydroth lost production proskurowski",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "applications arc basalts based comparison composition effects hydrous melt morbs olivine pressure temperature text thermometers",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "322110772 72d03f6e0bc1b64bd4097272020851ac cenozoic central composition enrichid enrichsource esc evolution https indicated lhasa mantle net paleocene phonolitic pseudoleucite publication publicationcoverpdf researchgate rgreq rocks southern terrane tibet www xxx y292zxjqywdlozmymjexmdc3mjtbuzo2mte3mde3njy1mdq0ndhamtuymjg1mjq3ndkzoa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "389729943 ce673298f6fae1e42bc7c089e663de08 enrichid enrichsource esc https lithospheric mantle net publication publicationcoverpdf researchgate rgreq spreading transition triggers water weakening www xxx y292zxjqywdlozm4otcyotk0mztbuzoxmtqzmti4mtmxnte1mjqzmeaxnzqxnjk3odywnjuw zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "248792185 a471f8353aeff034dba8b9eb249709dc arc basalts calcalkaline coexisting costa enrichid enrichsource esc high https implications magma net niobium publication publicationcoverpdf researchgate residual rgreq rica sources titanates turrialba volcano www xxx y292zxjqywdlozi0odc5mje4nttbuzoymzy2mjq1mjkzmjywotfamtqzmzqynza5mjgzna",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "256088724 america caldera central ea759e7887902279f0f209d1802c3603 enrichid enrichsource eruption esc https ilopango injection mafic magma net publication publicationcoverpdf researchgate rgreq salvador triggers www xxx y292zxjqywdlozi1nja4odcyndtbuzo5otq1otc2ntyznzezneaxndawnzi0ndy1mdm1",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "changes garnet oxidation peridotites potential reveal spatial subduction temporal",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00215 2018 3389 articles beneath feart fluid frontiersin full gases geochemistry https inclusions lithospheric lower mantle noble org poland silesia southwest sub wilcza www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00060 2019 3389 arc articles case feart frontiersin full gases geochemistry greece hellenic https kolumbo org rich sub submarine venting volcanic volcanism www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "american arc baru central fluids magmatic nicaragua panama signature telica text volcanic volcanoes",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2012 basaltic intrusions magma romengo trachytic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "264807974 continuous e44785ab7e1fa64cf7e466c2b49b0740 eclogite enrichid enrichsource esc heterogeneous https mantle melting net publication publicationcoverpdf refertilisation researchgate rgreq upwelling variable www xxx y292zxjqywdlozi2ndgwnzk3ndtbuzoxmzixmzk0nzu1ndiwmtzamtqwoduxntkxndg3oq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2019 earthquake faulting hierarchical interlocked orthogonal ridgecrest sequence",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "223543785 38ea56d98c19f817e6b646eaccfc9776 alkaline america calc case central centre chichontepec enrichid enrichsource esc https mildly net publication publicationcoverpdf researchgate rgreq salvador suite tholeiitic transition volcanic www xxx y292zxjqywdloziymzu0mzc4nttbuzo1oda0ndq4mzi3mtq3ntjamtuxntqwmdi0mdmwoq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "26790126 a16ab5d26a65e81f335393f02a2764fc al2o3 b2o3 ceramic crack crystal enrichid enrichsource esc glass hardness https interaction investigation mgo microscopic net properties publication publicationcoverpdf researchgate rgreq sio sio2 sub system www xxx y292zxjqywdlozi2nzkwmti2o0ftojeyndawnji5mji2nzawoeaxnda2ntc2odeymtq1",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "along emissions fault gas marmara multiple network reservoirs responsible",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2021 eruption frontiersi https records tajogaite www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2018 346900439 93d68a3fa8c3fec275408816298b00ad anomaly ccs co2 earthquake eastern enrichid enrichsource esc groundwater hokkaido https iburi injection japan net publication publicationcoverpdf related researchgate rgreq sub www xxx y292zxjqywdlozm0njkwmdqzottbuzo5njcxmji4ntuzotuzmjhamtywnzu5mtq2ntazoa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00256 2020 3389 articles feart frontiersin full https indicators magmatic mineralization org prospectivity pyroxenes sulfide www zoned",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1144819 2023 3389 articles beneath china crust feart frontiersin full functions https mantle northeast org receiver transition wave www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "cabled chemistry endeavour field fluid fuca hydrothermal juan main neptune observatory remote ridge sampling series time vent",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "328832892 469a56033d711ee51d4679b6428f5060 alteration deposits enrichid enrichsource esc fluids https hydrothermal microbial net processes publication publicationcoverpdf researchgate rgreq seafloor stable systems vent www xxx y292zxjqywdlozmyodgzmjg5mjtbuzoxmtqzmti4mteynjgxmjy3muaxnjc4ode0mtczmti2",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "crust extremely indian interaction ocean plume possibly resulting ridge thin",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2014 biogenic formation methane stolper temperatures thermogenic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "368228212 67821f8ce2e7fee6acde8a35bc26df9f asthenospheric beneath china convection craton driven edge enrichid enrichsource esc https net north numerical publication publicationcoverpdf researchgate rgreq www xxx y292zxjqywdlozm2odiyodixmjtbuzoxmtqzmti4mtexnzcxnju0meaxnjc1ntiwnzg4nja1",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "231575101 basalts chemical composition enrichid enrichsource esc f6b0feb531cdb0c6ab8da1923aa90f4c https implications isotopic mantle net oceanic processes publication publicationcoverpdf researchgate rgreq systematics www xxx y292zxjqywdlozizmtu3ntewmttbuzoxmdixnte2odi1mjcymzramtqwmtm2nji2nzqxmw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "bog deposits empa heavy holocene icpms investigation minerals multi peat poland river selected tool upper valley vistula xrd",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "21f3ad63218ca4364fe9a92b7240a9c2 335107518 boundary co2 crust driven earthquakes enrichid enrichsource esc fluxing https initiated mantle near net publication publicationcoverpdf reaction researchgate rgreq situ softening strain sub www xxx y292zxjqywdlozmzntewnzuxodtbuzo4mtuynzexntc3mjmxmzzamtu3mtm4nze5ota2oa",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "322420096 accident dai direct emissions enrichid enrichsource esc f0baf5a54b99eee4749c1c57429670c9 fukushima https ichi net nuclear ocean publication publicationcoverpdf researchgate rgreq tritium www xxx y292zxjqywdlozmymjqymda5njtbuzo2mtiznteyodm4ndcxnjhamtuymzawnzmzmtu2mw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00069 2018 3389 articles costa discharging feart fluids frontiersin full geochemistry geothermal guanacaste hints https naturally org region resource rica www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "282283334 3d9ced729ff254061a86042b78b48f5a associated dehydration down elements enrichid enrichsource esc going https incompatible net publication publicationcoverpdf researchgate rgreq serpentine slab transport www xxx y292zxjqywdlozi4mji4mzmzndtbuzo0mjaznjq3mzi2ndk0nzjamtq3nziznde3mdq4ma",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1366268 2024 3389 articles consumption fgeoc frontiersin full https hydrogen low org production temperature www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "312196392 8cde2be9fdb8ea02a9d3444b1d4d0022 biodegradation coals enrichid enrichsource esc geochemistry https information molecular net publication publicationcoverpdf researchgate resource rgreq www xxx y292zxjqywdlozmxmje5njm5mjtbuzo0ndkymtk1njq3mdc4ndfamtq4ndexmzy5odq2nw",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot"
+   ]
+  },
+  {
+   "title_tokens": "helium mantle primordial recycled signatures transition zone",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "1663 31041325 beneath cd3f2f4aa6305eff24e8e15013c5d634 chamber changing compositions enrichid enrichsource esc evolution https laboratory magma natural net observing phenocryst publication publicationcoverpdf researchgate rgreq since textures usu volcano www xxx y292zxjqywdlozmxmdqxmzi1o0ftoje5ntyyoduzmdq0mji1mkaxndiznjuyodg0njk0",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "deep earth frame mantle movements reference structure",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "bulqiz deep degassing drives hydrogen intense ophiolite reservoir",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "00239 2019 3389 articles clinopyroxene deep elemental feart frontiersin full https magma mapping megacrysts method multi org revealed storage stromboli volcano www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "amagmatic central heat hydrothermal japan noto peninsula source system",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "beneath flow gal hotspot imaging mantle melting multistage pagos revealed seismic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "beneath comores conduits deep horizontal hot imaging mantle plumbing plume ponding spots union vertical zones",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "18o 2017 igneous low malani rhyolites suite wang",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "across area changbaishan constraining degassing hydrothermal insights perspective soil text volcanic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "2024 che hydrothermal microbial persistent plumes supporting vents wegener",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "basalts china enriched holocene implications jingpohu mantle origin signatures their",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "cretaceous during japan linking magmatism metamorphism motions pacific paleogene plate times",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "22e16ebaa5a9fdd06f459c4d8b0a9350 287702319 changbaishan deposition enrichid enrichsource eruption esc https millennium net numerical publication publicationcoverpdf researchgate rgreq simulation tephra tianchi transport volcano www xxx y292zxjqywdlozi4nzcwmjmxottbuzoxmtqzmti4mteznjewntq0nkaxnjgwntexody4ntm0",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "13001 antarctica basaltic eucrite gas grove isotopic mountains noble petrologic",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "collision continental estimates first fluxes helium hydrothermal insights margin plateau settings southeast tibetan",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "1084213 2022 3389 articles changbaishan china dynamic evolution feart frontiersin full https illum northeast org volcanism www",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "264134838 basin constraints d0e960f09177b73033461d4bab0b1ffb east enrichid enrichsource esc evolution geophysical https marine net origin publication publicationcoverpdf researchgate rgreq sea seamounts ulleung www xxx y292zxjqywdlozi2ndezndgzodtbuzoynjk3ota1otgxmzu4mdhamtq0mtmzndq5otkzmg",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "267573989 basin crustal deformation development enrichid enrichsource esc fbbbc38e1a9b4e6bd194bc5be8557ff7 https implication korean miocene net peninsula publication publicationcoverpdf researchgate rgreq southeastern tectonic www xxx y292zxjqywdlozi2nzu3mzk4ottbuzoxntgynze5mdyynjmwndbamtqxndc0njm3mjm0mq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "264095673 396b4ccd8edf12b9fef93d0310066b09 ages dok enrichid enrichsource esc evolutions https net publication publicationcoverpdf researchgate rgreq rocks ulleung volcanic www xxx y292zxjqywdlozi2nda5nty3mztbuzoxmjc3mjcwmtmymdgwnjramtqwnzq2mzkwmtu3oq",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "aggregates basalt evaluation island jeju quality",
+   "pools": [
+    "20260602",
+    "20260610",
+    "20260612",
+    "Atelier_pilot",
+    "PaperAtelier_datalab"
+   ]
+  },
+  {
+   "title_tokens": "across background blue chromatograph cover diagonally drawing gas geochemistry gradient green half instrument line mass noble positioned possibly red scientific spectrometer textured top",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "annual balance driven earth global mass planetary recycling review sciences subduction volatile",
+   "pools": [
+    "20260602",
+    "20260610",
+    "Q_duplicates(20260602)",
+    "Q_20260612"
+   ]
+  },
+  {
+   "title_tokens": "excess galapagos hydrothermal submarine text waters",
+   "pools": [
+    "20260612"
+   ]
+  },
+  {
+   "title_tokens": "argentina caviahue complex copahue fluid gas geochemistry hydrothermal magmatic reservoir volcanic",
+   "pools": [
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "2003 3he 4he baffin basalts high island picritic ratios stuart",
+   "pools": [
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "2021 activel activity fluxes magmatic monitoring teresa volatile",
+   "pools": [
+    "Atelier_pilot",
+    "PaperAtelier_datalab",
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "1996 common graham hanan helium lead mantle science",
+   "pools": [
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "data global holocene hydroclimate model proxy regional synthesis variability",
+   "pools": [
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "analysis clumped delta gas limitations mass methods ratio source spectrometry sub",
+   "pools": [
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "american andes balance both central drives during forcing interglacials local monsoon orbital south water",
+   "pools": [
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "basalts contributions helium lithospheric resolving southwestern sub variations",
+   "pools": [
+    "Q_duplicates(20260602)"
+   ]
+  },
+  {
+   "title_tokens": "008 coordination draft task",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "008 api audit codex draft",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "008 compilation rejudge report",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "008 ack coordination reply",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "001 008 gold report tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "009 adopted ccc protocol reply",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "001 403 broad task010 tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "002 403 broad rejudge task010 tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "003 403 broad rejudge task010 tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "004 403 broad rejudge task010 tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "005 010 broad403 report tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "006 010 broad403 report tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "007 010 broad403 report tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "008 403 broad rejudge task010 tranche",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "403 broad complete final rejudge reply task010 variable",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "audit final package task011",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "ack handoff packaging task011",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "after audit fixes package task013",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "audit final package task014",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "ccc protocol repo",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "cleanup codex spotcheck",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "check heartbeat json repair",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "after audit delta live morning report",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "count patterns systemic",
+   "pools": [
+    "coop_inbox"
+   ]
+  },
+  {
+   "title_tokens": "audit package task012",
+   "pools": [
+    "coop_inbox"
+   ]
+  }
+ ]
+}

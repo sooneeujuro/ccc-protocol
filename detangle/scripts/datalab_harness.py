@@ -106,7 +106,8 @@ def derive(pid, led):
     raw = RAW / f"{pid}.json"
     if not raw.exists(): print(f"  [{pid}] no raw -> cannot derive"); return
     j = json.loads(raw.read_text(encoding="utf-8"))
-    d = DERIVED / pid; (d / "images").mkdir(parents=True, exist_ok=True)
+    d = DERIVED / pid.rstrip(" .")  # Windows: 폴더명 trailing space/dot 금지 (raw 조회는 원본 pid 유지)
+    (d / "images").mkdir(parents=True, exist_ok=True)
     atomic_write(d / "markdown.md", j.get("markdown", ""))
     imgs = j.get("images", {}) or {}
     rows = []

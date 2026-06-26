@@ -1,0 +1,3019 @@
+{
+ "fixed": 36,
+ "disputed": 42,
+ "fp_nonmeasured": 74,
+ "fp_total": 175,
+ "results": [
+  {
+   "paper_id": "Hofmann_and_White,_1982,_Mantle_plumes_from_ancient_oceanic_crust",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "other",
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "87Sr/86Sr",
+      "provenance": "cited",
+      "evidence": "Section 4.3 and Fig. 7a: isotopic composition fields for MORB and OIB compiled from literature; Galapagos data from White and Hofmann [73,74]"
+     },
+     {
+      "raw_label": "143Nd/144Nd (εNd)",
+      "provenance": "cited",
+      "evidence": "Section 4.3 and Fig. 7a: Nd isotope data for MORB and OIB from literature compilation (Hart and Brooks [56]); Galapagos data from refs 73,74"
+     },
+     {
+      "raw_label": "206Pb/204Pb",
+      "provenance": "cited",
+      "evidence": "Section 4.3 and Fig. 7b: Pb isotope fields for MORB and OIB from literature; 'model ages calculated from 207Pb/204Pb vs 206Pb/204Pb ratios ... reviewed by Chase [37]'"
+     },
+     {
+      "raw_label": "207Pb/204Pb",
+      "provenance": "cited",
+      "evidence": "Section 4.3 and Fig. 7b: same literature compilation as 206Pb/204Pb; Chase [37] review"
+     },
+     {
+      "raw_label": "208Pb/204Pb",
+      "provenance": "cited",
+      "evidence": "Section 4.3: 'OIB have more variable and generally higher 206Pb/204Pb, 207Pb/204Pb and 208Pb/204Pb ratios than MORB' — from published literature"
+     },
+     {
+      "raw_label": "Rb/Sr ratio",
+      "provenance": "cited",
+      "evidence": "Sections 2.1, 4.3: time-integrated Rb/Sr ratios inferred from isotopic compositions compiled from literature; Rb-Sr isochron age ~1.6 Gyr from Brooks et al. [38]"
+     },
+     {
+      "raw_label": "Sm/Nd ratio",
+      "provenance": "cited",
+      "evidence": "Section 4.3: 'Nd/Sm ratio in large portions of the mantle decreased with decreasing age (see Hart and Brooks [56])'"
+     },
+     {
+      "raw_label": "U/Pb ratio",
+      "provenance": "cited",
+      "evidence": "Sections 2.1, 4.3: U/Pb enrichment in OIB sources discussed from existing literature; 'lead paradox' references Allègre [29] and others"
+     },
+     {
+      "raw_label": "U/Th ratio",
+      "provenance": "cited",
+      "evidence": "Section 4.3: 'the Pb isotopes also point rather clearly to an increase in the U/Th ratio in the mantle [58]' — cited from Tatsumoto [58]"
+     },
+     {
+      "raw_label": "REE concentrations (Ce, Nd, Sm, Gd, Dy, Er, Yb) normalized to chondrites",
+      "provenance": "cited",
+      "evidence": "Fig. 5 caption: 'The heavy dashed lines are two REE patterns from Kohala volcano, Hawaii [72]' — data from Feigenson and Hofmann [72]"
+     },
+     {
+      "raw_label": "Bulk partition coefficients (D) for REE in garnet pyroxenite",
+      "provenance": "modeled",
+      "evidence": "Fig. 5 caption: 'The bulk partition coefficients from Ce to Yb are 0.03, 0.06, 0.14, 0.28, 0.49, 0.79 and 1.00. These coefficients correspond to a source containing about 40% opx, 40% cpx and 20% gnt'"
+     },
+     {
+      "raw_label": "Melt fraction F (degree of melting, 10–30%)",
+      "provenance": "modeled",
+      "evidence": "Section 4.1, Fig. 5: batch-melting model calculations; 'these Kohala basalts would be formed by 30% and 13% modal melting of the garnet pyroxenite'"
+     },
+     {
+      "raw_label": "Ni concentration in melt (ppm)",
+      "provenance": "modeled",
+      "evidence": "Fig. 6 and caption: contamination model — 'Three initial melts with Ni concentrations of 50, 100 and 200 ppm are equilibrated with a peridotite'; values from model calculation"
+     },
+     {
+      "raw_label": "Sr concentration in melt (ppm)",
+      "provenance": "modeled",
+      "evidence": "Fig. 6 and caption: same wall-rock equilibration model; 'initial concentrations for Sr are assumed to be Sr_M = 500 ppm in the melt and Sr_W = 25 ppm'"
+     },
+     {
+      "raw_label": "Bulk partition coefficient D_Ni = 3",
+      "provenance": "cited",
+      "evidence": "Fig. 6 caption: 'D_Ni = 3' used in wall-rock contamination model — standard literature value applied"
+     },
+     {
+      "raw_label": "U concentration in MORB (~0.1 ppm)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: 'The abundances in present-day MORB of the heat producing elements are of the order U=0.1, Th=0.4, and K=1000 ppm' — literature estimates"
+     },
+     {
+      "raw_label": "Th concentration in MORB (~0.4 ppm)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: same sentence as U; literature estimates for MORB"
+     },
+     {
+      "raw_label": "K concentration in MORB (~1000 ppm)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: same sentence; literature estimates for MORB"
+     },
+     {
+      "raw_label": "Heat production of oceanic crust (3 × 10^-14 cal cm^-3 s^-1 at 2 Gyr ago)",
+      "provenance": "modeled",
+      "evidence": "Figs. 3, 4 captions: 'The heat production is appropriate for typical oceanic crust at a time 2 Gyr ago' — derived from K, U, Th concentrations"
+     },
+     {
+      "raw_label": "Temperature rise in heat-producing layer (400–1000 °C over 1–2 Gyr)",
+      "provenance": "modeled",
+      "evidence": "Section 3.2, Figs. 3, 4: 'the central temperature increases by 400–1000°C within 1–2 Gyr' — from thermal conduction model calculation"
+     },
+     {
+      "raw_label": "Layer thickness of accumulated oceanic crust (>100 km)",
+      "provenance": "modeled",
+      "evidence": "Section 3.2: 'accumulation of one crustal thickness would require 5×10^7 years, and a thickness of 100 km would require 8×10^8 years' — calculated from production rates"
+     },
+     {
+      "raw_label": "Density of basaltic crust vs pyrolite (Δρ ≈ 0.1 ± 0.1 g cm^-3)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: 'isothermal density difference of Δρ=0.1 ± 0.1 g cm^-3 between a basaltic composition and normal mantle ... calculated from shock wave data using the method described by Ruff and Anderson [40]'"
+     },
+     {
+      "raw_label": "Pb-Pb apparent mantle isochron age (~1.8 Gyr)",
+      "provenance": "cited",
+      "evidence": "Section 4.5: 'Model ages calculated from 207Pb/204Pb vs 206Pb/204Pb ratios ... reviewed by Chase [37]. The dominant model age of about 1.8 Gyr'"
+     },
+     {
+      "raw_label": "Rb-Sr isochron age (~1.6 Gyr)",
+      "provenance": "cited",
+      "evidence": "Section 4.5: 'concordance with the Rb-Sr isochron age for oceanic tholeiites reported by Brooks et al. [38]'"
+     },
+     {
+      "raw_label": "River influx of U, Th, Pb, Rb, Sr, Nd (Table 1)",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'Other influx data are from Edmond et al. [67], Goldberg et al. [68], Goldberg [69], Schaule and Patterson [70] and Turekian and Chan [71]'"
+     },
+     {
+      "raw_label": "Net concentration increase of oceanic crust from seawater flux (U, Th, Pb, Rb, Sr, Nd in ppm and %)",
+      "provenance": "modeled",
+      "evidence": "Table 1: 'Assuming the entire flux is added to the oceanic crust: Net concentration increase of crust' — calculated from river fluxes and crust production rate 18 km^3/yr"
+     },
+     {
+      "raw_label": "Plume spacing L (500–1000 km)",
+      "provenance": "modeled",
+      "evidence": "Section 3.3: Rayleigh-Taylor instability formula L = 2πh/2.15 × (μ1/μ2)^(1/3) applied to mantle parameters; 'This would indicate a spacing of 500 and 1000 km in the mantle'"
+     },
+     {
+      "raw_label": "18O in Icelandic basalts (anomalously low)",
+      "provenance": "cited",
+      "evidence": "Section 4.4: 'The anomalously low 18O values found in some Icelandic basalts [59]' — cited from Muehlenbachs et al. [59]"
+     },
+     {
+      "raw_label": "Oceanic crust production rate (~3 km^2 yr^-1, 18–20 km^3 yr^-1)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: 'The present-day average rate of production of new oceanic crust is about 3 km^2 yr^-1 [41]' — cited from Williams and Von Herzen [41]"
+     }
+    ],
+    "instruments": [],
+    "classification_confidence": 0.95
+   }
+  },
+  {
+   "paper_id": "Wilhelm,_1977,_Low-pressure_solubility_of_gases_in_liquid_water",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "classification_confidence": 0.98,
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "mole fraction solubility (x2) at 1 atm partial gas pressure",
+      "provenance": "cited",
+      "evidence": "Table I, III — data for 61 gases compiled from cited references (e.g., ref 72, 73, 77, 82, etc.); Section III.A: 'Three review articles, Chemical Abstracts, the literature...were searched for data of reasonable accuracy'"
+     },
+     {
+      "raw_label": "Ostwald coefficient (L)",
+      "provenance": "cited",
+      "evidence": "Table III — Ostwald coefficients listed alongside mole fractions; Section III.A states reported data were 'converted where required to Ostwald coefficients' from cited literature"
+     },
+     {
+      "raw_label": "Henry's law constant (H2,1)",
+      "provenance": "modeled",
+      "evidence": "Section III.A,B — derived by least-squares fitting of eq 35/36 to compiled literature solubility data; 'the temperature dependence of the solubility was then accounted for by fitting to an expression of the form R ln x2 = A + B/T + C ln(T/K) + DT'"
+     },
+     {
+      "raw_label": "standard enthalpy of solution (ΔH°2)",
+      "provenance": "modeled",
+      "evidence": "Section III.C, eq 37a — computed analytically from the curve-fit coefficients: 'ΔH°2 = -B + CT + DT^2'; no direct calorimetric measurements reported"
+     },
+     {
+      "raw_label": "standard entropy of solution (ΔS°2)",
+      "provenance": "modeled",
+      "evidence": "Section III.C, eq 37b — derived from fitted coefficients of eq 35: 'ΔS°2 = A + C + C ln(T/K) + 2DT'"
+     },
+     {
+      "raw_label": "partial molar heat capacity change on solution (ΔC°P2)",
+      "provenance": "modeled",
+      "evidence": "Section III.C, eq 37c — computed from curve-fit coefficients: 'ΔC°P2 = C + 2DT'; extracted from temperature dependence of solubility data"
+     },
+     {
+      "raw_label": "partial molar volume at infinite dilution (V̄°2L)",
+      "provenance": "cited",
+      "evidence": "Section II.C, eq 5a — referenced as required for pressure dependence correction; values taken from literature (refs 18–20)"
+     },
+     {
+      "raw_label": "second virial coefficient (B22, B12)",
+      "provenance": "cited",
+      "evidence": "Section II.B.2a — needed for fugacity coefficient estimation; correlation schemes from cited refs 23–39 used when direct data unavailable"
+     },
+     {
+      "raw_label": "curve-fit coefficients A, B, C, D for solubility equation",
+      "provenance": "modeled",
+      "evidence": "Table I, II — least-squares fitting of literature solubility data to eq 35/36 using 'FITIT' program (QCPE Program 230); Section III.A"
+     },
+     {
+      "raw_label": "solubility in D2O (heavy water)",
+      "provenance": "cited",
+      "evidence": "Table II — data for gases in D2O from cited references (e.g., ref 327, 100, 112, 328); Section I.D mentions 'Unfortunately, the number of gases investigated is rather small'"
+     },
+     {
+      "raw_label": "Benson and Krause high-precision solubility data for He, Ne, Kr, Xe, O2",
+      "provenance": "cited",
+      "evidence": "Table V, VI — 'For several gases, the extremely accurate results of Benson et al. (ref 70) have been made available to us prior to publication'; coefficients calculated by Benson and Krause"
+     }
+    ],
+    "instruments": []
+   }
+  },
+  {
+   "paper_id": "Hancock(2023)_Global_Synthesis_of_Regional_Holocene_Hydroclimate_Variability_Using_Proxy",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "other",
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "δ18O (lake sediment)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: lake sediment δ18O records (n=43) compiled from existing repositories such as PANGAEA/NCDC and prior compilations"
+     },
+     {
+      "raw_label": "δ18O (speleothem)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: 'stable isotope measurements of speleothems (n=94) from SISALv2 (Comas-Bru et al., 2020)'"
+     },
+     {
+      "raw_label": "δ13C (speleothem)",
+      "provenance": "cited",
+      "evidence": "Table 1: Speleothem (δ13C) category n=28 listed in proxy compilation drawn from SISALv2 and primary literature"
+     },
+     {
+      "raw_label": "δD (leaf wax)",
+      "provenance": "cited",
+      "evidence": "Table 1 and Section 2.1: Leaf Wax (δD) records (n=31) from repositories and primary literature"
+     },
+     {
+      "raw_label": "Precipitation amount (P)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: 'Only records interpreted by the original author(s) as reflecting either precipitation amount (P) (n=508) … were included'; data from prior compilations"
+     },
+     {
+      "raw_label": "Effective moisture (P-E)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: proxy records sensitive to 'effective moisture (precipitation minus evaporation) (n=305)' compiled from existing datasets"
+     },
+     {
+      "raw_label": "Pollen-based precipitation reconstructions",
+      "provenance": "cited",
+      "evidence": "Section 2.1: 'Thirty eight percent of the records … are pollen-based precipitation reconstructions from the LegacyClimate 1.0 data set (Herzschuh et al., 2023)'"
+     },
+     {
+      "raw_label": "Lake level (shoreline indicators)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: 'relative lake level status indicators (n=83) from the global Oxford Lake Status Data Bank (Street-Perrott et al., 1989)'"
+     },
+     {
+      "raw_label": "Ice accumulation (glacier)",
+      "provenance": "cited",
+      "evidence": "Table 1: Glacier Ice (Accumulation) category n=8, compiled from existing records"
+     },
+     {
+      "raw_label": "Summer insolation anomaly (W m-2)",
+      "provenance": "modeled",
+      "evidence": "Figure 3 caption: 'Summer insolation anomalies at 30° north and south are plotted for comparison (Berger & Loutre, 1991)' — computed orbital solution"
+     },
+     {
+      "raw_label": "Annual precipitation anomaly (model, mm/day)",
+      "provenance": "modeled",
+      "evidence": "Section 2.3 and Figures 4–5: regional annual precipitation anomalies from TraCE-21ka, HadCM3, and 12 CMIP6 simulations"
+     },
+     {
+      "raw_label": "Z-score composite anomaly",
+      "provenance": "modeled",
+      "evidence": "Section 2.2: proxy records standardized by iterative mean/SD matching using compositeR; 500-member ensemble means plotted in Figure 2"
+     },
+     {
+      "raw_label": "Pearson correlation coefficient (precipitation vs temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2 and Figure 7: 'we calculate centennial-scale correlation coefficients between the two variables as simulated by both transient simulations and represented in regional proxy composites'"
+     },
+     {
+      "raw_label": "Surface air temperature (proxy, Temp12k)",
+      "provenance": "cited",
+      "evidence": "Section 2.5: 'Proxy data are from the Temp12k compilation (Kaufman, McKay, Routson, Erb, Davis, et al., 2020)'"
+     }
+    ],
+    "instruments": [],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Elliott_et_al._(1999)_Exploring_the_kappa_conundrum;_the_role_of_recycling_in_the_lead_isotope_evolution_of_the_mantle",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "other",
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "κ (232Th/238U, kappa) of MORB",
+      "provenance": "cited",
+      "evidence": "Fig. 1c caption: 'Only samples where κ has been determined by isotope dilution mass-spectrometry are plotted (references available on request)' — literature compilation"
+     },
+     {
+      "raw_label": "κ_Pb (time-integrated 232Th/238U from Pb isotopes) of MORB",
+      "provenance": "cited",
+      "evidence": "Fig. 1 caption: 'U–Th–Pb systematics of MORB from a literature compilation (references available on request)'"
+     },
+     {
+      "raw_label": "206Pb/204Pb of MORB",
+      "provenance": "cited",
+      "evidence": "Fig. 1a caption: 'MORB from a literature compilation (references available on request)'; Atlantic, Pacific, Indian Ocean samples plotted from literature"
+     },
+     {
+      "raw_label": "207Pb/204Pb of MORB",
+      "provenance": "cited",
+      "evidence": "Fig. 1a caption: same literature compilation of MORB data used throughout"
+     },
+     {
+      "raw_label": "208Pb/204Pb of MORB",
+      "provenance": "cited",
+      "evidence": "Fig. 1b caption: same literature compilation of MORB data"
+     },
+     {
+      "raw_label": "κ_BE (232Th/238U of bulk silicate Earth)",
+      "provenance": "cited",
+      "evidence": "Section 2: 'Rocholl and Jochum [25] derived a best estimate of κ_BE = 4.0 ± 0.2' — taken from published chondrite studies"
+     },
+     {
+      "raw_label": "κ_DMM (present-day 232Th/238U of depleted MORB mantle, ~2.5)",
+      "provenance": "cited",
+      "evidence": "Section 3: 'ended at a depleted MORB value (κ_DMM ~ 2.5)' — inferred from literature MORB measurements"
+     },
+     {
+      "raw_label": "230Th/238U disequilibrium in MORB (~20% 230Th excess)",
+      "provenance": "cited",
+      "evidence": "Section 1: '230Th excesses of ~20% are a common signature of MORB (see [16,17] for recent compilations)'"
+     },
+     {
+      "raw_label": "U concentration in altered oceanic upper crust (~3×10^8 g/km2)",
+      "provenance": "cited",
+      "evidence": "Section 5: 'The super-composite of Staudigel et al. [27] yields an estimate of ~3×10^8 g of uranium added during alteration to each km2 of oceanic crust'"
+     },
+     {
+      "raw_label": "Oceanic crust production rate (~3 km2/a)",
+      "provenance": "cited",
+      "evidence": "Section 5: 'Given an oceanic crust production rate of ~3 km2/a [42]'"
+     },
+     {
+      "raw_label": "High-temperature hydrothermal U uptake flux (5.2×10^8 to 3.8×10^9 g/a)",
+      "provenance": "cited",
+      "evidence": "Section 5: 'Estimates for such high temperature uranium uptake range from 5.2×10^8 g/a [44] to some 3.8×10^9 g/a [45]'"
+     },
+     {
+      "raw_label": "Riverine U flux to oceans",
+      "provenance": "cited",
+      "evidence": "Section 5: 'Palmer and Edmond [46]...provide estimates of the flux of uranium into the oceans from rivers'"
+     },
+     {
+      "raw_label": "GLOSS U flux (2.2×10^9 g/a) and Th flux (9.03×10^9 g/a) in subducted sediment",
+      "provenance": "cited",
+      "evidence": "Section 5: 'A global sedimentary subduction (GLOSS) flux of U has been calculated by Plank and Langmuir [52] to be 2.2×10^9 g/a'"
+     },
+     {
+      "raw_label": "Th/U of shales vs age (from ~4 at Archean-Proterozoic to ~5.5 in late Phanerozoic)",
+      "provenance": "cited",
+      "evidence": "Section 4: 'McLennan and Taylor [36] present Th and U analyses of shales...significant increase in the mean Th/U of shales with decreasing age'"
+     },
+     {
+      "raw_label": "κ evolution trajectories of DMM (Monte Carlo model solutions)",
+      "provenance": "modeled",
+      "evidence": "Section 3: 'we used a Monte Carlo technique to investigate a range of possible κ evolution pathways...eight successful solutions...from ~16 million trials'"
+     },
+     {
+      "raw_label": "206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb of model DMM, PR, and CC reservoirs",
+      "provenance": "modeled",
+      "evidence": "Section 6 and Fig. 6: 'Plots of lead isotope ratios for successful solutions of the full PURE model. Compositions of the different reservoirs are shown (squares, DMM; triangles, PR; diamonds, CC)'"
+     },
+     {
+      "raw_label": "μ (238U/204Pb) of DMM, bulk Earth, plume reservoir (model parameters)",
+      "provenance": "modeled",
+      "evidence": "Appendix A, Table A1: model parameters μ_BE, μ_DMM, μ_PR randomly varied in Monte Carlo inversion"
+     },
+     {
+      "raw_label": "κ_DMM model onset time T_D (~2.2 Ga)",
+      "provenance": "modeled",
+      "evidence": "Section 6: 'restricting the range to 3.9±0.1...the peak of T_D is narrowed and mean value shifted to ~2.2 Ga'"
+     },
+     {
+      "raw_label": "Excess U flux recycled to mantle (~2.5×10^9 g/a, model estimate)",
+      "provenance": "modeled",
+      "evidence": "Section 5: 'the average solution requires a present day excess U flux of some 3.3×10^9 g/a' — derived from model inversion"
+     },
+     {
+      "raw_label": "[Th]_CC (Th concentration of continental crust, model parameter 2–12 μg/g)",
+      "provenance": "modeled",
+      "evidence": "Appendix A, Table A1: '[Th]_CC: 2–12 μg/g, Concentration of Th in continental crust (present-day)' — randomly varied model parameter"
+     }
+    ],
+    "instruments": [],
+    "classification_confidence": 0.93
+   }
+  },
+  {
+   "paper_id": "Rodbell(2022)_700,000_years_of_tropical_Andean_glaciation",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "magnetic susceptibility (MS)",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'MS was measured by a Bartington MS2E point sensor on the split core surface'"
+     },
+     {
+      "raw_label": "bulk density",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'Sediment density and MS were measured every 0.5 cm... gamma ray attenuation using a multisensor core logger'"
+     },
+     {
+      "raw_label": "Ti/Ca (XRF)",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'XRF scanning was performed... using a Cox Analytical ITRAX with a Cr tube, 5-mm resolution and 15-s dwell time'"
+     },
+     {
+      "raw_label": "total organic carbon (TOC)",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'Total carbon was determined by combusting samples at 1,000 °C using a UIC CM5200 automated furnace and analysing the resultant CO2 using a UIC CM5014 coulometer'"
+     },
+     {
+      "raw_label": "total inorganic carbon (TIC)",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'TIC was determined by acidifying samples using an Automate acidification module and measuring the resultant CO2 by coulometry'"
+     },
+     {
+      "raw_label": "CaCO3 (%)",
+      "provenance": "measured",
+      "evidence": "Methods: calculated from TIC measured in this study; Extended Data Fig. 1 shows downcore CaCO3%"
+     },
+     {
+      "raw_label": "biogenic silica (bSiO2)",
+      "provenance": "measured",
+      "evidence": "Methods/Core analyses: 'We measured the biogenic silica (bSiO2) content of a total of 65 samples obtained randomly from all facies'"
+     },
+     {
+      "raw_label": "palaeomagnetic inclination and declination",
+      "provenance": "measured",
+      "evidence": "Methods/Palaeomagnetic polarity measurements: 'measured at the Oregon State University Paleo- and Environmental Magnetism Laboratory using a 2G Enterprises model 755-1.65UC superconducting rock magnetometer'"
+     },
+     {
+      "raw_label": "siliciclastic sediment colour index (b*)",
+      "provenance": "measured",
+      "evidence": "Extended Data Fig. 1 caption lists 'b* sediment colour index' as a downcore measurement from the Junín piston core"
+     },
+     {
+      "raw_label": "Junín glaciation index (GI)",
+      "provenance": "modeled",
+      "evidence": "Methods/Junín glaciation index: 'The GI is the average z-score of both of these datasets [MS and Ti/Ca]' — derived from measured MS and Ti/Ca"
+     },
+     {
+      "raw_label": "siliciclastic flux (Flux_clastic)",
+      "provenance": "modeled",
+      "evidence": "Methods: 'Flux_clastic = SR × (BD − ((BD × TOM) + (BD × TCC)))' — formula applied to measured density and carbon data with age-model sedimentation rates"
+     },
+     {
+      "raw_label": "tropical glacier enhancement index (TGE)",
+      "provenance": "modeled",
+      "evidence": "Fig. 4b: 'index of tropical glacier enhancement from the difference between the Junin GI and the LR04 proxy of global ice volume (z-scores)'"
+     },
+     {
+      "raw_label": "LR04 benthic δ18O",
+      "provenance": "cited",
+      "evidence": "Fig. 3a caption: 'Benthic δ18O proxy of global ice volume (ref. 3)' — Lisiecki & Raymo 2005"
+     },
+     {
+      "raw_label": "EPICA Dome C δD",
+      "provenance": "cited",
+      "evidence": "Fig. 3c caption: 'EPICA Dome (Antarctica) δD temperature proxy (ref. 18)' — Jouzel et al. 2007"
+     },
+     {
+      "raw_label": "atmospheric CO2",
+      "provenance": "cited",
+      "evidence": "Fig. 4e caption: 'CO2 (refs. 39,40)' from Antarctic ice cores — Bereiter et al. 2015 and Lüthi et al. 2008"
+     },
+     {
+      "raw_label": "atmospheric CH4",
+      "provenance": "cited",
+      "evidence": "Fig. 4e caption: 'CH4 (ref. 41)' from Antarctic ice cores — Loulergue et al. 2008"
+     },
+     {
+      "raw_label": "radiocarbon (14C) ages",
+      "provenance": "cited",
+      "evidence": "Fig. 2 caption: '80 radiocarbon dates (ref. 1) (<17 mcd)' — Woods et al. 2020"
+     },
+     {
+      "raw_label": "U-Th ages of authigenic calcite",
+      "provenance": "cited",
+      "evidence": "Fig. 2 caption: '12 U-Th-dated intervals of authigenic calcite... (ref. 14)' — Chen et al. 2020"
+     },
+     {
+      "raw_label": "relative palaeointensity (RPI) tie points",
+      "provenance": "cited",
+      "evidence": "Fig. 2 caption: '17 palaeomagnetic tie points (ref. 15)' — Hatfield et al. 2020"
+     },
+     {
+      "raw_label": "10Be moraine exposure ages",
+      "provenance": "cited",
+      "evidence": "Introduction: '10Be exposure ages from these moraines indicate that they span several glacial cycles (ref. 6)' — Smith et al. 2005"
+     },
+     {
+      "raw_label": "speleothem δ18O (Pacupahuain Cave)",
+      "provenance": "cited",
+      "evidence": "Millennial events: 'increases in the δ18O record from nearby Pacupahuain Cave (ref. 26)' — Kanner et al. 2012"
+     },
+     {
+      "raw_label": "speleothem δ18O (Huagapo Cave)",
+      "provenance": "cited",
+      "evidence": "Millennial events: 'a speleothem δ18O record from nearby Huagapo Cave (ref. 31)' — Burns et al. 2019"
+     },
+     {
+      "raw_label": "Greenland δ18O (DO events)",
+      "provenance": "cited",
+      "evidence": "Extended Data Fig. 4 caption: 'Greenland δ18O' and 'synthetic Greenland δ18O (ref. 32)' — Bond et al. 1993 / Barker et al. 2011"
+     },
+     {
+      "raw_label": "cross-equatorial January insolation gradient (11°S–11°N)",
+      "provenance": "modeled",
+      "evidence": "Fig. 4d caption: 'Cross-equatorial January insolation gradient (ref. 38)' — computed from Laskar et al. 2004 orbital solution"
+     },
+     {
+      "raw_label": "wavelet power spectrum of GI",
+      "provenance": "modeled",
+      "evidence": "Methods/Time-series analysis: 'Wavelet analysis of the 250-year-time-step GI dataset used a Morlet basis function in the PAST software package'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "other",
+      "raw_verbatim": "multisensor core logger (gamma ray attenuation)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Bartington MS2E point sensor"
+     },
+     {
+      "category": "xrf",
+      "raw_verbatim": "Cox Analytical ITRAX (Cr tube, 5-mm resolution, 15-s dwell time)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "UIC CM5200 automated furnace / UIC CM5014 coulometer"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Automate acidification module with coulometry"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "2G Enterprises model 755-1.65UC superconducting rock magnetometer"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "PAST (Paleontological Statistics) software package"
+     }
+    ],
+    "classification_confidence": 0.92
+   }
+  },
+  {
+   "paper_id": "Jackson_et_al._(2017)_primordial_helium_entrained_by_the_hottest_mantle_plumes",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "maximum 3He/4He (Ra) at hotspots",
+      "provenance": "cited",
+      "evidence": "Methods/Supplementary Table 1: values compiled from published literature citing refs 4, 19, 20, 31–106; paper states 'The reported 3He/4He data were measured in magmatic phases or volcanic glass' at other laboratories"
+     },
+     {
+      "raw_label": "MORB 3He/4He median (~8 Ra)",
+      "provenance": "cited",
+      "evidence": "Abstract and main text: 'a median of 8Ra ± 1Ra' with superscript ref. 5 (Graham 2002 review)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) at 200 km depth — SMEAN2",
+      "provenance": "modeled",
+      "evidence": "Methods: 'we here combine more recent global seismic shear-wave models to generate an updated SMEAN, called SMEAN2'; SMEAN2 is a composite model derived by the authors from published individual tomographic models (S40RTS, GyPSum-S, SAVANT)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) — SMEAN (original)",
+      "provenance": "cited",
+      "evidence": "Methods: 'We use an update of the composite SMEAN model'; SMEAN from ref. 25 (Becker & Boschi 2002)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) — GyPSum-S at 200 km",
+      "provenance": "cited",
+      "evidence": "Extended Data Fig. 2 caption: 'Data are taken from several global seismic models (SMEAN2, GyPSum-S, S40RTS, SAVANI, SEMUCB-WM1 and SMEAN)'; GyPSum-S from ref. 64 (Simmons et al. 2010)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) — S40RTS at 200 km",
+      "provenance": "cited",
+      "evidence": "Extended Data Fig. 2 caption and Methods: S40RTS from ref. 63 (Ritsema et al. 2011)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) — SAVANI at 200 km",
+      "provenance": "cited",
+      "evidence": "Extended Data Fig. 2 caption and Methods: SAVANT/SAVANI from ref. 65 (Auer et al. 2014)"
+     },
+     {
+      "raw_label": "seismic shear-wave velocity anomaly (δv %) — SEMUCB-WM1 at 200 km",
+      "provenance": "cited",
+      "evidence": "Extended Data Fig. 2 caption: SEMUCB-WM1 from ref. 9 (French & Romanowicz 2015)"
+     },
+     {
+      "raw_label": "hotspot buoyancy flux (Mg s−1)",
+      "provenance": "cited",
+      "evidence": "Fig. 3 caption and Methods: 'The hotspot buoyancy flux (MiFil volume method) is from ref. 24' (King & Adam 2014); three methods: geometrical, MiFil area, MiFil volume"
+     },
+     {
+      "raw_label": "normalized vertical extent (NVE) of plume conduits",
+      "provenance": "cited",
+      "evidence": "Methods: 'They quantify the degree of continuity of a plume...based on seismic tomography using a value referred to as the normalized vertical extent (NVE)' from Boschi et al. ref. 10"
+     },
+     {
+      "raw_label": "Pearson correlation coefficient (r) between max 3He/4He and seismic velocity anomaly",
+      "provenance": "modeled",
+      "evidence": "Fig. 3 caption: 'The Pearson correlation coefficients r are provided in the panels and are calculated from individual observations'; bootstrap 1σ uncertainty and Student's t-test significance derived by authors"
+     },
+     {
+      "raw_label": "Spearman rank correlation coefficient (rs) between max 3He/4He and seismic velocity anomaly",
+      "provenance": "modeled",
+      "evidence": "Extended Data Fig. 2 caption: 'The Pearson (r) and Spearman rank (rs) correlation coefficients are provided in the panels and are calculated from individual observations'; computed by authors from compiled data"
+     },
+     {
+      "raw_label": "87Sr/86Sr, 143Nd/144Nd, 206Pb/204Pb at hotspots",
+      "provenance": "cited",
+      "evidence": "Main text p.1: 'these compositions are grouped into several endmember compositions with different isotopic compositions (for example, 87Sr/86Sr, 143Nd/144Nd and 206Pb/204Pb)' cited from refs 15–17"
+     },
+     {
+      "raw_label": "129Xe/130Xe anomalies in high-3He/4He lavas",
+      "provenance": "cited",
+      "evidence": "Main text: 'anomalous 129Xe/130Xe (ref. 1)' cited from Mukhopadhyay (2012)"
+     },
+     {
+      "raw_label": "182W/184W anomalies in high-3He/4He lavas",
+      "provenance": "cited",
+      "evidence": "Main text: '182W/184W (ref. 2)' cited from Rizo et al. (2016)"
+     },
+     {
+      "raw_label": "Yellowstone hotspot maximum 3He/4He (19.4 Ra)",
+      "provenance": "cited",
+      "evidence": "Methods 'The Yellowstone hotspot': 'relatively high maximum 3He/4He (19.4Ra; ref. 69)' citing Graham et al. (2009)"
+     },
+     {
+      "raw_label": "Iceland hotspot maximum 3He/4He used in analysis (37.7 Ra)",
+      "provenance": "cited",
+      "evidence": "Methods: 'a lower 3He/4He value (37.7Ra) associated with more recently erupted lavas (ref. 38)' citing Hilton et al. (1999)"
+     },
+     {
+      "raw_label": "Afar hotspot 3He/4He used in analysis (16.9 Ra)",
+      "provenance": "cited",
+      "evidence": "Methods: 'a more recently erupted lava with a lower 3He/4He (16.9Ra) is used for the Afar hotspot (refs 39–41)'"
+     }
+    ],
+    "instruments": [],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Loewen_et_al._(2019)_Hydrogen_isotopes_in_high_3He_4He_submarine_basalts",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "δD (hydrogen isotope ratio)",
+      "provenance": "measured",
+      "evidence": "Section 2.2: 'Determinations of δD and total water concentrations were made by a Thermal Conversion Elemental Analyzer (TC/EA) coupled to a MAT 253 10 kV gas source isotope ratio mass spectrometer (IRMS) at the University of Oregon'; new analyses for SEIR and Loihi samples reported in Tables S2"
+     },
+     {
+      "raw_label": "H₂O (total water concentrations)",
+      "provenance": "measured",
+      "evidence": "Section 2.2: 'Total water concentrations were determined by peak integration during the TC/EA analyses'; new analyses for SEIR and Loihi glasses reported alongside δD in Table S2"
+     },
+     {
+      "raw_label": "³He/⁴He (helium isotope ratio, Loihi)",
+      "provenance": "measured",
+      "evidence": "Section 2.3: 'Table S3 provides results for 11 new He analyses from Loihi seamount'; 'All basalt glasses from Loihi were analyzed at NOAA/PMEL in Newport, Oregon'"
+     },
+     {
+      "raw_label": "³He/⁴He (helium isotope ratio, SEIR)",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'Helium isotope results for the SEIR sample suite were reported previously (Graham et al., 1999; Nicolaysen et al., 2007)'"
+     },
+     {
+      "raw_label": "[He] (helium concentration, vesicles and glass)",
+      "provenance": "measured",
+      "evidence": "Section 2.3: crushing and high-temperature furnace melting at NOAA/PMEL used to 'measure [He] and ³He/⁴He dissolved in the glass'; reported in Table S3"
+     },
+     {
+      "raw_label": "Trace element concentrations (La, Ce, Sm, K, Ti, etc.) for SEIR",
+      "provenance": "measured",
+      "evidence": "Section 2.1: 'Trace element data for these samples have been obtained by Laser Ablation-Inductively Coupled Plasma-Mass Spectrometry (LA-ICP-MS)...and are reported in Table S1'"
+     },
+     {
+      "raw_label": "La/Sm (chondrite-normalized)",
+      "provenance": "measured",
+      "evidence": "Fig. 2 caption and Section 3.1: La/Sm derived from new LA-ICP-MS trace element data for SEIR samples (Table S1); for global compilation samples it is cited from Dixon et al. (2017)"
+     },
+     {
+      "raw_label": "H₂O/Ce",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'a small range of H₂O/Ce from 142 to 177' derived from new H₂O (TC/EA) and Ce (LA-ICP-MS) measurements for Loihi and SEIR samples"
+     },
+     {
+      "raw_label": "⁸⁷Sr/⁸⁶Sr",
+      "provenance": "cited",
+      "evidence": "Section 3.1 and Figs. 6, 7: Sr isotope data from prior publications (Douglas-Priebe, 1998; Graham et al., 1999; Nicolaysen et al., 2007; Garcia et al., 1989, 1993, 1998); no new Sr isotope measurements described"
+     },
+     {
+      "raw_label": "²⁰⁶Pb/²⁰⁴Pb",
+      "provenance": "cited",
+      "evidence": "Section 3.1 and Fig. 6: Pb isotope data used from prior publications (Graham et al., 1999; Nicolaysen et al., 2007); no new Pb measurements described"
+     },
+     {
+      "raw_label": "Cl and Cl/K₂O",
+      "provenance": "cited",
+      "evidence": "Section 3.1 and Fig. 4: Cl data examined but sourced from prior characterization; no new Cl measurements described in Methods"
+     },
+     {
+      "raw_label": "MgO (wt.%)",
+      "provenance": "cited",
+      "evidence": "Section 2.1 and Fig. 2: major element data for Loihi from 'Garcia et al. (1989, 1993, 1998)' and for SEIR from prior studies; used as filter criterion"
+     },
+     {
+      "raw_label": "Eruption ages (He isotope disequilibrium method)",
+      "provenance": "modeled",
+      "evidence": "Section 3.2: 'We calculated ages of 2.0 to 7.3 kyr for these three samples given their measured He isotope disequilibrium and reported U and Th concentrations (see Supplementary Material and Table S3)'"
+     },
+     {
+      "raw_label": "Degassing model δD shifts (closed- vs. open-system)",
+      "provenance": "modeled",
+      "evidence": "Fig. 3 caption: 'lines correspond to the hydrogen isotope shift during closed-system (solid) vs. open-system (dashed) degassing...The calculated vapor-melt fractionation follows the model of De Hoog et al. (2009)'"
+     },
+     {
+      "raw_label": "Two-component mixing proportions (recycled vs. primordial water)",
+      "provenance": "modeled",
+      "evidence": "Section 4.3: 'the measured values of −50‰ in ASP basalts imply that roughly 40% of the H₂O has a recycled origin (assuming a primordial endmember δD of −75‰)'"
+     },
+     {
+      "raw_label": "Water concentration corrected for crystal fractionation (H₂O at Mg#=68)",
+      "provenance": "modeled",
+      "evidence": "Section 3.2 and Fig. 3C: 'Estimates of the water concentrations for a parental magma having Mg# = 68 results in a tight cluster...following Michael and Graham (2015)'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "irms",
+      "raw_verbatim": "MAT 253 10 kV gas source isotope ratio mass spectrometer (IRMS) coupled to Thermal Conversion Elemental Analyzer (TC/EA)"
+     },
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "noble gas mass spectrometer at NOAA/PMEL (crushing and high-temperature furnace for He isotope and concentration measurements)"
+     },
+     {
+      "category": "laser_ablation",
+      "raw_verbatim": "Laser Ablation-Inductively Coupled Plasma-Mass Spectrometry (LA-ICP-MS)"
+     },
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "Laser Ablation-Inductively Coupled Plasma-Mass Spectrometry (LA-ICP-MS)"
+     }
+    ],
+    "classification_confidence": 0.9
+   }
+  },
+  {
+   "paper_id": "Marty_&_Tolstikhin_(1998)_CO2_fluxes_from_mid-ocean_ridges,_arcs_and_plumes",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "CO2 concentration in MORB glasses (10^-6 mol/g)",
+      "provenance": "measured",
+      "evidence": "Table 1 caption: 'New rare gas and CO2 data of MORB glasses'; footnote: CO2 condensed in cold finger after vacuum crushing, then transferred to glass ampules for volumetry"
+     },
+     {
+      "raw_label": "3He concentration in MORB glasses (10^-16 mol/g)",
+      "provenance": "measured",
+      "evidence": "Table 1 caption: 'New rare gas and CO2 data of MORB glasses'; footnote: 'Rare gases were analysed on-line (Marty, 1995)'"
+     },
+     {
+      "raw_label": "4He/40Ar* ratio in MORB glasses",
+      "provenance": "measured",
+      "evidence": "Table 1, column '4He/40Ar*'; footnote: computed from measured He and Ar content and 40Ar/36Ar ratio"
+     },
+     {
+      "raw_label": "3He/4He ratio (Ra) in MORB glasses",
+      "provenance": "measured",
+      "evidence": "Table 1 footnote: '3He content was computed from the measured He amount and 3He/4He ratio (all of them being in the MORB range of 8±1 Ra)'"
+     },
+     {
+      "raw_label": "40Ar/36Ar ratio in MORB glasses",
+      "provenance": "measured",
+      "evidence": "Table 1 footnote: 'amount of radiogenic 40Ar* was computed from measurements of Ar content and 40Ar/36Ar ratio'"
+     },
+     {
+      "raw_label": "CO2/3He ratio in MORB (N-MORB): (0.86 ± 0.24) × 10^9",
+      "provenance": "measured",
+      "evidence": "Section 2.2, Fig. 2a: regression from Table 1 new data; 'The excellent correlation in the case of N-MORB defines a CO2/3He ratio of (0.86 ± 0.24) × 10^9'"
+     },
+     {
+      "raw_label": "CO2/3He ratio in E-MORB: (3.3 ± 1.1) × 10^9",
+      "provenance": "measured",
+      "evidence": "Section 2.2, Fig. 2b: regression from Table 1 new data for E-MORB"
+     },
+     {
+      "raw_label": "Fractional-degassing-corrected CO2/3He ratio N-MORB: (1.06 ± 0.3) × 10^9",
+      "provenance": "modeled",
+      "evidence": "Section 2.2: 'corrected for fractional degassing using Eq. (1) is (1.06 ± 0.3) × 10^9'"
+     },
+     {
+      "raw_label": "Fractional-degassing-corrected CO2/3He ratio E-MORB: (4.5 ± 1.3) × 10^9",
+      "provenance": "modeled",
+      "evidence": "Section 2.2: 'correction for fractional degassing increases the CO2/3He ratio for E-MORB from (3.3 ± 1.1) × 10^9 to (4.5 ± 1.3) × 10^9'"
+     },
+     {
+      "raw_label": "CO2/3He ratio in MORB (compiled literature, median 2.2 × 10^9, n=26)",
+      "provenance": "cited",
+      "evidence": "Section 2.1, Fig. 1: 'Data (whole-rock data) are from Des Marais (1985), Marty and Jambon (1987), Javoy and Pineau (1991) and Kingsley and Schilling (1995)'"
+     },
+     {
+      "raw_label": "CO2/3He ratio in MOR hydrothermal fluids",
+      "provenance": "cited",
+      "evidence": "Section 2.1, Fig. 1: 'hydrothermal fluid data (Welhan and Craig, 1983; Des Marais and Moore, 1984; Gerlach, 1991)'"
+     },
+     {
+      "raw_label": "CO2/3He ratio in plume lavas and fluids (compiled)",
+      "provenance": "cited",
+      "evidence": "Fig. 1 caption: data from Marty et al. 1991, 1993a, Craig and Lupton 1976, Craig et al. 1978, Craig et al. 1987, Marty and Jambon 1987, Trull et al. 1993, Marty et al. 1996"
+     },
+     {
+      "raw_label": "CO2/3He ratio in arc volcanic gases (median ~11 × 10^9, n=37)",
+      "provenance": "cited",
+      "evidence": "Fig. 1 caption and Section 3.2: 'Data are from Marty et al. (1989), Varekamp et al. (1992), Allard (1992), Sano and Marty (1995) and Sano and Williams (1996)'"
+     },
+     {
+      "raw_label": "3He flux from MOR (1000 ± 250 mol/a)",
+      "provenance": "cited",
+      "evidence": "Section 2.1: 'present-day flux of 3He has been estimated at 1000 ± 250 mol/a... Craig et al. (1975); Welhan and Craig (1983)... Farley et al. (1995)'"
+     },
+     {
+      "raw_label": "Carbon flux at MOR ridges: (2.2 ± 0.9) × 10^12 mol/a",
+      "provenance": "modeled",
+      "evidence": "Section 2.1: 'For a mean 3He flux of 1000 ± 250 mol/a, and using the median C/3He given above, the carbon flux at ridges becomes (2.2 ± 0.9) × 10^12 mol/a'"
+     },
+     {
+      "raw_label": "Carbon content of upper mantle: (3.1 ± 1.9) × 10^-6 mol/g",
+      "provenance": "modeled",
+      "evidence": "Section 2.3: 'the mean C content of the upper mantle is computed to be (3.1 ± 1.9) × 10^-6 mol/g' from mass flux and partial melting assumptions"
+     },
+     {
+      "raw_label": "3He content of upper mantle: (2.5 ± 1.5) × 10^-15 mol/g",
+      "provenance": "modeled",
+      "evidence": "Section 2.3: 'give mean 3He content within (2.5 ± 1.5) × 10^-15 mol/g (Allègre et al., 1983, 1986; Trull et al., 1993; Porcelli and Wasserburg, 1995b; Tolstikhin and Marty, 1998)'"
+     },
+     {
+      "raw_label": "3He content of lower mantle: (2.2 ± 1.0) × 10^-13 mol/g",
+      "provenance": "modeled",
+      "evidence": "Section 4.3: 'The abundance of 3He in the lower mantle can be estimated from steady-state... and evolutionary models... most acceptable value of [3He]LM = (2.2 ± 1.0) × 10^-13 mol/g'"
+     },
+     {
+      "raw_label": "Proportion of metamorphic carbon at arc: ~80%",
+      "provenance": "modeled",
+      "evidence": "Section 3.2: 'suggests the proportion of metamorphic carbon relative to total carbon to be approximately 80%, in agreement with... Varekamp et al. (1992), Sano and Marty (1995) and Sano and Williams (1996)'"
+     },
+     {
+      "raw_label": "CO2 flux at arc convergent margins: ~2.5 × 10^12 mol/a",
+      "provenance": "modeled",
+      "evidence": "Section 3.2, Eq. 2: 'If we now include plutonism, then the flux of C at arcs becomes ~2.5 × 10^12 mol/a'"
+     },
+     {
+      "raw_label": "CO2 flux from plume volcanism: ≤3 × 10^12 mol/a",
+      "provenance": "modeled",
+      "evidence": "Section 4.4, Eq. 3: 'Then a CO2 flux of 3 × 10^12 mol/a is obtained (Fig. 7), comparable to the carbon flux at ridges'"
+     },
+     {
+      "raw_label": "Global magmatic CO2 flux: 6 × 10^12 mol/a (range 4–10 × 10^12 mol/a)",
+      "provenance": "modeled",
+      "evidence": "Abstract and Section 5: 'The global magmatic flux of CO2 into the atmosphere and the hydrosphere is found to be 6 × 10^12 mol/a, with a range of (4–10) × 10^12 mol/a'"
+     },
+     {
+      "raw_label": "MOR magma emplacement rate: 21 km^3/a",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'mass flux of 21 km^3/a (e.g., Crisp, 1984)'"
+     },
+     {
+      "raw_label": "Arc magma emplacement rate: 0.5 ± 0.1 km^3/a (lava), 2.5–8.0 km^3/a (plutonism)",
+      "provenance": "cited",
+      "evidence": "Section 3.2: 'the rate of magma emplacement at accreting plate margins is 0.5 ± 0.1 km^3/a for volcanism, and 2.5–8.0 km^3/a for plutonism (Crisp, 1984)'"
+     },
+     {
+      "raw_label": "PLUME magma emplacement rate: (5–7) × 10^15 g/a (1.8–2.4 km^3/a)",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'Crisp (1984) inferred a PLUME magma emplacement rate of (5–7) × 10^15 g/a'"
+     },
+     {
+      "raw_label": "Large igneous province volumes and ages (Table 3)",
+      "provenance": "cited",
+      "evidence": "Table 3: 'after Mohr and Zanettin, 1988; Coffin and Eldholm, 1993; White and McKenzie, 1995'"
+     },
+     {
+      "raw_label": "3He abundances in olivines from xenoliths and plume-related rocks (Fig. 5)",
+      "provenance": "cited",
+      "evidence": "Fig. 5 caption: 'Sources of data: Porcelli et al. (1986), Tolstikhin et al. (1992), Dunai and Baur (1995); Kurz et al. (1983), Rison and Craig (1983), Kaneoka et al. (1986)...'"
+     },
+     {
+      "raw_label": "3He concentrations in MORB and PLUME basalt glasses (Fig. 6)",
+      "provenance": "cited",
+      "evidence": "Fig. 6 caption: 'Sources of data: Kurz and Jenkins (1981), Kurz et al. (1982a,b, 1983), Ozima and Zashu (1983)...' (large literature compilation)"
+     },
+     {
+      "raw_label": "4He/3He and 87Sr/86Sr in plume and seamount lavas (Fig. 4)",
+      "provenance": "cited",
+      "evidence": "Fig. 4 caption: 'Sources of data: Atlantic Seamounts, Graham et al. (1996) and Castillo and Batiza (1989); Loihi, Kurz et al. (1983); Afar, Marty et al. (1996); Reykjanes, Poreda et al. (1986)'"
+     },
+     {
+      "raw_label": "Partial melting rate at MOR: 10 ± 3%",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'a partial melting rate of 10 ± 3% at ridges' used from literature context"
+     },
+     {
+      "raw_label": "Partial melting rate at arcs: 10–25%",
+      "provenance": "cited",
+      "evidence": "Section 3.2: 'extent of partial melting is inferred to be 10–25% from consideration of major subduction systems... Plank and Langmuir (1988)'"
+     },
+     {
+      "raw_label": "CO2 flux estimates from prior arc/subaerial volcano studies (Table 2)",
+      "provenance": "cited",
+      "evidence": "Table 2: 'Available estimates of the flux of CO2 from subaerial volcanoes' — all entries are from cited literature (Le Guern 1982, Marty et al. 1989, Williams et al. 1990, Gerlach 1991, etc.)"
+     },
+     {
+      "raw_label": "He solubility coefficient in tholeiitic melt (KHe = 2.5 × 10^-11 mol/g/hPa)",
+      "provenance": "cited",
+      "evidence": "Section 2.2, Eq. 1: 'solubility coefficients equal to 2.5 × 10^-11 mol g^-1 hPa^-1... for He... (e.g., Jambon et al., 1986; Holloway and Blank, 1994)'"
+     },
+     {
+      "raw_label": "CO2 solubility coefficient in tholeiitic melt (KCO2 = 9.0 × 10^-12 mol/g/hPa)",
+      "provenance": "cited",
+      "evidence": "Section 2.2, Eq. 1: 'solubility coefficients... 9.0 × 10^-12 mol g^-1 hPa^-1... for CO2... (e.g., Jambon et al., 1986; Holloway and Blank, 1994)'"
+     },
+     {
+      "raw_label": "Ar solubility coefficient in tholeiitic melt (KAr = 2.6 × 10^-12 mol/g/hPa)",
+      "provenance": "cited",
+      "evidence": "Section 2.2, Eq. 1: 'solubility coefficients... 2.6 × 10^-12 mol g^-1 hPa^-1... for Ar... (e.g., Jambon et al., 1986; Holloway and Blank, 1994)'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "Rare gases were analysed on-line (Marty, 1995)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "vacuum crushing; CO2 condensed in a cold finger at liquid nitrogen temperature adjacent to the crusher; CO2 transferred to glass ampules for volumetry and isotope determination"
+     }
+    ],
+    "classification_confidence": 0.92
+   }
+  },
+  {
+   "paper_id": "Woodhead_et_al._(1993)_Oxygen_isotope_evidence_for_recycled_crust_in_the_source_",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "δ¹⁸O (SMOW)",
+      "provenance": "measured",
+      "evidence": "Table 1 and methods: 'Stable isotope analyses were done at the NERC Isotope Geosciences Laboratory, UK. Oxygen was liberated... by reaction with BrF₅... before mass spectrometric analysis.'"
+     },
+     {
+      "raw_label": "⁸⁷Sr/⁸⁶Sr",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "¹⁴³Nd/¹⁴⁴Nd",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "²⁰⁶Pb/²⁰⁴Pb",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "²⁰⁷Pb/²⁰⁴Pb",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "²⁰⁸Pb/²⁰⁴Pb",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'All data, except oxygen isotopes, reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "SiO₂ (wt%)",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'SiO₂ and MgO values are based on X-ray fluorescence data for co-existing pillow interiors... reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "MgO (wt%)",
+      "provenance": "cited",
+      "evidence": "Table 1 footnote: 'SiO₂ and MgO values are based on X-ray fluorescence data for co-existing pillow interiors... reproduced from refs 9 and 10'"
+     },
+     {
+      "raw_label": "He isotope ratios",
+      "provenance": "cited",
+      "evidence": "Text: 'No correlations are noted in either suite between oxygen and helium isotope data (noble gas analyses for the Pitcairn and Society glasses: M. Honda, personal communication, and ref. 11, respectively)'"
+     },
+     {
+      "raw_label": "% recycled crustal oxygen in OIB mantle source",
+      "provenance": "modeled",
+      "evidence": "Crustal recycling section: mixing model calculation using δ¹⁸O end-members; 'datum marks on mixing hyperbolae in Fig. 2... corresponds to ~9% crustal oxygen contribution'"
+     },
+     {
+      "raw_label": "Crystal fractionation-corrected δ¹⁸O",
+      "provenance": "modeled",
+      "evidence": "Fig. 3 caption and text: 'Corrections for crystal fractionation effects have been applied to three samples which are relatively siliceous'; vector of 0.3‰ per 10 wt% SiO₂ from ref. 14"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "irms",
+      "raw_verbatim": "mass spectrometric analysis (oxygen liberated by reaction with BrF5, converted to CO2 by platinized graphite rod heated by radiofrequency induction)"
+     }
+    ],
+    "classification_confidence": 0.92
+   }
+  },
+  {
+   "paper_id": "Liang_et_al._(2013)_A_REE-in-two-pyroxene_thermometer_for_mafic_and_ultramafic_r",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": false,
+    "variables": [
+     {
+      "raw_label": "T_REE (REE-in-two-pyroxene thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 2.1 and throughout: temperature derived via least squares inversion of opx-cpx REE partition coefficients using the lattice strain model (Eq. 3); computed from published data, not new measurements"
+     },
+     {
+      "raw_label": "T_BKN (Brey and Köhler 1990 two-pyroxene thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Sections 3 and 4: 'temperatures calculated using the two-pyroxene thermometer of Brey and Köhler (1990)' applied to published major element compositions"
+     },
+     {
+      "raw_label": "D_REE^opx/cpx (orthopyroxene–clinopyroxene REE partition coefficients)",
+      "provenance": "cited",
+      "evidence": "Section 3: 'we present case studies using published REE and Y abundances in coexisting opx and cpx'; data from Witt-Eickschen and O'Neill (2005), Eggins et al. (1998), Warren et al. (2009), etc."
+     },
+     {
+      "raw_label": "D_REE^cpx/melt (clinopyroxene–melt REE partition coefficients)",
+      "provenance": "cited",
+      "evidence": "Section 2.2: 'based on published experimental data... we selected a subset of high quality data from 43 cpx-melt partitioning experiments'; models taken from Sun and Liang (2012)"
+     },
+     {
+      "raw_label": "D_REE^opx/melt (orthopyroxene–melt REE partition coefficients)",
+      "provenance": "cited",
+      "evidence": "Section 2.2: '38 low-Ca pyroxene-melt partitioning experiments'; models taken from Yao et al. (2012)"
+     },
+     {
+      "raw_label": "Lattice strain model parameters (D0, r0, E) for cpx and opx",
+      "provenance": "cited",
+      "evidence": "Table 1: 'From Sun and Liang (2012)' and 'From Yao et al. (2012)' — fitting parameters taken directly from those published models"
+     },
+     {
+      "raw_label": "Major element compositions of cpx and opx (Mg#, X_Al^T, X_Mg^M2, X_Ca^M2)",
+      "provenance": "cited",
+      "evidence": "Section 3.1: 'Trace element abundances in these xenoliths were measured by LA-ICP-MS [by the cited authors]'; input data taken from Witt-Eickschen and O'Neill (2005), Eggins et al. (1998), Mallmann et al. (2009), Witt-Eickschen et al. (2009), Bedini and Bodinier (1999)"
+     },
+     {
+      "raw_label": "REE and Y abundances in opx and cpx from spinel lherzolite/harzburgite xenoliths (continental lithosphere)",
+      "provenance": "cited",
+      "evidence": "Section 3.1: data from Eggins et al. (1998), Witt-Eickschen and O'Neill (2005), Mallmann et al. (2009), Witt-Eickschen et al. (2009), Bedini and Bodinier (1999)"
+     },
+     {
+      "raw_label": "REE and Y abundances in opx and cpx from abyssal peridotites",
+      "provenance": "cited",
+      "evidence": "Section 3.2: data from Hellebrand et al. (2005), Warren et al. (2009), Brunelli and Seyler (2010), Seyler et al. (2011)"
+     },
+     {
+      "raw_label": "REE and Y abundances in opx and cpx from mafic cumulates (Bushveld Complex)",
+      "provenance": "cited",
+      "evidence": "Section 5: 'Godel and coworkers (2011) recently determined trace element abundances (by LA-ICP-MS) in cumulus opx and intercumulus cpx... Lower and Lower Critical Zones of the Rustenburg Layered Suite'"
+     },
+     {
+      "raw_label": "T_BKN^Ca-opx (Ca-in-opx thermometer temperature, Brey and Köhler 1990)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: temperatures calculated using the Ca-in-opx thermometer of Brey and Köhler (1990) applied to cited major element data"
+     },
+     {
+      "raw_label": "T_W77 (Wells 1977 two-pyroxene thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: temperatures calculated using pyroxene thermometer of Wells (1977) applied to cited major element data"
+     },
+     {
+      "raw_label": "T_TA98 (Taylor 1998 two-pyroxene thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: temperatures calculated using two-pyroxene thermometer of Taylor (1998)"
+     },
+     {
+      "raw_label": "T_P37 (Putirka 2008 two-pyroxene thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: temperatures calculated using two-pyroxene thermometer of Putirka (2008) Eq. (37)"
+     },
+     {
+      "raw_label": "T_NT (Nimis and Taylor 2000 enstatite-in-cpx thermometer temperature)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: temperatures calculated using enstatite-in-cpx thermometer of Nimis and Taylor (2000)"
+     },
+     {
+      "raw_label": "chi-squared (chi_p^2) sum of squares of relative temperature difference",
+      "provenance": "modeled",
+      "evidence": "Section 4.2 Eq. (11): 'calculated sums of squares of the relative difference (chi_p^2) for each major element based thermometer' — computed metric comparing T_REE to T_major"
+     },
+     {
+      "raw_label": "Monte Carlo temperature uncertainty (delta T) vs. analytical uncertainty in REE",
+      "provenance": "modeled",
+      "evidence": "Section 4.3 and Fig. 9: 'Monte Carlo simulations... normally distributed random noise... temperatures are calculated using the REE-in-two-pyroxene thermometer for each prescribed analytical uncertainty'"
+     }
+    ],
+    "instruments": [],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Colombier_et_al._(2021)_Degassing_and_gas_percolation_in_basaltic_magmas",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "porosity (φ)",
+      "provenance": "measured",
+      "evidence": "Section 2.2: 'We carried out measurements of porosity and connectivity on these new samples using a Quantachrome He-pycnometer at LMU'"
+     },
+     {
+      "raw_label": "pore connectivity (C-pyc)",
+      "provenance": "measured",
+      "evidence": "Section 2.2: He-pycnometer measurements of connectivity on new basaltic samples; extended database from n=572 to n=1187"
+     },
+     {
+      "raw_label": "permeability (k)",
+      "provenance": "measured",
+      "evidence": "Section 2.2: 'Permeability measurements were conducted on dry, cylindrical samples at a confining pressure of 1.0 MPa in a GasPerm steady state permeameter (GPE-100, Vinci Technologies) at LMU'"
+     },
+     {
+      "raw_label": "porosity (φ) — compiled literature data",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'We extend the database of Colombier et al. (2017) for φ and C obtained by He-pycnometry on basalts...with data from recent studies' (Table SM1 and references therein)"
+     },
+     {
+      "raw_label": "pore connectivity (C) — compiled literature data",
+      "provenance": "cited",
+      "evidence": "Section 2.3: compiled from Colombier et al. (2017) and recent studies; XCT data from Song et al. (2001), Polacci et al. (2008, 2012), Couves et al. (2016), Zahasky et al. (2018)"
+     },
+     {
+      "raw_label": "permeability (k) — compiled literature data",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'Additional permeability data compared to Colombier et al. (2017) are also included (Table SM1 and references therein)'"
+     },
+     {
+      "raw_label": "polydispersity (S)",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'S values were obtained from literature data of vesicle size distributions measured by scanning electron microscopy image analysis following Vasseur et al. (2020) (Table SM2)'"
+     },
+     {
+      "raw_label": "vesicle number density (Nv)",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'Data of polydispersity in vesicle sizes S, vesicle number density Nv and crystallinity φx are also compiled from literature data on basaltic rocks (Table SM2 and references therein)'"
+     },
+     {
+      "raw_label": "crystallinity (φx)",
+      "provenance": "cited",
+      "evidence": "Section 2.3: 'Data of...crystallinity φx are also compiled from literature data on basaltic rocks (Table SM2 and references therein)'"
+     },
+     {
+      "raw_label": "percolation threshold (φc)",
+      "provenance": "modeled",
+      "evidence": "Section 2.5 and Results: φc derived from numerical Monte Carlo simulations of polydisperse sphere packing using the framework of Vasseur et al. (2020)"
+     },
+     {
+      "raw_label": "vesicle connectivity (C-pyc, C-percol, C-large-cluster) — simulated",
+      "provenance": "modeled",
+      "evidence": "Section 2.5: connectivity definitions computed using Monte Carlo union-find algorithm on numerically generated sphere packs; Fig. 4 shows simulation results"
+     },
+     {
+      "raw_label": "vesicle number density of FOAMGLAS (Nt = 10^7 mm^-3, S = 0.79)",
+      "provenance": "cited",
+      "evidence": "Fig. 5 caption: 'vesicle number density of 10^7 mm^-3 and a polydispersity of S = 0.79...based on analysis of XCT images (A. Ryan and J.K. Russel, pers. comm.) using FOAMS software'"
+     },
+     {
+      "raw_label": "vesicle size distribution (VSD)",
+      "provenance": "cited",
+      "evidence": "Section 2.3: S values compiled from literature VSD data measured by SEM image analysis following Vasseur et al. (2020); Table SM2"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "other",
+      "raw_verbatim": "Quantachrome He-pycnometer"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "GasPerm steady state permeameter (GPE-100, Vinci Technologies)"
+     }
+    ]
+   }
+  },
+  {
+   "paper_id": "Deegan_et_al._(2016)_Pyroxene_standards_for_SIMS_oxygen_isotope_analysis_and_the",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "δ¹⁸O (NRM-AG-1 augite standard, by SIMS)",
+      "provenance": "measured",
+      "evidence": "Section 3.3 / Supplementary Table 2: 79 SIMS spots on 14 grains of NRM-AG-1 yielded range in δ¹⁸O less than ±0.42‰ (2σ)"
+     },
+     {
+      "raw_label": "δ¹⁸O (NRM-EN-2 enstatite standard, by SIMS)",
+      "provenance": "measured",
+      "evidence": "Section 3.3 / Supplementary Table 2: 76 SIMS spots on 8 grains of NRM-EN-2 yielded range in δ¹⁸O less than ±0.58‰ (2σ)"
+     },
+     {
+      "raw_label": "δ¹⁸O (NRM-AG-1, by laser fluorination)",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'Laser fluorination of NRM-AG-1 (n = 2) ... were then carried out ... at UCT'; Section 4.1 reports 5.4 and 5.5‰ (average 5.5‰)"
+     },
+     {
+      "raw_label": "δ¹⁸O (NRM-EN-2, by laser fluorination)",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'Laser fluorination of ... NRM-EN-2 (n = 2) ... were then carried out ... at UCT'; Section 4.1 reports 5.5 and 5.7‰ (average 5.6‰)"
+     },
+     {
+      "raw_label": "δ¹⁸O (Merapi 2006 pyroxene, by SIMS, n = 204)",
+      "provenance": "measured",
+      "evidence": "Section 4.2 / Supplementary Table 4: 'We analysed a total of 32 pyroxene crystals (n = 209 individual spot analyses)'; overall range 4.3–8.1‰, average 5.8 ± 1.2‰ (2SD)"
+     },
+     {
+      "raw_label": "δ¹⁸O (Merapi pyroxene from basaltic-andesite lava and cumulate, by laser fluorination, n = 4)",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'Laser fluorination of ... Merapi pyroxene extracted from basaltic-andesite lava (n = 2), and Merapi pyroxene extracted from a coarse grained cumulate (n = 2) were then carried out ... at UCT'"
+     },
+     {
+      "raw_label": "Major element compositions of NRM-AG-1, NRM-EN-2, JV1, Merapi pyroxene (SiO₂, Al₂O₃, MgO, CaO, FeO, TiO₂, Na₂O, MnO, Cr₂O₃, NiO)",
+      "provenance": "measured",
+      "evidence": "Section 3.1 / Supplementary Tables 1 and 3: EPMA analyses using JEOL JXA-8530F Hyperprobe at Uppsala University"
+     },
+     {
+      "raw_label": "Mg-number of pyroxene standards and Merapi pyroxenes",
+      "provenance": "measured",
+      "evidence": "Section 4.1 / Fig. 2b: 'Mg-numbers (defined as 100MgO/(MgO+FeO)) of individual standards' derived from EPMA data measured in this study"
+     },
+     {
+      "raw_label": "Fe³⁺/Fe_total (Mössbauer spectroscopy of NRM-AG-1)",
+      "provenance": "measured",
+      "evidence": "Section 3.1: 'A room-temperature ⁵⁷Fe Mössbauer spectrum was recorded on powdered clinopyroxene NRM-AG-1 using a WISSEL MA260S Mössbauer instrument'"
+     },
+     {
+      "raw_label": "¹⁸O/¹⁶O ratio (instrumental mass fractionation, IMF, ‰)",
+      "provenance": "modeled",
+      "evidence": "Section 3.3: IMF calculated as difference between true isotope ratio of reference material and measured ratio, derived by data reduction using LF-calibrated standards"
+     },
+     {
+      "raw_label": "Crystallisation pressure, 253–601 MPa (peak at 470 MPa)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: 'clinopyroxene composition barometry using Eq. (32b) in Putirka (2008)' applied to EPMA data from this study"
+     },
+     {
+      "raw_label": "Crystallisation depth, 9–21 km (peak ~16 km)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2.2: 'Assuming a crustal density of 2890 kg/m³ (Nadeau et al., 2013), converted pyroxene crystallisation pressures yield a depth range of 9 to 21 km'"
+     },
+     {
+      "raw_label": "Primary magma δ¹⁸O beneath Central Java (~6.1‰)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2.2: calculated from pyroxene SIMS data using D_pyroxene-magma = −0.6 (Bindeman et al., 2004) and assumed fractional crystallisation shift of 0.3‰"
+     },
+     {
+      "raw_label": "δ¹⁸O Merapi pyroxene laser fluorination, n = 4, range 5.1–5.8‰, average 5.4‰ (Troll et al. 2013)",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'overlap with the δ¹⁸O values of Merapi 2006 pyroxene crystals obtained by LF, which range from 5.1 to 5.8‰ (n = 4, average δ¹⁸O = 5.4‰, Troll et al., 2013)'; Fig. 5c caption: 'from Troll et al., 2013'"
+     },
+     {
+      "raw_label": "δ¹⁸O Merapi bulk pyroxene separates by conventional fluorination, n = 7, range 5.9–7.2‰, average 6.7‰",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'Merapi bulk pyroxene separates ... have δ¹⁸O values ranging from 5.9 to 7.2‰ (n = 7, average δ¹⁸O = 6.7‰, Troll et al., 2013)'"
+     },
+     {
+      "raw_label": "δ¹⁸O Merapi whole-rocks by conventional fluorination, n = 32, range 5.6–8.3‰, average 6.9‰",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'Merapi whole-rocks have δ¹⁸O values ranging from 5.6 to 8.3‰ (n = 32, average δ¹⁸O = 6.9‰, Troll et al., 2013)'"
+     },
+     {
+      "raw_label": "δ¹⁸O of mantle clinopyroxene range",
+      "provenance": "cited",
+      "evidence": "Fig. 5 caption: 'The range of δ¹⁸O values of mantle clinopyroxene is shown for comparison (after Mattey et al., 1994)'"
+     },
+     {
+      "raw_label": "δ¹⁸O of MORB (5.7 ± 0.2‰)",
+      "provenance": "cited",
+      "evidence": "Section 5.2.2: 'somewhat higher than the accepted value of MORB (5.7 ± 0.2‰, e.g. Eiler, 2001)'"
+     },
+     {
+      "raw_label": "δ¹⁸O of JV1 diopside standard (accepted value 20.3‰)",
+      "provenance": "cited",
+      "evidence": "Section 5.2.1: 'When corrected to the accepted JV1 value of 20.3‰ (Eiler et al., 1997)'"
+     },
+     {
+      "raw_label": "δ¹⁸O of pyroxene separates from Galunggung (5.3–5.6‰) and Gede (5.5–5.9‰) volcanoes",
+      "provenance": "cited",
+      "evidence": "Section 5.2.2: 'δ¹⁸O values of 5.3 to 5.6‰ and 5.5 to 5.9‰ were reported for Galunggung and Gede volcanoes ... (Harmon and Gerbe, 1992; Handley et al., 2010)'"
+     },
+     {
+      "raw_label": "H₂O content assumed for barometry (6 wt.%)",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'We assumed a H₂O content of 6 wt.% based on clinopyroxene hygrometry on sample M-BA06-KA4 by Weis et al. (2016)'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "sims",
+      "raw_verbatim": "CAMECA IMS 1280 multi-collector equipped instrument"
+     },
+     {
+      "category": "epma",
+      "raw_verbatim": "JEOL JXA-8530F Hyperprobe (FEG-EPMA)"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "laser fluorination (LF) at University of Cape Town"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "WISSEL MA260S Mössbauer instrument operating in constant acceleration mode"
+     },
+     {
+      "category": "sem",
+      "raw_verbatim": "Scanning Electron Microscopy (SEM) imaging"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "MossA (Prescher et al., 2012) for spectral fitting of Mössbauer spectra"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Giuliani_et_al._(2020)_Evolution_of_textures,_crystal_size_distributions_and_gro",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "crystal size (major axis, minor axis, μm)",
+      "provenance": "measured",
+      "evidence": "Section 5 / Tables 4S: 'textural parameters were measured on several images acquired with SEM in back-scattered electron (BSE) mode'; image analysis performed on BSE-SEM microphotographs using Image-ProPlus"
+     },
+     {
+      "raw_label": "crystal aspect ratio (2D, major/minor axis ratio)",
+      "provenance": "measured",
+      "evidence": "Section 5 / Fig. 8: '2D crystal habit has been computed as the aspect ratio between major and minor axes of equal area ellipses' from BSE-SEM images analyzed with Image-ProPlus"
+     },
+     {
+      "raw_label": "number of crystals per area (#/A, μm⁻²)",
+      "provenance": "measured",
+      "evidence": "Table 1 / Section 5: 'we determined the abundance (area%) and the number of crystals per area (#/A) for each crystalline phase' via BSE-SEM image analysis"
+     },
+     {
+      "raw_label": "crystal abundance (area%, plg / cpx / sp / glass)",
+      "provenance": "measured",
+      "evidence": "Table 3S / Fig. 5 / Section 6: abundance (area%) quantified from BSE-SEM image segmentation in this study"
+     },
+     {
+      "raw_label": "CSD slope (m, μm⁻¹) and population density (ln n₀, μm⁻⁴)",
+      "provenance": "measured",
+      "evidence": "Table 3 / Section 5: CSD curves computed from BSE-SEM image measurements using CSD-Corrections 1.53 package (Higgins, 2000); new textural analysis in this study"
+     },
+     {
+      "raw_label": "3D crystal shape (S:I:L axes ratio)",
+      "provenance": "modeled",
+      "evidence": "Table 2 / Section 5: '3D crystal habit was calculated by using the CSD-slice program of Morgan and Jerram (2006)' from 2D measurements"
+     },
+     {
+      "raw_label": "maximum growth rate (G_max, cm/s)",
+      "provenance": "modeled",
+      "evidence": "Table 4 / Section 7.4: 'G_max = L_max / t', computed from averaged major axes of five longest crystals divided by experimental cooling time"
+     },
+     {
+      "raw_label": "average growth rate (G_CSD, cm/s)",
+      "provenance": "modeled",
+      "evidence": "Table 4 / Section 7.4: 'G_CSD = -1/mt' computed from CSD slope m and experimental time t"
+     },
+     {
+      "raw_label": "cooling rate (ΔT/Δt, °C/h) of experimental charges",
+      "provenance": "cited",
+      "evidence": "Section 4: 'Detailed settings of the nine experiments done by Vetere et al. (2013, 2015) are listed in Table 3S'; cooling rates 1, 7, 60, 180, 1800, 9000 °C/h from those prior studies"
+     },
+     {
+      "raw_label": "2D numerical cooling simulations (temperature vs. time for basaltic layers 0.1–2 m)",
+      "provenance": "modeled",
+      "evidence": "Section 3 / Fig. 2: '2D simulations to model the evolution of cooling conditions... using the finite elements code implemented in the Heat 3D software (Wohletz et al., 1999)'"
+     },
+     {
+      "raw_label": "bulk composition of B100 (SiO2, Na2O+K2O, wt%) measured by electron microprobe",
+      "provenance": "cited",
+      "evidence": "Section 4: 'The bulk composition of B100 measured by electron microprobe...is the same described in Table 1 of Vetere et al. (2015)'"
+     },
+     {
+      "raw_label": "residual H2O content (~50 ppm) and Fe2+/Fetot ratio (0.39)",
+      "provenance": "cited",
+      "evidence": "Section 4: 'Using FTIR spectroscopy...the residual H2O content (ca. 50 ppm) and Fe2+/Fetot ratio (0.39) were determined by Vetere et al. (2015)'"
+     },
+     {
+      "raw_label": "mineral chemistry (EPMA compositions of glass, plg, cpx, sp)",
+      "provenance": "measured",
+      "evidence": "Section 5: 'Glass and mineral chemistries were determined both by an electron probe microanalyzer (EPMA) equipped with five WDS spectrometers and by field-emission scanning electron microscopy (SEM) with an EDS detector'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "epma",
+      "raw_verbatim": "electron probe microanalyzer (EPMA) equipped with five WDS spectrometers"
+     },
+     {
+      "category": "sem",
+      "raw_verbatim": "field-emission scanning electron microscopy (SEM) with an EDS detector; BSE-SEM (back-scattered electron mode)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "Image-ProPlus software (http://www.mediacy.com/imageproplus)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "CSD-Corrections 1.53 package (Higgins, 2000)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "CSD-slice program (Morgan and Jerram, 2006)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "Heat 3D code (Wohletz et al., 1999)"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Furi_et_al.,_2010,_Apparent_decoupling_of_the_He_and_Ne_isotope_systematics_of_the_Icelandic_mantle;_The_role_of_He_depletion,_melt_mixing,_degassing_",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "classification_confidence": 0.97,
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "³He/⁴He (Rm/RA)",
+      "provenance": "measured",
+      "evidence": "Table 1/3: 'measured ³He/⁴He ratio divided by the ³He/⁴He ratio in air' for each geothermal fluid and basalt sample analyzed in this study"
+     },
+     {
+      "raw_label": "⁴He/²⁰Ne (X-factor, air-normalized He/Ne)",
+      "provenance": "measured",
+      "evidence": "Table 1 footnote d: X = [(⁴He/²⁰Ne)measured/(⁴He/²⁰Ne)air] × βNe/βHe — measured simultaneously with He isotopes on MAP 215"
+     },
+     {
+      "raw_label": "³He/⁴He (Rc/RA, air-corrected)",
+      "provenance": "modeled",
+      "evidence": "Table 1 footnote e: Rc/RA = air-corrected He isotope ratio = [(Rm/RA × X) − 1]/(X − 1); derived from measured Rm and X"
+     },
+     {
+      "raw_label": "[⁴He]c (air-corrected He concentration in water)",
+      "provenance": "modeled",
+      "evidence": "Table 1 footnote f: [He]c = ([He]m(X−1))/X; computed from measured abundance and X"
+     },
+     {
+      "raw_label": "²¹Ne/²²Ne",
+      "provenance": "measured",
+      "evidence": "Table 2/4: neon isotope ratios measured on modified VG5400 mass spectrometer for geothermal fluids and subglacial glasses"
+     },
+     {
+      "raw_label": "²⁰Ne/²²Ne",
+      "provenance": "measured",
+      "evidence": "Table 2/4: neon isotope ratios measured on modified VG5400 mass spectrometer for geothermal fluids and subglacial glasses"
+     },
+     {
+      "raw_label": "[²⁰Ne] (neon concentration)",
+      "provenance": "measured",
+      "evidence": "Table 2/4: [²⁰Ne] cm³STP/gH₂O measured on VG5400 for select geothermal fluids and subglacial glasses"
+     },
+     {
+      "raw_label": "[⁴He] (He concentration in glass/phenocrysts)",
+      "provenance": "measured",
+      "evidence": "Table 3: [He] cm³STP/g measured by crushing on MAP 215 noble gas mass spectrometer for basaltic glasses and phenocrysts"
+     },
+     {
+      "raw_label": "⁴⁰Ar/³⁶Ar",
+      "provenance": "measured",
+      "evidence": "Table 4: Ar isotope ratios measured on modified VG5400 mass spectrometer for subglacial glasses"
+     },
+     {
+      "raw_label": "³⁸Ar/³⁶Ar",
+      "provenance": "measured",
+      "evidence": "Table 4: ³⁸Ar/³⁶Ar measured on modified VG5400 mass spectrometer for subglacial glasses"
+     },
+     {
+      "raw_label": "[⁴⁰Ar] (Ar concentration)",
+      "provenance": "measured",
+      "evidence": "Table 4: [⁴⁰Ar] 10⁻⁹ ccSTP/g measured on modified VG5400 for subglacial glasses"
+     },
+     {
+      "raw_label": "⁴⁰Ar* (radiogenic Ar)",
+      "provenance": "modeled",
+      "evidence": "Section 5.3 Eq. 6: ⁴⁰Ar* = [³⁶Arm] × [(⁴⁰Ar/³⁶Ar)m − (⁴⁰Ar/³⁶Ar)air]; derived from measured Ar ratios"
+     },
+     {
+      "raw_label": "⁴He/⁴⁰Ar* (He-to-radiogenic Ar ratio)",
+      "provenance": "modeled",
+      "evidence": "Table 4: '⁴He/⁴⁰Ar*' column; calculated from measured He content and Ar* derived from Eq. 6"
+     },
+     {
+      "raw_label": "²¹Ne/²²Neex (air-corrected neon isotope ratio)",
+      "provenance": "modeled",
+      "evidence": "Section 5.1.2: calculated by extrapolating data to primordial ²⁰Ne/²²Ne along line through air; shown in Fig. 8"
+     },
+     {
+      "raw_label": "²¹Ne* (nucleogenic ²¹Ne)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2 Eq. 5: ²¹Ne* = ²²Nes × (²¹Ne/²²Neex − ²¹Ne/²²Nes); derived from measured Ne and model corrections"
+     },
+     {
+      "raw_label": "²²Nes (solar-derived ²²Ne)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2 Eqs. 2–3: ²²Nes = [²²Nem] × f22, where f22 computed from measured ²⁰Ne/²²Ne ratios and adopted solar endmember"
+     },
+     {
+      "raw_label": "⁴He/²¹Ne* (He-to-nucleogenic Ne ratio)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2 and Fig. 9a: computed from measured ⁴He and modeled ²¹Ne*; described as 'air-corrected helium to neon elemental ratio'"
+     },
+     {
+      "raw_label": "³He/²²Nes (He-to-solar Ne ratio)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2 Eq. 4: ³He/²²Nes = (³He/⁴Hem × [⁴He]m) / ²²Nes; derived from measured He and modeled ²²Nes"
+     },
+     {
+      "raw_label": "δ²⁰Ne, δ²¹Ne (neon enrichment relative to air)",
+      "provenance": "modeled",
+      "evidence": "Table 2/Figs. 3 and 5: δⁱNe = [(ⁱNe/²²Nesample)/(ⁱNe/²²Neair) − 1] × 100; computed from measured Ne ratios and air standard"
+     },
+     {
+      "raw_label": "³He/⁴He MORB reference (~8 RA)",
+      "provenance": "cited",
+      "evidence": "Section 4.1.1: 'typical MORB values (8 ± 1 RA; Graham, 2002)' — cited from Graham (2002)"
+     },
+     {
+      "raw_label": "Solar wind ²⁰Ne/²²Ne (13.8)",
+      "provenance": "cited",
+      "evidence": "Section 5.1.2: '²⁰Ne/²²Ne = 13.8; Benkert et al., 1993; Kallenbach et al., 1997' — cited literature value"
+     },
+     {
+      "raw_label": "Ne-B ²⁰Ne/²²Ne (12.52 ± 0.18)",
+      "provenance": "cited",
+      "evidence": "Section 5.1.2: 'Ne–B … ²⁰Ne/²²Ne ratio of 12.52 ± 0.18 … Black, 1972; Trieloff et al., 2000' — cited"
+     },
+     {
+      "raw_label": "⁴He/²¹Ne* mantle production ratio (~2.2 × 10⁷)",
+      "provenance": "cited",
+      "evidence": "Section 5.2 and Fig. 9 caption: '⁴He/²¹Ne* = 2.2 × 10⁷ (Yatsevich and Honda, 1997)' — cited"
+     },
+     {
+      "raw_label": "⁴He/⁴⁰Ar* mantle production ratio (~2.9)",
+      "provenance": "cited",
+      "evidence": "Fig. 7b/9 caption: 'theoretical ⁴He/⁴⁰Ar* production ratio (~2.9) … Jochum et al., 1983; Graham, 2002' — cited"
+     },
+     {
+      "raw_label": "Icelandic plume ⁴⁰Ar/³⁶Ar source estimate (6500 ± 1500)",
+      "provenance": "cited",
+      "evidence": "Section 4.2.3: '6500 ± 1500 for Iceland (Trieloff and Kunz, 2005)' — cited from prior work"
+     },
+     {
+      "raw_label": "Primordial (proto-solar) ³He/⁴He (280 RA / ⁴He/³He = 2580)",
+      "provenance": "cited",
+      "evidence": "Section 5.1.3: '(⁴He/³He)PRIM = 2580 ± 200 (= 280 RA) … Black (1972)' — cited"
+     },
+     {
+      "raw_label": "³He/²²Ne primordial mantle estimate (7.7)",
+      "provenance": "cited",
+      "evidence": "Section 5.2 and Fig. 9 caption: '³He/²²Ne = 7.7 (Honda and McDougall, 1998)' — cited"
+     },
+     {
+      "raw_label": "r-values for He-Ne binary mixing curves",
+      "provenance": "modeled",
+      "evidence": "Section 5.1.3 and Fig. 8: r = (³He/²²Ne)MORB / (³He/²²Ne)PRIM; calculated from mixing model to fit data array"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "MAP 215 noble gas mass spectrometer"
+     },
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "modified VG5400 mass spectrometer"
+     }
+    ]
+   }
+  },
+  {
+   "paper_id": "Poreda_&_Craig_(1989)_Helium_isotope_ratios_in_circum-Pacific_volcanic_arcs",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "³He/⁴He ratio (R/R_A), measured",
+      "provenance": "measured",
+      "evidence": "Table 1 / Methods: 'Helium isotope measurements were made on volcanic gases... analysed by crushing in vacuum'; R/R_A values listed for each sample in Table 1 by SIO (this work, circles in Fig. 1)"
+     },
+     {
+      "raw_label": "He/Ne ratio (He/Ne)/(He/Ne)_A",
+      "provenance": "measured",
+      "evidence": "Table 1 column 5: measured alongside ³He/⁴He in the same Clarke-type mass spectrometer run; used to correct for atmospheric contamination"
+     },
+     {
+      "raw_label": "Atmospherically-corrected ³He/⁴He ratio (R_C/R_A)",
+      "provenance": "modeled",
+      "evidence": "Table 1 footnote †: 'R_C is the ³He/⁴He ratio corrected for atmospheric He contamination: R_C = (R_N − R_A N_A)/(N − N_A)' — derived via formula from measured R and He/Ne"
+     },
+     {
+      "raw_label": "Fumarole/spring temperature T (°C)",
+      "provenance": "measured",
+      "evidence": "Table 1 column 7 (T °C): temperature of sampled fumaroles, springs, and wells measured in the field at time of sampling"
+     },
+     {
+      "raw_label": "He concentration in non-condensable gases (He/NC, p.p.m.)",
+      "provenance": "measured",
+      "evidence": "Table 1 column 8 (He/NC p.p.m.): reported for gas samples collected in this study"
+     },
+     {
+      "raw_label": "He concentration in phenocrysts (cm³ STP g⁻¹)",
+      "provenance": "measured",
+      "evidence": "Table 1 footnote *: for OL and CPX samples 'column 7 [lists] the He concentration in the phenocrysts, in 10⁻⁹ cm³ STP g⁻¹' — measured by vacuum crushing in this study"
+     },
+     {
+      "raw_label": "⁸⁷Sr/⁸⁶Sr ratio",
+      "provenance": "cited",
+      "evidence": "Table 1 column 9 with 'Ref.' column citing refs 10, 16, 23, 32, 38, 41–48; Fig. 2 caption: '⁸⁷Sr/⁸⁶Sr ratios for lavas from the same volcano... were used whenever possible; error bars on Sr ratios reflect the range measured at a volcano' — sourced from literature"
+     },
+     {
+      "raw_label": "MORB ³He/⁴He reference value (R/R_A = 8 ± 1)",
+      "provenance": "cited",
+      "evidence": "Text: 'mid-ocean-ridge basalts (R/R_A = 8 ± 1; see, for example, refs 8 and 9)' — reference value from published literature"
+     },
+     {
+      "raw_label": "Kurile-Kamchatka arc ³He/⁴He ratios (ref. 17)",
+      "provenance": "cited",
+      "evidence": "Fig. 1 caption: 'from this work (circles) and ref. 17 (triangles)' — Kurile data from Baskov et al. 1973"
+     },
+     {
+      "raw_label": "New Zealand ³He/⁴He ratios",
+      "provenance": "cited",
+      "evidence": "Fig. 2 caption: '³He/⁴He data are from this paper, refs 17 and 50 (Kuriles), and ref. 36 (SIO data) and ref. 49 (New Zealand)'"
+     },
+     {
+      "raw_label": "Yellowstone hotspot R/R_A (= 16.45)",
+      "provenance": "cited",
+      "evidence": "Methods: 'A secondary standard (Yellowstone Park gas: R/R_A = 16.45)' — used as calibration standard; value from prior characterization, not newly measured here"
+     },
+     {
+      "raw_label": "Hawaiian hotspot ³He/⁴He ratios (R/R_A ≈ 11–30)",
+      "provenance": "cited",
+      "evidence": "Discussion: 'high-³He hotspots (for example Hawaii, Iceland, Samoa) have ratios significantly higher than MORBs with R/R_A ≈ 11–30' — values from cited literature (ref. 29)"
+     },
+     {
+      "raw_label": "Mixing curve κ parameter (He/Sr ratio mantle vs. crust)",
+      "provenance": "modeled",
+      "evidence": "Fig. 2 legend: 'curves are mixing trajectories between a MORB component (M) and a crustal/sedimentary end member (C) defined by a parameter κ = [(He/Sr)_CRUST/(He/Sr)_MORB]' — computed model trajectories"
+     },
+     {
+      "raw_label": "Mantle He fraction X_M (fraction of He from mantle)",
+      "provenance": "modeled",
+      "evidence": "Fig. 1 caption: 'a general mean of ~7.5 R_A, corresponding to X_M, the fraction of He derived from the mantle, ~7.5/8, that is, 94%' — derived algebraically from measured R/R_A"
+     },
+     {
+      "raw_label": "δ¹⁸O",
+      "provenance": "cited",
+      "evidence": "Discussion (Banda arc): 'the correlation between δ¹⁸O and ⁸⁷Sr/⁸⁶Sr, which suggests a 25% sialic contribution (refs 23, 24)' — cited from Margaritz et al. and Whitford et al."
+     },
+     {
+      "raw_label": "³He degassing rate from ocean crust (4 atoms cm⁻² s⁻¹)",
+      "provenance": "cited",
+      "evidence": "Discussion: 'With a degassing rate of 4 atoms cm⁻² s⁻¹ (1,000 mol yr⁻¹) of ³He (ref. 25)' — cited from Craig et al. 1975"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "Clarke-type double-collecting mass spectrometer (GAD)"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Sano_et_al._(1998)_Helium_degassing_related_to_the_Kobe_earthquake_",
+   "kind": "dispute",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "³He/⁴He ratio (R/R_atm)",
+      "provenance": "measured",
+      "evidence": "Table 1 + Section 2: 'we measured ³He/⁴He and ⁴He/²⁰Ne ratios ... of groundwater samples' from six wells before and after Kobe Earthquake"
+     },
+     {
+      "raw_label": "⁴He/²⁰Ne ratio",
+      "provenance": "measured",
+      "evidence": "Table 1 + Section 2: 'we measured ³He/⁴He and ⁴He/²⁰Ne ratios' — their own samples, errors ~6% from repeated atmospheric standard"
+     },
+     {
+      "raw_label": "Tritium concentration (TU)",
+      "provenance": "measured",
+      "evidence": "Table 1 + Section 2: 'tritium concentrations' measured on same groundwater samples; error 0.5 TU by standard methods"
+     },
+     {
+      "raw_label": "δD (‰)",
+      "provenance": "measured",
+      "evidence": "Table 1 + Section 2: 'δD and δ¹⁸O values of groundwater samples' measured; error 2‰ by standard methods (Sturchio et al., 1996)"
+     },
+     {
+      "raw_label": "δ¹⁸O (‰)",
+      "provenance": "measured",
+      "evidence": "Table 1 + Section 2: 'δD and δ¹⁸O values' measured; error 0.15‰ by standard methods (Sturchio et al., 1996)"
+     },
+     {
+      "raw_label": "Tritium-³He groundwater age (years)",
+      "provenance": "modeled",
+      "evidence": "Table 1 + Section 3: 'it is possible to calculate apparent ages for the groundwater samples' from tritium and excess ³He concentrations using Schlosser et al. (1988) / Takaoka and Mizutani (1987) method"
+     },
+     {
+      "raw_label": "Excess radiogenic ⁴He concentration (cm³ STP/g-water)",
+      "provenance": "modeled",
+      "evidence": "Section 3: estimated by subtracting ASW baseline (assuming ²⁰Ne = 1.73×10⁻⁷ cm³ STP/g and ⁴He/²⁰Ne = 0.241 at 0°C from Ozima and Podosek 1983) from measured values"
+     },
+     {
+      "raw_label": "Released radiogenic He from rocks (cm³ STP/cm³-rock)",
+      "provenance": "modeled",
+      "evidence": "Section 3: 'calculated radiogenic He ... obtained by subtracting the concentrations of April 1993 from those of January and February 1995'; then converted using assumed porosity 20–30% (Sumikawa 1990) giving 4.0±1.3×10⁻⁹ cm³ STP/cm³-rock"
+     },
+     {
+      "raw_label": "He retention fraction R in granitic rocks",
+      "provenance": "modeled",
+      "evidence": "Section 3: R = 0.9993±0.0005 calculated from measured excess He and rock He concentration (Nagao, personal communication) using model formula R = 1 − k₂(ΔV/V)^(2/3)"
+     },
+     {
+      "raw_label": "He concentration and ³He/⁴He ratio in aquifer granitic rocks",
+      "provenance": "cited",
+      "evidence": "Section 3: 'were analyzed ... at Okayama University (Nagao, personal communication)' — not analyzed by this paper's authors; values 2.1±1.3×10⁻⁶ cm³ STP-He/g-rock and 0.02±0.01 R_atm"
+     },
+     {
+      "raw_label": "Coseismic volumetric strain ΔV/V",
+      "provenance": "modeled",
+      "evidence": "Section 3: calculated to be 1.5±1.1×10⁻⁷ using R and Honda et al. (1982) empirical formula; compared with King et al. (1995) fault model estimate of 1×10⁻⁶"
+     },
+     {
+      "raw_label": "Total He degassing from Kobe Earthquake (cm³ STP)",
+      "provenance": "modeled",
+      "evidence": "Section 3: '4×10¹¹ cm³ STP' calculated from observed per-rock degassing × volume of affected crust estimated via Shimazu (1971) empirical relation and King et al. (1995) fault model"
+     },
+     {
+      "raw_label": "Global steady-state He flux (cm³ STP/year)",
+      "provenance": "cited",
+      "evidence": "Sections 1 and 3: '1.2±0.6×10¹³ cm³ STP/year' attributed to Torgersen (1989) and O'Nions and Oxburgh (1983)"
+     },
+     {
+      "raw_label": "Porosity of aquifers (%)",
+      "provenance": "cited",
+      "evidence": "Section 3: 'porosity of the aquifers is 20–30% (Sumikawa, 1990)' — taken from literature"
+     },
+     {
+      "raw_label": "Volume of crustal rock affected by aftershocks (km³)",
+      "provenance": "modeled",
+      "evidence": "Section 3: calculated using Shimazu (1971) empirical relation log V = 1.06M − 2.78, giving 7×10⁴ km³ for M7.2"
+     },
+     {
+      "raw_label": "Annual seismic energy release and equivalent earthquake magnitude",
+      "provenance": "cited",
+      "evidence": "Section 3: '~7×10²⁴ ergs/year ... corresponds to one great earthquake of magnitude 8.70 per year' after Kanamori (1977)"
+     },
+     {
+      "raw_label": "ASW ²⁰Ne concentration and ⁴He/²⁰Ne ratio at 0°C",
+      "provenance": "cited",
+      "evidence": "Section 3: 'assuming a ²⁰Ne concentration of 1.73×10⁻⁷ cm³ STP/g and a ⁴He/²⁰Ne ratio of 0.241 in ASW at 0°C (Ozima and Podosek, 1983)'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "noble gas mass spectrometer"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "conventional methods for tritium concentration measurement"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "standard methods for stable isotope analysis (δD and δ18O)"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Nan_et_al._(2024)_Unraveling_abiotic_organic_synthesis_pathways_in_the_mafic_cru",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "Raman shift peaks (C-N, C-O, CH2, CH3 stretching modes)",
+      "provenance": "measured",
+      "evidence": "Results/Rock-Hosted Organic Matter + Fig. 1C: 'Raman spectroscopy reveals a consistent composition across all investigated CCM' — spectra collected in this study at IDSSE using WiTec alpha 300R"
+     },
+     {
+      "raw_label": "TOF-SIMS fragment ion species (C2H+, C2OH+, CN+, aliphatic ions)",
+      "provenance": "measured",
+      "evidence": "Results/Rock-Hosted Organic Matter + Fig. 2: 'TOF-SIMS mass spectrum is correlated to aliphatic fragment ion species' — experiments conducted using TOF-SIMS V at SINANO in this study"
+     },
+     {
+      "raw_label": "PiFM-IR spectral bands (alkyl, alcohol, amine functional groups at 880, 1085, 1230, 1344, 1580–1650 cm-1)",
+      "provenance": "measured",
+      "evidence": "Results/Rock-Hosted Organic Matter + Fig. 3B: 'The molecular information obtained by PiFM is consistent with Raman and TOF-SIMS analysis' — PiFM measurements performed on FIB foil in this study using VistaScope"
+     },
+     {
+      "raw_label": "SEM BSE mineral textures and CCM morphology (<50 μm cavities)",
+      "provenance": "measured",
+      "evidence": "Materials and Methods/SEM + Fig. 1A: 'SEM was carried out at IDSSE using a Thermo Fisher Scientific Apreo in backscattered electron (BSE) mode' — new imaging of rock samples"
+     },
+     {
+      "raw_label": "EDX elemental maps (C, Fe distributions in CCM + FeOOH)",
+      "provenance": "measured",
+      "evidence": "Materials and Methods/FIB-SEM + Fig. 1B: 'Energy-dispersive X-ray (EDX) spectroscopy analyses were carried out with an Oxford INCA-350 spectrometer' — new analysis on study samples"
+     },
+     {
+      "raw_label": "Fe oxyhydroxide mineralogy (goethite α-FeOOH, akaganeite β-FeOOH, lepidocrocite γ-FeOOH, ~2 vol.% of matrix)",
+      "provenance": "measured",
+      "evidence": "Results/Mafic Rocks and Fe Oxyhydroxides: 'These Fe oxyhydroxides, including goethite, akaganeite, and lepidocrocite, are widely distributed as rosette-like aggregates (<2 μm)' — identified by Raman and SEM in this study"
+     },
+     {
+      "raw_label": "Silicate mineral proportions (pyroxene, olivine, plagioclase vol.%) in basalt samples",
+      "provenance": "measured",
+      "evidence": "Results/Mafic Rocks and Fe Oxyhydroxides + SI Table S1: 'vary in proportion across different samples (SI Appendix, Table S1)' — measured by microscope observations in this study"
+     },
+     {
+      "raw_label": "Sample depth (2,633 to 2,811 m below sea level)",
+      "provenance": "measured",
+      "evidence": "Results/Mafic Rocks: 'seven crustal rocks recovered from the SWIR at 2,633 to 2,811 m below sea level (SI Appendix, Fig. S1 and Table S1)' — collected during TS-10 cruise 2018"
+     },
+     {
+      "raw_label": "H2 concentration in Dragon Horn hydrothermal fluids (~0.3 mM)",
+      "provenance": "cited",
+      "evidence": "Results/Abiotic Genesis: 'Tao et al. investigated the geochemical composition of the hydrothermal fluids in the Dragon Horn area, which exhibited H2 concentrations of around 0.3 mM' — cited from Tao et al. (2020)"
+     },
+     {
+      "raw_label": "NH4+ concentration in hydrothermal fluids (4.5 to 6.1 mM)",
+      "provenance": "cited",
+      "evidence": "Results/Abiotic Genesis: 'hydrothermal fluids contain high nitrogen concentrations (4.5 to 6.1 mM NH4+)' — cited from Pedersen et al. (2010), ref. 44"
+     },
+     {
+      "raw_label": "H2 concentrations at Menez Gwen hydrothermal vents (<0.7 mM)",
+      "provenance": "cited",
+      "evidence": "Results/Abiotic Genesis: 'H2 concentrations below 0.7 mM, similar to those at the Dragon Horn area, have been noted in the mafic-hosted hydrothermal vents of Menez Gwen' — cited from Klein et al. (2019), ref. 18"
+     },
+     {
+      "raw_label": "Thermodynamic chemical affinity for n-alkanes and n-alcohols at low temperatures",
+      "provenance": "cited",
+      "evidence": "Results/Mechanistic Constraints: 'thermodynamic calculations show the chemical imbalances... reactions demonstrate notably high chemical affinities for n-alkanes and n-alcohols' — citing Shock & Canovas (2010), ref. 5"
+     },
+     {
+      "raw_label": "DFT free-energy values for CO2 adsorption on goethite (001) surface (−0.40 eV)",
+      "provenance": "modeled",
+      "evidence": "Results/Mechanistic Constraints + Fig. 4: 'the adsorption of CO2 to the surface is exothermic (−0.40 eV)' — computed by DFT/CASTEP in this study"
+     },
+     {
+      "raw_label": "DFT adsorption energy of H2 on goethite (−0.16 eV)",
+      "provenance": "modeled",
+      "evidence": "Results/Mechanistic Constraints: 'stronger adsorption ability compared to H2 (−0.16 eV) (state 3 to state 4)' — computed by DFT/CASTEP in this study"
+     },
+     {
+      "raw_label": "Transition state energy barriers (TS1–TS5) for CO2 hydrogenation and C-C chain growth on goethite",
+      "provenance": "modeled",
+      "evidence": "Results/Mechanistic Constraints + Fig. 4 table: states TS1 (~2.6 eV), TS2 (~2.5 eV), TS3 (~2.4 eV), TS4 (~2.9 eV), TS5 (~0.5 eV) — computed by LST/QST DFT in this study"
+     },
+     {
+      "raw_label": "Reaction free-energy pathway states (State 1–10) for CO2 hydrogenation intermediates (COOH*, C(OH)2*, HCOH*, HCOH-HCOH*)",
+      "provenance": "modeled",
+      "evidence": "Results/Mechanistic Constraints + Fig. 4: 'free-energy diagram of the reaction pathways, illustrating CO2 hydrogenation and C-C chain growth on the α-FeOOH (001) surface' — DFT/CASTEP simulations in this study"
+     },
+     {
+      "raw_label": "Goethite (001) surface cell parameters (a=9.95 Å, b=3.02 Å, c=4.60 Å, space group Pnma)",
+      "provenance": "cited",
+      "evidence": "Materials and Methods/Quantum Mechanical Modeling: 'A goethite (001) surface model was employed, with cell parameters: a=9.95 Å, b=3.02 Å, c=4.60 Å' — adopted from literature for DFT model setup"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "sem",
+      "raw_verbatim": "Thermo Fisher Scientific Apreo"
+     },
+     {
+      "category": "raman",
+      "raw_verbatim": "WiTec alpha 300R Raman microscope"
+     },
+     {
+      "category": "sem",
+      "raw_verbatim": "FEI Helios 600i (FIB-SEM)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "VistaScope microscope (Molecular Vista, Inc.) — PiFM (photoinduced force microscopy)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "TOF-SIMS V reflection-type mass spectrometer (IONTOF GmbH)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "CASTEP (spin-polarized DFT, quantum mechanical modeling)"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "1-s2.0-S0012821X12004621-main",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "whole-rock major element concentrations (SiO2, Al2O3, CaO, MgO, etc.)",
+      "provenance": "measured",
+      "evidence": "Section 4: 'Major and trace elements were measured for whole rock xenoliths by XRF and ICP-MS'; Appendix A.1 contains new data tables"
+     },
+     {
+      "raw_label": "whole-rock trace element concentrations (REE, HFSE, etc.)",
+      "provenance": "measured",
+      "evidence": "Section 4: 'Major and trace elements were measured for whole rock xenoliths by XRF and ICP-MS'; Fig. 2a/b show new whole-rock REE data"
+     },
+     {
+      "raw_label": "clinopyroxene major element compositions (Al2O3, Cr#, etc.)",
+      "provenance": "measured",
+      "evidence": "Section 4: 'Mineral major element compositions were measured by EPMA'; Appendix A.2"
+     },
+     {
+      "raw_label": "clinopyroxene trace element compositions (REE, HFSE)",
+      "provenance": "measured",
+      "evidence": "Section 4: 'Clinopyroxene trace element compositions were measured by LA-ICP-MS'; Appendix A.2, Fig. 2c/d"
+     },
+     {
+      "raw_label": "olivine, orthopyroxene, spinel major element concentrations",
+      "provenance": "measured",
+      "evidence": "Section 4: 'Mineral major element compositions were measured by EPMA'; Appendix A.3"
+     },
+     {
+      "raw_label": "spinel Cr# (molar Cr/(Cr+Al))",
+      "provenance": "measured",
+      "evidence": "Section 5.2: 'Clinopyroxene and spinel from F-type Elephant Butte xenoliths have low Cr# ... spinel Cr# (~0.11)'; derived from EPMA measurements in this study"
+     },
+     {
+      "raw_label": "87Sr/86Sr",
+      "provenance": "measured",
+      "evidence": "Table 1: isotopic compositions measured by TIMS from clinopyroxene separates; Section 5.3 presents new data"
+     },
+     {
+      "raw_label": "143Nd/144Nd (eNd)",
+      "provenance": "measured",
+      "evidence": "Table 1: 'Sr, Nd and Pb were measured from clinopyroxene separates' by TIMS; Section 5.3"
+     },
+     {
+      "raw_label": "206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb",
+      "provenance": "measured",
+      "evidence": "Table 1: Pb isotopes measured by TIMS from cpx separates; Section 5.3"
+     },
+     {
+      "raw_label": "187Os/188Os (whole rock)",
+      "provenance": "measured",
+      "evidence": "Table 1: 'Osmium isotopic compositions are whole-rock analyses' measured by TIMS; Section 5.3"
+     },
+     {
+      "raw_label": "Re concentration (ppb)",
+      "provenance": "measured",
+      "evidence": "Table 1: 'Rhenium concentrations were measured by isotope dilution using MC-ICP-MS'; whole-rock Re concentrations in Table 1"
+     },
+     {
+      "raw_label": "Os concentration (ppb)",
+      "provenance": "measured",
+      "evidence": "Table 1: 'Rhenium and osmium concentrations are for whole-rock'; measured by isotope dilution"
+     },
+     {
+      "raw_label": "two-pyroxene equilibration temperature (TBKN)",
+      "provenance": "modeled",
+      "evidence": "Section 5.4: 'Xenolith equilibration temperatures were calculated using the two-pyroxene thermometer (TBKN) from Brey and Köhler (1990)'; Appendix A.4"
+     },
+     {
+      "raw_label": "TRD (Re-depletion model age, Ga)",
+      "provenance": "modeled",
+      "evidence": "Section 6.1: 'A total rhenium depletion model age (TRD, after Shirey and Walker, 1998) assumes complete loss of rhenium'; calculated from measured 187Os/188Os"
+     },
+     {
+      "raw_label": "xenolith extraction depth (km)",
+      "provenance": "modeled",
+      "evidence": "Section 6.4: 'The extraction depth...can be estimated by calculating a local geothermal gradient based on heat flow estimates'; Fig. 9 shows modeled geothermal gradients"
+     },
+     {
+      "raw_label": "degree of fractional melting (%)",
+      "provenance": "modeled",
+      "evidence": "Fig. 8 caption: 'dashed line represents a melting model...where degree of fractional melting is a function of spinel Cr# and Yb content is modeled after Johnson et al., 1990'"
+     },
+     {
+      "raw_label": "DMM composition (Al2O3, trace elements, isotopes)",
+      "provenance": "cited",
+      "evidence": "Section 5.1 and Fig. 2: 'Grey field shows estimated range for composition of depleted mantle (values from Workman and Hart, 2005; Salters and Stracke, 2004)'"
+     },
+     {
+      "raw_label": "abyssal peridotite 187Os/188Os range",
+      "provenance": "cited",
+      "evidence": "Section 6.2.2: 'range reported for abyssal peridotites and depleted-MORB mantle (Snow and Reisberg, 1995; Standish et al., 2002)'"
+     },
+     {
+      "raw_label": "Colorado Plateau xenolith compositions (Al2O3, REE, Os isotopes)",
+      "provenance": "cited",
+      "evidence": "Section 6.1: 'Xenoliths from the central Colorado Plateau (Navajo volcanic field) have refractory compositions (~1.6 wt.% Al2O3) (Smith and Levy, 1976; Lee et al., 2001a; ...)'"
+     },
+     {
+      "raw_label": "MORB Sr, Nd, Pb isotopes",
+      "provenance": "cited",
+      "evidence": "Fig. 4 caption: 'MORB data from http://www.petdb.org/'"
+     },
+     {
+      "raw_label": "Grand Canyon xenolith cpx compositions (REE, isotopes)",
+      "provenance": "cited",
+      "evidence": "Fig. 4b and Fig. 6 caption: 'data from Alibert, 1994'"
+     },
+     {
+      "raw_label": "The Thumb (central CP) xenolith 187Os/188Os",
+      "provenance": "cited",
+      "evidence": "Fig. 7 caption: 'garnet-bearing xenoliths from The Thumb (central Colorado Plateau) (data from Lee et al., 2001a)'"
+     },
+     {
+      "raw_label": "surface heat flow (mW/m2)",
+      "provenance": "cited",
+      "evidence": "Section 6.4: 'The surface heat flows are ~95 mW/m2 and ~83 mW/m2 for the Elephant Butte and Cerro Chato regions, respectively (Reiter et al., 1986)'"
+     },
+     {
+      "raw_label": "crustal thickness (km)",
+      "provenance": "cited",
+      "evidence": "Section 6.4: 'The thickness of the crust at Elephant Butte is ~29 km and at Cerro Chato it is ~39 km (Keller et al., 1990)'"
+     },
+     {
+      "raw_label": "cpx/melt partition coefficients",
+      "provenance": "cited",
+      "evidence": "Section 6.1: 'Using trace element partition coefficients (Hart and Dunn, 1993) we calculate melts that would be in equilibrium with the Clinopyroxene from group-II xenoliths'"
+     },
+     {
+      "raw_label": "pMELTS modeled mineral compositions (Mg#, Al2O3 in cpx)",
+      "provenance": "modeled",
+      "evidence": "Section 6.1: 'Models using pMELTS (Ghiorso et al., 2002) also show that a magma...is capable of precipitating olivine and clinopyroxene at pressures of 10-15 kb with similar Mg# (~85) and Al2O3 (>6.0 wt.%)'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "xrf",
+      "raw_verbatim": "XRF (Washington State University GeoAnalytical Lab)"
+     },
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "ICP-MS (Washington State University GeoAnalytical Lab)"
+     },
+     {
+      "category": "epma",
+      "raw_verbatim": "EPMA"
+     },
+     {
+      "category": "laser_ablation",
+      "raw_verbatim": "LA-ICP-MS"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "TIMS"
+     },
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "MC-ICP-MS (isotope dilution for Re)"
+     }
+    ],
+    "classification_confidence": 0.97
+   }
+  },
+  {
+   "paper_id": "Kim_D._et_al._(2024)_Upper_mantle_scale_enrichment_of_Cenozoic_intraplate_magmat",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "both",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "3He/4He (R/Ra)",
+      "provenance": "measured",
+      "evidence": "Section 3: 'About 1 g of olivine or clinopyroxene phenocrysts from HT, JPH, BD areas were collected... measured using two different split-flight-tube mass spectrometers (Helix SFT) at INGV'; new values for HT, JPH, BD reported in Table S2"
+     },
+     {
+      "raw_label": "3He/4He (R/Ra) for JJ, UL, DD",
+      "provenance": "cited",
+      "evidence": "Section 3: 'Helium isotope ratios of the JJ, UL, and DD basalts were previously reported by Kim et al. (2021) and Lee et al. (2021)'"
+     },
+     {
+      "raw_label": "4He concentration (ccSTP/g)",
+      "provenance": "measured",
+      "evidence": "Section 4 Results: '4He and 20Ne of the HT basalts vary in a narrow range of concentration, 2×10−8 to 9×10−8 ccSTP/g'; new analysis from Helix SFT at INGV"
+     },
+     {
+      "raw_label": "20Ne concentration (ccSTP/g)",
+      "provenance": "measured",
+      "evidence": "Section 4 Results: '20Ne... 2.6×10−11 to 7.1×10−11 ccSTP/g' for HT basalts; new analysis from Helix SFT at INGV"
+     },
+     {
+      "raw_label": "4He/20Ne ratio",
+      "provenance": "measured",
+      "evidence": "Section 4: 'measured 4He/20Ne ratios ranging between 343 and 1,565'; new analysis from Helix SFT at INGV"
+     },
+     {
+      "raw_label": "87Sr/86Sr",
+      "provenance": "measured",
+      "evidence": "Section 3: 'Sr, Nd, Pb, and O isotope ratios of the JJ, UL, and DD samples... were obtained in this study... analyzed by TIMS (Thermo Finnigan, TRITON) at KOPRI'"
+     },
+     {
+      "raw_label": "143Nd/144Nd",
+      "provenance": "measured",
+      "evidence": "Section 3: 'chemical separation and mass spectrometer analysis for Sr, Nd, and Pb isotopes were performed at KOPRI'; new data for JJ/UL/DD/HT/BD/JPH"
+     },
+     {
+      "raw_label": "206Pb/204Pb",
+      "provenance": "measured",
+      "evidence": "Section 3: Pb double-spike technique analyzed by TIMS at KOPRI; new data for JJ/UL/DD/HT/BD/JPH"
+     },
+     {
+      "raw_label": "207Pb/204Pb",
+      "provenance": "measured",
+      "evidence": "Section 3: Pb double-spike technique analyzed by TIMS at KOPRI; new data for JJ/UL/DD/HT/BD/JPH"
+     },
+     {
+      "raw_label": "208Pb/204Pb",
+      "provenance": "measured",
+      "evidence": "Section 3: Pb double-spike technique analyzed by TIMS at KOPRI; new data for JJ/UL/DD/HT/BD/JPH"
+     },
+     {
+      "raw_label": "delta18O olivine (vs V-SMOW)",
+      "provenance": "measured",
+      "evidence": "Section 3: 'Oxygen isotope analysis of olivine phenocrysts... conducted at KOPRI using a CO2 laser fluorination system... determined using a dual-inlet mass spectrometer (MAT 253 plus)'"
+     },
+     {
+      "raw_label": "delta18O whole rock (vs V-SMOW)",
+      "provenance": "measured",
+      "evidence": "Section 3: 'olivine and whole-rock samples of approximately 2 mg were vaporized using a 25 W CO2 laser with 110 mbar of BrF5 gas... MAT 253 plus'"
+     },
+     {
+      "raw_label": "Major element oxides (SiO2, MgO, Na2O+K2O, etc.)",
+      "provenance": "measured",
+      "evidence": "Section 3: 'Major element compositions of all whole-rock samples were measured by X-ray fluorescence spectrometry (Shimadzu XRF-1800) at Pukyong National University'"
+     },
+     {
+      "raw_label": "Trace elements (REE, LILE, HFSE) for HT basalts",
+      "provenance": "measured",
+      "evidence": "Section 3: 'solutions were analyzed by ICP-MS (Thermo, iCAP Q) at KOPRI'; new HT trace element data in Table S1"
+     },
+     {
+      "raw_label": "Trace elements for JJ, UL, DD, BD, JPH (LA-ICP-MS)",
+      "provenance": "cited",
+      "evidence": "Section 3: 'The trace elements of the other samples were analyzed by LA-ICP-MS... detailed analytical information is described in Kim et al. (2021) and Lee et al. (2021)'"
+     },
+     {
+      "raw_label": "Major/trace elements for JJ, UL, DD",
+      "provenance": "cited",
+      "evidence": "Section 4: 'The major and trace element contents of the DD, UL, and JJ samples were taken from Kim et al. (2021) and Lee et al. (2021)'"
+     },
+     {
+      "raw_label": "La/Yb ratio",
+      "provenance": "measured",
+      "evidence": "Section 4: 'CI chondrite-normalized REE patterns display LREE enriched trends with various (La/Yb)N ratios (6.0 to 29.0)'; derived from measured trace elements"
+     },
+     {
+      "raw_label": "La/Nb ratio",
+      "provenance": "measured",
+      "evidence": "Section 5.3.4: 'All samples have low La/Nb ratios'; derived from measured trace elements in this study"
+     },
+     {
+      "raw_label": "FC3MS (FeO*/CaO-3*MgO/SiO2)",
+      "provenance": "modeled",
+      "evidence": "Section 5.3.1: 'we defined the source properties and melting regime using the melting model of peridotite and pyroxenite in the La/Yb versus FC3MS diagram'"
+     },
+     {
+      "raw_label": "Mg# [100*Mg/(Mg+Fe2+)]",
+      "provenance": "modeled",
+      "evidence": "Section 4: 'Mg# [100*Mg/(Mg+Fe2+) assuming Fe2+/Fetot=0.9] ranges from 29.2 to 62.9'; computed from measured major elements"
+     },
+     {
+      "raw_label": "Partial melting models (garnet pyroxenite, spinel peridotite)",
+      "provenance": "modeled",
+      "evidence": "Section 5.3.1: 'we used the trace element fractionation equations from Shaw (1970) to calculate partial melting values of garnet pyroxenite... and spinel peridotite'"
+     },
+     {
+      "raw_label": "Fractional crystallization model (Petrolog v3)",
+      "provenance": "modeled",
+      "evidence": "Section 5.1: 'Compositional changes in the melt by fractional crystallization were investigated using Petrolog v3 software (Danyushevsky and Plechov, 2011)'"
+     },
+     {
+      "raw_label": "Mixing proportions of DMM, EM1, EM2 end-members",
+      "provenance": "modeled",
+      "evidence": "Section 5.4: 'we derived a mixing model... about 5 to 30% of the EM1 and EM2 with the SCLM-like 3He/4He signature was involved in magma formation'"
+     },
+     {
+      "raw_label": "Rc/Ra (atmospheric-corrected 3He/4He)",
+      "provenance": "modeled",
+      "evidence": "Section 3: 'The 3He/4He values of HT samples are corrected for the atmospheric contamination based on the 4He/20Ne measured'; equation (1) applied to correct measured ratio"
+     },
+     {
+      "raw_label": "SCLM 3He/4He range (6.1 ± 0.9 Ra)",
+      "provenance": "cited",
+      "evidence": "Introduction: 'SCLM (6.1 ± 0.9 Ra; Gautheron and Moreira, 2002)'"
+     },
+     {
+      "raw_label": "DMM 3He/4He range (8 ± 1 Ra)",
+      "provenance": "cited",
+      "evidence": "Introduction: 'DMM (8 ± 1 Ra; Graham, 2002)'"
+     },
+     {
+      "raw_label": "delta18O of MORB, EM1, EM2, HIMU end-members",
+      "provenance": "cited",
+      "evidence": "Fig. 4 caption: 'delta18O values of EM1, EM2, and HIMU are 5.1 to 5.3‰, 5.4 to 6.1‰, and 4.7 to 5.2‰, respectively (Eiler et al., 1997)'"
+     },
+     {
+      "raw_label": "Korean Peninsula SCLM delta18O range",
+      "provenance": "cited",
+      "evidence": "Fig. 4 caption: 'delta18O range of the Korean Peninsula SCLM is from 5.1 to 5.5‰ (ultramafic xenoliths... Lee et al., 2013)'"
+     },
+     {
+      "raw_label": "Nb/U ratio",
+      "provenance": "measured",
+      "evidence": "Section 5.1, Fig. 6a: 'Nb/U vs. Nb' plot for basalt samples; derived from measured trace elements"
+     },
+     {
+      "raw_label": "Ce/Pb ratio",
+      "provenance": "measured",
+      "evidence": "Section 5.1, Fig. 6b: 'Ce/Pb vs. Ce' plot for basalt samples; derived from measured trace elements"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "xrf",
+      "raw_verbatim": "Shimadzu XRF-1800"
+     },
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "Thermo, iCAP Q"
+     },
+     {
+      "category": "laser_ablation",
+      "raw_verbatim": "NWR 193 laser ablation system coupled to Agilent 7000X Inductively Coupled Plasma Mass Spectrometer"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "TIMS, Thermo Finnigan, TRITON"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "dual-inlet mass spectrometer (MAT 253 plus, Thermo Fisher Scientific)"
+     },
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "split-flight-tube mass spectrometers (Helix SFT, Thermo Scientific)"
+     }
+    ],
+    "classification_confidence": 0.95
+   }
+  },
+  {
+   "paper_id": "Shejwalkar_et_al._(2013)_Experimental_calibration_of_the_roles_of_temperature_and_composition_in_the_Ca-in-olivine_geothermometer_at_0.1_MPa",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "CaO content of olivine (wt%)",
+      "provenance": "measured",
+      "evidence": "Section 3 / Supplementary Table 2: olivine crystals analysed by Cameca SX-50 EPMA with 60 s peak counting time for Ca"
+     },
+     {
+      "raw_label": "Olivine forsterite (Fo) content",
+      "provenance": "measured",
+      "evidence": "Section 3: olivine crystals analysed using EPMA; Fo content reported from microprobe analyses throughout Results"
+     },
+     {
+      "raw_label": "Low-Ca pyroxene CaO content (wt%)",
+      "provenance": "measured",
+      "evidence": "Section 3 / Section 4: low-Ca pyroxene analysed by Cameca SX-50 EPMA; CaO used to distinguish pigeonite vs orthopyroxene"
+     },
+     {
+      "raw_label": "Clinopyroxene composition",
+      "provenance": "measured",
+      "evidence": "Section 3: clinopyroxene crystals analysed by EPMA at 15 kV, 40 nA; clinopyroxene standard run every analytical session"
+     },
+     {
+      "raw_label": "Glass (melt) composition",
+      "provenance": "measured",
+      "evidence": "Section 3: glass analysed using 15 kV, 20 nA, 5 µm beam diameter by EPMA"
+     },
+     {
+      "raw_label": "Experimental temperature (°C)",
+      "provenance": "measured",
+      "evidence": "Section 2: temperature monitored by type B thermocouple in vertical tube gas-mixing furnace; checked against Au melting point (1064 °C)"
+     },
+     {
+      "raw_label": "Oxygen fugacity (fO2, log units relative to QFM)",
+      "provenance": "measured",
+      "evidence": "Section 2: fO2 monitored using an EMF cell; checked against Ni-NiO and Co-CoO buffers, within ±0.5 log units"
+     },
+     {
+      "raw_label": "X_Mo (mole fraction monticellite in olivine)",
+      "provenance": "modeled",
+      "evidence": "Section 4.1: X_Mo derived from measured CaO/EPMA data, then ln(X_Mo) regressed vs reciprocal T to derive Eq. (8)"
+     },
+     {
+      "raw_label": "Geothermometer T(°C) = -12368/[ln(X_Mg) - 6.395 + 3.235·Fo] - 273 (Eq. 11)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2 / Abstract: empirical fit of experimental data; reproduces experimental temperatures within 20 °C"
+     },
+     {
+      "raw_label": "Activity of monticellite (a_Mo) in pigeonite vs orthopyroxene bearing systems",
+      "provenance": "modeled",
+      "evidence": "Section 4.1: calculated using thermodynamic model of Carlson and Lindsley (1988)"
+     },
+     {
+      "raw_label": "Geothermobarometer ln(X_MgO) = f(Fo, T, P) (Eq. 13)",
+      "provenance": "modeled",
+      "evidence": "Section 5: empirical fit combining this study's 0.1 MPa data with high-pressure data from Adams and Bishop (1986) and Kohler and Brey (1990)"
+     },
+     {
+      "raw_label": "High-pressure experimental olivine Ca contents (Adams and Bishop 1982, 1986; Finnerty and Boyd 1978; Kohler and Brey 1990)",
+      "provenance": "cited",
+      "evidence": "Section 5 / Fig. 5: 'previous experimental data for this system as a function of pressure (Adams and Bishop, 1982, 1986; Finnerty and Boyd, 1978; Kohler and Brey, 1990)'"
+     },
+     {
+      "raw_label": "Olivine-melt Ca partition coefficient vs Fo (Libourel 1999)",
+      "provenance": "cited",
+      "evidence": "Section 4.2: 'very similar to the change in olivine-melt Ca partition coefficient ... with Fo observed by Libourel (1999; his Eq. (14))'"
+     },
+     {
+      "raw_label": "Starting composition bulk chemistry (Supplementary Table 1)",
+      "provenance": "measured",
+      "evidence": "Section 2: starting mixtures prepared from reagent grade chemicals; compositions listed in Supplementary Table 1"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "epma",
+      "raw_verbatim": "Cameca SX-50 electron microprobe"
+     }
+    ],
+    "classification_confidence": 0.98
+   }
+  },
+  {
+   "paper_id": "006f3a79-6623-ab35-34a2-35fb003aeb4f",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "gas",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "He concentration (cc/cc total gas)",
+      "provenance": "measured",
+      "evidence": "Table 1: noble gas concentrations measured at the noble gas laboratory at ETH Zürich for samples GH2–GH6 from Hydrate Ridge"
+     },
+     {
+      "raw_label": "Ne concentration (cc/cc total gas)",
+      "provenance": "measured",
+      "evidence": "Table 1: noble gas concentrations measured at the noble gas laboratory at ETH Zürich for samples GH2–GH6"
+     },
+     {
+      "raw_label": "Ar concentration (cc/cc total gas)",
+      "provenance": "measured",
+      "evidence": "Table 1: noble gas concentrations measured at the noble gas laboratory at ETH Zürich for samples GH2–GH6"
+     },
+     {
+      "raw_label": "Kr concentration (cc/cc total gas)",
+      "provenance": "measured",
+      "evidence": "Table 1: noble gas concentrations measured at the noble gas laboratory at ETH Zürich for samples GH2–GH6"
+     },
+     {
+      "raw_label": "Xe concentration (cc/cc total gas)",
+      "provenance": "measured",
+      "evidence": "Table 1: noble gas concentrations measured at the noble gas laboratory at ETH Zürich for samples GH2–GH6"
+     },
+     {
+      "raw_label": "Total pressure in container [bar]",
+      "provenance": "measured",
+      "evidence": "Table 1: pressure inside stainless steel sampling containers after hydrate decomposition, measured for each sample"
+     },
+     {
+      "raw_label": "δ13C of CH4 [‰ vs PDB]",
+      "provenance": "measured",
+      "evidence": "Table 2: carbon isotope ratios measured on four samples at Institut für Umweltphysik, Heidelberg; values -66.7 to -69.7‰"
+     },
+     {
+      "raw_label": "δ2H of CH4 [‰ vs SMOW]",
+      "provenance": "measured",
+      "evidence": "Table 2: hydrogen isotope ratios measured at Institut für Umweltphysik, Heidelberg; values -180 to -193‰"
+     },
+     {
+      "raw_label": "14C activity [pmc]",
+      "provenance": "measured",
+      "evidence": "Table 2: radiocarbon measured at AMS facility at Groningen; values ~0.22–0.29 pmc, indicating 14C-dead methane"
+     },
+     {
+      "raw_label": "Noble gas fractionation factor F^x (sample vs atmospheric ratios)",
+      "provenance": "modeled",
+      "evidence": "Section 3, Figure 3: F^x defined and computed by normalizing measured (Cx/CAr)_sample to (Cx/CAr)_air using the equation shown in the text"
+     },
+     {
+      "raw_label": "He fractionation factors, Blake Ridge",
+      "provenance": "cited",
+      "evidence": "Section 3.1: 'high He fractionation factors of up to 350' reported from Blake Ridge [Dickens and Kennedy, 2000]"
+     },
+     {
+      "raw_label": "3He/4He ratio, Blake Ridge gas hydrates",
+      "provenance": "cited",
+      "evidence": "Section 3.1: 'low radiogenic 3He/4He ratios' from Blake Ridge [Dickens and Kennedy, 2000]"
+     },
+     {
+      "raw_label": "ASW (ambient seawater) noble gas ratios",
+      "provenance": "cited",
+      "evidence": "Figure 3 caption: ASW reference at T=4.7°C, S=34.2 included for comparison from literature; used as baseline for enrichment discussion in Section 3"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "mass spectrometric system for the analysis of noble gases (noble gas laboratory at ETH Zürich, procedures described by Beyerle et al., 2000)"
+     },
+     {
+      "category": "ams",
+      "raw_verbatim": "AMS facility at Groningen (radiocarbon, 14C)"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "stable isotope analysis of δ13C and δ2H of CH4 at Institut für Umweltphysik, Heidelberg"
+     }
+    ]
+   }
+  },
+  {
+   "paper_id": "Seyfried_et_al._(2007)_Redox_evolution_and_mass_transfer_during_serpentinization",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "petrology",
+    "classification_confidence": 0.9,
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "dissolved Cl",
+      "provenance": "measured",
+      "evidence": "Table 4: time series fluid concentrations measured at 200°C, 500 bar; Table 2 lists IC with 2% precision"
+     },
+     {
+      "raw_label": "dissolved Na",
+      "provenance": "measured",
+      "evidence": "Table 4: ICP-MS analyses of fluid samples (Table 2)"
+     },
+     {
+      "raw_label": "dissolved K",
+      "provenance": "measured",
+      "evidence": "Table 4: ICP-MS analyses of fluid samples"
+     },
+     {
+      "raw_label": "dissolved Mg",
+      "provenance": "measured",
+      "evidence": "Table 4: ICP-MS analyses of fluid samples"
+     },
+     {
+      "raw_label": "dissolved Ca",
+      "provenance": "measured",
+      "evidence": "Table 4: ICP-MS analyses of fluid samples; Fig. 1"
+     },
+     {
+      "raw_label": "dissolved Si (SiO2(aq))",
+      "provenance": "measured",
+      "evidence": "Table 4 and Table 2: ICP-MS, 5% precision for dissolved silica"
+     },
+     {
+      "raw_label": "dissolved Fe",
+      "provenance": "measured",
+      "evidence": "Table 4: ICP-MS analyses of fluid samples"
+     },
+     {
+      "raw_label": "dissolved H2",
+      "provenance": "measured",
+      "evidence": "Table 4: gas chromatograph with TCD (Table 2); Section 3.1 'dissolved hydrogen increased throughout the experiment'"
+     },
+     {
+      "raw_label": "dissolved H2S",
+      "provenance": "measured",
+      "evidence": "Table 4: CuCl2-precipitation/H2O2 reduction method (Table 2); Section 3.1 'only a trace level of dissolved H2S was observed'"
+     },
+     {
+      "raw_label": "dissolved SO4",
+      "provenance": "measured",
+      "evidence": "Table 4: ion chromatography (Table 2); Fig. 1"
+     },
+     {
+      "raw_label": "pH (25°C)",
+      "provenance": "measured",
+      "evidence": "Table 4: 'Ross micro combination electrode at 25°C with uncertainty ±0.1 units' (Table 2)"
+     },
+     {
+      "raw_label": "Na/Cl molar ratio",
+      "provenance": "measured",
+      "evidence": "Fig. 6a: 'Experimentally observed correspondence between measured pH (25°C) and Na/Cl molar ratio' — derived from measured Na and Cl"
+     },
+     {
+      "raw_label": "mineral major element composition of primary minerals (SiO2, FeO, MgO, CaO, etc.) in orthopyroxene, olivine, clinopyroxene",
+      "provenance": "measured",
+      "evidence": "Table 1: 'determined by electron microprobe (individual minerals) and ICP-MS (bulk rock)'"
+     },
+     {
+      "raw_label": "bulk rock major element composition",
+      "provenance": "measured",
+      "evidence": "Table 1: ICP-MS following acid digestion (Table 2); 'bulk rock' column"
+     },
+     {
+      "raw_label": "mineral composition of secondary serpentine",
+      "provenance": "measured",
+      "evidence": "Table 5: 'Electron microprobe analysis of serpentine ... average of 100 individual measurements'"
+     },
+     {
+      "raw_label": "mineral composition of secondary brucite",
+      "provenance": "measured",
+      "evidence": "Table 5: 'brucite represents the average of four separate determinations'; EMPA"
+     },
+     {
+      "raw_label": "XFe in brucite (0.3)",
+      "provenance": "measured",
+      "evidence": "Section 4.3: 'approximately 30% of the cation occupancy of the octahedral layer is Fe' from EMPA Table 5"
+     },
+     {
+      "raw_label": "Fe3+/Fetotal ratio in serpentine (42% ferric)",
+      "provenance": "measured",
+      "evidence": "Section 4.3 and Fig. 8: 'Mössbauer data indicate that 58% of the total Fe is ferrous, while the remaining 42% is ferric'"
+     },
+     {
+      "raw_label": "magnetite abundance (~0.014%)",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'vibrating sample magnetometer measurements ... indicate an amount of magnetite no greater than 0.014%'"
+     },
+     {
+      "raw_label": "mineral phases identified (XRD): serpentine chrysotile, anhydrite, olivine, orthopyroxene, clinopyroxene",
+      "provenance": "measured",
+      "evidence": "Section 3.2: 'X-ray diffraction analysis ... reveals the abundant presence of serpentine (chrysotile)' using Rigaku Multi-flex"
+     },
+     {
+      "raw_label": "mineral dissolution rate constants (activation energy, log rate) for forsterite, diopside, enstatite",
+      "provenance": "cited",
+      "evidence": "Table 3: 'Sources' column cites Murphy & Helgeson (1987), Pokrovsky & Schott (2000), Knauss et al. (1993), Schott et al. (1981)"
+     },
+     {
+      "raw_label": "predicted time series changes in dissolved Cl (reaction path model)",
+      "provenance": "modeled",
+      "evidence": "Fig. 4: 'Predicted (solid line) ... time series changes in dissolved chloride' using GWB/EQ3/6 with mineral kinetics"
+     },
+     {
+      "raw_label": "predicted time series changes in pH at experimental conditions (reaction path model)",
+      "provenance": "modeled",
+      "evidence": "Fig. 5a: 'Calculated time series change in pH ... reaction pathway model'"
+     },
+     {
+      "raw_label": "predicted dissolved Ca, Mg, Si (reaction path model)",
+      "provenance": "modeled",
+      "evidence": "Fig. 5b: 'Calculated time series change in ... dissolved Ca, Mg and Si during reaction pathway model'"
+     },
+     {
+      "raw_label": "predicted dissolved H2 (reaction path model)",
+      "provenance": "modeled",
+      "evidence": "Fig. 7: 'Calculated (solid line) ... time series changes in dissolved hydrogen'"
+     },
+     {
+      "raw_label": "predicted mineral abundances (chrysotile, brucite, magnetite, anhydrite, tremolite) vs. time",
+      "provenance": "modeled",
+      "evidence": "Fig. 3b: 'Calculated lherzolite reaction pathway with seawater ... secondary minerals vs. time'"
+     },
+     {
+      "raw_label": "log K (hydrolysis constant) for Fe2+,3+-bearing serpentine at 200°C, 500 bar",
+      "provenance": "modeled",
+      "evidence": "Table 6: value of -0.0270 'determined for the equilibrium constant (log K) for reaction (5)' from measured H2 and thermodynamic database"
+     },
+     {
+      "raw_label": "dissolved CH4 (~2 mm/kg) and H2 (~15 mm/kg) at Lost City",
+      "provenance": "cited",
+      "evidence": "Section 4.3: 'vent fluids issuing from ... Lost City hydrothermal field ... dissolved H2 (~15 mm/kg) ... dissolved CH4 (~2 mm/kg) (Kelley et al., 2005)'"
+     },
+     {
+      "raw_label": "pH at experimental conditions (T, P) calculated from pH(25°C)",
+      "provenance": "modeled",
+      "evidence": "Section 4.2: 'Taking account of the effect of temperature on the distribution of aqueous species, the measured pH (25°C) indicates pH at experimental conditions of 8.7' via HKF/GWB calculations"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "inductively-coupled plasma mass spectrometry (ICP-MS)"
+     },
+     {
+      "category": "ic",
+      "raw_verbatim": "ion chromatography (IC)"
+     },
+     {
+      "category": "gc",
+      "raw_verbatim": "Perkin-Elmer Auto-system gas chromatograph (GC), 30-m, 0.53-mm (ID) fused silica capillary column (Carboxen 1010 PLOT), thermal conductivity detector (TCD)"
+     },
+     {
+      "category": "xrd",
+      "raw_verbatim": "Rigaku Multi-flex system equipped with a Cu anode operated at 45 kV and 40 mA"
+     },
+     {
+      "category": "epma",
+      "raw_verbatim": "JEOL JXA-8900 microprobe"
+     },
+     {
+      "category": "sem",
+      "raw_verbatim": "JXA-8900 ... integrated high-resolution SEM and WD/ED capabilities"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Ranger Mössbauer spectrometer, conventional constant-acceleration spectrometer with 57Co/Rh source"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Princeton Measurements Corporation vibrating sample magnetometer (VSM)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Ross micro combination electrode (pH measurement at 25°C)"
+     }
+    ]
+   }
+  },
+  {
+   "paper_id": "Arai_et_al._(2018)_Abyssal_Peridotite_as_a_Component_of_Forearc_Mantle;_New_Mant",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "petrology",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "Whole-rock major-element compositions (SiO2, TiO2, Al2O3, Fe2O3, MnO, MgO, CaO, Na2O, K2O, P2O5)",
+      "provenance": "measured",
+      "evidence": "Section 4.1 and Table 1: 'Whole rock major- and trace-element compositions were determined for three host basalt samples (B1, B2 and B3) with X-ray fluorescence spectrometry (XRF, Rigaku ZSX primus II)'"
+     },
+     {
+      "raw_label": "Whole-rock trace-element compositions (Li, Sc, Ti, V, Cr, Co, Ni, Rb, Sr, Y, Zr, Nb, Cs, Ba, REE, Hf, Ta, Th)",
+      "provenance": "measured",
+      "evidence": "Section 4.1 and Table 1: 'trace-element compositions were determined... with... laser ablation... LA-ICP-MS' at Kanazawa University"
+     },
+     {
+      "raw_label": "CIPW normative mineralogy (Or, Ab, An, Di, Hy, Ol, Mt, Il, Ap)",
+      "provenance": "modeled",
+      "evidence": "Table 1 footnote: 'CIPW Norm calculated based on Fe3+/Fe2+ = 0.15' — derived from XRF major-element data"
+     },
+     {
+      "raw_label": "Mineral major-element compositions of olivine, orthopyroxene, clinopyroxene, chromian spinel, phlogopite (SiO2, TiO2, Al2O3, Cr2O3, FeO, MnO, MgO, CaO, Na2O, K2O, NiO)",
+      "provenance": "measured",
+      "evidence": "Section 4.2 and Table 2: 'Major-element compositions of minerals in peridotite xenoliths were determined with an electron probe micro-analyzer (EPMA, JEOL JXA-8800R Superprobe) at Kanazawa University'"
+     },
+     {
+      "raw_label": "Fo content of olivine (forsterite mol%)",
+      "provenance": "measured",
+      "evidence": "Table 2 and Section 6.1.1: Fo values calculated from EPMA-measured FeO and MgO in olivine; e.g., 'olivines show the Fo content slightly lower than 91'"
+     },
+     {
+      "raw_label": "Mg# of pyroxenes and phlogopite",
+      "provenance": "measured",
+      "evidence": "Table 2: Mg# listed for all minerals, derived from EPMA-measured FeO and MgO"
+     },
+     {
+      "raw_label": "Cr# (chromian spinel)",
+      "provenance": "measured",
+      "evidence": "Table 2: Cr# = Cr/(Cr+Al) listed for chromian spinel in all samples, from EPMA analyses"
+     },
+     {
+      "raw_label": "Y_Fe (Fe3+/(Cr+Al+Fe3+)) of chromian spinel",
+      "provenance": "measured",
+      "evidence": "Table 2: Y_Fe listed for spinels; Fe2+ and Fe3+ calculated based on stoichiometry from EPMA data"
+     },
+     {
+      "raw_label": "Trace-element compositions of clinopyroxene (Sc, Ti, V, Cr, Co, Ni, Sr, Y, Zr, Nb, REE, Hf, Ta, Th, U)",
+      "provenance": "measured",
+      "evidence": "Section 4.2 and Table 3: 'Trace-element compositions of clinopyroxene and orthopyroxene were determined by LA-ICP-MS at Kanazawa University'"
+     },
+     {
+      "raw_label": "Trace-element compositions of orthopyroxene (Sc, Ti, V, Cr, Co, Ni, Sr, Y, Zr, Nb, REE, Hf, Ta, Th)",
+      "provenance": "measured",
+      "evidence": "Section 4.2 and Table 4: orthopyroxene trace elements measured by LA-ICP-MS; detection limits listed for 100 µm spot"
+     },
+     {
+      "raw_label": "Modal mineral compositions (olivine, orthopyroxene, clinopyroxene, chromian spinel proportions)",
+      "provenance": "measured",
+      "evidence": "Section 3: 'Modal compositions were determined by chemical mapping with EPMA (see Section 4.2 below) on the thin section. A typical modal composition is 71.5% olivine...'"
+     },
+     {
+      "raw_label": "Two-pyroxene equilibrium temperature (T1 Wells 1977; T2 Wood & Banno 1973)",
+      "provenance": "modeled",
+      "evidence": "Table 2 footnote: 'T1 and T2 are calculated temperatures from the geothermometry by Wells [48] and Wood and Banno [49], respectively'; Section 7: 'The two-pyroxene thermometer gave a very limited range of equilibrium temperature (993 to 1053 °C)'"
+     },
+     {
+      "raw_label": "Oxygen fugacity relative to FMQ buffer (Δlog fO2 FMQ)",
+      "provenance": "modeled",
+      "evidence": "Section 7: 'The olivine-orthopyroxene-spinel oxygen barometer of Ballhaus et al. [90] yields a very limited range, -0.08 to 0.32, of Δlog(fO2)FMQ... assuming a pressure of 1.5 GPa'"
+     },
+     {
+      "raw_label": "Equilibrium melt REE pattern (melt in equilibrium with IZS-13 clinopyroxene)",
+      "provenance": "modeled",
+      "evidence": "Section 8.2 and Figure 13: 'The calculated melt in equilibrium with the most metasomatized clinopyroxene (IZS-13) is similar in REE pattern to... the host alkali basalt... based on partition coefficients of Brunelli et al. [97]'"
+     },
+     {
+      "raw_label": "Abyssal peridotite clinopyroxene REE field (comparison data)",
+      "provenance": "cited",
+      "evidence": "Figure 11 caption: 'Abyssal peridotite field (grey in (a)) is compiled from Johnson et al. [86], Johnson and Dick [87] and Hellebrand et al. [88]'"
+     },
+     {
+      "raw_label": "Equilibrium temperature histograms of SW Japan arc xenolith suites (Oki-Dogo, Noyamadake, Shingu, Seifu)",
+      "provenance": "cited",
+      "evidence": "Figure 12 caption: 'Histograms are from Arai and Ishimaru [4,6]'"
+     },
+     {
+      "raw_label": "Oxygen fugacity histograms of SW Japan arc xenolith suites (Oki-Dogo, Noyamadake, Shingu, Seifu)",
+      "provenance": "cited",
+      "evidence": "Figure 12 caption: 'Histograms are from Arai and Ishimaru [4,6]'"
+     },
+     {
+      "raw_label": "Cenozoic alkali basalt trace-element and REE range from SW Japan arc",
+      "provenance": "cited",
+      "evidence": "Figure 5 caption: 'Range of Cenozoic alkali basalts from the SW Japan arc [54] are shown for comparison'"
+     },
+     {
+      "raw_label": "Olivine-spinel mantle array (OSMA) compositional field",
+      "provenance": "cited",
+      "evidence": "Figure 8 caption: 'The field between the broken lines is the olivine-spinel mantle array (OSMA) [41]. The field of abyssal peridotites is after Arai [41]'"
+     },
+     {
+      "raw_label": "Abyssal peridotite Na2O (clinopyroxene) vs Cr# (spinel) field",
+      "provenance": "cited",
+      "evidence": "Figure 9 caption: 'The discrimination fields are after Arai [41,70]'; Section 6.1.2: 'The Bankawa phlogopite-free lherzolite is similar to abyssal peridotite in terms of Na2O content of clinopyroxene and Cr# of associated chromian spinel [4,70]'"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "xrf",
+      "raw_verbatim": "X-ray fluorescence spectrometry (XRF, Rigaku ZSX primus II)"
+     },
+     {
+      "category": "laser_ablation",
+      "raw_verbatim": "laser ablation (193 nm ArF excimer: MicroLas GeoLas Q-plus)-inductively coupled plasma mass spectrometry (Agilent 7500 s) (LA-ICP-MS)"
+     },
+     {
+      "category": "epma",
+      "raw_verbatim": "electron probe micro-analyzer (EPMA, JEOL JXA-8800R Superprobe)"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "JEOL software (Tokyo, Japan) using ZAF corrections"
+     }
+    ],
+    "classification_confidence": 0.98
+   }
+  },
+  {
+   "paper_id": "Benko_et_al._(2021)_Combined_petrography,_noble_gas,_stable_isotope_and_fluid_in",
+   "kind": "clean",
+   "extraction": {
+    "classification_type": "both",
+    "made_new_measurements": true,
+    "variables": [
+     {
+      "raw_label": "major element concentrations (SiO2, TiO2, Al2O3, Fe2O3, FeO, MgO, MnO, CaO, Na2O, K2O, P2O5, F, CO2, S, H2O)",
+      "provenance": "measured",
+      "evidence": "Table 1; Section 3.1: 'major element concentrations were determined at the Czech Geological Survey using conventional wet chemistry procedures'"
+     },
+     {
+      "raw_label": "whole-rock trace element contents (Li, Sc, V, Cr, Co, Ni, Cu, Zn, Ga, Rb, Sr, Y, Nb, Zr, Cd, Cs, Ba, REE, Hf, Ta, Tl, Pb, Th, U)",
+      "provenance": "measured",
+      "evidence": "Table 1; Section 3.1: 'Whole-rock trace element contents were acquired by employing an Agilent 7900× ICPMS'"
+     },
+     {
+      "raw_label": "mineral chemistry (major elements in calcite, dolomite, olivine, phlogopite, apatite, aegirine, pyrochlore by EDX)",
+      "provenance": "measured",
+      "evidence": "Section 3.1: 'In situ mineral chemistry...analyzed using a FEG-SEM Tescan MIRA 3GMU, equipped with EDX microanalysis system Oxford Instruments X-Max 20'"
+     },
+     {
+      "raw_label": "fluid inclusion homogenization temperatures (Th) of Type I and Type II inclusions",
+      "provenance": "measured",
+      "evidence": "Section 4.4 and Fig. 9a: microthermometry with Linkam THMSG600 heating-freezing stage; Th 222–364°C (Sukulu and Tororo)"
+     },
+     {
+      "raw_label": "fluid inclusion ice melting temperatures (Tm ice) and salinities (NaCl equiv. wt%)",
+      "provenance": "measured",
+      "evidence": "Section 4.4 and Fig. 9b: 'Final melting temperatures of the ice are distributed between -9.6 and -13.8°C corresponding to 13.5–17.6 NaCl equiv. wt%'"
+     },
+     {
+      "raw_label": "fluid inclusion eutectic temperatures",
+      "provenance": "measured",
+      "evidence": "Section 4.4: 'Eutectic melting temperatures of ice around -21.2°C' and Tororo -21 to -27°C measured by Linkam stage"
+     },
+     {
+      "raw_label": "Raman spectra / mineral identification in fluid inclusions (nahcolite, calcite, ankerite, rhodochrosite, smithsonite, CO2, CH4)",
+      "provenance": "measured",
+      "evidence": "Section 4.3: 'Raman analysis of the solid phases indicates the presence of nahcolite (NaHCO3), calcite (CaCO3) and ankerite'; Thermo Scientific DXR Raman microscope"
+     },
+     {
+      "raw_label": "4He concentrations in whole-rock, calcite, apatite, pyroxene",
+      "provenance": "measured",
+      "evidence": "Table 3; Section 3.3: 'isotope compositions of each noble gas were measured sequentially...using a HELIX-SFT noble gas mass spectrometer (He)'"
+     },
+     {
+      "raw_label": "3He/4He ratios (R/Ra)",
+      "provenance": "measured",
+      "evidence": "Table 3; Section 4.6.1: 'The R/Ra ratios...show a systematic variation'; measured by HELIX-SFT"
+     },
+     {
+      "raw_label": "22Ne concentrations in whole-rock and mineral separates",
+      "provenance": "measured",
+      "evidence": "Table 3; Section 4.6.2: 'Bulk-rock 22Ne concentrations...vary between (3.89–11.5)×10−11 ccSTP/g'; measured by VG 5400"
+     },
+     {
+      "raw_label": "20Ne/22Ne and 21Ne/22Ne isotope ratios",
+      "provenance": "measured",
+      "evidence": "Table 3; Section 4.6.2: 'The 20Ne/22Ne and 21Ne/22Ne ratios of bulk-rock samples as well as calcite, pyroxene and apatite separates are plotted'; VG 5400"
+     },
+     {
+      "raw_label": "40Ar concentrations and 40Ar/36Ar ratios",
+      "provenance": "measured",
+      "evidence": "Table 3; Section 4.6.3: '40Ar concentrations in the whole-rock samples...range (1.53–12.63)×10−7 ccSTP/g, and the observed 40Ar/36Ar ratios vary from 305 to 906'; VG 5400"
+     },
+     {
+      "raw_label": "delta13C (V-PDB) and delta18O (V-SMOW) of carbonatite calcite",
+      "provenance": "measured",
+      "evidence": "Table 2; Section 4.5: 'The new delta18O and delta13C values obtained in this study are listed in Table 2'; Thermo Finnigan DeltaPLUS XP IRMS and dual inlet Delta V Advantage IRMS"
+     },
+     {
+      "raw_label": "air-corrected 3He/4He (R/Ra) and (21Ne/22Ne)EX ratios (atmospheric correction models)",
+      "provenance": "modeled",
+      "evidence": "Section 3.3: 'The measured He isotope ratios have been corrected for excess air using the atmospheric 3He/4He and 4He/20Ne ratios'; Section 4.6.2: extrapolated to Ne-B composition by Moreira et al. (1995) method"
+     },
+     {
+      "raw_label": "fluid inclusion trapping pressure and temperature (P-T conditions)",
+      "provenance": "modeled",
+      "evidence": "Section 5.2 and Fig. 9c: 'real trapping pressures and temperatures could have been between 330 and 425 °C and 465–1330 bars' calculated from erosional depth barometer + isochore intersections"
+     },
+     {
+      "raw_label": "LREE/HREE ratios (LaN/YbN)",
+      "provenance": "measured",
+      "evidence": "Table 1: 'LaN/YbN = 33–74' calculated from ICP-MS trace element data of this study"
+     },
+     {
+      "raw_label": "ΣREE concentrations",
+      "provenance": "measured",
+      "evidence": "Table 1: 'ΣREE = 547–1208 ppm' summed from ICP-MS measurements in this study"
+     },
+     {
+      "raw_label": "pyrochlore compositional zoning (Nb, Ca, Na, Ti apfu, U, F, Ba)",
+      "provenance": "measured",
+      "evidence": "Figs. 5, 6; Section 4.1: pyrochlore analyzed by FEG-SEM EDX, 'AZtec software (Oxford Instruments)'"
+     },
+     {
+      "raw_label": "A-site vacancy in pyrochlore",
+      "provenance": "measured",
+      "evidence": "Section 4.1 and Fig. 6c: 'Deficiency in Na produces a vacancy on the A-site if calculated according to pyrochlore stoichiometry'; derived from EDX measurements"
+     },
+     {
+      "raw_label": "Sr-Nd radiogenic isotope data of Uganda carbonatites (cited from Ackerman et al., 2021)",
+      "provenance": "cited",
+      "evidence": "Section 4.6.2: 'Such dissimilarity well corresponds to distinct radiogenic Sr–Nd isotopic signature...as observed by Ackerman et al. (2021)'"
+     },
+     {
+      "raw_label": "published delta13C and delta18O values from Deines & Gold (1973) and Dennis & Schrag (2010) for Uganda carbonatites",
+      "provenance": "cited",
+      "evidence": "Section 4.5 and Fig. 11: 'Stable C-O isotope values of published samples from the Tororo, Sukulu, Bukusu and Fort Portal carbonatites (Deines and Gold, 1973; Dennis and Schrag, 2010) have also been plotted'"
+     },
+     {
+      "raw_label": "noble gas isotope data from other EARS magmatic rocks (Halldórsson et al., 2014)",
+      "provenance": "cited",
+      "evidence": "Section 5.4.2 and Fig. 12: 'fields of isotope signals (gray colors) of other magmatic rocks from the EARS are also plotted (Halldórsson et al., 2014)'"
+     },
+     {
+      "raw_label": "3He/4He of Oldoinyo Lengai carbonatite (~6±1 Ra; Mollex et al., 2018)",
+      "provenance": "cited",
+      "evidence": "Section 5.4.3: 'Oldoinyo Lengai...characterized by lower 3He/4He at ~6±1Ra...Mollex et al., 2018'"
+     },
+     {
+      "raw_label": "cosmogenic 3He production rates (Scarsi, 2000)",
+      "provenance": "cited",
+      "evidence": "Section 4.6.1: 'Experimental results of Scarsi (2000) proved that limited crushing...liberated noble gases exclusively from the fluid inclusions'"
+     },
+     {
+      "raw_label": "nucleogenic Ne production rates (Leya and Wieler, 1999)",
+      "provenance": "cited",
+      "evidence": "Section 4.6.2: 'calculating with the present day crustal production rates (Leya and Wieler, 1999), in the past ca. 40 million years several magnitude less Ne has been produced'"
+     },
+     {
+      "raw_label": "average incision rates (AIR) in Kenya Rift and estimated erosional depth (Xue et al., 2019; Roller et al., 2012)",
+      "provenance": "cited",
+      "evidence": "Section 5.2: 'AIR in the Kenya Rift varied between 1 and 275 mm/kyr since the Pliocene (4.5 Ma)...Xue et al. (2019)'; used as independent barometer"
+     }
+    ],
+    "instruments": [
+     {
+      "category": "icp_ms",
+      "raw_verbatim": "Agilent 7900× ICPMS"
+     },
+     {
+      "category": "sem",
+      "raw_verbatim": "FEG-SEM Tescan MIRA 3GMU, equipped with EDX microanalysis system Oxford Instruments X-Max 20"
+     },
+     {
+      "category": "raman",
+      "raw_verbatim": "Thermo Scientific DXR Raman microscope"
+     },
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "HELIX-SFT noble gas mass spectrometer"
+     },
+     {
+      "category": "noble_gas_ms",
+      "raw_verbatim": "VG 5400 noble gas mass spectrometer"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "Thermo Finnigan DeltaPLUS XP IRMS combined with a Thermal Combustion/Elemental Analyzer interface"
+     },
+     {
+      "category": "irms",
+      "raw_verbatim": "dual inlet Delta V Advantage IRMS (Thermo Fisher)"
+     },
+     {
+      "category": "other",
+      "raw_verbatim": "Linkam THMSG600 heating-freezing stage mounted on an Olympus BX41 microscope"
+     },
+     {
+      "category": "software",
+      "raw_verbatim": "AZtec software (Oxford Instruments)"
+     }
+    ],
+    "classification_confidence": 0.92
+   }
+  }
+ ]
+}

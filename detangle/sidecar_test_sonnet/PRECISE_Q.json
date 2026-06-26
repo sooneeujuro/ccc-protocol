@@ -1,0 +1,686 @@
+{
+ "Q_duplicates(20260602)": {
+  "in_corpus": 581,
+  "borderline": 6,
+  "gap": 47,
+  "gap_list": [
+   {
+    "q_title": "9",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "[Manganese, methane and helium anomalies in sea water above ",
+    "corpus_match": "Regional distribution pattern of carbon and helium isotopes ",
+    "ratio": 0.21
+   },
+   {
+    "q_title": "8",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Gas geochemistry of the magmatic-hydrothermal fluid reservoi",
+    "corpus_match": "Agusto_et_al.,_2013,_Gas_geochemistry_of_the_magmatic-hydrot",
+    "ratio": 0.62
+   },
+   {
+    "q_title": "[The heterogeneity of the](https://www.frontiers",
+    "corpus_match": "Oxygen isotope heterogeneity of the mantle beneath the Canar",
+    "ratio": 0.46
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS Scientific Reports logo with two red gear",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "Indian and African plate motions driven by the push force of",
+    "corpus_match": "Large-scale flow of Indian Ocean asthenosphere driven by Réu",
+    "ratio": 0.48
+   },
+   {
+    "q_title": "GEOCHEMISTRY",
+    "corpus_match": "Geochemistry, Geophysics, Geosystems",
+    "ratio": 0.52
+   },
+   {
+    "q_title": "SUBDUCTION ZONE",
+    "corpus_match": "The chemistry of subduction-zone fluids",
+    "ratio": 0.56
+   },
+   {
+    "q_title": "Acknowledgements",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Global Syn",
+    "corpus_match": "Global Carbon Budget 2023",
+    "ratio": 0.46
+   },
+   {
+    "q_title": "**Global Synthesis of Regional Holocene Hydroclimate Variabi",
+    "corpus_match": "Global Synthesis of Regional Holoce",
+    "ratio": 0.56
+   },
+   {
+    "q_title": "Methods and limitations of 'clumped' CO<sub>2</sub> isotope ",
+    "corpus_match": "Huntington(2009)_Methods_and_limitations_of__clumped__CO2_is",
+    "ratio": 0.58
+   },
+   {
+    "q_title": "**Orbital forcing drives both the South American monsoon and",
+    "corpus_match": "Shut down of the South American summer monsoon during the pe",
+    "ratio": 0.51
+   },
+   {
+    "q_title": "백령도에 분포하는 알칼리 현무암과 맨틀 포획암의 Nd-Sr과 영족기체 동위원소 조성",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "백령도에 분포하는 알칼리 현무암과 맨틀 포획암의 Nd-Sr 과 영족기체 동위원소 조성",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Halogen Heterogeneity in the Lithosphere and Evolution of Ma",
+    "corpus_match": "Contrasting Cenozoic Lithospheric Evolution and Architecture",
+    "ratio": 0.51
+   },
+   {
+    "q_title": "Carbon Fluxes and Primary Magma CO<sub>2</sub> Contents Alon",
+    "corpus_match": "Consequences of a crystal mush-dominated magma plumbing syst",
+    "ratio": 0.51
+   },
+   {
+    "q_title": "Renewable and Sustainable Energy Reviews",
+    "corpus_match": "Noble gas diffusivity hindered by low energy sites in amphib",
+    "ratio": 0.43
+   },
+   {
+    "q_title": "Teresa,_2021,_Monitoring_the_magmatic_activity_and_volatile_",
+    "corpus_match": "Monitoring the magmatic activity and volatile fluxes of an a",
+    "ratio": 0.69
+   },
+   {
+    "q_title": "Resolving lithospheric and sub-lithospheric contributions to",
+    "corpus_match": "Reid_et_al._(1996)_Resolving_lithospheric_and_sub-lithospher",
+    "ratio": 0.61
+   },
+   {
+    "q_title": "Article",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "EPSL",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Primordial and recycled helium isotope signatures in the man",
+    "corpus_match": "Decarbonation of Stagnant Slab in the Mantle Transition Zone",
+    "ratio": 0.6
+   },
+   {
+    "q_title": "Deep mantle structure as a reference frame for movements in ",
+    "corpus_match": "Defining an absolute reference frame for ‘clumped’ isotope s",
+    "ratio": 0.5
+   },
+   {
+    "q_title": "Article",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "중력 및 지력자료 분석에 의한 울릉분지 북동부 독도 및 주변 해산들의 형성 연구",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "울릉도 산출 암석의 열물성 자료를 이용한 울릉도 지열 성인에 대한 열전도 수치모델링 연구 이창열\\*, 김기석",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "경북-강원일대 탄산약수의 수질화학과 탄산 및 영족기체 기원",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "이천 및 포천지역 온천수의 수리화학적 특성 및 영족기체 기원",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "CHAPTER 11",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.41
+   },
+   {
+    "q_title": "남한의 온천지역의 열수와 지하수의 지구화학적 연구",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "김규한_(1998)_남한의_온천지역의_열수와_지하수의_지구화학적_연구_6p",
+    "corpus_match": "Anderson,_1998,_The_helium_paradoxes",
+    "ratio": 0.29
+   },
+   {
+    "q_title": "김규한_(1998)_남한의_온천지역의_열수와_지하수의_지구화학적_연구_6p_2",
+    "corpus_match": "Anderson,_1998,_The_helium_paradoxes",
+    "ratio": 0.28
+   },
+   {
+    "q_title": "김규한_(1998)_남한의_온천지역의_열수와_지하수의_지구화학적_연구_6p_3",
+    "corpus_match": "Anderson,_1998,_The_helium_paradoxes",
+    "ratio": 0.28
+   },
+   {
+    "q_title": "남한의 온천지역의 열수와 지하수의 지구화학적 연구",
+    "corpus_match": null,
+    "ratio": 0.0
+   }
+  ],
+  "borderline_list": [
+   {
+    "q_title": "*Annual Review of Earth and Planetary Sciences* Subduction-D",
+    "corpus_match": "Subduction-Driven Volatile Recycling: A Global Mass Balance",
+    "ratio": 0.72
+   },
+   {
+    "q_title": "Stable carbon isotope ratios and the existence of a gas phas",
+    "corpus_match": "Deines,_1974,_Stable_carbon_isotope_ratios_and_the_existence",
+    "ratio": 0.72
+   },
+   {
+    "q_title": "Fischer_et_al._(2002)_SUbduction_and_recycling_of_Nitrogen",
+    "corpus_match": "Fischer,_2002,_Subduction_and_Recycling_of_Nitrogen_Along_th",
+    "ratio": 0.74
+   },
+   {
+    "q_title": "Hanan_and_Graham_(1996)_lead_and_helium_isotope_evidence,_C_",
+    "corpus_match": "Hanan_and_Graham,_1996,_Lead_and_Helium_Isotope_Evidence_fro",
+    "ratio": 0.74
+   },
+   {
+    "q_title": "Surya_Prakash_et_al._(2022)_Volatile‐Rich_Hydrothermal_Plume",
+    "corpus_match": "Prakash,_2022,_Volatile-Rich_Hydrothermal_Plumes_Over_the_So",
+    "ratio": 0.83
+   },
+   {
+    "q_title": "Stuart_et_al._(2003)_High_3He-4He_ratios_in_picritic_basalts",
+    "corpus_match": "Stuart_et_al,_2003,_High_3He4He_ratios_in_picritic_basalts_f",
+    "ratio": 0.74
+   }
+  ]
+ },
+ "Q_newdup(20260609)": {
+  "in_corpus": 92,
+  "borderline": 0,
+  "gap": 6,
+  "gap_list": [
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "VOLCANOLOGY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Halogen Heterogeneity in the Lithosphere and Evolution of Ma",
+    "corpus_match": "Contrasting Cenozoic Lithospheric Evolution and Architecture",
+    "ratio": 0.51
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "UNKNOWN_et_al._(1999)_UNKNOWN",
+    "corpus_match": "Ackert_et_al._(1999)_Measurements_of_Past_Ice_Sheet_Elevatio",
+    "ratio": 0.35
+   }
+  ],
+  "borderline_list": []
+ },
+ "Q_20260612": {
+  "in_corpus": 20,
+  "borderline": 11,
+  "gap": 26,
+  "gap_list": [
+   {
+    "q_title": "CHAPTER 1Produced Water",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.5
+   },
+   {
+    "q_title": "CHAPTER 10",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.41
+   },
+   {
+    "q_title": "CHAPTER 13",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.41
+   },
+   {
+    "q_title": "CHAPTER 14",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.41
+   },
+   {
+    "q_title": "CHAPTER 2Bioaccumulation Mechanisms",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.53
+   },
+   {
+    "q_title": "References and Notes",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Fischer_&_Aiuppa_(2020)_Carbon_monoxide_degassing_from_seism",
+    "corpus_match": "Carbon monoxide degassing from seismic fault zones in the Ba",
+    "ratio": 0.62
+   },
+   {
+    "q_title": "German,_1998,_Hydrothermal_activity_along_the_southwest_Indi",
+    "corpus_match": "First active hydrothermal vents on an ultraslow-spreading ce",
+    "ratio": 0.63
+   },
+   {
+    "q_title": "Index",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "SCIENTIFIC REPORTS",
+    "corpus_match": "TECHNICAL REPORTS: METHODS",
+    "ratio": 0.56
+   },
+   {
+    "q_title": "A review on volcanic gas compositions related to volcanic ac",
+    "corpus_match": "Sano,_1984,_Helium-3_emission_related_to_volcanic_activity",
+    "ratio": 0.48
+   },
+   {
+    "q_title": "EARTH SCIENCES",
+    "corpus_match": "Earth's Nitrogen and Carbon Cycles",
+    "ratio": 0.54
+   },
+   {
+    "q_title": "셰프스키친2 CHEF'S KITCHEN2",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "A red line drawing of a scientific instrument, possibly a ma",
+    "corpus_match": "The evolution of Devonian hydrocarbon gases in shallow aquif",
+    "ratio": 0.41
+   },
+   {
+    "q_title": "포텐셜 자료를 이용한 울릉분지와 독도 주변 지체구조 연구",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Preface",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "Stolper,_2014,_Formation_temperatures_of_thermogenic_and_bio",
+    "corpus_match": "Shallow mantle temperatures under Europe from $P$ and $S$ wa",
+    "ratio": 0.44
+   },
+   {
+    "q_title": "GEOCHEMISTRY",
+    "corpus_match": "Geochemistry, Geophysics, Geosystems",
+    "ratio": 0.52
+   },
+   {
+    "q_title": "ARTICLE",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "CHEMICAL GEODYNAMICS",
+    "corpus_match": "Chemical Composition of Volcanic Gases",
+    "ratio": 0.52
+   },
+   {
+    "q_title": "양산단층 북부 일대의 최후기 지구조환경에 대해",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "단층대 지하수의 수리화학 및 노블가스 동위원소 특성",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "제주도 서귀포지역 천연탄산수의 기원과 수리화학특성",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "제주도 서귀포지역 천연탄산수의 기원과 수리화학특성",
+    "corpus_match": null,
+    "ratio": 0.0
+   }
+  ],
+  "borderline_list": [
+   {
+    "q_title": "--- **Advances in Isotope Geochemistry**",
+    "corpus_match": "Geol. 656 Isotope Geochemistry",
+    "ratio": 0.75
+   },
+   {
+    "q_title": "*Annual Review of Earth and Planetary Sciences* Subduction-D",
+    "corpus_match": "Subduction-Driven Volatile Recycling: A Global Mass Balance",
+    "ratio": 0.72
+   },
+   {
+    "q_title": "CHAPTER 12Phenols in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.75
+   },
+   {
+    "q_title": "CHAPTER 3Arsenic in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.79
+   },
+   {
+    "q_title": "CHAPTER 4Barium in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.81
+   },
+   {
+    "q_title": "CHAPTER 5Cadmium in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.79
+   },
+   {
+    "q_title": "CHAPTER 7Chromium in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.78
+   },
+   {
+    "q_title": "CHAPTER 8Copper in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.81
+   },
+   {
+    "q_title": "CHAPTER 9Lead in the Ocean",
+    "corpus_match": "CHAPTER 6Mercury in the Ocean",
+    "ratio": 0.8
+   },
+   {
+    "q_title": "Lee,_1999,_Strike-slip_fault_tectonics_and_basin_formation_d",
+    "corpus_match": "Strike–slip fault tectonics and basin formation during the C",
+    "ratio": 0.81
+   },
+   {
+    "q_title": "Proskurowski_(2008)_Abiogenic_Hydrocarbon_Production_at_Lost",
+    "corpus_match": "Abiogenic_Hydrocarbon_Production_at_Lost_City_Hydrothermal_F",
+    "ratio": 0.85
+   }
+  ]
+ },
+ "coop_inbox": {
+  "in_corpus": 0,
+  "borderline": 0,
+  "gap": 34,
+  "gap_list": [
+   {
+    "q_title": "001_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "002_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "003_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "004_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "005_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "006_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "007_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "TASK 008 coordination draft",
+    "corpus_match": "What influences conodont provincialism? Insights from the Mi",
+    "ratio": 0.21
+   },
+   {
+    "q_title": "008_API_DRAFT_CODEX_AUDIT",
+    "corpus_match": "Rates and Processes of Potassic Magma Evolution beneath Sang",
+    "ratio": 0.21
+   },
+   {
+    "q_title": "008_COMPILATION_REJUDGE_REPORT",
+    "corpus_match": "A Compilation of New and Published Major and Trace Element D",
+    "ratio": 0.29
+   },
+   {
+    "q_title": "008_COORDINATION_ACK_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "008_GOLD_TRANCHE_001_REPORT",
+    "corpus_match": "Solubility of gold in arsenian pyrite",
+    "ratio": 0.31
+   },
+   {
+    "q_title": "009_CCC_PROTOCOL_ADOPTED_REPLY",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "TASK010 Broad-403 Tranche 001",
+    "corpus_match": "Experimental study of attenuation and dispersion over a broa",
+    "ratio": 0.28
+   },
+   {
+    "q_title": "TASK010 Broad-403 Rejudge Tranche 002",
+    "corpus_match": "Experimental study of attenuation and dispersion over a broa",
+    "ratio": 0.33
+   },
+   {
+    "q_title": "TASK010 Broad-403 Rejudge Tranche 003",
+    "corpus_match": "Experimental study of attenuation and dispersion over a broa",
+    "ratio": 0.33
+   },
+   {
+    "q_title": "TASK010 Broad-403 Rejudge Tranche 004",
+    "corpus_match": "Experimental study of attenuation and dispersion over a broa",
+    "ratio": 0.33
+   },
+   {
+    "q_title": "010_BROAD403_TRANCHE_005_REPORT",
+    "corpus_match": "H<sub>2</sub>O, CO<sub>2</sub>, F, S, Cl, and P<sub>2</sub>O",
+    "ratio": 0.19
+   },
+   {
+    "q_title": "010_BROAD403_TRANCHE_006_REPORT",
+    "corpus_match": "H<sub>2</sub>O, CO<sub>2</sub>, F, S, Cl, and P<sub>2</sub>O",
+    "ratio": 0.19
+   },
+   {
+    "q_title": "010_BROAD403_TRANCHE_007_REPORT",
+    "corpus_match": "H<sub>2</sub>O, CO<sub>2</sub>, F, S, Cl, and P<sub>2</sub>O",
+    "ratio": 0.19
+   },
+   {
+    "q_title": "TASK010 broad-403 rejudge tranche 008",
+    "corpus_match": "Experimental study of attenuation and dispersion over a broa",
+    "ratio": 0.33
+   },
+   {
+    "q_title": "TASK010 final reply: broad-403 variable rejudge complete",
+    "corpus_match": "Sources of CH<sub>4</sub> with variable carbon isotopes from",
+    "ratio": 0.33
+   },
+   {
+    "q_title": "TASK011 package audit final",
+    "corpus_match": "The eruption run-up at Mt. Etna volcano: Constraining magma ",
+    "ratio": 0.23
+   },
+   {
+    "q_title": "TASK011 Packaging Handoff ACK",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "TASK013 package re-audit after fixes",
+    "corpus_match": "Assessment of Helium Isotopes near the Japan Trench 5 Years ",
+    "ratio": 0.29
+   },
+   {
+    "q_title": "TASK014 final package audit",
+    "corpus_match": "Geochemical characteristics of back-arc basin lower crust an",
+    "ratio": 0.22
+   },
+   {
+    "q_title": "AUDIT_FINDINGS",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "CCC_PROTOCOL_REPO",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "CLEANUP_A_CODEX_SPOTCHECK",
+    "corpus_match": null,
+    "ratio": 0.0
+   },
+   {
+    "q_title": "FINAL_SUMMARY",
+    "corpus_match": "1. LEG 191 SYNTHESIS: SUMMARY OF SCIENTIFIC RESULTS<sup>1</s",
+    "ratio": 0.25
+   },
+   {
+    "q_title": "JSON_REPAIR_HEARTBEAT_CHECK",
+    "corpus_match": "Analysis of Debris Flow Reduction Effect of Check Dam Types ",
+    "ratio": 0.12
+   },
+   {
+    "q_title": "LIVE_AUDIT_DELTA_AFTER_MORNING_REPORT",
+    "corpus_match": "Controls and evolution of fan delta systems in the Miocene P",
+    "ratio": 0.39
+   },
+   {
+    "q_title": "SYSTEMIC_PATTERNS_COUNT",
+    "corpus_match": "Mangler_et_al._(2026)_Geology,_Magma_recharge_patterns_contr",
+    "ratio": 0.34
+   },
+   {
+    "q_title": "TASK012 package audit",
+    "corpus_match": null,
+    "ratio": 0.0
+   }
+  ],
+  "borderline_list": []
+ }
+}
