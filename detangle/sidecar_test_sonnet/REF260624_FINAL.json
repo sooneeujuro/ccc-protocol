@@ -1,0 +1,55 @@
+{
+ "doi_artifact_found": [
+  {
+   "pdf": "An et al. (2026) GF, Lithospheric thickness controls asymmetric mantle plume spreading and metallogenesis in the Tarim Large Igneous Province–Central Asian Orogenic Belt System.pdf",
+   "article": "An_et_al._(2026)_GF,_Lithospheric_thickness_controls_asymmetric_mantle_plume_spreading_and_metallogenesis_in_the_Tarim_Large_Igneous_Province–Central_"
+  },
+  {
+   "pdf": "Cannao (2020) Lithos, Boron isotope fractionation in subducted serpentinites; A modelling attempt.pdf",
+   "article": "Cannao_(2020)_Lithos,_Boron_isotope_fractionation_in_subducted_serpentinites;_A_modelling_attempt"
+  },
+  {
+   "pdf": "Denny et al. (2024) CG, Source of Li isotope bias during SIMS analysis of standard glasses.pdf",
+   "article": "Denny_et_al._(2024)_CG,_Source_of_Li_isotope_bias_during_SIMS_analysis_of_standard_glasses"
+  },
+  {
+   "pdf": "Giuliani et al. (2025) JP, Hydrogen Zoning in Olivine from Kimberlites Based on Coupled FTIR and SIMS Analyses; H2O Distribution in the Lithospheric Mantle and H2O Concentrations in Kimberlite Melts.pdf",
+   "article": "Giuliani_et_al._(2025)_JP,_Hydrogen_Zoning_in_Olivine_from_Kimberlites_Based_on_Coupled_FTIR_and_SIMS_Analyses;_H2O_Distribution_in_the_Lithospheric_M"
+  },
+  {
+   "pdf": "Kim & Choi (2025) Origin of low-δ18O olivine phenocrysts in Late Cenozoic EM2-type intraplate basalts from Jeju Island, South Korea.pdf",
+   "article": "Kim_&_Choi_(2025)_Origin_of_low-δ18O_olivine_phenocrysts_in_Late_Cenozoic_EM2-type_intraplate_basalts_from_Jeju_Island,_South_Korea"
+  },
+  {
+   "pdf": "Koh D-C. et al. (2007) JH, Evidence for terrigenic SF6 in groundwater from basaltic aquifers, Jeju Island, Korea; groundwater dating.pdf",
+   "article": "Koh_D-C._et_al._(2007)_JH,_Evidence_for_terrigenic_SF6_in_groundwater_from_basaltic_aquifers,_Jeju_Island,_Korea;_groundwater_dating"
+  },
+  {
+   "pdf": "Lockyer et al. (2024) nat rev, Secondary ion mass spectrometry.pdf",
+   "article": "Lockyer_et_al._(2024)_nat_rev,_Secondary_ion_mass_spectrometry"
+  },
+  {
+   "pdf": "Ray et al. (2013) JAES, Geochemical variability of MORBs along slow to intermediate spreading Carlsberg-Central Indian Ridge, Indian Ocean.pdf",
+   "article": "Ray_et_al._(2013)_JAES,_Geochemical_variability_of_MORBs_along_slow_to_intermedi"
+  },
+  {
+   "pdf": "Shin W-J. et al. (2017) JGE, Hydrogeochemical and isotopic features of the groundwater flow systems in the central-northern part of Jeju Island (Republic of Korea).pdf",
+   "article": "Shin_W-J._et_al._(2017)_JGE,_Hydrogeochemical_and_isotopic_features_of_the_groundwater_flow_systems_in_the_central-northern_part_of_Jeju_Island_(Repub"
+  },
+  {
+   "pdf": "Wenzel et al. (2021) MnP, Water contents of nominally anhydrous orthopyroxenes from oceanic peridotites determined by SIMS and FTIR.pdf",
+   "article": "Wenzel_et_al._(2021)_MnP,_Water_contents_of_nominally_anhydrous_orthopyroxenes_from_oceanic_peridotites_determined_by_SIMS_and_FTIR"
+  },
+  {
+   "pdf": "Yadav (2026) GJ, Olivine as Probe Into Mantle Source  Magma Crystallisation and Lithospheric Thickness.pdf",
+   "article": "Yadav_(2026)_GJ,_Olivine_as_Probe_Into_Mantle_Source__Magma_Crystallisation_and_"
+  },
+  {
+   "pdf": "Yi et al. (2014) JAES, Polyphase tectono-magmatic episodes as revealed by SHRIMP U–Pb geochronology and microanalysis of zircon and titanite from the central Okcheon belt, Korea.pdf",
+   "article": "Yi_et_al._(2014)_JAES,_Polyphase_tectono-magmatic_episodes_as_revealed_by_SHRIMP_U–Pb_geochronology_and_microanalysis_of_zircon_and_titanite_from_the_"
+  }
+ ],
+ "real_missing": [
+  "김용하 외 (2021) JSTA, 우주과학자에게 필요한 달의 지형과 지질.pdf"
+ ]
+}
