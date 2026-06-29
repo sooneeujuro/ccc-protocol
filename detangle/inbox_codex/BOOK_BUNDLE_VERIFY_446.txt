@@ -1,0 +1,32 @@
+================================================================
+  책 번들 serving-readiness 게이트 — 27/27 PASS
+================================================================
+  [PASS] 행정합 units==npy                     10373 vs 10373
+  [PASS] 행정합 units==bm25                    10373 vs None
+  [PASS] 행정합 기재값(CV/INTEGRITY)              cv=10373 integ_u=10373 integ_e=10373
+  [PASS] npy shape                          (10373, 1024)
+  [PASS] npy dtype                          float32
+  [PASS] npy NaN/Inf 없음                     all finite
+  [PASS] npy L2 정규화                         [0.9998,1.0005]
+  [PASS] sidecar 17 유효JSON                  n=17 bad=0
+  [PASS] sidecar is_book=True 전수            17
+  [PASS] serve_as_book 플래그 전수               17
+  [PASS] dedup 7 dup / 10 serve             dup=7 keep=10
+  [PASS] STEM_TO_SLUG == articles 1:1       s2s=17 arts=17
+  [PASS] slug 유니크(충돌 0)                     17/17
+  [PASS] 그림합 == CORPUS_VERSION              1521 vs 1521
+  [PASS] units paper_id -> md 존재            missing=0 []
+  [PASS] 오프셋유닛 [s,e] 범위(전수)                 out-of-range=0
+  [PASS] 오프셋유닛 md[s:e] sha1 일치(전수)          checked=10356 mismatch=0
+  [PASS] inline유닛(PR-META1) sha1 일치(전수)     checked=17 mismatch=0
+  [PASS] article CI n_papers=4013           4013
+  [PASS] 책 인용타겟 >=4                         4: ['clark_fritz_1997', 'faure_mensing_2005_pt1_p1_p463', 'ozima_podosek_2002', 'burnard_2013_noble_gases']
+  [PASS] article CI 백업존재(비파괴)               bak
+  [PASS] book root citation_index 존재        
+  [PASS] 양 root citation_index 동일           91b4f055b9 vs 91b4f055b9
+  [PASS] article retrieval_units 불변         eb709fe789612e (기준 eb709fe789612e)
+  [PASS] article CORPUS_VERSION sha1 일치     eb709fe789612e
+  [PASS] separate_from_articles=true        
+  [PASS] index 물리적 분리(병합X)                  별도 root
+================================================================
+  종합: ✅ ALL PASS — CODEX/deploy 인계 가능
