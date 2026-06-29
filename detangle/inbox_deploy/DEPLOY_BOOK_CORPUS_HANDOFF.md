@@ -4,6 +4,15 @@
 **상태:** book 번들 빌드 완료 + 독립 게이트 27/27 PASS + CODEX 검토 `ok_with_deploy_condition`.
 **근거 문서:** `detangle/inbox_codex/LEDGER_446_CLAUDE_BOOK_BUNDLE.md`, `BOOK_BUNDLE_VERIFY_446.txt`.
 
+> **⚡ UPDATE 2026-06-29 — HOME 머신(MA)은 Claude가 이미 적용 완료.**
+> `manuscript-atelier\.mcp.json`에서: (1) `geochem-corpus`를 신정본 `corpus_20260626`으로 flip,
+> (2) `geochem-corpus-book` 2nd 서버 추가(`G:\book_corpus_20260629\scripts\corpus_mcp.py`),
+> (3) **serve_as_book 필터를 `corpus_mcp.py` `_search()`에 패치**(아래 §CONDITION 코드 그대로) — selftest 검증
+> 완료(dup 'continental crust'→n_results 0, genuine 'noble gas'→ozima·burnard). MA 세션 재시작 시 활성.
+> **NAS/타 머신이 할 일은 자기 머신에서만**: ⓐ corpus 폴더 이식 시 **필터는 corpus_mcp.py에 이미 내장돼 따라감**
+> (재패치 불필요), ⓑ 자기 `.mcp.json`의 args를 **자기 corpus 체크아웃 경로**로 repoint. 아래 §CONDITION은 NAS가
+> 별도 빌드본을 쓸 때의 참고용.
+
 이 책 corpus는 article 번들(`G:\corpus_20260626`)과 **스키마 동일한 standalone serving root**다.
 CORPUS_POLICY §1: BM25/dense **인덱스 병합 금지**, 별도 reader instance로 띄우고 **retrieval에서만 RRF join**.
 `CORPUS_VERSION.json`에 `separate_from_articles=true`.
