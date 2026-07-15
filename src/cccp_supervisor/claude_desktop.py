@@ -42,7 +42,15 @@ _SUPPORTED_BUILDS = {
         "63355bc0fafca4d3eaa3fd53bbd372104820d30006a0bf27df792a78598e0655",
         "AppXaem4n1tckgw588q10avtdbzpbgt71c77",
         "Claude_pzs8sxrjxfjjc!Claude",
-    )
+    ),
+    (
+        "Claude",
+        "1.21459.0.0",
+        "Claude_pzs8sxrjxfjjc",
+        "d9a896beca555b86e6e773c065b75d3bc21c246f260578a42ca532e76fa155bd",
+        "AppXaem4n1tckgw588q10avtdbzpbgt71c77",
+        "Claude_pzs8sxrjxfjjc!Claude",
+    ),
 }
 
 

@@ -33,6 +33,16 @@ SUPPORTED_BUILD = ClaudeDesktopBuild(
     protocol_progid="AppXaem4n1tckgw588q10avtdbzpbgt71c77",
     app_user_model_id="Claude_pzs8sxrjxfjjc!Claude",
 )
+CURRENT_SUPPORTED_BUILD = ClaudeDesktopBuild(
+    package_name="Claude",
+    package_version="1.21459.0.0",
+    package_family="Claude_pzs8sxrjxfjjc",
+    bundle_sha256=(
+        "d9a896beca555b86e6e773c065b75d3bc21c246f260578a42ca532e76fa155bd"
+    ),
+    protocol_progid="AppXaem4n1tckgw588q10avtdbzpbgt71c77",
+    app_user_model_id="Claude_pzs8sxrjxfjjc!Claude",
+)
 DRIFTED_BUILD = ClaudeDesktopBuild(
     package_name="Claude",
     package_version="1.20186.8.0",
@@ -221,7 +231,10 @@ class ClaudeDesktopLinkTests(unittest.TestCase):
     def test_installed_desktop_build_matches_release_pin(self) -> None:
         build = WindowsClaudeDesktopProbe().inspect()
         build.require_supported()
-        self.assertEqual(SUPPORTED_BUILD, build)
+        self.assertEqual(CURRENT_SUPPORTED_BUILD, build)
+
+    def test_current_desktop_build_is_release_pinned(self) -> None:
+        CURRENT_SUPPORTED_BUILD.require_supported()
 
 
 class ClaudeDesktopBindingTests(unittest.TestCase):

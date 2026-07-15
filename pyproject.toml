@@ -9,6 +9,9 @@ description = "Deterministic local lifecycle supervisor for CCCP agent collabora
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+claude-desktop = ["pywinauto==0.6.9"]
+
 [project.scripts]
 ccc-supervisor = "cccp_supervisor.cli:main"
 

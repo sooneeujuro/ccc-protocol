@@ -30,6 +30,24 @@ and never reports a model turn as started or completed. Local Windows account
 and filesystem ACLs, not a CCCP maintainer role, are the access boundary. See
 [docs/CLAUDE_DESKTOP_SESSION_FOCUS.md](docs/CLAUDE_DESKTOP_SESSION_FOCUS.md).
 
+The separate Desktop round-trip v1 adds an explicitly bound, one-shot message
+surface without changing the focus-only contract.  It records a scrubbed send
+intent before touching the UI, accepts only a short local-inbox wake message,
+waits for an exact nonce-bearing completion file, and records a second intent
+before waking one exact Codex task.  A crash after either intent never replays
+that side effect.  The Windows UI transport is an optional install:
+
+```powershell
+python -m pip install -e ".[claude-desktop]"
+```
+
+The Python state machine exposes injected Desktop-send and Codex-wake ports;
+the live v1 driver is a Codex Desktop task because the supported exact-task
+wake capability is an app tool rather than a public local HTTP endpoint.  Do
+not describe the standalone Python package as able to wake Codex Desktop by
+itself.  See
+[docs/CLAUDE_DESKTOP_ROUNDTRIP_V1.md](docs/CLAUDE_DESKTOP_ROUNDTRIP_V1.md).
+
 ## Start safely
 
 From a target Git repository, install the human collaboration template. The
@@ -77,6 +95,8 @@ docs/SUPERVISOR_V1.md      canonical v1 contract
 docs/BOOTSTRAP.md          safe bring-up and rollback
 docs/CLAUDE_DESKTOP_SESSION_FOCUS.md
                            version-pinned exact-session focus boundary
+docs/CLAUDE_DESKTOP_ROUNDTRIP_V1.md
+                           one-shot Desktop-to-Codex round-trip contract
 docs/ANTIPATTERNS.md       known unsafe patterns
 ```
 
