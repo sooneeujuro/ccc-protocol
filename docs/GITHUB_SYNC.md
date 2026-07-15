@@ -1,5 +1,8 @@
 # GitHub Sync
 
+> Legacy overview. Use `scripts/ccc_push_snapshot.ps1` for the mechanically
+> allowlisted, branch-locked path. Never snapshot `coop/.ccc/`.
+
 GitHub snapshots make a local co-op run visible from another machine.
 
 ## Snapshot Rule

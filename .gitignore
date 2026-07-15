@@ -4,6 +4,15 @@
 *.tmp
 node_modules/
 __pycache__/
+.pytest_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+.ccc/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
 .DS_Store
 Thumbs.db
 

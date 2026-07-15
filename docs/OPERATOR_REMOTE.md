@@ -1,5 +1,9 @@
 # Remote Operator Commands
 
+> Legacy GitHub-console pattern. It is not connected to supervisor v1 and must
+> not carry prompts or protected data. The future remote design is the strict
+> metadata-only doorbell in `SUPERVISOR_V1.md`.
+
 When the operator is away from the machine, use GitHub as the remote console.
 
 ## Option A: GitHub Issue

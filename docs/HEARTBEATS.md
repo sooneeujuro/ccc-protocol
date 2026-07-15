@@ -1,5 +1,9 @@
 # Heartbeats
 
+> Legacy human-coordination guidance. A heartbeat is not a scheduler, lease,
+> or authorization to call a model. Supervised runs follow
+> `SUPERVISOR_V1.md`; automatic wakes remain off unless explicitly enabled.
+
 Heartbeats are recurring wakeups that keep an agent from silently going idle.
 
 ## Recommended Intervals
