@@ -67,6 +67,8 @@ class RunPolicy:
     ui_nudge_enabled: bool = False
     ui_nudge_after_failures: int = 2
     ui_nudge_cooldown_seconds: int = 600
+    claude_desktop_focus_enabled: bool = False
+    claude_desktop_focus_cooldown_seconds: int = 600
 
     def validate(self) -> None:
         positive = {
@@ -80,6 +82,9 @@ class RunPolicy:
             "max_output_bytes": self.max_output_bytes,
             "ui_nudge_after_failures": self.ui_nudge_after_failures,
             "ui_nudge_cooldown_seconds": self.ui_nudge_cooldown_seconds,
+            "claude_desktop_focus_cooldown_seconds": (
+                self.claude_desktop_focus_cooldown_seconds
+            ),
         }
         if any(value <= 0 for value in positive.values()):
             raise ValueError("run policy values must be positive")
@@ -94,6 +99,7 @@ class RunPolicy:
             "max_output_bytes": 16 * 1024 * 1024,
             "ui_nudge_after_failures": 100,
             "ui_nudge_cooldown_seconds": 86_400,
+            "claude_desktop_focus_cooldown_seconds": 86_400,
         }
         if any(positive[name] > maximum for name, maximum in limits.items()):
             raise ValueError("run policy value exceeds hard limit")

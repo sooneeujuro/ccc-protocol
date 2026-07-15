@@ -94,6 +94,22 @@ focus, type, paste, dismiss modals, or retry an ambiguous click.
 
 A UI nudge is never evidence that a turn started.
 
+## Calling Desktop focus a model wake
+
+An accepted `claude://claude.ai/code/<bridge-id>` dispatch proves only that Windows
+accepted a navigation request. It does not prove the app used the route, the
+account could access the session, a prompt was sent, or a turn started. Keep
+the receipt `focus_requested_unverified`; do not advance a CCCP task from it.
+
+Do not attach `q`, `prompt`, folder, file, or arbitrary query parameters to an
+existing-session URI. The focus command has no text input and is not a hidden
+prompt relay.
+
+Do not call Desktop focus automatically after an adapter failure. V1 exposes
+only an explicit maintainer-operated manual request with a dedicated
+`focus_id`, policy, ledger, and cooldown. It is not wired to `run-once`,
+`serve`, timer wake, or a cloud doorbell.
+
 ## Falling back from a structured failure to UI silently
 
 If Claude or Codex probing fails, report the failure. Do not secretly switch to

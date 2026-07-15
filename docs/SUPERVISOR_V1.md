@@ -14,7 +14,9 @@ The v1 implementation is intentionally local and inert by default:
 - no live Claude or Codex call from the stock CLI; a later maintainer-owned
   profile binding and operator approval are both required;
 - no cloud doorbell, inbound listener, or remote code execution;
-- no UI automation by default.
+- no UI automation by default;
+- exact Claude Desktop session focus is disabled by default and remains a
+  navigation-only, unconfirmed side effect rather than an execution adapter.
 
 The existing Markdown co-op files remain the human-readable collaboration
 surface. They are not a distributed scheduler and do not replace the
@@ -312,6 +314,53 @@ The nudge id is written before invoking UIA. It is at-most-once, has a per-targe
 cooldown, and is never treated as evidence that an agent turn started or
 finished. An unconfirmed nudge is not retried automatically.
 
+### Claude Desktop exact-session focus
+
+The implemented Claude Desktop focus experiment is a maintainer-operated manual
+command separate from UI Automation. It does not inspect controls, manipulate
+the keyboard or pointer, or attach to an app process. It dispatches the pinned
+renderer's canonical `claude://claude.ai/code/<bridge-session-id>` URI through
+Windows after all local gates pass. The bridge session is operator-selected;
+the link grammar alone cannot prove that it originated in Desktop or remains
+reachable.
+
+Only `session_` and `cse_` bridge-id families are accepted. The raw id stays in
+a create-only local profile under `.ccc/`; safe receipts expose a hash-derived
+`session_ref` and profile hash only. Query parameters, prompt text, folders,
+files, arbitrary URLs, and local Desktop session UUIDs are not part of the
+contract.
+
+The general `probe` command reports this static contract as
+`contract_available_not_probed`; it does not inspect the installed Desktop
+package, bundle hash, or protocol handler. Bind and focus perform those checks
+without starting a model turn.
+
+Because the existing-session route is present in the inspected Desktop bundle
+but is not a public message-send API, the package name, family, version, and
+bundle hash are allowlisted exactly. The current Windows protocol ProgID and
+AppUserModelID must also resolve to that package immediately before dispatch.
+Binding and every dispatch sequentially recheck the build and handler.
+Dispatch success means only `focus_requested_unverified`; `message_sent`,
+`turn_started`, and `completion_observed` remain false. Feature-gate, account,
+policy, stale-id, and navigation failures may be indistinguishable, so an
+unconfirmed dispatch is never retried automatically.
+
+The run must opt in to the dedicated Desktop focus policy, and the caller must
+supply both one-shot consent flags, the exact profile hash and session ref, and
+a fresh `focus_id`. A dedicated Desktop focus ledger atomically checks the run,
+STOP, watch, policy, Claude participation, replay, and cooldown while recording
+intent before dispatch. Profile, generation, package, build, and handler checks
+are sequential and outside that SQLite transaction. Claude adapter failure
+counts are not consulted, and no automatic fallback from `run-once`, `serve`,
+timer wake, or cloud doorbell is connected in v1.
+
+The local Windows account and filesystem ACLs are the access boundary;
+“maintainer-operated” is not a CCCP authentication role. Remote Control must be
+enabled, the selected bridge session must be accessible to the signed-in
+account, organization and Trusted Device policies must permit access, and the
+required network must be reachable. Read
+`CLAUDE_DESKTOP_SESSION_FOCUS.md` before a visible canary.
+
 ## Audit and safe status
 
 Local event details accept only small allowlisted keys and scrubbed scalar
@@ -452,6 +501,12 @@ a separate boolean. Important families are:
 - UI: `ui_disabled`, `ui_selector_missing`, `ui_selector_ambiguous`,
   `ui_focus_guard_blocked`, `ui_cooldown_active`,
   `ui_nudge_unconfirmed`.
+- Desktop focus: `claude_desktop_focus_policy_disabled`,
+  `claude_desktop_build_unsupported`, `claude_desktop_build_drift`,
+  `claude_desktop_profile_stale`, `claude_desktop_focus_not_allowed`,
+  `claude_desktop_focus_cancelled`,
+  `claude_desktop_focus_dispatch_error`,
+  `claude_desktop_focus_dispatch_rejected`.
 
 Only explicitly transient network, rate-limit, overload, or process-start
 failures receive bounded automatic retry. A repeated protocol failure or any
@@ -471,6 +526,11 @@ ambiguous effect stops for operator reconciliation.
   cleanup is insufficient.
 - UIA invocation remains unavailable until selectors are captured and tested
   for a pinned app version.
+- Claude Desktop exact-session focus is navigation-only and cannot replace a
+  model adapter, Remote Control acknowledgement, or human confirmation.
+- STOP or policy rollback prevents a future Desktop focus reservation but
+  cannot undo a navigation already accepted by Windows, close Desktop, or
+  revoke a Remote Control session.
 - The future doorbell does not make a local adapter available, grant new
   permissions, or bypass a blocked corporate network.
 - No current v1 claim should be described as deployed merely because its schema
@@ -492,3 +552,6 @@ Before enabling a live adapter, tests must demonstrate:
 10. UI selector ambiguity performs no action;
 11. future doorbell schemas reject extra fields and protected payloads;
 12. `.ccc/` remains untracked.
+13. Desktop link spoofing, build drift, STOP races, duplicate `focus_id`
+    values, and raw bridge-id leakage are blocked without launching the real
+    app in tests.

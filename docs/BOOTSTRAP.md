@@ -4,8 +4,10 @@ This runbook brings up the same-host supervisor without making a live Claude,
 Codex, UI, or cloud call. Read `SUPERVISOR_V1.md` first.
 
 The command names are stable for v1: `init`, `enqueue`, `run-once`, `serve`,
-`recover`, `status`, `stop`, and `probe`. Use each command's `--help` output for
-the exact flags of the installed build.
+`recover`, `status`, `stop`, `probe`, `bind-claude-desktop-session`, and
+`focus-claude-desktop-session`. The two Desktop commands remain disabled unless
+their separate policy and consent gates pass. Use each command's `--help`
+output for the exact flags of the installed build.
 
 ## 1. Preconditions
 
@@ -66,14 +68,20 @@ a project. The initial expected posture is:
 - Codex adapter: disabled or unavailable;
 - automatic timer wake: disabled;
 - Windows UI nudge: disabled;
+- Claude Desktop exact-session focus: contract available but not probed, with
+  per-run focus policy disabled;
 - cloud doorbell: unavailable.
 
-`probe` is read-only. It may inspect executable identity and version, but must
-not launch a model turn, attach to Codex Desktop, click UI, contact a cloud
-endpoint, or modify the target project.
+`probe` is read-only. Its Desktop entry is
+`status=contract_available_not_probed`: it does not inspect the installed
+Desktop package, application-bundle hash, or protocol handler. The bind and
+focus commands perform those checks. `probe` must not launch a model turn,
+attach to Codex Desktop, click UI, contact a cloud endpoint, or modify the
+target project.
 
 Resolve `version_unsupported`, `settings_hash_mismatch`, or permission-profile
-errors before proceeding. Do not enable UI as a workaround.
+errors from the applicable bind, focus, or adapter-specific check before
+proceeding. Do not enable UI as a workaround.
 
 ## 5. Initialize one local run
 
@@ -86,6 +94,7 @@ ccc-supervisor init --coop-root .\coop --project-alias synthetic-test
 
 - `auto_wake_allowed=false`;
 - `ui_nudge_enabled=false`;
+- `claude_desktop_focus_enabled=false`;
 - finite watch TTL and per-agent wake budget;
 - finite lease and claim TTL;
 - finite handoff, payload, output, and retry bounds.
@@ -156,9 +165,10 @@ all of the following must pass:
   safe status, events, Git, or cloud schemas;
 - adapter-specific cancellation and session reconciliation tests.
 
-For Claude, use explicit session ids and one process per wake initially. For
-Codex, use only an independently invocable, supervisor-owned app server. The
-app server already owned by Codex Desktop is outside the supervisor boundary.
+For the Claude **CLI adapter**, use explicit session ids and one process per
+wake initially. For Codex, use only an independently invocable,
+supervisor-owned app server. The app server already owned by Codex Desktop is
+outside the supervisor boundary.
 
 The current stock CLI still refuses live dispatch with
 `live_adapter_profile_not_bound`; two consent flags alone are intentionally
@@ -185,7 +195,20 @@ Start with a short supervised window. Observe safe status and local process
 ownership. Stop the run at the end; do not leave a development daemon running
 indefinitely.
 
-## 10. UI nudge remains a separate experiment
+## 10. Desktop focus and UI nudge are separate experiments
+
+The maintainer-operated Claude Desktop focus path may manually request
+navigation to one operator-selected, version-pinned Remote Control bridge id.
+It is not UI Automation and it cannot send work. It has a dedicated per-run
+policy, `focus_id` replay ledger, and cooldown; it does not depend on adapter
+failure counts. No automatic fallback from `run-once` or `serve` is wired in
+v1. Keep it disabled during the base bootstrap.
+
+Before an operator-visible disposable canary, follow
+`CLAUDE_DESKTOP_SESSION_FOCUS.md`. Remote Control, the matching Claude account,
+organization policy, any Trusted Device requirement, network reachability, and
+the selected bridge session must all be ready. Never substitute a local
+session UUID or treat `focus_requested_unverified` as a turn receipt.
 
 Do not enable UI nudge merely because a structured adapter is unavailable. A
 future experiment needs a pinned app version, exact AutomationId selector,
@@ -212,6 +235,12 @@ the work; the doorbell may only ask the local supervisor to look.
 6. Restore only the scoped protocol-template diff if the project no longer
    wants supervisor metadata.
 
+For Desktop focus, STOP and a new run without
+`--allow-claude-desktop-focus` prevent future reservations. They cannot undo an
+already accepted navigation, close Desktop, or revoke the Remote Control
+session. Revoke that session separately when required; see
+`CLAUDE_DESKTOP_SESSION_FOCUS.md`.
+
 Never recursively delete a computed path. Resolve the intended project and
 `coop/.ccc/` path, verify that it is inside that project, and obtain operator
 approval before removal.
@@ -224,6 +253,7 @@ The bootstrap should leave only these meaningful choices:
 2. keep manual `run-once` or permit bounded `serve`;
 3. later test a named workspace-write profile;
 4. later review UI nudge separately;
-5. later review the metadata-only outbound doorbell separately.
+5. optionally run one visible, disposable Claude Desktop focus canary;
+6. later review the metadata-only outbound doorbell separately.
 
 None of these choices is implied by successful local state-store tests.

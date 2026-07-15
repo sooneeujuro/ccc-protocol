@@ -34,7 +34,7 @@ from .models import (
 )
 
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 _TOKEN_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.:@-]{0,127}$")
 _SAFE_EVENT_KEY_RE = re.compile(r"^[a-z][a-z0-9_]{0,63}$")
 _SAFE_EVENT_VALUE_RE = re.compile(r"^[A-Za-z0-9_.:@+-]{0,127}$")
@@ -78,8 +78,65 @@ class StateStore:
             version = connection.execute(
                 "SELECT value FROM meta WHERE key='schema_version'"
             ).fetchone()[0]
+            if int(version) == 2:
+                self._migrate_v2_to_v3(connection)
+                version = str(SCHEMA_VERSION)
             if int(version) != SCHEMA_VERSION:
                 raise SupervisorError("schema_incompatible")
+
+    @staticmethod
+    def _migrate_v2_to_v3(connection: sqlite3.Connection) -> None:
+        """Add the Desktop-focus policy without rewriting any local payload."""
+
+        connection.execute("BEGIN IMMEDIATE")
+        try:
+            run_columns = {
+                row[1] for row in connection.execute("PRAGMA table_info(runs)")
+            }
+            if "claude_desktop_focus_enabled" not in run_columns:
+                connection.execute(
+                    "ALTER TABLE runs ADD COLUMN claude_desktop_focus_enabled "
+                    "INTEGER NOT NULL DEFAULT 0 "
+                    "CHECK(claude_desktop_focus_enabled IN (0,1))"
+                )
+            if "claude_desktop_focus_cooldown_seconds" not in run_columns:
+                connection.execute(
+                    "ALTER TABLE runs ADD COLUMN "
+                    "claude_desktop_focus_cooldown_seconds "
+                    "INTEGER NOT NULL DEFAULT 600"
+                )
+            participant_columns = {
+                row[1]
+                for row in connection.execute("PRAGMA table_info(participants)")
+            }
+            if "last_claude_desktop_focus_at" not in participant_columns:
+                connection.execute(
+                    "ALTER TABLE participants ADD COLUMN "
+                    "last_claude_desktop_focus_at REAL"
+                )
+            connection.execute(
+                """
+                CREATE TABLE IF NOT EXISTS claude_desktop_focus_receipts(
+                    run_id TEXT NOT NULL REFERENCES runs(run_id),
+                    agent_id TEXT NOT NULL CHECK(agent_id='claude'),
+                    focus_id TEXT NOT NULL,
+                    state TEXT NOT NULL,
+                    result_code TEXT,
+                    created_at REAL NOT NULL,
+                    completed_at REAL,
+                    PRIMARY KEY(run_id, agent_id, focus_id)
+                )
+                """
+            )
+            connection.execute(
+                "UPDATE meta SET value=? WHERE key='schema_version'",
+                (str(SCHEMA_VERSION),),
+            )
+        except Exception:
+            connection.rollback()
+            raise
+        else:
+            connection.commit()
 
     @contextmanager
     def _connect(self) -> Iterator[sqlite3.Connection]:
@@ -155,8 +212,10 @@ class StateStore:
                     max_wakes_per_agent, max_handoff_depth, max_handoffs_per_result,
                     max_payload_bytes, max_output_bytes, auto_wake_allowed,
                     ui_nudge_enabled, ui_nudge_after_failures,
-                    ui_nudge_cooldown_seconds, row_version
-                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0)
+                    ui_nudge_cooldown_seconds,
+                    claude_desktop_focus_enabled,
+                    claude_desktop_focus_cooldown_seconds, row_version
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0)
                 """,
                 (
                     run_id,
@@ -178,6 +237,8 @@ class StateStore:
                     int(policy.ui_nudge_enabled),
                     policy.ui_nudge_after_failures,
                     policy.ui_nudge_cooldown_seconds,
+                    int(policy.claude_desktop_focus_enabled),
+                    policy.claude_desktop_focus_cooldown_seconds,
                 ),
             )
             for agent_id in AGENT_IDS:
@@ -1459,6 +1520,76 @@ class StateStore:
             if not updated:
                 raise SupervisorError("ui_nudge_duplicate")
 
+    def reserve_claude_desktop_focus(self, run_id: str, focus_id: str) -> bool:
+        """Reserve one explicit operator focus without authorizing UIA."""
+
+        run_id = _validated_uuid(run_id, "run_id_invalid")
+        focus_id = _validated_uuid(focus_id, "focus_id_invalid")
+        now = self.clock()
+        with self._transaction() as connection:
+            run = self._run_locked(connection, run_id)
+            self._apply_legacy_stop_locked(connection, run, now)
+            run = self._run_locked(connection, run_id)
+            if (
+                run["state"] in (RunState.ACTIVE.value, RunState.QUIET_WATCH.value)
+                and now >= run["watch_expires_at"]
+            ):
+                self._expire_run_locked(connection, run_id, now)
+                return False
+            if (
+                run["state"]
+                not in (RunState.ACTIVE.value, RunState.QUIET_WATCH.value)
+                or not run["claude_desktop_focus_enabled"]
+            ):
+                return False
+            participant = connection.execute(
+                "SELECT * FROM participants WHERE run_id=? AND agent_id='claude'",
+                (run_id,),
+            ).fetchone()
+            if not participant or not participant["enabled"]:
+                return False
+            duplicate = connection.execute(
+                "SELECT 1 FROM claude_desktop_focus_receipts "
+                "WHERE run_id=? AND agent_id='claude' AND focus_id=?",
+                (run_id, focus_id),
+            ).fetchone()
+            if duplicate:
+                return False
+            if participant["last_claude_desktop_focus_at"] is not None and (
+                now - participant["last_claude_desktop_focus_at"]
+                < run["claude_desktop_focus_cooldown_seconds"]
+            ):
+                return False
+            connection.execute(
+                "INSERT INTO claude_desktop_focus_receipts("
+                "run_id,agent_id,focus_id,state,created_at) "
+                "VALUES(?,'claude',?,'intent_recorded',?)",
+                (run_id, focus_id, now),
+            )
+            connection.execute(
+                "UPDATE participants SET last_claude_desktop_focus_at=? "
+                "WHERE run_id=? AND agent_id='claude'",
+                (now, run_id),
+            )
+            return True
+
+    def finish_claude_desktop_focus(
+        self, run_id: str, focus_id: str, result_code: str
+    ) -> None:
+        run_id = _validated_uuid(run_id, "run_id_invalid")
+        focus_id = _validated_uuid(focus_id, "focus_id_invalid")
+        result_code = _validated_token(result_code, "focus_result_invalid")
+        with self._transaction() as connection:
+            updated = connection.execute(
+                "UPDATE claude_desktop_focus_receipts "
+                "SET state='completed', result_code=?, completed_at=? "
+                "WHERE run_id=? AND agent_id='claude' AND focus_id=? "
+                "AND state='intent_recorded'",
+                (result_code, self.clock(), run_id, focus_id),
+            ).rowcount
+            if not updated:
+                raise SupervisorError("claude_desktop_focus_duplicate")
+
     def _run_locked(self, connection: sqlite3.Connection, run_id: str) -> sqlite3.Row:
         row = connection.execute(
             "SELECT * FROM runs WHERE run_id=?", (run_id,)
@@ -1694,6 +1825,9 @@ CREATE TABLE IF NOT EXISTS runs(
     ui_nudge_enabled INTEGER NOT NULL CHECK(ui_nudge_enabled IN (0,1)),
     ui_nudge_after_failures INTEGER NOT NULL,
     ui_nudge_cooldown_seconds INTEGER NOT NULL,
+    claude_desktop_focus_enabled INTEGER NOT NULL
+        CHECK(claude_desktop_focus_enabled IN (0,1)),
+    claude_desktop_focus_cooldown_seconds INTEGER NOT NULL,
     active_stop_id TEXT,
     stop_reason_code TEXT,
     row_version INTEGER NOT NULL DEFAULT 0
@@ -1712,6 +1846,7 @@ CREATE TABLE IF NOT EXISTS participants(
     consecutive_failures INTEGER NOT NULL DEFAULT 0,
     last_failure_code TEXT,
     last_nudge_at REAL,
+    last_claude_desktop_focus_at REAL,
     updated_at REAL,
     PRIMARY KEY(run_id, agent_id)
 );
@@ -1812,6 +1947,17 @@ CREATE TABLE IF NOT EXISTS nudge_receipts(
     created_at REAL NOT NULL,
     completed_at REAL,
     PRIMARY KEY(run_id, agent_id, nudge_id)
+);
+
+CREATE TABLE IF NOT EXISTS claude_desktop_focus_receipts(
+    run_id TEXT NOT NULL REFERENCES runs(run_id),
+    agent_id TEXT NOT NULL CHECK(agent_id='claude'),
+    focus_id TEXT NOT NULL,
+    state TEXT NOT NULL,
+    result_code TEXT,
+    created_at REAL NOT NULL,
+    completed_at REAL,
+    PRIMARY KEY(run_id, agent_id, focus_id)
 );
 
 CREATE TABLE IF NOT EXISTS events(

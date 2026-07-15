@@ -8,6 +8,12 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import IO, Sequence
 
+from .claude_desktop import (
+    WindowsClaudeDesktopLauncher,
+    WindowsClaudeDesktopProbe,
+    bind_claude_desktop_session,
+    focus_claude_desktop_session,
+)
 from .errors import SupervisorError
 from .models import EffectClass, RunPolicy
 from .store import StateStore
@@ -59,6 +65,10 @@ def _parser() -> argparse.ArgumentParser:
     init.add_argument("--max-payload-bytes", type=_positive_int, default=262_144)
     init.add_argument("--max-output-bytes", type=_positive_int, default=1_048_576)
     init.add_argument("--allow-timer-wakes", action="store_true")
+    init.add_argument("--allow-claude-desktop-focus", action="store_true")
+    init.add_argument(
+        "--desktop-focus-cooldown", type=_positive_int, default=600
+    )
     init.set_defaults(handler=_init)
 
     enqueue = commands.add_parser(
@@ -116,6 +126,28 @@ def _parser() -> argparse.ArgumentParser:
     probe = commands.add_parser("probe", help="report adapter capability only")
     probe.add_argument("--claude-executable", default="claude")
     probe.set_defaults(handler=_probe)
+
+    bind_desktop = commands.add_parser(
+        "bind-claude-desktop-session",
+        help="bind one copied Desktop Code session link from stdin",
+    )
+    _coop_argument(bind_desktop)
+    bind_desktop.add_argument("--run-id")
+    bind_desktop.add_argument("--confirm-pinned-desktop-route", action="store_true")
+    bind_desktop.set_defaults(handler=_bind_claude_desktop_session)
+
+    focus_desktop = commands.add_parser(
+        "focus-claude-desktop-session",
+        help="request focus for one bound Desktop Code session",
+    )
+    _coop_argument(focus_desktop)
+    focus_desktop.add_argument("--run-id")
+    focus_desktop.add_argument("--focus-id", required=True)
+    focus_desktop.add_argument("--profile-sha256", required=True)
+    focus_desktop.add_argument("--session-ref", required=True)
+    focus_desktop.add_argument("--enable-claude-desktop-focus", action="store_true")
+    focus_desktop.add_argument("--confirm-focus-only", action="store_true")
+    focus_desktop.set_defaults(handler=_focus_claude_desktop_session)
     return parser
 
 
@@ -153,6 +185,8 @@ def _init(args: argparse.Namespace, _stdin: IO[str]) -> dict[str, object]:
         max_payload_bytes=args.max_payload_bytes,
         max_output_bytes=args.max_output_bytes,
         auto_wake_allowed=args.allow_timer_wakes,
+        claude_desktop_focus_enabled=args.allow_claude_desktop_focus,
+        claude_desktop_focus_cooldown_seconds=args.desktop_focus_cooldown,
     )
     run_id = store.init_run(
         project_alias=args.project_alias,
@@ -259,7 +293,62 @@ def _probe(args: argparse.Namespace, _stdin: IO[str]) -> dict[str, object]:
             "status": "transport_contract_only",
             "live_call_enabled": False,
         },
+        "claude_desktop_session_focus": {
+            "status": "contract_available_not_probed",
+            "installed_build_checked": False,
+            "live_call_enabled": False,
+            "message_send_supported": False,
+        },
         "ui_nudge": {"status": "disabled_by_default"},
+    }
+
+
+def _bind_claude_desktop_session(
+    args: argparse.Namespace, stdin: IO[str]
+) -> dict[str, object]:
+    if not args.confirm_pinned_desktop_route:
+        raise SupervisorError("claude_desktop_route_confirmation_required")
+    store = _store(args)
+    run_id = _run_id(store, args.run_id)
+    raw_link = _read_stdin_utf8(stdin, 512)
+    receipt = bind_claude_desktop_session(
+        store,
+        run_id=run_id,
+        raw_link=raw_link,
+        probe=WindowsClaudeDesktopProbe(),
+    )
+    return {
+        "ok": True,
+        "run_id": run_id,
+        "profile_sha256": receipt.profile_sha256,
+        "session_ref": receipt.session_ref,
+        "created": receipt.created,
+        "capability": "focus_only_unverified",
+        "message_send_supported": False,
+    }
+
+
+def _focus_claude_desktop_session(
+    args: argparse.Namespace, _stdin: IO[str]
+) -> dict[str, object]:
+    if not (args.enable_claude_desktop_focus and args.confirm_focus_only):
+        raise SupervisorError("claude_desktop_focus_confirmation_required")
+    store = _store(args)
+    run_id = _run_id(store, args.run_id)
+    receipt = focus_claude_desktop_session(
+        store,
+        run_id=run_id,
+        focus_id=args.focus_id,
+        expected_profile_sha256=args.profile_sha256,
+        expected_session_ref=args.session_ref,
+        probe=WindowsClaudeDesktopProbe(),
+        launcher=WindowsClaudeDesktopLauncher(),
+    )
+    return {
+        "ok": True,
+        "run_id": run_id,
+        "focus_id": args.focus_id,
+        **asdict(receipt),
     }
 
 

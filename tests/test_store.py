@@ -439,6 +439,187 @@ class StoreTest(unittest.TestCase):
             ).fetchone()[0]
         self.assertEqual(0, count)
 
+    def test_claude_desktop_focus_is_blocked_by_default(self) -> None:
+        run_id = self.init()
+        self.assertFalse(
+            self.store.reserve_claude_desktop_focus(run_id, str(uuid.uuid4()))
+        )
+        with self.store._connect() as connection:
+            count = connection.execute(
+                "SELECT COUNT(*) FROM claude_desktop_focus_receipts "
+                "WHERE run_id=?",
+                (run_id,),
+            ).fetchone()[0]
+        self.assertEqual(0, count)
+
+    def test_enabled_claude_desktop_focus_does_not_require_failures(self) -> None:
+        run_id = self.init(claude_desktop_focus_enabled=True)
+        focus_id = str(uuid.uuid4())
+        with self.store._connect() as connection:
+            failures = connection.execute(
+                "SELECT consecutive_failures FROM participants "
+                "WHERE run_id=? AND agent_id='claude'",
+                (run_id,),
+            ).fetchone()[0]
+        self.assertEqual(0, failures)
+        self.assertTrue(
+            self.store.reserve_claude_desktop_focus(run_id, focus_id)
+        )
+        self.store.finish_claude_desktop_focus(
+            run_id, focus_id, "navigation_requested"
+        )
+        with self.store._connect() as connection:
+            receipt = connection.execute(
+                "SELECT state,result_code,completed_at "
+                "FROM claude_desktop_focus_receipts "
+                "WHERE run_id=? AND agent_id='claude' AND focus_id=?",
+                (run_id, focus_id),
+            ).fetchone()
+        self.assertEqual("completed", receipt["state"])
+        self.assertEqual("navigation_requested", receipt["result_code"])
+        self.assertEqual(self.clock(), receipt["completed_at"])
+
+    def test_claude_desktop_focus_duplicate_and_cooldown_are_bounded(self) -> None:
+        run_id = self.init(
+            claude_desktop_focus_enabled=True,
+            claude_desktop_focus_cooldown_seconds=10,
+        )
+        first = str(uuid.uuid4())
+        second = str(uuid.uuid4())
+        self.assertTrue(self.store.reserve_claude_desktop_focus(run_id, first))
+        self.assertFalse(self.store.reserve_claude_desktop_focus(run_id, first))
+        self.assertFalse(self.store.reserve_claude_desktop_focus(run_id, second))
+        self.clock.advance(9)
+        self.assertFalse(self.store.reserve_claude_desktop_focus(run_id, second))
+        self.clock.advance(1)
+        self.assertTrue(self.store.reserve_claude_desktop_focus(run_id, second))
+        with self.store._connect() as connection:
+            count = connection.execute(
+                "SELECT COUNT(*) FROM claude_desktop_focus_receipts "
+                "WHERE run_id=?",
+                (run_id,),
+            ).fetchone()[0]
+        self.assertEqual(2, count)
+
+    def test_stop_blocks_claude_desktop_focus_without_a_receipt(self) -> None:
+        run_id = self.init(claude_desktop_focus_enabled=True)
+        self.store.request_stop(
+            run_id=run_id,
+            requested_by="operator",
+            reason_code="stop_before_nudge",
+        )
+        self.assertFalse(
+            self.store.reserve_claude_desktop_focus(run_id, str(uuid.uuid4()))
+        )
+        with self.store._connect() as connection:
+            count = connection.execute(
+                "SELECT COUNT(*) FROM claude_desktop_focus_receipts "
+                "WHERE run_id=?",
+                (run_id,),
+            ).fetchone()[0]
+        self.assertEqual(0, count)
+
+    def test_watch_expiry_blocks_claude_desktop_focus_and_expires_run(self) -> None:
+        run_id = self.init(
+            watch_ttl_seconds=2,
+            claude_desktop_focus_enabled=True,
+        )
+        self.clock.advance(3)
+        self.assertFalse(
+            self.store.reserve_claude_desktop_focus(run_id, str(uuid.uuid4()))
+        )
+        self.assertEqual("expired", self.store.safe_status(run_id)["state"])
+        with self.store._connect() as connection:
+            count = connection.execute(
+                "SELECT COUNT(*) FROM claude_desktop_focus_receipts "
+                "WHERE run_id=?",
+                (run_id,),
+            ).fetchone()[0]
+        self.assertEqual(0, count)
+
+    def test_ui_nudge_and_desktop_focus_flags_do_not_authorize_each_other(self) -> None:
+        cases = (
+            ("ui_only", True, False, True, False),
+            ("desktop_only", False, True, False, True),
+        )
+        for name, ui_enabled, focus_enabled, ui_allowed, focus_allowed in cases:
+            with self.subTest(case=name), tempfile.TemporaryDirectory() as directory:
+                coop = Path(directory) / "coop"
+                coop.mkdir()
+                store = StateStore(coop, clock=self.clock)
+                run_id = store.init_run(
+                    project_alias="fixture",
+                    policy=RunPolicy(
+                        ui_nudge_enabled=ui_enabled,
+                        ui_nudge_after_failures=1,
+                        claude_desktop_focus_enabled=focus_enabled,
+                    ),
+                )
+                with store._transaction() as connection:
+                    connection.execute(
+                        "UPDATE participants SET consecutive_failures=1 "
+                        "WHERE run_id=? AND agent_id='claude'",
+                        (run_id,),
+                    )
+                self.assertEqual(
+                    ui_allowed,
+                    store.nudge_allowed(run_id, "claude", str(uuid.uuid4())),
+                )
+                self.assertEqual(
+                    focus_allowed,
+                    store.reserve_claude_desktop_focus(
+                        run_id, str(uuid.uuid4())
+                    ),
+                )
+
+    def test_v2_to_v3_migration_preserves_state_and_defaults_focus_off(self) -> None:
+        run_id = self.init()
+        task = self.enqueue(run_id, payload="migration sentinel")
+        payload_path = self.store.state_root / task.payload_ref
+        payload_before = payload_path.read_bytes()
+        with self.store._transaction() as connection:
+            connection.execute("DROP TABLE claude_desktop_focus_receipts")
+            connection.execute(
+                "ALTER TABLE participants "
+                "DROP COLUMN last_claude_desktop_focus_at"
+            )
+            connection.execute(
+                "ALTER TABLE runs "
+                "DROP COLUMN claude_desktop_focus_cooldown_seconds"
+            )
+            connection.execute(
+                "ALTER TABLE runs DROP COLUMN claude_desktop_focus_enabled"
+            )
+            connection.execute(
+                "UPDATE meta SET value='2' WHERE key='schema_version'"
+            )
+
+        migrated = StateStore(self.coop, clock=self.clock)
+        migrated.initialize()
+        run = migrated.run_row(run_id)
+        self.assertEqual(0, run["claude_desktop_focus_enabled"])
+        self.assertEqual(600, run["claude_desktop_focus_cooldown_seconds"])
+        self.assertEqual(payload_before, payload_path.read_bytes())
+        self.assertEqual("migration sentinel", migrated.read_task_payload(task))
+        self.assertFalse(
+            migrated.reserve_claude_desktop_focus(run_id, str(uuid.uuid4()))
+        )
+        with migrated._connect() as connection:
+            version = connection.execute(
+                "SELECT value FROM meta WHERE key='schema_version'"
+            ).fetchone()[0]
+            participant_columns = {
+                row[1]
+                for row in connection.execute("PRAGMA table_info(participants)")
+            }
+            receipt_table = connection.execute(
+                "SELECT 1 FROM sqlite_master "
+                "WHERE type='table' AND name='claude_desktop_focus_receipts'"
+            ).fetchone()
+        self.assertEqual("3", version)
+        self.assertIn("last_claude_desktop_focus_at", participant_columns)
+        self.assertIsNotNone(receipt_table)
+
     def test_coop_root_allows_only_one_nonterminal_run(self) -> None:
         first = self.store.init_run(project_alias="first")
         with self.assertRaisesRegex(SupervisorError, "run_already_active"):

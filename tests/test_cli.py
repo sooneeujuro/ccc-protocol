@@ -4,9 +4,44 @@ import io
 import json
 import tempfile
 import unittest
+import uuid
 from pathlib import Path
+from unittest import mock
 
+from cccp_supervisor.claude_desktop import ClaudeDesktopBuild
 from cccp_supervisor.cli import main
+from cccp_supervisor.store import StateStore
+
+
+SUPPORTED_BUILD = ClaudeDesktopBuild(
+    package_name="Claude",
+    package_version="1.20186.7.0",
+    package_family="Claude_pzs8sxrjxfjjc",
+    bundle_sha256=(
+        "63355bc0fafca4d3eaa3fd53bbd372104820d30006a0bf27df792a78598e0655"
+    ),
+    protocol_progid="AppXaem4n1tckgw588q10avtdbzpbgt71c77",
+    app_user_model_id="Claude_pzs8sxrjxfjjc!Claude",
+)
+
+
+class CliFakeProbe:
+    def inspect(self) -> ClaudeDesktopBuild:
+        return SUPPORTED_BUILD
+
+
+class CliFakeLauncher:
+    calls: list[str] = []
+
+    def dispatch(
+        self,
+        uri: str,
+        *,
+        expected_progid: str,
+        expected_app_user_model_id: str,
+    ) -> bool:
+        self.calls.append(uri)
+        return True
 
 
 class CliTest(unittest.TestCase):
@@ -187,6 +222,125 @@ class CliTest(unittest.TestCase):
         self.assertEqual(2, code)
         self.assertEqual("coop_root_missing", err["failure_code"])
         self.assertFalse(missing.exists())
+
+    @mock.patch(
+        "cccp_supervisor.cli.WindowsClaudeDesktopProbe",
+        return_value=CliFakeProbe(),
+    )
+    def test_desktop_binding_and_focus_receipts_are_scrubbed(self, _probe) -> None:
+        code, out, err, _ = self.call(
+            [
+                "init",
+                "--coop-root",
+                str(self.coop),
+                "--project-alias",
+                "fixture",
+                "--allow-claude-desktop-focus",
+            ]
+        )
+        self.assertEqual(0, code, err)
+        run_id = out["run_id"]
+        session_id = "session_ABCDEFGHIJKLMNOPQRSTUVWX"
+        raw_link = f"https://claude.ai/code/{session_id}\n"
+        code, binding, err, rendered = self.call(
+            [
+                "bind-claude-desktop-session",
+                "--coop-root",
+                str(self.coop),
+                "--run-id",
+                run_id,
+                "--confirm-pinned-desktop-route",
+            ],
+            raw_link,
+        )
+        self.assertEqual(0, code, err)
+        self.assertNotIn(session_id, rendered)
+        self.assertNotIn("claude.ai", rendered)
+        self.assertFalse(binding["message_send_supported"])
+
+        CliFakeLauncher.calls = []
+        with mock.patch(
+            "cccp_supervisor.cli.WindowsClaudeDesktopLauncher",
+            return_value=CliFakeLauncher(),
+        ):
+            code, focused, err, rendered = self.call(
+                [
+                    "focus-claude-desktop-session",
+                    "--coop-root",
+                    str(self.coop),
+                    "--run-id",
+                    run_id,
+                    "--focus-id",
+                    str(uuid.uuid4()),
+                    "--profile-sha256",
+                    binding["profile_sha256"],
+                    "--session-ref",
+                    binding["session_ref"],
+                    "--enable-claude-desktop-focus",
+                    "--confirm-focus-only",
+                ]
+            )
+        self.assertEqual(0, code, err)
+        self.assertEqual("focus_requested_unverified", focused["navigation_state"])
+        self.assertTrue(focused["navigation_requested"])
+        self.assertFalse(focused["message_sent"])
+        self.assertFalse(focused["turn_started"])
+        self.assertFalse(focused["completion_observed"])
+        self.assertNotIn(session_id, rendered)
+        self.assertNotIn("claude.ai", rendered)
+        self.assertEqual(
+            [f"claude://claude.ai/code/{session_id}"], CliFakeLauncher.calls
+        )
+
+    @mock.patch(
+        "cccp_supervisor.cli.WindowsClaudeDesktopProbe",
+        return_value=CliFakeProbe(),
+    )
+    def test_desktop_focus_requires_all_explicit_gates(self, _probe) -> None:
+        code, out, err, _ = self.call(
+            [
+                "init",
+                "--coop-root",
+                str(self.coop),
+                "--project-alias",
+                "fixture",
+                "--allow-claude-desktop-focus",
+            ]
+        )
+        self.assertEqual(0, code, err)
+        run_id = out["run_id"]
+        code, binding, err, _ = self.call(
+            [
+                "bind-claude-desktop-session",
+                "--coop-root",
+                str(self.coop),
+                "--run-id",
+                run_id,
+                "--confirm-pinned-desktop-route",
+            ],
+            "https://claude.ai/code/session_ABCDEFGHIJKLMNOPQRSTUVWX",
+        )
+        self.assertEqual(0, code, err)
+        code, _, err, _ = self.call(
+            [
+                "focus-claude-desktop-session",
+                "--coop-root",
+                str(self.coop),
+                "--run-id",
+                run_id,
+                "--focus-id",
+                str(uuid.uuid4()),
+                "--profile-sha256",
+                binding["profile_sha256"],
+                "--session-ref",
+                binding["session_ref"],
+                "--enable-claude-desktop-focus",
+            ]
+        )
+        self.assertEqual(2, code)
+        self.assertEqual(
+            "claude_desktop_focus_confirmation_required", err["failure_code"]
+        )
 
 
 if __name__ == "__main__":

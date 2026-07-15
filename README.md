@@ -11,7 +11,8 @@ The supervisor is deliberately fail-closed:
 - one `coop/` root permits only one nonterminal run because STOP is root-global;
 - duplicate wakes and stale workers cannot publish twice;
 - only read-only or proven-reversible work may retry automatically;
-- UI nudging, cloud doorbells, and live agent bindings are off by default.
+- Desktop focus, UI nudging, cloud doorbells, and live agent bindings are off
+  by default.
 
 The v1 CLI manages and tests the lifecycle state machine. It ships a bounded
 Claude subprocess transport and a validated Codex app-server protocol adapter,
@@ -19,6 +20,15 @@ but it does **not** infer a live workspace/permission profile. Consequently,
 the stock CLI refuses live model dispatch until a maintainer supplies and
 tests that explicit binding. No existing Codex Desktop process is attached to
 or controlled.
+
+The optional maintainer-operated Claude Desktop binding is narrower: for one
+operator-selected, version-pinned Remote Control/session-bridge id, it can
+manually request that Windows open or focus that Code session. It uses a
+Desktop-specific policy and one-shot focus ledger; it does not enable UI
+Automation or an automatic failure fallback. It never types or sends a message
+and never reports a model turn as started or completed. Local Windows account
+and filesystem ACLs, not a CCCP maintainer role, are the access boundary. See
+[docs/CLAUDE_DESKTOP_SESSION_FOCUS.md](docs/CLAUDE_DESKTOP_SESSION_FOCUS.md).
 
 ## Start safely
 
@@ -37,6 +47,10 @@ python -m pip install -e C:\Users\USER\Documents\ccc-protocol
 ccc-supervisor probe
 ```
 
+`probe` reports the Desktop focus contract as available but does not inspect
+the installed Desktop package or protocol handler. Binding and focusing perform
+those version-pinned checks and fail closed on drift.
+
 Initialize and inspect a synthetic run without starting either model:
 
 ```powershell
@@ -46,7 +60,8 @@ ccc-supervisor status --coop-root .\coop
 ```
 
 Read [docs/SUPERVISOR_V1.md](docs/SUPERVISOR_V1.md) and
-[docs/BOOTSTRAP.md](docs/BOOTSTRAP.md) before binding a live adapter.
+[docs/BOOTSTRAP.md](docs/BOOTSTRAP.md) before binding a live adapter or using
+the separate Desktop focus command.
 
 ## Repository layout
 
@@ -60,6 +75,8 @@ scripts/ccc_push_snapshot.ps1
                            allowlisted, branch-locked snapshot helper
 docs/SUPERVISOR_V1.md      canonical v1 contract
 docs/BOOTSTRAP.md          safe bring-up and rollback
+docs/CLAUDE_DESKTOP_SESSION_FOCUS.md
+                           version-pinned exact-session focus boundary
 docs/ANTIPATTERNS.md       known unsafe patterns
 ```
 
@@ -68,7 +85,7 @@ docs/ANTIPATTERNS.md       known unsafe patterns
 ```powershell
 $env:PYTHONPATH='src'
 python -m unittest discover -s tests -p 'test_*.py' -v
-powershell -ExecutionPolicy Bypass -File .\tests\powershell\test_ccc_scripts.ps1
+pwsh -NoProfile -ExecutionPolicy Bypass -File .\tests\powershell\test_ccc_scripts.ps1
 git diff --check
 ```
 
